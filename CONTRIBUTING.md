@@ -43,3 +43,12 @@ Run from the repository root (uv from the shared tools folder, or any uv 0.9.x):
     uv sync --frozen          # install the locked dependencies into .venv
     uv run --frozen pytest -q # run the test suite
     uv lock --check           # confirm uv.lock matches pyproject.toml
+
+Research commands (M2; all participants are synthetic):
+
+    uv run --frozen python -m match_lab test                    # same as pytest
+    uv run --frozen python -m match_lab smoke                   # exploratory smoke run and report
+    uv run --frozen python -m match_lab run --config experiments/configs/pilot.json
+    uv run --frozen python -m match_lab report --results results/exploratory/pilot/results.json --out results/exploratory/pilot/report
+
+`run` refuses a confirmatory config (`experiments/configs/EXP-00N.json`) until the owner's protocol freeze is recorded in `research/experiment_registry.csv`.

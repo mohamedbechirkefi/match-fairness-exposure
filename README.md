@@ -3,13 +3,13 @@
 
 **Question.** How do ranking and exposure policies alter match outcomes under heterogeneous preferences?
 
-**Status: M0 (bootstrap and feasibility), 2026-11-24.** No experiment has been run and there are no findings. The protocol is a draft awaiting the owner's freeze.
+**Status: M2 (core implementation), 2026-11-24.** The engine, metrics, runner and report generator are implemented and tested. Only exploratory pilot runs exist (`results/exploratory/`); they test no hypothesis and are not findings. The protocol is a draft awaiting the owner's freeze; confirmatory runs are refused until then.
 
 ## Why it matters
 
 Platforms that help people find partners or counterparts decide who sees whom. That exposure choice can change who gets matched, how good matches are, and how unequally attention is spread. MATCH studies this question in fully synthetic markets, where every assumption is explicit and every run is reproducible.
 
-## What is planned (not yet implemented)
+## Design
 
 - Synthetic two-sided markets with reciprocal preferences, varying side imbalance and preference correlation.
 - Sequential discovery with three slate policies: random exposure (baseline), popularity ranking, exposure-balanced ranking.
@@ -21,13 +21,17 @@ See `research/protocol.md` and `research/experiment_registry.csv` (EXP-001 to EX
 
 ## What is implemented
 
-Only the package skeleton (`src/match_lab`) and one import test. Nothing else yet.
+- Package `match_lab` (see `src/README.md`): market generator, the three slate policies, deferred acceptance, utilitarian assignment, all protocol metrics, uncertainty machinery, versioned result and manifest schemas, run manifests, report generator (Markdown, CSV, SVG, PDF through pandoc and Typst).
+- CLI: `python -m match_lab {smoke,run,report,test}`.
+- Test suite (`tests/README.md`), including Gale and Shapley stability on hand-computed examples and brute-force differential tests.
+- Not implemented yet: the interactive page (M5), the manuscript content (M4).
 
 ## Quick start (development)
 
 ```
 /Users/bechir/research/labs/.tools/py/bin/uv sync --frozen
 /Users/bechir/research/labs/.tools/py/bin/uv run --frozen pytest -q
+/Users/bechir/research/labs/.tools/py/bin/uv run --frozen python -m match_lab smoke   # exploratory
 ```
 
 ## Data

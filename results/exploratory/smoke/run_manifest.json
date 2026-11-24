@@ -1,0 +1,1228 @@
+{
+ "config_sha256": "c5755764f3d15763021d56677f52209271cefd0422719ca1e7a1cba7339ef507",
+ "cpu": "Apple M1 Pro",
+ "cpu_count": 10,
+ "end_utc": "2026-11-24T16:09:38Z",
+ "experiment_id": "SMOKE",
+ "git_dirty": false,
+ "git_revision": "d42019e5e47ec150f4d144fb9ec7269479470e02",
+ "label": "Exploratory smoke matrix (protocol section 5); not a finding",
+ "manifest_schema": "match-manifest/1.0.0",
+ "match_lab_version": "0.2.0",
+ "mode": "exploratory",
+ "n_invalid": 0,
+ "n_runs": 120,
+ "packages": {
+  "numpy": "2.3.5",
+  "scipy": "1.16.3"
+ },
+ "peak_memory_method": "per run: tracemalloc peak of a deterministic re-run, first instance of each (cell, setting, arm) only, null otherwise; process: ru_maxrss; runtime_s is never traced",
+ "peak_rss_bytes": 72941568,
+ "platform": "macOS-15.3.1-arm64-arm-64bit",
+ "python": "3.12.1",
+ "root_seed": 101,
+ "runs": [
+  {
+   "peak_traced_bytes": 146968,
+   "run_id": "SMOKE/r1-rho0-i000-base/RANDOM",
+   "runtime_s": 0.004984624998542131,
+   "spawn_key": [
+    1000,
+    0,
+    0
+   ]
+  },
+  {
+   "peak_traced_bytes": 146698,
+   "run_id": "SMOKE/r1-rho0-i000-base/POPULARITY",
+   "runtime_s": 0.0070261670007312205,
+   "spawn_key": [
+    1000,
+    0,
+    0
+   ]
+  },
+  {
+   "peak_traced_bytes": 146800,
+   "run_id": "SMOKE/r1-rho0-i000-base/EXPOSURE_BALANCED",
+   "runtime_s": 0.0060075000001234,
+   "spawn_key": [
+    1000,
+    0,
+    0
+   ]
+  },
+  {
+   "peak_traced_bytes": 86272,
+   "run_id": "SMOKE/r1-rho0-i000-base/DA_A",
+   "runtime_s": 0.0023102499999367865,
+   "spawn_key": [
+    1000,
+    0,
+    0
+   ]
+  },
+  {
+   "peak_traced_bytes": 86272,
+   "run_id": "SMOKE/r1-rho0-i000-base/DA_B",
+   "runtime_s": 0.0013989580002089497,
+   "spawn_key": [
+    1000,
+    0,
+    0
+   ]
+  },
+  {
+   "peak_traced_bytes": 45076,
+   "run_id": "SMOKE/r1-rho0-i000-base/MAXW",
+   "runtime_s": 0.0004028330004075542,
+   "spawn_key": [
+    1000,
+    0,
+    0
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "SMOKE/r1-rho0-i001-base/RANDOM",
+   "runtime_s": 0.006301082999925711,
+   "spawn_key": [
+    1000,
+    0,
+    1
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "SMOKE/r1-rho0-i001-base/POPULARITY",
+   "runtime_s": 0.00813854199986963,
+   "spawn_key": [
+    1000,
+    0,
+    1
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "SMOKE/r1-rho0-i001-base/EXPOSURE_BALANCED",
+   "runtime_s": 0.007012083000518032,
+   "spawn_key": [
+    1000,
+    0,
+    1
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "SMOKE/r1-rho0-i001-base/DA_A",
+   "runtime_s": 0.0012738329987769248,
+   "spawn_key": [
+    1000,
+    0,
+    1
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "SMOKE/r1-rho0-i001-base/DA_B",
+   "runtime_s": 0.0012252499982423615,
+   "spawn_key": [
+    1000,
+    0,
+    1
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "SMOKE/r1-rho0-i001-base/MAXW",
+   "runtime_s": 0.0002683749989955686,
+   "spawn_key": [
+    1000,
+    0,
+    1
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "SMOKE/r1-rho0-i002-base/RANDOM",
+   "runtime_s": 0.0052550000000337604,
+   "spawn_key": [
+    1000,
+    0,
+    2
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "SMOKE/r1-rho0-i002-base/POPULARITY",
+   "runtime_s": 0.007728624999799649,
+   "spawn_key": [
+    1000,
+    0,
+    2
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "SMOKE/r1-rho0-i002-base/EXPOSURE_BALANCED",
+   "runtime_s": 0.007239958000354818,
+   "spawn_key": [
+    1000,
+    0,
+    2
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "SMOKE/r1-rho0-i002-base/DA_A",
+   "runtime_s": 0.0013047920001554303,
+   "spawn_key": [
+    1000,
+    0,
+    2
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "SMOKE/r1-rho0-i002-base/DA_B",
+   "runtime_s": 0.0012203330006741453,
+   "spawn_key": [
+    1000,
+    0,
+    2
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "SMOKE/r1-rho0-i002-base/MAXW",
+   "runtime_s": 0.00027883300026587676,
+   "spawn_key": [
+    1000,
+    0,
+    2
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "SMOKE/r1-rho0-i003-base/RANDOM",
+   "runtime_s": 0.004802374998689629,
+   "spawn_key": [
+    1000,
+    0,
+    3
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "SMOKE/r1-rho0-i003-base/POPULARITY",
+   "runtime_s": 0.006930624998858548,
+   "spawn_key": [
+    1000,
+    0,
+    3
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "SMOKE/r1-rho0-i003-base/EXPOSURE_BALANCED",
+   "runtime_s": 0.005971624999801861,
+   "spawn_key": [
+    1000,
+    0,
+    3
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "SMOKE/r1-rho0-i003-base/DA_A",
+   "runtime_s": 0.0014365000006364426,
+   "spawn_key": [
+    1000,
+    0,
+    3
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "SMOKE/r1-rho0-i003-base/DA_B",
+   "runtime_s": 0.0013851250005245674,
+   "spawn_key": [
+    1000,
+    0,
+    3
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "SMOKE/r1-rho0-i003-base/MAXW",
+   "runtime_s": 0.0002981249999720603,
+   "spawn_key": [
+    1000,
+    0,
+    3
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "SMOKE/r1-rho0-i004-base/RANDOM",
+   "runtime_s": 0.004979499999535619,
+   "spawn_key": [
+    1000,
+    0,
+    4
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "SMOKE/r1-rho0-i004-base/POPULARITY",
+   "runtime_s": 0.00737716699950397,
+   "spawn_key": [
+    1000,
+    0,
+    4
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "SMOKE/r1-rho0-i004-base/EXPOSURE_BALANCED",
+   "runtime_s": 0.0052848329996777466,
+   "spawn_key": [
+    1000,
+    0,
+    4
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "SMOKE/r1-rho0-i004-base/DA_A",
+   "runtime_s": 0.0012666660004470032,
+   "spawn_key": [
+    1000,
+    0,
+    4
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "SMOKE/r1-rho0-i004-base/DA_B",
+   "runtime_s": 0.0012227500010340009,
+   "spawn_key": [
+    1000,
+    0,
+    4
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "SMOKE/r1-rho0-i004-base/MAXW",
+   "runtime_s": 0.000261417000729125,
+   "spawn_key": [
+    1000,
+    0,
+    4
+   ]
+  },
+  {
+   "peak_traced_bytes": 146723,
+   "run_id": "SMOKE/r1-rho0.9-i000-base/RANDOM",
+   "runtime_s": 0.009154125000350177,
+   "spawn_key": [
+    1000,
+    900,
+    0
+   ]
+  },
+  {
+   "peak_traced_bytes": 146482,
+   "run_id": "SMOKE/r1-rho0.9-i000-base/POPULARITY",
+   "runtime_s": 0.00869799999964016,
+   "spawn_key": [
+    1000,
+    900,
+    0
+   ]
+  },
+  {
+   "peak_traced_bytes": 146528,
+   "run_id": "SMOKE/r1-rho0.9-i000-base/EXPOSURE_BALANCED",
+   "runtime_s": 0.0077850830002716975,
+   "spawn_key": [
+    1000,
+    900,
+    0
+   ]
+  },
+  {
+   "peak_traced_bytes": 86272,
+   "run_id": "SMOKE/r1-rho0.9-i000-base/DA_A",
+   "runtime_s": 0.0021750420000898885,
+   "spawn_key": [
+    1000,
+    900,
+    0
+   ]
+  },
+  {
+   "peak_traced_bytes": 86272,
+   "run_id": "SMOKE/r1-rho0.9-i000-base/DA_B",
+   "runtime_s": 0.0015297919999284204,
+   "spawn_key": [
+    1000,
+    900,
+    0
+   ]
+  },
+  {
+   "peak_traced_bytes": 45076,
+   "run_id": "SMOKE/r1-rho0.9-i000-base/MAXW",
+   "runtime_s": 0.00041362500087416265,
+   "spawn_key": [
+    1000,
+    900,
+    0
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "SMOKE/r1-rho0.9-i001-base/RANDOM",
+   "runtime_s": 0.007274791998497676,
+   "spawn_key": [
+    1000,
+    900,
+    1
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "SMOKE/r1-rho0.9-i001-base/POPULARITY",
+   "runtime_s": 0.00864220899893553,
+   "spawn_key": [
+    1000,
+    900,
+    1
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "SMOKE/r1-rho0.9-i001-base/EXPOSURE_BALANCED",
+   "runtime_s": 0.007450791999872308,
+   "spawn_key": [
+    1000,
+    900,
+    1
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "SMOKE/r1-rho0.9-i001-base/DA_A",
+   "runtime_s": 0.001292124999963562,
+   "spawn_key": [
+    1000,
+    900,
+    1
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "SMOKE/r1-rho0.9-i001-base/DA_B",
+   "runtime_s": 0.0012641670000448357,
+   "spawn_key": [
+    1000,
+    900,
+    1
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "SMOKE/r1-rho0.9-i001-base/MAXW",
+   "runtime_s": 0.00028208300136611797,
+   "spawn_key": [
+    1000,
+    900,
+    1
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "SMOKE/r1-rho0.9-i002-base/RANDOM",
+   "runtime_s": 0.006743666001057136,
+   "spawn_key": [
+    1000,
+    900,
+    2
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "SMOKE/r1-rho0.9-i002-base/POPULARITY",
+   "runtime_s": 0.008375499999601743,
+   "spawn_key": [
+    1000,
+    900,
+    2
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "SMOKE/r1-rho0.9-i002-base/EXPOSURE_BALANCED",
+   "runtime_s": 0.007871959000112838,
+   "spawn_key": [
+    1000,
+    900,
+    2
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "SMOKE/r1-rho0.9-i002-base/DA_A",
+   "runtime_s": 0.0013175000003684545,
+   "spawn_key": [
+    1000,
+    900,
+    2
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "SMOKE/r1-rho0.9-i002-base/DA_B",
+   "runtime_s": 0.0012429580001480645,
+   "spawn_key": [
+    1000,
+    900,
+    2
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "SMOKE/r1-rho0.9-i002-base/MAXW",
+   "runtime_s": 0.0002977499989356147,
+   "spawn_key": [
+    1000,
+    900,
+    2
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "SMOKE/r1-rho0.9-i003-base/RANDOM",
+   "runtime_s": 0.006159041999126202,
+   "spawn_key": [
+    1000,
+    900,
+    3
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "SMOKE/r1-rho0.9-i003-base/POPULARITY",
+   "runtime_s": 0.008236166000642697,
+   "spawn_key": [
+    1000,
+    900,
+    3
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "SMOKE/r1-rho0.9-i003-base/EXPOSURE_BALANCED",
+   "runtime_s": 0.006940666000446072,
+   "spawn_key": [
+    1000,
+    900,
+    3
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "SMOKE/r1-rho0.9-i003-base/DA_A",
+   "runtime_s": 0.0012621249989024363,
+   "spawn_key": [
+    1000,
+    900,
+    3
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "SMOKE/r1-rho0.9-i003-base/DA_B",
+   "runtime_s": 0.0012573330004670424,
+   "spawn_key": [
+    1000,
+    900,
+    3
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "SMOKE/r1-rho0.9-i003-base/MAXW",
+   "runtime_s": 0.00027425000007497147,
+   "spawn_key": [
+    1000,
+    900,
+    3
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "SMOKE/r1-rho0.9-i004-base/RANDOM",
+   "runtime_s": 0.00611416699939582,
+   "spawn_key": [
+    1000,
+    900,
+    4
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "SMOKE/r1-rho0.9-i004-base/POPULARITY",
+   "runtime_s": 0.008353457998964586,
+   "spawn_key": [
+    1000,
+    900,
+    4
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "SMOKE/r1-rho0.9-i004-base/EXPOSURE_BALANCED",
+   "runtime_s": 0.007086166999215493,
+   "spawn_key": [
+    1000,
+    900,
+    4
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "SMOKE/r1-rho0.9-i004-base/DA_A",
+   "runtime_s": 0.001262249999854248,
+   "spawn_key": [
+    1000,
+    900,
+    4
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "SMOKE/r1-rho0.9-i004-base/DA_B",
+   "runtime_s": 0.0012467919987102505,
+   "spawn_key": [
+    1000,
+    900,
+    4
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "SMOKE/r1-rho0.9-i004-base/MAXW",
+   "runtime_s": 0.00026541599982010666,
+   "spawn_key": [
+    1000,
+    900,
+    4
+   ]
+  },
+  {
+   "peak_traced_bytes": 214523,
+   "run_id": "SMOKE/r1.5-rho0-i000-base/RANDOM",
+   "runtime_s": 0.006624707999435486,
+   "spawn_key": [
+    1500,
+    0,
+    0
+   ]
+  },
+  {
+   "peak_traced_bytes": 214387,
+   "run_id": "SMOKE/r1.5-rho0-i000-base/POPULARITY",
+   "runtime_s": 0.0122869160004484,
+   "spawn_key": [
+    1500,
+    0,
+    0
+   ]
+  },
+  {
+   "peak_traced_bytes": 214995,
+   "run_id": "SMOKE/r1.5-rho0-i000-base/EXPOSURE_BALANCED",
+   "runtime_s": 0.009959250000974862,
+   "spawn_key": [
+    1500,
+    0,
+    0
+   ]
+  },
+  {
+   "peak_traced_bytes": 125456,
+   "run_id": "SMOKE/r1.5-rho0-i000-base/DA_A",
+   "runtime_s": 0.0017410410000593401,
+   "spawn_key": [
+    1500,
+    0,
+    0
+   ]
+  },
+  {
+   "peak_traced_bytes": 97864,
+   "run_id": "SMOKE/r1.5-rho0-i000-base/DA_B",
+   "runtime_s": 0.0018514999992476078,
+   "spawn_key": [
+    1500,
+    0,
+    0
+   ]
+  },
+  {
+   "peak_traced_bytes": 66526,
+   "run_id": "SMOKE/r1.5-rho0-i000-base/MAXW",
+   "runtime_s": 0.00027108300128020346,
+   "spawn_key": [
+    1500,
+    0,
+    0
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "SMOKE/r1.5-rho0-i001-base/RANDOM",
+   "runtime_s": 0.007807166999555193,
+   "spawn_key": [
+    1500,
+    0,
+    1
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "SMOKE/r1.5-rho0-i001-base/POPULARITY",
+   "runtime_s": 0.010975458999382681,
+   "spawn_key": [
+    1500,
+    0,
+    1
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "SMOKE/r1.5-rho0-i001-base/EXPOSURE_BALANCED",
+   "runtime_s": 0.007579334000183735,
+   "spawn_key": [
+    1500,
+    0,
+    1
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "SMOKE/r1.5-rho0-i001-base/DA_A",
+   "runtime_s": 0.0017085409999708645,
+   "spawn_key": [
+    1500,
+    0,
+    1
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "SMOKE/r1.5-rho0-i001-base/DA_B",
+   "runtime_s": 0.0017647909990046173,
+   "spawn_key": [
+    1500,
+    0,
+    1
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "SMOKE/r1.5-rho0-i001-base/MAXW",
+   "runtime_s": 0.00025204099983966444,
+   "spawn_key": [
+    1500,
+    0,
+    1
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "SMOKE/r1.5-rho0-i002-base/RANDOM",
+   "runtime_s": 0.007609415999468183,
+   "spawn_key": [
+    1500,
+    0,
+    2
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "SMOKE/r1.5-rho0-i002-base/POPULARITY",
+   "runtime_s": 0.012425958000676474,
+   "spawn_key": [
+    1500,
+    0,
+    2
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "SMOKE/r1.5-rho0-i002-base/EXPOSURE_BALANCED",
+   "runtime_s": 0.00839925000036601,
+   "spawn_key": [
+    1500,
+    0,
+    2
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "SMOKE/r1.5-rho0-i002-base/DA_A",
+   "runtime_s": 0.0016702089997124858,
+   "spawn_key": [
+    1500,
+    0,
+    2
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "SMOKE/r1.5-rho0-i002-base/DA_B",
+   "runtime_s": 0.0017712499993649544,
+   "spawn_key": [
+    1500,
+    0,
+    2
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "SMOKE/r1.5-rho0-i002-base/MAXW",
+   "runtime_s": 0.00025887499941745773,
+   "spawn_key": [
+    1500,
+    0,
+    2
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "SMOKE/r1.5-rho0-i003-base/RANDOM",
+   "runtime_s": 0.006762750001144013,
+   "spawn_key": [
+    1500,
+    0,
+    3
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "SMOKE/r1.5-rho0-i003-base/POPULARITY",
+   "runtime_s": 0.00985795899941877,
+   "spawn_key": [
+    1500,
+    0,
+    3
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "SMOKE/r1.5-rho0-i003-base/EXPOSURE_BALANCED",
+   "runtime_s": 0.008052499999394058,
+   "spawn_key": [
+    1500,
+    0,
+    3
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "SMOKE/r1.5-rho0-i003-base/DA_A",
+   "runtime_s": 0.0016754580010456266,
+   "spawn_key": [
+    1500,
+    0,
+    3
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "SMOKE/r1.5-rho0-i003-base/DA_B",
+   "runtime_s": 0.001786417000403162,
+   "spawn_key": [
+    1500,
+    0,
+    3
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "SMOKE/r1.5-rho0-i003-base/MAXW",
+   "runtime_s": 0.00024379100068472326,
+   "spawn_key": [
+    1500,
+    0,
+    3
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "SMOKE/r1.5-rho0-i004-base/RANDOM",
+   "runtime_s": 0.006670291999398614,
+   "spawn_key": [
+    1500,
+    0,
+    4
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "SMOKE/r1.5-rho0-i004-base/POPULARITY",
+   "runtime_s": 0.009891834000882227,
+   "spawn_key": [
+    1500,
+    0,
+    4
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "SMOKE/r1.5-rho0-i004-base/EXPOSURE_BALANCED",
+   "runtime_s": 0.008693457999470411,
+   "spawn_key": [
+    1500,
+    0,
+    4
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "SMOKE/r1.5-rho0-i004-base/DA_A",
+   "runtime_s": 0.002028375000008964,
+   "spawn_key": [
+    1500,
+    0,
+    4
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "SMOKE/r1.5-rho0-i004-base/DA_B",
+   "runtime_s": 0.0021197080004640156,
+   "spawn_key": [
+    1500,
+    0,
+    4
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "SMOKE/r1.5-rho0-i004-base/MAXW",
+   "runtime_s": 0.00028974999986530747,
+   "spawn_key": [
+    1500,
+    0,
+    4
+   ]
+  },
+  {
+   "peak_traced_bytes": 214443,
+   "run_id": "SMOKE/r1.5-rho0.9-i000-base/RANDOM",
+   "runtime_s": 0.011868499999764026,
+   "spawn_key": [
+    1500,
+    900,
+    0
+   ]
+  },
+  {
+   "peak_traced_bytes": 214307,
+   "run_id": "SMOKE/r1.5-rho0.9-i000-base/POPULARITY",
+   "runtime_s": 0.012575457998536876,
+   "spawn_key": [
+    1500,
+    900,
+    0
+   ]
+  },
+  {
+   "peak_traced_bytes": 214619,
+   "run_id": "SMOKE/r1.5-rho0.9-i000-base/EXPOSURE_BALANCED",
+   "runtime_s": 0.010958041000776575,
+   "spawn_key": [
+    1500,
+    900,
+    0
+   ]
+  },
+  {
+   "peak_traced_bytes": 125456,
+   "run_id": "SMOKE/r1.5-rho0.9-i000-base/DA_A",
+   "runtime_s": 0.0020377079999889247,
+   "spawn_key": [
+    1500,
+    900,
+    0
+   ]
+  },
+  {
+   "peak_traced_bytes": 97864,
+   "run_id": "SMOKE/r1.5-rho0.9-i000-base/DA_B",
+   "runtime_s": 0.0018228749995614635,
+   "spawn_key": [
+    1500,
+    900,
+    0
+   ]
+  },
+  {
+   "peak_traced_bytes": 66526,
+   "run_id": "SMOKE/r1.5-rho0.9-i000-base/MAXW",
+   "runtime_s": 0.0003039580005861353,
+   "spawn_key": [
+    1500,
+    900,
+    0
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "SMOKE/r1.5-rho0.9-i001-base/RANDOM",
+   "runtime_s": 0.009345958000267274,
+   "spawn_key": [
+    1500,
+    900,
+    1
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "SMOKE/r1.5-rho0.9-i001-base/POPULARITY",
+   "runtime_s": 0.012540084000647767,
+   "spawn_key": [
+    1500,
+    900,
+    1
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "SMOKE/r1.5-rho0.9-i001-base/EXPOSURE_BALANCED",
+   "runtime_s": 0.010163625000132015,
+   "spawn_key": [
+    1500,
+    900,
+    1
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "SMOKE/r1.5-rho0.9-i001-base/DA_A",
+   "runtime_s": 0.001747791000525467,
+   "spawn_key": [
+    1500,
+    900,
+    1
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "SMOKE/r1.5-rho0.9-i001-base/DA_B",
+   "runtime_s": 0.0018424999998387648,
+   "spawn_key": [
+    1500,
+    900,
+    1
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "SMOKE/r1.5-rho0.9-i001-base/MAXW",
+   "runtime_s": 0.000308374999804073,
+   "spawn_key": [
+    1500,
+    900,
+    1
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "SMOKE/r1.5-rho0.9-i002-base/RANDOM",
+   "runtime_s": 0.008542083000065759,
+   "spawn_key": [
+    1500,
+    900,
+    2
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "SMOKE/r1.5-rho0.9-i002-base/POPULARITY",
+   "runtime_s": 0.01219029200001387,
+   "spawn_key": [
+    1500,
+    900,
+    2
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "SMOKE/r1.5-rho0.9-i002-base/EXPOSURE_BALANCED",
+   "runtime_s": 0.009725207999508712,
+   "spawn_key": [
+    1500,
+    900,
+    2
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "SMOKE/r1.5-rho0.9-i002-base/DA_A",
+   "runtime_s": 0.0017122919998655561,
+   "spawn_key": [
+    1500,
+    900,
+    2
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "SMOKE/r1.5-rho0.9-i002-base/DA_B",
+   "runtime_s": 0.0017496659984317375,
+   "spawn_key": [
+    1500,
+    900,
+    2
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "SMOKE/r1.5-rho0.9-i002-base/MAXW",
+   "runtime_s": 0.0003039999992324738,
+   "spawn_key": [
+    1500,
+    900,
+    2
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "SMOKE/r1.5-rho0.9-i003-base/RANDOM",
+   "runtime_s": 0.01054683399888745,
+   "spawn_key": [
+    1500,
+    900,
+    3
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "SMOKE/r1.5-rho0.9-i003-base/POPULARITY",
+   "runtime_s": 0.016184709000299335,
+   "spawn_key": [
+    1500,
+    900,
+    3
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "SMOKE/r1.5-rho0.9-i003-base/EXPOSURE_BALANCED",
+   "runtime_s": 0.014098249999733525,
+   "spawn_key": [
+    1500,
+    900,
+    3
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "SMOKE/r1.5-rho0.9-i003-base/DA_A",
+   "runtime_s": 0.002030665998972836,
+   "spawn_key": [
+    1500,
+    900,
+    3
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "SMOKE/r1.5-rho0.9-i003-base/DA_B",
+   "runtime_s": 0.002103790999171906,
+   "spawn_key": [
+    1500,
+    900,
+    3
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "SMOKE/r1.5-rho0.9-i003-base/MAXW",
+   "runtime_s": 0.00038254199898801744,
+   "spawn_key": [
+    1500,
+    900,
+    3
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "SMOKE/r1.5-rho0.9-i004-base/RANDOM",
+   "runtime_s": 0.010578499999610358,
+   "spawn_key": [
+    1500,
+    900,
+    4
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "SMOKE/r1.5-rho0.9-i004-base/POPULARITY",
+   "runtime_s": 0.012921832998472382,
+   "spawn_key": [
+    1500,
+    900,
+    4
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "SMOKE/r1.5-rho0.9-i004-base/EXPOSURE_BALANCED",
+   "runtime_s": 0.011532833999808645,
+   "spawn_key": [
+    1500,
+    900,
+    4
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "SMOKE/r1.5-rho0.9-i004-base/DA_A",
+   "runtime_s": 0.0017550419997860445,
+   "spawn_key": [
+    1500,
+    900,
+    4
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "SMOKE/r1.5-rho0.9-i004-base/DA_B",
+   "runtime_s": 0.0018292500008101342,
+   "spawn_key": [
+    1500,
+    900,
+    4
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "SMOKE/r1.5-rho0.9-i004-base/MAXW",
+   "runtime_s": 0.0004497089994401904,
+   "spawn_key": [
+    1500,
+    900,
+    4
+   ]
+  }
+ ],
+ "start_utc": "2026-11-24T16:09:36Z",
+ "wall_clock_s": 1.7979273750006541
+}

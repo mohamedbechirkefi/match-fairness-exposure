@@ -299,6 +299,8 @@ ARM_LEGEND = ("Arm abbreviations in tables: RND = RANDOM, POP = POPULARITY, EXB 
 
 
 def _short(text: str) -> str:
+    if text.startswith("r=") and ", rho=" in text:
+        return text.replace("r=", "").replace("rho=", "")
     for long, short in ARM_SHORT.items():
         text = text.replace(long, short)
     return text
@@ -359,7 +361,7 @@ def build_report(result_paths: list[str | Path], out_dir: str | Path, *, plans: 
                   f"settings: {', '.join(s['setting_id'] + ' (theta ' + str(s['theta']) + ', T ' + str(s['T']) + ')' for s in cfg['settings'])}",
                   f"- Runs: {len(doc['runs'])}; total runtime of runs {sum(r['diagnostics']['runtime_s'] for r in doc['runs']):.2f} s", ""]
         lines += ["### Arm summary (mean and SD over instances)", "",
-                  _md_table(summary, [("setting", "setting"), ("cell", "cell"), ("arm", "arm"), ("n_instances", "n"),
+                  _md_table(summary, [("setting", "setting"), ("cell", "r, rho"), ("arm", "arm"), ("n_instances", "n"),
                                       ("W_mean", "W"), ("W_sd", "SD(W)"), ("U_mean", "U"), ("M_mean", "M"),
                                       ("gini_exposure_B_mean", "Gini exp. B"), ("blocking_per_100_mean", "block/100"),
                                       ("runtime_mean_s", "runtime s")]), ""]
@@ -367,7 +369,7 @@ def build_report(result_paths: list[str | Path], out_dir: str | Path, *, plans: 
                   "Mean, SD and dz of per-instance paired differences; 95% percentile bootstrap CI over instances "
                   "(10,000 resamples). `N(SESOI)` is the normal-approximation number of instances per cell for 80% "
                   "power to detect a difference of 0.01 in that cell, using this run's SD (planning only).", "",
-                  _md_table(diffs, [("setting", "setting"), ("cell", "cell"), ("contrast", "contrast"), ("n_pairs", "n"),
+                  _md_table(diffs, [("setting", "setting"), ("cell", "r, rho"), ("contrast", "contrast"), ("n_pairs", "n"),
                                     ("mean_diff", "mean D"), ("sd_diff", "SD(D)"), ("dz", "dz"), ("ci95_lo", "CI lo"),
                                     ("ci95_hi", "CI hi"), ("n_for_sesoi_80pct_per_cell", "N(SESOI)")]), ""]
         lines += ["### Equal-weight mean over cells (theta) of W differences versus RANDOM", "",
@@ -388,7 +390,7 @@ def build_report(result_paths: list[str | Path], out_dir: str | Path, *, plans: 
                 cap = ("Mean agent welfare W per synthetic market instance by arm and cell" if kind == "welfare"
                        else "Paired differences in W versus RANDOM with 95% bootstrap CIs")
                 lines += [f"![{cap} ({doc['mode']} run {doc['experiment_id']}, setting {sid}, {name[:-4]}). Unitless welfare scale; "
-                          f"n = {cfg['instances_per_cell']} instances per cell.](figures/{name})", ""]
+                          f"n = {cfg['instances_per_cell']} instances per cell.](figures/{name}){{width=80%}}", ""]
     if plans:
         proj = project_runtime(docs, list(plans))
         _write_csv(out / "tables" / "runtime_projection.csv", proj)
@@ -419,6 +421,7 @@ def build_pdf(md_path: Path) -> Path:
     typ = md_path.with_suffix(".typ")
     pdf = md_path.with_suffix(".pdf")
     subprocess.run([pandoc, str(md_path), "-s", "-t", "typst", "-V", 'mainfont=Libertinus Serif',
+                    "-V", "header-includes=#show figure: set block(breakable: true)",
                     "-o", str(typ)], check=True, capture_output=True, text=True)
     code = ("import sys, typst; typst.compile(sys.argv[1], output=sys.argv[2], root=sys.argv[3])")
     subprocess.run([tpy, "-I", "-c", code, str(typ), str(pdf), str(md_path.parent)], check=True,

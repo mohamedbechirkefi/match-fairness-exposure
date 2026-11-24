@@ -1,0 +1,8389 @@
+{
+ "code_revision": "d42019e5e47ec150f4d144fb9ec7269479470e02",
+ "config": {
+  "arms": [
+   "RANDOM",
+   "POPULARITY",
+   "EXPOSURE_BALANCED",
+   "DA_A",
+   "DA_B",
+   "MAXW"
+  ],
+  "config_schema": "match-config/1.0.0",
+  "delta": 0.5,
+  "experiment_id": "SMOKE",
+  "instances_per_cell": 5,
+  "k": 5,
+  "label": "Exploratory smoke matrix (protocol section 5); not a finding",
+  "mode": "exploratory",
+  "n_a": 50,
+  "output_dir": "results/exploratory/smoke",
+  "r_values": [
+   1.0,
+   1.5
+  ],
+  "rho_values": [
+   0.0,
+   0.9
+  ],
+  "root_seed": 101,
+  "settings": [
+   {
+    "T": 20,
+    "setting_id": "base",
+    "theta": 0.5
+   }
+  ],
+  "trace_memory": true
+ },
+ "config_sha256": "c5755764f3d15763021d56677f52209271cefd0422719ca1e7a1cba7339ef507",
+ "created_utc": "2026-11-24T16:09:38Z",
+ "exclusions": [],
+ "experiment_id": "SMOKE",
+ "generator_version": "GEN-match-market v1",
+ "label": "Exploratory smoke matrix (protocol section 5); not a finding",
+ "mode": "exploratory",
+ "runs": [
+  {
+   "arm": "RANDOM",
+   "cell": {
+    "n_a": 50,
+    "n_b": 50,
+    "r": 1.0,
+    "rho": 0.0
+   },
+   "diagnostics": {
+    "cap_short_slates": 0,
+    "market_generation_s": 0.001488874999267864,
+    "matches_by_round": [
+     5,
+     12,
+     19,
+     10,
+     1,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0
+    ],
+    "n_slates": 382,
+    "peak_traced_bytes": 146968,
+    "runtime_s": 0.004984624998542131,
+    "short_slates": 98
+   },
+   "failures": [],
+   "instance": 0,
+   "instance_key": "r1-rho0-i000-base",
+   "metrics": {
+    "M": 0.7116804168475901,
+    "U": 0.06,
+    "U_A": 0.06,
+    "U_B": 0.06,
+    "W": 0.7487755102040817,
+    "W_A": 0.7355102040816326,
+    "W_A_q_bottom": 0.6499215070643641,
+    "W_A_q_gap": 0.050235478806907485,
+    "W_A_q_top": 0.7001569858712716,
+    "W_B": 0.7620408163265304,
+    "W_B_q_bottom": 0.8131868131868133,
+    "W_B_q_gap": -0.009419152276295306,
+    "W_B_q_top": 0.803767660910518,
+    "blocking_pairs": 108,
+    "blocking_per_100": 108.0,
+    "gini_exposure_A": 0.1979329608938547,
+    "gini_exposure_B": 0.1832538569424964,
+    "n_matched": 47
+   },
+   "run_id": "SMOKE/r1-rho0-i000-base/RANDOM",
+   "seed": {
+    "root_seed": 101,
+    "spawn_key": [
+     1000,
+     0,
+     0
+    ]
+   },
+   "setting": {
+    "T": 20,
+    "delta": 0.5,
+    "k": 5,
+    "popularity_tie_scope": "global",
+    "setting_id": "base",
+    "theta": 0.5
+   },
+   "valid": true
+  },
+  {
+   "arm": "POPULARITY",
+   "cell": {
+    "n_a": 50,
+    "n_b": 50,
+    "r": 1.0,
+    "rho": 0.0
+   },
+   "diagnostics": {
+    "cap_short_slates": 0,
+    "market_generation_s": 0.001488874999267864,
+    "matches_by_round": [
+     3,
+     3,
+     6,
+     5,
+     7,
+     3,
+     6,
+     4,
+     4,
+     5,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0
+    ],
+    "n_slates": 680,
+    "peak_traced_bytes": 146698,
+    "runtime_s": 0.0070261670007312205,
+    "short_slates": 80
+   },
+   "failures": [],
+   "instance": 0,
+   "instance_key": "r1-rho0-i000-base",
+   "metrics": {
+    "M": 0.7227151730257321,
+    "U": 0.08,
+    "U_A": 0.08,
+    "U_B": 0.08,
+    "W": 0.7381632653061224,
+    "W_A": 0.7322448979591836,
+    "W_A_q_bottom": 0.728414442700157,
+    "W_A_q_gap": 0.058084772370486704,
+    "W_A_q_top": 0.7864992150706437,
+    "W_B": 0.7440816326530612,
+    "W_B_q_bottom": 0.6985871271585558,
+    "W_B_q_gap": 0.09105180533751978,
+    "W_B_q_top": 0.7896389324960755,
+    "blocking_pairs": 114,
+    "blocking_per_100": 114.0,
+    "gini_exposure_A": 0.2646666666666666,
+    "gini_exposure_B": 0.2646666666666666,
+    "n_matched": 46
+   },
+   "run_id": "SMOKE/r1-rho0-i000-base/POPULARITY",
+   "seed": {
+    "root_seed": 101,
+    "spawn_key": [
+     1000,
+     0,
+     0
+    ]
+   },
+   "setting": {
+    "T": 20,
+    "delta": 0.5,
+    "k": 5,
+    "popularity_tie_scope": "global",
+    "setting_id": "base",
+    "theta": 0.5
+   },
+   "valid": true
+  },
+  {
+   "arm": "EXPOSURE_BALANCED",
+   "cell": {
+    "n_a": 50,
+    "n_b": 50,
+    "r": 1.0,
+    "rho": 0.0
+   },
+   "diagnostics": {
+    "cap_short_slates": 0,
+    "market_generation_s": 0.001488874999267864,
+    "matches_by_round": [
+     4,
+     16,
+     15,
+     6,
+     5,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0
+    ],
+    "n_slates": 420,
+    "peak_traced_bytes": 146800,
+    "runtime_s": 0.0060075000001234,
+    "short_slates": 124
+   },
+   "failures": [],
+   "instance": 0,
+   "instance_key": "r1-rho0-i000-base",
+   "metrics": {
+    "M": 0.7165039929015085,
+    "U": 0.08,
+    "U_A": 0.08,
+    "U_B": 0.08,
+    "W": 0.7277551020408164,
+    "W_A": 0.7387755102040816,
+    "W_A_q_bottom": 0.6593406593406593,
+    "W_A_q_gap": 0.10675039246467821,
+    "W_A_q_top": 0.7660910518053375,
+    "W_B": 0.716734693877551,
+    "W_B_q_bottom": 0.642072213500785,
+    "W_B_q_gap": 0.14442700156985866,
+    "W_B_q_top": 0.7864992150706437,
+    "blocking_pairs": 127,
+    "blocking_per_100": 127.0,
+    "gini_exposure_A": 0.24039946737683082,
+    "gini_exposure_B": 0.22741333333333325,
+    "n_matched": 46
+   },
+   "run_id": "SMOKE/r1-rho0-i000-base/EXPOSURE_BALANCED",
+   "seed": {
+    "root_seed": 101,
+    "spawn_key": [
+     1000,
+     0,
+     0
+    ]
+   },
+   "setting": {
+    "T": 20,
+    "delta": 0.5,
+    "k": 5,
+    "popularity_tie_scope": "global",
+    "setting_id": "base",
+    "theta": 0.5
+   },
+   "valid": true
+  },
+  {
+   "arm": "DA_A",
+   "cell": {
+    "n_a": 50,
+    "n_b": 50,
+    "r": 1.0,
+    "rho": 0.0
+   },
+   "diagnostics": {
+    "cap_short_slates": null,
+    "market_generation_s": 0.001488874999267864,
+    "matches_by_round": null,
+    "n_slates": null,
+    "peak_traced_bytes": 86272,
+    "runtime_s": 0.0023102499999367865,
+    "short_slates": null
+   },
+   "failures": [],
+   "instance": 0,
+   "instance_key": "r1-rho0-i000-base",
+   "metrics": {
+    "M": 0.8188254893794252,
+    "U": 0.02,
+    "U_A": 0.02,
+    "U_B": 0.02,
+    "W": 0.8663265306122448,
+    "W_A": 0.8714285714285714,
+    "W_A_q_bottom": 0.8885400313971743,
+    "W_A_q_gap": 0.0047095761381474865,
+    "W_A_q_top": 0.8932496075353218,
+    "W_B": 0.8612244897959183,
+    "W_B_q_bottom": 0.8571428571428571,
+    "W_B_q_gap": -0.04552590266875989,
+    "W_B_q_top": 0.8116169544740972,
+    "blocking_pairs": 0,
+    "blocking_per_100": 0.0,
+    "gini_exposure_A": null,
+    "gini_exposure_B": null,
+    "n_matched": 49
+   },
+   "run_id": "SMOKE/r1-rho0-i000-base/DA_A",
+   "seed": {
+    "root_seed": 101,
+    "spawn_key": [
+     1000,
+     0,
+     0
+    ]
+   },
+   "setting": {
+    "T": 20,
+    "delta": 0.5,
+    "k": 5,
+    "popularity_tie_scope": "global",
+    "setting_id": "base",
+    "theta": 0.5
+   },
+   "valid": true
+  },
+  {
+   "arm": "DA_B",
+   "cell": {
+    "n_a": 50,
+    "n_b": 50,
+    "r": 1.0,
+    "rho": 0.0
+   },
+   "diagnostics": {
+    "cap_short_slates": null,
+    "market_generation_s": 0.001488874999267864,
+    "matches_by_round": null,
+    "n_slates": null,
+    "peak_traced_bytes": 86272,
+    "runtime_s": 0.0013989580002089497,
+    "short_slates": null
+   },
+   "failures": [],
+   "instance": 0,
+   "instance_key": "r1-rho0-i000-base",
+   "metrics": {
+    "M": 0.8188254893794252,
+    "U": 0.02,
+    "U_A": 0.02,
+    "U_B": 0.02,
+    "W": 0.8663265306122448,
+    "W_A": 0.8714285714285714,
+    "W_A_q_bottom": 0.8885400313971743,
+    "W_A_q_gap": 0.0047095761381474865,
+    "W_A_q_top": 0.8932496075353218,
+    "W_B": 0.8612244897959183,
+    "W_B_q_bottom": 0.8571428571428571,
+    "W_B_q_gap": -0.04552590266875989,
+    "W_B_q_top": 0.8116169544740972,
+    "blocking_pairs": 0,
+    "blocking_per_100": 0.0,
+    "gini_exposure_A": null,
+    "gini_exposure_B": null,
+    "n_matched": 49
+   },
+   "run_id": "SMOKE/r1-rho0-i000-base/DA_B",
+   "seed": {
+    "root_seed": 101,
+    "spawn_key": [
+     1000,
+     0,
+     0
+    ]
+   },
+   "setting": {
+    "T": 20,
+    "delta": 0.5,
+    "k": 5,
+    "popularity_tie_scope": "global",
+    "setting_id": "base",
+    "theta": 0.5
+   },
+   "valid": true
+  },
+  {
+   "arm": "MAXW",
+   "cell": {
+    "n_a": 50,
+    "n_b": 50,
+    "r": 1.0,
+    "rho": 0.0
+   },
+   "diagnostics": {
+    "cap_short_slates": null,
+    "market_generation_s": 0.001488874999267864,
+    "matches_by_round": null,
+    "n_slates": null,
+    "peak_traced_bytes": 45076,
+    "runtime_s": 0.0004028330004075542,
+    "short_slates": null
+   },
+   "failures": [],
+   "instance": 0,
+   "instance_key": "r1-rho0-i000-base",
+   "metrics": {
+    "M": 0.8395918367346938,
+    "U": 0.0,
+    "U_A": 0.0,
+    "U_B": 0.0,
+    "W": 0.8993877551020409,
+    "W_A": 0.893061224489796,
+    "W_A_q_bottom": 0.8995290423861851,
+    "W_A_q_gap": 1.1102230246251565e-16,
+    "W_A_q_top": 0.8995290423861853,
+    "W_B": 0.9057142857142857,
+    "W_B_q_bottom": 0.8822605965463108,
+    "W_B_q_gap": 0.031397174254317095,
+    "W_B_q_top": 0.9136577708006279,
+    "blocking_pairs": 14,
+    "blocking_per_100": 14.0,
+    "gini_exposure_A": null,
+    "gini_exposure_B": null,
+    "n_matched": 50
+   },
+   "run_id": "SMOKE/r1-rho0-i000-base/MAXW",
+   "seed": {
+    "root_seed": 101,
+    "spawn_key": [
+     1000,
+     0,
+     0
+    ]
+   },
+   "setting": {
+    "T": 20,
+    "delta": 0.5,
+    "k": 5,
+    "popularity_tie_scope": "global",
+    "setting_id": "base",
+    "theta": 0.5
+   },
+   "valid": true
+  },
+  {
+   "arm": "RANDOM",
+   "cell": {
+    "n_a": 50,
+    "n_b": 50,
+    "r": 1.0,
+    "rho": 0.0
+   },
+   "diagnostics": {
+    "cap_short_slates": 0,
+    "market_generation_s": 0.0004640830011339858,
+    "matches_by_round": [
+     6,
+     17,
+     12,
+     12,
+     1,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0
+    ],
+    "n_slates": 338,
+    "peak_traced_bytes": null,
+    "runtime_s": 0.006301082999925711,
+    "short_slates": 66
+   },
+   "failures": [],
+   "instance": 1,
+   "instance_key": "r1-rho0-i001-base",
+   "metrics": {
+    "M": 0.6870748299319728,
+    "U": 0.04,
+    "U_A": 0.04,
+    "U_B": 0.04,
+    "W": 0.7510204081632655,
+    "W_A": 0.7673469387755102,
+    "W_A_q_bottom": 0.7613814756671899,
+    "W_A_q_gap": 0.0031397174254317317,
+    "W_A_q_top": 0.7645211930926217,
+    "W_B": 0.7346938775510203,
+    "W_B_q_bottom": 0.772370486656201,
+    "W_B_q_gap": -0.06593406593406603,
+    "W_B_q_top": 0.706436420722135,
+    "blocking_pairs": 123,
+    "blocking_per_100": 123.0,
+    "gini_exposure_A": 0.2287847730600292,
+    "gini_exposure_B": 0.2329428989751099,
+    "n_matched": 48
+   },
+   "run_id": "SMOKE/r1-rho0-i001-base/RANDOM",
+   "seed": {
+    "root_seed": 101,
+    "spawn_key": [
+     1000,
+     0,
+     1
+    ]
+   },
+   "setting": {
+    "T": 20,
+    "delta": 0.5,
+    "k": 5,
+    "popularity_tie_scope": "global",
+    "setting_id": "base",
+    "theta": 0.5
+   },
+   "valid": true
+  },
+  {
+   "arm": "POPULARITY",
+   "cell": {
+    "n_a": 50,
+    "n_b": 50,
+    "r": 1.0,
+    "rho": 0.0
+   },
+   "diagnostics": {
+    "cap_short_slates": 0,
+    "market_generation_s": 0.0004640830011339858,
+    "matches_by_round": [
+     3,
+     4,
+     6,
+     4,
+     5,
+     6,
+     4,
+     5,
+     4,
+     6,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0
+    ],
+    "n_slates": 660,
+    "peak_traced_bytes": null,
+    "runtime_s": 0.00813854199986963,
+    "short_slates": 60
+   },
+   "failures": [],
+   "instance": 1,
+   "instance_key": "r1-rho0-i001-base",
+   "metrics": {
+    "M": 0.7533651758575771,
+    "U": 0.06,
+    "U_A": 0.06,
+    "U_B": 0.06,
+    "W": 0.776734693877551,
+    "W_A": 0.7836734693877552,
+    "W_A_q_bottom": 0.8744113029827314,
+    "W_A_q_gap": -0.10204081632653039,
+    "W_A_q_top": 0.772370486656201,
+    "W_B": 0.7697959183673468,
+    "W_B_q_bottom": 0.82574568288854,
+    "W_B_q_gap": -0.015698587127158548,
+    "W_B_q_top": 0.8100470957613815,
+    "blocking_pairs": 78,
+    "blocking_per_100": 78.0,
+    "gini_exposure_A": 0.2606666666666666,
+    "gini_exposure_B": 0.2606666666666666,
+    "n_matched": 47
+   },
+   "run_id": "SMOKE/r1-rho0-i001-base/POPULARITY",
+   "seed": {
+    "root_seed": 101,
+    "spawn_key": [
+     1000,
+     0,
+     1
+    ]
+   },
+   "setting": {
+    "T": 20,
+    "delta": 0.5,
+    "k": 5,
+    "popularity_tie_scope": "global",
+    "setting_id": "base",
+    "theta": 0.5
+   },
+   "valid": true
+  },
+  {
+   "arm": "EXPOSURE_BALANCED",
+   "cell": {
+    "n_a": 50,
+    "n_b": 50,
+    "r": 1.0,
+    "rho": 0.0
+   },
+   "diagnostics": {
+    "cap_short_slates": 2,
+    "market_generation_s": 0.0004640830011339858,
+    "matches_by_round": [
+     4,
+     10,
+     17,
+     9,
+     6,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0
+    ],
+    "n_slates": 442,
+    "peak_traced_bytes": null,
+    "runtime_s": 0.007012083000518032,
+    "short_slates": 126
+   },
+   "failures": [],
+   "instance": 1,
+   "instance_key": "r1-rho0-i001-base",
+   "metrics": {
+    "M": 0.7138420585625554,
+    "U": 0.08,
+    "U_A": 0.08,
+    "U_B": 0.08,
+    "W": 0.7208163265306122,
+    "W_A": 0.7126530612244896,
+    "W_A_q_bottom": 0.7299843014128728,
+    "W_A_q_gap": 0.039246467817896424,
+    "W_A_q_top": 0.7692307692307693,
+    "W_B": 0.7289795918367348,
+    "W_B_q_bottom": 0.728414442700157,
+    "W_B_q_gap": 0.06907378335949765,
+    "W_B_q_top": 0.7974882260596546,
+    "blocking_pairs": 130,
+    "blocking_per_100": 130.0,
+    "gini_exposure_A": 0.20448060075093855,
+    "gini_exposure_B": 0.24079601990049748,
+    "n_matched": 46
+   },
+   "run_id": "SMOKE/r1-rho0-i001-base/EXPOSURE_BALANCED",
+   "seed": {
+    "root_seed": 101,
+    "spawn_key": [
+     1000,
+     0,
+     1
+    ]
+   },
+   "setting": {
+    "T": 20,
+    "delta": 0.5,
+    "k": 5,
+    "popularity_tie_scope": "global",
+    "setting_id": "base",
+    "theta": 0.5
+   },
+   "valid": true
+  },
+  {
+   "arm": "DA_A",
+   "cell": {
+    "n_a": 50,
+    "n_b": 50,
+    "r": 1.0,
+    "rho": 0.0
+   },
+   "diagnostics": {
+    "cap_short_slates": null,
+    "market_generation_s": 0.0004640830011339858,
+    "matches_by_round": null,
+    "n_slates": null,
+    "peak_traced_bytes": null,
+    "runtime_s": 0.0012738329987769248,
+    "short_slates": null
+   },
+   "failures": [],
+   "instance": 1,
+   "instance_key": "r1-rho0-i001-base",
+   "metrics": {
+    "M": 0.8346522282382342,
+    "U": 0.02,
+    "U_A": 0.02,
+    "U_B": 0.02,
+    "W": 0.8689795918367347,
+    "W_A": 0.8661224489795919,
+    "W_A_q_bottom": 0.9215070643642073,
+    "W_A_q_gap": -0.04866562009419162,
+    "W_A_q_top": 0.8728414442700156,
+    "W_B": 0.8718367346938776,
+    "W_B_q_bottom": 0.8838304552590267,
+    "W_B_q_gap": 0.03610675039246458,
+    "W_B_q_top": 0.9199372056514913,
+    "blocking_pairs": 0,
+    "blocking_per_100": 0.0,
+    "gini_exposure_A": null,
+    "gini_exposure_B": null,
+    "n_matched": 49
+   },
+   "run_id": "SMOKE/r1-rho0-i001-base/DA_A",
+   "seed": {
+    "root_seed": 101,
+    "spawn_key": [
+     1000,
+     0,
+     1
+    ]
+   },
+   "setting": {
+    "T": 20,
+    "delta": 0.5,
+    "k": 5,
+    "popularity_tie_scope": "global",
+    "setting_id": "base",
+    "theta": 0.5
+   },
+   "valid": true
+  },
+  {
+   "arm": "DA_B",
+   "cell": {
+    "n_a": 50,
+    "n_b": 50,
+    "r": 1.0,
+    "rho": 0.0
+   },
+   "diagnostics": {
+    "cap_short_slates": null,
+    "market_generation_s": 0.0004640830011339858,
+    "matches_by_round": null,
+    "n_slates": null,
+    "peak_traced_bytes": null,
+    "runtime_s": 0.0012252499982423615,
+    "short_slates": null
+   },
+   "failures": [],
+   "instance": 1,
+   "instance_key": "r1-rho0-i001-base",
+   "metrics": {
+    "M": 0.823823406913786,
+    "U": 0.02,
+    "U_A": 0.02,
+    "U_B": 0.02,
+    "W": 0.8642857142857143,
+    "W_A": 0.8534693877551021,
+    "W_A_q_bottom": 0.8979591836734695,
+    "W_A_q_gap": -0.04552590266876,
+    "W_A_q_top": 0.8524332810047095,
+    "W_B": 0.8751020408163265,
+    "W_B_q_bottom": 0.8854003139717427,
+    "W_B_q_gap": 0.04238618524332782,
+    "W_B_q_top": 0.9277864992150705,
+    "blocking_pairs": 0,
+    "blocking_per_100": 0.0,
+    "gini_exposure_A": null,
+    "gini_exposure_B": null,
+    "n_matched": 49
+   },
+   "run_id": "SMOKE/r1-rho0-i001-base/DA_B",
+   "seed": {
+    "root_seed": 101,
+    "spawn_key": [
+     1000,
+     0,
+     1
+    ]
+   },
+   "setting": {
+    "T": 20,
+    "delta": 0.5,
+    "k": 5,
+    "popularity_tie_scope": "global",
+    "setting_id": "base",
+    "theta": 0.5
+   },
+   "valid": true
+  },
+  {
+   "arm": "MAXW",
+   "cell": {
+    "n_a": 50,
+    "n_b": 50,
+    "r": 1.0,
+    "rho": 0.0
+   },
+   "diagnostics": {
+    "cap_short_slates": null,
+    "market_generation_s": 0.0004640830011339858,
+    "matches_by_round": null,
+    "n_slates": null,
+    "peak_traced_bytes": null,
+    "runtime_s": 0.0002683749989955686,
+    "short_slates": null
+   },
+   "failures": [],
+   "instance": 1,
+   "instance_key": "r1-rho0-i001-base",
+   "metrics": {
+    "M": 0.860408163265306,
+    "U": 0.0,
+    "U_A": 0.0,
+    "U_B": 0.0,
+    "W": 0.9044897959183674,
+    "W_A": 0.9053061224489797,
+    "W_A_q_bottom": 0.9387755102040818,
+    "W_A_q_gap": -0.05651491365777084,
+    "W_A_q_top": 0.882260596546311,
+    "W_B": 0.903673469387755,
+    "W_B_q_bottom": 0.891679748822606,
+    "W_B_q_gap": 0.017268445839874413,
+    "W_B_q_top": 0.9089481946624804,
+    "blocking_pairs": 12,
+    "blocking_per_100": 12.0,
+    "gini_exposure_A": null,
+    "gini_exposure_B": null,
+    "n_matched": 50
+   },
+   "run_id": "SMOKE/r1-rho0-i001-base/MAXW",
+   "seed": {
+    "root_seed": 101,
+    "spawn_key": [
+     1000,
+     0,
+     1
+    ]
+   },
+   "setting": {
+    "T": 20,
+    "delta": 0.5,
+    "k": 5,
+    "popularity_tie_scope": "global",
+    "setting_id": "base",
+    "theta": 0.5
+   },
+   "valid": true
+  },
+  {
+   "arm": "RANDOM",
+   "cell": {
+    "n_a": 50,
+    "n_b": 50,
+    "r": 1.0,
+    "rho": 0.0
+   },
+   "diagnostics": {
+    "cap_short_slates": 0,
+    "market_generation_s": 0.000382958000045619,
+    "matches_by_round": [
+     4,
+     12,
+     17,
+     9,
+     4,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0
+    ],
+    "n_slates": 430,
+    "peak_traced_bytes": null,
+    "runtime_s": 0.0052550000000337604,
+    "short_slates": 132
+   },
+   "failures": [],
+   "instance": 2,
+   "instance_key": "r1-rho0-i002-base",
+   "metrics": {
+    "M": 0.6921029281277729,
+    "U": 0.08,
+    "U_A": 0.08,
+    "U_B": 0.08,
+    "W": 0.7246938775510203,
+    "W_A": 0.7155102040816326,
+    "W_A_q_bottom": 0.7755102040816326,
+    "W_A_q_gap": -0.18053375196232335,
+    "W_A_q_top": 0.5949764521193093,
+    "W_B": 0.733877551020408,
+    "W_B_q_bottom": 0.7535321821036107,
+    "W_B_q_gap": -0.17268445839874413,
+    "W_B_q_top": 0.5808477237048666,
+    "blocking_pairs": 123,
+    "blocking_per_100": 123.0,
+    "gini_exposure_A": 0.19314060446780545,
+    "gini_exposure_B": 0.2107853403141362,
+    "n_matched": 46
+   },
+   "run_id": "SMOKE/r1-rho0-i002-base/RANDOM",
+   "seed": {
+    "root_seed": 101,
+    "spawn_key": [
+     1000,
+     0,
+     2
+    ]
+   },
+   "setting": {
+    "T": 20,
+    "delta": 0.5,
+    "k": 5,
+    "popularity_tie_scope": "global",
+    "setting_id": "base",
+    "theta": 0.5
+   },
+   "valid": true
+  },
+  {
+   "arm": "POPULARITY",
+   "cell": {
+    "n_a": 50,
+    "n_b": 50,
+    "r": 1.0,
+    "rho": 0.0
+   },
+   "diagnostics": {
+    "cap_short_slates": 0,
+    "market_generation_s": 0.000382958000045619,
+    "matches_by_round": [
+     3,
+     4,
+     4,
+     5,
+     4,
+     7,
+     6,
+     4,
+     5,
+     6,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0
+    ],
+    "n_slates": 648,
+    "peak_traced_bytes": null,
+    "runtime_s": 0.007728624999799649,
+    "short_slates": 40
+   },
+   "failures": [],
+   "instance": 2,
+   "instance_key": "r1-rho0-i002-base",
+   "metrics": {
+    "M": 0.7155612244897961,
+    "U": 0.04,
+    "U_A": 0.04,
+    "U_B": 0.04,
+    "W": 0.7828571428571429,
+    "W_A": 0.7808163265306122,
+    "W_A_q_bottom": 0.76138147566719,
+    "W_A_q_gap": -0.02197802197802201,
+    "W_A_q_top": 0.739403453689168,
+    "W_B": 0.7848979591836734,
+    "W_B_q_bottom": 0.8320251177394034,
+    "W_B_q_gap": -0.03296703296703296,
+    "W_B_q_top": 0.7990580847723704,
+    "blocking_pairs": 81,
+    "blocking_per_100": 81.0,
+    "gini_exposure_A": 0.26249999999999996,
+    "gini_exposure_B": 0.26249999999999996,
+    "n_matched": 48
+   },
+   "run_id": "SMOKE/r1-rho0-i002-base/POPULARITY",
+   "seed": {
+    "root_seed": 101,
+    "spawn_key": [
+     1000,
+     0,
+     2
+    ]
+   },
+   "setting": {
+    "T": 20,
+    "delta": 0.5,
+    "k": 5,
+    "popularity_tie_scope": "global",
+    "setting_id": "base",
+    "theta": 0.5
+   },
+   "valid": true
+  },
+  {
+   "arm": "EXPOSURE_BALANCED",
+   "cell": {
+    "n_a": 50,
+    "n_b": 50,
+    "r": 1.0,
+    "rho": 0.0
+   },
+   "diagnostics": {
+    "cap_short_slates": 0,
+    "market_generation_s": 0.000382958000045619,
+    "matches_by_round": [
+     7,
+     11,
+     9,
+     9,
+     6,
+     4,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0
+    ],
+    "n_slates": 452,
+    "peak_traced_bytes": null,
+    "runtime_s": 0.007239958000354818,
+    "short_slates": 128
+   },
+   "failures": [],
+   "instance": 2,
+   "instance_key": "r1-rho0-i002-base",
+   "metrics": {
+    "M": 0.6841171251109139,
+    "U": 0.08,
+    "U_A": 0.08,
+    "U_B": 0.08,
+    "W": 0.7279591836734692,
+    "W_A": 0.74,
+    "W_A_q_bottom": 0.6860282574568289,
+    "W_A_q_gap": 0.04552590266875989,
+    "W_A_q_top": 0.7315541601255888,
+    "W_B": 0.7159183673469387,
+    "W_B_q_bottom": 0.7362637362637362,
+    "W_B_q_gap": -0.04395604395604391,
+    "W_B_q_top": 0.6923076923076923,
+    "blocking_pairs": 118,
+    "blocking_per_100": 118.0,
+    "gini_exposure_A": 0.24026666666666663,
+    "gini_exposure_B": 0.2735089820359282,
+    "n_matched": 46
+   },
+   "run_id": "SMOKE/r1-rho0-i002-base/EXPOSURE_BALANCED",
+   "seed": {
+    "root_seed": 101,
+    "spawn_key": [
+     1000,
+     0,
+     2
+    ]
+   },
+   "setting": {
+    "T": 20,
+    "delta": 0.5,
+    "k": 5,
+    "popularity_tie_scope": "global",
+    "setting_id": "base",
+    "theta": 0.5
+   },
+   "valid": true
+  },
+  {
+   "arm": "DA_A",
+   "cell": {
+    "n_a": 50,
+    "n_b": 50,
+    "r": 1.0,
+    "rho": 0.0
+   },
+   "diagnostics": {
+    "cap_short_slates": null,
+    "market_generation_s": 0.000382958000045619,
+    "matches_by_round": null,
+    "n_slates": null,
+    "peak_traced_bytes": null,
+    "runtime_s": 0.0013047920001554303,
+    "short_slates": null
+   },
+   "failures": [],
+   "instance": 2,
+   "instance_key": "r1-rho0-i002-base",
+   "metrics": {
+    "M": 0.8201530612244898,
+    "U": 0.04,
+    "U_A": 0.04,
+    "U_B": 0.04,
+    "W": 0.8432653061224492,
+    "W_A": 0.8416326530612246,
+    "W_A_q_bottom": 0.8665620094191522,
+    "W_A_q_gap": 0.010989010989011061,
+    "W_A_q_top": 0.8775510204081632,
+    "W_B": 0.8448979591836735,
+    "W_B_q_bottom": 0.9105180533751961,
+    "W_B_q_gap": -0.04709576138147564,
+    "W_B_q_top": 0.8634222919937204,
+    "blocking_pairs": 0,
+    "blocking_per_100": 0.0,
+    "gini_exposure_A": null,
+    "gini_exposure_B": null,
+    "n_matched": 48
+   },
+   "run_id": "SMOKE/r1-rho0-i002-base/DA_A",
+   "seed": {
+    "root_seed": 101,
+    "spawn_key": [
+     1000,
+     0,
+     2
+    ]
+   },
+   "setting": {
+    "T": 20,
+    "delta": 0.5,
+    "k": 5,
+    "popularity_tie_scope": "global",
+    "setting_id": "base",
+    "theta": 0.5
+   },
+   "valid": true
+  },
+  {
+   "arm": "DA_B",
+   "cell": {
+    "n_a": 50,
+    "n_b": 50,
+    "r": 1.0,
+    "rho": 0.0
+   },
+   "diagnostics": {
+    "cap_short_slates": null,
+    "market_generation_s": 0.000382958000045619,
+    "matches_by_round": null,
+    "n_slates": null,
+    "peak_traced_bytes": null,
+    "runtime_s": 0.0012203330006741453,
+    "short_slates": null
+   },
+   "failures": [],
+   "instance": 2,
+   "instance_key": "r1-rho0-i002-base",
+   "metrics": {
+    "M": 0.8201530612244898,
+    "U": 0.04,
+    "U_A": 0.04,
+    "U_B": 0.04,
+    "W": 0.8432653061224492,
+    "W_A": 0.8416326530612246,
+    "W_A_q_bottom": 0.8665620094191522,
+    "W_A_q_gap": 0.010989010989011061,
+    "W_A_q_top": 0.8775510204081632,
+    "W_B": 0.8448979591836735,
+    "W_B_q_bottom": 0.9105180533751961,
+    "W_B_q_gap": -0.04709576138147564,
+    "W_B_q_top": 0.8634222919937204,
+    "blocking_pairs": 0,
+    "blocking_per_100": 0.0,
+    "gini_exposure_A": null,
+    "gini_exposure_B": null,
+    "n_matched": 48
+   },
+   "run_id": "SMOKE/r1-rho0-i002-base/DA_B",
+   "seed": {
+    "root_seed": 101,
+    "spawn_key": [
+     1000,
+     0,
+     2
+    ]
+   },
+   "setting": {
+    "T": 20,
+    "delta": 0.5,
+    "k": 5,
+    "popularity_tie_scope": "global",
+    "setting_id": "base",
+    "theta": 0.5
+   },
+   "valid": true
+  },
+  {
+   "arm": "MAXW",
+   "cell": {
+    "n_a": 50,
+    "n_b": 50,
+    "r": 1.0,
+    "rho": 0.0
+   },
+   "diagnostics": {
+    "cap_short_slates": null,
+    "market_generation_s": 0.000382958000045619,
+    "matches_by_round": null,
+    "n_slates": null,
+    "peak_traced_bytes": null,
+    "runtime_s": 0.00027883300026587676,
+    "short_slates": null
+   },
+   "failures": [],
+   "instance": 2,
+   "instance_key": "r1-rho0-i002-base",
+   "metrics": {
+    "M": 0.8334693877551019,
+    "U": 0.0,
+    "U_A": 0.0,
+    "U_B": 0.0,
+    "W": 0.8893877551020408,
+    "W_A": 0.8975510204081633,
+    "W_A_q_bottom": 0.9010989010989012,
+    "W_A_q_gap": -0.01883830455259039,
+    "W_A_q_top": 0.8822605965463108,
+    "W_B": 0.8812244897959184,
+    "W_B_q_bottom": 0.8979591836734695,
+    "W_B_q_gap": 0.0031397174254317317,
+    "W_B_q_top": 0.9010989010989012,
+    "blocking_pairs": 21,
+    "blocking_per_100": 21.0,
+    "gini_exposure_A": null,
+    "gini_exposure_B": null,
+    "n_matched": 50
+   },
+   "run_id": "SMOKE/r1-rho0-i002-base/MAXW",
+   "seed": {
+    "root_seed": 101,
+    "spawn_key": [
+     1000,
+     0,
+     2
+    ]
+   },
+   "setting": {
+    "T": 20,
+    "delta": 0.5,
+    "k": 5,
+    "popularity_tie_scope": "global",
+    "setting_id": "base",
+    "theta": 0.5
+   },
+   "valid": true
+  },
+  {
+   "arm": "RANDOM",
+   "cell": {
+    "n_a": 50,
+    "n_b": 50,
+    "r": 1.0,
+    "rho": 0.0
+   },
+   "diagnostics": {
+    "cap_short_slates": 0,
+    "market_generation_s": 0.00041933300053642597,
+    "matches_by_round": [
+     4,
+     11,
+     20,
+     9,
+     3,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0
+    ],
+    "n_slates": 394,
+    "peak_traced_bytes": null,
+    "runtime_s": 0.004802374998689629,
+    "short_slates": 102
+   },
+   "failures": [],
+   "instance": 3,
+   "instance_key": "r1-rho0-i003-base",
+   "metrics": {
+    "M": 0.692574902301346,
+    "U": 0.06,
+    "U_A": 0.06,
+    "U_B": 0.06,
+    "W": 0.7385714285714284,
+    "W_A": 0.7620408163265304,
+    "W_A_q_bottom": 0.6985871271585556,
+    "W_A_q_gap": 0.04081632653061229,
+    "W_A_q_top": 0.7394034536891679,
+    "W_B": 0.7151020408163266,
+    "W_B_q_bottom": 0.769230769230769,
+    "W_B_q_gap": -0.15384615384615363,
+    "W_B_q_top": 0.6153846153846154,
+    "blocking_pairs": 122,
+    "blocking_per_100": 122.0,
+    "gini_exposure_A": 0.1901211305518169,
+    "gini_exposure_B": 0.1950270270270269,
+    "n_matched": 47
+   },
+   "run_id": "SMOKE/r1-rho0-i003-base/RANDOM",
+   "seed": {
+    "root_seed": 101,
+    "spawn_key": [
+     1000,
+     0,
+     3
+    ]
+   },
+   "setting": {
+    "T": 20,
+    "delta": 0.5,
+    "k": 5,
+    "popularity_tie_scope": "global",
+    "setting_id": "base",
+    "theta": 0.5
+   },
+   "valid": true
+  },
+  {
+   "arm": "POPULARITY",
+   "cell": {
+    "n_a": 50,
+    "n_b": 50,
+    "r": 1.0,
+    "rho": 0.0
+   },
+   "diagnostics": {
+    "cap_short_slates": 0,
+    "market_generation_s": 0.00041933300053642597,
+    "matches_by_round": [
+     4,
+     4,
+     6,
+     5,
+     5,
+     4,
+     6,
+     5,
+     4,
+     5,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0
+    ],
+    "n_slates": 614,
+    "peak_traced_bytes": null,
+    "runtime_s": 0.006930624998858548,
+    "short_slates": 40
+   },
+   "failures": [],
+   "instance": 3,
+   "instance_key": "r1-rho0-i003-base",
+   "metrics": {
+    "M": 0.7325680272108843,
+    "U": 0.04,
+    "U_A": 0.04,
+    "U_B": 0.04,
+    "W": 0.7789795918367346,
+    "W_A": 0.7628571428571429,
+    "W_A_q_bottom": 0.7880690737833596,
+    "W_A_q_gap": -0.09262166405023553,
+    "W_A_q_top": 0.695447409733124,
+    "W_B": 0.7951020408163265,
+    "W_B_q_bottom": 0.7237048665620094,
+    "W_B_q_gap": 0.020408163265306145,
+    "W_B_q_top": 0.7441130298273155,
+    "blocking_pairs": 94,
+    "blocking_per_100": 94.0,
+    "gini_exposure_A": 0.28188153310104536,
+    "gini_exposure_B": 0.28188153310104536,
+    "n_matched": 48
+   },
+   "run_id": "SMOKE/r1-rho0-i003-base/POPULARITY",
+   "seed": {
+    "root_seed": 101,
+    "spawn_key": [
+     1000,
+     0,
+     3
+    ]
+   },
+   "setting": {
+    "T": 20,
+    "delta": 0.5,
+    "k": 5,
+    "popularity_tie_scope": "global",
+    "setting_id": "base",
+    "theta": 0.5
+   },
+   "valid": true
+  },
+  {
+   "arm": "EXPOSURE_BALANCED",
+   "cell": {
+    "n_a": 50,
+    "n_b": 50,
+    "r": 1.0,
+    "rho": 0.0
+   },
+   "diagnostics": {
+    "cap_short_slates": 1,
+    "market_generation_s": 0.00041933300053642597,
+    "matches_by_round": [
+     3,
+     11,
+     11,
+     12,
+     7,
+     4,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0
+    ],
+    "n_slates": 410,
+    "peak_traced_bytes": null,
+    "runtime_s": 0.005971624999801861,
+    "short_slates": 69
+   },
+   "failures": [],
+   "instance": 3,
+   "instance_key": "r1-rho0-i003-base",
+   "metrics": {
+    "M": 0.7023809523809524,
+    "U": 0.04,
+    "U_A": 0.04,
+    "U_B": 0.04,
+    "W": 0.7585714285714286,
+    "W_A": 0.7718367346938774,
+    "W_A_q_bottom": 0.783359497645212,
+    "W_A_q_gap": -0.020408163265306034,
+    "W_A_q_top": 0.7629513343799059,
+    "W_B": 0.7453061224489796,
+    "W_B_q_bottom": 0.6467817896389325,
+    "W_B_q_gap": 0.15384615384615374,
+    "W_B_q_top": 0.8006279434850863,
+    "blocking_pairs": 119,
+    "blocking_per_100": 119.0,
+    "gini_exposure_A": 0.2206928406466513,
+    "gini_exposure_B": 0.22722222222222221,
+    "n_matched": 48
+   },
+   "run_id": "SMOKE/r1-rho0-i003-base/EXPOSURE_BALANCED",
+   "seed": {
+    "root_seed": 101,
+    "spawn_key": [
+     1000,
+     0,
+     3
+    ]
+   },
+   "setting": {
+    "T": 20,
+    "delta": 0.5,
+    "k": 5,
+    "popularity_tie_scope": "global",
+    "setting_id": "base",
+    "theta": 0.5
+   },
+   "valid": true
+  },
+  {
+   "arm": "DA_A",
+   "cell": {
+    "n_a": 50,
+    "n_b": 50,
+    "r": 1.0,
+    "rho": 0.0
+   },
+   "diagnostics": {
+    "cap_short_slates": null,
+    "market_generation_s": 0.00041933300053642597,
+    "matches_by_round": null,
+    "n_slates": null,
+    "peak_traced_bytes": null,
+    "runtime_s": 0.0014365000006364426,
+    "short_slates": null
+   },
+   "failures": [],
+   "instance": 3,
+   "instance_key": "r1-rho0-i003-base",
+   "metrics": {
+    "M": 0.8225739275301958,
+    "U": 0.02,
+    "U_A": 0.02,
+    "U_B": 0.02,
+    "W": 0.8612244897959184,
+    "W_A": 0.8379591836734693,
+    "W_A_q_bottom": 0.8571428571428572,
+    "W_A_q_gap": -0.023547880690737877,
+    "W_A_q_top": 0.8335949764521193,
+    "W_B": 0.8844897959183673,
+    "W_B_q_bottom": 0.8979591836734694,
+    "W_B_q_gap": 0.018838304552590168,
+    "W_B_q_top": 0.9167974882260596,
+    "blocking_pairs": 0,
+    "blocking_per_100": 0.0,
+    "gini_exposure_A": null,
+    "gini_exposure_B": null,
+    "n_matched": 49
+   },
+   "run_id": "SMOKE/r1-rho0-i003-base/DA_A",
+   "seed": {
+    "root_seed": 101,
+    "spawn_key": [
+     1000,
+     0,
+     3
+    ]
+   },
+   "setting": {
+    "T": 20,
+    "delta": 0.5,
+    "k": 5,
+    "popularity_tie_scope": "global",
+    "setting_id": "base",
+    "theta": 0.5
+   },
+   "valid": true
+  },
+  {
+   "arm": "DA_B",
+   "cell": {
+    "n_a": 50,
+    "n_b": 50,
+    "r": 1.0,
+    "rho": 0.0
+   },
+   "diagnostics": {
+    "cap_short_slates": null,
+    "market_generation_s": 0.00041933300053642597,
+    "matches_by_round": null,
+    "n_slates": null,
+    "peak_traced_bytes": null,
+    "runtime_s": 0.0013851250005245674,
+    "short_slates": null
+   },
+   "failures": [],
+   "instance": 3,
+   "instance_key": "r1-rho0-i003-base",
+   "metrics": {
+    "M": 0.8225739275301958,
+    "U": 0.02,
+    "U_A": 0.02,
+    "U_B": 0.02,
+    "W": 0.8612244897959184,
+    "W_A": 0.8379591836734693,
+    "W_A_q_bottom": 0.8571428571428572,
+    "W_A_q_gap": -0.023547880690737877,
+    "W_A_q_top": 0.8335949764521193,
+    "W_B": 0.8844897959183673,
+    "W_B_q_bottom": 0.8979591836734694,
+    "W_B_q_gap": 0.018838304552590168,
+    "W_B_q_top": 0.9167974882260596,
+    "blocking_pairs": 0,
+    "blocking_per_100": 0.0,
+    "gini_exposure_A": null,
+    "gini_exposure_B": null,
+    "n_matched": 49
+   },
+   "run_id": "SMOKE/r1-rho0-i003-base/DA_B",
+   "seed": {
+    "root_seed": 101,
+    "spawn_key": [
+     1000,
+     0,
+     3
+    ]
+   },
+   "setting": {
+    "T": 20,
+    "delta": 0.5,
+    "k": 5,
+    "popularity_tie_scope": "global",
+    "setting_id": "base",
+    "theta": 0.5
+   },
+   "valid": true
+  },
+  {
+   "arm": "MAXW",
+   "cell": {
+    "n_a": 50,
+    "n_b": 50,
+    "r": 1.0,
+    "rho": 0.0
+   },
+   "diagnostics": {
+    "cap_short_slates": null,
+    "market_generation_s": 0.00041933300053642597,
+    "matches_by_round": null,
+    "n_slates": null,
+    "peak_traced_bytes": null,
+    "runtime_s": 0.0002981249999720603,
+    "short_slates": null
+   },
+   "failures": [],
+   "instance": 3,
+   "instance_key": "r1-rho0-i003-base",
+   "metrics": {
+    "M": 0.8387755102040818,
+    "U": 0.0,
+    "U_A": 0.0,
+    "U_B": 0.0,
+    "W": 0.9014285714285714,
+    "W_A": 0.8869387755102041,
+    "W_A_q_bottom": 0.8728414442700158,
+    "W_A_q_gap": -0.020408163265306256,
+    "W_A_q_top": 0.8524332810047095,
+    "W_B": 0.9159183673469387,
+    "W_B_q_bottom": 0.9058084772370486,
+    "W_B_q_gap": 0.014128728414442682,
+    "W_B_q_top": 0.9199372056514913,
+    "blocking_pairs": 11,
+    "blocking_per_100": 11.0,
+    "gini_exposure_A": null,
+    "gini_exposure_B": null,
+    "n_matched": 50
+   },
+   "run_id": "SMOKE/r1-rho0-i003-base/MAXW",
+   "seed": {
+    "root_seed": 101,
+    "spawn_key": [
+     1000,
+     0,
+     3
+    ]
+   },
+   "setting": {
+    "T": 20,
+    "delta": 0.5,
+    "k": 5,
+    "popularity_tie_scope": "global",
+    "setting_id": "base",
+    "theta": 0.5
+   },
+   "valid": true
+  },
+  {
+   "arm": "RANDOM",
+   "cell": {
+    "n_a": 50,
+    "n_b": 50,
+    "r": 1.0,
+    "rho": 0.0
+   },
+   "diagnostics": {
+    "cap_short_slates": 0,
+    "market_generation_s": 0.0004635839995899005,
+    "matches_by_round": [
+     6,
+     12,
+     15,
+     9,
+     5,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0
+    ],
+    "n_slates": 392,
+    "peak_traced_bytes": null,
+    "runtime_s": 0.004979499999535619,
+    "short_slates": 106
+   },
+   "failures": [],
+   "instance": 4,
+   "instance_key": "r1-rho0-i004-base",
+   "metrics": {
+    "M": 0.6873643074250976,
+    "U": 0.06,
+    "U_A": 0.06,
+    "U_B": 0.06,
+    "W": 0.7351020408163265,
+    "W_A": 0.7220408163265306,
+    "W_A_q_bottom": 0.7629513343799059,
+    "W_A_q_gap": -0.09262166405023553,
+    "W_A_q_top": 0.6703296703296704,
+    "W_B": 0.7481632653061224,
+    "W_B_q_bottom": 0.772370486656201,
+    "W_B_q_gap": -0.012558869701726816,
+    "W_B_q_top": 0.7598116169544742,
+    "blocking_pairs": 131,
+    "blocking_per_100": 131.0,
+    "gini_exposure_A": 0.24027173913043476,
+    "gini_exposure_B": 0.2318157181571816,
+    "n_matched": 47
+   },
+   "run_id": "SMOKE/r1-rho0-i004-base/RANDOM",
+   "seed": {
+    "root_seed": 101,
+    "spawn_key": [
+     1000,
+     0,
+     4
+    ]
+   },
+   "setting": {
+    "T": 20,
+    "delta": 0.5,
+    "k": 5,
+    "popularity_tie_scope": "global",
+    "setting_id": "base",
+    "theta": 0.5
+   },
+   "valid": true
+  },
+  {
+   "arm": "POPULARITY",
+   "cell": {
+    "n_a": 50,
+    "n_b": 50,
+    "r": 1.0,
+    "rho": 0.0
+   },
+   "diagnostics": {
+    "cap_short_slates": 0,
+    "market_generation_s": 0.0004635839995899005,
+    "matches_by_round": [
+     4,
+     4,
+     4,
+     6,
+     3,
+     6,
+     5,
+     4,
+     7,
+     4,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0
+    ],
+    "n_slates": 658,
+    "peak_traced_bytes": null,
+    "runtime_s": 0.00737716699950397,
+    "short_slates": 60
+   },
+   "failures": [],
+   "instance": 4,
+   "instance_key": "r1-rho0-i004-base",
+   "metrics": {
+    "M": 0.7372991749891444,
+    "U": 0.06,
+    "U_A": 0.06,
+    "U_B": 0.06,
+    "W": 0.7612244897959184,
+    "W_A": 0.7751020408163265,
+    "W_A_q_bottom": 0.7959183673469389,
+    "W_A_q_gap": 0.01412872841444257,
+    "W_A_q_top": 0.8100470957613815,
+    "W_B": 0.7473469387755101,
+    "W_B_q_bottom": 0.8288854003139717,
+    "W_B_q_gap": -0.1381475667189952,
+    "W_B_q_top": 0.6907378335949765,
+    "blocking_pairs": 97,
+    "blocking_per_100": 97.0,
+    "gini_exposure_A": 0.26053511705685617,
+    "gini_exposure_B": 0.26053511705685617,
+    "n_matched": 47
+   },
+   "run_id": "SMOKE/r1-rho0-i004-base/POPULARITY",
+   "seed": {
+    "root_seed": 101,
+    "spawn_key": [
+     1000,
+     0,
+     4
+    ]
+   },
+   "setting": {
+    "T": 20,
+    "delta": 0.5,
+    "k": 5,
+    "popularity_tie_scope": "global",
+    "setting_id": "base",
+    "theta": 0.5
+   },
+   "valid": true
+  },
+  {
+   "arm": "EXPOSURE_BALANCED",
+   "cell": {
+    "n_a": 50,
+    "n_b": 50,
+    "r": 1.0,
+    "rho": 0.0
+   },
+   "diagnostics": {
+    "cap_short_slates": 0,
+    "market_generation_s": 0.0004635839995899005,
+    "matches_by_round": [
+     4,
+     11,
+     15,
+     11,
+     6,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0
+    ],
+    "n_slates": 410,
+    "peak_traced_bytes": null,
+    "runtime_s": 0.0052848329996777466,
+    "short_slates": 92
+   },
+   "failures": [],
+   "instance": 4,
+   "instance_key": "r1-rho0-i004-base",
+   "metrics": {
+    "M": 0.7116804168475902,
+    "U": 0.06,
+    "U_A": 0.06,
+    "U_B": 0.06,
+    "W": 0.7395918367346939,
+    "W_A": 0.7432653061224491,
+    "W_A_q_bottom": 0.8194662480376765,
+    "W_A_q_gap": -0.1428571428571428,
+    "W_A_q_top": 0.6766091051805337,
+    "W_B": 0.7359183673469387,
+    "W_B_q_bottom": 0.7912087912087912,
+    "W_B_q_gap": -0.12401883830455263,
+    "W_B_q_top": 0.6671899529042385,
+    "blocking_pairs": 126,
+    "blocking_per_100": 126.0,
+    "gini_exposure_A": 0.2656429463171035,
+    "gini_exposure_B": 0.21769423558897238,
+    "n_matched": 47
+   },
+   "run_id": "SMOKE/r1-rho0-i004-base/EXPOSURE_BALANCED",
+   "seed": {
+    "root_seed": 101,
+    "spawn_key": [
+     1000,
+     0,
+     4
+    ]
+   },
+   "setting": {
+    "T": 20,
+    "delta": 0.5,
+    "k": 5,
+    "popularity_tie_scope": "global",
+    "setting_id": "base",
+    "theta": 0.5
+   },
+   "valid": true
+  },
+  {
+   "arm": "DA_A",
+   "cell": {
+    "n_a": 50,
+    "n_b": 50,
+    "r": 1.0,
+    "rho": 0.0
+   },
+   "diagnostics": {
+    "cap_short_slates": null,
+    "market_generation_s": 0.0004635839995899005,
+    "matches_by_round": null,
+    "n_slates": null,
+    "peak_traced_bytes": null,
+    "runtime_s": 0.0012666660004470032,
+    "short_slates": null
+   },
+   "failures": [],
+   "instance": 4,
+   "instance_key": "r1-rho0-i004-base",
+   "metrics": {
+    "M": 0.831320283215327,
+    "U": 0.02,
+    "U_A": 0.02,
+    "U_B": 0.02,
+    "W": 0.8671428571428571,
+    "W_A": 0.8771428571428572,
+    "W_A_q_bottom": 0.8320251177394034,
+    "W_A_q_gap": 0.058084772370486704,
+    "W_A_q_top": 0.8901098901098901,
+    "W_B": 0.8571428571428571,
+    "W_B_q_bottom": 0.8759811616954474,
+    "W_B_q_gap": -0.08948194662480369,
+    "W_B_q_top": 0.7864992150706437,
+    "blocking_pairs": 0,
+    "blocking_per_100": 0.0,
+    "gini_exposure_A": null,
+    "gini_exposure_B": null,
+    "n_matched": 49
+   },
+   "run_id": "SMOKE/r1-rho0-i004-base/DA_A",
+   "seed": {
+    "root_seed": 101,
+    "spawn_key": [
+     1000,
+     0,
+     4
+    ]
+   },
+   "setting": {
+    "T": 20,
+    "delta": 0.5,
+    "k": 5,
+    "popularity_tie_scope": "global",
+    "setting_id": "base",
+    "theta": 0.5
+   },
+   "valid": true
+  },
+  {
+   "arm": "DA_B",
+   "cell": {
+    "n_a": 50,
+    "n_b": 50,
+    "r": 1.0,
+    "rho": 0.0
+   },
+   "diagnostics": {
+    "cap_short_slates": null,
+    "market_generation_s": 0.0004635839995899005,
+    "matches_by_round": null,
+    "n_slates": null,
+    "peak_traced_bytes": null,
+    "runtime_s": 0.0012227500010340009,
+    "short_slates": null
+   },
+   "failures": [],
+   "instance": 4,
+   "instance_key": "r1-rho0-i004-base",
+   "metrics": {
+    "M": 0.8321532694710537,
+    "U": 0.02,
+    "U_A": 0.02,
+    "U_B": 0.02,
+    "W": 0.8663265306122448,
+    "W_A": 0.8522448979591837,
+    "W_A_q_bottom": 0.7990580847723705,
+    "W_A_q_gap": 0.07849293563579285,
+    "W_A_q_top": 0.8775510204081634,
+    "W_B": 0.880408163265306,
+    "W_B_q_bottom": 0.9167974882260597,
+    "W_B_q_gap": -0.10204081632653061,
+    "W_B_q_top": 0.814756671899529,
+    "blocking_pairs": 0,
+    "blocking_per_100": 0.0,
+    "gini_exposure_A": null,
+    "gini_exposure_B": null,
+    "n_matched": 49
+   },
+   "run_id": "SMOKE/r1-rho0-i004-base/DA_B",
+   "seed": {
+    "root_seed": 101,
+    "spawn_key": [
+     1000,
+     0,
+     4
+    ]
+   },
+   "setting": {
+    "T": 20,
+    "delta": 0.5,
+    "k": 5,
+    "popularity_tie_scope": "global",
+    "setting_id": "base",
+    "theta": 0.5
+   },
+   "valid": true
+  },
+  {
+   "arm": "MAXW",
+   "cell": {
+    "n_a": 50,
+    "n_b": 50,
+    "r": 1.0,
+    "rho": 0.0
+   },
+   "diagnostics": {
+    "cap_short_slates": null,
+    "market_generation_s": 0.0004635839995899005,
+    "matches_by_round": null,
+    "n_slates": null,
+    "peak_traced_bytes": null,
+    "runtime_s": 0.000261417000729125,
+    "short_slates": null
+   },
+   "failures": [],
+   "instance": 4,
+   "instance_key": "r1-rho0-i004-base",
+   "metrics": {
+    "M": 0.8428571428571427,
+    "U": 0.0,
+    "U_A": 0.0,
+    "U_B": 0.0,
+    "W": 0.8963265306122449,
+    "W_A": 0.8853061224489797,
+    "W_A_q_bottom": 0.9183673469387755,
+    "W_A_q_gap": -0.06750392464678179,
+    "W_A_q_top": 0.8508634222919937,
+    "W_B": 0.9073469387755102,
+    "W_B_q_bottom": 0.9199372056514913,
+    "W_B_q_gap": -0.020408163265306034,
+    "W_B_q_top": 0.8995290423861853,
+    "blocking_pairs": 9,
+    "blocking_per_100": 9.0,
+    "gini_exposure_A": null,
+    "gini_exposure_B": null,
+    "n_matched": 50
+   },
+   "run_id": "SMOKE/r1-rho0-i004-base/MAXW",
+   "seed": {
+    "root_seed": 101,
+    "spawn_key": [
+     1000,
+     0,
+     4
+    ]
+   },
+   "setting": {
+    "T": 20,
+    "delta": 0.5,
+    "k": 5,
+    "popularity_tie_scope": "global",
+    "setting_id": "base",
+    "theta": 0.5
+   },
+   "valid": true
+  },
+  {
+   "arm": "RANDOM",
+   "cell": {
+    "n_a": 50,
+    "n_b": 50,
+    "r": 1.0,
+    "rho": 0.9
+   },
+   "diagnostics": {
+    "cap_short_slates": 0,
+    "market_generation_s": 0.00037258399970596656,
+    "matches_by_round": [
+     2,
+     13,
+     6,
+     6,
+     4,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0
+    ],
+    "n_slates": 940,
+    "peak_traced_bytes": 146723,
+    "runtime_s": 0.009154125000350177,
+    "short_slates": 544
+   },
+   "failures": [],
+   "instance": 0,
+   "instance_key": "r1-rho0.9-i000-base",
+   "metrics": {
+    "M": 0.6471362738643844,
+    "U": 0.38,
+    "U_A": 0.38,
+    "U_B": 0.38,
+    "W": 0.45244897959183683,
+    "W_A": 0.44244897959183677,
+    "W_A_q_bottom": 0.0,
+    "W_A_q_gap": 0.7205651491365775,
+    "W_A_q_top": 0.7205651491365775,
+    "W_B": 0.46244897959183673,
+    "W_B_q_bottom": 0.06279434850863422,
+    "W_B_q_gap": 0.6687598116169544,
+    "W_B_q_top": 0.7315541601255886,
+    "blocking_pairs": 192,
+    "blocking_per_100": 192.0,
+    "gini_exposure_A": 0.2639802955665025,
+    "gini_exposure_B": 0.25087040618955503,
+    "n_matched": 31
+   },
+   "run_id": "SMOKE/r1-rho0.9-i000-base/RANDOM",
+   "seed": {
+    "root_seed": 101,
+    "spawn_key": [
+     1000,
+     900,
+     0
+    ]
+   },
+   "setting": {
+    "T": 20,
+    "delta": 0.5,
+    "k": 5,
+    "popularity_tie_scope": "global",
+    "setting_id": "base",
+    "theta": 0.5
+   },
+   "valid": true
+  },
+  {
+   "arm": "POPULARITY",
+   "cell": {
+    "n_a": 50,
+    "n_b": 50,
+    "r": 1.0,
+    "rho": 0.9
+   },
+   "diagnostics": {
+    "cap_short_slates": 0,
+    "market_generation_s": 0.00037258399970596656,
+    "matches_by_round": [
+     2,
+     5,
+     2,
+     2,
+     3,
+     4,
+     3,
+     4,
+     3,
+     2,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0
+    ],
+    "n_slates": 1130,
+    "peak_traced_bytes": 146482,
+    "runtime_s": 0.00869799999964016,
+    "short_slates": 400
+   },
+   "failures": [],
+   "instance": 0,
+   "instance_key": "r1-rho0.9-i000-base",
+   "metrics": {
+    "M": 0.6870748299319728,
+    "U": 0.4,
+    "U_A": 0.4,
+    "U_B": 0.4,
+    "W": 0.4559183673469388,
+    "W_A": 0.45673469387755106,
+    "W_A_q_bottom": 0.0,
+    "W_A_q_gap": 0.7974882260596545,
+    "W_A_q_top": 0.7974882260596545,
+    "W_B": 0.4551020408163265,
+    "W_B_q_bottom": 0.06279434850863422,
+    "W_B_q_gap": 0.7315541601255887,
+    "W_B_q_top": 0.7943485086342229,
+    "blocking_pairs": 118,
+    "blocking_per_100": 118.0,
+    "gini_exposure_A": 0.14054794520547942,
+    "gini_exposure_B": 0.14054794520547942,
+    "n_matched": 30
+   },
+   "run_id": "SMOKE/r1-rho0.9-i000-base/POPULARITY",
+   "seed": {
+    "root_seed": 101,
+    "spawn_key": [
+     1000,
+     900,
+     0
+    ]
+   },
+   "setting": {
+    "T": 20,
+    "delta": 0.5,
+    "k": 5,
+    "popularity_tie_scope": "global",
+    "setting_id": "base",
+    "theta": 0.5
+   },
+   "valid": true
+  },
+  {
+   "arm": "EXPOSURE_BALANCED",
+   "cell": {
+    "n_a": 50,
+    "n_b": 50,
+    "r": 1.0,
+    "rho": 0.9
+   },
+   "diagnostics": {
+    "cap_short_slates": 7,
+    "market_generation_s": 0.00037258399970596656,
+    "matches_by_round": [
+     6,
+     10,
+     5,
+     6,
+     1,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0
+    ],
+    "n_slates": 1020,
+    "peak_traced_bytes": 146528,
+    "runtime_s": 0.0077850830002716975,
+    "short_slates": 609
+   },
+   "failures": [],
+   "instance": 0,
+   "instance_key": "r1-rho0.9-i000-base",
+   "metrics": {
+    "M": 0.7048104956268223,
+    "U": 0.44,
+    "U_A": 0.44,
+    "U_B": 0.44,
+    "W": 0.4255102040816327,
+    "W_A": 0.43673469387755104,
+    "W_A_q_bottom": 0.0,
+    "W_A_q_gap": 0.8445839874411303,
+    "W_A_q_top": 0.8445839874411303,
+    "W_B": 0.41428571428571426,
+    "W_B_q_bottom": 0.0,
+    "W_B_q_gap": 0.7896389324960753,
+    "W_B_q_top": 0.7896389324960753,
+    "blocking_pairs": 91,
+    "blocking_per_100": 91.0,
+    "gini_exposure_A": 0.20578358208955216,
+    "gini_exposure_B": 0.22109589041095878,
+    "n_matched": 28
+   },
+   "run_id": "SMOKE/r1-rho0.9-i000-base/EXPOSURE_BALANCED",
+   "seed": {
+    "root_seed": 101,
+    "spawn_key": [
+     1000,
+     900,
+     0
+    ]
+   },
+   "setting": {
+    "T": 20,
+    "delta": 0.5,
+    "k": 5,
+    "popularity_tie_scope": "global",
+    "setting_id": "base",
+    "theta": 0.5
+   },
+   "valid": true
+  },
+  {
+   "arm": "DA_A",
+   "cell": {
+    "n_a": 50,
+    "n_b": 50,
+    "r": 1.0,
+    "rho": 0.9
+   },
+   "diagnostics": {
+    "cap_short_slates": null,
+    "market_generation_s": 0.00037258399970596656,
+    "matches_by_round": null,
+    "n_slates": null,
+    "peak_traced_bytes": 86272,
+    "runtime_s": 0.0021750420000898885,
+    "short_slates": null
+   },
+   "failures": [],
+   "instance": 0,
+   "instance_key": "r1-rho0.9-i000-base",
+   "metrics": {
+    "M": 0.7693877551020408,
+    "U": 0.4,
+    "U_A": 0.4,
+    "U_B": 0.4,
+    "W": 0.4814285714285714,
+    "W_A": 0.4885714285714286,
+    "W_A_q_bottom": 0.0,
+    "W_A_q_gap": 0.9403453689167975,
+    "W_A_q_top": 0.9403453689167975,
+    "W_B": 0.4742857142857143,
+    "W_B_q_bottom": 0.0,
+    "W_B_q_gap": 0.9105180533751963,
+    "W_B_q_top": 0.9105180533751963,
+    "blocking_pairs": 0,
+    "blocking_per_100": 0.0,
+    "gini_exposure_A": null,
+    "gini_exposure_B": null,
+    "n_matched": 30
+   },
+   "run_id": "SMOKE/r1-rho0.9-i000-base/DA_A",
+   "seed": {
+    "root_seed": 101,
+    "spawn_key": [
+     1000,
+     900,
+     0
+    ]
+   },
+   "setting": {
+    "T": 20,
+    "delta": 0.5,
+    "k": 5,
+    "popularity_tie_scope": "global",
+    "setting_id": "base",
+    "theta": 0.5
+   },
+   "valid": true
+  },
+  {
+   "arm": "DA_B",
+   "cell": {
+    "n_a": 50,
+    "n_b": 50,
+    "r": 1.0,
+    "rho": 0.9
+   },
+   "diagnostics": {
+    "cap_short_slates": null,
+    "market_generation_s": 0.00037258399970596656,
+    "matches_by_round": null,
+    "n_slates": null,
+    "peak_traced_bytes": 86272,
+    "runtime_s": 0.0015297919999284204,
+    "short_slates": null
+   },
+   "failures": [],
+   "instance": 0,
+   "instance_key": "r1-rho0.9-i000-base",
+   "metrics": {
+    "M": 0.7693877551020408,
+    "U": 0.4,
+    "U_A": 0.4,
+    "U_B": 0.4,
+    "W": 0.4814285714285714,
+    "W_A": 0.4885714285714286,
+    "W_A_q_bottom": 0.0,
+    "W_A_q_gap": 0.9403453689167975,
+    "W_A_q_top": 0.9403453689167975,
+    "W_B": 0.4742857142857143,
+    "W_B_q_bottom": 0.0,
+    "W_B_q_gap": 0.9105180533751963,
+    "W_B_q_top": 0.9105180533751963,
+    "blocking_pairs": 0,
+    "blocking_per_100": 0.0,
+    "gini_exposure_A": null,
+    "gini_exposure_B": null,
+    "n_matched": 30
+   },
+   "run_id": "SMOKE/r1-rho0.9-i000-base/DA_B",
+   "seed": {
+    "root_seed": 101,
+    "spawn_key": [
+     1000,
+     900,
+     0
+    ]
+   },
+   "setting": {
+    "T": 20,
+    "delta": 0.5,
+    "k": 5,
+    "popularity_tie_scope": "global",
+    "setting_id": "base",
+    "theta": 0.5
+   },
+   "valid": true
+  },
+  {
+   "arm": "MAXW",
+   "cell": {
+    "n_a": 50,
+    "n_b": 50,
+    "r": 1.0,
+    "rho": 0.9
+   },
+   "diagnostics": {
+    "cap_short_slates": null,
+    "market_generation_s": 0.00037258399970596656,
+    "matches_by_round": null,
+    "n_slates": null,
+    "peak_traced_bytes": 45076,
+    "runtime_s": 0.00041362500087416265,
+    "short_slates": null
+   },
+   "failures": [],
+   "instance": 0,
+   "instance_key": "r1-rho0.9-i000-base",
+   "metrics": {
+    "M": 0.7346938775510203,
+    "U": 0.34,
+    "U_A": 0.34,
+    "U_B": 0.34,
+    "W": 0.5257142857142857,
+    "W_A": 0.5351020408163265,
+    "W_A_q_bottom": 0.0,
+    "W_A_q_gap": 0.8508634222919936,
+    "W_A_q_top": 0.8508634222919936,
+    "W_B": 0.5163265306122449,
+    "W_B_q_bottom": 0.0,
+    "W_B_q_gap": 0.7943485086342229,
+    "W_B_q_top": 0.7943485086342229,
+    "blocking_pairs": 75,
+    "blocking_per_100": 75.0,
+    "gini_exposure_A": null,
+    "gini_exposure_B": null,
+    "n_matched": 33
+   },
+   "run_id": "SMOKE/r1-rho0.9-i000-base/MAXW",
+   "seed": {
+    "root_seed": 101,
+    "spawn_key": [
+     1000,
+     900,
+     0
+    ]
+   },
+   "setting": {
+    "T": 20,
+    "delta": 0.5,
+    "k": 5,
+    "popularity_tie_scope": "global",
+    "setting_id": "base",
+    "theta": 0.5
+   },
+   "valid": true
+  },
+  {
+   "arm": "RANDOM",
+   "cell": {
+    "n_a": 50,
+    "n_b": 50,
+    "r": 1.0,
+    "rho": 0.9
+   },
+   "diagnostics": {
+    "cap_short_slates": 0,
+    "market_generation_s": 0.0005658750014845282,
+    "matches_by_round": [
+     4,
+     11,
+     6,
+     4,
+     3,
+     1,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0
+    ],
+    "n_slates": 1002,
+    "peak_traced_bytes": null,
+    "runtime_s": 0.007274791998497676,
+    "short_slates": 597
+   },
+   "failures": [],
+   "instance": 1,
+   "instance_key": "r1-rho0.9-i001-base",
+   "metrics": {
+    "M": 0.6671358198451794,
+    "U": 0.42,
+    "U_A": 0.42,
+    "U_B": 0.42,
+    "W": 0.43183673469387757,
+    "W_A": 0.44,
+    "W_A_q_bottom": 0.0,
+    "W_A_q_gap": 0.7598116169544741,
+    "W_A_q_top": 0.7598116169544741,
+    "W_B": 0.4236734693877551,
+    "W_B_q_bottom": 0.0,
+    "W_B_q_gap": 0.7127158555729985,
+    "W_B_q_top": 0.7127158555729985,
+    "blocking_pairs": 165,
+    "blocking_per_100": 165.0,
+    "gini_exposure_A": 0.2611854684512429,
+    "gini_exposure_B": 0.258186968838527,
+    "n_matched": 29
+   },
+   "run_id": "SMOKE/r1-rho0.9-i001-base/RANDOM",
+   "seed": {
+    "root_seed": 101,
+    "spawn_key": [
+     1000,
+     900,
+     1
+    ]
+   },
+   "setting": {
+    "T": 20,
+    "delta": 0.5,
+    "k": 5,
+    "popularity_tie_scope": "global",
+    "setting_id": "base",
+    "theta": 0.5
+   },
+   "valid": true
+  },
+  {
+   "arm": "POPULARITY",
+   "cell": {
+    "n_a": 50,
+    "n_b": 50,
+    "r": 1.0,
+    "rho": 0.9
+   },
+   "diagnostics": {
+    "cap_short_slates": 0,
+    "market_generation_s": 0.0005658750014845282,
+    "matches_by_round": [
+     0,
+     3,
+     5,
+     4,
+     4,
+     4,
+     3,
+     3,
+     1,
+     2,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0
+    ],
+    "n_slates": 1150,
+    "peak_traced_bytes": null,
+    "runtime_s": 0.00864220899893553,
+    "short_slates": 420
+   },
+   "failures": [],
+   "instance": 1,
+   "instance_key": "r1-rho0.9-i001-base",
+   "metrics": {
+    "M": 0.697396199859254,
+    "U": 0.42,
+    "U_A": 0.42,
+    "U_B": 0.42,
+    "W": 0.44469387755102047,
+    "W_A": 0.4465306122448979,
+    "W_A_q_bottom": 0.0,
+    "W_A_q_gap": 0.8116169544740974,
+    "W_A_q_top": 0.8116169544740974,
+    "W_B": 0.44285714285714284,
+    "W_B_q_bottom": 0.0,
+    "W_B_q_gap": 0.7912087912087913,
+    "W_B_q_top": 0.7912087912087913,
+    "blocking_pairs": 116,
+    "blocking_per_100": 116.0,
+    "gini_exposure_A": 0.1547945205479453,
+    "gini_exposure_B": 0.1547945205479453,
+    "n_matched": 29
+   },
+   "run_id": "SMOKE/r1-rho0.9-i001-base/POPULARITY",
+   "seed": {
+    "root_seed": 101,
+    "spawn_key": [
+     1000,
+     900,
+     1
+    ]
+   },
+   "setting": {
+    "T": 20,
+    "delta": 0.5,
+    "k": 5,
+    "popularity_tie_scope": "global",
+    "setting_id": "base",
+    "theta": 0.5
+   },
+   "valid": true
+  },
+  {
+   "arm": "EXPOSURE_BALANCED",
+   "cell": {
+    "n_a": 50,
+    "n_b": 50,
+    "r": 1.0,
+    "rho": 0.9
+   },
+   "diagnostics": {
+    "cap_short_slates": 4,
+    "market_generation_s": 0.0005658750014845282,
+    "matches_by_round": [
+     7,
+     8,
+     10,
+     3,
+     1,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0
+    ],
+    "n_slates": 980,
+    "peak_traced_bytes": null,
+    "runtime_s": 0.007450791999872308,
+    "short_slates": 590
+   },
+   "failures": [],
+   "instance": 1,
+   "instance_key": "r1-rho0.9-i001-base",
+   "metrics": {
+    "M": 0.6769880365939479,
+    "U": 0.42,
+    "U_A": 0.42,
+    "U_B": 0.42,
+    "W": 0.43938775510204076,
+    "W_A": 0.4530612244897959,
+    "W_A_q_bottom": 0.0,
+    "W_A_q_gap": 0.8210361067503924,
+    "W_A_q_top": 0.8210361067503924,
+    "W_B": 0.4257142857142857,
+    "W_B_q_bottom": 0.0,
+    "W_B_q_gap": 0.7629513343799057,
+    "W_B_q_top": 0.7629513343799057,
+    "blocking_pairs": 127,
+    "blocking_per_100": 127.0,
+    "gini_exposure_A": 0.20786786786786782,
+    "gini_exposure_B": 0.23208211143695023,
+    "n_matched": 29
+   },
+   "run_id": "SMOKE/r1-rho0.9-i001-base/EXPOSURE_BALANCED",
+   "seed": {
+    "root_seed": 101,
+    "spawn_key": [
+     1000,
+     900,
+     1
+    ]
+   },
+   "setting": {
+    "T": 20,
+    "delta": 0.5,
+    "k": 5,
+    "popularity_tie_scope": "global",
+    "setting_id": "base",
+    "theta": 0.5
+   },
+   "valid": true
+  },
+  {
+   "arm": "DA_A",
+   "cell": {
+    "n_a": 50,
+    "n_b": 50,
+    "r": 1.0,
+    "rho": 0.9
+   },
+   "diagnostics": {
+    "cap_short_slates": null,
+    "market_generation_s": 0.0005658750014845282,
+    "matches_by_round": null,
+    "n_slates": null,
+    "peak_traced_bytes": null,
+    "runtime_s": 0.001292124999963562,
+    "short_slates": null
+   },
+   "failures": [],
+   "instance": 1,
+   "instance_key": "r1-rho0.9-i001-base",
+   "metrics": {
+    "M": 0.7557823129251701,
+    "U": 0.4,
+    "U_A": 0.4,
+    "U_B": 0.4,
+    "W": 0.4793877551020408,
+    "W_A": 0.5024489795918368,
+    "W_A_q_bottom": 0.0,
+    "W_A_q_gap": 0.9309262166405025,
+    "W_A_q_top": 0.9309262166405025,
+    "W_B": 0.4563265306122449,
+    "W_B_q_bottom": 0.0,
+    "W_B_q_gap": 0.8806907378335951,
+    "W_B_q_top": 0.8806907378335951,
+    "blocking_pairs": 0,
+    "blocking_per_100": 0.0,
+    "gini_exposure_A": null,
+    "gini_exposure_B": null,
+    "n_matched": 30
+   },
+   "run_id": "SMOKE/r1-rho0.9-i001-base/DA_A",
+   "seed": {
+    "root_seed": 101,
+    "spawn_key": [
+     1000,
+     900,
+     1
+    ]
+   },
+   "setting": {
+    "T": 20,
+    "delta": 0.5,
+    "k": 5,
+    "popularity_tie_scope": "global",
+    "setting_id": "base",
+    "theta": 0.5
+   },
+   "valid": true
+  },
+  {
+   "arm": "DA_B",
+   "cell": {
+    "n_a": 50,
+    "n_b": 50,
+    "r": 1.0,
+    "rho": 0.9
+   },
+   "diagnostics": {
+    "cap_short_slates": null,
+    "market_generation_s": 0.0005658750014845282,
+    "matches_by_round": null,
+    "n_slates": null,
+    "peak_traced_bytes": null,
+    "runtime_s": 0.0012641670000448357,
+    "short_slates": null
+   },
+   "failures": [],
+   "instance": 1,
+   "instance_key": "r1-rho0.9-i001-base",
+   "metrics": {
+    "M": 0.7578231292517007,
+    "U": 0.4,
+    "U_A": 0.4,
+    "U_B": 0.4,
+    "W": 0.47959183673469385,
+    "W_A": 0.5008163265306123,
+    "W_A_q_bottom": 0.0,
+    "W_A_q_gap": 0.9246467817896391,
+    "W_A_q_top": 0.9246467817896391,
+    "W_B": 0.45836734693877546,
+    "W_B_q_bottom": 0.0,
+    "W_B_q_gap": 0.8885400313971742,
+    "W_B_q_top": 0.8885400313971742,
+    "blocking_pairs": 0,
+    "blocking_per_100": 0.0,
+    "gini_exposure_A": null,
+    "gini_exposure_B": null,
+    "n_matched": 30
+   },
+   "run_id": "SMOKE/r1-rho0.9-i001-base/DA_B",
+   "seed": {
+    "root_seed": 101,
+    "spawn_key": [
+     1000,
+     900,
+     1
+    ]
+   },
+   "setting": {
+    "T": 20,
+    "delta": 0.5,
+    "k": 5,
+    "popularity_tie_scope": "global",
+    "setting_id": "base",
+    "theta": 0.5
+   },
+   "valid": true
+  },
+  {
+   "arm": "MAXW",
+   "cell": {
+    "n_a": 50,
+    "n_b": 50,
+    "r": 1.0,
+    "rho": 0.9
+   },
+   "diagnostics": {
+    "cap_short_slates": null,
+    "market_generation_s": 0.0005658750014845282,
+    "matches_by_round": null,
+    "n_slates": null,
+    "peak_traced_bytes": null,
+    "runtime_s": 0.00028208300136611797,
+    "short_slates": null
+   },
+   "failures": [],
+   "instance": 1,
+   "instance_key": "r1-rho0.9-i001-base",
+   "metrics": {
+    "M": 0.7034813925570228,
+    "U": 0.32,
+    "U_A": 0.32,
+    "U_B": 0.32,
+    "W": 0.5355102040816326,
+    "W_A": 0.5485714285714285,
+    "W_A_q_bottom": 0.0,
+    "W_A_q_gap": 0.7896389324960755,
+    "W_A_q_top": 0.7896389324960755,
+    "W_B": 0.5224489795918368,
+    "W_B_q_bottom": 0.0,
+    "W_B_q_gap": 0.7221350078492936,
+    "W_B_q_top": 0.7221350078492936,
+    "blocking_pairs": 136,
+    "blocking_per_100": 136.0,
+    "gini_exposure_A": null,
+    "gini_exposure_B": null,
+    "n_matched": 34
+   },
+   "run_id": "SMOKE/r1-rho0.9-i001-base/MAXW",
+   "seed": {
+    "root_seed": 101,
+    "spawn_key": [
+     1000,
+     900,
+     1
+    ]
+   },
+   "setting": {
+    "T": 20,
+    "delta": 0.5,
+    "k": 5,
+    "popularity_tie_scope": "global",
+    "setting_id": "base",
+    "theta": 0.5
+   },
+   "valid": true
+  },
+  {
+   "arm": "RANDOM",
+   "cell": {
+    "n_a": 50,
+    "n_b": 50,
+    "r": 1.0,
+    "rho": 0.9
+   },
+   "diagnostics": {
+    "cap_short_slates": 0,
+    "market_generation_s": 0.000362749999112566,
+    "matches_by_round": [
+     2,
+     11,
+     7,
+     6,
+     0,
+     1,
+     1,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0
+    ],
+    "n_slates": 1044,
+    "peak_traced_bytes": null,
+    "runtime_s": 0.006743666001057136,
+    "short_slates": 618
+   },
+   "failures": [],
+   "instance": 2,
+   "instance_key": "r1-rho0.9-i002-base",
+   "metrics": {
+    "M": 0.6807580174927114,
+    "U": 0.44,
+    "U_A": 0.44,
+    "U_B": 0.44,
+    "W": 0.42673469387755103,
+    "W_A": 0.4342857142857142,
+    "W_A_q_bottom": 0.0,
+    "W_A_q_gap": 0.7959183673469388,
+    "W_A_q_top": 0.7959183673469388,
+    "W_B": 0.4191836734693879,
+    "W_B_q_bottom": 0.0,
+    "W_B_q_gap": 0.7409733124018838,
+    "W_B_q_top": 0.7409733124018838,
+    "blocking_pairs": 124,
+    "blocking_per_100": 124.0,
+    "gini_exposure_A": 0.24327663384064446,
+    "gini_exposure_B": 0.26333635539437905,
+    "n_matched": 28
+   },
+   "run_id": "SMOKE/r1-rho0.9-i002-base/RANDOM",
+   "seed": {
+    "root_seed": 101,
+    "spawn_key": [
+     1000,
+     900,
+     2
+    ]
+   },
+   "setting": {
+    "T": 20,
+    "delta": 0.5,
+    "k": 5,
+    "popularity_tie_scope": "global",
+    "setting_id": "base",
+    "theta": 0.5
+   },
+   "valid": true
+  },
+  {
+   "arm": "POPULARITY",
+   "cell": {
+    "n_a": 50,
+    "n_b": 50,
+    "r": 1.0,
+    "rho": 0.9
+   },
+   "diagnostics": {
+    "cap_short_slates": 0,
+    "market_generation_s": 0.000362749999112566,
+    "matches_by_round": [
+     3,
+     3,
+     3,
+     3,
+     2,
+     5,
+     3,
+     3,
+     2,
+     3,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0
+    ],
+    "n_slates": 1126,
+    "peak_traced_bytes": null,
+    "runtime_s": 0.008375499999601743,
+    "short_slates": 400
+   },
+   "failures": [],
+   "instance": 2,
+   "instance_key": "r1-rho0.9-i002-base",
+   "metrics": {
+    "M": 0.661904761904762,
+    "U": 0.4,
+    "U_A": 0.4,
+    "U_B": 0.4,
+    "W": 0.44448979591836735,
+    "W_A": 0.44897959183673464,
+    "W_A_q_bottom": 0.061224489795918366,
+    "W_A_q_gap": 0.7268445839874412,
+    "W_A_q_top": 0.7880690737833596,
+    "W_B": 0.44,
+    "W_B_q_bottom": 0.0,
+    "W_B_q_gap": 0.7660910518053374,
+    "W_B_q_top": 0.7660910518053374,
+    "blocking_pairs": 137,
+    "blocking_per_100": 137.0,
+    "gini_exposure_A": 0.14022038567493111,
+    "gini_exposure_B": 0.14022038567493111,
+    "n_matched": 30
+   },
+   "run_id": "SMOKE/r1-rho0.9-i002-base/POPULARITY",
+   "seed": {
+    "root_seed": 101,
+    "spawn_key": [
+     1000,
+     900,
+     2
+    ]
+   },
+   "setting": {
+    "T": 20,
+    "delta": 0.5,
+    "k": 5,
+    "popularity_tie_scope": "global",
+    "setting_id": "base",
+    "theta": 0.5
+   },
+   "valid": true
+  },
+  {
+   "arm": "EXPOSURE_BALANCED",
+   "cell": {
+    "n_a": 50,
+    "n_b": 50,
+    "r": 1.0,
+    "rho": 0.9
+   },
+   "diagnostics": {
+    "cap_short_slates": 5,
+    "market_generation_s": 0.000362749999112566,
+    "matches_by_round": [
+     3,
+     10,
+     8,
+     8,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0
+    ],
+    "n_slates": 998,
+    "peak_traced_bytes": null,
+    "runtime_s": 0.007871959000112838,
+    "short_slates": 578
+   },
+   "failures": [],
+   "instance": 2,
+   "instance_key": "r1-rho0.9-i002-base",
+   "metrics": {
+    "M": 0.6713581984517947,
+    "U": 0.42,
+    "U_A": 0.42,
+    "U_B": 0.42,
+    "W": 0.43448979591836734,
+    "W_A": 0.4310204081632653,
+    "W_A_q_bottom": 0.0,
+    "W_A_q_gap": 0.7723704866562009,
+    "W_A_q_top": 0.7723704866562009,
+    "W_B": 0.4379591836734694,
+    "W_B_q_bottom": 0.0,
+    "W_B_q_gap": 0.770800627943485,
+    "W_B_q_top": 0.770800627943485,
+    "blocking_pairs": 137,
+    "blocking_per_100": 137.0,
+    "gini_exposure_A": 0.1758356164383561,
+    "gini_exposure_B": 0.1954661791590493,
+    "n_matched": 29
+   },
+   "run_id": "SMOKE/r1-rho0.9-i002-base/EXPOSURE_BALANCED",
+   "seed": {
+    "root_seed": 101,
+    "spawn_key": [
+     1000,
+     900,
+     2
+    ]
+   },
+   "setting": {
+    "T": 20,
+    "delta": 0.5,
+    "k": 5,
+    "popularity_tie_scope": "global",
+    "setting_id": "base",
+    "theta": 0.5
+   },
+   "valid": true
+  },
+  {
+   "arm": "DA_A",
+   "cell": {
+    "n_a": 50,
+    "n_b": 50,
+    "r": 1.0,
+    "rho": 0.9
+   },
+   "diagnostics": {
+    "cap_short_slates": null,
+    "market_generation_s": 0.000362749999112566,
+    "matches_by_round": null,
+    "n_slates": null,
+    "peak_traced_bytes": null,
+    "runtime_s": 0.0013175000003684545,
+    "short_slates": null
+   },
+   "failures": [],
+   "instance": 2,
+   "instance_key": "r1-rho0.9-i002-base",
+   "metrics": {
+    "M": 0.779883381924198,
+    "U": 0.44,
+    "U_A": 0.44,
+    "U_B": 0.44,
+    "W": 0.45326530612244886,
+    "W_A": 0.44816326530612244,
+    "W_A_q_bottom": 0.0,
+    "W_A_q_gap": 0.9167974882260597,
+    "W_A_q_top": 0.9167974882260597,
+    "W_B": 0.4583673469387755,
+    "W_B_q_bottom": 0.0,
+    "W_B_q_gap": 0.912087912087912,
+    "W_B_q_top": 0.912087912087912,
+    "blocking_pairs": 0,
+    "blocking_per_100": 0.0,
+    "gini_exposure_A": null,
+    "gini_exposure_B": null,
+    "n_matched": 28
+   },
+   "run_id": "SMOKE/r1-rho0.9-i002-base/DA_A",
+   "seed": {
+    "root_seed": 101,
+    "spawn_key": [
+     1000,
+     900,
+     2
+    ]
+   },
+   "setting": {
+    "T": 20,
+    "delta": 0.5,
+    "k": 5,
+    "popularity_tie_scope": "global",
+    "setting_id": "base",
+    "theta": 0.5
+   },
+   "valid": true
+  },
+  {
+   "arm": "DA_B",
+   "cell": {
+    "n_a": 50,
+    "n_b": 50,
+    "r": 1.0,
+    "rho": 0.9
+   },
+   "diagnostics": {
+    "cap_short_slates": null,
+    "market_generation_s": 0.000362749999112566,
+    "matches_by_round": null,
+    "n_slates": null,
+    "peak_traced_bytes": null,
+    "runtime_s": 0.0012429580001480645,
+    "short_slates": null
+   },
+   "failures": [],
+   "instance": 2,
+   "instance_key": "r1-rho0.9-i002-base",
+   "metrics": {
+    "M": 0.779883381924198,
+    "U": 0.44,
+    "U_A": 0.44,
+    "U_B": 0.44,
+    "W": 0.45326530612244886,
+    "W_A": 0.44816326530612244,
+    "W_A_q_bottom": 0.0,
+    "W_A_q_gap": 0.9167974882260597,
+    "W_A_q_top": 0.9167974882260597,
+    "W_B": 0.4583673469387755,
+    "W_B_q_bottom": 0.0,
+    "W_B_q_gap": 0.912087912087912,
+    "W_B_q_top": 0.912087912087912,
+    "blocking_pairs": 0,
+    "blocking_per_100": 0.0,
+    "gini_exposure_A": null,
+    "gini_exposure_B": null,
+    "n_matched": 28
+   },
+   "run_id": "SMOKE/r1-rho0.9-i002-base/DA_B",
+   "seed": {
+    "root_seed": 101,
+    "spawn_key": [
+     1000,
+     900,
+     2
+    ]
+   },
+   "setting": {
+    "T": 20,
+    "delta": 0.5,
+    "k": 5,
+    "popularity_tie_scope": "global",
+    "setting_id": "base",
+    "theta": 0.5
+   },
+   "valid": true
+  },
+  {
+   "arm": "MAXW",
+   "cell": {
+    "n_a": 50,
+    "n_b": 50,
+    "r": 1.0,
+    "rho": 0.9
+   },
+   "diagnostics": {
+    "cap_short_slates": null,
+    "market_generation_s": 0.000362749999112566,
+    "matches_by_round": null,
+    "n_slates": null,
+    "peak_traced_bytes": null,
+    "runtime_s": 0.0002977499989356147,
+    "short_slates": null
+   },
+   "failures": [],
+   "instance": 2,
+   "instance_key": "r1-rho0.9-i002-base",
+   "metrics": {
+    "M": 0.6700680272108844,
+    "U": 0.28,
+    "U_A": 0.28,
+    "U_B": 0.28,
+    "W": 0.5457142857142858,
+    "W_A": 0.5440816326530612,
+    "W_A_q_bottom": 0.061224489795918366,
+    "W_A_q_gap": 0.7064364207221349,
+    "W_A_q_top": 0.7676609105180532,
+    "W_B": 0.5473469387755102,
+    "W_B_q_bottom": 0.0,
+    "W_B_q_gap": 0.8037676609105181,
+    "W_B_q_top": 0.8037676609105181,
+    "blocking_pairs": 132,
+    "blocking_per_100": 132.0,
+    "gini_exposure_A": null,
+    "gini_exposure_B": null,
+    "n_matched": 36
+   },
+   "run_id": "SMOKE/r1-rho0.9-i002-base/MAXW",
+   "seed": {
+    "root_seed": 101,
+    "spawn_key": [
+     1000,
+     900,
+     2
+    ]
+   },
+   "setting": {
+    "T": 20,
+    "delta": 0.5,
+    "k": 5,
+    "popularity_tie_scope": "global",
+    "setting_id": "base",
+    "theta": 0.5
+   },
+   "valid": true
+  },
+  {
+   "arm": "RANDOM",
+   "cell": {
+    "n_a": 50,
+    "n_b": 50,
+    "r": 1.0,
+    "rho": 0.9
+   },
+   "diagnostics": {
+    "cap_short_slates": 0,
+    "market_generation_s": 0.0003791250001086155,
+    "matches_by_round": [
+     3,
+     12,
+     10,
+     3,
+     2,
+     1,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0
+    ],
+    "n_slates": 930,
+    "peak_traced_bytes": null,
+    "runtime_s": 0.006159041999126202,
+    "short_slates": 552
+   },
+   "failures": [],
+   "instance": 3,
+   "instance_key": "r1-rho0.9-i003-base",
+   "metrics": {
+    "M": 0.6438446346280449,
+    "U": 0.38,
+    "U_A": 0.38,
+    "U_B": 0.38,
+    "W": 0.4589795918367347,
+    "W_A": 0.46040816326530615,
+    "W_A_q_bottom": 0.0,
+    "W_A_q_gap": 0.7080062794348508,
+    "W_A_q_top": 0.7080062794348508,
+    "W_B": 0.45755102040816326,
+    "W_B_q_bottom": 0.06279434850863422,
+    "W_B_q_gap": 0.6295133437990581,
+    "W_B_q_top": 0.6923076923076923,
+    "blocking_pairs": 192,
+    "blocking_per_100": 192.0,
+    "gini_exposure_A": 0.2613920163766632,
+    "gini_exposure_B": 0.2426895854398381,
+    "n_matched": 31
+   },
+   "run_id": "SMOKE/r1-rho0.9-i003-base/RANDOM",
+   "seed": {
+    "root_seed": 101,
+    "spawn_key": [
+     1000,
+     900,
+     3
+    ]
+   },
+   "setting": {
+    "T": 20,
+    "delta": 0.5,
+    "k": 5,
+    "popularity_tie_scope": "global",
+    "setting_id": "base",
+    "theta": 0.5
+   },
+   "valid": true
+  },
+  {
+   "arm": "POPULARITY",
+   "cell": {
+    "n_a": 50,
+    "n_b": 50,
+    "r": 1.0,
+    "rho": 0.9
+   },
+   "diagnostics": {
+    "cap_short_slates": 0,
+    "market_generation_s": 0.0003791250001086155,
+    "matches_by_round": [
+     3,
+     3,
+     3,
+     3,
+     4,
+     3,
+     4,
+     4,
+     3,
+     4,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0
+    ],
+    "n_slates": 1030,
+    "peak_traced_bytes": null,
+    "runtime_s": 0.008236166000642697,
+    "short_slates": 320
+   },
+   "failures": [],
+   "instance": 3,
+   "instance_key": "r1-rho0.9-i003-base",
+   "metrics": {
+    "M": 0.6572629051620649,
+    "U": 0.32,
+    "U_A": 0.32,
+    "U_B": 0.32,
+    "W": 0.5038775510204081,
+    "W_A": 0.5118367346938776,
+    "W_A_q_bottom": 0.04709576138147567,
+    "W_A_q_gap": 0.7472527472527473,
+    "W_A_q_top": 0.7943485086342229,
+    "W_B": 0.4959183673469388,
+    "W_B_q_bottom": 0.1130298273155416,
+    "W_B_q_gap": 0.653061224489796,
+    "W_B_q_top": 0.7660910518053375,
+    "blocking_pairs": 138,
+    "blocking_per_100": 138.0,
+    "gini_exposure_A": 0.1569014084507041,
+    "gini_exposure_B": 0.1569014084507041,
+    "n_matched": 34
+   },
+   "run_id": "SMOKE/r1-rho0.9-i003-base/POPULARITY",
+   "seed": {
+    "root_seed": 101,
+    "spawn_key": [
+     1000,
+     900,
+     3
+    ]
+   },
+   "setting": {
+    "T": 20,
+    "delta": 0.5,
+    "k": 5,
+    "popularity_tie_scope": "global",
+    "setting_id": "base",
+    "theta": 0.5
+   },
+   "valid": true
+  },
+  {
+   "arm": "EXPOSURE_BALANCED",
+   "cell": {
+    "n_a": 50,
+    "n_b": 50,
+    "r": 1.0,
+    "rho": 0.9
+   },
+   "diagnostics": {
+    "cap_short_slates": 8,
+    "market_generation_s": 0.0003791250001086155,
+    "matches_by_round": [
+     4,
+     15,
+     7,
+     5,
+     1,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0
+    ],
+    "n_slates": 880,
+    "peak_traced_bytes": null,
+    "runtime_s": 0.006940666000446072,
+    "short_slates": 518
+   },
+   "failures": [],
+   "instance": 3,
+   "instance_key": "r1-rho0.9-i003-base",
+   "metrics": {
+    "M": 0.6600765306122449,
+    "U": 0.36,
+    "U_A": 0.36,
+    "U_B": 0.36,
+    "W": 0.4791836734693877,
+    "W_A": 0.48244897959183675,
+    "W_A_q_bottom": 0.05965463108320251,
+    "W_A_q_gap": 0.6907378335949765,
+    "W_A_q_top": 0.750392464678179,
+    "W_B": 0.47591836734693876,
+    "W_B_q_bottom": 0.0,
+    "W_B_q_gap": 0.7927786499215069,
+    "W_B_q_top": 0.7927786499215069,
+    "blocking_pairs": 130,
+    "blocking_per_100": 130.0,
+    "gini_exposure_A": 0.1975898520084567,
+    "gini_exposure_B": 0.23516806722689076,
+    "n_matched": 32
+   },
+   "run_id": "SMOKE/r1-rho0.9-i003-base/EXPOSURE_BALANCED",
+   "seed": {
+    "root_seed": 101,
+    "spawn_key": [
+     1000,
+     900,
+     3
+    ]
+   },
+   "setting": {
+    "T": 20,
+    "delta": 0.5,
+    "k": 5,
+    "popularity_tie_scope": "global",
+    "setting_id": "base",
+    "theta": 0.5
+   },
+   "valid": true
+  },
+  {
+   "arm": "DA_A",
+   "cell": {
+    "n_a": 50,
+    "n_b": 50,
+    "r": 1.0,
+    "rho": 0.9
+   },
+   "diagnostics": {
+    "cap_short_slates": null,
+    "market_generation_s": 0.0003791250001086155,
+    "matches_by_round": null,
+    "n_slates": null,
+    "peak_traced_bytes": null,
+    "runtime_s": 0.0012621249989024363,
+    "short_slates": null
+   },
+   "failures": [],
+   "instance": 3,
+   "instance_key": "r1-rho0.9-i003-base",
+   "metrics": {
+    "M": 0.7482993197278912,
+    "U": 0.4,
+    "U_A": 0.4,
+    "U_B": 0.4,
+    "W": 0.4742857142857143,
+    "W_A": 0.4926530612244898,
+    "W_A_q_bottom": 0.04709576138147567,
+    "W_A_q_gap": 0.8916797488226059,
+    "W_A_q_top": 0.9387755102040816,
+    "W_B": 0.4559183673469387,
+    "W_B_q_bottom": 0.0,
+    "W_B_q_gap": 0.8697017268445839,
+    "W_B_q_top": 0.8697017268445839,
+    "blocking_pairs": 0,
+    "blocking_per_100": 0.0,
+    "gini_exposure_A": null,
+    "gini_exposure_B": null,
+    "n_matched": 30
+   },
+   "run_id": "SMOKE/r1-rho0.9-i003-base/DA_A",
+   "seed": {
+    "root_seed": 101,
+    "spawn_key": [
+     1000,
+     900,
+     3
+    ]
+   },
+   "setting": {
+    "T": 20,
+    "delta": 0.5,
+    "k": 5,
+    "popularity_tie_scope": "global",
+    "setting_id": "base",
+    "theta": 0.5
+   },
+   "valid": true
+  },
+  {
+   "arm": "DA_B",
+   "cell": {
+    "n_a": 50,
+    "n_b": 50,
+    "r": 1.0,
+    "rho": 0.9
+   },
+   "diagnostics": {
+    "cap_short_slates": null,
+    "market_generation_s": 0.0003791250001086155,
+    "matches_by_round": null,
+    "n_slates": null,
+    "peak_traced_bytes": null,
+    "runtime_s": 0.0012573330004670424,
+    "short_slates": null
+   },
+   "failures": [],
+   "instance": 3,
+   "instance_key": "r1-rho0.9-i003-base",
+   "metrics": {
+    "M": 0.7482993197278912,
+    "U": 0.4,
+    "U_A": 0.4,
+    "U_B": 0.4,
+    "W": 0.4742857142857143,
+    "W_A": 0.4926530612244898,
+    "W_A_q_bottom": 0.04709576138147567,
+    "W_A_q_gap": 0.8916797488226059,
+    "W_A_q_top": 0.9387755102040816,
+    "W_B": 0.4559183673469387,
+    "W_B_q_bottom": 0.0,
+    "W_B_q_gap": 0.8697017268445839,
+    "W_B_q_top": 0.8697017268445839,
+    "blocking_pairs": 0,
+    "blocking_per_100": 0.0,
+    "gini_exposure_A": null,
+    "gini_exposure_B": null,
+    "n_matched": 30
+   },
+   "run_id": "SMOKE/r1-rho0.9-i003-base/DA_B",
+   "seed": {
+    "root_seed": 101,
+    "spawn_key": [
+     1000,
+     900,
+     3
+    ]
+   },
+   "setting": {
+    "T": 20,
+    "delta": 0.5,
+    "k": 5,
+    "popularity_tie_scope": "global",
+    "setting_id": "base",
+    "theta": 0.5
+   },
+   "valid": true
+  },
+  {
+   "arm": "MAXW",
+   "cell": {
+    "n_a": 50,
+    "n_b": 50,
+    "r": 1.0,
+    "rho": 0.9
+   },
+   "diagnostics": {
+    "cap_short_slates": null,
+    "market_generation_s": 0.0003791250001086155,
+    "matches_by_round": null,
+    "n_slates": null,
+    "peak_traced_bytes": null,
+    "runtime_s": 0.00027425000007497147,
+    "short_slates": null
+   },
+   "failures": [],
+   "instance": 3,
+   "instance_key": "r1-rho0.9-i003-base",
+   "metrics": {
+    "M": 0.6493982208267922,
+    "U": 0.22,
+    "U_A": 0.22,
+    "U_B": 0.22,
+    "W": 0.5940816326530612,
+    "W_A": 0.6142857142857143,
+    "W_A_q_bottom": 0.12872841444270017,
+    "W_A_q_gap": 0.555729984301413,
+    "W_A_q_top": 0.6844583987441131,
+    "W_B": 0.5738775510204082,
+    "W_B_q_bottom": 0.11773940345368918,
+    "W_B_q_gap": 0.5494505494505496,
+    "W_B_q_top": 0.6671899529042388,
+    "blocking_pairs": 203,
+    "blocking_per_100": 203.0,
+    "gini_exposure_A": null,
+    "gini_exposure_B": null,
+    "n_matched": 39
+   },
+   "run_id": "SMOKE/r1-rho0.9-i003-base/MAXW",
+   "seed": {
+    "root_seed": 101,
+    "spawn_key": [
+     1000,
+     900,
+     3
+    ]
+   },
+   "setting": {
+    "T": 20,
+    "delta": 0.5,
+    "k": 5,
+    "popularity_tie_scope": "global",
+    "setting_id": "base",
+    "theta": 0.5
+   },
+   "valid": true
+  },
+  {
+   "arm": "RANDOM",
+   "cell": {
+    "n_a": 50,
+    "n_b": 50,
+    "r": 1.0,
+    "rho": 0.9
+   },
+   "diagnostics": {
+    "cap_short_slates": 0,
+    "market_generation_s": 0.00034012499963864684,
+    "matches_by_round": [
+     5,
+     13,
+     6,
+     3,
+     4,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0
+    ],
+    "n_slates": 922,
+    "peak_traced_bytes": null,
+    "runtime_s": 0.00611416699939582,
+    "short_slates": 556
+   },
+   "failures": [],
+   "instance": 4,
+   "instance_key": "r1-rho0.9-i004-base",
+   "metrics": {
+    "M": 0.6471362738643844,
+    "U": 0.38,
+    "U_A": 0.38,
+    "U_B": 0.38,
+    "W": 0.4487755102040817,
+    "W_A": 0.4436734693877551,
+    "W_A_q_bottom": 0.0,
+    "W_A_q_gap": 0.7205651491365777,
+    "W_A_q_top": 0.7205651491365777,
+    "W_B": 0.4538775510204081,
+    "W_B_q_bottom": 0.06279434850863422,
+    "W_B_q_gap": 0.7064364207221351,
+    "W_B_q_top": 0.7692307692307693,
+    "blocking_pairs": 151,
+    "blocking_per_100": 151.0,
+    "gini_exposure_A": 0.2501352757544224,
+    "gini_exposure_B": 0.2648851774530272,
+    "n_matched": 31
+   },
+   "run_id": "SMOKE/r1-rho0.9-i004-base/RANDOM",
+   "seed": {
+    "root_seed": 101,
+    "spawn_key": [
+     1000,
+     900,
+     4
+    ]
+   },
+   "setting": {
+    "T": 20,
+    "delta": 0.5,
+    "k": 5,
+    "popularity_tie_scope": "global",
+    "setting_id": "base",
+    "theta": 0.5
+   },
+   "valid": true
+  },
+  {
+   "arm": "POPULARITY",
+   "cell": {
+    "n_a": 50,
+    "n_b": 50,
+    "r": 1.0,
+    "rho": 0.9
+   },
+   "diagnostics": {
+    "cap_short_slates": 0,
+    "market_generation_s": 0.00034012499963864684,
+    "matches_by_round": [
+     2,
+     4,
+     5,
+     2,
+     3,
+     3,
+     3,
+     2,
+     3,
+     3,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0
+    ],
+    "n_slates": 1120,
+    "peak_traced_bytes": null,
+    "runtime_s": 0.008353457998964586,
+    "short_slates": 400
+   },
+   "failures": [],
+   "instance": 4,
+   "instance_key": "r1-rho0.9-i004-base",
+   "metrics": {
+    "M": 0.6850340136054422,
+    "U": 0.4,
+    "U_A": 0.4,
+    "U_B": 0.4,
+    "W": 0.456530612244898,
+    "W_A": 0.4538775510204081,
+    "W_A_q_bottom": 0.0,
+    "W_A_q_gap": 0.8131868131868131,
+    "W_A_q_top": 0.8131868131868131,
+    "W_B": 0.4591836734693877,
+    "W_B_q_bottom": 0.0,
+    "W_B_q_gap": 0.7362637362637362,
+    "W_B_q_top": 0.7362637362637362,
+    "blocking_pairs": 131,
+    "blocking_per_100": 131.0,
+    "gini_exposure_A": 0.1399999999999999,
+    "gini_exposure_B": 0.1399999999999999,
+    "n_matched": 30
+   },
+   "run_id": "SMOKE/r1-rho0.9-i004-base/POPULARITY",
+   "seed": {
+    "root_seed": 101,
+    "spawn_key": [
+     1000,
+     900,
+     4
+    ]
+   },
+   "setting": {
+    "T": 20,
+    "delta": 0.5,
+    "k": 5,
+    "popularity_tie_scope": "global",
+    "setting_id": "base",
+    "theta": 0.5
+   },
+   "valid": true
+  },
+  {
+   "arm": "EXPOSURE_BALANCED",
+   "cell": {
+    "n_a": 50,
+    "n_b": 50,
+    "r": 1.0,
+    "rho": 0.9
+   },
+   "diagnostics": {
+    "cap_short_slates": 6,
+    "market_generation_s": 0.00034012499963864684,
+    "matches_by_round": [
+     7,
+     13,
+     4,
+     4,
+     2,
+     0,
+     1,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0
+    ],
+    "n_slates": 916,
+    "peak_traced_bytes": null,
+    "runtime_s": 0.007086166999215493,
+    "short_slates": 540
+   },
+   "failures": [],
+   "instance": 4,
+   "instance_key": "r1-rho0.9-i004-base",
+   "metrics": {
+    "M": 0.6425279789335089,
+    "U": 0.38,
+    "U_A": 0.38,
+    "U_B": 0.38,
+    "W": 0.44734693877551024,
+    "W_A": 0.4436734693877551,
+    "W_A_q_bottom": 0.0,
+    "W_A_q_gap": 0.7189952904238618,
+    "W_A_q_top": 0.7189952904238618,
+    "W_B": 0.4510204081632653,
+    "W_B_q_bottom": 0.0,
+    "W_B_q_gap": 0.7676609105180534,
+    "W_B_q_top": 0.7676609105180534,
+    "blocking_pairs": 177,
+    "blocking_per_100": 177.0,
+    "gini_exposure_A": 0.23135245901639334,
+    "gini_exposure_B": 0.24696000000000007,
+    "n_matched": 31
+   },
+   "run_id": "SMOKE/r1-rho0.9-i004-base/EXPOSURE_BALANCED",
+   "seed": {
+    "root_seed": 101,
+    "spawn_key": [
+     1000,
+     900,
+     4
+    ]
+   },
+   "setting": {
+    "T": 20,
+    "delta": 0.5,
+    "k": 5,
+    "popularity_tie_scope": "global",
+    "setting_id": "base",
+    "theta": 0.5
+   },
+   "valid": true
+  },
+  {
+   "arm": "DA_A",
+   "cell": {
+    "n_a": 50,
+    "n_b": 50,
+    "r": 1.0,
+    "rho": 0.9
+   },
+   "diagnostics": {
+    "cap_short_slates": null,
+    "market_generation_s": 0.00034012499963864684,
+    "matches_by_round": null,
+    "n_slates": null,
+    "peak_traced_bytes": null,
+    "runtime_s": 0.001262249999854248,
+    "short_slates": null
+   },
+   "failures": [],
+   "instance": 4,
+   "instance_key": "r1-rho0.9-i004-base",
+   "metrics": {
+    "M": 0.751152073732719,
+    "U": 0.38,
+    "U_A": 0.38,
+    "U_B": 0.38,
+    "W": 0.4857142857142857,
+    "W_A": 0.4959183673469388,
+    "W_A_q_bottom": 0.0,
+    "W_A_q_gap": 0.9340659340659341,
+    "W_A_q_top": 0.9340659340659341,
+    "W_B": 0.4755102040816326,
+    "W_B_q_bottom": 0.0,
+    "W_B_q_gap": 0.901098901098901,
+    "W_B_q_top": 0.901098901098901,
+    "blocking_pairs": 0,
+    "blocking_per_100": 0.0,
+    "gini_exposure_A": null,
+    "gini_exposure_B": null,
+    "n_matched": 31
+   },
+   "run_id": "SMOKE/r1-rho0.9-i004-base/DA_A",
+   "seed": {
+    "root_seed": 101,
+    "spawn_key": [
+     1000,
+     900,
+     4
+    ]
+   },
+   "setting": {
+    "T": 20,
+    "delta": 0.5,
+    "k": 5,
+    "popularity_tie_scope": "global",
+    "setting_id": "base",
+    "theta": 0.5
+   },
+   "valid": true
+  },
+  {
+   "arm": "DA_B",
+   "cell": {
+    "n_a": 50,
+    "n_b": 50,
+    "r": 1.0,
+    "rho": 0.9
+   },
+   "diagnostics": {
+    "cap_short_slates": null,
+    "market_generation_s": 0.00034012499963864684,
+    "matches_by_round": null,
+    "n_slates": null,
+    "peak_traced_bytes": null,
+    "runtime_s": 0.0012467919987102505,
+    "short_slates": null
+   },
+   "failures": [],
+   "instance": 4,
+   "instance_key": "r1-rho0.9-i004-base",
+   "metrics": {
+    "M": 0.7583936800526663,
+    "U": 0.38,
+    "U_A": 0.38,
+    "U_B": 0.38,
+    "W": 0.4889795918367346,
+    "W_A": 0.493469387755102,
+    "W_A_q_bottom": 0.0,
+    "W_A_q_gap": 0.9324960753532181,
+    "W_A_q_top": 0.9324960753532181,
+    "W_B": 0.4844897959183674,
+    "W_B_q_bottom": 0.0,
+    "W_B_q_gap": 0.912087912087912,
+    "W_B_q_top": 0.912087912087912,
+    "blocking_pairs": 0,
+    "blocking_per_100": 0.0,
+    "gini_exposure_A": null,
+    "gini_exposure_B": null,
+    "n_matched": 31
+   },
+   "run_id": "SMOKE/r1-rho0.9-i004-base/DA_B",
+   "seed": {
+    "root_seed": 101,
+    "spawn_key": [
+     1000,
+     900,
+     4
+    ]
+   },
+   "setting": {
+    "T": 20,
+    "delta": 0.5,
+    "k": 5,
+    "popularity_tie_scope": "global",
+    "setting_id": "base",
+    "theta": 0.5
+   },
+   "valid": true
+  },
+  {
+   "arm": "MAXW",
+   "cell": {
+    "n_a": 50,
+    "n_b": 50,
+    "r": 1.0,
+    "rho": 0.9
+   },
+   "diagnostics": {
+    "cap_short_slates": null,
+    "market_generation_s": 0.00034012499963864684,
+    "matches_by_round": null,
+    "n_slates": null,
+    "peak_traced_bytes": null,
+    "runtime_s": 0.00026541599982010666,
+    "short_slates": null
+   },
+   "failures": [],
+   "instance": 4,
+   "instance_key": "r1-rho0.9-i004-base",
+   "metrics": {
+    "M": 0.7131195335276969,
+    "U": 0.3,
+    "U_A": 0.3,
+    "U_B": 0.3,
+    "W": 0.55,
+    "W_A": 0.5604081632653061,
+    "W_A_q_bottom": 0.0,
+    "W_A_q_gap": 0.8226059654631082,
+    "W_A_q_top": 0.8226059654631082,
+    "W_B": 0.5395918367346939,
+    "W_B_q_bottom": 0.0,
+    "W_B_q_gap": 0.7629513343799059,
+    "W_B_q_top": 0.7629513343799059,
+    "blocking_pairs": 108,
+    "blocking_per_100": 108.0,
+    "gini_exposure_A": null,
+    "gini_exposure_B": null,
+    "n_matched": 35
+   },
+   "run_id": "SMOKE/r1-rho0.9-i004-base/MAXW",
+   "seed": {
+    "root_seed": 101,
+    "spawn_key": [
+     1000,
+     900,
+     4
+    ]
+   },
+   "setting": {
+    "T": 20,
+    "delta": 0.5,
+    "k": 5,
+    "popularity_tie_scope": "global",
+    "setting_id": "base",
+    "theta": 0.5
+   },
+   "valid": true
+  },
+  {
+   "arm": "RANDOM",
+   "cell": {
+    "n_a": 50,
+    "n_b": 75,
+    "r": 1.5,
+    "rho": 0.0
+   },
+   "diagnostics": {
+    "cap_short_slates": 0,
+    "market_generation_s": 0.000502875000165659,
+    "matches_by_round": [
+     8,
+     13,
+     12,
+     14,
+     2,
+     1,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0
+    ],
+    "n_slates": 784,
+    "peak_traced_bytes": 214523,
+    "runtime_s": 0.006624707999435486,
+    "short_slates": 404
+   },
+   "failures": [],
+   "instance": 0,
+   "instance_key": "r1.5-rho0-i000-base",
+   "metrics": {
+    "M": 0.6922559293987866,
+    "U": 0.2,
+    "U_A": 0.0,
+    "U_B": 0.3333333333333333,
+    "W": 0.6235366795366797,
+    "W_A": 0.7702702702702703,
+    "W_A_q_bottom": 0.8097713097713097,
+    "W_A_q_gap": -0.05405405405405417,
+    "W_A_q_top": 0.7557172557172556,
+    "W_B": 0.5257142857142857,
+    "W_B_q_bottom": 0.4779806659505908,
+    "W_B_q_gap": 0.1664876476906551,
+    "W_B_q_top": 0.6444683136412459,
+    "blocking_pairs": 244,
+    "blocking_per_100": 195.2,
+    "gini_exposure_A": 0.2806726825266612,
+    "gini_exposure_B": 0.2248638497652582,
+    "n_matched": 50
+   },
+   "run_id": "SMOKE/r1.5-rho0-i000-base/RANDOM",
+   "seed": {
+    "root_seed": 101,
+    "spawn_key": [
+     1500,
+     0,
+     0
+    ]
+   },
+   "setting": {
+    "T": 20,
+    "delta": 0.5,
+    "k": 5,
+    "popularity_tie_scope": "global",
+    "setting_id": "base",
+    "theta": 0.5
+   },
+   "valid": true
+  },
+  {
+   "arm": "POPULARITY",
+   "cell": {
+    "n_a": 50,
+    "n_b": 75,
+    "r": 1.5,
+    "rho": 0.0
+   },
+   "diagnostics": {
+    "cap_short_slates": 0,
+    "market_generation_s": 0.000502875000165659,
+    "matches_by_round": [
+     4,
+     3,
+     7,
+     3,
+     5,
+     6,
+     5,
+     6,
+     4,
+     4,
+     1,
+     1,
+     1,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0
+    ],
+    "n_slates": 1098,
+    "peak_traced_bytes": 214387,
+    "runtime_s": 0.0122869160004484,
+    "short_slates": 256
+   },
+   "failures": [],
+   "instance": 0,
+   "instance_key": "r1.5-rho0-i000-base",
+   "metrics": {
+    "M": 0.7250413678985106,
+    "U": 0.2,
+    "U_A": 0.0,
+    "U_B": 0.3333333333333333,
+    "W": 0.6412200772200772,
+    "W_A": 0.7916216216216218,
+    "W_A_q_bottom": 0.8004158004158004,
+    "W_A_q_gap": -0.05613305613305597,
+    "W_A_q_top": 0.7442827442827444,
+    "W_B": 0.5409523809523811,
+    "W_B_q_bottom": 0.5531686358754029,
+    "W_B_q_gap": -0.10741138560687441,
+    "W_B_q_top": 0.44575725026852847,
+    "blocking_pairs": 215,
+    "blocking_per_100": 172.0,
+    "gini_exposure_A": 0.14898710865561693,
+    "gini_exposure_B": 0.4972129319955405,
+    "n_matched": 50
+   },
+   "run_id": "SMOKE/r1.5-rho0-i000-base/POPULARITY",
+   "seed": {
+    "root_seed": 101,
+    "spawn_key": [
+     1500,
+     0,
+     0
+    ]
+   },
+   "setting": {
+    "T": 20,
+    "delta": 0.5,
+    "k": 5,
+    "popularity_tie_scope": "global",
+    "setting_id": "base",
+    "theta": 0.5
+   },
+   "valid": true
+  },
+  {
+   "arm": "EXPOSURE_BALANCED",
+   "cell": {
+    "n_a": 50,
+    "n_b": 75,
+    "r": 1.5,
+    "rho": 0.0
+   },
+   "diagnostics": {
+    "cap_short_slates": 1,
+    "market_generation_s": 0.000502875000165659,
+    "matches_by_round": [
+     4,
+     20,
+     16,
+     8,
+     2,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0
+    ],
+    "n_slates": 768,
+    "peak_traced_bytes": 214995,
+    "runtime_s": 0.009959250000974862,
+    "short_slates": 403
+   },
+   "failures": [],
+   "instance": 0,
+   "instance_key": "r1.5-rho0-i000-base",
+   "metrics": {
+    "M": 0.6978323221180364,
+    "U": 0.2,
+    "U_A": 0.0,
+    "U_B": 0.3333333333333333,
+    "W": 0.6347710976282404,
+    "W_A": 0.7816216216216216,
+    "W_A_q_bottom": 0.7297297297297296,
+    "W_A_q_gap": 0.0841995841995844,
+    "W_A_q_top": 0.813929313929314,
+    "W_B": 0.5368707482993198,
+    "W_B_q_bottom": 0.5370569280343718,
+    "W_B_q_gap": -0.03222341568206244,
+    "W_B_q_top": 0.5048335123523093,
+    "blocking_pairs": 254,
+    "blocking_per_100": 203.2,
+    "gini_exposure_A": 0.27225194132873165,
+    "gini_exposure_B": 0.24298507462686558,
+    "n_matched": 50
+   },
+   "run_id": "SMOKE/r1.5-rho0-i000-base/EXPOSURE_BALANCED",
+   "seed": {
+    "root_seed": 101,
+    "spawn_key": [
+     1500,
+     0,
+     0
+    ]
+   },
+   "setting": {
+    "T": 20,
+    "delta": 0.5,
+    "k": 5,
+    "popularity_tie_scope": "global",
+    "setting_id": "base",
+    "theta": 0.5
+   },
+   "valid": true
+  },
+  {
+   "arm": "DA_A",
+   "cell": {
+    "n_a": 50,
+    "n_b": 75,
+    "r": 1.5,
+    "rho": 0.0
+   },
+   "diagnostics": {
+    "cap_short_slates": null,
+    "market_generation_s": 0.000502875000165659,
+    "matches_by_round": null,
+    "n_slates": null,
+    "peak_traced_bytes": 125456,
+    "runtime_s": 0.0017410410000593401,
+    "short_slates": null
+   },
+   "failures": [],
+   "instance": 0,
+   "instance_key": "r1.5-rho0-i000-base",
+   "metrics": {
+    "M": 0.7842305570877001,
+    "U": 0.2,
+    "U_A": 0.0,
+    "U_B": 0.3333333333333333,
+    "W": 0.7051516822945392,
+    "W_A": 0.9767567567567568,
+    "W_A_q_bottom": 0.9594594594594594,
+    "W_A_q_gap": 0.01975051975051978,
+    "W_A_q_top": 0.9792099792099792,
+    "W_B": 0.5240816326530613,
+    "W_B_q_bottom": 0.4683136412459721,
+    "W_B_q_gap": -0.03759398496240607,
+    "W_B_q_top": 0.430719656283566,
+    "blocking_pairs": 0,
+    "blocking_per_100": 0.0,
+    "gini_exposure_A": null,
+    "gini_exposure_B": null,
+    "n_matched": 50
+   },
+   "run_id": "SMOKE/r1.5-rho0-i000-base/DA_A",
+   "seed": {
+    "root_seed": 101,
+    "spawn_key": [
+     1500,
+     0,
+     0
+    ]
+   },
+   "setting": {
+    "T": 20,
+    "delta": 0.5,
+    "k": 5,
+    "popularity_tie_scope": "global",
+    "setting_id": "base",
+    "theta": 0.5
+   },
+   "valid": true
+  },
+  {
+   "arm": "DA_B",
+   "cell": {
+    "n_a": 50,
+    "n_b": 75,
+    "r": 1.5,
+    "rho": 0.0
+   },
+   "diagnostics": {
+    "cap_short_slates": null,
+    "market_generation_s": 0.000502875000165659,
+    "matches_by_round": null,
+    "n_slates": null,
+    "peak_traced_bytes": 97864,
+    "runtime_s": 0.0018514999992476078,
+    "short_slates": null
+   },
+   "failures": [],
+   "instance": 0,
+   "instance_key": "r1.5-rho0-i000-base",
+   "metrics": {
+    "M": 0.7842305570877001,
+    "U": 0.2,
+    "U_A": 0.0,
+    "U_B": 0.3333333333333333,
+    "W": 0.7051516822945392,
+    "W_A": 0.9767567567567568,
+    "W_A_q_bottom": 0.9594594594594594,
+    "W_A_q_gap": 0.01975051975051978,
+    "W_A_q_top": 0.9792099792099792,
+    "W_B": 0.5240816326530613,
+    "W_B_q_bottom": 0.4683136412459721,
+    "W_B_q_gap": -0.03759398496240607,
+    "W_B_q_top": 0.430719656283566,
+    "blocking_pairs": 0,
+    "blocking_per_100": 0.0,
+    "gini_exposure_A": null,
+    "gini_exposure_B": null,
+    "n_matched": 50
+   },
+   "run_id": "SMOKE/r1.5-rho0-i000-base/DA_B",
+   "seed": {
+    "root_seed": 101,
+    "spawn_key": [
+     1500,
+     0,
+     0
+    ]
+   },
+   "setting": {
+    "T": 20,
+    "delta": 0.5,
+    "k": 5,
+    "popularity_tie_scope": "global",
+    "setting_id": "base",
+    "theta": 0.5
+   },
+   "valid": true
+  },
+  {
+   "arm": "MAXW",
+   "cell": {
+    "n_a": 50,
+    "n_b": 75,
+    "r": 1.5,
+    "rho": 0.0
+   },
+   "diagnostics": {
+    "cap_short_slates": null,
+    "market_generation_s": 0.000502875000165659,
+    "matches_by_round": null,
+    "n_slates": null,
+    "peak_traced_bytes": 66526,
+    "runtime_s": 0.00027108300128020346,
+    "short_slates": null
+   },
+   "failures": [],
+   "instance": 0,
+   "instance_key": "r1.5-rho0-i000-base",
+   "metrics": {
+    "M": 0.8893932708218424,
+    "U": 0.2,
+    "U_A": 0.0,
+    "U_B": 0.3333333333333333,
+    "W": 0.7438345284059569,
+    "W_A": 0.9208108108108108,
+    "W_A_q_bottom": 0.8794178794178793,
+    "W_A_q_gap": 0.030145530145530453,
+    "W_A_q_top": 0.9095634095634098,
+    "W_B": 0.6258503401360545,
+    "W_B_q_bottom": 0.5950590762620838,
+    "W_B_q_gap": 0.0064446831364124435,
+    "W_B_q_top": 0.6015037593984962,
+    "blocking_pairs": 52,
+    "blocking_per_100": 41.6,
+    "gini_exposure_A": null,
+    "gini_exposure_B": null,
+    "n_matched": 50
+   },
+   "run_id": "SMOKE/r1.5-rho0-i000-base/MAXW",
+   "seed": {
+    "root_seed": 101,
+    "spawn_key": [
+     1500,
+     0,
+     0
+    ]
+   },
+   "setting": {
+    "T": 20,
+    "delta": 0.5,
+    "k": 5,
+    "popularity_tie_scope": "global",
+    "setting_id": "base",
+    "theta": 0.5
+   },
+   "valid": true
+  },
+  {
+   "arm": "RANDOM",
+   "cell": {
+    "n_a": 50,
+    "n_b": 75,
+    "r": 1.5,
+    "rho": 0.0
+   },
+   "diagnostics": {
+    "cap_short_slates": 0,
+    "market_generation_s": 0.00057366699911654,
+    "matches_by_round": [
+     8,
+     19,
+     9,
+     10,
+     3,
+     0,
+     1,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0
+    ],
+    "n_slates": 770,
+    "peak_traced_bytes": null,
+    "runtime_s": 0.007807166999555193,
+    "short_slates": 407
+   },
+   "failures": [],
+   "instance": 1,
+   "instance_key": "r1.5-rho0-i001-base",
+   "metrics": {
+    "M": 0.6662989520132377,
+    "U": 0.2,
+    "U_A": 0.0,
+    "U_B": 0.3333333333333333,
+    "W": 0.6171406508549365,
+    "W_A": 0.7808108108108108,
+    "W_A_q_bottom": 0.7474012474012474,
+    "W_A_q_gap": 0.08316008316008305,
+    "W_A_q_top": 0.8305613305613304,
+    "W_B": 0.5080272108843538,
+    "W_B_q_bottom": 0.4897959183673469,
+    "W_B_q_gap": 0.00966702470461872,
+    "W_B_q_top": 0.49946294307196565,
+    "blocking_pairs": 270,
+    "blocking_per_100": 216.0,
+    "gini_exposure_A": 0.2907797772065124,
+    "gini_exposure_B": 0.19934814814814805,
+    "n_matched": 50
+   },
+   "run_id": "SMOKE/r1.5-rho0-i001-base/RANDOM",
+   "seed": {
+    "root_seed": 101,
+    "spawn_key": [
+     1500,
+     0,
+     1
+    ]
+   },
+   "setting": {
+    "T": 20,
+    "delta": 0.5,
+    "k": 5,
+    "popularity_tie_scope": "global",
+    "setting_id": "base",
+    "theta": 0.5
+   },
+   "valid": true
+  },
+  {
+   "arm": "POPULARITY",
+   "cell": {
+    "n_a": 50,
+    "n_b": 75,
+    "r": 1.5,
+    "rho": 0.0
+   },
+   "diagnostics": {
+    "cap_short_slates": 0,
+    "market_generation_s": 0.00057366699911654,
+    "matches_by_round": [
+     3,
+     4,
+     5,
+     7,
+     4,
+     6,
+     5,
+     4,
+     4,
+     4,
+     2,
+     2,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0
+    ],
+    "n_slates": 1098,
+    "peak_traced_bytes": null,
+    "runtime_s": 0.010975458999382681,
+    "short_slates": 256
+   },
+   "failures": [],
+   "instance": 1,
+   "instance_key": "r1.5-rho0-i001-base",
+   "metrics": {
+    "M": 0.7226089354660783,
+    "U": 0.2,
+    "U_A": 0.0,
+    "U_B": 0.3333333333333333,
+    "W": 0.6445140650854936,
+    "W_A": 0.8210810810810811,
+    "W_A_q_bottom": 0.7952182952182952,
+    "W_A_q_gap": 0.013513513513513375,
+    "W_A_q_top": 0.8087318087318086,
+    "W_B": 0.5268027210884353,
+    "W_B_q_bottom": 0.4790547798066595,
+    "W_B_q_gap": -0.03759398496240596,
+    "W_B_q_top": 0.44146079484425355,
+    "blocking_pairs": 195,
+    "blocking_per_100": 156.0,
+    "gini_exposure_A": 0.14972375690607742,
+    "gini_exposure_B": 0.49899665551839467,
+    "n_matched": 50
+   },
+   "run_id": "SMOKE/r1.5-rho0-i001-base/POPULARITY",
+   "seed": {
+    "root_seed": 101,
+    "spawn_key": [
+     1500,
+     0,
+     1
+    ]
+   },
+   "setting": {
+    "T": 20,
+    "delta": 0.5,
+    "k": 5,
+    "popularity_tie_scope": "global",
+    "setting_id": "base",
+    "theta": 0.5
+   },
+   "valid": true
+  },
+  {
+   "arm": "EXPOSURE_BALANCED",
+   "cell": {
+    "n_a": 50,
+    "n_b": 75,
+    "r": 1.5,
+    "rho": 0.0
+   },
+   "diagnostics": {
+    "cap_short_slates": 0,
+    "market_generation_s": 0.00057366699911654,
+    "matches_by_round": [
+     7,
+     14,
+     12,
+     13,
+     4,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0
+    ],
+    "n_slates": 786,
+    "peak_traced_bytes": null,
+    "runtime_s": 0.007579334000183735,
+    "short_slates": 404
+   },
+   "failures": [],
+   "instance": 1,
+   "instance_key": "r1.5-rho0-i001-base",
+   "metrics": {
+    "M": 0.6844015444015444,
+    "U": 0.2,
+    "U_A": 0.0,
+    "U_B": 0.3333333333333333,
+    "W": 0.6095907335907336,
+    "W_A": 0.7554054054054054,
+    "W_A_q_bottom": 0.7162162162162162,
+    "W_A_q_gap": 0.11746361746361755,
+    "W_A_q_top": 0.8336798336798338,
+    "W_B": 0.5123809523809524,
+    "W_B_q_bottom": 0.5338345864661654,
+    "W_B_q_gap": 0.047261009667024734,
+    "W_B_q_top": 0.5810955961331902,
+    "blocking_pairs": 295,
+    "blocking_per_100": 236.0,
+    "gini_exposure_A": 0.2691331269349846,
+    "gini_exposure_B": 0.25320279720279704,
+    "n_matched": 50
+   },
+   "run_id": "SMOKE/r1.5-rho0-i001-base/EXPOSURE_BALANCED",
+   "seed": {
+    "root_seed": 101,
+    "spawn_key": [
+     1500,
+     0,
+     1
+    ]
+   },
+   "setting": {
+    "T": 20,
+    "delta": 0.5,
+    "k": 5,
+    "popularity_tie_scope": "global",
+    "setting_id": "base",
+    "theta": 0.5
+   },
+   "valid": true
+  },
+  {
+   "arm": "DA_A",
+   "cell": {
+    "n_a": 50,
+    "n_b": 75,
+    "r": 1.5,
+    "rho": 0.0
+   },
+   "diagnostics": {
+    "cap_short_slates": null,
+    "market_generation_s": 0.00057366699911654,
+    "matches_by_round": null,
+    "n_slates": null,
+    "peak_traced_bytes": null,
+    "runtime_s": 0.0017085409999708645,
+    "short_slates": null
+   },
+   "failures": [],
+   "instance": 1,
+   "instance_key": "r1.5-rho0-i001-base",
+   "metrics": {
+    "M": 0.810380584666299,
+    "U": 0.2,
+    "U_A": 0.0,
+    "U_B": 0.3333333333333333,
+    "W": 0.7124699393270822,
+    "W_A": 0.9672972972972974,
+    "W_A_q_bottom": 0.9615384615384616,
+    "W_A_q_gap": 0.006237006237006182,
+    "W_A_q_top": 0.9677754677754677,
+    "W_B": 0.5425850340136054,
+    "W_B_q_bottom": 0.5112781954887218,
+    "W_B_q_gap": 0.10848549946294306,
+    "W_B_q_top": 0.6197636949516648,
+    "blocking_pairs": 0,
+    "blocking_per_100": 0.0,
+    "gini_exposure_A": null,
+    "gini_exposure_B": null,
+    "n_matched": 50
+   },
+   "run_id": "SMOKE/r1.5-rho0-i001-base/DA_A",
+   "seed": {
+    "root_seed": 101,
+    "spawn_key": [
+     1500,
+     0,
+     1
+    ]
+   },
+   "setting": {
+    "T": 20,
+    "delta": 0.5,
+    "k": 5,
+    "popularity_tie_scope": "global",
+    "setting_id": "base",
+    "theta": 0.5
+   },
+   "valid": true
+  },
+  {
+   "arm": "DA_B",
+   "cell": {
+    "n_a": 50,
+    "n_b": 75,
+    "r": 1.5,
+    "rho": 0.0
+   },
+   "diagnostics": {
+    "cap_short_slates": null,
+    "market_generation_s": 0.00057366699911654,
+    "matches_by_round": null,
+    "n_slates": null,
+    "peak_traced_bytes": null,
+    "runtime_s": 0.0017647909990046173,
+    "short_slates": null
+   },
+   "failures": [],
+   "instance": 1,
+   "instance_key": "r1.5-rho0-i001-base",
+   "metrics": {
+    "M": 0.815438499724214,
+    "U": 0.2,
+    "U_A": 0.0,
+    "U_B": 0.3333333333333333,
+    "W": 0.7150865968008825,
+    "W_A": 0.9656756756756758,
+    "W_A_q_bottom": 0.9615384615384616,
+    "W_A_q_gap": 0.006237006237006182,
+    "W_A_q_top": 0.9677754677754677,
+    "W_B": 0.5480272108843537,
+    "W_B_q_bottom": 0.5112781954887218,
+    "W_B_q_gap": 0.11922663802363054,
+    "W_B_q_top": 0.6305048335123523,
+    "blocking_pairs": 0,
+    "blocking_per_100": 0.0,
+    "gini_exposure_A": null,
+    "gini_exposure_B": null,
+    "n_matched": 50
+   },
+   "run_id": "SMOKE/r1.5-rho0-i001-base/DA_B",
+   "seed": {
+    "root_seed": 101,
+    "spawn_key": [
+     1500,
+     0,
+     1
+    ]
+   },
+   "setting": {
+    "T": 20,
+    "delta": 0.5,
+    "k": 5,
+    "popularity_tie_scope": "global",
+    "setting_id": "base",
+    "theta": 0.5
+   },
+   "valid": true
+  },
+  {
+   "arm": "MAXW",
+   "cell": {
+    "n_a": 50,
+    "n_b": 75,
+    "r": 1.5,
+    "rho": 0.0
+   },
+   "diagnostics": {
+    "cap_short_slates": null,
+    "market_generation_s": 0.00057366699911654,
+    "matches_by_round": null,
+    "n_slates": null,
+    "peak_traced_bytes": null,
+    "runtime_s": 0.00025204099983966444,
+    "short_slates": null
+   },
+   "failures": [],
+   "instance": 1,
+   "instance_key": "r1.5-rho0-i001-base",
+   "metrics": {
+    "M": 0.8867788196359626,
+    "U": 0.2,
+    "U_A": 0.0,
+    "U_B": 0.3333333333333333,
+    "W": 0.7435455046883618,
+    "W_A": 0.9270270270270271,
+    "W_A_q_bottom": 0.9334719334719336,
+    "W_A_q_gap": -0.013513513513513598,
+    "W_A_q_top": 0.91995841995842,
+    "W_B": 0.6212244897959184,
+    "W_B_q_bottom": 0.6412459720730397,
+    "W_B_q_gap": 0.01074113856068748,
+    "W_B_q_top": 0.6519871106337272,
+    "blocking_pairs": 41,
+    "blocking_per_100": 32.8,
+    "gini_exposure_A": null,
+    "gini_exposure_B": null,
+    "n_matched": 50
+   },
+   "run_id": "SMOKE/r1.5-rho0-i001-base/MAXW",
+   "seed": {
+    "root_seed": 101,
+    "spawn_key": [
+     1500,
+     0,
+     1
+    ]
+   },
+   "setting": {
+    "T": 20,
+    "delta": 0.5,
+    "k": 5,
+    "popularity_tie_scope": "global",
+    "setting_id": "base",
+    "theta": 0.5
+   },
+   "valid": true
+  },
+  {
+   "arm": "RANDOM",
+   "cell": {
+    "n_a": 50,
+    "n_b": 75,
+    "r": 1.5,
+    "rho": 0.0
+   },
+   "diagnostics": {
+    "cap_short_slates": 0,
+    "market_generation_s": 0.0005440000004455214,
+    "matches_by_round": [
+     14,
+     11,
+     13,
+     11,
+     0,
+     1,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0
+    ],
+    "n_slates": 750,
+    "peak_traced_bytes": null,
+    "runtime_s": 0.007609415999468183,
+    "short_slates": 404
+   },
+   "failures": [],
+   "instance": 2,
+   "instance_key": "r1.5-rho0-i002-base",
+   "metrics": {
+    "M": 0.700419194704909,
+    "U": 0.2,
+    "U_A": 0.0,
+    "U_B": 0.3333333333333333,
+    "W": 0.6302217319360178,
+    "W_A": 0.8135135135135135,
+    "W_A_q_bottom": 0.8087318087318089,
+    "W_A_q_gap": 0.020790020790020458,
+    "W_A_q_top": 0.8295218295218294,
+    "W_B": 0.5080272108843538,
+    "W_B_q_bottom": 0.5209452201933406,
+    "W_B_q_gap": 0.06874328678839947,
+    "W_B_q_top": 0.58968850698174,
+    "blocking_pairs": 225,
+    "blocking_per_100": 180.0,
+    "gini_exposure_A": 0.3241935483870968,
+    "gini_exposure_B": 0.24593066666666652,
+    "n_matched": 50
+   },
+   "run_id": "SMOKE/r1.5-rho0-i002-base/RANDOM",
+   "seed": {
+    "root_seed": 101,
+    "spawn_key": [
+     1500,
+     0,
+     2
+    ]
+   },
+   "setting": {
+    "T": 20,
+    "delta": 0.5,
+    "k": 5,
+    "popularity_tie_scope": "global",
+    "setting_id": "base",
+    "theta": 0.5
+   },
+   "valid": true
+  },
+  {
+   "arm": "POPULARITY",
+   "cell": {
+    "n_a": 50,
+    "n_b": 75,
+    "r": 1.5,
+    "rho": 0.0
+   },
+   "diagnostics": {
+    "cap_short_slates": 0,
+    "market_generation_s": 0.0005440000004455214,
+    "matches_by_round": [
+     4,
+     5,
+     3,
+     7,
+     4,
+     5,
+     4,
+     5,
+     5,
+     5,
+     2,
+     0,
+     1,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0
+    ],
+    "n_slates": 1098,
+    "peak_traced_bytes": null,
+    "runtime_s": 0.012425958000676474,
+    "short_slates": 255
+   },
+   "failures": [],
+   "instance": 2,
+   "instance_key": "r1.5-rho0-i002-base",
+   "metrics": {
+    "M": 0.7433811362382791,
+    "U": 0.2,
+    "U_A": 0.0,
+    "U_B": 0.3333333333333333,
+    "W": 0.6557948152233866,
+    "W_A": 0.8154054054054053,
+    "W_A_q_bottom": 0.8004158004158005,
+    "W_A_q_gap": 0.027027027027026862,
+    "W_A_q_top": 0.8274428274428274,
+    "W_B": 0.5493877551020409,
+    "W_B_q_bottom": 0.44575725026852847,
+    "W_B_q_gap": 0.1933404940923738,
+    "W_B_q_top": 0.6390977443609023,
+    "blocking_pairs": 179,
+    "blocking_per_100": 143.2,
+    "gini_exposure_A": 0.14264705882352935,
+    "gini_exposure_B": 0.49275362318840576,
+    "n_matched": 50
+   },
+   "run_id": "SMOKE/r1.5-rho0-i002-base/POPULARITY",
+   "seed": {
+    "root_seed": 101,
+    "spawn_key": [
+     1500,
+     0,
+     2
+    ]
+   },
+   "setting": {
+    "T": 20,
+    "delta": 0.5,
+    "k": 5,
+    "popularity_tie_scope": "global",
+    "setting_id": "base",
+    "theta": 0.5
+   },
+   "valid": true
+  },
+  {
+   "arm": "EXPOSURE_BALANCED",
+   "cell": {
+    "n_a": 50,
+    "n_b": 75,
+    "r": 1.5,
+    "rho": 0.0
+   },
+   "diagnostics": {
+    "cap_short_slates": 1,
+    "market_generation_s": 0.0005440000004455214,
+    "matches_by_round": [
+     5,
+     13,
+     12,
+     10,
+     7,
+     3,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0
+    ],
+    "n_slates": 820,
+    "peak_traced_bytes": null,
+    "runtime_s": 0.00839925000036601,
+    "short_slates": 379
+   },
+   "failures": [],
+   "instance": 2,
+   "instance_key": "r1.5-rho0-i002-base",
+   "metrics": {
+    "M": 0.7124820739106454,
+    "U": 0.2,
+    "U_A": 0.0,
+    "U_B": 0.3333333333333333,
+    "W": 0.6319602868174297,
+    "W_A": 0.7945945945945947,
+    "W_A_q_bottom": 0.811850311850312,
+    "W_A_q_gap": -0.032224532224532254,
+    "W_A_q_top": 0.7796257796257797,
+    "W_B": 0.5235374149659865,
+    "W_B_q_bottom": 0.4500537056928035,
+    "W_B_q_gap": 0.10741138560687419,
+    "W_B_q_top": 0.5574650912996777,
+    "blocking_pairs": 228,
+    "blocking_per_100": 182.4,
+    "gini_exposure_A": 0.27858245614035093,
+    "gini_exposure_B": 0.2794333333333332,
+    "n_matched": 50
+   },
+   "run_id": "SMOKE/r1.5-rho0-i002-base/EXPOSURE_BALANCED",
+   "seed": {
+    "root_seed": 101,
+    "spawn_key": [
+     1500,
+     0,
+     2
+    ]
+   },
+   "setting": {
+    "T": 20,
+    "delta": 0.5,
+    "k": 5,
+    "popularity_tie_scope": "global",
+    "setting_id": "base",
+    "theta": 0.5
+   },
+   "valid": true
+  },
+  {
+   "arm": "DA_A",
+   "cell": {
+    "n_a": 50,
+    "n_b": 75,
+    "r": 1.5,
+    "rho": 0.0
+   },
+   "diagnostics": {
+    "cap_short_slates": null,
+    "market_generation_s": 0.0005440000004455214,
+    "matches_by_round": null,
+    "n_slates": null,
+    "peak_traced_bytes": null,
+    "runtime_s": 0.0016702089997124858,
+    "short_slates": null
+   },
+   "failures": [],
+   "instance": 2,
+   "instance_key": "r1.5-rho0-i002-base",
+   "metrics": {
+    "M": 0.8137837837837839,
+    "U": 0.2,
+    "U_A": 0.0,
+    "U_B": 0.3333333333333333,
+    "W": 0.7157220077220076,
+    "W_A": 0.9721621621621621,
+    "W_A_q_bottom": 0.9646569646569646,
+    "W_A_q_gap": 0.018711018711018768,
+    "W_A_q_top": 0.9833679833679834,
+    "W_B": 0.5447619047619049,
+    "W_B_q_bottom": 0.5338345864661654,
+    "W_B_q_gap": 0.10096670247046191,
+    "W_B_q_top": 0.6348012889366274,
+    "blocking_pairs": 0,
+    "blocking_per_100": 0.0,
+    "gini_exposure_A": null,
+    "gini_exposure_B": null,
+    "n_matched": 50
+   },
+   "run_id": "SMOKE/r1.5-rho0-i002-base/DA_A",
+   "seed": {
+    "root_seed": 101,
+    "spawn_key": [
+     1500,
+     0,
+     2
+    ]
+   },
+   "setting": {
+    "T": 20,
+    "delta": 0.5,
+    "k": 5,
+    "popularity_tie_scope": "global",
+    "setting_id": "base",
+    "theta": 0.5
+   },
+   "valid": true
+  },
+  {
+   "arm": "DA_B",
+   "cell": {
+    "n_a": 50,
+    "n_b": 75,
+    "r": 1.5,
+    "rho": 0.0
+   },
+   "diagnostics": {
+    "cap_short_slates": null,
+    "market_generation_s": 0.0005440000004455214,
+    "matches_by_round": null,
+    "n_slates": null,
+    "peak_traced_bytes": null,
+    "runtime_s": 0.0017712499993649544,
+    "short_slates": null
+   },
+   "failures": [],
+   "instance": 2,
+   "instance_key": "r1.5-rho0-i002-base",
+   "metrics": {
+    "M": 0.8137837837837839,
+    "U": 0.2,
+    "U_A": 0.0,
+    "U_B": 0.3333333333333333,
+    "W": 0.7157220077220076,
+    "W_A": 0.9721621621621621,
+    "W_A_q_bottom": 0.9646569646569646,
+    "W_A_q_gap": 0.018711018711018768,
+    "W_A_q_top": 0.9833679833679834,
+    "W_B": 0.5447619047619049,
+    "W_B_q_bottom": 0.5338345864661654,
+    "W_B_q_gap": 0.10096670247046191,
+    "W_B_q_top": 0.6348012889366274,
+    "blocking_pairs": 0,
+    "blocking_per_100": 0.0,
+    "gini_exposure_A": null,
+    "gini_exposure_B": null,
+    "n_matched": 50
+   },
+   "run_id": "SMOKE/r1.5-rho0-i002-base/DA_B",
+   "seed": {
+    "root_seed": 101,
+    "spawn_key": [
+     1500,
+     0,
+     2
+    ]
+   },
+   "setting": {
+    "T": 20,
+    "delta": 0.5,
+    "k": 5,
+    "popularity_tie_scope": "global",
+    "setting_id": "base",
+    "theta": 0.5
+   },
+   "valid": true
+  },
+  {
+   "arm": "MAXW",
+   "cell": {
+    "n_a": 50,
+    "n_b": 75,
+    "r": 1.5,
+    "rho": 0.0
+   },
+   "diagnostics": {
+    "cap_short_slates": null,
+    "market_generation_s": 0.0005440000004455214,
+    "matches_by_round": null,
+    "n_slates": null,
+    "peak_traced_bytes": null,
+    "runtime_s": 0.00025887499941745773,
+    "short_slates": null
+   },
+   "failures": [],
+   "instance": 2,
+   "instance_key": "r1.5-rho0-i002-base",
+   "metrics": {
+    "M": 0.8811252068394925,
+    "U": 0.2,
+    "U_A": 0.0,
+    "U_B": 0.3333333333333333,
+    "W": 0.7426321014892442,
+    "W_A": 0.9227027027027027,
+    "W_A_q_bottom": 0.9293139293139293,
+    "W_A_q_gap": -0.013513513513513375,
+    "W_A_q_top": 0.9158004158004159,
+    "W_B": 0.6225850340136055,
+    "W_B_q_bottom": 0.6380236305048335,
+    "W_B_q_gap": 0.02685284640171859,
+    "W_B_q_top": 0.664876476906552,
+    "blocking_pairs": 43,
+    "blocking_per_100": 34.4,
+    "gini_exposure_A": null,
+    "gini_exposure_B": null,
+    "n_matched": 50
+   },
+   "run_id": "SMOKE/r1.5-rho0-i002-base/MAXW",
+   "seed": {
+    "root_seed": 101,
+    "spawn_key": [
+     1500,
+     0,
+     2
+    ]
+   },
+   "setting": {
+    "T": 20,
+    "delta": 0.5,
+    "k": 5,
+    "popularity_tie_scope": "global",
+    "setting_id": "base",
+    "theta": 0.5
+   },
+   "valid": true
+  },
+  {
+   "arm": "RANDOM",
+   "cell": {
+    "n_a": 50,
+    "n_b": 75,
+    "r": 1.5,
+    "rho": 0.0
+   },
+   "diagnostics": {
+    "cap_short_slates": 0,
+    "market_generation_s": 0.0005052500000601867,
+    "matches_by_round": [
+     5,
+     14,
+     14,
+     12,
+     5,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0
+    ],
+    "n_slates": 796,
+    "peak_traced_bytes": null,
+    "runtime_s": 0.006762750001144013,
+    "short_slates": 405
+   },
+   "failures": [],
+   "instance": 3,
+   "instance_key": "r1.5-rho0-i003-base",
+   "metrics": {
+    "M": 0.6764920022062878,
+    "U": 0.2,
+    "U_A": 0.0,
+    "U_B": 0.3333333333333333,
+    "W": 0.6058400441257585,
+    "W_A": 0.7137837837837837,
+    "W_A_q_bottom": 0.7245322245322244,
+    "W_A_q_gap": 0.007276507276507416,
+    "W_A_q_top": 0.7318087318087318,
+    "W_B": 0.5338775510204081,
+    "W_B_q_bottom": 0.5306122448979591,
+    "W_B_q_gap": -0.11493018259935545,
+    "W_B_q_top": 0.41568206229860366,
+    "blocking_pairs": 317,
+    "blocking_per_100": 253.6,
+    "gini_exposure_A": 0.2518867924528301,
+    "gini_exposure_B": 0.21473873873873872,
+    "n_matched": 50
+   },
+   "run_id": "SMOKE/r1.5-rho0-i003-base/RANDOM",
+   "seed": {
+    "root_seed": 101,
+    "spawn_key": [
+     1500,
+     0,
+     3
+    ]
+   },
+   "setting": {
+    "T": 20,
+    "delta": 0.5,
+    "k": 5,
+    "popularity_tie_scope": "global",
+    "setting_id": "base",
+    "theta": 0.5
+   },
+   "valid": true
+  },
+  {
+   "arm": "POPULARITY",
+   "cell": {
+    "n_a": 50,
+    "n_b": 75,
+    "r": 1.5,
+    "rho": 0.0
+   },
+   "diagnostics": {
+    "cap_short_slates": 0,
+    "market_generation_s": 0.0005052500000601867,
+    "matches_by_round": [
+     4,
+     4,
+     5,
+     5,
+     6,
+     4,
+     4,
+     6,
+     4,
+     6,
+     2,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0
+    ],
+    "n_slates": 1090,
+    "peak_traced_bytes": null,
+    "runtime_s": 0.00985795899941877,
+    "short_slates": 252
+   },
+   "failures": [],
+   "instance": 3,
+   "instance_key": "r1.5-rho0-i003-base",
+   "metrics": {
+    "M": 0.7344015444015445,
+    "U": 0.2,
+    "U_A": 0.0,
+    "U_B": 0.3333333333333333,
+    "W": 0.6526332046332046,
+    "W_A": 0.7972972972972974,
+    "W_A_q_bottom": 0.786902286902287,
+    "W_A_q_gap": 0.03222453222453203,
+    "W_A_q_top": 0.8191268191268191,
+    "W_B": 0.5561904761904762,
+    "W_B_q_bottom": 0.6208378088077336,
+    "W_B_q_gap": -0.018259935553168738,
+    "W_B_q_top": 0.6025778732545649,
+    "blocking_pairs": 209,
+    "blocking_per_100": 167.2,
+    "gini_exposure_A": 0.14493554327808478,
+    "gini_exposure_B": 0.5062146892655366,
+    "n_matched": 50
+   },
+   "run_id": "SMOKE/r1.5-rho0-i003-base/POPULARITY",
+   "seed": {
+    "root_seed": 101,
+    "spawn_key": [
+     1500,
+     0,
+     3
+    ]
+   },
+   "setting": {
+    "T": 20,
+    "delta": 0.5,
+    "k": 5,
+    "popularity_tie_scope": "global",
+    "setting_id": "base",
+    "theta": 0.5
+   },
+   "valid": true
+  },
+  {
+   "arm": "EXPOSURE_BALANCED",
+   "cell": {
+    "n_a": 50,
+    "n_b": 75,
+    "r": 1.5,
+    "rho": 0.0
+   },
+   "diagnostics": {
+    "cap_short_slates": 2,
+    "market_generation_s": 0.0005052500000601867,
+    "matches_by_round": [
+     4,
+     13,
+     14,
+     8,
+     10,
+     1,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0
+    ],
+    "n_slates": 820,
+    "peak_traced_bytes": null,
+    "runtime_s": 0.008052499999394058,
+    "short_slates": 378
+   },
+   "failures": [],
+   "instance": 3,
+   "instance_key": "r1.5-rho0-i003-base",
+   "metrics": {
+    "M": 0.714219525648097,
+    "U": 0.2,
+    "U_A": 0.0,
+    "U_B": 0.3333333333333333,
+    "W": 0.6264379481522336,
+    "W_A": 0.784054054054054,
+    "W_A_q_bottom": 0.8284823284823285,
+    "W_A_q_gap": -0.05717255717255709,
+    "W_A_q_top": 0.7713097713097714,
+    "W_B": 0.5213605442176871,
+    "W_B_q_bottom": 0.49301825993555315,
+    "W_B_q_gap": 0.018259935553168627,
+    "W_B_q_top": 0.5112781954887218,
+    "blocking_pairs": 252,
+    "blocking_per_100": 201.6,
+    "gini_exposure_A": 0.2709831460674157,
+    "gini_exposure_B": 0.27036666666666664,
+    "n_matched": 50
+   },
+   "run_id": "SMOKE/r1.5-rho0-i003-base/EXPOSURE_BALANCED",
+   "seed": {
+    "root_seed": 101,
+    "spawn_key": [
+     1500,
+     0,
+     3
+    ]
+   },
+   "setting": {
+    "T": 20,
+    "delta": 0.5,
+    "k": 5,
+    "popularity_tie_scope": "global",
+    "setting_id": "base",
+    "theta": 0.5
+   },
+   "valid": true
+  },
+  {
+   "arm": "DA_A",
+   "cell": {
+    "n_a": 50,
+    "n_b": 75,
+    "r": 1.5,
+    "rho": 0.0
+   },
+   "diagnostics": {
+    "cap_short_slates": null,
+    "market_generation_s": 0.0005052500000601867,
+    "matches_by_round": null,
+    "n_slates": null,
+    "peak_traced_bytes": null,
+    "runtime_s": 0.0016754580010456266,
+    "short_slates": null
+   },
+   "failures": [],
+   "instance": 3,
+   "instance_key": "r1.5-rho0-i003-base",
+   "metrics": {
+    "M": 0.8149200220628791,
+    "U": 0.2,
+    "U_A": 0.0,
+    "U_B": 0.3333333333333333,
+    "W": 0.713950358521787,
+    "W_A": 0.9632432432432432,
+    "W_A_q_bottom": 0.9677754677754679,
+    "W_A_q_gap": -0.015592515592515732,
+    "W_A_q_top": 0.9521829521829521,
+    "W_B": 0.5477551020408163,
+    "W_B_q_bottom": 0.627282491944146,
+    "W_B_q_gap": -0.26423200859291074,
+    "W_B_q_top": 0.36305048335123524,
+    "blocking_pairs": 0,
+    "blocking_per_100": 0.0,
+    "gini_exposure_A": null,
+    "gini_exposure_B": null,
+    "n_matched": 50
+   },
+   "run_id": "SMOKE/r1.5-rho0-i003-base/DA_A",
+   "seed": {
+    "root_seed": 101,
+    "spawn_key": [
+     1500,
+     0,
+     3
+    ]
+   },
+   "setting": {
+    "T": 20,
+    "delta": 0.5,
+    "k": 5,
+    "popularity_tie_scope": "global",
+    "setting_id": "base",
+    "theta": 0.5
+   },
+   "valid": true
+  },
+  {
+   "arm": "DA_B",
+   "cell": {
+    "n_a": 50,
+    "n_b": 75,
+    "r": 1.5,
+    "rho": 0.0
+   },
+   "diagnostics": {
+    "cap_short_slates": null,
+    "market_generation_s": 0.0005052500000601867,
+    "matches_by_round": null,
+    "n_slates": null,
+    "peak_traced_bytes": null,
+    "runtime_s": 0.001786417000403162,
+    "short_slates": null
+   },
+   "failures": [],
+   "instance": 3,
+   "instance_key": "r1.5-rho0-i003-base",
+   "metrics": {
+    "M": 0.8149200220628791,
+    "U": 0.2,
+    "U_A": 0.0,
+    "U_B": 0.3333333333333333,
+    "W": 0.713950358521787,
+    "W_A": 0.9632432432432432,
+    "W_A_q_bottom": 0.9677754677754679,
+    "W_A_q_gap": -0.015592515592515732,
+    "W_A_q_top": 0.9521829521829521,
+    "W_B": 0.5477551020408163,
+    "W_B_q_bottom": 0.627282491944146,
+    "W_B_q_gap": -0.26423200859291074,
+    "W_B_q_top": 0.36305048335123524,
+    "blocking_pairs": 0,
+    "blocking_per_100": 0.0,
+    "gini_exposure_A": null,
+    "gini_exposure_B": null,
+    "n_matched": 50
+   },
+   "run_id": "SMOKE/r1.5-rho0-i003-base/DA_B",
+   "seed": {
+    "root_seed": 101,
+    "spawn_key": [
+     1500,
+     0,
+     3
+    ]
+   },
+   "setting": {
+    "T": 20,
+    "delta": 0.5,
+    "k": 5,
+    "popularity_tie_scope": "global",
+    "setting_id": "base",
+    "theta": 0.5
+   },
+   "valid": true
+  },
+  {
+   "arm": "MAXW",
+   "cell": {
+    "n_a": 50,
+    "n_b": 75,
+    "r": 1.5,
+    "rho": 0.0
+   },
+   "diagnostics": {
+    "cap_short_slates": null,
+    "market_generation_s": 0.0005052500000601867,
+    "matches_by_round": null,
+    "n_slates": null,
+    "peak_traced_bytes": null,
+    "runtime_s": 0.00024379100068472326,
+    "short_slates": null
+   },
+   "failures": [],
+   "instance": 3,
+   "instance_key": "r1.5-rho0-i003-base",
+   "metrics": {
+    "M": 0.8964202978488693,
+    "U": 0.2,
+    "U_A": 0.0,
+    "U_B": 0.3333333333333333,
+    "W": 0.7462084942084942,
+    "W_A": 0.9283783783783783,
+    "W_A_q_bottom": 0.9324324324324322,
+    "W_A_q_gap": -0.019750519750519557,
+    "W_A_q_top": 0.9126819126819127,
+    "W_B": 0.6247619047619047,
+    "W_B_q_bottom": 0.7422126745435016,
+    "W_B_q_gap": -0.055853920515574695,
+    "W_B_q_top": 0.6863587540279269,
+    "blocking_pairs": 36,
+    "blocking_per_100": 28.8,
+    "gini_exposure_A": null,
+    "gini_exposure_B": null,
+    "n_matched": 50
+   },
+   "run_id": "SMOKE/r1.5-rho0-i003-base/MAXW",
+   "seed": {
+    "root_seed": 101,
+    "spawn_key": [
+     1500,
+     0,
+     3
+    ]
+   },
+   "setting": {
+    "T": 20,
+    "delta": 0.5,
+    "k": 5,
+    "popularity_tie_scope": "global",
+    "setting_id": "base",
+    "theta": 0.5
+   },
+   "valid": true
+  },
+  {
+   "arm": "RANDOM",
+   "cell": {
+    "n_a": 50,
+    "n_b": 75,
+    "r": 1.5,
+    "rho": 0.0
+   },
+   "diagnostics": {
+    "cap_short_slates": 0,
+    "market_generation_s": 0.000525790999745368,
+    "matches_by_round": [
+     2,
+     18,
+     14,
+     16,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0
+    ],
+    "n_slates": 788,
+    "peak_traced_bytes": null,
+    "runtime_s": 0.006670291999398614,
+    "short_slates": 400
+   },
+   "failures": [],
+   "instance": 4,
+   "instance_key": "r1.5-rho0-i004-base",
+   "metrics": {
+    "M": 0.7191726420297848,
+    "U": 0.2,
+    "U_A": 0.0,
+    "U_B": 0.3333333333333333,
+    "W": 0.639207942636514,
+    "W_A": 0.8110810810810811,
+    "W_A_q_bottom": 0.83991683991684,
+    "W_A_q_gap": 0.0010395010395010118,
+    "W_A_q_top": 0.840956340956341,
+    "W_B": 0.5246258503401361,
+    "W_B_q_bottom": 0.6466165413533835,
+    "W_B_q_gap": -0.08700322234156832,
+    "W_B_q_top": 0.5596133190118152,
+    "blocking_pairs": 199,
+    "blocking_per_100": 159.2,
+    "gini_exposure_A": 0.2286557377049181,
+    "gini_exposure_B": 0.17237037037037028,
+    "n_matched": 50
+   },
+   "run_id": "SMOKE/r1.5-rho0-i004-base/RANDOM",
+   "seed": {
+    "root_seed": 101,
+    "spawn_key": [
+     1500,
+     0,
+     4
+    ]
+   },
+   "setting": {
+    "T": 20,
+    "delta": 0.5,
+    "k": 5,
+    "popularity_tie_scope": "global",
+    "setting_id": "base",
+    "theta": 0.5
+   },
+   "valid": true
+  },
+  {
+   "arm": "POPULARITY",
+   "cell": {
+    "n_a": 50,
+    "n_b": 75,
+    "r": 1.5,
+    "rho": 0.0
+   },
+   "diagnostics": {
+    "cap_short_slates": 0,
+    "market_generation_s": 0.000525790999745368,
+    "matches_by_round": [
+     3,
+     6,
+     5,
+     5,
+     4,
+     5,
+     5,
+     5,
+     4,
+     6,
+     2,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0
+    ],
+    "n_slates": 1086,
+    "peak_traced_bytes": null,
+    "runtime_s": 0.009891834000882227,
+    "short_slates": 252
+   },
+   "failures": [],
+   "instance": 4,
+   "instance_key": "r1.5-rho0-i004-base",
+   "metrics": {
+    "M": 0.7283894098179812,
+    "U": 0.2,
+    "U_A": 0.0,
+    "U_B": 0.3333333333333333,
+    "W": 0.6568736900165472,
+    "W_A": 0.8189189189189189,
+    "W_A_q_bottom": 0.8305613305613306,
+    "W_A_q_gap": 0.009355509355509328,
+    "W_A_q_top": 0.83991683991684,
+    "W_B": 0.548843537414966,
+    "W_B_q_bottom": 0.5832438238453276,
+    "W_B_q_gap": 0.07733619763694966,
+    "W_B_q_top": 0.6605800214822772,
+    "blocking_pairs": 189,
+    "blocking_per_100": 151.2,
+    "gini_exposure_A": 0.1458410351201478,
+    "gini_exposure_B": 0.5078498293515357,
+    "n_matched": 50
+   },
+   "run_id": "SMOKE/r1.5-rho0-i004-base/POPULARITY",
+   "seed": {
+    "root_seed": 101,
+    "spawn_key": [
+     1500,
+     0,
+     4
+    ]
+   },
+   "setting": {
+    "T": 20,
+    "delta": 0.5,
+    "k": 5,
+    "popularity_tie_scope": "global",
+    "setting_id": "base",
+    "theta": 0.5
+   },
+   "valid": true
+  },
+  {
+   "arm": "EXPOSURE_BALANCED",
+   "cell": {
+    "n_a": 50,
+    "n_b": 75,
+    "r": 1.5,
+    "rho": 0.0
+   },
+   "diagnostics": {
+    "cap_short_slates": 0,
+    "market_generation_s": 0.000525790999745368,
+    "matches_by_round": [
+     7,
+     12,
+     13,
+     13,
+     5,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0
+    ],
+    "n_slates": 794,
+    "peak_traced_bytes": null,
+    "runtime_s": 0.008693457999470411,
+    "short_slates": 405
+   },
+   "failures": [],
+   "instance": 4,
+   "instance_key": "r1.5-rho0-i004-base",
+   "metrics": {
+    "M": 0.6944401544401544,
+    "U": 0.2,
+    "U_A": 0.0,
+    "U_B": 0.3333333333333333,
+    "W": 0.6301577495863211,
+    "W_A": 0.797027027027027,
+    "W_A_q_bottom": 0.7754677754677755,
+    "W_A_q_gap": 0.06029106029106035,
+    "W_A_q_top": 0.8357588357588358,
+    "W_B": 0.5189115646258503,
+    "W_B_q_bottom": 0.556390977443609,
+    "W_B_q_gap": -0.06659505907626206,
+    "W_B_q_top": 0.4897959183673469,
+    "blocking_pairs": 244,
+    "blocking_per_100": 195.2,
+    "gini_exposure_A": 0.2573191165270372,
+    "gini_exposure_B": 0.2894149659863945,
+    "n_matched": 50
+   },
+   "run_id": "SMOKE/r1.5-rho0-i004-base/EXPOSURE_BALANCED",
+   "seed": {
+    "root_seed": 101,
+    "spawn_key": [
+     1500,
+     0,
+     4
+    ]
+   },
+   "setting": {
+    "T": 20,
+    "delta": 0.5,
+    "k": 5,
+    "popularity_tie_scope": "global",
+    "setting_id": "base",
+    "theta": 0.5
+   },
+   "valid": true
+  },
+  {
+   "arm": "DA_A",
+   "cell": {
+    "n_a": 50,
+    "n_b": 75,
+    "r": 1.5,
+    "rho": 0.0
+   },
+   "diagnostics": {
+    "cap_short_slates": null,
+    "market_generation_s": 0.000525790999745368,
+    "matches_by_round": null,
+    "n_slates": null,
+    "peak_traced_bytes": null,
+    "runtime_s": 0.002028375000008964,
+    "short_slates": null
+   },
+   "failures": [],
+   "instance": 4,
+   "instance_key": "r1.5-rho0-i004-base",
+   "metrics": {
+    "M": 0.7680364037506895,
+    "U": 0.2,
+    "U_A": 0.0,
+    "U_B": 0.3333333333333333,
+    "W": 0.7002956425813569,
+    "W_A": 0.9813513513513513,
+    "W_A_q_bottom": 0.9792099792099792,
+    "W_A_q_gap": -0.0031185031185031464,
+    "W_A_q_top": 0.9760914760914761,
+    "W_B": 0.5129251700680271,
+    "W_B_q_bottom": 0.5091299677765843,
+    "W_B_q_gap": 0.0408163265306124,
+    "W_B_q_top": 0.5499462943071967,
+    "blocking_pairs": 0,
+    "blocking_per_100": 0.0,
+    "gini_exposure_A": null,
+    "gini_exposure_B": null,
+    "n_matched": 50
+   },
+   "run_id": "SMOKE/r1.5-rho0-i004-base/DA_A",
+   "seed": {
+    "root_seed": 101,
+    "spawn_key": [
+     1500,
+     0,
+     4
+    ]
+   },
+   "setting": {
+    "T": 20,
+    "delta": 0.5,
+    "k": 5,
+    "popularity_tie_scope": "global",
+    "setting_id": "base",
+    "theta": 0.5
+   },
+   "valid": true
+  },
+  {
+   "arm": "DA_B",
+   "cell": {
+    "n_a": 50,
+    "n_b": 75,
+    "r": 1.5,
+    "rho": 0.0
+   },
+   "diagnostics": {
+    "cap_short_slates": null,
+    "market_generation_s": 0.000525790999745368,
+    "matches_by_round": null,
+    "n_slates": null,
+    "peak_traced_bytes": null,
+    "runtime_s": 0.0021197080004640156,
+    "short_slates": null
+   },
+   "failures": [],
+   "instance": 4,
+   "instance_key": "r1.5-rho0-i004-base",
+   "metrics": {
+    "M": 0.7680364037506895,
+    "U": 0.2,
+    "U_A": 0.0,
+    "U_B": 0.3333333333333333,
+    "W": 0.7002956425813569,
+    "W_A": 0.9813513513513513,
+    "W_A_q_bottom": 0.9792099792099792,
+    "W_A_q_gap": -0.0031185031185031464,
+    "W_A_q_top": 0.9760914760914761,
+    "W_B": 0.5129251700680271,
+    "W_B_q_bottom": 0.5091299677765843,
+    "W_B_q_gap": 0.0408163265306124,
+    "W_B_q_top": 0.5499462943071967,
+    "blocking_pairs": 0,
+    "blocking_per_100": 0.0,
+    "gini_exposure_A": null,
+    "gini_exposure_B": null,
+    "n_matched": 50
+   },
+   "run_id": "SMOKE/r1.5-rho0-i004-base/DA_B",
+   "seed": {
+    "root_seed": 101,
+    "spawn_key": [
+     1500,
+     0,
+     4
+    ]
+   },
+   "setting": {
+    "T": 20,
+    "delta": 0.5,
+    "k": 5,
+    "popularity_tie_scope": "global",
+    "setting_id": "base",
+    "theta": 0.5
+   },
+   "valid": true
+  },
+  {
+   "arm": "MAXW",
+   "cell": {
+    "n_a": 50,
+    "n_b": 75,
+    "r": 1.5,
+    "rho": 0.0
+   },
+   "diagnostics": {
+    "cap_short_slates": null,
+    "market_generation_s": 0.000525790999745368,
+    "matches_by_round": null,
+    "n_slates": null,
+    "peak_traced_bytes": null,
+    "runtime_s": 0.00028974999986530747,
+    "short_slates": null
+   },
+   "failures": [],
+   "instance": 4,
+   "instance_key": "r1.5-rho0-i004-base",
+   "metrics": {
+    "M": 0.8861610590182019,
+    "U": 0.2,
+    "U_A": 0.0,
+    "U_B": 0.3333333333333333,
+    "W": 0.742603419746277,
+    "W_A": 0.9332432432432433,
+    "W_A_q_bottom": 0.9386694386694387,
+    "W_A_q_gap": -0.027027027027027195,
+    "W_A_q_top": 0.9116424116424116,
+    "W_B": 0.6155102040816325,
+    "W_B_q_bottom": 0.6906552094522019,
+    "W_B_q_gap": -0.10848549946294306,
+    "W_B_q_top": 0.5821697099892589,
+    "blocking_pairs": 38,
+    "blocking_per_100": 30.4,
+    "gini_exposure_A": null,
+    "gini_exposure_B": null,
+    "n_matched": 50
+   },
+   "run_id": "SMOKE/r1.5-rho0-i004-base/MAXW",
+   "seed": {
+    "root_seed": 101,
+    "spawn_key": [
+     1500,
+     0,
+     4
+    ]
+   },
+   "setting": {
+    "T": 20,
+    "delta": 0.5,
+    "k": 5,
+    "popularity_tie_scope": "global",
+    "setting_id": "base",
+    "theta": 0.5
+   },
+   "valid": true
+  },
+  {
+   "arm": "RANDOM",
+   "cell": {
+    "n_a": 50,
+    "n_b": 75,
+    "r": 1.5,
+    "rho": 0.9
+   },
+   "diagnostics": {
+    "cap_short_slates": 0,
+    "market_generation_s": 0.0005847089996677823,
+    "matches_by_round": [
+     5,
+     11,
+     8,
+     4,
+     2,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0
+    ],
+    "n_slates": 1454,
+    "peak_traced_bytes": 214443,
+    "runtime_s": 0.011868499999764026,
+    "short_slates": 860
+   },
+   "failures": [],
+   "instance": 0,
+   "instance_key": "r1.5-rho0.9-i000-base",
+   "metrics": {
+    "M": 0.6413219341790771,
+    "U": 0.52,
+    "U_A": 0.4,
+    "U_B": 0.6,
+    "W": 0.3514285714285713,
+    "W_A": 0.43,
+    "W_A_q_bottom": 0.0,
+    "W_A_q_gap": 0.685031185031185,
+    "W_A_q_top": 0.685031185031185,
+    "W_B": 0.29904761904761906,
+    "W_B_q_bottom": 0.0,
+    "W_B_q_gap": 0.46509129967776586,
+    "W_B_q_top": 0.46509129967776586,
+    "blocking_pairs": 347,
+    "blocking_per_100": 277.6,
+    "gini_exposure_A": 0.30587199060481507,
+    "gini_exposure_B": 0.27873381294964017,
+    "n_matched": 30
+   },
+   "run_id": "SMOKE/r1.5-rho0.9-i000-base/RANDOM",
+   "seed": {
+    "root_seed": 101,
+    "spawn_key": [
+     1500,
+     900,
+     0
+    ]
+   },
+   "setting": {
+    "T": 20,
+    "delta": 0.5,
+    "k": 5,
+    "popularity_tie_scope": "global",
+    "setting_id": "base",
+    "theta": 0.5
+   },
+   "valid": true
+  },
+  {
+   "arm": "POPULARITY",
+   "cell": {
+    "n_a": 50,
+    "n_b": 75,
+    "r": 1.5,
+    "rho": 0.9
+   },
+   "diagnostics": {
+    "cap_short_slates": 0,
+    "market_generation_s": 0.0005847089996677823,
+    "matches_by_round": [
+     3,
+     2,
+     4,
+     3,
+     2,
+     5,
+     2,
+     3,
+     3,
+     2,
+     0,
+     1,
+     0,
+     1,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0
+    ],
+    "n_slates": 1624,
+    "peak_traced_bytes": 214307,
+    "runtime_s": 0.012575457998536876,
+    "short_slates": 541
+   },
+   "failures": [],
+   "instance": 0,
+   "instance_key": "r1.5-rho0.9-i000-base",
+   "metrics": {
+    "M": 0.6697507250502642,
+    "U": 0.504,
+    "U_A": 0.38,
+    "U_B": 0.5866666666666667,
+    "W": 0.376946497517926,
+    "W_A": 0.47216216216216217,
+    "W_A_q_bottom": 0.0,
+    "W_A_q_gap": 0.7588357588357588,
+    "W_A_q_top": 0.7588357588357588,
+    "W_B": 0.3134693877551021,
+    "W_B_q_bottom": 0.04833512352309345,
+    "W_B_q_gap": 0.5972073039742213,
+    "W_B_q_top": 0.6455424274973147,
+    "blocking_pairs": 278,
+    "blocking_per_100": 222.4,
+    "gini_exposure_A": 0.0814935064935065,
+    "gini_exposure_B": 0.19014989293361872,
+    "n_matched": 31
+   },
+   "run_id": "SMOKE/r1.5-rho0.9-i000-base/POPULARITY",
+   "seed": {
+    "root_seed": 101,
+    "spawn_key": [
+     1500,
+     900,
+     0
+    ]
+   },
+   "setting": {
+    "T": 20,
+    "delta": 0.5,
+    "k": 5,
+    "popularity_tie_scope": "global",
+    "setting_id": "base",
+    "theta": 0.5
+   },
+   "valid": true
+  },
+  {
+   "arm": "EXPOSURE_BALANCED",
+   "cell": {
+    "n_a": 50,
+    "n_b": 75,
+    "r": 1.5,
+    "rho": 0.9
+   },
+   "diagnostics": {
+    "cap_short_slates": 18,
+    "market_generation_s": 0.0005847089996677823,
+    "matches_by_round": [
+     8,
+     11,
+     9,
+     2,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0
+    ],
+    "n_slates": 1430,
+    "peak_traced_bytes": 214619,
+    "runtime_s": 0.010958041000776575,
+    "short_slates": 859
+   },
+   "failures": [],
+   "instance": 0,
+   "instance_key": "r1.5-rho0.9-i000-base",
+   "metrics": {
+    "M": 0.676061776061776,
+    "U": 0.52,
+    "U_A": 0.4,
+    "U_B": 0.6,
+    "W": 0.3643287369001655,
+    "W_A": 0.46918918918918917,
+    "W_A_q_bottom": 0.0,
+    "W_A_q_gap": 0.8222453222453223,
+    "W_A_q_top": 0.8222453222453223,
+    "W_B": 0.29442176870748293,
+    "W_B_q_bottom": 0.0,
+    "W_B_q_gap": 0.6380236305048336,
+    "W_B_q_top": 0.6380236305048336,
+    "blocking_pairs": 259,
+    "blocking_per_100": 207.2,
+    "gini_exposure_A": 0.2681796116504853,
+    "gini_exposure_B": 0.22964705882352932,
+    "n_matched": 30
+   },
+   "run_id": "SMOKE/r1.5-rho0.9-i000-base/EXPOSURE_BALANCED",
+   "seed": {
+    "root_seed": 101,
+    "spawn_key": [
+     1500,
+     900,
+     0
+    ]
+   },
+   "setting": {
+    "T": 20,
+    "delta": 0.5,
+    "k": 5,
+    "popularity_tie_scope": "global",
+    "setting_id": "base",
+    "theta": 0.5
+   },
+   "valid": true
+  },
+  {
+   "arm": "DA_A",
+   "cell": {
+    "n_a": 50,
+    "n_b": 75,
+    "r": 1.5,
+    "rho": 0.9
+   },
+   "diagnostics": {
+    "cap_short_slates": null,
+    "market_generation_s": 0.0005847089996677823,
+    "matches_by_round": null,
+    "n_slates": null,
+    "peak_traced_bytes": 125456,
+    "runtime_s": 0.0020377079999889247,
+    "short_slates": null
+   },
+   "failures": [],
+   "instance": 0,
+   "instance_key": "r1.5-rho0.9-i000-base",
+   "metrics": {
+    "M": 0.7789851075565362,
+    "U": 0.52,
+    "U_A": 0.4,
+    "U_B": 0.6,
+    "W": 0.3964081632653061,
+    "W_A": 0.52,
+    "W_A_q_bottom": 0.0,
+    "W_A_q_gap": 0.9480249480249482,
+    "W_A_q_top": 0.9480249480249482,
+    "W_B": 0.3140136054421769,
+    "W_B_q_bottom": 0.0,
+    "W_B_q_gap": 0.8689581095596134,
+    "W_B_q_top": 0.8689581095596134,
+    "blocking_pairs": 0,
+    "blocking_per_100": 0.0,
+    "gini_exposure_A": null,
+    "gini_exposure_B": null,
+    "n_matched": 30
+   },
+   "run_id": "SMOKE/r1.5-rho0.9-i000-base/DA_A",
+   "seed": {
+    "root_seed": 101,
+    "spawn_key": [
+     1500,
+     900,
+     0
+    ]
+   },
+   "setting": {
+    "T": 20,
+    "delta": 0.5,
+    "k": 5,
+    "popularity_tie_scope": "global",
+    "setting_id": "base",
+    "theta": 0.5
+   },
+   "valid": true
+  },
+  {
+   "arm": "DA_B",
+   "cell": {
+    "n_a": 50,
+    "n_b": 75,
+    "r": 1.5,
+    "rho": 0.9
+   },
+   "diagnostics": {
+    "cap_short_slates": null,
+    "market_generation_s": 0.0005847089996677823,
+    "matches_by_round": null,
+    "n_slates": null,
+    "peak_traced_bytes": 97864,
+    "runtime_s": 0.0018228749995614635,
+    "short_slates": null
+   },
+   "failures": [],
+   "instance": 0,
+   "instance_key": "r1.5-rho0.9-i000-base",
+   "metrics": {
+    "M": 0.7789851075565362,
+    "U": 0.52,
+    "U_A": 0.4,
+    "U_B": 0.6,
+    "W": 0.3964081632653061,
+    "W_A": 0.52,
+    "W_A_q_bottom": 0.0,
+    "W_A_q_gap": 0.9480249480249482,
+    "W_A_q_top": 0.9480249480249482,
+    "W_B": 0.3140136054421769,
+    "W_B_q_bottom": 0.0,
+    "W_B_q_gap": 0.8689581095596134,
+    "W_B_q_top": 0.8689581095596134,
+    "blocking_pairs": 0,
+    "blocking_per_100": 0.0,
+    "gini_exposure_A": null,
+    "gini_exposure_B": null,
+    "n_matched": 30
+   },
+   "run_id": "SMOKE/r1.5-rho0.9-i000-base/DA_B",
+   "seed": {
+    "root_seed": 101,
+    "spawn_key": [
+     1500,
+     900,
+     0
+    ]
+   },
+   "setting": {
+    "T": 20,
+    "delta": 0.5,
+    "k": 5,
+    "popularity_tie_scope": "global",
+    "setting_id": "base",
+    "theta": 0.5
+   },
+   "valid": true
+  },
+  {
+   "arm": "MAXW",
+   "cell": {
+    "n_a": 50,
+    "n_b": 75,
+    "r": 1.5,
+    "rho": 0.9
+   },
+   "diagnostics": {
+    "cap_short_slates": null,
+    "market_generation_s": 0.0005847089996677823,
+    "matches_by_round": null,
+    "n_slates": null,
+    "peak_traced_bytes": 66526,
+    "runtime_s": 0.0003039580005861353,
+    "short_slates": null
+   },
+   "failures": [],
+   "instance": 0,
+   "instance_key": "r1.5-rho0.9-i000-base",
+   "metrics": {
+    "M": 0.7549432549432549,
+    "U": 0.472,
+    "U_A": 0.34,
+    "U_B": 0.56,
+    "W": 0.4394440154440154,
+    "W_A": 0.5643243243243243,
+    "W_A_q_bottom": 0.0,
+    "W_A_q_gap": 0.8513513513513513,
+    "W_A_q_top": 0.8513513513513513,
+    "W_B": 0.3561904761904762,
+    "W_B_q_bottom": 0.0,
+    "W_B_q_gap": 0.7798066595059076,
+    "W_B_q_top": 0.7798066595059076,
+    "blocking_pairs": 120,
+    "blocking_per_100": 96.0,
+    "gini_exposure_A": null,
+    "gini_exposure_B": null,
+    "n_matched": 33
+   },
+   "run_id": "SMOKE/r1.5-rho0.9-i000-base/MAXW",
+   "seed": {
+    "root_seed": 101,
+    "spawn_key": [
+     1500,
+     900,
+     0
+    ]
+   },
+   "setting": {
+    "T": 20,
+    "delta": 0.5,
+    "k": 5,
+    "popularity_tie_scope": "global",
+    "setting_id": "base",
+    "theta": 0.5
+   },
+   "valid": true
+  },
+  {
+   "arm": "RANDOM",
+   "cell": {
+    "n_a": 50,
+    "n_b": 75,
+    "r": 1.5,
+    "rho": 0.9
+   },
+   "diagnostics": {
+    "cap_short_slates": 0,
+    "market_generation_s": 0.0005031250002502929,
+    "matches_by_round": [
+     7,
+     7,
+     11,
+     4,
+     2,
+     2,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0
+    ],
+    "n_slates": 1364,
+    "peak_traced_bytes": null,
+    "runtime_s": 0.009345958000267274,
+    "short_slates": 793
+   },
+   "failures": [],
+   "instance": 1,
+   "instance_key": "r1.5-rho0.9-i001-base",
+   "metrics": {
+    "M": 0.6399488542345686,
+    "U": 0.472,
+    "U_A": 0.34,
+    "U_B": 0.56,
+    "W": 0.39117705460562596,
+    "W_A": 0.5024324324324324,
+    "W_A_q_bottom": 0.0,
+    "W_A_q_gap": 0.7255717255717257,
+    "W_A_q_top": 0.7255717255717257,
+    "W_B": 0.3170068027210884,
+    "W_B_q_bottom": 0.0,
+    "W_B_q_gap": 0.602577873254565,
+    "W_B_q_top": 0.602577873254565,
+    "blocking_pairs": 304,
+    "blocking_per_100": 243.2,
+    "gini_exposure_A": 0.3019975932611312,
+    "gini_exposure_B": 0.24878073510773113,
+    "n_matched": 33
+   },
+   "run_id": "SMOKE/r1.5-rho0.9-i001-base/RANDOM",
+   "seed": {
+    "root_seed": 101,
+    "spawn_key": [
+     1500,
+     900,
+     1
+    ]
+   },
+   "setting": {
+    "T": 20,
+    "delta": 0.5,
+    "k": 5,
+    "popularity_tie_scope": "global",
+    "setting_id": "base",
+    "theta": 0.5
+   },
+   "valid": true
+  },
+  {
+   "arm": "POPULARITY",
+   "cell": {
+    "n_a": 50,
+    "n_b": 75,
+    "r": 1.5,
+    "rho": 0.9
+   },
+   "diagnostics": {
+    "cap_short_slates": 0,
+    "market_generation_s": 0.0005031250002502929,
+    "matches_by_round": [
+     3,
+     2,
+     4,
+     3,
+     2,
+     3,
+     3,
+     3,
+     5,
+     2,
+     3,
+     1,
+     0,
+     2,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0
+    ],
+    "n_slates": 1544,
+    "peak_traced_bytes": null,
+    "runtime_s": 0.012540084000647767,
+    "short_slates": 473
+   },
+   "failures": [],
+   "instance": 1,
+   "instance_key": "r1.5-rho0.9-i001-base",
+   "metrics": {
+    "M": 0.6525862597291169,
+    "U": 0.424,
+    "U_A": 0.28,
+    "U_B": 0.52,
+    "W": 0.4133899613899614,
+    "W_A": 0.5191891891891891,
+    "W_A_q_bottom": 0.0,
+    "W_A_q_gap": 0.7817047817047817,
+    "W_A_q_top": 0.7817047817047817,
+    "W_B": 0.34285714285714286,
+    "W_B_q_bottom": 0.039742212674543496,
+    "W_B_q_gap": 0.4715359828141784,
+    "W_B_q_top": 0.5112781954887219,
+    "blocking_pairs": 303,
+    "blocking_per_100": 242.4,
+    "gini_exposure_A": 0.07964458804523433,
+    "gini_exposure_B": 0.22625368731563422,
+    "n_matched": 36
+   },
+   "run_id": "SMOKE/r1.5-rho0.9-i001-base/POPULARITY",
+   "seed": {
+    "root_seed": 101,
+    "spawn_key": [
+     1500,
+     900,
+     1
+    ]
+   },
+   "setting": {
+    "T": 20,
+    "delta": 0.5,
+    "k": 5,
+    "popularity_tie_scope": "global",
+    "setting_id": "base",
+    "theta": 0.5
+   },
+   "valid": true
+  },
+  {
+   "arm": "EXPOSURE_BALANCED",
+   "cell": {
+    "n_a": 50,
+    "n_b": 75,
+    "r": 1.5,
+    "rho": 0.9
+   },
+   "diagnostics": {
+    "cap_short_slates": 14,
+    "market_generation_s": 0.0005031250002502929,
+    "matches_by_round": [
+     6,
+     13,
+     11,
+     2,
+     2,
+     1,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0
+    ],
+    "n_slates": 1278,
+    "peak_traced_bytes": null,
+    "runtime_s": 0.010163625000132015,
+    "short_slates": 753
+   },
+   "failures": [],
+   "instance": 1,
+   "instance_key": "r1.5-rho0.9-i001-base",
+   "metrics": {
+    "M": 0.6510519265621305,
+    "U": 0.44,
+    "U_A": 0.3,
+    "U_B": 0.5333333333333333,
+    "W": 0.40527082184225044,
+    "W_A": 0.522972972972973,
+    "W_A_q_bottom": 0.0,
+    "W_A_q_gap": 0.7681912681912682,
+    "W_A_q_top": 0.7681912681912682,
+    "W_B": 0.32680272108843533,
+    "W_B_q_bottom": 0.0,
+    "W_B_q_gap": 0.6670247046186895,
+    "W_B_q_top": 0.6670247046186895,
+    "blocking_pairs": 274,
+    "blocking_per_100": 219.2,
+    "gini_exposure_A": 0.2670943396226415,
+    "gini_exposure_B": 0.23083333333333322,
+    "n_matched": 35
+   },
+   "run_id": "SMOKE/r1.5-rho0.9-i001-base/EXPOSURE_BALANCED",
+   "seed": {
+    "root_seed": 101,
+    "spawn_key": [
+     1500,
+     900,
+     1
+    ]
+   },
+   "setting": {
+    "T": 20,
+    "delta": 0.5,
+    "k": 5,
+    "popularity_tie_scope": "global",
+    "setting_id": "base",
+    "theta": 0.5
+   },
+   "valid": true
+  },
+  {
+   "arm": "DA_A",
+   "cell": {
+    "n_a": 50,
+    "n_b": 75,
+    "r": 1.5,
+    "rho": 0.9
+   },
+   "diagnostics": {
+    "cap_short_slates": null,
+    "market_generation_s": 0.0005031250002502929,
+    "matches_by_round": null,
+    "n_slates": null,
+    "peak_traced_bytes": null,
+    "runtime_s": 0.001747791000525467,
+    "short_slates": null
+   },
+   "failures": [],
+   "instance": 1,
+   "instance_key": "r1.5-rho0.9-i001-base",
+   "metrics": {
+    "M": 0.7503893449271599,
+    "U": 0.456,
+    "U_A": 0.32,
+    "U_B": 0.5466666666666666,
+    "W": 0.4346232763375621,
+    "W_A": 0.575945945945946,
+    "W_A_q_bottom": 0.0,
+    "W_A_q_gap": 0.9604989604989604,
+    "W_A_q_top": 0.9604989604989604,
+    "W_B": 0.3404081632653061,
+    "W_B_q_bottom": 0.0,
+    "W_B_q_gap": 0.8410311493018261,
+    "W_B_q_top": 0.8410311493018261,
+    "blocking_pairs": 0,
+    "blocking_per_100": 0.0,
+    "gini_exposure_A": null,
+    "gini_exposure_B": null,
+    "n_matched": 34
+   },
+   "run_id": "SMOKE/r1.5-rho0.9-i001-base/DA_A",
+   "seed": {
+    "root_seed": 101,
+    "spawn_key": [
+     1500,
+     900,
+     1
+    ]
+   },
+   "setting": {
+    "T": 20,
+    "delta": 0.5,
+    "k": 5,
+    "popularity_tie_scope": "global",
+    "setting_id": "base",
+    "theta": 0.5
+   },
+   "valid": true
+  },
+  {
+   "arm": "DA_B",
+   "cell": {
+    "n_a": 50,
+    "n_b": 75,
+    "r": 1.5,
+    "rho": 0.9
+   },
+   "diagnostics": {
+    "cap_short_slates": null,
+    "market_generation_s": 0.0005031250002502929,
+    "matches_by_round": null,
+    "n_slates": null,
+    "peak_traced_bytes": null,
+    "runtime_s": 0.0018424999998387648,
+    "short_slates": null
+   },
+   "failures": [],
+   "instance": 1,
+   "instance_key": "r1.5-rho0.9-i001-base",
+   "metrics": {
+    "M": 0.7503893449271599,
+    "U": 0.456,
+    "U_A": 0.32,
+    "U_B": 0.5466666666666666,
+    "W": 0.4346232763375621,
+    "W_A": 0.575945945945946,
+    "W_A_q_bottom": 0.0,
+    "W_A_q_gap": 0.9604989604989604,
+    "W_A_q_top": 0.9604989604989604,
+    "W_B": 0.3404081632653061,
+    "W_B_q_bottom": 0.0,
+    "W_B_q_gap": 0.8410311493018261,
+    "W_B_q_top": 0.8410311493018261,
+    "blocking_pairs": 0,
+    "blocking_per_100": 0.0,
+    "gini_exposure_A": null,
+    "gini_exposure_B": null,
+    "n_matched": 34
+   },
+   "run_id": "SMOKE/r1.5-rho0.9-i001-base/DA_B",
+   "seed": {
+    "root_seed": 101,
+    "spawn_key": [
+     1500,
+     900,
+     1
+    ]
+   },
+   "setting": {
+    "T": 20,
+    "delta": 0.5,
+    "k": 5,
+    "popularity_tie_scope": "global",
+    "setting_id": "base",
+    "theta": 0.5
+   },
+   "valid": true
+  },
+  {
+   "arm": "MAXW",
+   "cell": {
+    "n_a": 50,
+    "n_b": 75,
+    "r": 1.5,
+    "rho": 0.9
+   },
+   "diagnostics": {
+    "cap_short_slates": null,
+    "market_generation_s": 0.0005031250002502929,
+    "matches_by_round": null,
+    "n_slates": null,
+    "peak_traced_bytes": null,
+    "runtime_s": 0.000308374999804073,
+    "short_slates": null
+   },
+   "failures": [],
+   "instance": 1,
+   "instance_key": "r1.5-rho0.9-i001-base",
+   "metrics": {
+    "M": 0.7331882351187371,
+    "U": 0.408,
+    "U_A": 0.26,
+    "U_B": 0.5066666666666667,
+    "W": 0.47693105350248216,
+    "W_A": 0.6278378378378379,
+    "W_A_q_bottom": 0.040540540540540536,
+    "W_A_q_gap": 0.8076923076923077,
+    "W_A_q_top": 0.8482328482328483,
+    "W_B": 0.37632653061224486,
+    "W_B_q_bottom": 0.0,
+    "W_B_q_gap": 0.7454350161117077,
+    "W_B_q_top": 0.7454350161117077,
+    "blocking_pairs": 126,
+    "blocking_per_100": 100.8,
+    "gini_exposure_A": null,
+    "gini_exposure_B": null,
+    "n_matched": 37
+   },
+   "run_id": "SMOKE/r1.5-rho0.9-i001-base/MAXW",
+   "seed": {
+    "root_seed": 101,
+    "spawn_key": [
+     1500,
+     900,
+     1
+    ]
+   },
+   "setting": {
+    "T": 20,
+    "delta": 0.5,
+    "k": 5,
+    "popularity_tie_scope": "global",
+    "setting_id": "base",
+    "theta": 0.5
+   },
+   "valid": true
+  },
+  {
+   "arm": "RANDOM",
+   "cell": {
+    "n_a": 50,
+    "n_b": 75,
+    "r": 1.5,
+    "rho": 0.9
+   },
+   "diagnostics": {
+    "cap_short_slates": 0,
+    "market_generation_s": 0.0005001659992558416,
+    "matches_by_round": [
+     12,
+     7,
+     8,
+     4,
+     3,
+     1,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0
+    ],
+    "n_slates": 1274,
+    "peak_traced_bytes": null,
+    "runtime_s": 0.008542083000065759,
+    "short_slates": 766
+   },
+   "failures": [],
+   "instance": 2,
+   "instance_key": "r1.5-rho0.9-i002-base",
+   "metrics": {
+    "M": 0.6619572925695376,
+    "U": 0.44,
+    "U_A": 0.3,
+    "U_B": 0.5333333333333333,
+    "W": 0.41255377826806405,
+    "W_A": 0.5264864864864864,
+    "W_A_q_bottom": 0.0,
+    "W_A_q_gap": 0.7193347193347192,
+    "W_A_q_top": 0.7193347193347192,
+    "W_B": 0.33659863945578233,
+    "W_B_q_bottom": 0.0,
+    "W_B_q_gap": 0.7411385606874328,
+    "W_B_q_top": 0.7411385606874328,
+    "blocking_pairs": 264,
+    "blocking_per_100": 211.2,
+    "gini_exposure_A": 0.3314228987425545,
+    "gini_exposure_B": 0.283254593175853,
+    "n_matched": 35
+   },
+   "run_id": "SMOKE/r1.5-rho0.9-i002-base/RANDOM",
+   "seed": {
+    "root_seed": 101,
+    "spawn_key": [
+     1500,
+     900,
+     2
+    ]
+   },
+   "setting": {
+    "T": 20,
+    "delta": 0.5,
+    "k": 5,
+    "popularity_tie_scope": "global",
+    "setting_id": "base",
+    "theta": 0.5
+   },
+   "valid": true
+  },
+  {
+   "arm": "POPULARITY",
+   "cell": {
+    "n_a": 50,
+    "n_b": 75,
+    "r": 1.5,
+    "rho": 0.9
+   },
+   "diagnostics": {
+    "cap_short_slates": 0,
+    "market_generation_s": 0.0005001659992558416,
+    "matches_by_round": [
+     2,
+     3,
+     3,
+     3,
+     3,
+     3,
+     3,
+     3,
+     4,
+     3,
+     3,
+     1,
+     0,
+     1,
+     2,
+     0,
+     0,
+     0,
+     0,
+     0
+    ],
+    "n_slates": 1544,
+    "peak_traced_bytes": null,
+    "runtime_s": 0.01219029200001387,
+    "short_slates": 464
+   },
+   "failures": [],
+   "instance": 2,
+   "instance_key": "r1.5-rho0.9-i002-base",
+   "metrics": {
+    "M": 0.6666790894590123,
+    "U": 0.408,
+    "U_A": 0.26,
+    "U_B": 0.5066666666666667,
+    "W": 0.4383894098179813,
+    "W_A": 0.5518918918918919,
+    "W_A_q_bottom": 0.0,
+    "W_A_q_gap": 0.7536382536382535,
+    "W_A_q_top": 0.7536382536382535,
+    "W_B": 0.36272108843537415,
+    "W_B_q_bottom": 0.0,
+    "W_B_q_gap": 0.6240601503759398,
+    "W_B_q_top": 0.6240601503759398,
+    "blocking_pairs": 277,
+    "blocking_per_100": 221.6,
+    "gini_exposure_A": 0.079454253611557,
+    "gini_exposure_B": 0.2249452954048139,
+    "n_matched": 37
+   },
+   "run_id": "SMOKE/r1.5-rho0.9-i002-base/POPULARITY",
+   "seed": {
+    "root_seed": 101,
+    "spawn_key": [
+     1500,
+     900,
+     2
+    ]
+   },
+   "setting": {
+    "T": 20,
+    "delta": 0.5,
+    "k": 5,
+    "popularity_tie_scope": "global",
+    "setting_id": "base",
+    "theta": 0.5
+   },
+   "valid": true
+  },
+  {
+   "arm": "EXPOSURE_BALANCED",
+   "cell": {
+    "n_a": 50,
+    "n_b": 75,
+    "r": 1.5,
+    "rho": 0.9
+   },
+   "diagnostics": {
+    "cap_short_slates": 14,
+    "market_generation_s": 0.0005001659992558416,
+    "matches_by_round": [
+     7,
+     15,
+     11,
+     1,
+     0,
+     1,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0
+    ],
+    "n_slates": 1260,
+    "peak_traced_bytes": null,
+    "runtime_s": 0.009725207999508712,
+    "short_slates": 764
+   },
+   "failures": [],
+   "instance": 2,
+   "instance_key": "r1.5-rho0.9-i002-base",
+   "metrics": {
+    "M": 0.6537625088645497,
+    "U": 0.44,
+    "U_A": 0.3,
+    "U_B": 0.5333333333333333,
+    "W": 0.40882294539437397,
+    "W_A": 0.5175675675675676,
+    "W_A_q_bottom": 0.0,
+    "W_A_q_gap": 0.7536382536382535,
+    "W_A_q_top": 0.7536382536382535,
+    "W_B": 0.33632653061224493,
+    "W_B_q_bottom": 0.0,
+    "W_B_q_gap": 0.7250268528464017,
+    "W_B_q_top": 0.7250268528464017,
+    "blocking_pairs": 278,
+    "blocking_per_100": 222.4,
+    "gini_exposure_A": 0.2711690046760187,
+    "gini_exposure_B": 0.24457280385078217,
+    "n_matched": 35
+   },
+   "run_id": "SMOKE/r1.5-rho0.9-i002-base/EXPOSURE_BALANCED",
+   "seed": {
+    "root_seed": 101,
+    "spawn_key": [
+     1500,
+     900,
+     2
+    ]
+   },
+   "setting": {
+    "T": 20,
+    "delta": 0.5,
+    "k": 5,
+    "popularity_tie_scope": "global",
+    "setting_id": "base",
+    "theta": 0.5
+   },
+   "valid": true
+  },
+  {
+   "arm": "DA_A",
+   "cell": {
+    "n_a": 50,
+    "n_b": 75,
+    "r": 1.5,
+    "rho": 0.9
+   },
+   "diagnostics": {
+    "cap_short_slates": null,
+    "market_generation_s": 0.0005001659992558416,
+    "matches_by_round": null,
+    "n_slates": null,
+    "peak_traced_bytes": null,
+    "runtime_s": 0.0017122919998655561,
+    "short_slates": null
+   },
+   "failures": [],
+   "instance": 2,
+   "instance_key": "r1.5-rho0.9-i002-base",
+   "metrics": {
+    "M": 0.7450034067681126,
+    "U": 0.456,
+    "U_A": 0.32,
+    "U_B": 0.5466666666666666,
+    "W": 0.4360308880308881,
+    "W_A": 0.5786486486486486,
+    "W_A_q_bottom": 0.0,
+    "W_A_q_gap": 0.9542619542619544,
+    "W_A_q_top": 0.9542619542619544,
+    "W_B": 0.34095238095238095,
+    "W_B_q_bottom": 0.0,
+    "W_B_q_gap": 0.8582169709989259,
+    "W_B_q_top": 0.8582169709989259,
+    "blocking_pairs": 0,
+    "blocking_per_100": 0.0,
+    "gini_exposure_A": null,
+    "gini_exposure_B": null,
+    "n_matched": 34
+   },
+   "run_id": "SMOKE/r1.5-rho0.9-i002-base/DA_A",
+   "seed": {
+    "root_seed": 101,
+    "spawn_key": [
+     1500,
+     900,
+     2
+    ]
+   },
+   "setting": {
+    "T": 20,
+    "delta": 0.5,
+    "k": 5,
+    "popularity_tie_scope": "global",
+    "setting_id": "base",
+    "theta": 0.5
+   },
+   "valid": true
+  },
+  {
+   "arm": "DA_B",
+   "cell": {
+    "n_a": 50,
+    "n_b": 75,
+    "r": 1.5,
+    "rho": 0.9
+   },
+   "diagnostics": {
+    "cap_short_slates": null,
+    "market_generation_s": 0.0005001659992558416,
+    "matches_by_round": null,
+    "n_slates": null,
+    "peak_traced_bytes": null,
+    "runtime_s": 0.0017496659984317375,
+    "short_slates": null
+   },
+   "failures": [],
+   "instance": 2,
+   "instance_key": "r1.5-rho0.9-i002-base",
+   "metrics": {
+    "M": 0.7450034067681126,
+    "U": 0.456,
+    "U_A": 0.32,
+    "U_B": 0.5466666666666666,
+    "W": 0.4360308880308881,
+    "W_A": 0.5786486486486486,
+    "W_A_q_bottom": 0.0,
+    "W_A_q_gap": 0.9542619542619544,
+    "W_A_q_top": 0.9542619542619544,
+    "W_B": 0.34095238095238095,
+    "W_B_q_bottom": 0.0,
+    "W_B_q_gap": 0.8582169709989259,
+    "W_B_q_top": 0.8582169709989259,
+    "blocking_pairs": 0,
+    "blocking_per_100": 0.0,
+    "gini_exposure_A": null,
+    "gini_exposure_B": null,
+    "n_matched": 34
+   },
+   "run_id": "SMOKE/r1.5-rho0.9-i002-base/DA_B",
+   "seed": {
+    "root_seed": 101,
+    "spawn_key": [
+     1500,
+     900,
+     2
+    ]
+   },
+   "setting": {
+    "T": 20,
+    "delta": 0.5,
+    "k": 5,
+    "popularity_tie_scope": "global",
+    "setting_id": "base",
+    "theta": 0.5
+   },
+   "valid": true
+  },
+  {
+   "arm": "MAXW",
+   "cell": {
+    "n_a": 50,
+    "n_b": 75,
+    "r": 1.5,
+    "rho": 0.9
+   },
+   "diagnostics": {
+    "cap_short_slates": null,
+    "market_generation_s": 0.0005001659992558416,
+    "matches_by_round": null,
+    "n_slates": null,
+    "peak_traced_bytes": null,
+    "runtime_s": 0.0003039999992324738,
+    "short_slates": null
+   },
+   "failures": [],
+   "instance": 2,
+   "instance_key": "r1.5-rho0.9-i002-base",
+   "metrics": {
+    "M": 0.7369945133103029,
+    "U": 0.392,
+    "U_A": 0.24,
+    "U_B": 0.49333333333333335,
+    "W": 0.4942526199669057,
+    "W_A": 0.6421621621621623,
+    "W_A_q_bottom": 0.06237006237006237,
+    "W_A_q_gap": 0.7931392931392932,
+    "W_A_q_top": 0.8555093555093556,
+    "W_B": 0.39564625850340135,
+    "W_B_q_bottom": 0.0,
+    "W_B_q_gap": 0.761546723952739,
+    "W_B_q_top": 0.761546723952739,
+    "blocking_pairs": 134,
+    "blocking_per_100": 107.2,
+    "gini_exposure_A": null,
+    "gini_exposure_B": null,
+    "n_matched": 38
+   },
+   "run_id": "SMOKE/r1.5-rho0.9-i002-base/MAXW",
+   "seed": {
+    "root_seed": 101,
+    "spawn_key": [
+     1500,
+     900,
+     2
+    ]
+   },
+   "setting": {
+    "T": 20,
+    "delta": 0.5,
+    "k": 5,
+    "popularity_tie_scope": "global",
+    "setting_id": "base",
+    "theta": 0.5
+   },
+   "valid": true
+  },
+  {
+   "arm": "RANDOM",
+   "cell": {
+    "n_a": 50,
+    "n_b": 75,
+    "r": 1.5,
+    "rho": 0.9
+   },
+   "diagnostics": {
+    "cap_short_slates": 0,
+    "market_generation_s": 0.00048808300016389694,
+    "matches_by_round": [
+     11,
+     8,
+     7,
+     2,
+     2,
+     1,
+     1,
+     1,
+     1,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0
+    ],
+    "n_slates": 1332,
+    "peak_traced_bytes": null,
+    "runtime_s": 0.01054683399888745,
+    "short_slates": 781
+   },
+   "failures": [],
+   "instance": 3,
+   "instance_key": "r1.5-rho0.9-i003-base",
+   "metrics": {
+    "M": 0.6265938807955616,
+    "U": 0.456,
+    "U_A": 0.32,
+    "U_B": 0.5466666666666666,
+    "W": 0.3916161059018203,
+    "W_A": 0.5010810810810811,
+    "W_A_q_bottom": 0.0,
+    "W_A_q_gap": 0.7099792099792099,
+    "W_A_q_top": 0.7099792099792099,
+    "W_B": 0.3186394557823129,
+    "W_B_q_bottom": 0.0,
+    "W_B_q_gap": 0.5542427497314715,
+    "W_B_q_top": 0.5542427497314715,
+    "blocking_pairs": 324,
+    "blocking_per_100": 259.2,
+    "gini_exposure_A": 0.3256524427952998,
+    "gini_exposure_B": 0.2692789968652036,
+    "n_matched": 34
+   },
+   "run_id": "SMOKE/r1.5-rho0.9-i003-base/RANDOM",
+   "seed": {
+    "root_seed": 101,
+    "spawn_key": [
+     1500,
+     900,
+     3
+    ]
+   },
+   "setting": {
+    "T": 20,
+    "delta": 0.5,
+    "k": 5,
+    "popularity_tie_scope": "global",
+    "setting_id": "base",
+    "theta": 0.5
+   },
+   "valid": true
+  },
+  {
+   "arm": "POPULARITY",
+   "cell": {
+    "n_a": 50,
+    "n_b": 75,
+    "r": 1.5,
+    "rho": 0.9
+   },
+   "diagnostics": {
+    "cap_short_slates": 0,
+    "market_generation_s": 0.00048808300016389694,
+    "matches_by_round": [
+     2,
+     3,
+     1,
+     4,
+     4,
+     4,
+     3,
+     2,
+     4,
+     4,
+     1,
+     1,
+     0,
+     1,
+     2,
+     0,
+     0,
+     0,
+     0,
+     0
+    ],
+    "n_slates": 1562,
+    "peak_traced_bytes": null,
+    "runtime_s": 0.016184709000299335,
+    "short_slates": 477
+   },
+   "failures": [],
+   "instance": 3,
+   "instance_key": "r1.5-rho0.9-i003-base",
+   "metrics": {
+    "M": 0.6520117055831341,
+    "U": 0.424,
+    "U_A": 0.28,
+    "U_B": 0.52,
+    "W": 0.4223541092112521,
+    "W_A": 0.5248648648648647,
+    "W_A_q_bottom": 0.06652806652806653,
+    "W_A_q_gap": 0.6683991683991685,
+    "W_A_q_top": 0.734927234927235,
+    "W_B": 0.3540136054421768,
+    "W_B_q_bottom": 0.0,
+    "W_B_q_gap": 0.4629430719656284,
+    "W_B_q_top": 0.4629430719656284,
+    "blocking_pairs": 317,
+    "blocking_per_100": 253.6,
+    "gini_exposure_A": 0.08173076923076916,
+    "gini_exposure_B": 0.2203904555314533,
+    "n_matched": 36
+   },
+   "run_id": "SMOKE/r1.5-rho0.9-i003-base/POPULARITY",
+   "seed": {
+    "root_seed": 101,
+    "spawn_key": [
+     1500,
+     900,
+     3
+    ]
+   },
+   "setting": {
+    "T": 20,
+    "delta": 0.5,
+    "k": 5,
+    "popularity_tie_scope": "global",
+    "setting_id": "base",
+    "theta": 0.5
+   },
+   "valid": true
+  },
+  {
+   "arm": "EXPOSURE_BALANCED",
+   "cell": {
+    "n_a": 50,
+    "n_b": 75,
+    "r": 1.5,
+    "rho": 0.9
+   },
+   "diagnostics": {
+    "cap_short_slates": 18,
+    "market_generation_s": 0.00048808300016389694,
+    "matches_by_round": [
+     5,
+     14,
+     9,
+     2,
+     2,
+     2,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0
+    ],
+    "n_slates": 1320,
+    "peak_traced_bytes": null,
+    "runtime_s": 0.014098249999733525,
+    "short_slates": 761
+   },
+   "failures": [],
+   "instance": 3,
+   "instance_key": "r1.5-rho0.9-i003-base",
+   "metrics": {
+    "M": 0.6653823691638818,
+    "U": 0.456,
+    "U_A": 0.32,
+    "U_B": 0.5466666666666666,
+    "W": 0.40147821290678426,
+    "W_A": 0.5167567567567568,
+    "W_A_q_bottom": 0.06652806652806653,
+    "W_A_q_gap": 0.7318087318087318,
+    "W_A_q_top": 0.7983367983367984,
+    "W_B": 0.324625850340136,
+    "W_B_q_bottom": 0.0,
+    "W_B_q_gap": 0.6315789473684209,
+    "W_B_q_top": 0.6315789473684209,
+    "blocking_pairs": 236,
+    "blocking_per_100": 188.8,
+    "gini_exposure_A": 0.25983519717480874,
+    "gini_exposure_B": 0.2293035619351409,
+    "n_matched": 34
+   },
+   "run_id": "SMOKE/r1.5-rho0.9-i003-base/EXPOSURE_BALANCED",
+   "seed": {
+    "root_seed": 101,
+    "spawn_key": [
+     1500,
+     900,
+     3
+    ]
+   },
+   "setting": {
+    "T": 20,
+    "delta": 0.5,
+    "k": 5,
+    "popularity_tie_scope": "global",
+    "setting_id": "base",
+    "theta": 0.5
+   },
+   "valid": true
+  },
+  {
+   "arm": "DA_A",
+   "cell": {
+    "n_a": 50,
+    "n_b": 75,
+    "r": 1.5,
+    "rho": 0.9
+   },
+   "diagnostics": {
+    "cap_short_slates": null,
+    "market_generation_s": 0.00048808300016389694,
+    "matches_by_round": null,
+    "n_slates": null,
+    "peak_traced_bytes": null,
+    "runtime_s": 0.002030665998972836,
+    "short_slates": null
+   },
+   "failures": [],
+   "instance": 3,
+   "instance_key": "r1.5-rho0.9-i003-base",
+   "metrics": {
+    "M": 0.7473883902455332,
+    "U": 0.472,
+    "U_A": 0.34,
+    "U_B": 0.56,
+    "W": 0.4240419194704909,
+    "W_A": 0.5645945945945946,
+    "W_A_q_bottom": 0.0,
+    "W_A_q_gap": 0.9625779625779625,
+    "W_A_q_top": 0.9625779625779625,
+    "W_B": 0.3303401360544218,
+    "W_B_q_bottom": 0.0,
+    "W_B_q_gap": 0.8539205155746509,
+    "W_B_q_top": 0.8539205155746509,
+    "blocking_pairs": 0,
+    "blocking_per_100": 0.0,
+    "gini_exposure_A": null,
+    "gini_exposure_B": null,
+    "n_matched": 33
+   },
+   "run_id": "SMOKE/r1.5-rho0.9-i003-base/DA_A",
+   "seed": {
+    "root_seed": 101,
+    "spawn_key": [
+     1500,
+     900,
+     3
+    ]
+   },
+   "setting": {
+    "T": 20,
+    "delta": 0.5,
+    "k": 5,
+    "popularity_tie_scope": "global",
+    "setting_id": "base",
+    "theta": 0.5
+   },
+   "valid": true
+  },
+  {
+   "arm": "DA_B",
+   "cell": {
+    "n_a": 50,
+    "n_b": 75,
+    "r": 1.5,
+    "rho": 0.9
+   },
+   "diagnostics": {
+    "cap_short_slates": null,
+    "market_generation_s": 0.00048808300016389694,
+    "matches_by_round": null,
+    "n_slates": null,
+    "peak_traced_bytes": null,
+    "runtime_s": 0.002103790999171906,
+    "short_slates": null
+   },
+   "failures": [],
+   "instance": 3,
+   "instance_key": "r1.5-rho0.9-i003-base",
+   "metrics": {
+    "M": 0.7510989653846796,
+    "U": 0.472,
+    "U_A": 0.34,
+    "U_B": 0.56,
+    "W": 0.42383232211803645,
+    "W_A": 0.5616216216216217,
+    "W_A_q_bottom": 0.0,
+    "W_A_q_gap": 0.9625779625779625,
+    "W_A_q_top": 0.9625779625779625,
+    "W_B": 0.33197278911564626,
+    "W_B_q_bottom": 0.0,
+    "W_B_q_gap": 0.8539205155746509,
+    "W_B_q_top": 0.8539205155746509,
+    "blocking_pairs": 0,
+    "blocking_per_100": 0.0,
+    "gini_exposure_A": null,
+    "gini_exposure_B": null,
+    "n_matched": 33
+   },
+   "run_id": "SMOKE/r1.5-rho0.9-i003-base/DA_B",
+   "seed": {
+    "root_seed": 101,
+    "spawn_key": [
+     1500,
+     900,
+     3
+    ]
+   },
+   "setting": {
+    "T": 20,
+    "delta": 0.5,
+    "k": 5,
+    "popularity_tie_scope": "global",
+    "setting_id": "base",
+    "theta": 0.5
+   },
+   "valid": true
+  },
+  {
+   "arm": "MAXW",
+   "cell": {
+    "n_a": 50,
+    "n_b": 75,
+    "r": 1.5,
+    "rho": 0.9
+   },
+   "diagnostics": {
+    "cap_short_slates": null,
+    "market_generation_s": 0.00048808300016389694,
+    "matches_by_round": null,
+    "n_slates": null,
+    "peak_traced_bytes": null,
+    "runtime_s": 0.00038254199898801744,
+    "short_slates": null
+   },
+   "failures": [],
+   "instance": 3,
+   "instance_key": "r1.5-rho0.9-i003-base",
+   "metrics": {
+    "M": 0.7475485689771403,
+    "U": 0.424,
+    "U_A": 0.28,
+    "U_B": 0.52,
+    "W": 0.4715830115830116,
+    "W_A": 0.6132432432432432,
+    "W_A_q_bottom": 0.06652806652806653,
+    "W_A_q_gap": 0.8160083160083159,
+    "W_A_q_top": 0.8825363825363824,
+    "W_B": 0.3771428571428571,
+    "W_B_q_bottom": 0.0,
+    "W_B_q_gap": 0.7776584317937701,
+    "W_B_q_top": 0.7776584317937701,
+    "blocking_pairs": 92,
+    "blocking_per_100": 73.6,
+    "gini_exposure_A": null,
+    "gini_exposure_B": null,
+    "n_matched": 36
+   },
+   "run_id": "SMOKE/r1.5-rho0.9-i003-base/MAXW",
+   "seed": {
+    "root_seed": 101,
+    "spawn_key": [
+     1500,
+     900,
+     3
+    ]
+   },
+   "setting": {
+    "T": 20,
+    "delta": 0.5,
+    "k": 5,
+    "popularity_tie_scope": "global",
+    "setting_id": "base",
+    "theta": 0.5
+   },
+   "valid": true
+  },
+  {
+   "arm": "RANDOM",
+   "cell": {
+    "n_a": 50,
+    "n_b": 75,
+    "r": 1.5,
+    "rho": 0.9
+   },
+   "diagnostics": {
+    "cap_short_slates": 0,
+    "market_generation_s": 0.0006281250007305061,
+    "matches_by_round": [
+     8,
+     10,
+     8,
+     4,
+     2,
+     0,
+     0,
+     2,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0
+    ],
+    "n_slates": 1328,
+    "peak_traced_bytes": null,
+    "runtime_s": 0.010578499999610358,
+    "short_slates": 782
+   },
+   "failures": [],
+   "instance": 4,
+   "instance_key": "r1.5-rho0.9-i004-base",
+   "metrics": {
+    "M": 0.6555514097530903,
+    "U": 0.456,
+    "U_A": 0.32,
+    "U_B": 0.5466666666666666,
+    "W": 0.4045162713734142,
+    "W_A": 0.5202702702702703,
+    "W_A_q_bottom": 0.0,
+    "W_A_q_gap": 0.7546777546777547,
+    "W_A_q_top": 0.7546777546777547,
+    "W_B": 0.32734693877551024,
+    "W_B_q_bottom": 0.0,
+    "W_B_q_gap": 0.6691729323308271,
+    "W_B_q_top": 0.6691729323308271,
+    "blocking_pairs": 267,
+    "blocking_per_100": 213.6,
+    "gini_exposure_A": 0.3218114143920596,
+    "gini_exposure_B": 0.2648216680075086,
+    "n_matched": 34
+   },
+   "run_id": "SMOKE/r1.5-rho0.9-i004-base/RANDOM",
+   "seed": {
+    "root_seed": 101,
+    "spawn_key": [
+     1500,
+     900,
+     4
+    ]
+   },
+   "setting": {
+    "T": 20,
+    "delta": 0.5,
+    "k": 5,
+    "popularity_tie_scope": "global",
+    "setting_id": "base",
+    "theta": 0.5
+   },
+   "valid": true
+  },
+  {
+   "arm": "POPULARITY",
+   "cell": {
+    "n_a": 50,
+    "n_b": 75,
+    "r": 1.5,
+    "rho": 0.9
+   },
+   "diagnostics": {
+    "cap_short_slates": 0,
+    "market_generation_s": 0.0006281250007305061,
+    "matches_by_round": [
+     3,
+     3,
+     4,
+     2,
+     2,
+     2,
+     4,
+     5,
+     3,
+     2,
+     2,
+     1,
+     0,
+     0,
+     1,
+     0,
+     0,
+     0,
+     0,
+     0
+    ],
+    "n_slates": 1570,
+    "peak_traced_bytes": null,
+    "runtime_s": 0.012921832998472382,
+    "short_slates": 499
+   },
+   "failures": [],
+   "instance": 4,
+   "instance_key": "r1.5-rho0.9-i004-base",
+   "metrics": {
+    "M": 0.6623892800363389,
+    "U": 0.456,
+    "U_A": 0.32,
+    "U_B": 0.5466666666666666,
+    "W": 0.40312851627137347,
+    "W_A": 0.5102702702702704,
+    "W_A_q_bottom": 0.0,
+    "W_A_q_gap": 0.7713097713097713,
+    "W_A_q_top": 0.7713097713097713,
+    "W_B": 0.33170068027210886,
+    "W_B_q_bottom": 0.039742212674543496,
+    "W_B_q_gap": 0.6058002148227712,
+    "W_B_q_top": 0.6455424274973147,
+    "blocking_pairs": 269,
+    "blocking_per_100": 215.2,
+    "gini_exposure_A": 0.08051948051948044,
+    "gini_exposure_B": 0.21245421245421237,
+    "n_matched": 34
+   },
+   "run_id": "SMOKE/r1.5-rho0.9-i004-base/POPULARITY",
+   "seed": {
+    "root_seed": 101,
+    "spawn_key": [
+     1500,
+     900,
+     4
+    ]
+   },
+   "setting": {
+    "T": 20,
+    "delta": 0.5,
+    "k": 5,
+    "popularity_tie_scope": "global",
+    "setting_id": "base",
+    "theta": 0.5
+   },
+   "valid": true
+  },
+  {
+   "arm": "EXPOSURE_BALANCED",
+   "cell": {
+    "n_a": 50,
+    "n_b": 75,
+    "r": 1.5,
+    "rho": 0.9
+   },
+   "diagnostics": {
+    "cap_short_slates": 19,
+    "market_generation_s": 0.0006281250007305061,
+    "matches_by_round": [
+     6,
+     11,
+     11,
+     2,
+     2,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0
+    ],
+    "n_slates": 1378,
+    "peak_traced_bytes": null,
+    "runtime_s": 0.011532833999808645,
+    "short_slates": 813
+   },
+   "failures": [],
+   "instance": 4,
+   "instance_key": "r1.5-rho0.9-i004-base",
+   "metrics": {
+    "M": 0.6631015581908439,
+    "U": 0.488,
+    "U_A": 0.36,
+    "U_B": 0.5733333333333334,
+    "W": 0.38128626585769443,
+    "W_A": 0.4772972972972973,
+    "W_A_q_bottom": 0.0,
+    "W_A_q_gap": 0.7567567567567567,
+    "W_A_q_top": 0.7567567567567567,
+    "W_B": 0.3172789115646258,
+    "W_B_q_bottom": 0.0,
+    "W_B_q_gap": 0.5950590762620838,
+    "W_B_q_top": 0.5950590762620838,
+    "blocking_pairs": 299,
+    "blocking_per_100": 239.2,
+    "gini_exposure_A": 0.25418522860492376,
+    "gini_exposure_B": 0.22562230671736372,
+    "n_matched": 32
+   },
+   "run_id": "SMOKE/r1.5-rho0.9-i004-base/EXPOSURE_BALANCED",
+   "seed": {
+    "root_seed": 101,
+    "spawn_key": [
+     1500,
+     900,
+     4
+    ]
+   },
+   "setting": {
+    "T": 20,
+    "delta": 0.5,
+    "k": 5,
+    "popularity_tie_scope": "global",
+    "setting_id": "base",
+    "theta": 0.5
+   },
+   "valid": true
+  },
+  {
+   "arm": "DA_A",
+   "cell": {
+    "n_a": 50,
+    "n_b": 75,
+    "r": 1.5,
+    "rho": 0.9
+   },
+   "diagnostics": {
+    "cap_short_slates": null,
+    "market_generation_s": 0.0006281250007305061,
+    "matches_by_round": null,
+    "n_slates": null,
+    "peak_traced_bytes": null,
+    "runtime_s": 0.0017550419997860445,
+    "short_slates": null
+   },
+   "failures": [],
+   "instance": 4,
+   "instance_key": "r1.5-rho0.9-i004-base",
+   "metrics": {
+    "M": 0.743151314579886,
+    "U": 0.472,
+    "U_A": 0.34,
+    "U_B": 0.56,
+    "W": 0.4262989520132377,
+    "W_A": 0.5751351351351351,
+    "W_A_q_bottom": 0.0,
+    "W_A_q_gap": 0.9625779625779626,
+    "W_A_q_top": 0.9625779625779626,
+    "W_B": 0.3270748299319728,
+    "W_B_q_bottom": 0.0,
+    "W_B_q_gap": 0.8206229860365198,
+    "W_B_q_top": 0.8206229860365198,
+    "blocking_pairs": 0,
+    "blocking_per_100": 0.0,
+    "gini_exposure_A": null,
+    "gini_exposure_B": null,
+    "n_matched": 33
+   },
+   "run_id": "SMOKE/r1.5-rho0.9-i004-base/DA_A",
+   "seed": {
+    "root_seed": 101,
+    "spawn_key": [
+     1500,
+     900,
+     4
+    ]
+   },
+   "setting": {
+    "T": 20,
+    "delta": 0.5,
+    "k": 5,
+    "popularity_tie_scope": "global",
+    "setting_id": "base",
+    "theta": 0.5
+   },
+   "valid": true
+  },
+  {
+   "arm": "DA_B",
+   "cell": {
+    "n_a": 50,
+    "n_b": 75,
+    "r": 1.5,
+    "rho": 0.9
+   },
+   "diagnostics": {
+    "cap_short_slates": null,
+    "market_generation_s": 0.0006281250007305061,
+    "matches_by_round": null,
+    "n_slates": null,
+    "peak_traced_bytes": null,
+    "runtime_s": 0.0018292500008101342,
+    "short_slates": null
+   },
+   "failures": [],
+   "instance": 4,
+   "instance_key": "r1.5-rho0.9-i004-base",
+   "metrics": {
+    "M": 0.743151314579886,
+    "U": 0.472,
+    "U_A": 0.34,
+    "U_B": 0.56,
+    "W": 0.4262989520132377,
+    "W_A": 0.5751351351351351,
+    "W_A_q_bottom": 0.0,
+    "W_A_q_gap": 0.9625779625779626,
+    "W_A_q_top": 0.9625779625779626,
+    "W_B": 0.3270748299319728,
+    "W_B_q_bottom": 0.0,
+    "W_B_q_gap": 0.8206229860365198,
+    "W_B_q_top": 0.8206229860365198,
+    "blocking_pairs": 0,
+    "blocking_per_100": 0.0,
+    "gini_exposure_A": null,
+    "gini_exposure_B": null,
+    "n_matched": 33
+   },
+   "run_id": "SMOKE/r1.5-rho0.9-i004-base/DA_B",
+   "seed": {
+    "root_seed": 101,
+    "spawn_key": [
+     1500,
+     900,
+     4
+    ]
+   },
+   "setting": {
+    "T": 20,
+    "delta": 0.5,
+    "k": 5,
+    "popularity_tie_scope": "global",
+    "setting_id": "base",
+    "theta": 0.5
+   },
+   "valid": true
+  },
+  {
+   "arm": "MAXW",
+   "cell": {
+    "n_a": 50,
+    "n_b": 75,
+    "r": 1.5,
+    "rho": 0.9
+   },
+   "diagnostics": {
+    "cap_short_slates": null,
+    "market_generation_s": 0.0006281250007305061,
+    "matches_by_round": null,
+    "n_slates": null,
+    "peak_traced_bytes": null,
+    "runtime_s": 0.0004497089994401904,
+    "short_slates": null
+   },
+   "failures": [],
+   "instance": 4,
+   "instance_key": "r1.5-rho0.9-i004-base",
+   "metrics": {
+    "M": 0.7514631978917693,
+    "U": 0.424,
+    "U_A": 0.28,
+    "U_B": 0.52,
+    "W": 0.4723265306122449,
+    "W_A": 0.6199999999999999,
+    "W_A_q_bottom": 0.05093555093555094,
+    "W_A_q_gap": 0.8336798336798337,
+    "W_A_q_top": 0.8846153846153846,
+    "W_B": 0.3738775510204082,
+    "W_B_q_bottom": 0.0,
+    "W_B_q_gap": 0.7647690655209453,
+    "W_B_q_top": 0.7647690655209453,
+    "blocking_pairs": 103,
+    "blocking_per_100": 82.4,
+    "gini_exposure_A": null,
+    "gini_exposure_B": null,
+    "n_matched": 36
+   },
+   "run_id": "SMOKE/r1.5-rho0.9-i004-base/MAXW",
+   "seed": {
+    "root_seed": 101,
+    "spawn_key": [
+     1500,
+     900,
+     4
+    ]
+   },
+   "setting": {
+    "T": 20,
+    "delta": 0.5,
+    "k": 5,
+    "popularity_tie_scope": "global",
+    "setting_id": "base",
+    "theta": 0.5
+   },
+   "valid": true
+  }
+ ],
+ "schema_version": "match-result/1.0.0"
+}

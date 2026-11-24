@@ -38,3 +38,54 @@ Two command failures, both resolved and recorded above (typst default font; uv s
 
 ### Next action
 M2: implement the market generator, RANDOM baseline, deferred acceptance and metrics with the M2 test list (stability on hand-computed examples, no duplicates, capacity, empty pools), then the exploratory smoke run with timing. Confirmatory runs wait for the freeze.
+
+## 2026-11-24: session M2 (core implementation while the freeze is pending)
+
+**Milestone:** M2. **Starting state:** commit cfde5bb, working tree clean. **Bounded task:** reference baseline and candidate variants with tests, schemas, manifests, CLI, report generator, and an exploratory smoke run for the owner's freeze decision. No confirmatory run; no protocol frozen; nothing pushed.
+
+### What was implemented
+- `match_lab` 0.2.0: market generator (GEN-match-market v1), RANDOM baseline then POPULARITY and EXPOSURE_BALANCED sequential discovery, DA_A, DA_B, MAXW, all protocol 2.4 metrics, protocol section 4 statistics (bootstrap, stratified bootstrap, stratified sign-flip test, Holm, sample size), configs (`match-config/1.0.0`), result and manifest schemas validated at export and import, runner with per-run seeds and timing, report generator (Markdown, CSV, SVG, PDF), CLI `python -m match_lab {smoke,run,report,test}`.
+- `run` refuses confirmatory configs unless the registry holds a protocol hash equal to the file's SHA-256 (tested: `python -m match_lab run --config experiments/configs/EXP-001.json` exits 3 with "REFUSED: EXP-001 protocol is not frozen ...").
+- Configs: `experiments/configs/{smoke,pilot,pilot_sensitivity,probe_tie_scope}.json` (exploratory) and `EXP-001..003.json` (confirmatory drafts, `root_seed: null`).
+
+### Decisions
+D-006 architecture, schemas and the confirmatory gate; D-007 popularity tie key global per round by default; D-008 runtime never measured under tracemalloc; D-009 exploratory root seeds 101, 202, 303, 404; D-010 amendment proposals recorded, not adopted.
+
+### Commands and actual outputs
+- `uv run --frozen pytest -q` first failed: `ModuleNotFoundError: No module named 'hypothesis'`. Cause: `.venv/bin/pytest` had a stale shebang pointing at the old path `labs/match-research/.venv` (the repository was renamed after M0). Fixed with `uv sync --frozen --reinstall` (reinstalled the locked packages into `.venv`; nothing deleted).
+- Final `uv run --frozen pytest -q`: `88 passed in 1.66s`, 0 failed. `uv lock --check`: `Resolved 11 packages in 6ms` (lock unchanged; no new dependency).
+- Timing check on one n_A = 200, r = 1.5, rho = 0.9 market: sequential arms 0.24 to 0.45 s untraced, 2.4 to 3.7 s under tracemalloc (led to D-008).
+- `uv run --frozen python -m match_lab smoke` (J-0002): 120 runs, 0 invalid, wall 1.8 s.
+- `... run --config experiments/configs/pilot.json` (J-0003): 270 runs, 0 invalid, wall 32.4 s.
+- `... run --config experiments/configs/pilot_sensitivity.json` (J-0004): 144 runs, 0 invalid, wall 57.4 s.
+- `... run --config experiments/configs/probe_tie_scope.json` (J-0005): 36 runs, 0 invalid, wall 17.7 s.
+- Reports built with `python -m match_lab report ...`; PDFs: smoke 8 pages, pilot 18 pages, probe 5 pages (page counts from pypdf). Pages of the smoke and pilot reports were rendered to PNG in the session scratchpad and inspected; the inspection found overflowing table cells, an unbreakable table running off the page, overlapping figure labels and a doubled figure number, fixed in commit 7e243e6 and in the records commit (breakable tables, short cell labels) before the final reports were generated. Not every page was inspected.
+- Earlier executions superseded and deleted (J-0006): the first smoke (timed under tracemalloc) and the first pilot and pilot-S (random streams changed when the per-viewer tie stream was added). Their outputs were created in this session.
+
+### Exploratory measurements (not findings; synthetic; for the owner's freeze decision)
+- **Runtime per run at n_A = 200 (J-0003):** mean RANDOM 0.073 s, POPULARITY 0.110 s, EXPOSURE_BALANCED 0.073 s, DA_A 0.019 s, DA_B 0.018 s, MAXW 0.002 s; maximum 0.211 s (0.403 s at T = 40). Peak traced memory at most 3.07 MiB per run; process peak RSS 114 MiB. The same pilot ran about twice as slowly in an earlier execution under load from other sessions.
+- **Projected full matrix (single process, run bodies):** EXP-001 70.8 s, EXP-002 12.1 s, EXP-003 155.1 s; runner wall clock about 2.4 times the run bodies, so roughly 3, 0.5 and 6 minutes. The 2-hour planning budgets are not binding.
+- **Seed spread (J-0003, 5 instances per cell):** SD of paired W differences versus RANDOM per cell: POPULARITY 0.0058 to 0.0190, EXPOSURE_BALANCED 0.0045 to 0.0161. Instances per cell for 80% power to detect 0.01 within a cell: up to 29 (POPULARITY) and 21 (EXPOSURE_BALANCED). For the pooled primary contrast, 2 per cell would suffice at these SDs. N = 30 is adequate for the pooled contrast; it is at the margin for per-cell resolution of 0.01, and SDs from 5 instances are imprecise.
+- **Degenerate cases:** (1) POPULARITY with the global tie key shows nearly the same slate to every viewer, produces about 2 to 6 matches per round and leaves 52% to 74% unmatched at T = 20 (RANDOM: 2% to 42%). (2) The POPULARITY difference from RANDOM on corner cells is strongly negative at T = 10 and 20 and positive at T = 40 (J-0004): under the draft design the primary POPULARITY contrast mostly measures matching throughput within the horizon. (3) With per-viewer tie keys (J-0005) POPULARITY leaves 16% to 47% unmatched and its corner-cell difference from RANDOM is about -0.04 instead of about -0.29. (4) The exposure cap shortened at most 1.7% of EXPOSURE_BALANCED slates. (5) RANDOM stops producing matches after about 10 to 11 rounds at rho = 0. (6) Smoke-size markets (n_A = 50) behave differently from n_A = 200 for POPULARITY, so the smoke matrix is not a planning proxy. (7) Blocking pairs per 100 agents exceed 100 in sequential and MAXW arms (the measure counts pairs, so it is not bounded by 100). No invalid run, no DA blocking pair, no zero-match instance.
+
+### Proposed amendments for the owner (not adopted; G-FREEZE)
+- **A1, tie-key granularity (material).** Specify whether POPULARITY and EXPOSURE_BALANCED break score ties with one key per candidate per round shared by all viewers (current default, D-007) or a key per (viewer, candidate). The choice changes the POPULARITY arm substantially (J-0003 versus J-0005).
+- **A2, horizon.** T = 20 is binding for POPULARITY under the global tie key. Options: keep T = 20 and state that the contrast includes speed; make the primary horizon long enough for all arms to stop matching (for example T = 60, or run until no new match for a fixed number of rounds) and keep T = 20 as a sensitivity; or report W at several horizons. EXP-003 S2 already tests this but as a secondary check.
+- **A3, N per cell.** Keep 30 or raise to 50: the full matrix takes minutes, so a larger N costs little and tightens per-cell intervals; the pilot SDs come from only 5 instances.
+- **A4, compute budget.** The 2-hour planning budgets per experiment can be reduced to 30 minutes, which still leaves a wide margin.
+- **A5, pre-freeze pilot.** Record the full-size pilot (J-0003 to J-0005) in the protocol as the pre-freeze planning run instead of the n_A = 50 smoke matrix, which is not representative.
+- **A6, editorial.** Replace the planned reproduction commands in the EXP protocols (`python -m match_lab.run --experiment ...`) with the implemented ones (`python -m match_lab run --config experiments/configs/EXP-00N.json`, `python -m match_lab report ...`), state the confirmatory root seed, and note that blocking pairs per 100 agents is unbounded above.
+
+### Files changed
+New: `src/match_lab/{errors,market,matching,sequential,metrics,stats,config,schema,runner,report,cli,__main__}.py`; `tests/{helpers,test_market,test_matching,test_sequential,test_metrics_stats,test_pipeline}.py`; `experiments/configs/*.json`; `results/exploratory/{smoke,pilot,pilot_sensitivity,probe_tie_scope}/` (results, manifests, CSV, reports). Changed: `src/match_lab/__init__.py`, `tests/test_package.py`, `pyproject.toml` (pytest `pythonpath`), `.gitignore`, `README.md`, `CONTRIBUTING.md` (appended commands), `roadmap.md`, `research/{decision_log.md, experiment_journal.jsonl, experiment_registry.csv, limitations.md}`, `data/manifest.json`, READMEs in `src/`, `tests/`, `experiments/`, `results/`. No licence file, protocol or master prompt changed.
+
+### Failures and incidents
+- Stale `.venv` script shebangs after the repository rename (fixed, above).
+- PNG renders for inspection were first written to the shared session scratchpad root with generic names (`smoke1.png` to `smoke8.png`), which other sessions also use; files of the same name may have been overwritten there. Later renders used a dedicated subfolder.
+
+### Outstanding risks
+- The POPULARITY arm's behaviour depends on A1 and A2; freezing without settling them risks a primary result that mostly reflects an implementation reading and the horizon.
+- Runtime figures are load-sensitive (about twofold variation observed).
+
+### Next action
+Owner: settle A1 to A6 and freeze the protocols (G-FREEZE), choosing a confirmatory root seed distinct from 101, 202, 303, 404. Then M3: run EXP-001 to EXP-003 with `python -m match_lab run --config experiments/configs/EXP-00N.json` and write the per-experiment reports.

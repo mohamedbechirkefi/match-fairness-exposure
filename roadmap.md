@@ -1,13 +1,13 @@
 <!-- SPDX-License-Identifier: LicenseRef-MATCH-NC-Research-1.0 -->
 # Roadmap
 
-Updated 2026-11-24 (session M0). Statuses: done, in progress, not started, blocked. Effort is a planning estimate in focused days. Section 11.6 additions are mandatory and listed per milestone.
+Updated 2026-11-24 (session M2). Statuses: done, in progress, not started, blocked. Effort is a planning estimate in focused days. Section 11.6 additions are mandatory and listed per milestone.
 
 | Milestone | Depends on | Priority | Effort | Status | Blockers |
 |---|---|---|---|---|---|
 | M0 Bootstrap and feasibility | none | P0 | 0.5 | done (pending owner review of the gate) | none |
 | M1 Research and preregistration | M0 | P0 | 0.5 | in progress (drafts written) | G-FREEZE: owner must freeze protocols |
-| M2 Core implementation | M1 drafts (not the freeze) | P0 | 1 | not started | none |
+| M2 Core implementation | M1 drafts (not the freeze) | P0 | 1 | done (acceptance checks below met; exploratory pilot only) | none |
 | M3 Experiments | M2; M1 freeze for confirmatory runs | P0 | 0.75 | not started | G-FREEZE |
 | M4 Interpretation | M3 | P0 | 0.75 | not started | M3 |
 | M5 Interactive experience | M3 results (M4 for final labels) | P1 | 1 | not started | M3 |
@@ -26,12 +26,13 @@ Updated 2026-11-24 (session M0). Statuses: done, in progress, not started, block
 ## M2 Core implementation
 - Deliverables: market generator; RANDOM baseline first, then POPULARITY and EXPOSURE_BALANCED; DA_A, DA_B; MAXW; metrics; runner with CLI (smoke, full, report, test); 11.6: versioned JSON result schema, reproducibility manifests and report generators built alongside the algorithms.
 - Acceptance: unit tests for Gale and Shapley stability on hand-computed examples, no duplicate matches, capacity one, empty pools, invalid inputs, determinism, metric bounds; property tests (DA has zero blocking pairs); differential test of MAXW against brute force on tiny markets. Correctness before any UI.
-- Status: not started (package skeleton and one import test only).
+- Status: done in session M2 (2026-11-24), commits 3aeebf6, 5e8cedd, d42019e, 7e243e6 and the M2 records commit. Acceptance: hand-computed Gale and Shapley examples, no duplicate matches, capacity one, empty pools, invalid inputs, determinism, metric bounds, DA zero blocking pairs (property test against brute-force stable-matching enumeration, including proposer optimality), MAXW against brute force, a differential test across policies, the confirmatory gate; 88 tests passed, 0 failed. 11.6 M2 items: versioned schemas `match-result/1.0.0` and `match-manifest/1.0.0` validated at export and import, per-run manifest data (config hash, seed spawn key, git revision, versions, OS, CPU, runtime, sampled peak memory), report generator with PDFs (pandoc to Typst). Exploratory smoke, pilot, pilot-S and tie-key probe runs are recorded (J-0002 to J-0006). Not done: the per-experiment `reproduction.md`, `config.json` and `run_manifest.json` under `research/experiments/EXP-NNN/` (they belong to confirmatory runs, M3).
 
 ## M3 Experiments
 - Deliverables: exploratory smoke run; frozen EXP-001, EXP-002, EXP-003 runs with raw machine-readable results; plots with uncertainty; 11.6: individual reports generated as each experiment finishes; all failures and deviations recorded; provenance captured at run time.
 - Acceptance: complete planned matrix or documented failure; no silently dropped runs; exclusions listed.
-- Blocker: confirmatory runs need the owner's freeze.
+- Blocker: confirmatory runs need the owner's freeze, and the freeze should first settle amendment proposals A1 to A6 (progress.md, M2 entry).
+- Planning input from the exploratory pilot: projected run-body time EXP-001 about 71 s, EXP-002 about 12 s, EXP-003 about 155 s on one process (runner wall clock about 2.4 times that), far below the 2-hour budgets.
 
 ## M4 Interpretation
 - Deliverables: confounder inspection, sensitivity (EXP-003), expected versus observed, claims register, limitations; 11.6: experiment reports finished, evidence audit, manuscript synthesis including contradictory results.

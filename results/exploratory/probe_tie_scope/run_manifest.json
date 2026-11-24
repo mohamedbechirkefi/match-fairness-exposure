@@ -1,0 +1,388 @@
+{
+ "config_sha256": "f6dc7a3d3fcb30c7d784cc3106e461ac795bcaaa224c1a5acbe83eea54ff5c87",
+ "cpu": "Apple M1 Pro",
+ "cpu_count": 10,
+ "end_utc": "2026-11-24T16:11:27Z",
+ "experiment_id": "PROBE-TIE",
+ "git_dirty": false,
+ "git_revision": "d42019e5e47ec150f4d144fb9ec7269479470e02",
+ "label": "Exploratory probe of the popularity tie-key granularity (per-viewer keys, D-007 alternative), corner cells, 3 instances; not a finding",
+ "manifest_schema": "match-manifest/1.0.0",
+ "match_lab_version": "0.2.0",
+ "mode": "exploratory",
+ "n_invalid": 0,
+ "n_runs": 36,
+ "packages": {
+  "numpy": "2.3.5",
+  "scipy": "1.16.3"
+ },
+ "peak_memory_method": "per run: tracemalloc peak of a deterministic re-run, first instance of each (cell, setting, arm) only, null otherwise; process: ru_maxrss; runtime_s is never traced",
+ "peak_rss_bytes": 112574464,
+ "platform": "macOS-15.3.1-arm64-arm-64bit",
+ "python": "3.12.1",
+ "root_seed": 404,
+ "runs": [
+  {
+   "peak_traced_bytes": 2152648,
+   "run_id": "PROBE-TIE/r1-rho0-i000-base/RANDOM",
+   "runtime_s": 0.04377312500037078,
+   "spawn_key": [
+    1000,
+    0,
+    0
+   ]
+  },
+  {
+   "peak_traced_bytes": 2152240,
+   "run_id": "PROBE-TIE/r1-rho0-i000-base/POPULARITY",
+   "runtime_s": 0.08266608399935649,
+   "spawn_key": [
+    1000,
+    0,
+    0
+   ]
+  },
+  {
+   "peak_traced_bytes": 2152872,
+   "run_id": "PROBE-TIE/r1-rho0-i000-base/EXPOSURE_BALANCED",
+   "runtime_s": 0.05417512499843724,
+   "spawn_key": [
+    1000,
+    0,
+    0
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "PROBE-TIE/r1-rho0-i001-base/RANDOM",
+   "runtime_s": 0.04456337499868823,
+   "spawn_key": [
+    1000,
+    0,
+    1
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "PROBE-TIE/r1-rho0-i001-base/POPULARITY",
+   "runtime_s": 0.0959138329999405,
+   "spawn_key": [
+    1000,
+    0,
+    1
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "PROBE-TIE/r1-rho0-i001-base/EXPOSURE_BALANCED",
+   "runtime_s": 0.05304466699999466,
+   "spawn_key": [
+    1000,
+    0,
+    1
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "PROBE-TIE/r1-rho0-i002-base/RANDOM",
+   "runtime_s": 0.047469457998886355,
+   "spawn_key": [
+    1000,
+    0,
+    2
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "PROBE-TIE/r1-rho0-i002-base/POPULARITY",
+   "runtime_s": 0.0877047499998298,
+   "spawn_key": [
+    1000,
+    0,
+    2
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "PROBE-TIE/r1-rho0-i002-base/EXPOSURE_BALANCED",
+   "runtime_s": 0.05268008300117799,
+   "spawn_key": [
+    1000,
+    0,
+    2
+   ]
+  },
+  {
+   "peak_traced_bytes": 2152544,
+   "run_id": "PROBE-TIE/r1-rho0.9-i000-base/RANDOM",
+   "runtime_s": 0.06228125000052387,
+   "spawn_key": [
+    1000,
+    900,
+    0
+   ]
+  },
+  {
+   "peak_traced_bytes": 2152936,
+   "run_id": "PROBE-TIE/r1-rho0.9-i000-base/POPULARITY",
+   "runtime_s": 0.0960467079985392,
+   "spawn_key": [
+    1000,
+    900,
+    0
+   ]
+  },
+  {
+   "peak_traced_bytes": 2153057,
+   "run_id": "PROBE-TIE/r1-rho0.9-i000-base/EXPOSURE_BALANCED",
+   "runtime_s": 0.06948387500051467,
+   "spawn_key": [
+    1000,
+    900,
+    0
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "PROBE-TIE/r1-rho0.9-i001-base/RANDOM",
+   "runtime_s": 0.06578074999924866,
+   "spawn_key": [
+    1000,
+    900,
+    1
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "PROBE-TIE/r1-rho0.9-i001-base/POPULARITY",
+   "runtime_s": 0.09356158300033712,
+   "spawn_key": [
+    1000,
+    900,
+    1
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "PROBE-TIE/r1-rho0.9-i001-base/EXPOSURE_BALANCED",
+   "runtime_s": 0.07144283299930976,
+   "spawn_key": [
+    1000,
+    900,
+    1
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "PROBE-TIE/r1-rho0.9-i002-base/RANDOM",
+   "runtime_s": 0.06556820900004823,
+   "spawn_key": [
+    1000,
+    900,
+    2
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "PROBE-TIE/r1-rho0.9-i002-base/POPULARITY",
+   "runtime_s": 0.09193704100107425,
+   "spawn_key": [
+    1000,
+    900,
+    2
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "PROBE-TIE/r1-rho0.9-i002-base/EXPOSURE_BALANCED",
+   "runtime_s": 0.06788612499985902,
+   "spawn_key": [
+    1000,
+    900,
+    2
+   ]
+  },
+  {
+   "peak_traced_bytes": 3218652,
+   "run_id": "PROBE-TIE/r1.5-rho0-i000-base/RANDOM",
+   "runtime_s": 0.07260170799963817,
+   "spawn_key": [
+    1500,
+    0,
+    0
+   ]
+  },
+  {
+   "peak_traced_bytes": 3218316,
+   "run_id": "PROBE-TIE/r1.5-rho0-i000-base/POPULARITY",
+   "runtime_s": 0.14660474999982398,
+   "spawn_key": [
+    1500,
+    0,
+    0
+   ]
+  },
+  {
+   "peak_traced_bytes": 3219292,
+   "run_id": "PROBE-TIE/r1.5-rho0-i000-base/EXPOSURE_BALANCED",
+   "runtime_s": 0.083948125000461,
+   "spawn_key": [
+    1500,
+    0,
+    0
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "PROBE-TIE/r1.5-rho0-i001-base/RANDOM",
+   "runtime_s": 0.07126058300127625,
+   "spawn_key": [
+    1500,
+    0,
+    1
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "PROBE-TIE/r1.5-rho0-i001-base/POPULARITY",
+   "runtime_s": 0.14828420800040476,
+   "spawn_key": [
+    1500,
+    0,
+    1
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "PROBE-TIE/r1.5-rho0-i001-base/EXPOSURE_BALANCED",
+   "runtime_s": 0.08114087499961897,
+   "spawn_key": [
+    1500,
+    0,
+    1
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "PROBE-TIE/r1.5-rho0-i002-base/RANDOM",
+   "runtime_s": 0.06944462499996007,
+   "spawn_key": [
+    1500,
+    0,
+    2
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "PROBE-TIE/r1.5-rho0-i002-base/POPULARITY",
+   "runtime_s": 0.13097891599863942,
+   "spawn_key": [
+    1500,
+    0,
+    2
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "PROBE-TIE/r1.5-rho0-i002-base/EXPOSURE_BALANCED",
+   "runtime_s": 0.17152100000021164,
+   "spawn_key": [
+    1500,
+    0,
+    2
+   ]
+  },
+  {
+   "peak_traced_bytes": 3218572,
+   "run_id": "PROBE-TIE/r1.5-rho0.9-i000-base/RANDOM",
+   "runtime_s": 0.16908429100112699,
+   "spawn_key": [
+    1500,
+    900,
+    0
+   ]
+  },
+  {
+   "peak_traced_bytes": 3219116,
+   "run_id": "PROBE-TIE/r1.5-rho0.9-i000-base/POPULARITY",
+   "runtime_s": 0.22263595900039945,
+   "spawn_key": [
+    1500,
+    900,
+    0
+   ]
+  },
+  {
+   "peak_traced_bytes": 3219493,
+   "run_id": "PROBE-TIE/r1.5-rho0.9-i000-base/EXPOSURE_BALANCED",
+   "runtime_s": 0.21422529200026474,
+   "spawn_key": [
+    1500,
+    900,
+    0
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "PROBE-TIE/r1.5-rho0.9-i001-base/RANDOM",
+   "runtime_s": 1.0549502080011735,
+   "spawn_key": [
+    1500,
+    900,
+    1
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "PROBE-TIE/r1.5-rho0.9-i001-base/POPULARITY",
+   "runtime_s": 1.2675643329985178,
+   "spawn_key": [
+    1500,
+    900,
+    1
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "PROBE-TIE/r1.5-rho0.9-i001-base/EXPOSURE_BALANCED",
+   "runtime_s": 0.5630888329997106,
+   "spawn_key": [
+    1500,
+    900,
+    1
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "PROBE-TIE/r1.5-rho0.9-i002-base/RANDOM",
+   "runtime_s": 1.001239582999915,
+   "spawn_key": [
+    1500,
+    900,
+    2
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "PROBE-TIE/r1.5-rho0.9-i002-base/POPULARITY",
+   "runtime_s": 1.480853458000638,
+   "spawn_key": [
+    1500,
+    900,
+    2
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "PROBE-TIE/r1.5-rho0.9-i002-base/EXPOSURE_BALANCED",
+   "runtime_s": 0.10145529100009298,
+   "spawn_key": [
+    1500,
+    900,
+    2
+   ]
+  }
+ ],
+ "start_utc": "2026-11-24T16:11:10Z",
+ "wall_clock_s": 17.695822209001562
+}

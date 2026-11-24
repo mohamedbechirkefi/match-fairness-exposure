@@ -1,0 +1,2728 @@
+{
+ "config_sha256": "d3a01091666113010ba34aff4838030464d8f4f9f73f5c78f8b2221fbd13e37f",
+ "cpu": "Apple M1 Pro",
+ "cpu_count": 10,
+ "end_utc": "2026-11-24T16:10:11Z",
+ "experiment_id": "PILOT",
+ "git_dirty": false,
+ "git_revision": "d42019e5e47ec150f4d144fb9ec7269479470e02",
+ "label": "Exploratory full-size timing and seed-spread pilot (n_A = 200, all 9 cells, 5 instances); not a finding",
+ "manifest_schema": "match-manifest/1.0.0",
+ "match_lab_version": "0.2.0",
+ "mode": "exploratory",
+ "n_invalid": 0,
+ "n_runs": 270,
+ "packages": {
+  "numpy": "2.3.5",
+  "scipy": "1.16.3"
+ },
+ "peak_memory_method": "per run: tracemalloc peak of a deterministic re-run, first instance of each (cell, setting, arm) only, null otherwise; process: ru_maxrss; runtime_s is never traced",
+ "peak_rss_bytes": 119668736,
+ "platform": "macOS-15.3.1-arm64-arm-64bit",
+ "python": "3.12.1",
+ "root_seed": 202,
+ "runs": [
+  {
+   "peak_traced_bytes": 2154056,
+   "run_id": "PILOT/r1-rho0-i000-base/RANDOM",
+   "runtime_s": 0.052660249999462394,
+   "spawn_key": [
+    1000,
+    0,
+    0
+   ]
+  },
+  {
+   "peak_traced_bytes": 2153921,
+   "run_id": "PILOT/r1-rho0-i000-base/POPULARITY",
+   "runtime_s": 0.08282695799971407,
+   "spawn_key": [
+    1000,
+    0,
+    0
+   ]
+  },
+  {
+   "peak_traced_bytes": 2154344,
+   "run_id": "PILOT/r1-rho0-i000-base/EXPOSURE_BALANCED",
+   "runtime_s": 0.049063667000154965,
+   "spawn_key": [
+    1000,
+    0,
+    0
+   ]
+  },
+  {
+   "peak_traced_bytes": 1308624,
+   "run_id": "PILOT/r1-rho0-i000-base/DA_A",
+   "runtime_s": 0.014496917001451948,
+   "spawn_key": [
+    1000,
+    0,
+    0
+   ]
+  },
+  {
+   "peak_traced_bytes": 1308624,
+   "run_id": "PILOT/r1-rho0-i000-base/DA_B",
+   "runtime_s": 0.01410520900026313,
+   "spawn_key": [
+    1000,
+    0,
+    0
+   ]
+  },
+  {
+   "peak_traced_bytes": 684976,
+   "run_id": "PILOT/r1-rho0-i000-base/MAXW",
+   "runtime_s": 0.0016520829994988162,
+   "spawn_key": [
+    1000,
+    0,
+    0
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "PILOT/r1-rho0-i001-base/RANDOM",
+   "runtime_s": 0.04598525000074005,
+   "spawn_key": [
+    1000,
+    0,
+    1
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "PILOT/r1-rho0-i001-base/POPULARITY",
+   "runtime_s": 0.08271070900082123,
+   "spawn_key": [
+    1000,
+    0,
+    1
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "PILOT/r1-rho0-i001-base/EXPOSURE_BALANCED",
+   "runtime_s": 0.05280120799943688,
+   "spawn_key": [
+    1000,
+    0,
+    1
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "PILOT/r1-rho0-i001-base/DA_A",
+   "runtime_s": 0.013554834000387928,
+   "spawn_key": [
+    1000,
+    0,
+    1
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "PILOT/r1-rho0-i001-base/DA_B",
+   "runtime_s": 0.014152333000311046,
+   "spawn_key": [
+    1000,
+    0,
+    1
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "PILOT/r1-rho0-i001-base/MAXW",
+   "runtime_s": 0.0019119999997201376,
+   "spawn_key": [
+    1000,
+    0,
+    1
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "PILOT/r1-rho0-i002-base/RANDOM",
+   "runtime_s": 0.042648083001040504,
+   "spawn_key": [
+    1000,
+    0,
+    2
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "PILOT/r1-rho0-i002-base/POPULARITY",
+   "runtime_s": 0.08258808300161036,
+   "spawn_key": [
+    1000,
+    0,
+    2
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "PILOT/r1-rho0-i002-base/EXPOSURE_BALANCED",
+   "runtime_s": 0.05638970799918752,
+   "spawn_key": [
+    1000,
+    0,
+    2
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "PILOT/r1-rho0-i002-base/DA_A",
+   "runtime_s": 0.013638583001011284,
+   "spawn_key": [
+    1000,
+    0,
+    2
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "PILOT/r1-rho0-i002-base/DA_B",
+   "runtime_s": 0.013385791999098728,
+   "spawn_key": [
+    1000,
+    0,
+    2
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "PILOT/r1-rho0-i002-base/MAXW",
+   "runtime_s": 0.001377749998937361,
+   "spawn_key": [
+    1000,
+    0,
+    2
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "PILOT/r1-rho0-i003-base/RANDOM",
+   "runtime_s": 0.04494137500114448,
+   "spawn_key": [
+    1000,
+    0,
+    3
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "PILOT/r1-rho0-i003-base/POPULARITY",
+   "runtime_s": 0.08354858299935586,
+   "spawn_key": [
+    1000,
+    0,
+    3
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "PILOT/r1-rho0-i003-base/EXPOSURE_BALANCED",
+   "runtime_s": 0.04897195900048246,
+   "spawn_key": [
+    1000,
+    0,
+    3
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "PILOT/r1-rho0-i003-base/DA_A",
+   "runtime_s": 0.013555749999795808,
+   "spawn_key": [
+    1000,
+    0,
+    3
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "PILOT/r1-rho0-i003-base/DA_B",
+   "runtime_s": 0.013415874998827348,
+   "spawn_key": [
+    1000,
+    0,
+    3
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "PILOT/r1-rho0-i003-base/MAXW",
+   "runtime_s": 0.0014204590006556828,
+   "spawn_key": [
+    1000,
+    0,
+    3
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "PILOT/r1-rho0-i004-base/RANDOM",
+   "runtime_s": 0.04754925000088406,
+   "spawn_key": [
+    1000,
+    0,
+    4
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "PILOT/r1-rho0-i004-base/POPULARITY",
+   "runtime_s": 0.083224332998725,
+   "spawn_key": [
+    1000,
+    0,
+    4
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "PILOT/r1-rho0-i004-base/EXPOSURE_BALANCED",
+   "runtime_s": 0.06013816700033203,
+   "spawn_key": [
+    1000,
+    0,
+    4
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "PILOT/r1-rho0-i004-base/DA_A",
+   "runtime_s": 0.014027166998857865,
+   "spawn_key": [
+    1000,
+    0,
+    4
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "PILOT/r1-rho0-i004-base/DA_B",
+   "runtime_s": 0.013189040999350254,
+   "spawn_key": [
+    1000,
+    0,
+    4
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "PILOT/r1-rho0-i004-base/MAXW",
+   "runtime_s": 0.0012454169991542585,
+   "spawn_key": [
+    1000,
+    0,
+    4
+   ]
+  },
+  {
+   "peak_traced_bytes": 2153824,
+   "run_id": "PILOT/r1-rho0.5-i000-base/RANDOM",
+   "runtime_s": 0.051940959001512965,
+   "spawn_key": [
+    1000,
+    500,
+    0
+   ]
+  },
+  {
+   "peak_traced_bytes": 2154032,
+   "run_id": "PILOT/r1-rho0.5-i000-base/POPULARITY",
+   "runtime_s": 0.11629558299864584,
+   "spawn_key": [
+    1000,
+    500,
+    0
+   ]
+  },
+  {
+   "peak_traced_bytes": 2154512,
+   "run_id": "PILOT/r1-rho0.5-i000-base/EXPOSURE_BALANCED",
+   "runtime_s": 0.052793832999668666,
+   "spawn_key": [
+    1000,
+    500,
+    0
+   ]
+  },
+  {
+   "peak_traced_bytes": 1308624,
+   "run_id": "PILOT/r1-rho0.5-i000-base/DA_A",
+   "runtime_s": 0.03337058299985074,
+   "spawn_key": [
+    1000,
+    500,
+    0
+   ]
+  },
+  {
+   "peak_traced_bytes": 1308624,
+   "run_id": "PILOT/r1-rho0.5-i000-base/DA_B",
+   "runtime_s": 0.01386929199907172,
+   "spawn_key": [
+    1000,
+    500,
+    0
+   ]
+  },
+  {
+   "peak_traced_bytes": 684976,
+   "run_id": "PILOT/r1-rho0.5-i000-base/MAXW",
+   "runtime_s": 0.002472459000273375,
+   "spawn_key": [
+    1000,
+    500,
+    0
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "PILOT/r1-rho0.5-i001-base/RANDOM",
+   "runtime_s": 0.05960300000151619,
+   "spawn_key": [
+    1000,
+    500,
+    1
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "PILOT/r1-rho0.5-i001-base/POPULARITY",
+   "runtime_s": 0.1420652920005523,
+   "spawn_key": [
+    1000,
+    500,
+    1
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "PILOT/r1-rho0.5-i001-base/EXPOSURE_BALANCED",
+   "runtime_s": 0.05646475000139617,
+   "spawn_key": [
+    1000,
+    500,
+    1
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "PILOT/r1-rho0.5-i001-base/DA_A",
+   "runtime_s": 0.013967832999696839,
+   "spawn_key": [
+    1000,
+    500,
+    1
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "PILOT/r1-rho0.5-i001-base/DA_B",
+   "runtime_s": 0.013840999999956694,
+   "spawn_key": [
+    1000,
+    500,
+    1
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "PILOT/r1-rho0.5-i001-base/MAXW",
+   "runtime_s": 0.0022205000004760223,
+   "spawn_key": [
+    1000,
+    500,
+    1
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "PILOT/r1-rho0.5-i002-base/RANDOM",
+   "runtime_s": 0.05715754199991352,
+   "spawn_key": [
+    1000,
+    500,
+    2
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "PILOT/r1-rho0.5-i002-base/POPULARITY",
+   "runtime_s": 0.13187912500143284,
+   "spawn_key": [
+    1000,
+    500,
+    2
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "PILOT/r1-rho0.5-i002-base/EXPOSURE_BALANCED",
+   "runtime_s": 0.07235991699963051,
+   "spawn_key": [
+    1000,
+    500,
+    2
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "PILOT/r1-rho0.5-i002-base/DA_A",
+   "runtime_s": 0.020213791000060155,
+   "spawn_key": [
+    1000,
+    500,
+    2
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "PILOT/r1-rho0.5-i002-base/DA_B",
+   "runtime_s": 0.027465291999760666,
+   "spawn_key": [
+    1000,
+    500,
+    2
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "PILOT/r1-rho0.5-i002-base/MAXW",
+   "runtime_s": 0.0025009999990288634,
+   "spawn_key": [
+    1000,
+    500,
+    2
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "PILOT/r1-rho0.5-i003-base/RANDOM",
+   "runtime_s": 0.09547270799885155,
+   "spawn_key": [
+    1000,
+    500,
+    3
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "PILOT/r1-rho0.5-i003-base/POPULARITY",
+   "runtime_s": 0.09593866700015496,
+   "spawn_key": [
+    1000,
+    500,
+    3
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "PILOT/r1-rho0.5-i003-base/EXPOSURE_BALANCED",
+   "runtime_s": 0.07150370799899974,
+   "spawn_key": [
+    1000,
+    500,
+    3
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "PILOT/r1-rho0.5-i003-base/DA_A",
+   "runtime_s": 0.027797875000032946,
+   "spawn_key": [
+    1000,
+    500,
+    3
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "PILOT/r1-rho0.5-i003-base/DA_B",
+   "runtime_s": 0.0152761660010583,
+   "spawn_key": [
+    1000,
+    500,
+    3
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "PILOT/r1-rho0.5-i003-base/MAXW",
+   "runtime_s": 0.0022755409991077613,
+   "spawn_key": [
+    1000,
+    500,
+    3
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "PILOT/r1-rho0.5-i004-base/RANDOM",
+   "runtime_s": 0.08412366599986854,
+   "spawn_key": [
+    1000,
+    500,
+    4
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "PILOT/r1-rho0.5-i004-base/POPULARITY",
+   "runtime_s": 0.1539541250003822,
+   "spawn_key": [
+    1000,
+    500,
+    4
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "PILOT/r1-rho0.5-i004-base/EXPOSURE_BALANCED",
+   "runtime_s": 0.09479420900061086,
+   "spawn_key": [
+    1000,
+    500,
+    4
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "PILOT/r1-rho0.5-i004-base/DA_A",
+   "runtime_s": 0.013427457999569015,
+   "spawn_key": [
+    1000,
+    500,
+    4
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "PILOT/r1-rho0.5-i004-base/DA_B",
+   "runtime_s": 0.01356662499892991,
+   "spawn_key": [
+    1000,
+    500,
+    4
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "PILOT/r1-rho0.5-i004-base/MAXW",
+   "runtime_s": 0.0019076250009675277,
+   "spawn_key": [
+    1000,
+    500,
+    4
+   ]
+  },
+  {
+   "peak_traced_bytes": 2153608,
+   "run_id": "PILOT/r1-rho0.9-i000-base/RANDOM",
+   "runtime_s": 0.09375691700006428,
+   "spawn_key": [
+    1000,
+    900,
+    0
+   ]
+  },
+  {
+   "peak_traced_bytes": 2153640,
+   "run_id": "PILOT/r1-rho0.9-i000-base/POPULARITY",
+   "runtime_s": 0.13874350000151026,
+   "spawn_key": [
+    1000,
+    900,
+    0
+   ]
+  },
+  {
+   "peak_traced_bytes": 2154297,
+   "run_id": "PILOT/r1-rho0.9-i000-base/EXPOSURE_BALANCED",
+   "runtime_s": 0.07662241699836159,
+   "spawn_key": [
+    1000,
+    900,
+    0
+   ]
+  },
+  {
+   "peak_traced_bytes": 1308624,
+   "run_id": "PILOT/r1-rho0.9-i000-base/DA_A",
+   "runtime_s": 0.014015333999850554,
+   "spawn_key": [
+    1000,
+    900,
+    0
+   ]
+  },
+  {
+   "peak_traced_bytes": 1308624,
+   "run_id": "PILOT/r1-rho0.9-i000-base/DA_B",
+   "runtime_s": 0.014055458999791881,
+   "spawn_key": [
+    1000,
+    900,
+    0
+   ]
+  },
+  {
+   "peak_traced_bytes": 684976,
+   "run_id": "PILOT/r1-rho0.9-i000-base/MAXW",
+   "runtime_s": 0.00264512499961711,
+   "spawn_key": [
+    1000,
+    900,
+    0
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "PILOT/r1-rho0.9-i001-base/RANDOM",
+   "runtime_s": 0.08060387499972421,
+   "spawn_key": [
+    1000,
+    900,
+    1
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "PILOT/r1-rho0.9-i001-base/POPULARITY",
+   "runtime_s": 0.09855633400002262,
+   "spawn_key": [
+    1000,
+    900,
+    1
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "PILOT/r1-rho0.9-i001-base/EXPOSURE_BALANCED",
+   "runtime_s": 0.06947754099928716,
+   "spawn_key": [
+    1000,
+    900,
+    1
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "PILOT/r1-rho0.9-i001-base/DA_A",
+   "runtime_s": 0.019472916999802692,
+   "spawn_key": [
+    1000,
+    900,
+    1
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "PILOT/r1-rho0.9-i001-base/DA_B",
+   "runtime_s": 0.013954583000668208,
+   "spawn_key": [
+    1000,
+    900,
+    1
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "PILOT/r1-rho0.9-i001-base/MAXW",
+   "runtime_s": 0.002743040999121149,
+   "spawn_key": [
+    1000,
+    900,
+    1
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "PILOT/r1-rho0.9-i002-base/RANDOM",
+   "runtime_s": 0.06617320800069137,
+   "spawn_key": [
+    1000,
+    900,
+    2
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "PILOT/r1-rho0.9-i002-base/POPULARITY",
+   "runtime_s": 0.09019749999970372,
+   "spawn_key": [
+    1000,
+    900,
+    2
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "PILOT/r1-rho0.9-i002-base/EXPOSURE_BALANCED",
+   "runtime_s": 0.0936954999997397,
+   "spawn_key": [
+    1000,
+    900,
+    2
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "PILOT/r1-rho0.9-i002-base/DA_A",
+   "runtime_s": 0.019770625000091968,
+   "spawn_key": [
+    1000,
+    900,
+    2
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "PILOT/r1-rho0.9-i002-base/DA_B",
+   "runtime_s": 0.01710991700019804,
+   "spawn_key": [
+    1000,
+    900,
+    2
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "PILOT/r1-rho0.9-i002-base/MAXW",
+   "runtime_s": 0.0033315000000584405,
+   "spawn_key": [
+    1000,
+    900,
+    2
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "PILOT/r1-rho0.9-i003-base/RANDOM",
+   "runtime_s": 0.08005324999976438,
+   "spawn_key": [
+    1000,
+    900,
+    3
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "PILOT/r1-rho0.9-i003-base/POPULARITY",
+   "runtime_s": 0.09570608300055028,
+   "spawn_key": [
+    1000,
+    900,
+    3
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "PILOT/r1-rho0.9-i003-base/EXPOSURE_BALANCED",
+   "runtime_s": 0.0765444579992618,
+   "spawn_key": [
+    1000,
+    900,
+    3
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "PILOT/r1-rho0.9-i003-base/DA_A",
+   "runtime_s": 0.014256542001021444,
+   "spawn_key": [
+    1000,
+    900,
+    3
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "PILOT/r1-rho0.9-i003-base/DA_B",
+   "runtime_s": 0.014609500000005937,
+   "spawn_key": [
+    1000,
+    900,
+    3
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "PILOT/r1-rho0.9-i003-base/MAXW",
+   "runtime_s": 0.0027654170007735956,
+   "spawn_key": [
+    1000,
+    900,
+    3
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "PILOT/r1-rho0.9-i004-base/RANDOM",
+   "runtime_s": 0.09649249999893073,
+   "spawn_key": [
+    1000,
+    900,
+    4
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "PILOT/r1-rho0.9-i004-base/POPULARITY",
+   "runtime_s": 0.10030324999934237,
+   "spawn_key": [
+    1000,
+    900,
+    4
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "PILOT/r1-rho0.9-i004-base/EXPOSURE_BALANCED",
+   "runtime_s": 0.09152462499878311,
+   "spawn_key": [
+    1000,
+    900,
+    4
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "PILOT/r1-rho0.9-i004-base/DA_A",
+   "runtime_s": 0.02054349999889382,
+   "spawn_key": [
+    1000,
+    900,
+    4
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "PILOT/r1-rho0.9-i004-base/DA_B",
+   "runtime_s": 0.014853165999738849,
+   "spawn_key": [
+    1000,
+    900,
+    4
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "PILOT/r1-rho0.9-i004-base/MAXW",
+   "runtime_s": 0.002969749999465421,
+   "spawn_key": [
+    1000,
+    900,
+    4
+   ]
+  },
+  {
+   "peak_traced_bytes": 2367540,
+   "run_id": "PILOT/r1.1-rho0-i000-base/RANDOM",
+   "runtime_s": 0.04854670799977612,
+   "spawn_key": [
+    1100,
+    0,
+    0
+   ]
+  },
+  {
+   "peak_traced_bytes": 2366996,
+   "run_id": "PILOT/r1.1-rho0-i000-base/POPULARITY",
+   "runtime_s": 0.08714208299898019,
+   "spawn_key": [
+    1100,
+    0,
+    0
+   ]
+  },
+  {
+   "peak_traced_bytes": 2367596,
+   "run_id": "PILOT/r1.1-rho0-i000-base/EXPOSURE_BALANCED",
+   "runtime_s": 0.05566499999986263,
+   "spawn_key": [
+    1100,
+    0,
+    0
+   ]
+  },
+  {
+   "peak_traced_bytes": 1453456,
+   "run_id": "PILOT/r1.1-rho0-i000-base/DA_A",
+   "runtime_s": 0.014723583999511902,
+   "spawn_key": [
+    1100,
+    0,
+    0
+   ]
+  },
+  {
+   "peak_traced_bytes": 1359600,
+   "run_id": "PILOT/r1.1-rho0-i000-base/DA_B",
+   "runtime_s": 0.01678816599996935,
+   "spawn_key": [
+    1100,
+    0,
+    0
+   ]
+  },
+  {
+   "peak_traced_bytes": 753136,
+   "run_id": "PILOT/r1.1-rho0-i000-base/MAXW",
+   "runtime_s": 0.0012358330004644813,
+   "spawn_key": [
+    1100,
+    0,
+    0
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "PILOT/r1.1-rho0-i001-base/RANDOM",
+   "runtime_s": 0.050343041999440175,
+   "spawn_key": [
+    1100,
+    0,
+    1
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "PILOT/r1.1-rho0-i001-base/POPULARITY",
+   "runtime_s": 0.08859687499898428,
+   "spawn_key": [
+    1100,
+    0,
+    1
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "PILOT/r1.1-rho0-i001-base/EXPOSURE_BALANCED",
+   "runtime_s": 0.05398520800008555,
+   "spawn_key": [
+    1100,
+    0,
+    1
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "PILOT/r1.1-rho0-i001-base/DA_A",
+   "runtime_s": 0.01467712500016205,
+   "spawn_key": [
+    1100,
+    0,
+    1
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "PILOT/r1.1-rho0-i001-base/DA_B",
+   "runtime_s": 0.015834709000046132,
+   "spawn_key": [
+    1100,
+    0,
+    1
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "PILOT/r1.1-rho0-i001-base/MAXW",
+   "runtime_s": 0.0011954579986195313,
+   "spawn_key": [
+    1100,
+    0,
+    1
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "PILOT/r1.1-rho0-i002-base/RANDOM",
+   "runtime_s": 0.05202104199997848,
+   "spawn_key": [
+    1100,
+    0,
+    2
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "PILOT/r1.1-rho0-i002-base/POPULARITY",
+   "runtime_s": 0.08901499999956286,
+   "spawn_key": [
+    1100,
+    0,
+    2
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "PILOT/r1.1-rho0-i002-base/EXPOSURE_BALANCED",
+   "runtime_s": 0.0562752920013736,
+   "spawn_key": [
+    1100,
+    0,
+    2
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "PILOT/r1.1-rho0-i002-base/DA_A",
+   "runtime_s": 0.014704500001244014,
+   "spawn_key": [
+    1100,
+    0,
+    2
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "PILOT/r1.1-rho0-i002-base/DA_B",
+   "runtime_s": 0.015899832998911734,
+   "spawn_key": [
+    1100,
+    0,
+    2
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "PILOT/r1.1-rho0-i002-base/MAXW",
+   "runtime_s": 0.0011685419995046686,
+   "spawn_key": [
+    1100,
+    0,
+    2
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "PILOT/r1.1-rho0-i003-base/RANDOM",
+   "runtime_s": 0.04927887499979988,
+   "spawn_key": [
+    1100,
+    0,
+    3
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "PILOT/r1.1-rho0-i003-base/POPULARITY",
+   "runtime_s": 0.0886924580008781,
+   "spawn_key": [
+    1100,
+    0,
+    3
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "PILOT/r1.1-rho0-i003-base/EXPOSURE_BALANCED",
+   "runtime_s": 0.054024125000069034,
+   "spawn_key": [
+    1100,
+    0,
+    3
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "PILOT/r1.1-rho0-i003-base/DA_A",
+   "runtime_s": 0.01433691700003692,
+   "spawn_key": [
+    1100,
+    0,
+    3
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "PILOT/r1.1-rho0-i003-base/DA_B",
+   "runtime_s": 0.015174916999967536,
+   "spawn_key": [
+    1100,
+    0,
+    3
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "PILOT/r1.1-rho0-i003-base/MAXW",
+   "runtime_s": 0.001172166999822366,
+   "spawn_key": [
+    1100,
+    0,
+    3
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "PILOT/r1.1-rho0-i004-base/RANDOM",
+   "runtime_s": 0.04908779200013669,
+   "spawn_key": [
+    1100,
+    0,
+    4
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "PILOT/r1.1-rho0-i004-base/POPULARITY",
+   "runtime_s": 0.08698329100116098,
+   "spawn_key": [
+    1100,
+    0,
+    4
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "PILOT/r1.1-rho0-i004-base/EXPOSURE_BALANCED",
+   "runtime_s": 0.0532020000009652,
+   "spawn_key": [
+    1100,
+    0,
+    4
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "PILOT/r1.1-rho0-i004-base/DA_A",
+   "runtime_s": 0.014861666999422596,
+   "spawn_key": [
+    1100,
+    0,
+    4
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "PILOT/r1.1-rho0-i004-base/DA_B",
+   "runtime_s": 0.015218415999697754,
+   "spawn_key": [
+    1100,
+    0,
+    4
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "PILOT/r1.1-rho0-i004-base/MAXW",
+   "runtime_s": 0.0011523329994815867,
+   "spawn_key": [
+    1100,
+    0,
+    4
+   ]
+  },
+  {
+   "peak_traced_bytes": 2367500,
+   "run_id": "PILOT/r1.1-rho0.5-i000-base/RANDOM",
+   "runtime_s": 0.05395262499951059,
+   "spawn_key": [
+    1100,
+    500,
+    0
+   ]
+  },
+  {
+   "peak_traced_bytes": 2367188,
+   "run_id": "PILOT/r1.1-rho0.5-i000-base/POPULARITY",
+   "runtime_s": 0.08947050000097079,
+   "spawn_key": [
+    1100,
+    500,
+    0
+   ]
+  },
+  {
+   "peak_traced_bytes": 2367676,
+   "run_id": "PILOT/r1.1-rho0.5-i000-base/EXPOSURE_BALANCED",
+   "runtime_s": 0.06035283300116134,
+   "spawn_key": [
+    1100,
+    500,
+    0
+   ]
+  },
+  {
+   "peak_traced_bytes": 1453456,
+   "run_id": "PILOT/r1.1-rho0.5-i000-base/DA_A",
+   "runtime_s": 0.014943249998395913,
+   "spawn_key": [
+    1100,
+    500,
+    0
+   ]
+  },
+  {
+   "peak_traced_bytes": 1359600,
+   "run_id": "PILOT/r1.1-rho0.5-i000-base/DA_B",
+   "runtime_s": 0.015181083999777911,
+   "spawn_key": [
+    1100,
+    500,
+    0
+   ]
+  },
+  {
+   "peak_traced_bytes": 753136,
+   "run_id": "PILOT/r1.1-rho0.5-i000-base/MAXW",
+   "runtime_s": 0.0021590420001302846,
+   "spawn_key": [
+    1100,
+    500,
+    0
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "PILOT/r1.1-rho0.5-i001-base/RANDOM",
+   "runtime_s": 0.05627450000065437,
+   "spawn_key": [
+    1100,
+    500,
+    1
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "PILOT/r1.1-rho0.5-i001-base/POPULARITY",
+   "runtime_s": 0.09209820799878798,
+   "spawn_key": [
+    1100,
+    500,
+    1
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "PILOT/r1.1-rho0.5-i001-base/EXPOSURE_BALANCED",
+   "runtime_s": 0.061836582999603706,
+   "spawn_key": [
+    1100,
+    500,
+    1
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "PILOT/r1.1-rho0.5-i001-base/DA_A",
+   "runtime_s": 0.015083874999618274,
+   "spawn_key": [
+    1100,
+    500,
+    1
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "PILOT/r1.1-rho0.5-i001-base/DA_B",
+   "runtime_s": 0.014905375001035281,
+   "spawn_key": [
+    1100,
+    500,
+    1
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "PILOT/r1.1-rho0.5-i001-base/MAXW",
+   "runtime_s": 0.0021902499993302627,
+   "spawn_key": [
+    1100,
+    500,
+    1
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "PILOT/r1.1-rho0.5-i002-base/RANDOM",
+   "runtime_s": 0.053806292000444955,
+   "spawn_key": [
+    1100,
+    500,
+    2
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "PILOT/r1.1-rho0.5-i002-base/POPULARITY",
+   "runtime_s": 0.09056458400118572,
+   "spawn_key": [
+    1100,
+    500,
+    2
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "PILOT/r1.1-rho0.5-i002-base/EXPOSURE_BALANCED",
+   "runtime_s": 0.05684562499845924,
+   "spawn_key": [
+    1100,
+    500,
+    2
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "PILOT/r1.1-rho0.5-i002-base/DA_A",
+   "runtime_s": 0.014782749998630607,
+   "spawn_key": [
+    1100,
+    500,
+    2
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "PILOT/r1.1-rho0.5-i002-base/DA_B",
+   "runtime_s": 0.015014041999165784,
+   "spawn_key": [
+    1100,
+    500,
+    2
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "PILOT/r1.1-rho0.5-i002-base/MAXW",
+   "runtime_s": 0.00213558399991598,
+   "spawn_key": [
+    1100,
+    500,
+    2
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "PILOT/r1.1-rho0.5-i003-base/RANDOM",
+   "runtime_s": 0.05481195900028979,
+   "spawn_key": [
+    1100,
+    500,
+    3
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "PILOT/r1.1-rho0.5-i003-base/POPULARITY",
+   "runtime_s": 0.09118158300043433,
+   "spawn_key": [
+    1100,
+    500,
+    3
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "PILOT/r1.1-rho0.5-i003-base/EXPOSURE_BALANCED",
+   "runtime_s": 0.0547826250003709,
+   "spawn_key": [
+    1100,
+    500,
+    3
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "PILOT/r1.1-rho0.5-i003-base/DA_A",
+   "runtime_s": 0.014754084000742296,
+   "spawn_key": [
+    1100,
+    500,
+    3
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "PILOT/r1.1-rho0.5-i003-base/DA_B",
+   "runtime_s": 0.015126207999855978,
+   "spawn_key": [
+    1100,
+    500,
+    3
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "PILOT/r1.1-rho0.5-i003-base/MAXW",
+   "runtime_s": 0.0020219580001139548,
+   "spawn_key": [
+    1100,
+    500,
+    3
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "PILOT/r1.1-rho0.5-i004-base/RANDOM",
+   "runtime_s": 0.07708024999919871,
+   "spawn_key": [
+    1100,
+    500,
+    4
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "PILOT/r1.1-rho0.5-i004-base/POPULARITY",
+   "runtime_s": 0.09075937499983411,
+   "spawn_key": [
+    1100,
+    500,
+    4
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "PILOT/r1.1-rho0.5-i004-base/EXPOSURE_BALANCED",
+   "runtime_s": 0.05862583300040569,
+   "spawn_key": [
+    1100,
+    500,
+    4
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "PILOT/r1.1-rho0.5-i004-base/DA_A",
+   "runtime_s": 0.014808791000177735,
+   "spawn_key": [
+    1100,
+    500,
+    4
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "PILOT/r1.1-rho0.5-i004-base/DA_B",
+   "runtime_s": 0.015006708001237712,
+   "spawn_key": [
+    1100,
+    500,
+    4
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "PILOT/r1.1-rho0.5-i004-base/MAXW",
+   "runtime_s": 0.002234874998976011,
+   "spawn_key": [
+    1100,
+    500,
+    4
+   ]
+  },
+  {
+   "peak_traced_bytes": 2367068,
+   "run_id": "PILOT/r1.1-rho0.9-i000-base/RANDOM",
+   "runtime_s": 0.06680149999920104,
+   "spawn_key": [
+    1100,
+    900,
+    0
+   ]
+  },
+  {
+   "peak_traced_bytes": 2367244,
+   "run_id": "PILOT/r1.1-rho0.9-i000-base/POPULARITY",
+   "runtime_s": 0.09376250000059372,
+   "spawn_key": [
+    1100,
+    900,
+    0
+   ]
+  },
+  {
+   "peak_traced_bytes": 2368029,
+   "run_id": "PILOT/r1.1-rho0.9-i000-base/EXPOSURE_BALANCED",
+   "runtime_s": 0.06869158300105482,
+   "spawn_key": [
+    1100,
+    900,
+    0
+   ]
+  },
+  {
+   "peak_traced_bytes": 1453456,
+   "run_id": "PILOT/r1.1-rho0.9-i000-base/DA_A",
+   "runtime_s": 0.01649520800128812,
+   "spawn_key": [
+    1100,
+    900,
+    0
+   ]
+  },
+  {
+   "peak_traced_bytes": 1359600,
+   "run_id": "PILOT/r1.1-rho0.9-i000-base/DA_B",
+   "runtime_s": 0.016695082998921862,
+   "spawn_key": [
+    1100,
+    900,
+    0
+   ]
+  },
+  {
+   "peak_traced_bytes": 753136,
+   "run_id": "PILOT/r1.1-rho0.9-i000-base/MAXW",
+   "runtime_s": 0.002630332999615348,
+   "spawn_key": [
+    1100,
+    900,
+    0
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "PILOT/r1.1-rho0.9-i001-base/RANDOM",
+   "runtime_s": 0.07502375000149186,
+   "spawn_key": [
+    1100,
+    900,
+    1
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "PILOT/r1.1-rho0.9-i001-base/POPULARITY",
+   "runtime_s": 0.12839662499936821,
+   "spawn_key": [
+    1100,
+    900,
+    1
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "PILOT/r1.1-rho0.9-i001-base/EXPOSURE_BALANCED",
+   "runtime_s": 0.08569420799904037,
+   "spawn_key": [
+    1100,
+    900,
+    1
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "PILOT/r1.1-rho0.9-i001-base/DA_A",
+   "runtime_s": 0.015271958000084851,
+   "spawn_key": [
+    1100,
+    900,
+    1
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "PILOT/r1.1-rho0.9-i001-base/DA_B",
+   "runtime_s": 0.015826249999008724,
+   "spawn_key": [
+    1100,
+    900,
+    1
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "PILOT/r1.1-rho0.9-i001-base/MAXW",
+   "runtime_s": 0.002933416000814759,
+   "spawn_key": [
+    1100,
+    900,
+    1
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "PILOT/r1.1-rho0.9-i002-base/RANDOM",
+   "runtime_s": 0.07026633299938112,
+   "spawn_key": [
+    1100,
+    900,
+    2
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "PILOT/r1.1-rho0.9-i002-base/POPULARITY",
+   "runtime_s": 0.12464250000084576,
+   "spawn_key": [
+    1100,
+    900,
+    2
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "PILOT/r1.1-rho0.9-i002-base/EXPOSURE_BALANCED",
+   "runtime_s": 0.07329337499868416,
+   "spawn_key": [
+    1100,
+    900,
+    2
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "PILOT/r1.1-rho0.9-i002-base/DA_A",
+   "runtime_s": 0.01541183300105331,
+   "spawn_key": [
+    1100,
+    900,
+    2
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "PILOT/r1.1-rho0.9-i002-base/DA_B",
+   "runtime_s": 0.016087583000626182,
+   "spawn_key": [
+    1100,
+    900,
+    2
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "PILOT/r1.1-rho0.9-i002-base/MAXW",
+   "runtime_s": 0.0029169580011512153,
+   "spawn_key": [
+    1100,
+    900,
+    2
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "PILOT/r1.1-rho0.9-i003-base/RANDOM",
+   "runtime_s": 0.07540312499986612,
+   "spawn_key": [
+    1100,
+    900,
+    3
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "PILOT/r1.1-rho0.9-i003-base/POPULARITY",
+   "runtime_s": 0.10995670900047116,
+   "spawn_key": [
+    1100,
+    900,
+    3
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "PILOT/r1.1-rho0.9-i003-base/EXPOSURE_BALANCED",
+   "runtime_s": 0.0719375829994533,
+   "spawn_key": [
+    1100,
+    900,
+    3
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "PILOT/r1.1-rho0.9-i003-base/DA_A",
+   "runtime_s": 0.015784625000378583,
+   "spawn_key": [
+    1100,
+    900,
+    3
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "PILOT/r1.1-rho0.9-i003-base/DA_B",
+   "runtime_s": 0.017272625000259723,
+   "spawn_key": [
+    1100,
+    900,
+    3
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "PILOT/r1.1-rho0.9-i003-base/MAXW",
+   "runtime_s": 0.0030537919992639218,
+   "spawn_key": [
+    1100,
+    900,
+    3
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "PILOT/r1.1-rho0.9-i004-base/RANDOM",
+   "runtime_s": 0.07120420799947169,
+   "spawn_key": [
+    1100,
+    900,
+    4
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "PILOT/r1.1-rho0.9-i004-base/POPULARITY",
+   "runtime_s": 0.09838279100040381,
+   "spawn_key": [
+    1100,
+    900,
+    4
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "PILOT/r1.1-rho0.9-i004-base/EXPOSURE_BALANCED",
+   "runtime_s": 0.07082470800014562,
+   "spawn_key": [
+    1100,
+    900,
+    4
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "PILOT/r1.1-rho0.9-i004-base/DA_A",
+   "runtime_s": 0.01578295800027263,
+   "spawn_key": [
+    1100,
+    900,
+    4
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "PILOT/r1.1-rho0.9-i004-base/DA_B",
+   "runtime_s": 0.01576500000010128,
+   "spawn_key": [
+    1100,
+    900,
+    4
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "PILOT/r1.1-rho0.9-i004-base/MAXW",
+   "runtime_s": 0.002891083000577055,
+   "spawn_key": [
+    1100,
+    900,
+    4
+   ]
+  },
+  {
+   "peak_traced_bytes": 3221092,
+   "run_id": "PILOT/r1.5-rho0-i000-base/RANDOM",
+   "runtime_s": 0.07005870800094272,
+   "spawn_key": [
+    1500,
+    0,
+    0
+   ]
+  },
+  {
+   "peak_traced_bytes": 3220844,
+   "run_id": "PILOT/r1.5-rho0-i000-base/POPULARITY",
+   "runtime_s": 0.123341624999739,
+   "spawn_key": [
+    1500,
+    0,
+    0
+   ]
+  },
+  {
+   "peak_traced_bytes": 3221916,
+   "run_id": "PILOT/r1.5-rho0-i000-base/EXPOSURE_BALANCED",
+   "runtime_s": 0.07454829199923552,
+   "spawn_key": [
+    1500,
+    0,
+    0
+   ]
+  },
+  {
+   "peak_traced_bytes": 2112396,
+   "run_id": "PILOT/r1.5-rho0-i000-base/DA_A",
+   "runtime_s": 0.024969374999272986,
+   "spawn_key": [
+    1500,
+    0,
+    0
+   ]
+  },
+  {
+   "peak_traced_bytes": 1645468,
+   "run_id": "PILOT/r1.5-rho0-i000-base/DA_B",
+   "runtime_s": 0.024730625000302098,
+   "spawn_key": [
+    1500,
+    0,
+    0
+   ]
+  },
+  {
+   "peak_traced_bytes": 1025808,
+   "run_id": "PILOT/r1.5-rho0-i000-base/MAXW",
+   "runtime_s": 0.0012055419992975658,
+   "spawn_key": [
+    1500,
+    0,
+    0
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "PILOT/r1.5-rho0-i001-base/RANDOM",
+   "runtime_s": 0.11930404099985026,
+   "spawn_key": [
+    1500,
+    0,
+    1
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "PILOT/r1.5-rho0-i001-base/POPULARITY",
+   "runtime_s": 0.12963229100023455,
+   "spawn_key": [
+    1500,
+    0,
+    1
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "PILOT/r1.5-rho0-i001-base/EXPOSURE_BALANCED",
+   "runtime_s": 0.07672233400080586,
+   "spawn_key": [
+    1500,
+    0,
+    1
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "PILOT/r1.5-rho0-i001-base/DA_A",
+   "runtime_s": 0.02053808399978152,
+   "spawn_key": [
+    1500,
+    0,
+    1
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "PILOT/r1.5-rho0-i001-base/DA_B",
+   "runtime_s": 0.024255374999484047,
+   "spawn_key": [
+    1500,
+    0,
+    1
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "PILOT/r1.5-rho0-i001-base/MAXW",
+   "runtime_s": 0.0011132500003441237,
+   "spawn_key": [
+    1500,
+    0,
+    1
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "PILOT/r1.5-rho0-i002-base/RANDOM",
+   "runtime_s": 0.07087175000015122,
+   "spawn_key": [
+    1500,
+    0,
+    2
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "PILOT/r1.5-rho0-i002-base/POPULARITY",
+   "runtime_s": 0.11982891699881293,
+   "spawn_key": [
+    1500,
+    0,
+    2
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "PILOT/r1.5-rho0-i002-base/EXPOSURE_BALANCED",
+   "runtime_s": 0.09386425000047893,
+   "spawn_key": [
+    1500,
+    0,
+    2
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "PILOT/r1.5-rho0-i002-base/DA_A",
+   "runtime_s": 0.01952595799957635,
+   "spawn_key": [
+    1500,
+    0,
+    2
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "PILOT/r1.5-rho0-i002-base/DA_B",
+   "runtime_s": 0.022268749999057036,
+   "spawn_key": [
+    1500,
+    0,
+    2
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "PILOT/r1.5-rho0-i002-base/MAXW",
+   "runtime_s": 0.0011280830003670417,
+   "spawn_key": [
+    1500,
+    0,
+    2
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "PILOT/r1.5-rho0-i003-base/RANDOM",
+   "runtime_s": 0.07111370799975703,
+   "spawn_key": [
+    1500,
+    0,
+    3
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "PILOT/r1.5-rho0-i003-base/POPULARITY",
+   "runtime_s": 0.1170574170009786,
+   "spawn_key": [
+    1500,
+    0,
+    3
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "PILOT/r1.5-rho0-i003-base/EXPOSURE_BALANCED",
+   "runtime_s": 0.08070891600073082,
+   "spawn_key": [
+    1500,
+    0,
+    3
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "PILOT/r1.5-rho0-i003-base/DA_A",
+   "runtime_s": 0.02177716599908308,
+   "spawn_key": [
+    1500,
+    0,
+    3
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "PILOT/r1.5-rho0-i003-base/DA_B",
+   "runtime_s": 0.024815083999783383,
+   "spawn_key": [
+    1500,
+    0,
+    3
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "PILOT/r1.5-rho0-i003-base/MAXW",
+   "runtime_s": 0.0011887089985975763,
+   "spawn_key": [
+    1500,
+    0,
+    3
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "PILOT/r1.5-rho0-i004-base/RANDOM",
+   "runtime_s": 0.07501524999861431,
+   "spawn_key": [
+    1500,
+    0,
+    4
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "PILOT/r1.5-rho0-i004-base/POPULARITY",
+   "runtime_s": 0.12814095800058567,
+   "spawn_key": [
+    1500,
+    0,
+    4
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "PILOT/r1.5-rho0-i004-base/EXPOSURE_BALANCED",
+   "runtime_s": 0.13129187500089756,
+   "spawn_key": [
+    1500,
+    0,
+    4
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "PILOT/r1.5-rho0-i004-base/DA_A",
+   "runtime_s": 0.019561291999707464,
+   "spawn_key": [
+    1500,
+    0,
+    4
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "PILOT/r1.5-rho0-i004-base/DA_B",
+   "runtime_s": 0.02239158400152519,
+   "spawn_key": [
+    1500,
+    0,
+    4
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "PILOT/r1.5-rho0-i004-base/MAXW",
+   "runtime_s": 0.0011145000007672934,
+   "spawn_key": [
+    1500,
+    0,
+    4
+   ]
+  },
+  {
+   "peak_traced_bytes": 3221076,
+   "run_id": "PILOT/r1.5-rho0.5-i000-base/RANDOM",
+   "runtime_s": 0.07669587499913177,
+   "spawn_key": [
+    1500,
+    500,
+    0
+   ]
+  },
+  {
+   "peak_traced_bytes": 3220636,
+   "run_id": "PILOT/r1.5-rho0.5-i000-base/POPULARITY",
+   "runtime_s": 0.12162204199921689,
+   "spawn_key": [
+    1500,
+    500,
+    0
+   ]
+  },
+  {
+   "peak_traced_bytes": 3222140,
+   "run_id": "PILOT/r1.5-rho0.5-i000-base/EXPOSURE_BALANCED",
+   "runtime_s": 0.08198350000020582,
+   "spawn_key": [
+    1500,
+    500,
+    0
+   ]
+  },
+  {
+   "peak_traced_bytes": 2102444,
+   "run_id": "PILOT/r1.5-rho0.5-i000-base/DA_A",
+   "runtime_s": 0.026677583999116905,
+   "spawn_key": [
+    1500,
+    500,
+    0
+   ]
+  },
+  {
+   "peak_traced_bytes": 1635516,
+   "run_id": "PILOT/r1.5-rho0.5-i000-base/DA_B",
+   "runtime_s": 0.022072000001571723,
+   "spawn_key": [
+    1500,
+    500,
+    0
+   ]
+  },
+  {
+   "peak_traced_bytes": 1025808,
+   "run_id": "PILOT/r1.5-rho0.5-i000-base/MAXW",
+   "runtime_s": 0.0023160000000643777,
+   "spawn_key": [
+    1500,
+    500,
+    0
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "PILOT/r1.5-rho0.5-i001-base/RANDOM",
+   "runtime_s": 0.07755454099969938,
+   "spawn_key": [
+    1500,
+    500,
+    1
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "PILOT/r1.5-rho0.5-i001-base/POPULARITY",
+   "runtime_s": 0.12367749999975786,
+   "spawn_key": [
+    1500,
+    500,
+    1
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "PILOT/r1.5-rho0.5-i001-base/EXPOSURE_BALANCED",
+   "runtime_s": 0.08448670899997524,
+   "spawn_key": [
+    1500,
+    500,
+    1
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "PILOT/r1.5-rho0.5-i001-base/DA_A",
+   "runtime_s": 0.030846583998936694,
+   "spawn_key": [
+    1500,
+    500,
+    1
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "PILOT/r1.5-rho0.5-i001-base/DA_B",
+   "runtime_s": 0.021616541000184952,
+   "spawn_key": [
+    1500,
+    500,
+    1
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "PILOT/r1.5-rho0.5-i001-base/MAXW",
+   "runtime_s": 0.0020729580010083737,
+   "spawn_key": [
+    1500,
+    500,
+    1
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "PILOT/r1.5-rho0.5-i002-base/RANDOM",
+   "runtime_s": 0.07982566700047755,
+   "spawn_key": [
+    1500,
+    500,
+    2
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "PILOT/r1.5-rho0.5-i002-base/POPULARITY",
+   "runtime_s": 0.21080054199956066,
+   "spawn_key": [
+    1500,
+    500,
+    2
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "PILOT/r1.5-rho0.5-i002-base/EXPOSURE_BALANCED",
+   "runtime_s": 0.07767404200058081,
+   "spawn_key": [
+    1500,
+    500,
+    2
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "PILOT/r1.5-rho0.5-i002-base/DA_A",
+   "runtime_s": 0.019759917000556015,
+   "spawn_key": [
+    1500,
+    500,
+    2
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "PILOT/r1.5-rho0.5-i002-base/DA_B",
+   "runtime_s": 0.022313000001304317,
+   "spawn_key": [
+    1500,
+    500,
+    2
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "PILOT/r1.5-rho0.5-i002-base/MAXW",
+   "runtime_s": 0.0018301250001968583,
+   "spawn_key": [
+    1500,
+    500,
+    2
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "PILOT/r1.5-rho0.5-i003-base/RANDOM",
+   "runtime_s": 0.1180685409999569,
+   "spawn_key": [
+    1500,
+    500,
+    3
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "PILOT/r1.5-rho0.5-i003-base/POPULARITY",
+   "runtime_s": 0.11874058400098875,
+   "spawn_key": [
+    1500,
+    500,
+    3
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "PILOT/r1.5-rho0.5-i003-base/EXPOSURE_BALANCED",
+   "runtime_s": 0.07579945900033636,
+   "spawn_key": [
+    1500,
+    500,
+    3
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "PILOT/r1.5-rho0.5-i003-base/DA_A",
+   "runtime_s": 0.01977262499895005,
+   "spawn_key": [
+    1500,
+    500,
+    3
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "PILOT/r1.5-rho0.5-i003-base/DA_B",
+   "runtime_s": 0.02163395899879106,
+   "spawn_key": [
+    1500,
+    500,
+    3
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "PILOT/r1.5-rho0.5-i003-base/MAXW",
+   "runtime_s": 0.0020199159989715554,
+   "spawn_key": [
+    1500,
+    500,
+    3
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "PILOT/r1.5-rho0.5-i004-base/RANDOM",
+   "runtime_s": 0.13230904200099758,
+   "spawn_key": [
+    1500,
+    500,
+    4
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "PILOT/r1.5-rho0.5-i004-base/POPULARITY",
+   "runtime_s": 0.11921962499945948,
+   "spawn_key": [
+    1500,
+    500,
+    4
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "PILOT/r1.5-rho0.5-i004-base/EXPOSURE_BALANCED",
+   "runtime_s": 0.0885005000000092,
+   "spawn_key": [
+    1500,
+    500,
+    4
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "PILOT/r1.5-rho0.5-i004-base/DA_A",
+   "runtime_s": 0.03625695799928508,
+   "spawn_key": [
+    1500,
+    500,
+    4
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "PILOT/r1.5-rho0.5-i004-base/DA_B",
+   "runtime_s": 0.026990709000529023,
+   "spawn_key": [
+    1500,
+    500,
+    4
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "PILOT/r1.5-rho0.5-i004-base/MAXW",
+   "runtime_s": 0.0019939590001740726,
+   "spawn_key": [
+    1500,
+    500,
+    4
+   ]
+  },
+  {
+   "peak_traced_bytes": 3221060,
+   "run_id": "PILOT/r1.5-rho0.9-i000-base/RANDOM",
+   "runtime_s": 0.09137933299825818,
+   "spawn_key": [
+    1500,
+    900,
+    0
+   ]
+  },
+  {
+   "peak_traced_bytes": 3220780,
+   "run_id": "PILOT/r1.5-rho0.9-i000-base/POPULARITY",
+   "runtime_s": 0.12639175000003888,
+   "spawn_key": [
+    1500,
+    900,
+    0
+   ]
+  },
+  {
+   "peak_traced_bytes": 3222140,
+   "run_id": "PILOT/r1.5-rho0.9-i000-base/EXPOSURE_BALANCED",
+   "runtime_s": 0.09457916700011992,
+   "spawn_key": [
+    1500,
+    900,
+    0
+   ]
+  },
+  {
+   "peak_traced_bytes": 2122636,
+   "run_id": "PILOT/r1.5-rho0.9-i000-base/DA_A",
+   "runtime_s": 0.020910791999995126,
+   "spawn_key": [
+    1500,
+    900,
+    0
+   ]
+  },
+  {
+   "peak_traced_bytes": 1656140,
+   "run_id": "PILOT/r1.5-rho0.9-i000-base/DA_B",
+   "runtime_s": 0.030152999999700114,
+   "spawn_key": [
+    1500,
+    900,
+    0
+   ]
+  },
+  {
+   "peak_traced_bytes": 1025808,
+   "run_id": "PILOT/r1.5-rho0.9-i000-base/MAXW",
+   "runtime_s": 0.0031657079998694826,
+   "spawn_key": [
+    1500,
+    900,
+    0
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "PILOT/r1.5-rho0.9-i001-base/RANDOM",
+   "runtime_s": 0.09494600000107312,
+   "spawn_key": [
+    1500,
+    900,
+    1
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "PILOT/r1.5-rho0.9-i001-base/POPULARITY",
+   "runtime_s": 0.12599874999978056,
+   "spawn_key": [
+    1500,
+    900,
+    1
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "PILOT/r1.5-rho0.9-i001-base/EXPOSURE_BALANCED",
+   "runtime_s": 0.09580379100043501,
+   "spawn_key": [
+    1500,
+    900,
+    1
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "PILOT/r1.5-rho0.9-i001-base/DA_A",
+   "runtime_s": 0.020380457999635837,
+   "spawn_key": [
+    1500,
+    900,
+    1
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "PILOT/r1.5-rho0.9-i001-base/DA_B",
+   "runtime_s": 0.021963749999486026,
+   "spawn_key": [
+    1500,
+    900,
+    1
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "PILOT/r1.5-rho0.9-i001-base/MAXW",
+   "runtime_s": 0.002817165999658755,
+   "spawn_key": [
+    1500,
+    900,
+    1
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "PILOT/r1.5-rho0.9-i002-base/RANDOM",
+   "runtime_s": 0.09628970899939304,
+   "spawn_key": [
+    1500,
+    900,
+    2
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "PILOT/r1.5-rho0.9-i002-base/POPULARITY",
+   "runtime_s": 0.12368749999950523,
+   "spawn_key": [
+    1500,
+    900,
+    2
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "PILOT/r1.5-rho0.9-i002-base/EXPOSURE_BALANCED",
+   "runtime_s": 0.09529212500092399,
+   "spawn_key": [
+    1500,
+    900,
+    2
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "PILOT/r1.5-rho0.9-i002-base/DA_A",
+   "runtime_s": 0.02046616699954029,
+   "spawn_key": [
+    1500,
+    900,
+    2
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "PILOT/r1.5-rho0.9-i002-base/DA_B",
+   "runtime_s": 0.022347207999700913,
+   "spawn_key": [
+    1500,
+    900,
+    2
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "PILOT/r1.5-rho0.9-i002-base/MAXW",
+   "runtime_s": 0.0028790420001314487,
+   "spawn_key": [
+    1500,
+    900,
+    2
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "PILOT/r1.5-rho0.9-i003-base/RANDOM",
+   "runtime_s": 0.09431866699924285,
+   "spawn_key": [
+    1500,
+    900,
+    3
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "PILOT/r1.5-rho0.9-i003-base/POPULARITY",
+   "runtime_s": 0.12575045800076623,
+   "spawn_key": [
+    1500,
+    900,
+    3
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "PILOT/r1.5-rho0.9-i003-base/EXPOSURE_BALANCED",
+   "runtime_s": 0.09983712499888497,
+   "spawn_key": [
+    1500,
+    900,
+    3
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "PILOT/r1.5-rho0.9-i003-base/DA_A",
+   "runtime_s": 0.020457667000300717,
+   "spawn_key": [
+    1500,
+    900,
+    3
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "PILOT/r1.5-rho0.9-i003-base/DA_B",
+   "runtime_s": 0.02165433300069708,
+   "spawn_key": [
+    1500,
+    900,
+    3
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "PILOT/r1.5-rho0.9-i003-base/MAXW",
+   "runtime_s": 0.0032304579999618,
+   "spawn_key": [
+    1500,
+    900,
+    3
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "PILOT/r1.5-rho0.9-i004-base/RANDOM",
+   "runtime_s": 0.09397641600116913,
+   "spawn_key": [
+    1500,
+    900,
+    4
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "PILOT/r1.5-rho0.9-i004-base/POPULARITY",
+   "runtime_s": 0.12618708300033177,
+   "spawn_key": [
+    1500,
+    900,
+    4
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "PILOT/r1.5-rho0.9-i004-base/EXPOSURE_BALANCED",
+   "runtime_s": 0.09360750000087137,
+   "spawn_key": [
+    1500,
+    900,
+    4
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "PILOT/r1.5-rho0.9-i004-base/DA_A",
+   "runtime_s": 0.020516791999398265,
+   "spawn_key": [
+    1500,
+    900,
+    4
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "PILOT/r1.5-rho0.9-i004-base/DA_B",
+   "runtime_s": 0.021683250000933185,
+   "spawn_key": [
+    1500,
+    900,
+    4
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "PILOT/r1.5-rho0.9-i004-base/MAXW",
+   "runtime_s": 0.002686083998924005,
+   "spawn_key": [
+    1500,
+    900,
+    4
+   ]
+  }
+ ],
+ "start_utc": "2026-11-24T16:09:39Z",
+ "wall_clock_s": 32.38936875000036
+}
