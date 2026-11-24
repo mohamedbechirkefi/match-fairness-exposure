@@ -95,12 +95,13 @@ def run_experiment(cfg: ExperimentConfig, repo_root: str | Path, *, overwrite: b
                    progress: bool = False) -> Path:
     """Run every (cell, instance, setting, arm) of ``cfg`` and write results, manifest and CSV.
 
-    Refuses a confirmatory config unless the registry records a matching protocol freeze.
+    Refuses a confirmatory config unless the registry and the freeze record match the protocol
+    files and this config (see ``check_protocol_frozen``).
     Returns the output directory.
     """
     root = Path(repo_root).resolve()
     if cfg.mode == "confirmatory":
-        check_protocol_frozen(cfg.experiment_id, root)  # raises ProtocolNotFrozenError
+        check_protocol_frozen(cfg.experiment_id, root, cfg)  # raises ProtocolNotFrozenError
     if cfg.root_seed is None:
         raise SchemaError("root_seed is null; a run needs an explicit root seed")
     out_dir = (root / cfg.output_dir).resolve()

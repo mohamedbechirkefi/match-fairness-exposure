@@ -89,3 +89,27 @@ New: `src/match_lab/{errors,market,matching,sequential,metrics,stats,config,sche
 
 ### Next action
 Owner: settle A1 to A6 and freeze the protocols (G-FREEZE), choosing a confirmatory root seed distinct from 101, 202, 303, 404. Then M3: run EXP-001 to EXP-003 with `python -m match_lab run --config experiments/configs/EXP-00N.json` and write the per-experiment reports.
+
+## 2026-11-24: freeze session (owner-approved G-FREEZE)
+
+**Milestone:** M1 gate. **Starting state:** commit f4ddedb (M2 records), working tree clean. Authority: the owner's approvals of 2026-11-24 (section MATCH of the shared approvals file), quoted in `research/freeze.json`.
+
+### Decisions
+D-011 protocols frozen with amendments F1 to F6; D-012 confirmatory root seed 20261124; D-013 freeze guard extended to the freeze record, the main protocol and the config; D-014 accidental EXP-001 run quarantined unread.
+
+### What was done
+- Applied exactly the approved amendments (F1 primary T = 40; F2 POPULARITY ties by one shared random key per round; F3 N = 30; F4 compute budget 30 minutes; F5 full-size pilot as the pre-freeze planning run; F6 reproduction commands) to `research/protocol.md` and the three EXP protocols, each with a dated "Amendments before freeze (owner-approved 2026-11-24)" section. Consequence of F1 for EXP-003: S1 at T = 40, S2 at T in {10, 20}. Not applied: the blocking-pairs note of A6 (not in the approved list).
+- Confirmatory configs: root seed 20261124, T = 40, EXP-003 settings as above, `popularity_tie_scope = "global"` pinned. Frozen content committed as 88f3438.
+- Freeze record `research/freeze.json` (approval quote, C1 to C4 with the C4 disclosure of exploratory primary values and paths, SHA-256 of the main protocol, the three EXP protocols and the three configs, git revision). Registry: hashes and status "frozen (owner-approved 2026-11-24), not yet run".
+- Gate: `check_protocol_frozen` now also needs the freeze record, the main protocol hash and the config hash (D-013).
+- CITATION.cff abstract and manuscript author metadata updated to C3 (sole author Mohamed Bechir Kefi, no affiliation, AI disclosed as an assistant); `manuscript.tex` regenerated with pandoc 3.6.3.
+
+### Commands and actual outputs
+- `.venv/bin/python -m pytest -q`: `99 passed` (88 before; gate tests replaced and extended: acceptance of the frozen configs up to the overwrite guard, refusal of changed configs, file drift, missing or disagreeing freeze record, CLI).
+- `shasum -a 256`: `research/protocol.md` 81f24e9e4bc15434837208705f61619d6415bd1643985142248c926482e160c5 (all hashes in `research/freeze.json`).
+
+### Failures and incidents
+- **J-0007 / D-014:** while checking the frozen-content commit from an export in the scratchpad, the old M2 test `test_cli_run_refuses_confirmatory` ran through the editable install against the real repository after the freeze record existed, and executed the full EXP-001 config (810 runs, 114 s, dirty tree, busy machine). Outcome not read; outputs quarantined, not deleted. The suite of commit 88f3438 was therefore not verified on its own; the final commit's suite passes.
+
+### Next action
+Coordinator: schedule M3 on a quiet machine: `uv run --frozen python -m match_lab run --config experiments/configs/EXP-00N.json` for N = 1, 2, 3, then the reports. Owner: decide the fate of `results/quarantine/` (D-014).

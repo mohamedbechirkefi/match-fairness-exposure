@@ -1,9 +1,13 @@
 <!-- SPDX-License-Identifier: LicenseRef-MATCH-NC-Research-1.0 -->
-<!-- Skeleton of headings only (M0). Status: independent research manuscript draft, not peer-reviewed. No results exist yet. Working title from the master prompt, to be revised after results. -->
+<!-- Skeleton of headings (M0); author metadata set at the protocol freeze (2026-11-24, common decision C3). Status: independent research manuscript draft, not peer-reviewed. Protocols frozen; no confirmatory results exist yet. Working title from the master prompt, to be revised after results. -->
 
 # Can optimal matching leave more people unhappy? (working title)
 
 ## Author and affiliation metadata
+
+Mohamed Bechir Kefi. Independent researcher; no institutional affiliation.
+
+AI assistance: an AI system (Claude, Anthropic) was used as a research and development assistant for code, analysis and drafting under the author's direction. It is not an author. The author is responsible for the content.
 
 ## Abstract
 

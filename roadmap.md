@@ -1,14 +1,14 @@
 <!-- SPDX-License-Identifier: LicenseRef-MATCH-NC-Research-1.0 -->
 # Roadmap
 
-Updated 2026-11-24 (session M2). Statuses: done, in progress, not started, blocked. Effort is a planning estimate in focused days. Section 11.6 additions are mandatory and listed per milestone.
+Updated 2026-11-24 (freeze session after M2). Statuses: done, in progress, not started, blocked. Effort is a planning estimate in focused days. Section 11.6 additions are mandatory and listed per milestone.
 
 | Milestone | Depends on | Priority | Effort | Status | Blockers |
 |---|---|---|---|---|---|
 | M0 Bootstrap and feasibility | none | P0 | 0.5 | done (pending owner review of the gate) | none |
-| M1 Research and preregistration | M0 | P0 | 0.5 | in progress (drafts written) | G-FREEZE: owner must freeze protocols |
+| M1 Research and preregistration | M0 | P0 | 0.5 | done (G-FREEZE passed: owner-approved freeze 2026-11-24) | none |
 | M2 Core implementation | M1 drafts (not the freeze) | P0 | 1 | done (acceptance checks below met; exploratory pilot only) | none |
-| M3 Experiments | M2; M1 freeze for confirmatory runs | P0 | 0.75 | not started | G-FREEZE |
+| M3 Experiments | M2; M1 freeze for confirmatory runs | P0 | 0.75 | not started | scheduling by the coordinator (quiet machine for timing) |
 | M4 Interpretation | M3 | P0 | 0.75 | not started | M3 |
 | M5 Interactive experience | M3 results (M4 for final labels) | P1 | 1 | not started | M3 |
 | M6 Release candidate | M4, M5 | P0 | 0.5 | not started | owner review; G-PUBLIC for any publication |
@@ -21,7 +21,7 @@ Updated 2026-11-24 (session M2). Statuses: done, in progress, not started, block
 ## M1 Research and preregistration
 - Deliverables: deeper literature check (full texts where accessible), formal model, baselines, final protocol and EXP-001 to EXP-003 protocols, fixture manifest; 11.6: freeze confirmatory protocols before execution.
 - Acceptance: protocols complete per 11.2; owner freeze recorded with commit and SHA-256 per frozen file; exploratory results visibly separated.
-- Status: drafts v0.1 written in M0. Open: owner decisions (see progress.md), deeper reading of roth1982 and gale1962 full texts.
+- Status: done. Gate G-FREEZE passed on 2026-11-24: the owner approved amendments F1 to F6 (D-011); protocols v1.0 frozen at commit 88f3438; freeze record `research/freeze.json` (approval, C1 to C4 with the C4 disclosure, SHA-256 of the main protocol, the three EXP protocols and the three confirmatory configs, git revision). Confirmatory root seed 20261124 (D-012). Still open, not blocking: deeper reading of roth1982 and gale1962 full texts.
 
 ## M2 Core implementation
 - Deliverables: market generator; RANDOM baseline first, then POPULARITY and EXPOSURE_BALANCED; DA_A, DA_B; MAXW; metrics; runner with CLI (smoke, full, report, test); 11.6: versioned JSON result schema, reproducibility manifests and report generators built alongside the algorithms.
@@ -31,7 +31,7 @@ Updated 2026-11-24 (session M2). Statuses: done, in progress, not started, block
 ## M3 Experiments
 - Deliverables: exploratory smoke run; frozen EXP-001, EXP-002, EXP-003 runs with raw machine-readable results; plots with uncertainty; 11.6: individual reports generated as each experiment finishes; all failures and deviations recorded; provenance captured at run time.
 - Acceptance: complete planned matrix or documented failure; no silently dropped runs; exclusions listed.
-- Blocker: confirmatory runs need the owner's freeze, and the freeze should first settle amendment proposals A1 to A6 (progress.md, M2 entry).
+- Freeze: done (D-011). Confirmatory runs are scheduled by the coordinator; `python -m match_lab run --config experiments/configs/EXP-00N.json` now passes the gate for the frozen configs and refuses changed ones (D-013).
 - Planning input from the exploratory pilot: projected run-body time EXP-001 about 71 s, EXP-002 about 12 s, EXP-003 about 155 s on one process (runner wall clock about 2.4 times that), far below the 2-hour budgets.
 
 ## M4 Interpretation

@@ -51,5 +51,10 @@
       404
     ],
     "note": "used by exploratory runs J-0002 to J-0005; the confirmatory root seed must differ from these"
+  },
+  "confirmatory_root_seed": {
+    "value": 20261124,
+    "fixed": "2026-11-24 at the owner-approved freeze (D-012)",
+    "note": "used once by the unscheduled run J-0007 (quarantined, outcome not read); scheduled confirmatory runs are M3"
   }
 }

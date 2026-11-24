@@ -50,3 +50,27 @@ Append-only. Each entry: id, date, decision, made by, rationale, alternatives, c
 
 ## D-010: Amendment proposals from the exploratory pilot are recorded, not adopted (2026-11-24)
 - **Decision:** the pilot measurements (J-0002 to J-0006) lead to proposals A1 to A6 in `progress.md` (M2 entry). None is applied to `research/protocol.md` or the EXP protocols; the analysis plan is unchanged. Adoption is the owner's decision at the freeze (G-FREEZE).
+
+## D-011: Protocols frozen with the owner-approved amendments F1 to F6 (2026-11-24)
+- **Decision:** `research/protocol.md` and the EXP-001 to EXP-003 protocols are frozen as v1.0 with amendments F1 to F6 (from proposals A1 to A6): primary horizon T = 40 (EXP-003: S1 at T = 40, S2 at T = 10 and 20); POPULARITY ties broken by one shared random key per round (`popularity_tie_scope = "global"`, pinned in the configs); N = 30 instances per cell kept; compute budget 30 minutes per experiment; the full-size pilot (J-0003 to J-0005) recorded as the pre-freeze planning run; implemented reproduction commands. Common decisions C1 to C4 apply (synthetic data only; pandoc and Typst PDFs; sole author Mohamed Bechir Kefi, no affiliation, AI disclosed as an assistant; disclosure of exploratory primary values).
+- **Made by:** the owner (G-FREEZE), approval dated 2026-11-24, quoted in `research/freeze.json`. Applied by the freeze session.
+- **Rationale:** the M2 pilot showed that the tie-key granularity and the horizon materially change the POPULARITY arm (D-007, D-010); the owner settled both before any confirmatory run.
+- **Consequence for EXP-003 S2:** with 40 primary, the horizons compared stay {10, 20, 40}, so S2 becomes {10, 20}; run counts are unchanged. Not applied: the remaining part of A6 (a note that blocking pairs per 100 agents is unbounded above), which is not in the approved list; it stays a reporting note.
+- **C4 disclosure:** the exploratory primary-contrast values seen before the freeze (for example POPULARITY -0.2917 at T = 20 over 9 cells, +0.0178 at T = 40 on corner cells) are listed with their paths in `research/freeze.json`.
+- **Consequences:** the frozen files are those of commit 88f3438; their SHA-256 are in `research/freeze.json` and the registry. Any later change is a dated deviation. Registry status: "frozen (owner-approved 2026-11-24), not yet run".
+
+## D-012: Confirmatory root seed 20261124 (2026-11-24)
+- **Decision:** the confirmatory root seed for EXP-001 to EXP-003 is 20261124, the freeze date written as an integer.
+- **Made by:** the freeze session, by a rule fixed without reference to any result, because the protocol requires the seed to be fixed at the freeze and the approval did not name one.
+- **Consequences:** distinct from the exploratory roots 101, 202, 303, 404 (D-009); never used for any run. The owner may replace it only before M3 starts, which would be a recorded change of a frozen config.
+
+## D-013: The freeze guard also checks the freeze record, the main protocol and the config (2026-11-24)
+- **Decision:** `check_protocol_frozen` (D-006) now also requires `research/freeze.json` (schema `match-freeze/1.0.0`) to list the experiment with the same protocol hash as the registry, the main protocol to match its frozen hash, and the config's canonical SHA-256 to equal the frozen config hash. The runner passes the config.
+- **Rationale:** the brief requires `run` to accept the frozen confirmatory configs and refuse changed ones; the M2 guard checked only the per-experiment protocol.
+- **Consequences:** tests cover acceptance of the three frozen configs (up to the overwrite guard, so nothing confirmatory runs), refusal of changed configs (horizon, N, seed, tie scope, grid), drift of the main or an experiment protocol, a missing, malformed or disagreeing freeze record, and the CLI paths.
+
+## D-014: The accidental EXP-001 run is quarantined unread, not used and not deleted (2026-11-24)
+- **Decision:** the unscheduled execution of the frozen EXP-001 config (J-0007) is not a confirmatory run of record. Its outputs are moved to `results/quarantine/EXP-001-unscheduled-2026-11-24/` (git-ignored, not committed), their SHA-256 recorded in J-0007, and no metric from them was read. They are not deleted: deletion is the owner's decision.
+- **Made by:** the freeze session, on discovering the incident.
+- **Rationale:** the run was not scheduled, ran on a busy machine from a dirty tree, and the brief forbade confirmatory runs in this session. Reading it would expose the primary contrast before the scheduled run.
+- **Consequences for the owner and the coordinator:** (1) the scheduled M3 run uses the same frozen config and seed and is deterministic in its metrics, so it is expected to reproduce the quarantined metrics exactly (runtimes will differ); this can be checked by comparing hashes of the metric columns after M3, without reading the quarantined values first. (2) Options: delete the quarantine after M3, or keep it as a reproducibility cross-check. (3) Cause: an export of an older commit was tested with the repository's editable install, which imported the working-tree code; such checks must use a separate environment. Disclosed under C4 as a fact (run exists, outcome unseen).

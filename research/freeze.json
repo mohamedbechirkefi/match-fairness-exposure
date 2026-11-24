@@ -1,0 +1,191 @@
+{
+ "freeze_schema": "match-freeze/1.0.0",
+ "project": "MATCH",
+ "spdx": "LicenseRef-MATCH-NC-Research-1.0",
+ "frozen_on": "2026-11-24",
+ "gate": "G-FREEZE",
+ "approval": {
+  "by": "the owner",
+  "date": "2026-11-24",
+  "source": "labs/_shared/owner-approvals-2026-11-24.md (section MATCH), outside this repository",
+  "owner_answers_quoted": "\"2. yes 3. yes 4. yes\", \"yes for all others\"",
+  "approved_amendments_quoted": [
+   "Primary horizon T = 40.",
+   "POPULARITY breaks ties with one shared random key per round.",
+   "N = 30 instances per cell.",
+   "Lower the compute budget to the measured need.",
+   "Record the full-size pilot as the pre-freeze planning run.",
+   "Fix the reproduction commands."
+  ]
+ },
+ "amendments_applied": {
+  "F1": "Primary horizon T = 40 (was 20) in EXP-001, the EXP-002 RANDOM comparator and EXP-003 S1; EXP-003 S2 becomes T in {10, 20} (was {10, 40}) because 40 is now primary; run counts unchanged.",
+  "F2": "POPULARITY ties broken by one uniform key per candidate per round, shared by all viewers (popularity_tie_scope = global, pinned in the confirmatory configs; was the M2 default D-007). EXPOSURE_BALANCED uses the same score and key, as implemented.",
+  "F3": "N = 30 instances per cell (unchanged).",
+  "F4": "Compute budget 30 minutes wall clock per experiment (was 2 hours for EXP-001 and EXP-003, 1 hour for EXP-002).",
+  "F5": "The full-size pilot (J-0003 to J-0005) is recorded as the pre-freeze planning run (research/protocol.md section 5), replacing the n_A = 50 smoke matrix.",
+  "F6": "Reproduction commands replaced by the implemented CLI (python -m match_lab run --config experiments/configs/EXP-00N.json; python -m match_lab report ...)."
+ },
+ "fixed_at_freeze_not_amendments": {
+  "confirmatory_root_seed": 20261124,
+  "root_seed_rule": "the freeze date written as an integer, chosen by that rule without reference to any result; distinct from the exploratory roots 101, 202, 303, 404 (D-009) and never used for any run"
+ },
+ "not_applied": [
+  "The rest of M2 proposal A6 (noting that blocking pairs per 100 agents is unbounded above) is not in the approved list and was not applied to the protocols; it stays a reporting note for M3/M4."
+ ],
+ "common_decisions": {
+  "C1": "Data: synthetic data only.",
+  "C2": "PDFs: built with pandoc and Typst (-V mainfont=\"Libertinus Serif\"); there is no LaTeX on the machine.",
+  "C3": "Authorship: \"Mohamed Bechir Kefi\", no affiliation. The AI is disclosed as a research and development assistant, not as an author.",
+  "C4": "Disclosure: exploratory values of the primary contrast seen before the freeze are listed in c4_disclosure, with where they are stored."
+ },
+ "c4_disclosure": {
+  "statement": "Before the freeze, exploratory values of the primary contrast theta_P (equal-weight mean over cells of W_P - W_RANDOM) were computed and seen by the M2 session and are in the owner-facing M2 records. The owner chose T = 40 and the shared tie key with these values available. All are exploratory, on different root seeds from the confirmatory one, with 3 to 5 instances per cell; none tests a hypothesis. Values are point estimates with 95% stratified bootstrap CIs.",
+  "values": [
+   {
+    "run": "PILOT (J-0003)",
+    "design": "9 cells, n_A = 200, 5 instances per cell, T = 20, theta = 0.5, global tie key, root 202",
+    "POPULARITY": {
+     "theta": -0.2917,
+     "ci95": [
+      -0.2943,
+      -0.2889
+     ]
+    },
+    "EXPOSURE_BALANCED": {
+     "theta": 0.0034,
+     "ci95": [
+      0.0013,
+      0.0055
+     ]
+    },
+    "path": "results/exploratory/pilot/report/tables/PILOT_pooled_W.csv (raw: results/exploratory/pilot/results.json)"
+   },
+   {
+    "run": "PILOT-S (J-0004), setting S2-T40",
+    "design": "4 corner cells, 3 instances per cell, T = 40, theta = 0.5, global tie key, root 303 (the frozen primary horizon and tie key, on corner cells only)",
+    "POPULARITY": {
+     "theta": 0.0178,
+     "ci95": [
+      0.014,
+      0.0214
+     ]
+    },
+    "EXPOSURE_BALANCED": {
+     "theta": 0.005,
+     "ci95": [
+      0.0002,
+      0.0084
+     ]
+    },
+    "path": "results/exploratory/pilot/report/tables/PILOT-S_pooled_W.csv (raw: results/exploratory/pilot_sensitivity/results.json)"
+   },
+   {
+    "run": "PILOT-S (J-0004), settings S2-T10, S1-theta0.3, S1-theta0.7",
+    "design": "4 corner cells, 3 instances per cell; T = 10 at theta 0.5, and theta 0.3 or 0.7 at T = 20; root 303",
+    "POPULARITY": {
+     "S2-T10": -0.4068,
+     "S1-theta0.3": -0.2604,
+     "S1-theta0.7": -0.2785
+    },
+    "EXPOSURE_BALANCED": {
+     "S2-T10": 0.0059,
+     "S1-theta0.3": 0.0078,
+     "S1-theta0.7": 0.0109
+    },
+    "path": "results/exploratory/pilot/report/tables/PILOT-S_pooled_W.csv"
+   },
+   {
+    "run": "PROBE-TIE (J-0005)",
+    "design": "4 corner cells, 3 instances per cell, T = 20, per-viewer tie key (the alternative not adopted), root 404",
+    "POPULARITY": {
+     "theta": -0.0422,
+     "ci95": [
+      -0.0555,
+      -0.0299
+     ]
+    },
+    "EXPOSURE_BALANCED": {
+     "theta": 0.0059,
+     "ci95": [
+      0.0027,
+      0.0096
+     ]
+    },
+    "path": "results/exploratory/probe_tie_scope/report/tables/PROBE-TIE_pooled_W.csv"
+   },
+   {
+    "run": "SMOKE (J-0002)",
+    "design": "4 corner cells, n_A = 50, 5 instances per cell, T = 20, root 101",
+    "POPULARITY": {
+     "theta": 0.0232,
+     "ci95": [
+      0.0163,
+      0.0299
+     ]
+    },
+    "EXPOSURE_BALANCED": {
+     "theta": 0.0005,
+     "ci95": [
+      -0.0062,
+      0.007
+     ]
+    },
+    "path": "results/exploratory/smoke/report/tables/SMOKE_pooled_W.csv"
+   },
+   {
+    "run": "superseded pilot and pilot-S at 5e8cedd (J-0006)",
+    "design": "outputs deleted in M2 after a change of random streams",
+    "POPULARITY": "about -0.29 pooled at T = 20 and +0.018 on corner cells at T = 40",
+    "EXPOSURE_BALANCED": "not recorded",
+    "path": "research/experiment_journal.jsonl (entry J-0006); no result files kept"
+   }
+  ],
+  "also_in": [
+   "progress.md (M2 entry)",
+   "research/experiment_journal.jsonl (J-0002 to J-0006)",
+   "results/exploratory/pilot/report/report.md"
+  ],
+  "post_freeze_incident": "After the frozen files were committed (88f3438), an unscheduled execution of the frozen EXP-001 config happened by accident in the freeze session (journal J-0007, decision D-014). Its outcome was not read; its outputs are quarantined unread in results/quarantine/EXP-001-unscheduled-2026-11-24/ (git-ignored), with SHA-256 in J-0007."
+ },
+ "main_protocol": {
+  "path": "research/protocol.md",
+  "sha256": "81f24e9e4bc15434837208705f61619d6415bd1643985142248c926482e160c5",
+  "version": "v1.0"
+ },
+ "experiments": {
+  "EXP-001": {
+   "role": "primary (confirmatory)",
+   "protocol_path": "research/experiments/EXP-001/protocol.md",
+   "protocol_sha256": "0d64280b9e2dcb0a3f17bf056eaf3cadf5f5a009efa88d6eed99ad05eafb3c2c",
+   "protocol_version": "v1.0",
+   "config_path": "experiments/configs/EXP-001.json",
+   "config_file_sha256": "cb65e283c7d35d342e76abb9221e400a43b7603be2d1f4a510158f25531467e5",
+   "config_canonical_sha256": "5e747575d51c0b0253ffcc20ca22fdb1e0f3770c7421f1546f7ff8ebc93df422"
+  },
+  "EXP-002": {
+   "role": "secondary",
+   "protocol_path": "research/experiments/EXP-002/protocol.md",
+   "protocol_sha256": "30692ad843399f50c1a1141f71b16e6fb704b2669d8ab5dd1e586de67485961c",
+   "protocol_version": "v1.0",
+   "config_path": "experiments/configs/EXP-002.json",
+   "config_file_sha256": "105c89cc03e8d613cdc593e79775116f0bb38bfa0d55802768c6ac2823c77ac3",
+   "config_canonical_sha256": "2bd7ee667eaadef716496cff55bf2a343743f0984e4c1f44552279dea1a540b7"
+  },
+  "EXP-003": {
+   "role": "sensitivity",
+   "protocol_path": "research/experiments/EXP-003/protocol.md",
+   "protocol_sha256": "7e37ac6ad46f9da93bd66763a7caf3f53e97a367b83d31e727e14f35ded628f6",
+   "protocol_version": "v1.0",
+   "config_path": "experiments/configs/EXP-003.json",
+   "config_file_sha256": "c22013c6a6799ef317890eab5784cdc4f2a5acad2cc8eafd35d5038a0ead9a1b",
+   "config_canonical_sha256": "91669781cf730391a79dcc6a36e3317a5c7f83202c2a603c3e393d563bc37489"
+  }
+ },
+ "git": {
+  "frozen_content_revision": "88f3438c0e19863e9ecaec97baab61e029e90148",
+  "note": "The frozen files are byte-identical at frozen_content_revision and at the commit that adds this record (the commit after it). The hashes above are of the files at frozen_content_revision.",
+  "pre_freeze_revision": "f4ddedb5829a454d594a2ba6d592c00a760d9822"
+ },
+ "guard": "src/match_lab/config.py check_protocol_frozen: a confirmatory run needs the registry protocol_hash, this record's protocol_sha256 and the file on disk to agree, the main protocol to match main_protocol.sha256, and the config's canonical SHA-256 to equal config_canonical_sha256."
+}

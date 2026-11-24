@@ -137,11 +137,40 @@ def load_config(path: str | Path) -> ExperimentConfig:
 _HEX64 = re.compile(r"^[0-9a-f]{64}$")
 
 
-def check_protocol_frozen(experiment_id: str, repo_root: str | Path) -> str:
-    """Return the protocol hash if the registry records a freeze that matches the file on disk.
+FREEZE_SCHEMA = "match-freeze/1.0.0"
+FREEZE_RECORD = Path("research") / "freeze.json"
 
-    Raises ProtocolNotFrozenError otherwise. The freeze itself is the owner's act (G-FREEZE);
-    this function only reads the registry and never writes it.
+
+def _sha256_file(path: Path) -> str:
+    return hashlib.sha256(path.read_bytes()).hexdigest()
+
+
+def load_freeze_record(repo_root: str | Path) -> dict[str, Any]:
+    """Read ``research/freeze.json`` (schema ``match-freeze/1.0.0``); raise ProtocolNotFrozenError if absent or malformed."""
+    path = Path(repo_root) / FREEZE_RECORD
+    if not path.exists():
+        raise ProtocolNotFrozenError(f"freeze record not found at {path}; confirmatory runs require the owner's freeze (G-FREEZE)")
+    try:
+        doc = json.loads(path.read_text(encoding="utf-8"))
+    except json.JSONDecodeError as exc:
+        raise ProtocolNotFrozenError(f"freeze record {path} is not valid JSON: {exc}") from exc
+    if not isinstance(doc, dict) or doc.get("freeze_schema") != FREEZE_SCHEMA:
+        raise ProtocolNotFrozenError(f"freeze record {path} lacks freeze_schema {FREEZE_SCHEMA!r}")
+    if not isinstance(doc.get("main_protocol"), dict) or not isinstance(doc.get("experiments"), dict):
+        raise ProtocolNotFrozenError(f"freeze record {path} lacks main_protocol or experiments")
+    return doc
+
+
+def check_protocol_frozen(experiment_id: str, repo_root: str | Path,
+                          cfg: "ExperimentConfig | None" = None) -> str:
+    """Return the protocol hash if the experiment is frozen and nothing frozen has drifted.
+
+    Checks, in order: the registry holds a 64-hex ``protocol_hash`` equal to the SHA-256 of the
+    protocol file; the freeze record ``research/freeze.json`` lists the experiment with the same
+    protocol hash; the main protocol ``research/protocol.md`` matches its frozen hash; and, when
+    ``cfg`` is given, the config's canonical SHA-256 equals the frozen config hash. Raises
+    ProtocolNotFrozenError otherwise. The freeze itself is the owner's act (G-FREEZE); this
+    function only reads the registry and the freeze record and never writes them.
     """
     root = Path(repo_root)
     registry = root / "research" / "experiment_registry.csv"
@@ -158,8 +187,27 @@ def check_protocol_frozen(experiment_id: str, repo_root: str | Path) -> str:
             f"{experiment_id} protocol is not frozen (registry protocol_hash = {row.get('protocol_hash')!r}); "
             "confirmatory runs require the owner's freeze (G-FREEZE)")
     protocol = root / row["protocol_path"]
-    actual = hashlib.sha256(protocol.read_bytes()).hexdigest()
+    actual = _sha256_file(protocol)
     if actual != recorded:
         raise ProtocolNotFrozenError(
             f"{experiment_id} protocol file hash {actual} differs from the frozen hash {recorded}")
+    freeze = load_freeze_record(root)
+    entry = freeze["experiments"].get(experiment_id)
+    if not isinstance(entry, dict):
+        raise ProtocolNotFrozenError(f"{experiment_id} is not listed in the freeze record")
+    if entry.get("protocol_sha256") != recorded or entry.get("protocol_path") != row["protocol_path"]:
+        raise ProtocolNotFrozenError(
+            f"{experiment_id}: registry and freeze record disagree on the frozen protocol")
+    main = freeze["main_protocol"]
+    main_path = root / str(main.get("path", ""))
+    if not main.get("path") or not main_path.is_file() or _sha256_file(main_path) != main.get("sha256"):
+        raise ProtocolNotFrozenError(
+            f"main protocol {main.get('path')!r} is missing or differs from its frozen hash")
+    if cfg is not None:
+        if cfg.experiment_id != experiment_id:
+            raise ProtocolNotFrozenError(f"config is for {cfg.experiment_id}, not {experiment_id}")
+        frozen_cfg = entry.get("config_canonical_sha256")
+        if cfg.sha256 != frozen_cfg:
+            raise ProtocolNotFrozenError(
+                f"{experiment_id} config hash {cfg.sha256} differs from the frozen config hash {frozen_cfg}")
     return recorded

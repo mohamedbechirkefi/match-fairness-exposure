@@ -2,8 +2,8 @@
 """Command line: ``python -m match_lab {smoke,run,report,test}``.
 
 - ``smoke``: run the exploratory smoke config and build its report.
-- ``run --config PATH``: run a config; refuses a confirmatory config while its protocol is
-  not frozen in the registry (G-FREEZE).
+- ``run --config PATH``: run a config; refuses a confirmatory config unless its protocol, the
+  main protocol and the config itself match the freeze record and the registry (G-FREEZE).
 - ``report --results PATH [PATH ...] --out DIR``: tables, figures and PDF from result files.
 - ``test``: run the pytest suite.
 """
