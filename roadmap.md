@@ -1,14 +1,14 @@
 <!-- SPDX-License-Identifier: LicenseRef-MATCH-NC-Research-1.0 -->
 # Roadmap
 
-Updated 2026-11-24 (freeze session after M2). Statuses: done, in progress, not started, blocked. Effort is a planning estimate in focused days. Section 11.6 additions are mandatory and listed per milestone.
+Updated 2026-11-25 (M3 session). Statuses: done, in progress, not started, blocked. Effort is a planning estimate in focused days. Section 11.6 additions are mandatory and listed per milestone.
 
 | Milestone | Depends on | Priority | Effort | Status | Blockers |
 |---|---|---|---|---|---|
 | M0 Bootstrap and feasibility | none | P0 | 0.5 | done (pending owner review of the gate) | none |
 | M1 Research and preregistration | M0 | P0 | 0.5 | done (G-FREEZE passed: owner-approved freeze 2026-11-24) | none |
 | M2 Core implementation | M1 drafts (not the freeze) | P0 | 1 | done (acceptance checks below met; exploratory pilot only) | none |
-| M3 Experiments | M2; M1 freeze for confirmatory runs | P0 | 0.75 | not started | scheduling by the coordinator (quiet machine for timing) |
+| M3 Experiments | M2; M1 freeze for confirmatory runs | P0 | 0.75 | in progress (all frozen runs done: EXP-001, EXP-002, EXP-003 S1/S2; S3 not executed, D-018; 11.3 reports not written) | owner decision on S3; 11.3 reports |
 | M4 Interpretation | M3 | P0 | 0.75 | not started | M3 |
 | M5 Interactive experience | M3 results (M4 for final labels) | P1 | 1 | not started | M3 |
 | M6 Release candidate | M4, M5 | P0 | 0.5 | not started | owner review; G-PUBLIC for any publication |
@@ -32,6 +32,7 @@ Updated 2026-11-24 (freeze session after M2). Statuses: done, in progress, not s
 - Deliverables: exploratory smoke run; frozen EXP-001, EXP-002, EXP-003 runs with raw machine-readable results; plots with uncertainty; 11.6: individual reports generated as each experiment finishes; all failures and deviations recorded; provenance captured at run time.
 - Acceptance: complete planned matrix or documented failure; no silently dropped runs; exclusions listed.
 - Freeze: done (D-011). Confirmatory runs are scheduled by the coordinator; `python -m match_lab run --config experiments/configs/EXP-00N.json` now passes the gate for the frozen configs and refuses changed ones (D-013).
+- Status (2026-11-25): EXP-001 810/810 runs, EXP-002 810/810, EXP-003 1,440/1,440 (S1, S2), 0 invalid, provenance captured at run time (J-0010 to J-0012). Gate not yet met: S3 not executed (documented gap, D-018, J-0013) and the standalone 11.3 reports are not written (progress.md, M3 entry).
 - Planning input from the exploratory pilot: projected run-body time EXP-001 about 71 s, EXP-002 about 12 s, EXP-003 about 155 s on one process (runner wall clock about 2.4 times that), far below the 2-hour budgets.
 
 ## M4 Interpretation

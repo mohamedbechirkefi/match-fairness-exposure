@@ -1,0 +1,8128 @@
+{
+ "config_sha256": "2bd7ee667eaadef716496cff55bf2a343743f0984e4c1f44552279dea1a540b7",
+ "cpu": "Apple M1 Pro",
+ "cpu_count": 10,
+ "end_utc": "2026-11-24T23:34:05Z",
+ "experiment_id": "EXP-002",
+ "git_dirty": false,
+ "git_revision": "cfc90d0dfa9aa9058ee780a8d8fe3abdc77343d3",
+ "label": "EXP-002 centralized matching (FROZEN v1.0, owner-approved 2026-11-24; same root seed and instances as EXP-001)",
+ "manifest_schema": "match-manifest/1.0.0",
+ "match_lab_version": "0.2.0",
+ "mode": "confirmatory",
+ "n_invalid": 0,
+ "n_runs": 810,
+ "packages": {
+  "numpy": "2.3.5",
+  "scipy": "1.16.3"
+ },
+ "peak_memory_method": "per run: tracemalloc peak of a deterministic re-run, first instance of each (cell, setting, arm) only, null otherwise; process: ru_maxrss; runtime_s is never traced",
+ "peak_rss_bytes": 154386432,
+ "platform": "macOS-15.3.1-arm64-arm-64bit",
+ "python": "3.12.1",
+ "root_seed": 20261124,
+ "runs": [
+  {
+   "peak_traced_bytes": 1308688,
+   "run_id": "EXP-002/r1-rho0-i000-base/DA_A",
+   "runtime_s": 0.01560116699693026,
+   "spawn_key": [
+    1000,
+    0,
+    0
+   ]
+  },
+  {
+   "peak_traced_bytes": 1308624,
+   "run_id": "EXP-002/r1-rho0-i000-base/DA_B",
+   "runtime_s": 0.01334149999456713,
+   "spawn_key": [
+    1000,
+    0,
+    0
+   ]
+  },
+  {
+   "peak_traced_bytes": 684976,
+   "run_id": "EXP-002/r1-rho0-i000-base/MAXW",
+   "runtime_s": 0.0014892500039422885,
+   "spawn_key": [
+    1000,
+    0,
+    0
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1-rho0-i001-base/DA_A",
+   "runtime_s": 0.012863541996921413,
+   "spawn_key": [
+    1000,
+    0,
+    1
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1-rho0-i001-base/DA_B",
+   "runtime_s": 0.012960708001628518,
+   "spawn_key": [
+    1000,
+    0,
+    1
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1-rho0-i001-base/MAXW",
+   "runtime_s": 0.0012875000029453076,
+   "spawn_key": [
+    1000,
+    0,
+    1
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1-rho0-i002-base/DA_A",
+   "runtime_s": 0.01308279200020479,
+   "spawn_key": [
+    1000,
+    0,
+    2
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1-rho0-i002-base/DA_B",
+   "runtime_s": 0.01311941700259922,
+   "spawn_key": [
+    1000,
+    0,
+    2
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1-rho0-i002-base/MAXW",
+   "runtime_s": 0.0013449580001179129,
+   "spawn_key": [
+    1000,
+    0,
+    2
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1-rho0-i003-base/DA_A",
+   "runtime_s": 0.014596540997445118,
+   "spawn_key": [
+    1000,
+    0,
+    3
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1-rho0-i003-base/DA_B",
+   "runtime_s": 0.015335875003074761,
+   "spawn_key": [
+    1000,
+    0,
+    3
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1-rho0-i003-base/MAXW",
+   "runtime_s": 0.0014212080059223808,
+   "spawn_key": [
+    1000,
+    0,
+    3
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1-rho0-i004-base/DA_A",
+   "runtime_s": 0.013278791004267987,
+   "spawn_key": [
+    1000,
+    0,
+    4
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1-rho0-i004-base/DA_B",
+   "runtime_s": 0.013136333000147715,
+   "spawn_key": [
+    1000,
+    0,
+    4
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1-rho0-i004-base/MAXW",
+   "runtime_s": 0.0013217910018283874,
+   "spawn_key": [
+    1000,
+    0,
+    4
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1-rho0-i005-base/DA_A",
+   "runtime_s": 0.013033416995313019,
+   "spawn_key": [
+    1000,
+    0,
+    5
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1-rho0-i005-base/DA_B",
+   "runtime_s": 0.012934541002323385,
+   "spawn_key": [
+    1000,
+    0,
+    5
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1-rho0-i005-base/MAXW",
+   "runtime_s": 0.0013464160001603886,
+   "spawn_key": [
+    1000,
+    0,
+    5
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1-rho0-i006-base/DA_A",
+   "runtime_s": 0.012913874998048414,
+   "spawn_key": [
+    1000,
+    0,
+    6
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1-rho0-i006-base/DA_B",
+   "runtime_s": 0.01294745899940608,
+   "spawn_key": [
+    1000,
+    0,
+    6
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1-rho0-i006-base/MAXW",
+   "runtime_s": 0.0011640000011539087,
+   "spawn_key": [
+    1000,
+    0,
+    6
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1-rho0-i007-base/DA_A",
+   "runtime_s": 0.012861417002568487,
+   "spawn_key": [
+    1000,
+    0,
+    7
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1-rho0-i007-base/DA_B",
+   "runtime_s": 0.012868625002738554,
+   "spawn_key": [
+    1000,
+    0,
+    7
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1-rho0-i007-base/MAXW",
+   "runtime_s": 0.0013042089994996786,
+   "spawn_key": [
+    1000,
+    0,
+    7
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1-rho0-i008-base/DA_A",
+   "runtime_s": 0.018850749998819083,
+   "spawn_key": [
+    1000,
+    0,
+    8
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1-rho0-i008-base/DA_B",
+   "runtime_s": 0.016069290999439545,
+   "spawn_key": [
+    1000,
+    0,
+    8
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1-rho0-i008-base/MAXW",
+   "runtime_s": 0.0015611249982612208,
+   "spawn_key": [
+    1000,
+    0,
+    8
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1-rho0-i009-base/DA_A",
+   "runtime_s": 0.016059917004895397,
+   "spawn_key": [
+    1000,
+    0,
+    9
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1-rho0-i009-base/DA_B",
+   "runtime_s": 0.01382345899764914,
+   "spawn_key": [
+    1000,
+    0,
+    9
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1-rho0-i009-base/MAXW",
+   "runtime_s": 0.0013071669964119792,
+   "spawn_key": [
+    1000,
+    0,
+    9
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1-rho0-i010-base/DA_A",
+   "runtime_s": 0.01347820799855981,
+   "spawn_key": [
+    1000,
+    0,
+    10
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1-rho0-i010-base/DA_B",
+   "runtime_s": 0.013666791994182859,
+   "spawn_key": [
+    1000,
+    0,
+    10
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1-rho0-i010-base/MAXW",
+   "runtime_s": 0.001348500001768116,
+   "spawn_key": [
+    1000,
+    0,
+    10
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1-rho0-i011-base/DA_A",
+   "runtime_s": 0.013821166998241097,
+   "spawn_key": [
+    1000,
+    0,
+    11
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1-rho0-i011-base/DA_B",
+   "runtime_s": 0.013503249996574596,
+   "spawn_key": [
+    1000,
+    0,
+    11
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1-rho0-i011-base/MAXW",
+   "runtime_s": 0.001539374999993015,
+   "spawn_key": [
+    1000,
+    0,
+    11
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1-rho0-i012-base/DA_A",
+   "runtime_s": 0.014110333002463449,
+   "spawn_key": [
+    1000,
+    0,
+    12
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1-rho0-i012-base/DA_B",
+   "runtime_s": 0.01648900000145659,
+   "spawn_key": [
+    1000,
+    0,
+    12
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1-rho0-i012-base/MAXW",
+   "runtime_s": 0.0014376670005731285,
+   "spawn_key": [
+    1000,
+    0,
+    12
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1-rho0-i013-base/DA_A",
+   "runtime_s": 0.013188416996854357,
+   "spawn_key": [
+    1000,
+    0,
+    13
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1-rho0-i013-base/DA_B",
+   "runtime_s": 0.013160667003830895,
+   "spawn_key": [
+    1000,
+    0,
+    13
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1-rho0-i013-base/MAXW",
+   "runtime_s": 0.00134937500115484,
+   "spawn_key": [
+    1000,
+    0,
+    13
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1-rho0-i014-base/DA_A",
+   "runtime_s": 0.013457832996209618,
+   "spawn_key": [
+    1000,
+    0,
+    14
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1-rho0-i014-base/DA_B",
+   "runtime_s": 0.013026915999944322,
+   "spawn_key": [
+    1000,
+    0,
+    14
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1-rho0-i014-base/MAXW",
+   "runtime_s": 0.001360084002953954,
+   "spawn_key": [
+    1000,
+    0,
+    14
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1-rho0-i015-base/DA_A",
+   "runtime_s": 0.021084792002511676,
+   "spawn_key": [
+    1000,
+    0,
+    15
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1-rho0-i015-base/DA_B",
+   "runtime_s": 0.012998499994864687,
+   "spawn_key": [
+    1000,
+    0,
+    15
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1-rho0-i015-base/MAXW",
+   "runtime_s": 0.001414166996255517,
+   "spawn_key": [
+    1000,
+    0,
+    15
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1-rho0-i016-base/DA_A",
+   "runtime_s": 0.012979582999832928,
+   "spawn_key": [
+    1000,
+    0,
+    16
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1-rho0-i016-base/DA_B",
+   "runtime_s": 0.013202416004787665,
+   "spawn_key": [
+    1000,
+    0,
+    16
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1-rho0-i016-base/MAXW",
+   "runtime_s": 0.00125787499564467,
+   "spawn_key": [
+    1000,
+    0,
+    16
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1-rho0-i017-base/DA_A",
+   "runtime_s": 0.013319874997250736,
+   "spawn_key": [
+    1000,
+    0,
+    17
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1-rho0-i017-base/DA_B",
+   "runtime_s": 0.013509167001757305,
+   "spawn_key": [
+    1000,
+    0,
+    17
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1-rho0-i017-base/MAXW",
+   "runtime_s": 0.0013128329956089146,
+   "spawn_key": [
+    1000,
+    0,
+    17
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1-rho0-i018-base/DA_A",
+   "runtime_s": 0.013388291998126078,
+   "spawn_key": [
+    1000,
+    0,
+    18
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1-rho0-i018-base/DA_B",
+   "runtime_s": 0.013005207998503465,
+   "spawn_key": [
+    1000,
+    0,
+    18
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1-rho0-i018-base/MAXW",
+   "runtime_s": 0.0012421249994076788,
+   "spawn_key": [
+    1000,
+    0,
+    18
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1-rho0-i019-base/DA_A",
+   "runtime_s": 0.013429750004434027,
+   "spawn_key": [
+    1000,
+    0,
+    19
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1-rho0-i019-base/DA_B",
+   "runtime_s": 0.013088542000332382,
+   "spawn_key": [
+    1000,
+    0,
+    19
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1-rho0-i019-base/MAXW",
+   "runtime_s": 0.0013695000016014092,
+   "spawn_key": [
+    1000,
+    0,
+    19
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1-rho0-i020-base/DA_A",
+   "runtime_s": 0.013256665995868389,
+   "spawn_key": [
+    1000,
+    0,
+    20
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1-rho0-i020-base/DA_B",
+   "runtime_s": 0.013139750000846107,
+   "spawn_key": [
+    1000,
+    0,
+    20
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1-rho0-i020-base/MAXW",
+   "runtime_s": 0.0013400419993558899,
+   "spawn_key": [
+    1000,
+    0,
+    20
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1-rho0-i021-base/DA_A",
+   "runtime_s": 0.01626649999525398,
+   "spawn_key": [
+    1000,
+    0,
+    21
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1-rho0-i021-base/DA_B",
+   "runtime_s": 0.013378665993514005,
+   "spawn_key": [
+    1000,
+    0,
+    21
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1-rho0-i021-base/MAXW",
+   "runtime_s": 0.0015192080027190968,
+   "spawn_key": [
+    1000,
+    0,
+    21
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1-rho0-i022-base/DA_A",
+   "runtime_s": 0.013323708000825718,
+   "spawn_key": [
+    1000,
+    0,
+    22
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1-rho0-i022-base/DA_B",
+   "runtime_s": 0.013087207997159567,
+   "spawn_key": [
+    1000,
+    0,
+    22
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1-rho0-i022-base/MAXW",
+   "runtime_s": 0.0014161250001052395,
+   "spawn_key": [
+    1000,
+    0,
+    22
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1-rho0-i023-base/DA_A",
+   "runtime_s": 0.012961417000042275,
+   "spawn_key": [
+    1000,
+    0,
+    23
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1-rho0-i023-base/DA_B",
+   "runtime_s": 0.012912875004985835,
+   "spawn_key": [
+    1000,
+    0,
+    23
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1-rho0-i023-base/MAXW",
+   "runtime_s": 0.0012751659960485995,
+   "spawn_key": [
+    1000,
+    0,
+    23
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1-rho0-i024-base/DA_A",
+   "runtime_s": 0.013658040996233467,
+   "spawn_key": [
+    1000,
+    0,
+    24
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1-rho0-i024-base/DA_B",
+   "runtime_s": 0.01330141699872911,
+   "spawn_key": [
+    1000,
+    0,
+    24
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1-rho0-i024-base/MAXW",
+   "runtime_s": 0.0011749580007744953,
+   "spawn_key": [
+    1000,
+    0,
+    24
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1-rho0-i025-base/DA_A",
+   "runtime_s": 0.013798125000903383,
+   "spawn_key": [
+    1000,
+    0,
+    25
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1-rho0-i025-base/DA_B",
+   "runtime_s": 0.013216125000326429,
+   "spawn_key": [
+    1000,
+    0,
+    25
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1-rho0-i025-base/MAXW",
+   "runtime_s": 0.0014454170013777912,
+   "spawn_key": [
+    1000,
+    0,
+    25
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1-rho0-i026-base/DA_A",
+   "runtime_s": 0.013132332998793572,
+   "spawn_key": [
+    1000,
+    0,
+    26
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1-rho0-i026-base/DA_B",
+   "runtime_s": 0.01303212499624351,
+   "spawn_key": [
+    1000,
+    0,
+    26
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1-rho0-i026-base/MAXW",
+   "runtime_s": 0.0014671669996459968,
+   "spawn_key": [
+    1000,
+    0,
+    26
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1-rho0-i027-base/DA_A",
+   "runtime_s": 0.013262792002933566,
+   "spawn_key": [
+    1000,
+    0,
+    27
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1-rho0-i027-base/DA_B",
+   "runtime_s": 0.01283062500442611,
+   "spawn_key": [
+    1000,
+    0,
+    27
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1-rho0-i027-base/MAXW",
+   "runtime_s": 0.0013115839974489063,
+   "spawn_key": [
+    1000,
+    0,
+    27
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1-rho0-i028-base/DA_A",
+   "runtime_s": 0.012889375000668224,
+   "spawn_key": [
+    1000,
+    0,
+    28
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1-rho0-i028-base/DA_B",
+   "runtime_s": 0.013908000000810716,
+   "spawn_key": [
+    1000,
+    0,
+    28
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1-rho0-i028-base/MAXW",
+   "runtime_s": 0.0012307919969316572,
+   "spawn_key": [
+    1000,
+    0,
+    28
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1-rho0-i029-base/DA_A",
+   "runtime_s": 0.01289333299791906,
+   "spawn_key": [
+    1000,
+    0,
+    29
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1-rho0-i029-base/DA_B",
+   "runtime_s": 0.012860583003202919,
+   "spawn_key": [
+    1000,
+    0,
+    29
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1-rho0-i029-base/MAXW",
+   "runtime_s": 0.0012274170003365725,
+   "spawn_key": [
+    1000,
+    0,
+    29
+   ]
+  },
+  {
+   "peak_traced_bytes": 1308624,
+   "run_id": "EXP-002/r1-rho0.5-i000-base/DA_A",
+   "runtime_s": 0.013628708002215717,
+   "spawn_key": [
+    1000,
+    500,
+    0
+   ]
+  },
+  {
+   "peak_traced_bytes": 1308624,
+   "run_id": "EXP-002/r1-rho0.5-i000-base/DA_B",
+   "runtime_s": 0.013577792000432964,
+   "spawn_key": [
+    1000,
+    500,
+    0
+   ]
+  },
+  {
+   "peak_traced_bytes": 684976,
+   "run_id": "EXP-002/r1-rho0.5-i000-base/MAXW",
+   "runtime_s": 0.0024661670031491667,
+   "spawn_key": [
+    1000,
+    500,
+    0
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1-rho0.5-i001-base/DA_A",
+   "runtime_s": 0.013768749995506369,
+   "spawn_key": [
+    1000,
+    500,
+    1
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1-rho0.5-i001-base/DA_B",
+   "runtime_s": 0.01491558399720816,
+   "spawn_key": [
+    1000,
+    500,
+    1
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1-rho0.5-i001-base/MAXW",
+   "runtime_s": 0.0023896249986137263,
+   "spawn_key": [
+    1000,
+    500,
+    1
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1-rho0.5-i002-base/DA_A",
+   "runtime_s": 0.01632329199492233,
+   "spawn_key": [
+    1000,
+    500,
+    2
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1-rho0.5-i002-base/DA_B",
+   "runtime_s": 0.014186333995894529,
+   "spawn_key": [
+    1000,
+    500,
+    2
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1-rho0.5-i002-base/MAXW",
+   "runtime_s": 0.002407291998679284,
+   "spawn_key": [
+    1000,
+    500,
+    2
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1-rho0.5-i003-base/DA_A",
+   "runtime_s": 0.014122250002401415,
+   "spawn_key": [
+    1000,
+    500,
+    3
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1-rho0.5-i003-base/DA_B",
+   "runtime_s": 0.014722458996402565,
+   "spawn_key": [
+    1000,
+    500,
+    3
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1-rho0.5-i003-base/MAXW",
+   "runtime_s": 0.0023227499987115152,
+   "spawn_key": [
+    1000,
+    500,
+    3
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1-rho0.5-i004-base/DA_A",
+   "runtime_s": 0.013895708005293272,
+   "spawn_key": [
+    1000,
+    500,
+    4
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1-rho0.5-i004-base/DA_B",
+   "runtime_s": 0.013932917005149648,
+   "spawn_key": [
+    1000,
+    500,
+    4
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1-rho0.5-i004-base/MAXW",
+   "runtime_s": 0.0023498750015278347,
+   "spawn_key": [
+    1000,
+    500,
+    4
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1-rho0.5-i005-base/DA_A",
+   "runtime_s": 0.014162667001073714,
+   "spawn_key": [
+    1000,
+    500,
+    5
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1-rho0.5-i005-base/DA_B",
+   "runtime_s": 0.013787666001007892,
+   "spawn_key": [
+    1000,
+    500,
+    5
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1-rho0.5-i005-base/MAXW",
+   "runtime_s": 0.0024739590007811785,
+   "spawn_key": [
+    1000,
+    500,
+    5
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1-rho0.5-i006-base/DA_A",
+   "runtime_s": 0.013663790996361058,
+   "spawn_key": [
+    1000,
+    500,
+    6
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1-rho0.5-i006-base/DA_B",
+   "runtime_s": 0.013503958005458117,
+   "spawn_key": [
+    1000,
+    500,
+    6
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1-rho0.5-i006-base/MAXW",
+   "runtime_s": 0.0021465829995577224,
+   "spawn_key": [
+    1000,
+    500,
+    6
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1-rho0.5-i007-base/DA_A",
+   "runtime_s": 0.014073625003220513,
+   "spawn_key": [
+    1000,
+    500,
+    7
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1-rho0.5-i007-base/DA_B",
+   "runtime_s": 0.015270750001945999,
+   "spawn_key": [
+    1000,
+    500,
+    7
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1-rho0.5-i007-base/MAXW",
+   "runtime_s": 0.0024534579933970235,
+   "spawn_key": [
+    1000,
+    500,
+    7
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1-rho0.5-i008-base/DA_A",
+   "runtime_s": 0.015699499999755062,
+   "spawn_key": [
+    1000,
+    500,
+    8
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1-rho0.5-i008-base/DA_B",
+   "runtime_s": 0.013749208002991509,
+   "spawn_key": [
+    1000,
+    500,
+    8
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1-rho0.5-i008-base/MAXW",
+   "runtime_s": 0.0025669169990578666,
+   "spawn_key": [
+    1000,
+    500,
+    8
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1-rho0.5-i009-base/DA_A",
+   "runtime_s": 0.013938083000539336,
+   "spawn_key": [
+    1000,
+    500,
+    9
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1-rho0.5-i009-base/DA_B",
+   "runtime_s": 0.013706875004572794,
+   "spawn_key": [
+    1000,
+    500,
+    9
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1-rho0.5-i009-base/MAXW",
+   "runtime_s": 0.002217665998614393,
+   "spawn_key": [
+    1000,
+    500,
+    9
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1-rho0.5-i010-base/DA_A",
+   "runtime_s": 0.013853042000846472,
+   "spawn_key": [
+    1000,
+    500,
+    10
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1-rho0.5-i010-base/DA_B",
+   "runtime_s": 0.013905708001402672,
+   "spawn_key": [
+    1000,
+    500,
+    10
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1-rho0.5-i010-base/MAXW",
+   "runtime_s": 0.0021980000019539148,
+   "spawn_key": [
+    1000,
+    500,
+    10
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1-rho0.5-i011-base/DA_A",
+   "runtime_s": 0.01374441699590534,
+   "spawn_key": [
+    1000,
+    500,
+    11
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1-rho0.5-i011-base/DA_B",
+   "runtime_s": 0.013572957999713253,
+   "spawn_key": [
+    1000,
+    500,
+    11
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1-rho0.5-i011-base/MAXW",
+   "runtime_s": 0.0023456669950974174,
+   "spawn_key": [
+    1000,
+    500,
+    11
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1-rho0.5-i012-base/DA_A",
+   "runtime_s": 0.013765000003331807,
+   "spawn_key": [
+    1000,
+    500,
+    12
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1-rho0.5-i012-base/DA_B",
+   "runtime_s": 0.013653166002768558,
+   "spawn_key": [
+    1000,
+    500,
+    12
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1-rho0.5-i012-base/MAXW",
+   "runtime_s": 0.002411415996903088,
+   "spawn_key": [
+    1000,
+    500,
+    12
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1-rho0.5-i013-base/DA_A",
+   "runtime_s": 0.014387000002898276,
+   "spawn_key": [
+    1000,
+    500,
+    13
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1-rho0.5-i013-base/DA_B",
+   "runtime_s": 0.014270874999056105,
+   "spawn_key": [
+    1000,
+    500,
+    13
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1-rho0.5-i013-base/MAXW",
+   "runtime_s": 0.002329957998881582,
+   "spawn_key": [
+    1000,
+    500,
+    13
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1-rho0.5-i014-base/DA_A",
+   "runtime_s": 0.014356917003169656,
+   "spawn_key": [
+    1000,
+    500,
+    14
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1-rho0.5-i014-base/DA_B",
+   "runtime_s": 0.014487249994999729,
+   "spawn_key": [
+    1000,
+    500,
+    14
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1-rho0.5-i014-base/MAXW",
+   "runtime_s": 0.0026529589958954602,
+   "spawn_key": [
+    1000,
+    500,
+    14
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1-rho0.5-i015-base/DA_A",
+   "runtime_s": 0.014009124999574851,
+   "spawn_key": [
+    1000,
+    500,
+    15
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1-rho0.5-i015-base/DA_B",
+   "runtime_s": 0.013823999994201586,
+   "spawn_key": [
+    1000,
+    500,
+    15
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1-rho0.5-i015-base/MAXW",
+   "runtime_s": 0.0026741250039776787,
+   "spawn_key": [
+    1000,
+    500,
+    15
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1-rho0.5-i016-base/DA_A",
+   "runtime_s": 0.014173666000715457,
+   "spawn_key": [
+    1000,
+    500,
+    16
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1-rho0.5-i016-base/DA_B",
+   "runtime_s": 0.013898750003136229,
+   "spawn_key": [
+    1000,
+    500,
+    16
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1-rho0.5-i016-base/MAXW",
+   "runtime_s": 0.0024528339999960735,
+   "spawn_key": [
+    1000,
+    500,
+    16
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1-rho0.5-i017-base/DA_A",
+   "runtime_s": 0.013913959002820775,
+   "spawn_key": [
+    1000,
+    500,
+    17
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1-rho0.5-i017-base/DA_B",
+   "runtime_s": 0.013636584000778385,
+   "spawn_key": [
+    1000,
+    500,
+    17
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1-rho0.5-i017-base/MAXW",
+   "runtime_s": 0.002461000003677327,
+   "spawn_key": [
+    1000,
+    500,
+    17
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1-rho0.5-i018-base/DA_A",
+   "runtime_s": 0.01364474999718368,
+   "spawn_key": [
+    1000,
+    500,
+    18
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1-rho0.5-i018-base/DA_B",
+   "runtime_s": 0.01366908400086686,
+   "spawn_key": [
+    1000,
+    500,
+    18
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1-rho0.5-i018-base/MAXW",
+   "runtime_s": 0.0024365830031456426,
+   "spawn_key": [
+    1000,
+    500,
+    18
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1-rho0.5-i019-base/DA_A",
+   "runtime_s": 0.01408366700343322,
+   "spawn_key": [
+    1000,
+    500,
+    19
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1-rho0.5-i019-base/DA_B",
+   "runtime_s": 0.013616084004752338,
+   "spawn_key": [
+    1000,
+    500,
+    19
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1-rho0.5-i019-base/MAXW",
+   "runtime_s": 0.0024003750004339963,
+   "spawn_key": [
+    1000,
+    500,
+    19
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1-rho0.5-i020-base/DA_A",
+   "runtime_s": 0.013639749995491002,
+   "spawn_key": [
+    1000,
+    500,
+    20
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1-rho0.5-i020-base/DA_B",
+   "runtime_s": 0.01350112500222167,
+   "spawn_key": [
+    1000,
+    500,
+    20
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1-rho0.5-i020-base/MAXW",
+   "runtime_s": 0.0025902499983203597,
+   "spawn_key": [
+    1000,
+    500,
+    20
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1-rho0.5-i021-base/DA_A",
+   "runtime_s": 0.013717791996896267,
+   "spawn_key": [
+    1000,
+    500,
+    21
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1-rho0.5-i021-base/DA_B",
+   "runtime_s": 0.013707833000808023,
+   "spawn_key": [
+    1000,
+    500,
+    21
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1-rho0.5-i021-base/MAXW",
+   "runtime_s": 0.0023764159996062517,
+   "spawn_key": [
+    1000,
+    500,
+    21
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1-rho0.5-i022-base/DA_A",
+   "runtime_s": 0.013250208998215385,
+   "spawn_key": [
+    1000,
+    500,
+    22
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1-rho0.5-i022-base/DA_B",
+   "runtime_s": 0.013116417001583613,
+   "spawn_key": [
+    1000,
+    500,
+    22
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1-rho0.5-i022-base/MAXW",
+   "runtime_s": 0.002218166999227833,
+   "spawn_key": [
+    1000,
+    500,
+    22
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1-rho0.5-i023-base/DA_A",
+   "runtime_s": 0.013049041997874156,
+   "spawn_key": [
+    1000,
+    500,
+    23
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1-rho0.5-i023-base/DA_B",
+   "runtime_s": 0.012907250005810056,
+   "spawn_key": [
+    1000,
+    500,
+    23
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1-rho0.5-i023-base/MAXW",
+   "runtime_s": 0.002172790998884011,
+   "spawn_key": [
+    1000,
+    500,
+    23
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1-rho0.5-i024-base/DA_A",
+   "runtime_s": 0.013331542002561036,
+   "spawn_key": [
+    1000,
+    500,
+    24
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1-rho0.5-i024-base/DA_B",
+   "runtime_s": 0.012987333000637591,
+   "spawn_key": [
+    1000,
+    500,
+    24
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1-rho0.5-i024-base/MAXW",
+   "runtime_s": 0.0023792919964762405,
+   "spawn_key": [
+    1000,
+    500,
+    24
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1-rho0.5-i025-base/DA_A",
+   "runtime_s": 0.013850707997335121,
+   "spawn_key": [
+    1000,
+    500,
+    25
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1-rho0.5-i025-base/DA_B",
+   "runtime_s": 0.013534291996620595,
+   "spawn_key": [
+    1000,
+    500,
+    25
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1-rho0.5-i025-base/MAXW",
+   "runtime_s": 0.002390707995800767,
+   "spawn_key": [
+    1000,
+    500,
+    25
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1-rho0.5-i026-base/DA_A",
+   "runtime_s": 0.013915499999711756,
+   "spawn_key": [
+    1000,
+    500,
+    26
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1-rho0.5-i026-base/DA_B",
+   "runtime_s": 0.013607834000140429,
+   "spawn_key": [
+    1000,
+    500,
+    26
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1-rho0.5-i026-base/MAXW",
+   "runtime_s": 0.002361416001804173,
+   "spawn_key": [
+    1000,
+    500,
+    26
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1-rho0.5-i027-base/DA_A",
+   "runtime_s": 0.013793957994494122,
+   "spawn_key": [
+    1000,
+    500,
+    27
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1-rho0.5-i027-base/DA_B",
+   "runtime_s": 0.013499167005647905,
+   "spawn_key": [
+    1000,
+    500,
+    27
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1-rho0.5-i027-base/MAXW",
+   "runtime_s": 0.00289100000372855,
+   "spawn_key": [
+    1000,
+    500,
+    27
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1-rho0.5-i028-base/DA_A",
+   "runtime_s": 0.013637791998917237,
+   "spawn_key": [
+    1000,
+    500,
+    28
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1-rho0.5-i028-base/DA_B",
+   "runtime_s": 0.01313829099672148,
+   "spawn_key": [
+    1000,
+    500,
+    28
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1-rho0.5-i028-base/MAXW",
+   "runtime_s": 0.0022928750040591694,
+   "spawn_key": [
+    1000,
+    500,
+    28
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1-rho0.5-i029-base/DA_A",
+   "runtime_s": 0.014149832997645717,
+   "spawn_key": [
+    1000,
+    500,
+    29
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1-rho0.5-i029-base/DA_B",
+   "runtime_s": 0.013948665997304488,
+   "spawn_key": [
+    1000,
+    500,
+    29
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1-rho0.5-i029-base/MAXW",
+   "runtime_s": 0.0024095410044537857,
+   "spawn_key": [
+    1000,
+    500,
+    29
+   ]
+  },
+  {
+   "peak_traced_bytes": 1308624,
+   "run_id": "EXP-002/r1-rho0.9-i000-base/DA_A",
+   "runtime_s": 0.013968999999633525,
+   "spawn_key": [
+    1000,
+    900,
+    0
+   ]
+  },
+  {
+   "peak_traced_bytes": 1308624,
+   "run_id": "EXP-002/r1-rho0.9-i000-base/DA_B",
+   "runtime_s": 0.013984833996801171,
+   "spawn_key": [
+    1000,
+    900,
+    0
+   ]
+  },
+  {
+   "peak_traced_bytes": 684976,
+   "run_id": "EXP-002/r1-rho0.9-i000-base/MAXW",
+   "runtime_s": 0.0025996250042226166,
+   "spawn_key": [
+    1000,
+    900,
+    0
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1-rho0.9-i001-base/DA_A",
+   "runtime_s": 0.014135042001726106,
+   "spawn_key": [
+    1000,
+    900,
+    1
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1-rho0.9-i001-base/DA_B",
+   "runtime_s": 0.014025917000253685,
+   "spawn_key": [
+    1000,
+    900,
+    1
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1-rho0.9-i001-base/MAXW",
+   "runtime_s": 0.0027335830018273555,
+   "spawn_key": [
+    1000,
+    900,
+    1
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1-rho0.9-i002-base/DA_A",
+   "runtime_s": 0.014113958000962157,
+   "spawn_key": [
+    1000,
+    900,
+    2
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1-rho0.9-i002-base/DA_B",
+   "runtime_s": 0.014088041003560647,
+   "spawn_key": [
+    1000,
+    900,
+    2
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1-rho0.9-i002-base/MAXW",
+   "runtime_s": 0.002540166999096982,
+   "spawn_key": [
+    1000,
+    900,
+    2
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1-rho0.9-i003-base/DA_A",
+   "runtime_s": 0.015009041002485901,
+   "spawn_key": [
+    1000,
+    900,
+    3
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1-rho0.9-i003-base/DA_B",
+   "runtime_s": 0.014355625004100148,
+   "spawn_key": [
+    1000,
+    900,
+    3
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1-rho0.9-i003-base/MAXW",
+   "runtime_s": 0.002713624999159947,
+   "spawn_key": [
+    1000,
+    900,
+    3
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1-rho0.9-i004-base/DA_A",
+   "runtime_s": 0.03783366700372426,
+   "spawn_key": [
+    1000,
+    900,
+    4
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1-rho0.9-i004-base/DA_B",
+   "runtime_s": 0.014172417002555449,
+   "spawn_key": [
+    1000,
+    900,
+    4
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1-rho0.9-i004-base/MAXW",
+   "runtime_s": 0.0027933329984080046,
+   "spawn_key": [
+    1000,
+    900,
+    4
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1-rho0.9-i005-base/DA_A",
+   "runtime_s": 0.015469457997824065,
+   "spawn_key": [
+    1000,
+    900,
+    5
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1-rho0.9-i005-base/DA_B",
+   "runtime_s": 0.014379125001141801,
+   "spawn_key": [
+    1000,
+    900,
+    5
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1-rho0.9-i005-base/MAXW",
+   "runtime_s": 0.002746958998613991,
+   "spawn_key": [
+    1000,
+    900,
+    5
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1-rho0.9-i006-base/DA_A",
+   "runtime_s": 0.01414170899806777,
+   "spawn_key": [
+    1000,
+    900,
+    6
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1-rho0.9-i006-base/DA_B",
+   "runtime_s": 0.01424462499562651,
+   "spawn_key": [
+    1000,
+    900,
+    6
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1-rho0.9-i006-base/MAXW",
+   "runtime_s": 0.002804416995786596,
+   "spawn_key": [
+    1000,
+    900,
+    6
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1-rho0.9-i007-base/DA_A",
+   "runtime_s": 0.01352629199391231,
+   "spawn_key": [
+    1000,
+    900,
+    7
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1-rho0.9-i007-base/DA_B",
+   "runtime_s": 0.01381816699722549,
+   "spawn_key": [
+    1000,
+    900,
+    7
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1-rho0.9-i007-base/MAXW",
+   "runtime_s": 0.0027641250053420663,
+   "spawn_key": [
+    1000,
+    900,
+    7
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1-rho0.9-i008-base/DA_A",
+   "runtime_s": 0.014093792000494432,
+   "spawn_key": [
+    1000,
+    900,
+    8
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1-rho0.9-i008-base/DA_B",
+   "runtime_s": 0.014536082999256905,
+   "spawn_key": [
+    1000,
+    900,
+    8
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1-rho0.9-i008-base/MAXW",
+   "runtime_s": 0.0027039170017815195,
+   "spawn_key": [
+    1000,
+    900,
+    8
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1-rho0.9-i009-base/DA_A",
+   "runtime_s": 0.013471582999045495,
+   "spawn_key": [
+    1000,
+    900,
+    9
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1-rho0.9-i009-base/DA_B",
+   "runtime_s": 0.013865291999536566,
+   "spawn_key": [
+    1000,
+    900,
+    9
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1-rho0.9-i009-base/MAXW",
+   "runtime_s": 0.0022111660000518896,
+   "spawn_key": [
+    1000,
+    900,
+    9
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1-rho0.9-i010-base/DA_A",
+   "runtime_s": 0.013527832998079248,
+   "spawn_key": [
+    1000,
+    900,
+    10
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1-rho0.9-i010-base/DA_B",
+   "runtime_s": 0.01343095900665503,
+   "spawn_key": [
+    1000,
+    900,
+    10
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1-rho0.9-i010-base/MAXW",
+   "runtime_s": 0.0024392920022364706,
+   "spawn_key": [
+    1000,
+    900,
+    10
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1-rho0.9-i011-base/DA_A",
+   "runtime_s": 0.013516416998754721,
+   "spawn_key": [
+    1000,
+    900,
+    11
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1-rho0.9-i011-base/DA_B",
+   "runtime_s": 0.013303459003509488,
+   "spawn_key": [
+    1000,
+    900,
+    11
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1-rho0.9-i011-base/MAXW",
+   "runtime_s": 0.003851041998132132,
+   "spawn_key": [
+    1000,
+    900,
+    11
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1-rho0.9-i012-base/DA_A",
+   "runtime_s": 0.01423820799391251,
+   "spawn_key": [
+    1000,
+    900,
+    12
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1-rho0.9-i012-base/DA_B",
+   "runtime_s": 0.013948249994427897,
+   "spawn_key": [
+    1000,
+    900,
+    12
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1-rho0.9-i012-base/MAXW",
+   "runtime_s": 0.0029427500048768707,
+   "spawn_key": [
+    1000,
+    900,
+    12
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1-rho0.9-i013-base/DA_A",
+   "runtime_s": 0.014036416992894374,
+   "spawn_key": [
+    1000,
+    900,
+    13
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1-rho0.9-i013-base/DA_B",
+   "runtime_s": 0.013758000000962056,
+   "spawn_key": [
+    1000,
+    900,
+    13
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1-rho0.9-i013-base/MAXW",
+   "runtime_s": 0.0025997500051744282,
+   "spawn_key": [
+    1000,
+    900,
+    13
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1-rho0.9-i014-base/DA_A",
+   "runtime_s": 0.014197832999343518,
+   "spawn_key": [
+    1000,
+    900,
+    14
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1-rho0.9-i014-base/DA_B",
+   "runtime_s": 0.013722207993851043,
+   "spawn_key": [
+    1000,
+    900,
+    14
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1-rho0.9-i014-base/MAXW",
+   "runtime_s": 0.002768833001027815,
+   "spawn_key": [
+    1000,
+    900,
+    14
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1-rho0.9-i015-base/DA_A",
+   "runtime_s": 0.014247250001062639,
+   "spawn_key": [
+    1000,
+    900,
+    15
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1-rho0.9-i015-base/DA_B",
+   "runtime_s": 0.014033999999810476,
+   "spawn_key": [
+    1000,
+    900,
+    15
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1-rho0.9-i015-base/MAXW",
+   "runtime_s": 0.0025154169998131692,
+   "spawn_key": [
+    1000,
+    900,
+    15
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1-rho0.9-i016-base/DA_A",
+   "runtime_s": 0.014126499998383224,
+   "spawn_key": [
+    1000,
+    900,
+    16
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1-rho0.9-i016-base/DA_B",
+   "runtime_s": 0.013976500005810522,
+   "spawn_key": [
+    1000,
+    900,
+    16
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1-rho0.9-i016-base/MAXW",
+   "runtime_s": 0.0030041659993003123,
+   "spawn_key": [
+    1000,
+    900,
+    16
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1-rho0.9-i017-base/DA_A",
+   "runtime_s": 0.014066791998629924,
+   "spawn_key": [
+    1000,
+    900,
+    17
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1-rho0.9-i017-base/DA_B",
+   "runtime_s": 0.0141800420024083,
+   "spawn_key": [
+    1000,
+    900,
+    17
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1-rho0.9-i017-base/MAXW",
+   "runtime_s": 0.002594500001578126,
+   "spawn_key": [
+    1000,
+    900,
+    17
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1-rho0.9-i018-base/DA_A",
+   "runtime_s": 0.014054917002795264,
+   "spawn_key": [
+    1000,
+    900,
+    18
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1-rho0.9-i018-base/DA_B",
+   "runtime_s": 0.01413733400113415,
+   "spawn_key": [
+    1000,
+    900,
+    18
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1-rho0.9-i018-base/MAXW",
+   "runtime_s": 0.0029452089947881177,
+   "spawn_key": [
+    1000,
+    900,
+    18
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1-rho0.9-i019-base/DA_A",
+   "runtime_s": 0.013767542004643474,
+   "spawn_key": [
+    1000,
+    900,
+    19
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1-rho0.9-i019-base/DA_B",
+   "runtime_s": 0.013858124999387655,
+   "spawn_key": [
+    1000,
+    900,
+    19
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1-rho0.9-i019-base/MAXW",
+   "runtime_s": 0.002937334000307601,
+   "spawn_key": [
+    1000,
+    900,
+    19
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1-rho0.9-i020-base/DA_A",
+   "runtime_s": 0.01416737500403542,
+   "spawn_key": [
+    1000,
+    900,
+    20
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1-rho0.9-i020-base/DA_B",
+   "runtime_s": 0.014070791999984067,
+   "spawn_key": [
+    1000,
+    900,
+    20
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1-rho0.9-i020-base/MAXW",
+   "runtime_s": 0.002553542006353382,
+   "spawn_key": [
+    1000,
+    900,
+    20
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1-rho0.9-i021-base/DA_A",
+   "runtime_s": 0.01405637500283774,
+   "spawn_key": [
+    1000,
+    900,
+    21
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1-rho0.9-i021-base/DA_B",
+   "runtime_s": 0.013761333000729792,
+   "spawn_key": [
+    1000,
+    900,
+    21
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1-rho0.9-i021-base/MAXW",
+   "runtime_s": 0.0026805000015883707,
+   "spawn_key": [
+    1000,
+    900,
+    21
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1-rho0.9-i022-base/DA_A",
+   "runtime_s": 0.013869791997421999,
+   "spawn_key": [
+    1000,
+    900,
+    22
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1-rho0.9-i022-base/DA_B",
+   "runtime_s": 0.013804166999761946,
+   "spawn_key": [
+    1000,
+    900,
+    22
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1-rho0.9-i022-base/MAXW",
+   "runtime_s": 0.002613958000438288,
+   "spawn_key": [
+    1000,
+    900,
+    22
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1-rho0.9-i023-base/DA_A",
+   "runtime_s": 0.013978499999211635,
+   "spawn_key": [
+    1000,
+    900,
+    23
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1-rho0.9-i023-base/DA_B",
+   "runtime_s": 0.013660750002600253,
+   "spawn_key": [
+    1000,
+    900,
+    23
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1-rho0.9-i023-base/MAXW",
+   "runtime_s": 0.0027327080024406314,
+   "spawn_key": [
+    1000,
+    900,
+    23
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1-rho0.9-i024-base/DA_A",
+   "runtime_s": 0.014590833001420833,
+   "spawn_key": [
+    1000,
+    900,
+    24
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1-rho0.9-i024-base/DA_B",
+   "runtime_s": 0.014032624996616505,
+   "spawn_key": [
+    1000,
+    900,
+    24
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1-rho0.9-i024-base/MAXW",
+   "runtime_s": 0.0031073329955688678,
+   "spawn_key": [
+    1000,
+    900,
+    24
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1-rho0.9-i025-base/DA_A",
+   "runtime_s": 0.013978333001432475,
+   "spawn_key": [
+    1000,
+    900,
+    25
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1-rho0.9-i025-base/DA_B",
+   "runtime_s": 0.014232042005460244,
+   "spawn_key": [
+    1000,
+    900,
+    25
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1-rho0.9-i025-base/MAXW",
+   "runtime_s": 0.003261249999923166,
+   "spawn_key": [
+    1000,
+    900,
+    25
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1-rho0.9-i026-base/DA_A",
+   "runtime_s": 0.013789041004201863,
+   "spawn_key": [
+    1000,
+    900,
+    26
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1-rho0.9-i026-base/DA_B",
+   "runtime_s": 0.013767000004008878,
+   "spawn_key": [
+    1000,
+    900,
+    26
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1-rho0.9-i026-base/MAXW",
+   "runtime_s": 0.0027801250034826808,
+   "spawn_key": [
+    1000,
+    900,
+    26
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1-rho0.9-i027-base/DA_A",
+   "runtime_s": 0.01385241599928122,
+   "spawn_key": [
+    1000,
+    900,
+    27
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1-rho0.9-i027-base/DA_B",
+   "runtime_s": 0.01382512500276789,
+   "spawn_key": [
+    1000,
+    900,
+    27
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1-rho0.9-i027-base/MAXW",
+   "runtime_s": 0.0025079160041059367,
+   "spawn_key": [
+    1000,
+    900,
+    27
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1-rho0.9-i028-base/DA_A",
+   "runtime_s": 0.014341624999360647,
+   "spawn_key": [
+    1000,
+    900,
+    28
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1-rho0.9-i028-base/DA_B",
+   "runtime_s": 0.013841624997439794,
+   "spawn_key": [
+    1000,
+    900,
+    28
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1-rho0.9-i028-base/MAXW",
+   "runtime_s": 0.0027394580029067583,
+   "spawn_key": [
+    1000,
+    900,
+    28
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1-rho0.9-i029-base/DA_A",
+   "runtime_s": 0.013759708002908155,
+   "spawn_key": [
+    1000,
+    900,
+    29
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1-rho0.9-i029-base/DA_B",
+   "runtime_s": 0.01397237499622861,
+   "spawn_key": [
+    1000,
+    900,
+    29
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1-rho0.9-i029-base/MAXW",
+   "runtime_s": 0.0022939170012250543,
+   "spawn_key": [
+    1000,
+    900,
+    29
+   ]
+  },
+  {
+   "peak_traced_bytes": 1453456,
+   "run_id": "EXP-002/r1.1-rho0-i000-base/DA_A",
+   "runtime_s": 0.015197291999356821,
+   "spawn_key": [
+    1100,
+    0,
+    0
+   ]
+  },
+  {
+   "peak_traced_bytes": 1359600,
+   "run_id": "EXP-002/r1.1-rho0-i000-base/DA_B",
+   "runtime_s": 0.015943000005790964,
+   "spawn_key": [
+    1100,
+    0,
+    0
+   ]
+  },
+  {
+   "peak_traced_bytes": 753136,
+   "run_id": "EXP-002/r1.1-rho0-i000-base/MAXW",
+   "runtime_s": 0.0014219579970813356,
+   "spawn_key": [
+    1100,
+    0,
+    0
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.1-rho0-i001-base/DA_A",
+   "runtime_s": 0.014183125000272412,
+   "spawn_key": [
+    1100,
+    0,
+    1
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.1-rho0-i001-base/DA_B",
+   "runtime_s": 0.01558899999508867,
+   "spawn_key": [
+    1100,
+    0,
+    1
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.1-rho0-i001-base/MAXW",
+   "runtime_s": 0.0011119580012746155,
+   "spawn_key": [
+    1100,
+    0,
+    1
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.1-rho0-i002-base/DA_A",
+   "runtime_s": 0.014279916998930275,
+   "spawn_key": [
+    1100,
+    0,
+    2
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.1-rho0-i002-base/DA_B",
+   "runtime_s": 0.015357999996922445,
+   "spawn_key": [
+    1100,
+    0,
+    2
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.1-rho0-i002-base/MAXW",
+   "runtime_s": 0.0010517090049688704,
+   "spawn_key": [
+    1100,
+    0,
+    2
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.1-rho0-i003-base/DA_A",
+   "runtime_s": 0.013880333994165994,
+   "spawn_key": [
+    1100,
+    0,
+    3
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.1-rho0-i003-base/DA_B",
+   "runtime_s": 0.015312666997488122,
+   "spawn_key": [
+    1100,
+    0,
+    3
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.1-rho0-i003-base/MAXW",
+   "runtime_s": 0.0010110000002896413,
+   "spawn_key": [
+    1100,
+    0,
+    3
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.1-rho0-i004-base/DA_A",
+   "runtime_s": 0.014214458999049384,
+   "spawn_key": [
+    1100,
+    0,
+    4
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.1-rho0-i004-base/DA_B",
+   "runtime_s": 0.015394708003441337,
+   "spawn_key": [
+    1100,
+    0,
+    4
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.1-rho0-i004-base/MAXW",
+   "runtime_s": 0.0010925000024144538,
+   "spawn_key": [
+    1100,
+    0,
+    4
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.1-rho0-i005-base/DA_A",
+   "runtime_s": 0.014071874997171108,
+   "spawn_key": [
+    1100,
+    0,
+    5
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.1-rho0-i005-base/DA_B",
+   "runtime_s": 0.015151916995819192,
+   "spawn_key": [
+    1100,
+    0,
+    5
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.1-rho0-i005-base/MAXW",
+   "runtime_s": 0.0010361249951529317,
+   "spawn_key": [
+    1100,
+    0,
+    5
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.1-rho0-i006-base/DA_A",
+   "runtime_s": 0.014421042003959883,
+   "spawn_key": [
+    1100,
+    0,
+    6
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.1-rho0-i006-base/DA_B",
+   "runtime_s": 0.015262749999237712,
+   "spawn_key": [
+    1100,
+    0,
+    6
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.1-rho0-i006-base/MAXW",
+   "runtime_s": 0.0011793750018114224,
+   "spawn_key": [
+    1100,
+    0,
+    6
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.1-rho0-i007-base/DA_A",
+   "runtime_s": 0.014353082995512523,
+   "spawn_key": [
+    1100,
+    0,
+    7
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.1-rho0-i007-base/DA_B",
+   "runtime_s": 0.022563958998944145,
+   "spawn_key": [
+    1100,
+    0,
+    7
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.1-rho0-i007-base/MAXW",
+   "runtime_s": 0.001149499999883119,
+   "spawn_key": [
+    1100,
+    0,
+    7
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.1-rho0-i008-base/DA_A",
+   "runtime_s": 0.014518333999149036,
+   "spawn_key": [
+    1100,
+    0,
+    8
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.1-rho0-i008-base/DA_B",
+   "runtime_s": 0.015158041998802219,
+   "spawn_key": [
+    1100,
+    0,
+    8
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.1-rho0-i008-base/MAXW",
+   "runtime_s": 0.0011084159996244125,
+   "spawn_key": [
+    1100,
+    0,
+    8
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.1-rho0-i009-base/DA_A",
+   "runtime_s": 0.014469165995251387,
+   "spawn_key": [
+    1100,
+    0,
+    9
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.1-rho0-i009-base/DA_B",
+   "runtime_s": 0.015117667004233226,
+   "spawn_key": [
+    1100,
+    0,
+    9
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.1-rho0-i009-base/MAXW",
+   "runtime_s": 0.0010830829996848479,
+   "spawn_key": [
+    1100,
+    0,
+    9
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.1-rho0-i010-base/DA_A",
+   "runtime_s": 0.022730290998879354,
+   "spawn_key": [
+    1100,
+    0,
+    10
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.1-rho0-i010-base/DA_B",
+   "runtime_s": 0.016020374998333864,
+   "spawn_key": [
+    1100,
+    0,
+    10
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.1-rho0-i010-base/MAXW",
+   "runtime_s": 0.0010679159968276508,
+   "spawn_key": [
+    1100,
+    0,
+    10
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.1-rho0-i011-base/DA_A",
+   "runtime_s": 0.014218750002328306,
+   "spawn_key": [
+    1100,
+    0,
+    11
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.1-rho0-i011-base/DA_B",
+   "runtime_s": 0.01524970900209155,
+   "spawn_key": [
+    1100,
+    0,
+    11
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.1-rho0-i011-base/MAXW",
+   "runtime_s": 0.0011314589937683195,
+   "spawn_key": [
+    1100,
+    0,
+    11
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.1-rho0-i012-base/DA_A",
+   "runtime_s": 0.014461208003922366,
+   "spawn_key": [
+    1100,
+    0,
+    12
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.1-rho0-i012-base/DA_B",
+   "runtime_s": 0.01532687500002794,
+   "spawn_key": [
+    1100,
+    0,
+    12
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.1-rho0-i012-base/MAXW",
+   "runtime_s": 0.0010505000027478673,
+   "spawn_key": [
+    1100,
+    0,
+    12
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.1-rho0-i013-base/DA_A",
+   "runtime_s": 0.01442045799922198,
+   "spawn_key": [
+    1100,
+    0,
+    13
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.1-rho0-i013-base/DA_B",
+   "runtime_s": 0.026474582999071572,
+   "spawn_key": [
+    1100,
+    0,
+    13
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.1-rho0-i013-base/MAXW",
+   "runtime_s": 0.0012797080053132959,
+   "spawn_key": [
+    1100,
+    0,
+    13
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.1-rho0-i014-base/DA_A",
+   "runtime_s": 0.014595375003409572,
+   "spawn_key": [
+    1100,
+    0,
+    14
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.1-rho0-i014-base/DA_B",
+   "runtime_s": 0.01564633299858542,
+   "spawn_key": [
+    1100,
+    0,
+    14
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.1-rho0-i014-base/MAXW",
+   "runtime_s": 0.0011005420019500889,
+   "spawn_key": [
+    1100,
+    0,
+    14
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.1-rho0-i015-base/DA_A",
+   "runtime_s": 0.014185750005708542,
+   "spawn_key": [
+    1100,
+    0,
+    15
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.1-rho0-i015-base/DA_B",
+   "runtime_s": 0.015283916996850166,
+   "spawn_key": [
+    1100,
+    0,
+    15
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.1-rho0-i015-base/MAXW",
+   "runtime_s": 0.0011082090059062466,
+   "spawn_key": [
+    1100,
+    0,
+    15
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.1-rho0-i016-base/DA_A",
+   "runtime_s": 0.015813457997865044,
+   "spawn_key": [
+    1100,
+    0,
+    16
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.1-rho0-i016-base/DA_B",
+   "runtime_s": 0.01530533299956005,
+   "spawn_key": [
+    1100,
+    0,
+    16
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.1-rho0-i016-base/MAXW",
+   "runtime_s": 0.0011215420017833821,
+   "spawn_key": [
+    1100,
+    0,
+    16
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.1-rho0-i017-base/DA_A",
+   "runtime_s": 0.014780375000555068,
+   "spawn_key": [
+    1100,
+    0,
+    17
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.1-rho0-i017-base/DA_B",
+   "runtime_s": 0.020836167001107242,
+   "spawn_key": [
+    1100,
+    0,
+    17
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.1-rho0-i017-base/MAXW",
+   "runtime_s": 0.0011976250025327317,
+   "spawn_key": [
+    1100,
+    0,
+    17
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.1-rho0-i018-base/DA_A",
+   "runtime_s": 0.02129320800304413,
+   "spawn_key": [
+    1100,
+    0,
+    18
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.1-rho0-i018-base/DA_B",
+   "runtime_s": 0.015829167001356836,
+   "spawn_key": [
+    1100,
+    0,
+    18
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.1-rho0-i018-base/MAXW",
+   "runtime_s": 0.0011772090001613833,
+   "spawn_key": [
+    1100,
+    0,
+    18
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.1-rho0-i019-base/DA_A",
+   "runtime_s": 0.014363457994477358,
+   "spawn_key": [
+    1100,
+    0,
+    19
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.1-rho0-i019-base/DA_B",
+   "runtime_s": 0.015477207998628728,
+   "spawn_key": [
+    1100,
+    0,
+    19
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.1-rho0-i019-base/MAXW",
+   "runtime_s": 0.0011100000047008507,
+   "spawn_key": [
+    1100,
+    0,
+    19
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.1-rho0-i020-base/DA_A",
+   "runtime_s": 0.014435541997954715,
+   "spawn_key": [
+    1100,
+    0,
+    20
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.1-rho0-i020-base/DA_B",
+   "runtime_s": 0.0157450839978992,
+   "spawn_key": [
+    1100,
+    0,
+    20
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.1-rho0-i020-base/MAXW",
+   "runtime_s": 0.001087000004190486,
+   "spawn_key": [
+    1100,
+    0,
+    20
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.1-rho0-i021-base/DA_A",
+   "runtime_s": 0.014350416000525001,
+   "spawn_key": [
+    1100,
+    0,
+    21
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.1-rho0-i021-base/DA_B",
+   "runtime_s": 0.016009749997465406,
+   "spawn_key": [
+    1100,
+    0,
+    21
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.1-rho0-i021-base/MAXW",
+   "runtime_s": 0.0011262909974902868,
+   "spawn_key": [
+    1100,
+    0,
+    21
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.1-rho0-i022-base/DA_A",
+   "runtime_s": 0.014308124998933636,
+   "spawn_key": [
+    1100,
+    0,
+    22
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.1-rho0-i022-base/DA_B",
+   "runtime_s": 0.015207292002742179,
+   "spawn_key": [
+    1100,
+    0,
+    22
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.1-rho0-i022-base/MAXW",
+   "runtime_s": 0.001116667001042515,
+   "spawn_key": [
+    1100,
+    0,
+    22
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.1-rho0-i023-base/DA_A",
+   "runtime_s": 0.015710375002527144,
+   "spawn_key": [
+    1100,
+    0,
+    23
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.1-rho0-i023-base/DA_B",
+   "runtime_s": 0.01560595800401643,
+   "spawn_key": [
+    1100,
+    0,
+    23
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.1-rho0-i023-base/MAXW",
+   "runtime_s": 0.0012157499950262718,
+   "spawn_key": [
+    1100,
+    0,
+    23
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.1-rho0-i024-base/DA_A",
+   "runtime_s": 0.014221625002392102,
+   "spawn_key": [
+    1100,
+    0,
+    24
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.1-rho0-i024-base/DA_B",
+   "runtime_s": 0.028896791001898237,
+   "spawn_key": [
+    1100,
+    0,
+    24
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.1-rho0-i024-base/MAXW",
+   "runtime_s": 0.0013640420002047904,
+   "spawn_key": [
+    1100,
+    0,
+    24
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.1-rho0-i025-base/DA_A",
+   "runtime_s": 0.014120249994448386,
+   "spawn_key": [
+    1100,
+    0,
+    25
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.1-rho0-i025-base/DA_B",
+   "runtime_s": 0.01890579100290779,
+   "spawn_key": [
+    1100,
+    0,
+    25
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.1-rho0-i025-base/MAXW",
+   "runtime_s": 0.0013118329952703789,
+   "spawn_key": [
+    1100,
+    0,
+    25
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.1-rho0-i026-base/DA_A",
+   "runtime_s": 0.023925125002278946,
+   "spawn_key": [
+    1100,
+    0,
+    26
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.1-rho0-i026-base/DA_B",
+   "runtime_s": 0.015391207998618484,
+   "spawn_key": [
+    1100,
+    0,
+    26
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.1-rho0-i026-base/MAXW",
+   "runtime_s": 0.001093499995477032,
+   "spawn_key": [
+    1100,
+    0,
+    26
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.1-rho0-i027-base/DA_A",
+   "runtime_s": 0.014390290998562705,
+   "spawn_key": [
+    1100,
+    0,
+    27
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.1-rho0-i027-base/DA_B",
+   "runtime_s": 0.02474254100525286,
+   "spawn_key": [
+    1100,
+    0,
+    27
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.1-rho0-i027-base/MAXW",
+   "runtime_s": 0.00126629199803574,
+   "spawn_key": [
+    1100,
+    0,
+    27
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.1-rho0-i028-base/DA_A",
+   "runtime_s": 0.0284391669993056,
+   "spawn_key": [
+    1100,
+    0,
+    28
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.1-rho0-i028-base/DA_B",
+   "runtime_s": 0.023408124994602986,
+   "spawn_key": [
+    1100,
+    0,
+    28
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.1-rho0-i028-base/MAXW",
+   "runtime_s": 0.0012182079954072833,
+   "spawn_key": [
+    1100,
+    0,
+    28
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.1-rho0-i029-base/DA_A",
+   "runtime_s": 0.014287665995652787,
+   "spawn_key": [
+    1100,
+    0,
+    29
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.1-rho0-i029-base/DA_B",
+   "runtime_s": 0.015185541997198015,
+   "spawn_key": [
+    1100,
+    0,
+    29
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.1-rho0-i029-base/MAXW",
+   "runtime_s": 0.0009916670023812912,
+   "spawn_key": [
+    1100,
+    0,
+    29
+   ]
+  },
+  {
+   "peak_traced_bytes": 1453456,
+   "run_id": "EXP-002/r1.1-rho0.5-i000-base/DA_A",
+   "runtime_s": 0.028699708003841806,
+   "spawn_key": [
+    1100,
+    500,
+    0
+   ]
+  },
+  {
+   "peak_traced_bytes": 1359600,
+   "run_id": "EXP-002/r1.1-rho0.5-i000-base/DA_B",
+   "runtime_s": 0.01507720800145762,
+   "spawn_key": [
+    1100,
+    500,
+    0
+   ]
+  },
+  {
+   "peak_traced_bytes": 753136,
+   "run_id": "EXP-002/r1.1-rho0.5-i000-base/MAXW",
+   "runtime_s": 0.0024253330047940835,
+   "spawn_key": [
+    1100,
+    500,
+    0
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.1-rho0.5-i001-base/DA_A",
+   "runtime_s": 0.01492929199594073,
+   "spawn_key": [
+    1100,
+    500,
+    1
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.1-rho0.5-i001-base/DA_B",
+   "runtime_s": 0.015293124997697305,
+   "spawn_key": [
+    1100,
+    500,
+    1
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.1-rho0.5-i001-base/MAXW",
+   "runtime_s": 0.00502487499761628,
+   "spawn_key": [
+    1100,
+    500,
+    1
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.1-rho0.5-i002-base/DA_A",
+   "runtime_s": 0.02056099999754224,
+   "spawn_key": [
+    1100,
+    500,
+    2
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.1-rho0.5-i002-base/DA_B",
+   "runtime_s": 0.015457082998182159,
+   "spawn_key": [
+    1100,
+    500,
+    2
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.1-rho0.5-i002-base/MAXW",
+   "runtime_s": 0.002140374999726191,
+   "spawn_key": [
+    1100,
+    500,
+    2
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.1-rho0.5-i003-base/DA_A",
+   "runtime_s": 0.014840666997770313,
+   "spawn_key": [
+    1100,
+    500,
+    3
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.1-rho0.5-i003-base/DA_B",
+   "runtime_s": 0.0150805000012042,
+   "spawn_key": [
+    1100,
+    500,
+    3
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.1-rho0.5-i003-base/MAXW",
+   "runtime_s": 0.002079290999972727,
+   "spawn_key": [
+    1100,
+    500,
+    3
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.1-rho0.5-i004-base/DA_A",
+   "runtime_s": 0.03305591599928448,
+   "spawn_key": [
+    1100,
+    500,
+    4
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.1-rho0.5-i004-base/DA_B",
+   "runtime_s": 0.01893174999713665,
+   "spawn_key": [
+    1100,
+    500,
+    4
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.1-rho0.5-i004-base/MAXW",
+   "runtime_s": 0.0046597090040449984,
+   "spawn_key": [
+    1100,
+    500,
+    4
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.1-rho0.5-i005-base/DA_A",
+   "runtime_s": 0.015821207998669706,
+   "spawn_key": [
+    1100,
+    500,
+    5
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.1-rho0.5-i005-base/DA_B",
+   "runtime_s": 0.01725674999761395,
+   "spawn_key": [
+    1100,
+    500,
+    5
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.1-rho0.5-i005-base/MAXW",
+   "runtime_s": 0.0024073340027825907,
+   "spawn_key": [
+    1100,
+    500,
+    5
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.1-rho0.5-i006-base/DA_A",
+   "runtime_s": 0.017596666999452282,
+   "spawn_key": [
+    1100,
+    500,
+    6
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.1-rho0.5-i006-base/DA_B",
+   "runtime_s": 0.01767945799656445,
+   "spawn_key": [
+    1100,
+    500,
+    6
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.1-rho0.5-i006-base/MAXW",
+   "runtime_s": 0.0023781670024618506,
+   "spawn_key": [
+    1100,
+    500,
+    6
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.1-rho0.5-i007-base/DA_A",
+   "runtime_s": 0.015242083005432505,
+   "spawn_key": [
+    1100,
+    500,
+    7
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.1-rho0.5-i007-base/DA_B",
+   "runtime_s": 0.015249042000505142,
+   "spawn_key": [
+    1100,
+    500,
+    7
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.1-rho0.5-i007-base/MAXW",
+   "runtime_s": 0.0021092079987283796,
+   "spawn_key": [
+    1100,
+    500,
+    7
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.1-rho0.5-i008-base/DA_A",
+   "runtime_s": 0.01810783399560023,
+   "spawn_key": [
+    1100,
+    500,
+    8
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.1-rho0.5-i008-base/DA_B",
+   "runtime_s": 0.024061250005615875,
+   "spawn_key": [
+    1100,
+    500,
+    8
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.1-rho0.5-i008-base/MAXW",
+   "runtime_s": 0.0032618750046822242,
+   "spawn_key": [
+    1100,
+    500,
+    8
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.1-rho0.5-i009-base/DA_A",
+   "runtime_s": 0.015133250002691057,
+   "spawn_key": [
+    1100,
+    500,
+    9
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.1-rho0.5-i009-base/DA_B",
+   "runtime_s": 0.014982417000283021,
+   "spawn_key": [
+    1100,
+    500,
+    9
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.1-rho0.5-i009-base/MAXW",
+   "runtime_s": 0.013454541993269231,
+   "spawn_key": [
+    1100,
+    500,
+    9
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.1-rho0.5-i010-base/DA_A",
+   "runtime_s": 0.015126708000025246,
+   "spawn_key": [
+    1100,
+    500,
+    10
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.1-rho0.5-i010-base/DA_B",
+   "runtime_s": 0.01519916599499993,
+   "spawn_key": [
+    1100,
+    500,
+    10
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.1-rho0.5-i010-base/MAXW",
+   "runtime_s": 0.003711375000420958,
+   "spawn_key": [
+    1100,
+    500,
+    10
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.1-rho0.5-i011-base/DA_A",
+   "runtime_s": 0.021937208002782427,
+   "spawn_key": [
+    1100,
+    500,
+    11
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.1-rho0.5-i011-base/DA_B",
+   "runtime_s": 0.015024166001239792,
+   "spawn_key": [
+    1100,
+    500,
+    11
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.1-rho0.5-i011-base/MAXW",
+   "runtime_s": 0.0023633330056327395,
+   "spawn_key": [
+    1100,
+    500,
+    11
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.1-rho0.5-i012-base/DA_A",
+   "runtime_s": 0.015087125000718515,
+   "spawn_key": [
+    1100,
+    500,
+    12
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.1-rho0.5-i012-base/DA_B",
+   "runtime_s": 0.015441375006048474,
+   "spawn_key": [
+    1100,
+    500,
+    12
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.1-rho0.5-i012-base/MAXW",
+   "runtime_s": 0.002016624996031169,
+   "spawn_key": [
+    1100,
+    500,
+    12
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.1-rho0.5-i013-base/DA_A",
+   "runtime_s": 0.015018999998574145,
+   "spawn_key": [
+    1100,
+    500,
+    13
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.1-rho0.5-i013-base/DA_B",
+   "runtime_s": 0.0194094580001547,
+   "spawn_key": [
+    1100,
+    500,
+    13
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.1-rho0.5-i013-base/MAXW",
+   "runtime_s": 0.004789541999343783,
+   "spawn_key": [
+    1100,
+    500,
+    13
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.1-rho0.5-i014-base/DA_A",
+   "runtime_s": 0.019191958002920728,
+   "spawn_key": [
+    1100,
+    500,
+    14
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.1-rho0.5-i014-base/DA_B",
+   "runtime_s": 0.016906167002161965,
+   "spawn_key": [
+    1100,
+    500,
+    14
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.1-rho0.5-i014-base/MAXW",
+   "runtime_s": 0.002377916003752034,
+   "spawn_key": [
+    1100,
+    500,
+    14
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.1-rho0.5-i015-base/DA_A",
+   "runtime_s": 0.015248040996084455,
+   "spawn_key": [
+    1100,
+    500,
+    15
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.1-rho0.5-i015-base/DA_B",
+   "runtime_s": 0.014996624995546881,
+   "spawn_key": [
+    1100,
+    500,
+    15
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.1-rho0.5-i015-base/MAXW",
+   "runtime_s": 0.0020913749976898544,
+   "spawn_key": [
+    1100,
+    500,
+    15
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.1-rho0.5-i016-base/DA_A",
+   "runtime_s": 0.014857374997518491,
+   "spawn_key": [
+    1100,
+    500,
+    16
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.1-rho0.5-i016-base/DA_B",
+   "runtime_s": 0.01523066599474987,
+   "spawn_key": [
+    1100,
+    500,
+    16
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.1-rho0.5-i016-base/MAXW",
+   "runtime_s": 0.002056416997220367,
+   "spawn_key": [
+    1100,
+    500,
+    16
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.1-rho0.5-i017-base/DA_A",
+   "runtime_s": 0.01501937500142958,
+   "spawn_key": [
+    1100,
+    500,
+    17
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.1-rho0.5-i017-base/DA_B",
+   "runtime_s": 0.015062416001455858,
+   "spawn_key": [
+    1100,
+    500,
+    17
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.1-rho0.5-i017-base/MAXW",
+   "runtime_s": 0.0022086249955464154,
+   "spawn_key": [
+    1100,
+    500,
+    17
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.1-rho0.5-i018-base/DA_A",
+   "runtime_s": 0.014891457998601254,
+   "spawn_key": [
+    1100,
+    500,
+    18
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.1-rho0.5-i018-base/DA_B",
+   "runtime_s": 0.014931625002645887,
+   "spawn_key": [
+    1100,
+    500,
+    18
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.1-rho0.5-i018-base/MAXW",
+   "runtime_s": 0.002075707998301368,
+   "spawn_key": [
+    1100,
+    500,
+    18
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.1-rho0.5-i019-base/DA_A",
+   "runtime_s": 0.017859540996141732,
+   "spawn_key": [
+    1100,
+    500,
+    19
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.1-rho0.5-i019-base/DA_B",
+   "runtime_s": 0.01966095800162293,
+   "spawn_key": [
+    1100,
+    500,
+    19
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.1-rho0.5-i019-base/MAXW",
+   "runtime_s": 0.002747749997070059,
+   "spawn_key": [
+    1100,
+    500,
+    19
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.1-rho0.5-i020-base/DA_A",
+   "runtime_s": 0.015560625004582107,
+   "spawn_key": [
+    1100,
+    500,
+    20
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.1-rho0.5-i020-base/DA_B",
+   "runtime_s": 0.018225874999188818,
+   "spawn_key": [
+    1100,
+    500,
+    20
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.1-rho0.5-i020-base/MAXW",
+   "runtime_s": 0.002309374998731073,
+   "spawn_key": [
+    1100,
+    500,
+    20
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.1-rho0.5-i021-base/DA_A",
+   "runtime_s": 0.016110500000650063,
+   "spawn_key": [
+    1100,
+    500,
+    21
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.1-rho0.5-i021-base/DA_B",
+   "runtime_s": 0.01843383300001733,
+   "spawn_key": [
+    1100,
+    500,
+    21
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.1-rho0.5-i021-base/MAXW",
+   "runtime_s": 0.002276999999594409,
+   "spawn_key": [
+    1100,
+    500,
+    21
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.1-rho0.5-i022-base/DA_A",
+   "runtime_s": 0.015868959002546035,
+   "spawn_key": [
+    1100,
+    500,
+    22
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.1-rho0.5-i022-base/DA_B",
+   "runtime_s": 0.01686645799782127,
+   "spawn_key": [
+    1100,
+    500,
+    22
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.1-rho0.5-i022-base/MAXW",
+   "runtime_s": 0.0026294589988538064,
+   "spawn_key": [
+    1100,
+    500,
+    22
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.1-rho0.5-i023-base/DA_A",
+   "runtime_s": 0.018351334001636133,
+   "spawn_key": [
+    1100,
+    500,
+    23
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.1-rho0.5-i023-base/DA_B",
+   "runtime_s": 0.01761583299958147,
+   "spawn_key": [
+    1100,
+    500,
+    23
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.1-rho0.5-i023-base/MAXW",
+   "runtime_s": 0.002366999993682839,
+   "spawn_key": [
+    1100,
+    500,
+    23
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.1-rho0.5-i024-base/DA_A",
+   "runtime_s": 0.014950041004340164,
+   "spawn_key": [
+    1100,
+    500,
+    24
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.1-rho0.5-i024-base/DA_B",
+   "runtime_s": 0.015340207995905075,
+   "spawn_key": [
+    1100,
+    500,
+    24
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.1-rho0.5-i024-base/MAXW",
+   "runtime_s": 0.002957541997602675,
+   "spawn_key": [
+    1100,
+    500,
+    24
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.1-rho0.5-i025-base/DA_A",
+   "runtime_s": 0.01700683299714001,
+   "spawn_key": [
+    1100,
+    500,
+    25
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.1-rho0.5-i025-base/DA_B",
+   "runtime_s": 0.020162417000392452,
+   "spawn_key": [
+    1100,
+    500,
+    25
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.1-rho0.5-i025-base/MAXW",
+   "runtime_s": 0.002218624998931773,
+   "spawn_key": [
+    1100,
+    500,
+    25
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.1-rho0.5-i026-base/DA_A",
+   "runtime_s": 0.02120779200049583,
+   "spawn_key": [
+    1100,
+    500,
+    26
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.1-rho0.5-i026-base/DA_B",
+   "runtime_s": 0.03148308399977395,
+   "spawn_key": [
+    1100,
+    500,
+    26
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.1-rho0.5-i026-base/MAXW",
+   "runtime_s": 0.0023796660025254823,
+   "spawn_key": [
+    1100,
+    500,
+    26
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.1-rho0.5-i027-base/DA_A",
+   "runtime_s": 0.020034040993778035,
+   "spawn_key": [
+    1100,
+    500,
+    27
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.1-rho0.5-i027-base/DA_B",
+   "runtime_s": 0.015192083003057633,
+   "spawn_key": [
+    1100,
+    500,
+    27
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.1-rho0.5-i027-base/MAXW",
+   "runtime_s": 0.002166500002203975,
+   "spawn_key": [
+    1100,
+    500,
+    27
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.1-rho0.5-i028-base/DA_A",
+   "runtime_s": 0.014994290999311488,
+   "spawn_key": [
+    1100,
+    500,
+    28
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.1-rho0.5-i028-base/DA_B",
+   "runtime_s": 0.01496950000000652,
+   "spawn_key": [
+    1100,
+    500,
+    28
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.1-rho0.5-i028-base/MAXW",
+   "runtime_s": 0.0022951659993850626,
+   "spawn_key": [
+    1100,
+    500,
+    28
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.1-rho0.5-i029-base/DA_A",
+   "runtime_s": 0.014371875004144385,
+   "spawn_key": [
+    1100,
+    500,
+    29
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.1-rho0.5-i029-base/DA_B",
+   "runtime_s": 0.014813333000347484,
+   "spawn_key": [
+    1100,
+    500,
+    29
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.1-rho0.5-i029-base/MAXW",
+   "runtime_s": 0.029147665998607408,
+   "spawn_key": [
+    1100,
+    500,
+    29
+   ]
+  },
+  {
+   "peak_traced_bytes": 1453456,
+   "run_id": "EXP-002/r1.1-rho0.9-i000-base/DA_A",
+   "runtime_s": 0.02097095899807755,
+   "spawn_key": [
+    1100,
+    900,
+    0
+   ]
+  },
+  {
+   "peak_traced_bytes": 1359600,
+   "run_id": "EXP-002/r1.1-rho0.9-i000-base/DA_B",
+   "runtime_s": 0.027141334001498763,
+   "spawn_key": [
+    1100,
+    900,
+    0
+   ]
+  },
+  {
+   "peak_traced_bytes": 753136,
+   "run_id": "EXP-002/r1.1-rho0.9-i000-base/MAXW",
+   "runtime_s": 0.0025356249971082434,
+   "spawn_key": [
+    1100,
+    900,
+    0
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.1-rho0.9-i001-base/DA_A",
+   "runtime_s": 0.015284665998478886,
+   "spawn_key": [
+    1100,
+    900,
+    1
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.1-rho0.9-i001-base/DA_B",
+   "runtime_s": 0.015248124997015111,
+   "spawn_key": [
+    1100,
+    900,
+    1
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.1-rho0.9-i001-base/MAXW",
+   "runtime_s": 0.002876208003726788,
+   "spawn_key": [
+    1100,
+    900,
+    1
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.1-rho0.9-i002-base/DA_A",
+   "runtime_s": 0.015293000004021451,
+   "spawn_key": [
+    1100,
+    900,
+    2
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.1-rho0.9-i002-base/DA_B",
+   "runtime_s": 0.015234083002724219,
+   "spawn_key": [
+    1100,
+    900,
+    2
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.1-rho0.9-i002-base/MAXW",
+   "runtime_s": 0.0029563330026576295,
+   "spawn_key": [
+    1100,
+    900,
+    2
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.1-rho0.9-i003-base/DA_A",
+   "runtime_s": 0.014954124999349006,
+   "spawn_key": [
+    1100,
+    900,
+    3
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.1-rho0.9-i003-base/DA_B",
+   "runtime_s": 0.017489624995505437,
+   "spawn_key": [
+    1100,
+    900,
+    3
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.1-rho0.9-i003-base/MAXW",
+   "runtime_s": 0.0033247500032302924,
+   "spawn_key": [
+    1100,
+    900,
+    3
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.1-rho0.9-i004-base/DA_A",
+   "runtime_s": 0.01693941600387916,
+   "spawn_key": [
+    1100,
+    900,
+    4
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.1-rho0.9-i004-base/DA_B",
+   "runtime_s": 0.02581274999829475,
+   "spawn_key": [
+    1100,
+    900,
+    4
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.1-rho0.9-i004-base/MAXW",
+   "runtime_s": 0.0029178749973652884,
+   "spawn_key": [
+    1100,
+    900,
+    4
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.1-rho0.9-i005-base/DA_A",
+   "runtime_s": 0.02013820800493704,
+   "spawn_key": [
+    1100,
+    900,
+    5
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.1-rho0.9-i005-base/DA_B",
+   "runtime_s": 0.015980707998096477,
+   "spawn_key": [
+    1100,
+    900,
+    5
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.1-rho0.9-i005-base/MAXW",
+   "runtime_s": 0.002437416995235253,
+   "spawn_key": [
+    1100,
+    900,
+    5
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.1-rho0.9-i006-base/DA_A",
+   "runtime_s": 0.027909042000828777,
+   "spawn_key": [
+    1100,
+    900,
+    6
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.1-rho0.9-i006-base/DA_B",
+   "runtime_s": 0.01562516699777916,
+   "spawn_key": [
+    1100,
+    900,
+    6
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.1-rho0.9-i006-base/MAXW",
+   "runtime_s": 0.008000875001016539,
+   "spawn_key": [
+    1100,
+    900,
+    6
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.1-rho0.9-i007-base/DA_A",
+   "runtime_s": 0.02287866700498853,
+   "spawn_key": [
+    1100,
+    900,
+    7
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.1-rho0.9-i007-base/DA_B",
+   "runtime_s": 0.018763042004138697,
+   "spawn_key": [
+    1100,
+    900,
+    7
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.1-rho0.9-i007-base/MAXW",
+   "runtime_s": 0.002888333001465071,
+   "spawn_key": [
+    1100,
+    900,
+    7
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.1-rho0.9-i008-base/DA_A",
+   "runtime_s": 0.03795820900268154,
+   "spawn_key": [
+    1100,
+    900,
+    8
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.1-rho0.9-i008-base/DA_B",
+   "runtime_s": 0.019040958999539725,
+   "spawn_key": [
+    1100,
+    900,
+    8
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.1-rho0.9-i008-base/MAXW",
+   "runtime_s": 0.0027744170001824386,
+   "spawn_key": [
+    1100,
+    900,
+    8
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.1-rho0.9-i009-base/DA_A",
+   "runtime_s": 0.016742125000746455,
+   "spawn_key": [
+    1100,
+    900,
+    9
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.1-rho0.9-i009-base/DA_B",
+   "runtime_s": 0.025136666001344565,
+   "spawn_key": [
+    1100,
+    900,
+    9
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.1-rho0.9-i009-base/MAXW",
+   "runtime_s": 0.0026429589997860603,
+   "spawn_key": [
+    1100,
+    900,
+    9
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.1-rho0.9-i010-base/DA_A",
+   "runtime_s": 0.015194083003734704,
+   "spawn_key": [
+    1100,
+    900,
+    10
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.1-rho0.9-i010-base/DA_B",
+   "runtime_s": 0.02889412499644095,
+   "spawn_key": [
+    1100,
+    900,
+    10
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.1-rho0.9-i010-base/MAXW",
+   "runtime_s": 0.002682667000044603,
+   "spawn_key": [
+    1100,
+    900,
+    10
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.1-rho0.9-i011-base/DA_A",
+   "runtime_s": 0.03440904200397199,
+   "spawn_key": [
+    1100,
+    900,
+    11
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.1-rho0.9-i011-base/DA_B",
+   "runtime_s": 0.01615533400035929,
+   "spawn_key": [
+    1100,
+    900,
+    11
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.1-rho0.9-i011-base/MAXW",
+   "runtime_s": 0.0029324580027605407,
+   "spawn_key": [
+    1100,
+    900,
+    11
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.1-rho0.9-i012-base/DA_A",
+   "runtime_s": 0.01630637500056764,
+   "spawn_key": [
+    1100,
+    900,
+    12
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.1-rho0.9-i012-base/DA_B",
+   "runtime_s": 0.015631250003934838,
+   "spawn_key": [
+    1100,
+    900,
+    12
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.1-rho0.9-i012-base/MAXW",
+   "runtime_s": 0.002657457996974699,
+   "spawn_key": [
+    1100,
+    900,
+    12
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.1-rho0.9-i013-base/DA_A",
+   "runtime_s": 0.015433874999871477,
+   "spawn_key": [
+    1100,
+    900,
+    13
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.1-rho0.9-i013-base/DA_B",
+   "runtime_s": 0.015458540998224635,
+   "spawn_key": [
+    1100,
+    900,
+    13
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.1-rho0.9-i013-base/MAXW",
+   "runtime_s": 0.002716374998271931,
+   "spawn_key": [
+    1100,
+    900,
+    13
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.1-rho0.9-i014-base/DA_A",
+   "runtime_s": 0.015415624999150168,
+   "spawn_key": [
+    1100,
+    900,
+    14
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.1-rho0.9-i014-base/DA_B",
+   "runtime_s": 0.04260141700069653,
+   "spawn_key": [
+    1100,
+    900,
+    14
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.1-rho0.9-i014-base/MAXW",
+   "runtime_s": 0.0028257500016479753,
+   "spawn_key": [
+    1100,
+    900,
+    14
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.1-rho0.9-i015-base/DA_A",
+   "runtime_s": 0.01566645799903199,
+   "spawn_key": [
+    1100,
+    900,
+    15
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.1-rho0.9-i015-base/DA_B",
+   "runtime_s": 0.01543837499775691,
+   "spawn_key": [
+    1100,
+    900,
+    15
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.1-rho0.9-i015-base/MAXW",
+   "runtime_s": 0.0028044589998899028,
+   "spawn_key": [
+    1100,
+    900,
+    15
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.1-rho0.9-i016-base/DA_A",
+   "runtime_s": 0.015425625002535526,
+   "spawn_key": [
+    1100,
+    900,
+    16
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.1-rho0.9-i016-base/DA_B",
+   "runtime_s": 0.03284879100101534,
+   "spawn_key": [
+    1100,
+    900,
+    16
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.1-rho0.9-i016-base/MAXW",
+   "runtime_s": 0.0069807090039830655,
+   "spawn_key": [
+    1100,
+    900,
+    16
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.1-rho0.9-i017-base/DA_A",
+   "runtime_s": 0.044418958997994196,
+   "spawn_key": [
+    1100,
+    900,
+    17
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.1-rho0.9-i017-base/DA_B",
+   "runtime_s": 0.03413566599920159,
+   "spawn_key": [
+    1100,
+    900,
+    17
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.1-rho0.9-i017-base/MAXW",
+   "runtime_s": 0.007278208002389874,
+   "spawn_key": [
+    1100,
+    900,
+    17
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.1-rho0.9-i018-base/DA_A",
+   "runtime_s": 0.030991833002190106,
+   "spawn_key": [
+    1100,
+    900,
+    18
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.1-rho0.9-i018-base/DA_B",
+   "runtime_s": 0.02358220799942501,
+   "spawn_key": [
+    1100,
+    900,
+    18
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.1-rho0.9-i018-base/MAXW",
+   "runtime_s": 0.008550500002456829,
+   "spawn_key": [
+    1100,
+    900,
+    18
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.1-rho0.9-i019-base/DA_A",
+   "runtime_s": 0.018251959001645446,
+   "spawn_key": [
+    1100,
+    900,
+    19
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.1-rho0.9-i019-base/DA_B",
+   "runtime_s": 0.02496787500422215,
+   "spawn_key": [
+    1100,
+    900,
+    19
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.1-rho0.9-i019-base/MAXW",
+   "runtime_s": 0.009220166997693013,
+   "spawn_key": [
+    1100,
+    900,
+    19
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.1-rho0.9-i020-base/DA_A",
+   "runtime_s": 0.045430707999912556,
+   "spawn_key": [
+    1100,
+    900,
+    20
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.1-rho0.9-i020-base/DA_B",
+   "runtime_s": 0.01582020900241332,
+   "spawn_key": [
+    1100,
+    900,
+    20
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.1-rho0.9-i020-base/MAXW",
+   "runtime_s": 0.002832625003065914,
+   "spawn_key": [
+    1100,
+    900,
+    20
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.1-rho0.9-i021-base/DA_A",
+   "runtime_s": 0.028238541999598965,
+   "spawn_key": [
+    1100,
+    900,
+    21
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.1-rho0.9-i021-base/DA_B",
+   "runtime_s": 0.02663745899917558,
+   "spawn_key": [
+    1100,
+    900,
+    21
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.1-rho0.9-i021-base/MAXW",
+   "runtime_s": 0.0027094580000266433,
+   "spawn_key": [
+    1100,
+    900,
+    21
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.1-rho0.9-i022-base/DA_A",
+   "runtime_s": 0.01511499999469379,
+   "spawn_key": [
+    1100,
+    900,
+    22
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.1-rho0.9-i022-base/DA_B",
+   "runtime_s": 0.015214042003208306,
+   "spawn_key": [
+    1100,
+    900,
+    22
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.1-rho0.9-i022-base/MAXW",
+   "runtime_s": 0.0029343749993131496,
+   "spawn_key": [
+    1100,
+    900,
+    22
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.1-rho0.9-i023-base/DA_A",
+   "runtime_s": 0.015163208001467865,
+   "spawn_key": [
+    1100,
+    900,
+    23
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.1-rho0.9-i023-base/DA_B",
+   "runtime_s": 0.01564541599509539,
+   "spawn_key": [
+    1100,
+    900,
+    23
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.1-rho0.9-i023-base/MAXW",
+   "runtime_s": 0.0026957910013152286,
+   "spawn_key": [
+    1100,
+    900,
+    23
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.1-rho0.9-i024-base/DA_A",
+   "runtime_s": 0.015263749999576248,
+   "spawn_key": [
+    1100,
+    900,
+    24
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.1-rho0.9-i024-base/DA_B",
+   "runtime_s": 0.028047207997587975,
+   "spawn_key": [
+    1100,
+    900,
+    24
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.1-rho0.9-i024-base/MAXW",
+   "runtime_s": 0.0035385420051170513,
+   "spawn_key": [
+    1100,
+    900,
+    24
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.1-rho0.9-i025-base/DA_A",
+   "runtime_s": 0.02936470900021959,
+   "spawn_key": [
+    1100,
+    900,
+    25
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.1-rho0.9-i025-base/DA_B",
+   "runtime_s": 0.02711733300384367,
+   "spawn_key": [
+    1100,
+    900,
+    25
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.1-rho0.9-i025-base/MAXW",
+   "runtime_s": 0.003809583002293948,
+   "spawn_key": [
+    1100,
+    900,
+    25
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.1-rho0.9-i026-base/DA_A",
+   "runtime_s": 0.015182458999333903,
+   "spawn_key": [
+    1100,
+    900,
+    26
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.1-rho0.9-i026-base/DA_B",
+   "runtime_s": 0.015439707996847574,
+   "spawn_key": [
+    1100,
+    900,
+    26
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.1-rho0.9-i026-base/MAXW",
+   "runtime_s": 0.003198666003299877,
+   "spawn_key": [
+    1100,
+    900,
+    26
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.1-rho0.9-i027-base/DA_A",
+   "runtime_s": 0.015592333998938557,
+   "spawn_key": [
+    1100,
+    900,
+    27
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.1-rho0.9-i027-base/DA_B",
+   "runtime_s": 0.01574204100325005,
+   "spawn_key": [
+    1100,
+    900,
+    27
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.1-rho0.9-i027-base/MAXW",
+   "runtime_s": 0.0025257079978473485,
+   "spawn_key": [
+    1100,
+    900,
+    27
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.1-rho0.9-i028-base/DA_A",
+   "runtime_s": 0.019955584000854287,
+   "spawn_key": [
+    1100,
+    900,
+    28
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.1-rho0.9-i028-base/DA_B",
+   "runtime_s": 0.020110208002733998,
+   "spawn_key": [
+    1100,
+    900,
+    28
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.1-rho0.9-i028-base/MAXW",
+   "runtime_s": 0.003082415998505894,
+   "spawn_key": [
+    1100,
+    900,
+    28
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.1-rho0.9-i029-base/DA_A",
+   "runtime_s": 0.019630624999990687,
+   "spawn_key": [
+    1100,
+    900,
+    29
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.1-rho0.9-i029-base/DA_B",
+   "runtime_s": 0.02753866699640639,
+   "spawn_key": [
+    1100,
+    900,
+    29
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.1-rho0.9-i029-base/MAXW",
+   "runtime_s": 0.002431417000479996,
+   "spawn_key": [
+    1100,
+    900,
+    29
+   ]
+  },
+  {
+   "peak_traced_bytes": 2111436,
+   "run_id": "EXP-002/r1.5-rho0-i000-base/DA_A",
+   "runtime_s": 0.033204333994945046,
+   "spawn_key": [
+    1500,
+    0,
+    0
+   ]
+  },
+  {
+   "peak_traced_bytes": 1644508,
+   "run_id": "EXP-002/r1.5-rho0-i000-base/DA_B",
+   "runtime_s": 0.02957520799827762,
+   "spawn_key": [
+    1500,
+    0,
+    0
+   ]
+  },
+  {
+   "peak_traced_bytes": 1025808,
+   "run_id": "EXP-002/r1.5-rho0-i000-base/MAXW",
+   "runtime_s": 0.0014039579982636496,
+   "spawn_key": [
+    1500,
+    0,
+    0
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.5-rho0-i001-base/DA_A",
+   "runtime_s": 0.023106374996132217,
+   "spawn_key": [
+    1500,
+    0,
+    1
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.5-rho0-i001-base/DA_B",
+   "runtime_s": 0.02235349999682512,
+   "spawn_key": [
+    1500,
+    0,
+    1
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.5-rho0-i001-base/MAXW",
+   "runtime_s": 0.0011072089982917532,
+   "spawn_key": [
+    1500,
+    0,
+    1
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.5-rho0-i002-base/DA_A",
+   "runtime_s": 0.02193795800121734,
+   "spawn_key": [
+    1500,
+    0,
+    2
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.5-rho0-i002-base/DA_B",
+   "runtime_s": 0.022517208999488503,
+   "spawn_key": [
+    1500,
+    0,
+    2
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.5-rho0-i002-base/MAXW",
+   "runtime_s": 0.0011165420000907034,
+   "spawn_key": [
+    1500,
+    0,
+    2
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.5-rho0-i003-base/DA_A",
+   "runtime_s": 0.018991707998793572,
+   "spawn_key": [
+    1500,
+    0,
+    3
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.5-rho0-i003-base/DA_B",
+   "runtime_s": 0.022333708002406638,
+   "spawn_key": [
+    1500,
+    0,
+    3
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.5-rho0-i003-base/MAXW",
+   "runtime_s": 0.001032250002026558,
+   "spawn_key": [
+    1500,
+    0,
+    3
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.5-rho0-i004-base/DA_A",
+   "runtime_s": 0.03314170800149441,
+   "spawn_key": [
+    1500,
+    0,
+    4
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.5-rho0-i004-base/DA_B",
+   "runtime_s": 0.021758874994702637,
+   "spawn_key": [
+    1500,
+    0,
+    4
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.5-rho0-i004-base/MAXW",
+   "runtime_s": 0.0011497090017655864,
+   "spawn_key": [
+    1500,
+    0,
+    4
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.5-rho0-i005-base/DA_A",
+   "runtime_s": 0.019567290997656528,
+   "spawn_key": [
+    1500,
+    0,
+    5
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.5-rho0-i005-base/DA_B",
+   "runtime_s": 0.02291574999981094,
+   "spawn_key": [
+    1500,
+    0,
+    5
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.5-rho0-i005-base/MAXW",
+   "runtime_s": 0.0010379999948781915,
+   "spawn_key": [
+    1500,
+    0,
+    5
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.5-rho0-i006-base/DA_A",
+   "runtime_s": 0.019467583995719906,
+   "spawn_key": [
+    1500,
+    0,
+    6
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.5-rho0-i006-base/DA_B",
+   "runtime_s": 0.030205082999600563,
+   "spawn_key": [
+    1500,
+    0,
+    6
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.5-rho0-i006-base/MAXW",
+   "runtime_s": 0.0011609590001171455,
+   "spawn_key": [
+    1500,
+    0,
+    6
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.5-rho0-i007-base/DA_A",
+   "runtime_s": 0.01943970800493844,
+   "spawn_key": [
+    1500,
+    0,
+    7
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.5-rho0-i007-base/DA_B",
+   "runtime_s": 0.03755566699692281,
+   "spawn_key": [
+    1500,
+    0,
+    7
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.5-rho0-i007-base/MAXW",
+   "runtime_s": 0.0013460409973049536,
+   "spawn_key": [
+    1500,
+    0,
+    7
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.5-rho0-i008-base/DA_A",
+   "runtime_s": 0.019929374997445848,
+   "spawn_key": [
+    1500,
+    0,
+    8
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.5-rho0-i008-base/DA_B",
+   "runtime_s": 0.02237425000203075,
+   "spawn_key": [
+    1500,
+    0,
+    8
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.5-rho0-i008-base/MAXW",
+   "runtime_s": 0.0010541250012465753,
+   "spawn_key": [
+    1500,
+    0,
+    8
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.5-rho0-i009-base/DA_A",
+   "runtime_s": 0.01925325000047451,
+   "spawn_key": [
+    1500,
+    0,
+    9
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.5-rho0-i009-base/DA_B",
+   "runtime_s": 0.022349667000526097,
+   "spawn_key": [
+    1500,
+    0,
+    9
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.5-rho0-i009-base/MAXW",
+   "runtime_s": 0.0011073749992647208,
+   "spawn_key": [
+    1500,
+    0,
+    9
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.5-rho0-i010-base/DA_A",
+   "runtime_s": 0.020070250000571832,
+   "spawn_key": [
+    1500,
+    0,
+    10
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.5-rho0-i010-base/DA_B",
+   "runtime_s": 0.022569166001630947,
+   "spawn_key": [
+    1500,
+    0,
+    10
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.5-rho0-i010-base/MAXW",
+   "runtime_s": 0.0010855829968932085,
+   "spawn_key": [
+    1500,
+    0,
+    10
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.5-rho0-i011-base/DA_A",
+   "runtime_s": 0.019244874994910788,
+   "spawn_key": [
+    1500,
+    0,
+    11
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.5-rho0-i011-base/DA_B",
+   "runtime_s": 0.022134374994493555,
+   "spawn_key": [
+    1500,
+    0,
+    11
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.5-rho0-i011-base/MAXW",
+   "runtime_s": 0.001028250000672415,
+   "spawn_key": [
+    1500,
+    0,
+    11
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.5-rho0-i012-base/DA_A",
+   "runtime_s": 0.01978166600019904,
+   "spawn_key": [
+    1500,
+    0,
+    12
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.5-rho0-i012-base/DA_B",
+   "runtime_s": 0.02238108299934538,
+   "spawn_key": [
+    1500,
+    0,
+    12
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.5-rho0-i012-base/MAXW",
+   "runtime_s": 0.0011108750040875748,
+   "spawn_key": [
+    1500,
+    0,
+    12
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.5-rho0-i013-base/DA_A",
+   "runtime_s": 0.026343707999330945,
+   "spawn_key": [
+    1500,
+    0,
+    13
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.5-rho0-i013-base/DA_B",
+   "runtime_s": 0.028061708995664958,
+   "spawn_key": [
+    1500,
+    0,
+    13
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.5-rho0-i013-base/MAXW",
+   "runtime_s": 0.0011538329999893904,
+   "spawn_key": [
+    1500,
+    0,
+    13
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.5-rho0-i014-base/DA_A",
+   "runtime_s": 0.024524041000404395,
+   "spawn_key": [
+    1500,
+    0,
+    14
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.5-rho0-i014-base/DA_B",
+   "runtime_s": 0.022613041001022793,
+   "spawn_key": [
+    1500,
+    0,
+    14
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.5-rho0-i014-base/MAXW",
+   "runtime_s": 0.0011110420018667355,
+   "spawn_key": [
+    1500,
+    0,
+    14
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.5-rho0-i015-base/DA_A",
+   "runtime_s": 0.021894500001508277,
+   "spawn_key": [
+    1500,
+    0,
+    15
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.5-rho0-i015-base/DA_B",
+   "runtime_s": 0.03263912499824073,
+   "spawn_key": [
+    1500,
+    0,
+    15
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.5-rho0-i015-base/MAXW",
+   "runtime_s": 0.0012084580012015067,
+   "spawn_key": [
+    1500,
+    0,
+    15
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.5-rho0-i016-base/DA_A",
+   "runtime_s": 0.022093624997069128,
+   "spawn_key": [
+    1500,
+    0,
+    16
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.5-rho0-i016-base/DA_B",
+   "runtime_s": 0.027101375002530403,
+   "spawn_key": [
+    1500,
+    0,
+    16
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.5-rho0-i016-base/MAXW",
+   "runtime_s": 0.0011354590023984201,
+   "spawn_key": [
+    1500,
+    0,
+    16
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.5-rho0-i017-base/DA_A",
+   "runtime_s": 0.023502791998907924,
+   "spawn_key": [
+    1500,
+    0,
+    17
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.5-rho0-i017-base/DA_B",
+   "runtime_s": 0.02500904100452317,
+   "spawn_key": [
+    1500,
+    0,
+    17
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.5-rho0-i017-base/MAXW",
+   "runtime_s": 0.00106916599906981,
+   "spawn_key": [
+    1500,
+    0,
+    17
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.5-rho0-i018-base/DA_A",
+   "runtime_s": 0.01941524999710964,
+   "spawn_key": [
+    1500,
+    0,
+    18
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.5-rho0-i018-base/DA_B",
+   "runtime_s": 0.022393708997697104,
+   "spawn_key": [
+    1500,
+    0,
+    18
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.5-rho0-i018-base/MAXW",
+   "runtime_s": 0.0011245839996263385,
+   "spawn_key": [
+    1500,
+    0,
+    18
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.5-rho0-i019-base/DA_A",
+   "runtime_s": 0.01982908299396513,
+   "spawn_key": [
+    1500,
+    0,
+    19
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.5-rho0-i019-base/DA_B",
+   "runtime_s": 0.025019125001563225,
+   "spawn_key": [
+    1500,
+    0,
+    19
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.5-rho0-i019-base/MAXW",
+   "runtime_s": 0.0011699159949785098,
+   "spawn_key": [
+    1500,
+    0,
+    19
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.5-rho0-i020-base/DA_A",
+   "runtime_s": 0.020447333001357038,
+   "spawn_key": [
+    1500,
+    0,
+    20
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.5-rho0-i020-base/DA_B",
+   "runtime_s": 0.030674083005578723,
+   "spawn_key": [
+    1500,
+    0,
+    20
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.5-rho0-i020-base/MAXW",
+   "runtime_s": 0.0016170000017154962,
+   "spawn_key": [
+    1500,
+    0,
+    20
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.5-rho0-i021-base/DA_A",
+   "runtime_s": 0.0210276670040912,
+   "spawn_key": [
+    1500,
+    0,
+    21
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.5-rho0-i021-base/DA_B",
+   "runtime_s": 0.02383025000017369,
+   "spawn_key": [
+    1500,
+    0,
+    21
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.5-rho0-i021-base/MAXW",
+   "runtime_s": 0.0010150000016437843,
+   "spawn_key": [
+    1500,
+    0,
+    21
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.5-rho0-i022-base/DA_A",
+   "runtime_s": 0.021472749998793006,
+   "spawn_key": [
+    1500,
+    0,
+    22
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.5-rho0-i022-base/DA_B",
+   "runtime_s": 0.02488916700531263,
+   "spawn_key": [
+    1500,
+    0,
+    22
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.5-rho0-i022-base/MAXW",
+   "runtime_s": 0.0010093329983646981,
+   "spawn_key": [
+    1500,
+    0,
+    22
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.5-rho0-i023-base/DA_A",
+   "runtime_s": 0.019338750003953464,
+   "spawn_key": [
+    1500,
+    0,
+    23
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.5-rho0-i023-base/DA_B",
+   "runtime_s": 0.02338400000007823,
+   "spawn_key": [
+    1500,
+    0,
+    23
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.5-rho0-i023-base/MAXW",
+   "runtime_s": 0.0011196249979548156,
+   "spawn_key": [
+    1500,
+    0,
+    23
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.5-rho0-i024-base/DA_A",
+   "runtime_s": 0.021154624999326188,
+   "spawn_key": [
+    1500,
+    0,
+    24
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.5-rho0-i024-base/DA_B",
+   "runtime_s": 0.023179249998065643,
+   "spawn_key": [
+    1500,
+    0,
+    24
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.5-rho0-i024-base/MAXW",
+   "runtime_s": 0.002412459005427081,
+   "spawn_key": [
+    1500,
+    0,
+    24
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.5-rho0-i025-base/DA_A",
+   "runtime_s": 0.02308183300192468,
+   "spawn_key": [
+    1500,
+    0,
+    25
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.5-rho0-i025-base/DA_B",
+   "runtime_s": 0.023200125004223082,
+   "spawn_key": [
+    1500,
+    0,
+    25
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.5-rho0-i025-base/MAXW",
+   "runtime_s": 0.0012012910010525957,
+   "spawn_key": [
+    1500,
+    0,
+    25
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.5-rho0-i026-base/DA_A",
+   "runtime_s": 0.019410999993851874,
+   "spawn_key": [
+    1500,
+    0,
+    26
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.5-rho0-i026-base/DA_B",
+   "runtime_s": 0.024679542002559174,
+   "spawn_key": [
+    1500,
+    0,
+    26
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.5-rho0-i026-base/MAXW",
+   "runtime_s": 0.0009836659955908544,
+   "spawn_key": [
+    1500,
+    0,
+    26
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.5-rho0-i027-base/DA_A",
+   "runtime_s": 0.01995783299935283,
+   "spawn_key": [
+    1500,
+    0,
+    27
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.5-rho0-i027-base/DA_B",
+   "runtime_s": 0.03219562500453321,
+   "spawn_key": [
+    1500,
+    0,
+    27
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.5-rho0-i027-base/MAXW",
+   "runtime_s": 0.0010544579999987036,
+   "spawn_key": [
+    1500,
+    0,
+    27
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.5-rho0-i028-base/DA_A",
+   "runtime_s": 0.019917375000659376,
+   "spawn_key": [
+    1500,
+    0,
+    28
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.5-rho0-i028-base/DA_B",
+   "runtime_s": 0.0280053329988732,
+   "spawn_key": [
+    1500,
+    0,
+    28
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.5-rho0-i028-base/MAXW",
+   "runtime_s": 0.0011912909976672381,
+   "spawn_key": [
+    1500,
+    0,
+    28
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.5-rho0-i029-base/DA_A",
+   "runtime_s": 0.02342737499566283,
+   "spawn_key": [
+    1500,
+    0,
+    29
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.5-rho0-i029-base/DA_B",
+   "runtime_s": 0.023946042005263735,
+   "spawn_key": [
+    1500,
+    0,
+    29
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.5-rho0-i029-base/MAXW",
+   "runtime_s": 0.0012265000041224994,
+   "spawn_key": [
+    1500,
+    0,
+    29
+   ]
+  },
+  {
+   "peak_traced_bytes": 2112524,
+   "run_id": "EXP-002/r1.5-rho0.5-i000-base/DA_A",
+   "runtime_s": 0.020044500000949483,
+   "spawn_key": [
+    1500,
+    500,
+    0
+   ]
+  },
+  {
+   "peak_traced_bytes": 1645596,
+   "run_id": "EXP-002/r1.5-rho0.5-i000-base/DA_B",
+   "runtime_s": 0.021869750002224464,
+   "spawn_key": [
+    1500,
+    500,
+    0
+   ]
+  },
+  {
+   "peak_traced_bytes": 1025808,
+   "run_id": "EXP-002/r1.5-rho0.5-i000-base/MAXW",
+   "runtime_s": 0.002404917002422735,
+   "spawn_key": [
+    1500,
+    500,
+    0
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.5-rho0.5-i001-base/DA_A",
+   "runtime_s": 0.025068082999496255,
+   "spawn_key": [
+    1500,
+    500,
+    1
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.5-rho0.5-i001-base/DA_B",
+   "runtime_s": 0.022413749997213017,
+   "spawn_key": [
+    1500,
+    500,
+    1
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.5-rho0.5-i001-base/MAXW",
+   "runtime_s": 0.001785125001333654,
+   "spawn_key": [
+    1500,
+    500,
+    1
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.5-rho0.5-i002-base/DA_A",
+   "runtime_s": 0.027001124995877035,
+   "spawn_key": [
+    1500,
+    500,
+    2
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.5-rho0.5-i002-base/DA_B",
+   "runtime_s": 0.0219047499995213,
+   "spawn_key": [
+    1500,
+    500,
+    2
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.5-rho0.5-i002-base/MAXW",
+   "runtime_s": 0.0019308750052005053,
+   "spawn_key": [
+    1500,
+    500,
+    2
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.5-rho0.5-i003-base/DA_A",
+   "runtime_s": 0.019604791996243875,
+   "spawn_key": [
+    1500,
+    500,
+    3
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.5-rho0.5-i003-base/DA_B",
+   "runtime_s": 0.021555540995905176,
+   "spawn_key": [
+    1500,
+    500,
+    3
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.5-rho0.5-i003-base/MAXW",
+   "runtime_s": 0.001968083997780923,
+   "spawn_key": [
+    1500,
+    500,
+    3
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.5-rho0.5-i004-base/DA_A",
+   "runtime_s": 0.01988566599902697,
+   "spawn_key": [
+    1500,
+    500,
+    4
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.5-rho0.5-i004-base/DA_B",
+   "runtime_s": 0.021990082997945137,
+   "spawn_key": [
+    1500,
+    500,
+    4
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.5-rho0.5-i004-base/MAXW",
+   "runtime_s": 0.0018454169985488988,
+   "spawn_key": [
+    1500,
+    500,
+    4
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.5-rho0.5-i005-base/DA_A",
+   "runtime_s": 0.020222250001097564,
+   "spawn_key": [
+    1500,
+    500,
+    5
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.5-rho0.5-i005-base/DA_B",
+   "runtime_s": 0.0272359580048942,
+   "spawn_key": [
+    1500,
+    500,
+    5
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.5-rho0.5-i005-base/MAXW",
+   "runtime_s": 0.0020649169964599423,
+   "spawn_key": [
+    1500,
+    500,
+    5
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.5-rho0.5-i006-base/DA_A",
+   "runtime_s": 0.02006591700046556,
+   "spawn_key": [
+    1500,
+    500,
+    6
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.5-rho0.5-i006-base/DA_B",
+   "runtime_s": 0.02158508300635731,
+   "spawn_key": [
+    1500,
+    500,
+    6
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.5-rho0.5-i006-base/MAXW",
+   "runtime_s": 0.002155333000700921,
+   "spawn_key": [
+    1500,
+    500,
+    6
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.5-rho0.5-i007-base/DA_A",
+   "runtime_s": 0.019643124993308447,
+   "spawn_key": [
+    1500,
+    500,
+    7
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.5-rho0.5-i007-base/DA_B",
+   "runtime_s": 0.02165900000545662,
+   "spawn_key": [
+    1500,
+    500,
+    7
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.5-rho0.5-i007-base/MAXW",
+   "runtime_s": 0.001664709001488518,
+   "spawn_key": [
+    1500,
+    500,
+    7
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.5-rho0.5-i008-base/DA_A",
+   "runtime_s": 0.019890582996595185,
+   "spawn_key": [
+    1500,
+    500,
+    8
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.5-rho0.5-i008-base/DA_B",
+   "runtime_s": 0.021591041993815452,
+   "spawn_key": [
+    1500,
+    500,
+    8
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.5-rho0.5-i008-base/MAXW",
+   "runtime_s": 0.0017306669979006983,
+   "spawn_key": [
+    1500,
+    500,
+    8
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.5-rho0.5-i009-base/DA_A",
+   "runtime_s": 0.01974766700004693,
+   "spawn_key": [
+    1500,
+    500,
+    9
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.5-rho0.5-i009-base/DA_B",
+   "runtime_s": 0.0219481249951059,
+   "spawn_key": [
+    1500,
+    500,
+    9
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.5-rho0.5-i009-base/MAXW",
+   "runtime_s": 0.001865958001872059,
+   "spawn_key": [
+    1500,
+    500,
+    9
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.5-rho0.5-i010-base/DA_A",
+   "runtime_s": 0.019842082998366095,
+   "spawn_key": [
+    1500,
+    500,
+    10
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.5-rho0.5-i010-base/DA_B",
+   "runtime_s": 0.021399790995928925,
+   "spawn_key": [
+    1500,
+    500,
+    10
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.5-rho0.5-i010-base/MAXW",
+   "runtime_s": 0.0020272500041755848,
+   "spawn_key": [
+    1500,
+    500,
+    10
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.5-rho0.5-i011-base/DA_A",
+   "runtime_s": 0.019946291999076493,
+   "spawn_key": [
+    1500,
+    500,
+    11
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.5-rho0.5-i011-base/DA_B",
+   "runtime_s": 0.021844666000106372,
+   "spawn_key": [
+    1500,
+    500,
+    11
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.5-rho0.5-i011-base/MAXW",
+   "runtime_s": 0.0016268749968730845,
+   "spawn_key": [
+    1500,
+    500,
+    11
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.5-rho0.5-i012-base/DA_A",
+   "runtime_s": 0.02090962499642046,
+   "spawn_key": [
+    1500,
+    500,
+    12
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.5-rho0.5-i012-base/DA_B",
+   "runtime_s": 0.023903332999907434,
+   "spawn_key": [
+    1500,
+    500,
+    12
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.5-rho0.5-i012-base/MAXW",
+   "runtime_s": 0.002305750000232365,
+   "spawn_key": [
+    1500,
+    500,
+    12
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.5-rho0.5-i013-base/DA_A",
+   "runtime_s": 0.020371958999021444,
+   "spawn_key": [
+    1500,
+    500,
+    13
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.5-rho0.5-i013-base/DA_B",
+   "runtime_s": 0.022806667002441827,
+   "spawn_key": [
+    1500,
+    500,
+    13
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.5-rho0.5-i013-base/MAXW",
+   "runtime_s": 0.0021964170009596273,
+   "spawn_key": [
+    1500,
+    500,
+    13
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.5-rho0.5-i014-base/DA_A",
+   "runtime_s": 0.02065720799873816,
+   "spawn_key": [
+    1500,
+    500,
+    14
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.5-rho0.5-i014-base/DA_B",
+   "runtime_s": 0.026182792003965005,
+   "spawn_key": [
+    1500,
+    500,
+    14
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.5-rho0.5-i014-base/MAXW",
+   "runtime_s": 0.002094082999974489,
+   "spawn_key": [
+    1500,
+    500,
+    14
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.5-rho0.5-i015-base/DA_A",
+   "runtime_s": 0.02100658300332725,
+   "spawn_key": [
+    1500,
+    500,
+    15
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.5-rho0.5-i015-base/DA_B",
+   "runtime_s": 0.02883550000115065,
+   "spawn_key": [
+    1500,
+    500,
+    15
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.5-rho0.5-i015-base/MAXW",
+   "runtime_s": 0.001877542003057897,
+   "spawn_key": [
+    1500,
+    500,
+    15
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.5-rho0.5-i016-base/DA_A",
+   "runtime_s": 0.019910082999558654,
+   "spawn_key": [
+    1500,
+    500,
+    16
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.5-rho0.5-i016-base/DA_B",
+   "runtime_s": 0.021503042000404093,
+   "spawn_key": [
+    1500,
+    500,
+    16
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.5-rho0.5-i016-base/MAXW",
+   "runtime_s": 0.0018652080034371465,
+   "spawn_key": [
+    1500,
+    500,
+    16
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.5-rho0.5-i017-base/DA_A",
+   "runtime_s": 0.01934474999870872,
+   "spawn_key": [
+    1500,
+    500,
+    17
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.5-rho0.5-i017-base/DA_B",
+   "runtime_s": 0.021385624997492414,
+   "spawn_key": [
+    1500,
+    500,
+    17
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.5-rho0.5-i017-base/MAXW",
+   "runtime_s": 0.0017295409998041578,
+   "spawn_key": [
+    1500,
+    500,
+    17
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.5-rho0.5-i018-base/DA_A",
+   "runtime_s": 0.020202874999085907,
+   "spawn_key": [
+    1500,
+    500,
+    18
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.5-rho0.5-i018-base/DA_B",
+   "runtime_s": 0.02178483299940126,
+   "spawn_key": [
+    1500,
+    500,
+    18
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.5-rho0.5-i018-base/MAXW",
+   "runtime_s": 0.0017681250028545037,
+   "spawn_key": [
+    1500,
+    500,
+    18
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.5-rho0.5-i019-base/DA_A",
+   "runtime_s": 0.019933333001972642,
+   "spawn_key": [
+    1500,
+    500,
+    19
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.5-rho0.5-i019-base/DA_B",
+   "runtime_s": 0.021807958000863437,
+   "spawn_key": [
+    1500,
+    500,
+    19
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.5-rho0.5-i019-base/MAXW",
+   "runtime_s": 0.0019262080022599548,
+   "spawn_key": [
+    1500,
+    500,
+    19
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.5-rho0.5-i020-base/DA_A",
+   "runtime_s": 0.019874042001902126,
+   "spawn_key": [
+    1500,
+    500,
+    20
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.5-rho0.5-i020-base/DA_B",
+   "runtime_s": 0.02136524999514222,
+   "spawn_key": [
+    1500,
+    500,
+    20
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.5-rho0.5-i020-base/MAXW",
+   "runtime_s": 0.0019374580006115139,
+   "spawn_key": [
+    1500,
+    500,
+    20
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.5-rho0.5-i021-base/DA_A",
+   "runtime_s": 0.019988959000329487,
+   "spawn_key": [
+    1500,
+    500,
+    21
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.5-rho0.5-i021-base/DA_B",
+   "runtime_s": 0.021827999997185543,
+   "spawn_key": [
+    1500,
+    500,
+    21
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.5-rho0.5-i021-base/MAXW",
+   "runtime_s": 0.0016790420049801469,
+   "spawn_key": [
+    1500,
+    500,
+    21
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.5-rho0.5-i022-base/DA_A",
+   "runtime_s": 0.020323124997958075,
+   "spawn_key": [
+    1500,
+    500,
+    22
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.5-rho0.5-i022-base/DA_B",
+   "runtime_s": 0.021919916005572304,
+   "spawn_key": [
+    1500,
+    500,
+    22
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.5-rho0.5-i022-base/MAXW",
+   "runtime_s": 0.001959957997314632,
+   "spawn_key": [
+    1500,
+    500,
+    22
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.5-rho0.5-i023-base/DA_A",
+   "runtime_s": 0.020032917003845796,
+   "spawn_key": [
+    1500,
+    500,
+    23
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.5-rho0.5-i023-base/DA_B",
+   "runtime_s": 0.02189587499742629,
+   "spawn_key": [
+    1500,
+    500,
+    23
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.5-rho0.5-i023-base/MAXW",
+   "runtime_s": 0.0017918330049724318,
+   "spawn_key": [
+    1500,
+    500,
+    23
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.5-rho0.5-i024-base/DA_A",
+   "runtime_s": 0.020172958000330254,
+   "spawn_key": [
+    1500,
+    500,
+    24
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.5-rho0.5-i024-base/DA_B",
+   "runtime_s": 0.02180341699568089,
+   "spawn_key": [
+    1500,
+    500,
+    24
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.5-rho0.5-i024-base/MAXW",
+   "runtime_s": 0.001781500002834946,
+   "spawn_key": [
+    1500,
+    500,
+    24
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.5-rho0.5-i025-base/DA_A",
+   "runtime_s": 0.019881541993527208,
+   "spawn_key": [
+    1500,
+    500,
+    25
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.5-rho0.5-i025-base/DA_B",
+   "runtime_s": 0.0217238749974058,
+   "spawn_key": [
+    1500,
+    500,
+    25
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.5-rho0.5-i025-base/MAXW",
+   "runtime_s": 0.0018401670022285543,
+   "spawn_key": [
+    1500,
+    500,
+    25
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.5-rho0.5-i026-base/DA_A",
+   "runtime_s": 0.026618250005412847,
+   "spawn_key": [
+    1500,
+    500,
+    26
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.5-rho0.5-i026-base/DA_B",
+   "runtime_s": 0.023346916001173668,
+   "spawn_key": [
+    1500,
+    500,
+    26
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.5-rho0.5-i026-base/MAXW",
+   "runtime_s": 0.0020673750041169114,
+   "spawn_key": [
+    1500,
+    500,
+    26
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.5-rho0.5-i027-base/DA_A",
+   "runtime_s": 0.01960045799933141,
+   "spawn_key": [
+    1500,
+    500,
+    27
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.5-rho0.5-i027-base/DA_B",
+   "runtime_s": 0.021726957995269913,
+   "spawn_key": [
+    1500,
+    500,
+    27
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.5-rho0.5-i027-base/MAXW",
+   "runtime_s": 0.0019249589968239889,
+   "spawn_key": [
+    1500,
+    500,
+    27
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.5-rho0.5-i028-base/DA_A",
+   "runtime_s": 0.01981391600565985,
+   "spawn_key": [
+    1500,
+    500,
+    28
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.5-rho0.5-i028-base/DA_B",
+   "runtime_s": 0.021625875000609085,
+   "spawn_key": [
+    1500,
+    500,
+    28
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.5-rho0.5-i028-base/MAXW",
+   "runtime_s": 0.0021792500047013164,
+   "spawn_key": [
+    1500,
+    500,
+    28
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.5-rho0.5-i029-base/DA_A",
+   "runtime_s": 0.019739832998311613,
+   "spawn_key": [
+    1500,
+    500,
+    29
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.5-rho0.5-i029-base/DA_B",
+   "runtime_s": 0.02143587500177091,
+   "spawn_key": [
+    1500,
+    500,
+    29
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.5-rho0.5-i029-base/MAXW",
+   "runtime_s": 0.0017776669992599636,
+   "spawn_key": [
+    1500,
+    500,
+    29
+   ]
+  },
+  {
+   "peak_traced_bytes": 2104332,
+   "run_id": "EXP-002/r1.5-rho0.9-i000-base/DA_A",
+   "runtime_s": 0.020327458005340304,
+   "spawn_key": [
+    1500,
+    900,
+    0
+   ]
+  },
+  {
+   "peak_traced_bytes": 1637836,
+   "run_id": "EXP-002/r1.5-rho0.9-i000-base/DA_B",
+   "runtime_s": 0.030141000002913643,
+   "spawn_key": [
+    1500,
+    900,
+    0
+   ]
+  },
+  {
+   "peak_traced_bytes": 1025808,
+   "run_id": "EXP-002/r1.5-rho0.9-i000-base/MAXW",
+   "runtime_s": 0.0037416659979498945,
+   "spawn_key": [
+    1500,
+    900,
+    0
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.5-rho0.9-i001-base/DA_A",
+   "runtime_s": 0.02051045800180873,
+   "spawn_key": [
+    1500,
+    900,
+    1
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.5-rho0.9-i001-base/DA_B",
+   "runtime_s": 0.022244583000428975,
+   "spawn_key": [
+    1500,
+    900,
+    1
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.5-rho0.9-i001-base/MAXW",
+   "runtime_s": 0.003115125000476837,
+   "spawn_key": [
+    1500,
+    900,
+    1
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.5-rho0.9-i002-base/DA_A",
+   "runtime_s": 0.020785624998097774,
+   "spawn_key": [
+    1500,
+    900,
+    2
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.5-rho0.9-i002-base/DA_B",
+   "runtime_s": 0.02200724999420345,
+   "spawn_key": [
+    1500,
+    900,
+    2
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.5-rho0.9-i002-base/MAXW",
+   "runtime_s": 0.002873917001124937,
+   "spawn_key": [
+    1500,
+    900,
+    2
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.5-rho0.9-i003-base/DA_A",
+   "runtime_s": 0.021052832998975646,
+   "spawn_key": [
+    1500,
+    900,
+    3
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.5-rho0.9-i003-base/DA_B",
+   "runtime_s": 0.021714958995289635,
+   "spawn_key": [
+    1500,
+    900,
+    3
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.5-rho0.9-i003-base/MAXW",
+   "runtime_s": 0.0028766659961547703,
+   "spawn_key": [
+    1500,
+    900,
+    3
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.5-rho0.9-i004-base/DA_A",
+   "runtime_s": 0.02659187500103144,
+   "spawn_key": [
+    1500,
+    900,
+    4
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.5-rho0.9-i004-base/DA_B",
+   "runtime_s": 0.022277709002082702,
+   "spawn_key": [
+    1500,
+    900,
+    4
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.5-rho0.9-i004-base/MAXW",
+   "runtime_s": 0.002967417000036221,
+   "spawn_key": [
+    1500,
+    900,
+    4
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.5-rho0.9-i005-base/DA_A",
+   "runtime_s": 0.027263207994110417,
+   "spawn_key": [
+    1500,
+    900,
+    5
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.5-rho0.9-i005-base/DA_B",
+   "runtime_s": 0.03952866599865956,
+   "spawn_key": [
+    1500,
+    900,
+    5
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.5-rho0.9-i005-base/MAXW",
+   "runtime_s": 0.006794958004320506,
+   "spawn_key": [
+    1500,
+    900,
+    5
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.5-rho0.9-i006-base/DA_A",
+   "runtime_s": 0.02057270899967989,
+   "spawn_key": [
+    1500,
+    900,
+    6
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.5-rho0.9-i006-base/DA_B",
+   "runtime_s": 0.11822766599652823,
+   "spawn_key": [
+    1500,
+    900,
+    6
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.5-rho0.9-i006-base/MAXW",
+   "runtime_s": 0.00316091700369725,
+   "spawn_key": [
+    1500,
+    900,
+    6
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.5-rho0.9-i007-base/DA_A",
+   "runtime_s": 0.03972512500331504,
+   "spawn_key": [
+    1500,
+    900,
+    7
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.5-rho0.9-i007-base/DA_B",
+   "runtime_s": 0.02269279200118035,
+   "spawn_key": [
+    1500,
+    900,
+    7
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.5-rho0.9-i007-base/MAXW",
+   "runtime_s": 0.002591500000562519,
+   "spawn_key": [
+    1500,
+    900,
+    7
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.5-rho0.9-i008-base/DA_A",
+   "runtime_s": 0.03218712499801768,
+   "spawn_key": [
+    1500,
+    900,
+    8
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.5-rho0.9-i008-base/DA_B",
+   "runtime_s": 0.021690749999834225,
+   "spawn_key": [
+    1500,
+    900,
+    8
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.5-rho0.9-i008-base/MAXW",
+   "runtime_s": 0.0028508750037872232,
+   "spawn_key": [
+    1500,
+    900,
+    8
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.5-rho0.9-i009-base/DA_A",
+   "runtime_s": 0.020420708002347965,
+   "spawn_key": [
+    1500,
+    900,
+    9
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.5-rho0.9-i009-base/DA_B",
+   "runtime_s": 0.04491962500469526,
+   "spawn_key": [
+    1500,
+    900,
+    9
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.5-rho0.9-i009-base/MAXW",
+   "runtime_s": 0.0028940420015715063,
+   "spawn_key": [
+    1500,
+    900,
+    9
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.5-rho0.9-i010-base/DA_A",
+   "runtime_s": 0.03514954099955503,
+   "spawn_key": [
+    1500,
+    900,
+    10
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.5-rho0.9-i010-base/DA_B",
+   "runtime_s": 0.022232750001421664,
+   "spawn_key": [
+    1500,
+    900,
+    10
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.5-rho0.9-i010-base/MAXW",
+   "runtime_s": 0.0032938749936874956,
+   "spawn_key": [
+    1500,
+    900,
+    10
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.5-rho0.9-i011-base/DA_A",
+   "runtime_s": 0.027007207994756754,
+   "spawn_key": [
+    1500,
+    900,
+    11
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.5-rho0.9-i011-base/DA_B",
+   "runtime_s": 0.03544045799935702,
+   "spawn_key": [
+    1500,
+    900,
+    11
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.5-rho0.9-i011-base/MAXW",
+   "runtime_s": 0.003113874998234678,
+   "spawn_key": [
+    1500,
+    900,
+    11
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.5-rho0.9-i012-base/DA_A",
+   "runtime_s": 0.048355624996474944,
+   "spawn_key": [
+    1500,
+    900,
+    12
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.5-rho0.9-i012-base/DA_B",
+   "runtime_s": 0.02941520800231956,
+   "spawn_key": [
+    1500,
+    900,
+    12
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.5-rho0.9-i012-base/MAXW",
+   "runtime_s": 0.0032147919991984963,
+   "spawn_key": [
+    1500,
+    900,
+    12
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.5-rho0.9-i013-base/DA_A",
+   "runtime_s": 0.02027079200342996,
+   "spawn_key": [
+    1500,
+    900,
+    13
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.5-rho0.9-i013-base/DA_B",
+   "runtime_s": 0.021563540998613462,
+   "spawn_key": [
+    1500,
+    900,
+    13
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.5-rho0.9-i013-base/MAXW",
+   "runtime_s": 0.002616999998281244,
+   "spawn_key": [
+    1500,
+    900,
+    13
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.5-rho0.9-i014-base/DA_A",
+   "runtime_s": 0.02058750000287546,
+   "spawn_key": [
+    1500,
+    900,
+    14
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.5-rho0.9-i014-base/DA_B",
+   "runtime_s": 0.04083541699947091,
+   "spawn_key": [
+    1500,
+    900,
+    14
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.5-rho0.9-i014-base/MAXW",
+   "runtime_s": 0.002956707998237107,
+   "spawn_key": [
+    1500,
+    900,
+    14
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.5-rho0.9-i015-base/DA_A",
+   "runtime_s": 0.02030279199971119,
+   "spawn_key": [
+    1500,
+    900,
+    15
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.5-rho0.9-i015-base/DA_B",
+   "runtime_s": 0.021811917002196424,
+   "spawn_key": [
+    1500,
+    900,
+    15
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.5-rho0.9-i015-base/MAXW",
+   "runtime_s": 0.0031922499983920716,
+   "spawn_key": [
+    1500,
+    900,
+    15
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.5-rho0.9-i016-base/DA_A",
+   "runtime_s": 0.04388112499873387,
+   "spawn_key": [
+    1500,
+    900,
+    16
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.5-rho0.9-i016-base/DA_B",
+   "runtime_s": 0.025362458000017796,
+   "spawn_key": [
+    1500,
+    900,
+    16
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.5-rho0.9-i016-base/MAXW",
+   "runtime_s": 0.003569332999177277,
+   "spawn_key": [
+    1500,
+    900,
+    16
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.5-rho0.9-i017-base/DA_A",
+   "runtime_s": 0.02035858300223481,
+   "spawn_key": [
+    1500,
+    900,
+    17
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.5-rho0.9-i017-base/DA_B",
+   "runtime_s": 0.021464334000484087,
+   "spawn_key": [
+    1500,
+    900,
+    17
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.5-rho0.9-i017-base/MAXW",
+   "runtime_s": 0.002981375000672415,
+   "spawn_key": [
+    1500,
+    900,
+    17
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.5-rho0.9-i018-base/DA_A",
+   "runtime_s": 0.02875612500065472,
+   "spawn_key": [
+    1500,
+    900,
+    18
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.5-rho0.9-i018-base/DA_B",
+   "runtime_s": 0.022278457996435463,
+   "spawn_key": [
+    1500,
+    900,
+    18
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.5-rho0.9-i018-base/MAXW",
+   "runtime_s": 0.003222249993996229,
+   "spawn_key": [
+    1500,
+    900,
+    18
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.5-rho0.9-i019-base/DA_A",
+   "runtime_s": 0.02390916700096568,
+   "spawn_key": [
+    1500,
+    900,
+    19
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.5-rho0.9-i019-base/DA_B",
+   "runtime_s": 0.025925209003617056,
+   "spawn_key": [
+    1500,
+    900,
+    19
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.5-rho0.9-i019-base/MAXW",
+   "runtime_s": 0.0031427080029970966,
+   "spawn_key": [
+    1500,
+    900,
+    19
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.5-rho0.9-i020-base/DA_A",
+   "runtime_s": 0.028919500000483822,
+   "spawn_key": [
+    1500,
+    900,
+    20
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.5-rho0.9-i020-base/DA_B",
+   "runtime_s": 0.031213000002026092,
+   "spawn_key": [
+    1500,
+    900,
+    20
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.5-rho0.9-i020-base/MAXW",
+   "runtime_s": 0.003099875000771135,
+   "spawn_key": [
+    1500,
+    900,
+    20
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.5-rho0.9-i021-base/DA_A",
+   "runtime_s": 0.025276125001255423,
+   "spawn_key": [
+    1500,
+    900,
+    21
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.5-rho0.9-i021-base/DA_B",
+   "runtime_s": 0.022426750001613982,
+   "spawn_key": [
+    1500,
+    900,
+    21
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.5-rho0.9-i021-base/MAXW",
+   "runtime_s": 0.003710292003233917,
+   "spawn_key": [
+    1500,
+    900,
+    21
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.5-rho0.9-i022-base/DA_A",
+   "runtime_s": 0.02175383299618261,
+   "spawn_key": [
+    1500,
+    900,
+    22
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.5-rho0.9-i022-base/DA_B",
+   "runtime_s": 0.03388199999608332,
+   "spawn_key": [
+    1500,
+    900,
+    22
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.5-rho0.9-i022-base/MAXW",
+   "runtime_s": 0.003644040996732656,
+   "spawn_key": [
+    1500,
+    900,
+    22
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.5-rho0.9-i023-base/DA_A",
+   "runtime_s": 0.02771033300086856,
+   "spawn_key": [
+    1500,
+    900,
+    23
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.5-rho0.9-i023-base/DA_B",
+   "runtime_s": 0.030013583003892563,
+   "spawn_key": [
+    1500,
+    900,
+    23
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.5-rho0.9-i023-base/MAXW",
+   "runtime_s": 0.004220791000989266,
+   "spawn_key": [
+    1500,
+    900,
+    23
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.5-rho0.9-i024-base/DA_A",
+   "runtime_s": 0.020671917001891416,
+   "spawn_key": [
+    1500,
+    900,
+    24
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.5-rho0.9-i024-base/DA_B",
+   "runtime_s": 0.029543333002948202,
+   "spawn_key": [
+    1500,
+    900,
+    24
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.5-rho0.9-i024-base/MAXW",
+   "runtime_s": 0.0026319580065319315,
+   "spawn_key": [
+    1500,
+    900,
+    24
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.5-rho0.9-i025-base/DA_A",
+   "runtime_s": 0.02388454200263368,
+   "spawn_key": [
+    1500,
+    900,
+    25
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.5-rho0.9-i025-base/DA_B",
+   "runtime_s": 0.021962667000479996,
+   "spawn_key": [
+    1500,
+    900,
+    25
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.5-rho0.9-i025-base/MAXW",
+   "runtime_s": 0.0025157499985652976,
+   "spawn_key": [
+    1500,
+    900,
+    25
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.5-rho0.9-i026-base/DA_A",
+   "runtime_s": 0.0246957079943968,
+   "spawn_key": [
+    1500,
+    900,
+    26
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.5-rho0.9-i026-base/DA_B",
+   "runtime_s": 0.03433129099721555,
+   "spawn_key": [
+    1500,
+    900,
+    26
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.5-rho0.9-i026-base/MAXW",
+   "runtime_s": 0.0029270840022945777,
+   "spawn_key": [
+    1500,
+    900,
+    26
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.5-rho0.9-i027-base/DA_A",
+   "runtime_s": 0.020529667002847418,
+   "spawn_key": [
+    1500,
+    900,
+    27
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.5-rho0.9-i027-base/DA_B",
+   "runtime_s": 0.022090458005550317,
+   "spawn_key": [
+    1500,
+    900,
+    27
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.5-rho0.9-i027-base/MAXW",
+   "runtime_s": 0.0038952910035732202,
+   "spawn_key": [
+    1500,
+    900,
+    27
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.5-rho0.9-i028-base/DA_A",
+   "runtime_s": 0.042120124999200925,
+   "spawn_key": [
+    1500,
+    900,
+    28
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.5-rho0.9-i028-base/DA_B",
+   "runtime_s": 0.0217999160013278,
+   "spawn_key": [
+    1500,
+    900,
+    28
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.5-rho0.9-i028-base/MAXW",
+   "runtime_s": 0.002865916001610458,
+   "spawn_key": [
+    1500,
+    900,
+    28
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.5-rho0.9-i029-base/DA_A",
+   "runtime_s": 0.024179667001590133,
+   "spawn_key": [
+    1500,
+    900,
+    29
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.5-rho0.9-i029-base/DA_B",
+   "runtime_s": 0.02847966599802021,
+   "spawn_key": [
+    1500,
+    900,
+    29
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-002/r1.5-rho0.9-i029-base/MAXW",
+   "runtime_s": 0.002956083000754006,
+   "spawn_key": [
+    1500,
+    900,
+    29
+   ]
+  }
+ ],
+ "start_utc": "2026-11-24T23:33:52Z",
+ "wall_clock_s": 13.591658459001337
+}

@@ -1,0 +1,8128 @@
+{
+ "config_sha256": "5e747575d51c0b0253ffcc20ca22fdb1e0f3770c7421f1546f7ff8ebc93df422",
+ "cpu": "Apple M1 Pro",
+ "cpu_count": 10,
+ "end_utc": "2026-11-24T23:38:08Z",
+ "experiment_id": "EXP-001",
+ "git_dirty": false,
+ "git_revision": "cfc90d0dfa9aa9058ee780a8d8fe3abdc77343d3",
+ "label": "EXP-001 exposure policies in sequential discovery (FROZEN v1.0, owner-approved 2026-11-24; T = 40, shared per-round tie key)",
+ "manifest_schema": "match-manifest/1.0.0",
+ "match_lab_version": "0.2.0",
+ "mode": "confirmatory",
+ "n_invalid": 0,
+ "n_runs": 810,
+ "packages": {
+  "numpy": "2.3.5",
+  "scipy": "1.16.3"
+ },
+ "peak_memory_method": "per run: tracemalloc peak of a deterministic re-run, first instance of each (cell, setting, arm) only, null otherwise; process: ru_maxrss; runtime_s is never traced",
+ "peak_rss_bytes": 116162560,
+ "platform": "macOS-15.3.1-arm64-arm-64bit",
+ "python": "3.12.1",
+ "root_seed": 20261124,
+ "runs": [
+  {
+   "peak_traced_bytes": 2154168,
+   "run_id": "EXP-001/r1-rho0-i000-base/RANDOM",
+   "runtime_s": 0.06737691699527204,
+   "spawn_key": [
+    1000,
+    0,
+    0
+   ]
+  },
+  {
+   "peak_traced_bytes": 2154192,
+   "run_id": "EXP-001/r1-rho0-i000-base/POPULARITY",
+   "runtime_s": 0.1213595000008354,
+   "spawn_key": [
+    1000,
+    0,
+    0
+   ]
+  },
+  {
+   "peak_traced_bytes": 2154448,
+   "run_id": "EXP-001/r1-rho0-i000-base/EXPOSURE_BALANCED",
+   "runtime_s": 0.0712052919989219,
+   "spawn_key": [
+    1000,
+    0,
+    0
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1-rho0-i001-base/RANDOM",
+   "runtime_s": 0.06485533300292445,
+   "spawn_key": [
+    1000,
+    0,
+    1
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1-rho0-i001-base/POPULARITY",
+   "runtime_s": 0.12269229200319387,
+   "spawn_key": [
+    1000,
+    0,
+    1
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1-rho0-i001-base/EXPOSURE_BALANCED",
+   "runtime_s": 0.06717395799933001,
+   "spawn_key": [
+    1000,
+    0,
+    1
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1-rho0-i002-base/RANDOM",
+   "runtime_s": 0.0637200830024085,
+   "spawn_key": [
+    1000,
+    0,
+    2
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1-rho0-i002-base/POPULARITY",
+   "runtime_s": 0.12028187500254717,
+   "spawn_key": [
+    1000,
+    0,
+    2
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1-rho0-i002-base/EXPOSURE_BALANCED",
+   "runtime_s": 0.07227141699695494,
+   "spawn_key": [
+    1000,
+    0,
+    2
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1-rho0-i003-base/RANDOM",
+   "runtime_s": 0.06664879099844256,
+   "spawn_key": [
+    1000,
+    0,
+    3
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1-rho0-i003-base/POPULARITY",
+   "runtime_s": 0.12248812500183703,
+   "spawn_key": [
+    1000,
+    0,
+    3
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1-rho0-i003-base/EXPOSURE_BALANCED",
+   "runtime_s": 0.06948133299738402,
+   "spawn_key": [
+    1000,
+    0,
+    3
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1-rho0-i004-base/RANDOM",
+   "runtime_s": 0.060507208996568806,
+   "spawn_key": [
+    1000,
+    0,
+    4
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1-rho0-i004-base/POPULARITY",
+   "runtime_s": 0.11727125000470551,
+   "spawn_key": [
+    1000,
+    0,
+    4
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1-rho0-i004-base/EXPOSURE_BALANCED",
+   "runtime_s": 0.06716058299934957,
+   "spawn_key": [
+    1000,
+    0,
+    4
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1-rho0-i005-base/RANDOM",
+   "runtime_s": 0.06345416700060014,
+   "spawn_key": [
+    1000,
+    0,
+    5
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1-rho0-i005-base/POPULARITY",
+   "runtime_s": 0.13562941700365627,
+   "spawn_key": [
+    1000,
+    0,
+    5
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1-rho0-i005-base/EXPOSURE_BALANCED",
+   "runtime_s": 0.07203995899908477,
+   "spawn_key": [
+    1000,
+    0,
+    5
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1-rho0-i006-base/RANDOM",
+   "runtime_s": 0.060647999998764135,
+   "spawn_key": [
+    1000,
+    0,
+    6
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1-rho0-i006-base/POPULARITY",
+   "runtime_s": 0.11635400000523077,
+   "spawn_key": [
+    1000,
+    0,
+    6
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1-rho0-i006-base/EXPOSURE_BALANCED",
+   "runtime_s": 0.06656262499745935,
+   "spawn_key": [
+    1000,
+    0,
+    6
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1-rho0-i007-base/RANDOM",
+   "runtime_s": 0.06481145800353261,
+   "spawn_key": [
+    1000,
+    0,
+    7
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1-rho0-i007-base/POPULARITY",
+   "runtime_s": 0.11815891700098291,
+   "spawn_key": [
+    1000,
+    0,
+    7
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1-rho0-i007-base/EXPOSURE_BALANCED",
+   "runtime_s": 0.06790366699715378,
+   "spawn_key": [
+    1000,
+    0,
+    7
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1-rho0-i008-base/RANDOM",
+   "runtime_s": 0.06278074999863748,
+   "spawn_key": [
+    1000,
+    0,
+    8
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1-rho0-i008-base/POPULARITY",
+   "runtime_s": 0.11858929199661361,
+   "spawn_key": [
+    1000,
+    0,
+    8
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1-rho0-i008-base/EXPOSURE_BALANCED",
+   "runtime_s": 0.0795061250028084,
+   "spawn_key": [
+    1000,
+    0,
+    8
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1-rho0-i009-base/RANDOM",
+   "runtime_s": 0.06198841600416927,
+   "spawn_key": [
+    1000,
+    0,
+    9
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1-rho0-i009-base/POPULARITY",
+   "runtime_s": 0.1237595419952413,
+   "spawn_key": [
+    1000,
+    0,
+    9
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1-rho0-i009-base/EXPOSURE_BALANCED",
+   "runtime_s": 0.07767825000337325,
+   "spawn_key": [
+    1000,
+    0,
+    9
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1-rho0-i010-base/RANDOM",
+   "runtime_s": 0.06400816600216785,
+   "spawn_key": [
+    1000,
+    0,
+    10
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1-rho0-i010-base/POPULARITY",
+   "runtime_s": 0.11924516699946253,
+   "spawn_key": [
+    1000,
+    0,
+    10
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1-rho0-i010-base/EXPOSURE_BALANCED",
+   "runtime_s": 0.0841740409960039,
+   "spawn_key": [
+    1000,
+    0,
+    10
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1-rho0-i011-base/RANDOM",
+   "runtime_s": 0.08299075000104494,
+   "spawn_key": [
+    1000,
+    0,
+    11
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1-rho0-i011-base/POPULARITY",
+   "runtime_s": 0.13959900000190828,
+   "spawn_key": [
+    1000,
+    0,
+    11
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1-rho0-i011-base/EXPOSURE_BALANCED",
+   "runtime_s": 0.07648566699936055,
+   "spawn_key": [
+    1000,
+    0,
+    11
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1-rho0-i012-base/RANDOM",
+   "runtime_s": 0.06253320800169604,
+   "spawn_key": [
+    1000,
+    0,
+    12
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1-rho0-i012-base/POPULARITY",
+   "runtime_s": 0.14863216600497253,
+   "spawn_key": [
+    1000,
+    0,
+    12
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1-rho0-i012-base/EXPOSURE_BALANCED",
+   "runtime_s": 0.06546679200255312,
+   "spawn_key": [
+    1000,
+    0,
+    12
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1-rho0-i013-base/RANDOM",
+   "runtime_s": 0.0639473330011242,
+   "spawn_key": [
+    1000,
+    0,
+    13
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1-rho0-i013-base/POPULARITY",
+   "runtime_s": 0.11831120900023961,
+   "spawn_key": [
+    1000,
+    0,
+    13
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1-rho0-i013-base/EXPOSURE_BALANCED",
+   "runtime_s": 0.08978229200147325,
+   "spawn_key": [
+    1000,
+    0,
+    13
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1-rho0-i014-base/RANDOM",
+   "runtime_s": 0.097806165998918,
+   "spawn_key": [
+    1000,
+    0,
+    14
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1-rho0-i014-base/POPULARITY",
+   "runtime_s": 0.13963916600187076,
+   "spawn_key": [
+    1000,
+    0,
+    14
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1-rho0-i014-base/EXPOSURE_BALANCED",
+   "runtime_s": 0.09242554199590813,
+   "spawn_key": [
+    1000,
+    0,
+    14
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1-rho0-i015-base/RANDOM",
+   "runtime_s": 0.0635697919933591,
+   "spawn_key": [
+    1000,
+    0,
+    15
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1-rho0-i015-base/POPULARITY",
+   "runtime_s": 0.11834545899910154,
+   "spawn_key": [
+    1000,
+    0,
+    15
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1-rho0-i015-base/EXPOSURE_BALANCED",
+   "runtime_s": 0.06680870799755212,
+   "spawn_key": [
+    1000,
+    0,
+    15
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1-rho0-i016-base/RANDOM",
+   "runtime_s": 0.06689241600543028,
+   "spawn_key": [
+    1000,
+    0,
+    16
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1-rho0-i016-base/POPULARITY",
+   "runtime_s": 0.1340401249981369,
+   "spawn_key": [
+    1000,
+    0,
+    16
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1-rho0-i016-base/EXPOSURE_BALANCED",
+   "runtime_s": 0.07775745900289621,
+   "spawn_key": [
+    1000,
+    0,
+    16
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1-rho0-i017-base/RANDOM",
+   "runtime_s": 0.06571716599864885,
+   "spawn_key": [
+    1000,
+    0,
+    17
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1-rho0-i017-base/POPULARITY",
+   "runtime_s": 0.12956779199885204,
+   "spawn_key": [
+    1000,
+    0,
+    17
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1-rho0-i017-base/EXPOSURE_BALANCED",
+   "runtime_s": 0.07628404199931538,
+   "spawn_key": [
+    1000,
+    0,
+    17
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1-rho0-i018-base/RANDOM",
+   "runtime_s": 0.0738363750060671,
+   "spawn_key": [
+    1000,
+    0,
+    18
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1-rho0-i018-base/POPULARITY",
+   "runtime_s": 0.2167440000048373,
+   "spawn_key": [
+    1000,
+    0,
+    18
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1-rho0-i018-base/EXPOSURE_BALANCED",
+   "runtime_s": 0.07484262499929173,
+   "spawn_key": [
+    1000,
+    0,
+    18
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1-rho0-i019-base/RANDOM",
+   "runtime_s": 0.08779570899787359,
+   "spawn_key": [
+    1000,
+    0,
+    19
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1-rho0-i019-base/POPULARITY",
+   "runtime_s": 0.14575687499745982,
+   "spawn_key": [
+    1000,
+    0,
+    19
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1-rho0-i019-base/EXPOSURE_BALANCED",
+   "runtime_s": 0.07653354100330034,
+   "spawn_key": [
+    1000,
+    0,
+    19
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1-rho0-i020-base/RANDOM",
+   "runtime_s": 0.062485916998411994,
+   "spawn_key": [
+    1000,
+    0,
+    20
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1-rho0-i020-base/POPULARITY",
+   "runtime_s": 0.15626104200055124,
+   "spawn_key": [
+    1000,
+    0,
+    20
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1-rho0-i020-base/EXPOSURE_BALANCED",
+   "runtime_s": 0.0845815419961582,
+   "spawn_key": [
+    1000,
+    0,
+    20
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1-rho0-i021-base/RANDOM",
+   "runtime_s": 0.11278966700047022,
+   "spawn_key": [
+    1000,
+    0,
+    21
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1-rho0-i021-base/POPULARITY",
+   "runtime_s": 0.1559209590050159,
+   "spawn_key": [
+    1000,
+    0,
+    21
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1-rho0-i021-base/EXPOSURE_BALANCED",
+   "runtime_s": 0.09658383299392881,
+   "spawn_key": [
+    1000,
+    0,
+    21
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1-rho0-i022-base/RANDOM",
+   "runtime_s": 0.11256904200126883,
+   "spawn_key": [
+    1000,
+    0,
+    22
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1-rho0-i022-base/POPULARITY",
+   "runtime_s": 0.14423125000030268,
+   "spawn_key": [
+    1000,
+    0,
+    22
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1-rho0-i022-base/EXPOSURE_BALANCED",
+   "runtime_s": 0.08693533299810952,
+   "spawn_key": [
+    1000,
+    0,
+    22
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1-rho0-i023-base/RANDOM",
+   "runtime_s": 0.0649308749998454,
+   "spawn_key": [
+    1000,
+    0,
+    23
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1-rho0-i023-base/POPULARITY",
+   "runtime_s": 0.15848354199988535,
+   "spawn_key": [
+    1000,
+    0,
+    23
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1-rho0-i023-base/EXPOSURE_BALANCED",
+   "runtime_s": 0.06886266700166743,
+   "spawn_key": [
+    1000,
+    0,
+    23
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1-rho0-i024-base/RANDOM",
+   "runtime_s": 0.06805708300089464,
+   "spawn_key": [
+    1000,
+    0,
+    24
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1-rho0-i024-base/POPULARITY",
+   "runtime_s": 0.12689675000001444,
+   "spawn_key": [
+    1000,
+    0,
+    24
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1-rho0-i024-base/EXPOSURE_BALANCED",
+   "runtime_s": 0.06606762499723118,
+   "spawn_key": [
+    1000,
+    0,
+    24
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1-rho0-i025-base/RANDOM",
+   "runtime_s": 0.0658682499997667,
+   "spawn_key": [
+    1000,
+    0,
+    25
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1-rho0-i025-base/POPULARITY",
+   "runtime_s": 0.12126320799870882,
+   "spawn_key": [
+    1000,
+    0,
+    25
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1-rho0-i025-base/EXPOSURE_BALANCED",
+   "runtime_s": 0.06862475000525592,
+   "spawn_key": [
+    1000,
+    0,
+    25
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1-rho0-i026-base/RANDOM",
+   "runtime_s": 0.07095079099963186,
+   "spawn_key": [
+    1000,
+    0,
+    26
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1-rho0-i026-base/POPULARITY",
+   "runtime_s": 0.13200754200079245,
+   "spawn_key": [
+    1000,
+    0,
+    26
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1-rho0-i026-base/EXPOSURE_BALANCED",
+   "runtime_s": 0.07077354200009722,
+   "spawn_key": [
+    1000,
+    0,
+    26
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1-rho0-i027-base/RANDOM",
+   "runtime_s": 0.06518750000395812,
+   "spawn_key": [
+    1000,
+    0,
+    27
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1-rho0-i027-base/POPULARITY",
+   "runtime_s": 0.13658591699640965,
+   "spawn_key": [
+    1000,
+    0,
+    27
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1-rho0-i027-base/EXPOSURE_BALANCED",
+   "runtime_s": 0.06852304100175388,
+   "spawn_key": [
+    1000,
+    0,
+    27
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1-rho0-i028-base/RANDOM",
+   "runtime_s": 0.06513187500240747,
+   "spawn_key": [
+    1000,
+    0,
+    28
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1-rho0-i028-base/POPULARITY",
+   "runtime_s": 0.13147200000094017,
+   "spawn_key": [
+    1000,
+    0,
+    28
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1-rho0-i028-base/EXPOSURE_BALANCED",
+   "runtime_s": 0.07921074999467237,
+   "spawn_key": [
+    1000,
+    0,
+    28
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1-rho0-i029-base/RANDOM",
+   "runtime_s": 0.06707325000024866,
+   "spawn_key": [
+    1000,
+    0,
+    29
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1-rho0-i029-base/POPULARITY",
+   "runtime_s": 0.12183124999864958,
+   "spawn_key": [
+    1000,
+    0,
+    29
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1-rho0-i029-base/EXPOSURE_BALANCED",
+   "runtime_s": 0.07106699999712873,
+   "spawn_key": [
+    1000,
+    0,
+    29
+   ]
+  },
+  {
+   "peak_traced_bytes": 2154272,
+   "run_id": "EXP-001/r1-rho0.5-i000-base/RANDOM",
+   "runtime_s": 0.06993579099798808,
+   "spawn_key": [
+    1000,
+    500,
+    0
+   ]
+  },
+  {
+   "peak_traced_bytes": 2153512,
+   "run_id": "EXP-001/r1-rho0.5-i000-base/POPULARITY",
+   "runtime_s": 0.1500324590015225,
+   "spawn_key": [
+    1000,
+    500,
+    0
+   ]
+  },
+  {
+   "peak_traced_bytes": 2154664,
+   "run_id": "EXP-001/r1-rho0.5-i000-base/EXPOSURE_BALANCED",
+   "runtime_s": 0.08479787500255043,
+   "spawn_key": [
+    1000,
+    500,
+    0
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1-rho0.5-i001-base/RANDOM",
+   "runtime_s": 0.09184562500013271,
+   "spawn_key": [
+    1000,
+    500,
+    1
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1-rho0.5-i001-base/POPULARITY",
+   "runtime_s": 0.12668108299840242,
+   "spawn_key": [
+    1000,
+    500,
+    1
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1-rho0.5-i001-base/EXPOSURE_BALANCED",
+   "runtime_s": 0.08066795799823012,
+   "spawn_key": [
+    1000,
+    500,
+    1
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1-rho0.5-i002-base/RANDOM",
+   "runtime_s": 0.12536616600118577,
+   "spawn_key": [
+    1000,
+    500,
+    2
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1-rho0.5-i002-base/POPULARITY",
+   "runtime_s": 0.15495366599498084,
+   "spawn_key": [
+    1000,
+    500,
+    2
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1-rho0.5-i002-base/EXPOSURE_BALANCED",
+   "runtime_s": 0.07956979200389469,
+   "spawn_key": [
+    1000,
+    500,
+    2
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1-rho0.5-i003-base/RANDOM",
+   "runtime_s": 0.08633887500036508,
+   "spawn_key": [
+    1000,
+    500,
+    3
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1-rho0.5-i003-base/POPULARITY",
+   "runtime_s": 0.1353002500036382,
+   "spawn_key": [
+    1000,
+    500,
+    3
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1-rho0.5-i003-base/EXPOSURE_BALANCED",
+   "runtime_s": 0.0788380829981179,
+   "spawn_key": [
+    1000,
+    500,
+    3
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1-rho0.5-i004-base/RANDOM",
+   "runtime_s": 0.08574708399828523,
+   "spawn_key": [
+    1000,
+    500,
+    4
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1-rho0.5-i004-base/POPULARITY",
+   "runtime_s": 0.15720754200447118,
+   "spawn_key": [
+    1000,
+    500,
+    4
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1-rho0.5-i004-base/EXPOSURE_BALANCED",
+   "runtime_s": 0.09635150000394788,
+   "spawn_key": [
+    1000,
+    500,
+    4
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1-rho0.5-i005-base/RANDOM",
+   "runtime_s": 0.07489583399728872,
+   "spawn_key": [
+    1000,
+    500,
+    5
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1-rho0.5-i005-base/POPULARITY",
+   "runtime_s": 0.14443387499341043,
+   "spawn_key": [
+    1000,
+    500,
+    5
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1-rho0.5-i005-base/EXPOSURE_BALANCED",
+   "runtime_s": 0.07989562500006286,
+   "spawn_key": [
+    1000,
+    500,
+    5
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1-rho0.5-i006-base/RANDOM",
+   "runtime_s": 0.0894033330041566,
+   "spawn_key": [
+    1000,
+    500,
+    6
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1-rho0.5-i006-base/POPULARITY",
+   "runtime_s": 0.14056091700331308,
+   "spawn_key": [
+    1000,
+    500,
+    6
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1-rho0.5-i006-base/EXPOSURE_BALANCED",
+   "runtime_s": 0.08015316700038966,
+   "spawn_key": [
+    1000,
+    500,
+    6
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1-rho0.5-i007-base/RANDOM",
+   "runtime_s": 0.09211987500020768,
+   "spawn_key": [
+    1000,
+    500,
+    7
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1-rho0.5-i007-base/POPULARITY",
+   "runtime_s": 0.14582637500279816,
+   "spawn_key": [
+    1000,
+    500,
+    7
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1-rho0.5-i007-base/EXPOSURE_BALANCED",
+   "runtime_s": 0.0949110000001383,
+   "spawn_key": [
+    1000,
+    500,
+    7
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1-rho0.5-i008-base/RANDOM",
+   "runtime_s": 0.08923912500176812,
+   "spawn_key": [
+    1000,
+    500,
+    8
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1-rho0.5-i008-base/POPULARITY",
+   "runtime_s": 0.17053395900438773,
+   "spawn_key": [
+    1000,
+    500,
+    8
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1-rho0.5-i008-base/EXPOSURE_BALANCED",
+   "runtime_s": 0.07829262500308687,
+   "spawn_key": [
+    1000,
+    500,
+    8
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1-rho0.5-i009-base/RANDOM",
+   "runtime_s": 0.07915458400384523,
+   "spawn_key": [
+    1000,
+    500,
+    9
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1-rho0.5-i009-base/POPULARITY",
+   "runtime_s": 0.13198720800573938,
+   "spawn_key": [
+    1000,
+    500,
+    9
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1-rho0.5-i009-base/EXPOSURE_BALANCED",
+   "runtime_s": 0.0874217079981463,
+   "spawn_key": [
+    1000,
+    500,
+    9
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1-rho0.5-i010-base/RANDOM",
+   "runtime_s": 0.07027358299819753,
+   "spawn_key": [
+    1000,
+    500,
+    10
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1-rho0.5-i010-base/POPULARITY",
+   "runtime_s": 0.1264865409975755,
+   "spawn_key": [
+    1000,
+    500,
+    10
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1-rho0.5-i010-base/EXPOSURE_BALANCED",
+   "runtime_s": 0.07438233300490538,
+   "spawn_key": [
+    1000,
+    500,
+    10
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1-rho0.5-i011-base/RANDOM",
+   "runtime_s": 0.0748475839936873,
+   "spawn_key": [
+    1000,
+    500,
+    11
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1-rho0.5-i011-base/POPULARITY",
+   "runtime_s": 0.14284775000123773,
+   "spawn_key": [
+    1000,
+    500,
+    11
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1-rho0.5-i011-base/EXPOSURE_BALANCED",
+   "runtime_s": 0.1460685839992948,
+   "spawn_key": [
+    1000,
+    500,
+    11
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1-rho0.5-i012-base/RANDOM",
+   "runtime_s": 0.0723113749991171,
+   "spawn_key": [
+    1000,
+    500,
+    12
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1-rho0.5-i012-base/POPULARITY",
+   "runtime_s": 0.1641124169982504,
+   "spawn_key": [
+    1000,
+    500,
+    12
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1-rho0.5-i012-base/EXPOSURE_BALANCED",
+   "runtime_s": 0.1089119589960319,
+   "spawn_key": [
+    1000,
+    500,
+    12
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1-rho0.5-i013-base/RANDOM",
+   "runtime_s": 0.0973928329985938,
+   "spawn_key": [
+    1000,
+    500,
+    13
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1-rho0.5-i013-base/POPULARITY",
+   "runtime_s": 0.16732783400220796,
+   "spawn_key": [
+    1000,
+    500,
+    13
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1-rho0.5-i013-base/EXPOSURE_BALANCED",
+   "runtime_s": 0.08670466699550161,
+   "spawn_key": [
+    1000,
+    500,
+    13
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1-rho0.5-i014-base/RANDOM",
+   "runtime_s": 0.06912945800286252,
+   "spawn_key": [
+    1000,
+    500,
+    14
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1-rho0.5-i014-base/POPULARITY",
+   "runtime_s": 0.18616483300138498,
+   "spawn_key": [
+    1000,
+    500,
+    14
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1-rho0.5-i014-base/EXPOSURE_BALANCED",
+   "runtime_s": 0.09085762500035344,
+   "spawn_key": [
+    1000,
+    500,
+    14
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1-rho0.5-i015-base/RANDOM",
+   "runtime_s": 0.08046279099653475,
+   "spawn_key": [
+    1000,
+    500,
+    15
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1-rho0.5-i015-base/POPULARITY",
+   "runtime_s": 0.14863520799553953,
+   "spawn_key": [
+    1000,
+    500,
+    15
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1-rho0.5-i015-base/EXPOSURE_BALANCED",
+   "runtime_s": 0.10008641600143164,
+   "spawn_key": [
+    1000,
+    500,
+    15
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1-rho0.5-i016-base/RANDOM",
+   "runtime_s": 0.09437691700441064,
+   "spawn_key": [
+    1000,
+    500,
+    16
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1-rho0.5-i016-base/POPULARITY",
+   "runtime_s": 0.14065424999716925,
+   "spawn_key": [
+    1000,
+    500,
+    16
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1-rho0.5-i016-base/EXPOSURE_BALANCED",
+   "runtime_s": 0.08915891699871281,
+   "spawn_key": [
+    1000,
+    500,
+    16
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1-rho0.5-i017-base/RANDOM",
+   "runtime_s": 0.06930241699592443,
+   "spawn_key": [
+    1000,
+    500,
+    17
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1-rho0.5-i017-base/POPULARITY",
+   "runtime_s": 0.13388008299807552,
+   "spawn_key": [
+    1000,
+    500,
+    17
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1-rho0.5-i017-base/EXPOSURE_BALANCED",
+   "runtime_s": 0.08414916699985042,
+   "spawn_key": [
+    1000,
+    500,
+    17
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1-rho0.5-i018-base/RANDOM",
+   "runtime_s": 0.07816070800618036,
+   "spawn_key": [
+    1000,
+    500,
+    18
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1-rho0.5-i018-base/POPULARITY",
+   "runtime_s": 0.13664416599931428,
+   "spawn_key": [
+    1000,
+    500,
+    18
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1-rho0.5-i018-base/EXPOSURE_BALANCED",
+   "runtime_s": 0.12864891599747352,
+   "spawn_key": [
+    1000,
+    500,
+    18
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1-rho0.5-i019-base/RANDOM",
+   "runtime_s": 0.10800754200317897,
+   "spawn_key": [
+    1000,
+    500,
+    19
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1-rho0.5-i019-base/POPULARITY",
+   "runtime_s": 0.12600475000363076,
+   "spawn_key": [
+    1000,
+    500,
+    19
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1-rho0.5-i019-base/EXPOSURE_BALANCED",
+   "runtime_s": 0.07400137500371784,
+   "spawn_key": [
+    1000,
+    500,
+    19
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1-rho0.5-i020-base/RANDOM",
+   "runtime_s": 0.07376795900199795,
+   "spawn_key": [
+    1000,
+    500,
+    20
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1-rho0.5-i020-base/POPULARITY",
+   "runtime_s": 0.1643141660024412,
+   "spawn_key": [
+    1000,
+    500,
+    20
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1-rho0.5-i020-base/EXPOSURE_BALANCED",
+   "runtime_s": 0.08227054199960548,
+   "spawn_key": [
+    1000,
+    500,
+    20
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1-rho0.5-i021-base/RANDOM",
+   "runtime_s": 0.07108283299749019,
+   "spawn_key": [
+    1000,
+    500,
+    21
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1-rho0.5-i021-base/POPULARITY",
+   "runtime_s": 0.1370787499981816,
+   "spawn_key": [
+    1000,
+    500,
+    21
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1-rho0.5-i021-base/EXPOSURE_BALANCED",
+   "runtime_s": 0.10940750000008848,
+   "spawn_key": [
+    1000,
+    500,
+    21
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1-rho0.5-i022-base/RANDOM",
+   "runtime_s": 0.0752655420001247,
+   "spawn_key": [
+    1000,
+    500,
+    22
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1-rho0.5-i022-base/POPULARITY",
+   "runtime_s": 0.14156266699865228,
+   "spawn_key": [
+    1000,
+    500,
+    22
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1-rho0.5-i022-base/EXPOSURE_BALANCED",
+   "runtime_s": 0.07617483300418826,
+   "spawn_key": [
+    1000,
+    500,
+    22
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1-rho0.5-i023-base/RANDOM",
+   "runtime_s": 0.07357320799928857,
+   "spawn_key": [
+    1000,
+    500,
+    23
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1-rho0.5-i023-base/POPULARITY",
+   "runtime_s": 0.12652924999565585,
+   "spawn_key": [
+    1000,
+    500,
+    23
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1-rho0.5-i023-base/EXPOSURE_BALANCED",
+   "runtime_s": 0.07434075000492157,
+   "spawn_key": [
+    1000,
+    500,
+    23
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1-rho0.5-i024-base/RANDOM",
+   "runtime_s": 0.07166616700123996,
+   "spawn_key": [
+    1000,
+    500,
+    24
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1-rho0.5-i024-base/POPULARITY",
+   "runtime_s": 0.1355546670019976,
+   "spawn_key": [
+    1000,
+    500,
+    24
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1-rho0.5-i024-base/EXPOSURE_BALANCED",
+   "runtime_s": 0.09640175000095041,
+   "spawn_key": [
+    1000,
+    500,
+    24
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1-rho0.5-i025-base/RANDOM",
+   "runtime_s": 0.07869454100000439,
+   "spawn_key": [
+    1000,
+    500,
+    25
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1-rho0.5-i025-base/POPULARITY",
+   "runtime_s": 0.20330391699826578,
+   "spawn_key": [
+    1000,
+    500,
+    25
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1-rho0.5-i025-base/EXPOSURE_BALANCED",
+   "runtime_s": 0.07417087499925401,
+   "spawn_key": [
+    1000,
+    500,
+    25
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1-rho0.5-i026-base/RANDOM",
+   "runtime_s": 0.10190158399927896,
+   "spawn_key": [
+    1000,
+    500,
+    26
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1-rho0.5-i026-base/POPULARITY",
+   "runtime_s": 0.1534437500013155,
+   "spawn_key": [
+    1000,
+    500,
+    26
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1-rho0.5-i026-base/EXPOSURE_BALANCED",
+   "runtime_s": 0.0948073330000625,
+   "spawn_key": [
+    1000,
+    500,
+    26
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1-rho0.5-i027-base/RANDOM",
+   "runtime_s": 0.0930387080006767,
+   "spawn_key": [
+    1000,
+    500,
+    27
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1-rho0.5-i027-base/POPULARITY",
+   "runtime_s": 0.13211145799868973,
+   "spawn_key": [
+    1000,
+    500,
+    27
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1-rho0.5-i027-base/EXPOSURE_BALANCED",
+   "runtime_s": 0.08416458400461124,
+   "spawn_key": [
+    1000,
+    500,
+    27
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1-rho0.5-i028-base/RANDOM",
+   "runtime_s": 0.08281812500354135,
+   "spawn_key": [
+    1000,
+    500,
+    28
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1-rho0.5-i028-base/POPULARITY",
+   "runtime_s": 0.14486716599640204,
+   "spawn_key": [
+    1000,
+    500,
+    28
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1-rho0.5-i028-base/EXPOSURE_BALANCED",
+   "runtime_s": 0.11400754199712537,
+   "spawn_key": [
+    1000,
+    500,
+    28
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1-rho0.5-i029-base/RANDOM",
+   "runtime_s": 0.10564954199799104,
+   "spawn_key": [
+    1000,
+    500,
+    29
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1-rho0.5-i029-base/POPULARITY",
+   "runtime_s": 0.1578923329943791,
+   "spawn_key": [
+    1000,
+    500,
+    29
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1-rho0.5-i029-base/EXPOSURE_BALANCED",
+   "runtime_s": 0.07545091700012563,
+   "spawn_key": [
+    1000,
+    500,
+    29
+   ]
+  },
+  {
+   "peak_traced_bytes": 2153752,
+   "run_id": "EXP-001/r1-rho0.9-i000-base/RANDOM",
+   "runtime_s": 0.13141354200342903,
+   "spawn_key": [
+    1000,
+    900,
+    0
+   ]
+  },
+  {
+   "peak_traced_bytes": 2153520,
+   "run_id": "EXP-001/r1-rho0.9-i000-base/POPULARITY",
+   "runtime_s": 0.2360659170008148,
+   "spawn_key": [
+    1000,
+    900,
+    0
+   ]
+  },
+  {
+   "peak_traced_bytes": 2154697,
+   "run_id": "EXP-001/r1-rho0.9-i000-base/EXPOSURE_BALANCED",
+   "runtime_s": 0.10074000000167871,
+   "spawn_key": [
+    1000,
+    900,
+    0
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1-rho0.9-i001-base/RANDOM",
+   "runtime_s": 0.08640220900269924,
+   "spawn_key": [
+    1000,
+    900,
+    1
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1-rho0.9-i001-base/POPULARITY",
+   "runtime_s": 0.13922983299562475,
+   "spawn_key": [
+    1000,
+    900,
+    1
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1-rho0.9-i001-base/EXPOSURE_BALANCED",
+   "runtime_s": 0.08850383300159592,
+   "spawn_key": [
+    1000,
+    900,
+    1
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1-rho0.9-i002-base/RANDOM",
+   "runtime_s": 0.08269704199483385,
+   "spawn_key": [
+    1000,
+    900,
+    2
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1-rho0.9-i002-base/POPULARITY",
+   "runtime_s": 0.14098337500035996,
+   "spawn_key": [
+    1000,
+    900,
+    2
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1-rho0.9-i002-base/EXPOSURE_BALANCED",
+   "runtime_s": 0.08996366700012004,
+   "spawn_key": [
+    1000,
+    900,
+    2
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1-rho0.9-i003-base/RANDOM",
+   "runtime_s": 0.08604683299927274,
+   "spawn_key": [
+    1000,
+    900,
+    3
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1-rho0.9-i003-base/POPULARITY",
+   "runtime_s": 0.15422324999963166,
+   "spawn_key": [
+    1000,
+    900,
+    3
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1-rho0.9-i003-base/EXPOSURE_BALANCED",
+   "runtime_s": 0.10379675000149291,
+   "spawn_key": [
+    1000,
+    900,
+    3
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1-rho0.9-i004-base/RANDOM",
+   "runtime_s": 0.1002452499960782,
+   "spawn_key": [
+    1000,
+    900,
+    4
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1-rho0.9-i004-base/POPULARITY",
+   "runtime_s": 0.16403245800029254,
+   "spawn_key": [
+    1000,
+    900,
+    4
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1-rho0.9-i004-base/EXPOSURE_BALANCED",
+   "runtime_s": 0.13599895800143713,
+   "spawn_key": [
+    1000,
+    900,
+    4
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1-rho0.9-i005-base/RANDOM",
+   "runtime_s": 0.08584120800514938,
+   "spawn_key": [
+    1000,
+    900,
+    5
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1-rho0.9-i005-base/POPULARITY",
+   "runtime_s": 0.17559904100198764,
+   "spawn_key": [
+    1000,
+    900,
+    5
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1-rho0.9-i005-base/EXPOSURE_BALANCED",
+   "runtime_s": 0.08899241700419225,
+   "spawn_key": [
+    1000,
+    900,
+    5
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1-rho0.9-i006-base/RANDOM",
+   "runtime_s": 0.11326908299815841,
+   "spawn_key": [
+    1000,
+    900,
+    6
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1-rho0.9-i006-base/POPULARITY",
+   "runtime_s": 0.23996137499489123,
+   "spawn_key": [
+    1000,
+    900,
+    6
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1-rho0.9-i006-base/EXPOSURE_BALANCED",
+   "runtime_s": 0.10014824999962002,
+   "spawn_key": [
+    1000,
+    900,
+    6
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1-rho0.9-i007-base/RANDOM",
+   "runtime_s": 0.08502066700020805,
+   "spawn_key": [
+    1000,
+    900,
+    7
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1-rho0.9-i007-base/POPULARITY",
+   "runtime_s": 0.14103554100438487,
+   "spawn_key": [
+    1000,
+    900,
+    7
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1-rho0.9-i007-base/EXPOSURE_BALANCED",
+   "runtime_s": 0.09210270900075557,
+   "spawn_key": [
+    1000,
+    900,
+    7
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1-rho0.9-i008-base/RANDOM",
+   "runtime_s": 0.1332556669949554,
+   "spawn_key": [
+    1000,
+    900,
+    8
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1-rho0.9-i008-base/POPULARITY",
+   "runtime_s": 0.17462462499679532,
+   "spawn_key": [
+    1000,
+    900,
+    8
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1-rho0.9-i008-base/EXPOSURE_BALANCED",
+   "runtime_s": 0.11777512499975273,
+   "spawn_key": [
+    1000,
+    900,
+    8
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1-rho0.9-i009-base/RANDOM",
+   "runtime_s": 0.12430283299909206,
+   "spawn_key": [
+    1000,
+    900,
+    9
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1-rho0.9-i009-base/POPULARITY",
+   "runtime_s": 0.16657449999911478,
+   "spawn_key": [
+    1000,
+    900,
+    9
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1-rho0.9-i009-base/EXPOSURE_BALANCED",
+   "runtime_s": 0.10036166699865134,
+   "spawn_key": [
+    1000,
+    900,
+    9
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1-rho0.9-i010-base/RANDOM",
+   "runtime_s": 0.08751866600505309,
+   "spawn_key": [
+    1000,
+    900,
+    10
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1-rho0.9-i010-base/POPULARITY",
+   "runtime_s": 0.150632292003138,
+   "spawn_key": [
+    1000,
+    900,
+    10
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1-rho0.9-i010-base/EXPOSURE_BALANCED",
+   "runtime_s": 0.09040662500046892,
+   "spawn_key": [
+    1000,
+    900,
+    10
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1-rho0.9-i011-base/RANDOM",
+   "runtime_s": 0.0923068339980091,
+   "spawn_key": [
+    1000,
+    900,
+    11
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1-rho0.9-i011-base/POPULARITY",
+   "runtime_s": 0.13972595800441923,
+   "spawn_key": [
+    1000,
+    900,
+    11
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1-rho0.9-i011-base/EXPOSURE_BALANCED",
+   "runtime_s": 0.09240679199865554,
+   "spawn_key": [
+    1000,
+    900,
+    11
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1-rho0.9-i012-base/RANDOM",
+   "runtime_s": 0.09328716700110817,
+   "spawn_key": [
+    1000,
+    900,
+    12
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1-rho0.9-i012-base/POPULARITY",
+   "runtime_s": 0.14749208300054306,
+   "spawn_key": [
+    1000,
+    900,
+    12
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1-rho0.9-i012-base/EXPOSURE_BALANCED",
+   "runtime_s": 0.08863545799977146,
+   "spawn_key": [
+    1000,
+    900,
+    12
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1-rho0.9-i013-base/RANDOM",
+   "runtime_s": 0.08936125000036554,
+   "spawn_key": [
+    1000,
+    900,
+    13
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1-rho0.9-i013-base/POPULARITY",
+   "runtime_s": 0.14236545899620978,
+   "spawn_key": [
+    1000,
+    900,
+    13
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1-rho0.9-i013-base/EXPOSURE_BALANCED",
+   "runtime_s": 0.09241508299601264,
+   "spawn_key": [
+    1000,
+    900,
+    13
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1-rho0.9-i014-base/RANDOM",
+   "runtime_s": 0.08578912500524893,
+   "spawn_key": [
+    1000,
+    900,
+    14
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1-rho0.9-i014-base/POPULARITY",
+   "runtime_s": 0.14751333399908617,
+   "spawn_key": [
+    1000,
+    900,
+    14
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1-rho0.9-i014-base/EXPOSURE_BALANCED",
+   "runtime_s": 0.09470962500199676,
+   "spawn_key": [
+    1000,
+    900,
+    14
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1-rho0.9-i015-base/RANDOM",
+   "runtime_s": 0.10761658299452392,
+   "spawn_key": [
+    1000,
+    900,
+    15
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1-rho0.9-i015-base/POPULARITY",
+   "runtime_s": 0.1611263329978101,
+   "spawn_key": [
+    1000,
+    900,
+    15
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1-rho0.9-i015-base/EXPOSURE_BALANCED",
+   "runtime_s": 0.08989208400453208,
+   "spawn_key": [
+    1000,
+    900,
+    15
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1-rho0.9-i016-base/RANDOM",
+   "runtime_s": 0.08763962500233902,
+   "spawn_key": [
+    1000,
+    900,
+    16
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1-rho0.9-i016-base/POPULARITY",
+   "runtime_s": 0.15328125000087311,
+   "spawn_key": [
+    1000,
+    900,
+    16
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1-rho0.9-i016-base/EXPOSURE_BALANCED",
+   "runtime_s": 0.13687654199748067,
+   "spawn_key": [
+    1000,
+    900,
+    16
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1-rho0.9-i017-base/RANDOM",
+   "runtime_s": 0.10928491700178711,
+   "spawn_key": [
+    1000,
+    900,
+    17
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1-rho0.9-i017-base/POPULARITY",
+   "runtime_s": 0.25304845799837494,
+   "spawn_key": [
+    1000,
+    900,
+    17
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1-rho0.9-i017-base/EXPOSURE_BALANCED",
+   "runtime_s": 0.09588349999830825,
+   "spawn_key": [
+    1000,
+    900,
+    17
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1-rho0.9-i018-base/RANDOM",
+   "runtime_s": 0.08875854100188008,
+   "spawn_key": [
+    1000,
+    900,
+    18
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1-rho0.9-i018-base/POPULARITY",
+   "runtime_s": 0.27010745899315225,
+   "spawn_key": [
+    1000,
+    900,
+    18
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1-rho0.9-i018-base/EXPOSURE_BALANCED",
+   "runtime_s": 0.0897072500010836,
+   "spawn_key": [
+    1000,
+    900,
+    18
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1-rho0.9-i019-base/RANDOM",
+   "runtime_s": 0.0853239999996731,
+   "spawn_key": [
+    1000,
+    900,
+    19
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1-rho0.9-i019-base/POPULARITY",
+   "runtime_s": 0.15687066599639365,
+   "spawn_key": [
+    1000,
+    900,
+    19
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1-rho0.9-i019-base/EXPOSURE_BALANCED",
+   "runtime_s": 0.13367691600433318,
+   "spawn_key": [
+    1000,
+    900,
+    19
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1-rho0.9-i020-base/RANDOM",
+   "runtime_s": 0.11818066600244492,
+   "spawn_key": [
+    1000,
+    900,
+    20
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1-rho0.9-i020-base/POPULARITY",
+   "runtime_s": 0.20396766599878902,
+   "spawn_key": [
+    1000,
+    900,
+    20
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1-rho0.9-i020-base/EXPOSURE_BALANCED",
+   "runtime_s": 0.18541074999666307,
+   "spawn_key": [
+    1000,
+    900,
+    20
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1-rho0.9-i021-base/RANDOM",
+   "runtime_s": 0.1312025410006754,
+   "spawn_key": [
+    1000,
+    900,
+    21
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1-rho0.9-i021-base/POPULARITY",
+   "runtime_s": 0.29524229199887486,
+   "spawn_key": [
+    1000,
+    900,
+    21
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1-rho0.9-i021-base/EXPOSURE_BALANCED",
+   "runtime_s": 0.20526183399488218,
+   "spawn_key": [
+    1000,
+    900,
+    21
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1-rho0.9-i022-base/RANDOM",
+   "runtime_s": 0.1467075839973404,
+   "spawn_key": [
+    1000,
+    900,
+    22
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1-rho0.9-i022-base/POPULARITY",
+   "runtime_s": 0.19643566699960502,
+   "spawn_key": [
+    1000,
+    900,
+    22
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1-rho0.9-i022-base/EXPOSURE_BALANCED",
+   "runtime_s": 0.18417220799892675,
+   "spawn_key": [
+    1000,
+    900,
+    22
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1-rho0.9-i023-base/RANDOM",
+   "runtime_s": 0.20572479200200178,
+   "spawn_key": [
+    1000,
+    900,
+    23
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1-rho0.9-i023-base/POPULARITY",
+   "runtime_s": 0.27369124999677297,
+   "spawn_key": [
+    1000,
+    900,
+    23
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1-rho0.9-i023-base/EXPOSURE_BALANCED",
+   "runtime_s": 0.22690241700183833,
+   "spawn_key": [
+    1000,
+    900,
+    23
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1-rho0.9-i024-base/RANDOM",
+   "runtime_s": 0.12476066700037336,
+   "spawn_key": [
+    1000,
+    900,
+    24
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1-rho0.9-i024-base/POPULARITY",
+   "runtime_s": 0.2646832919999724,
+   "spawn_key": [
+    1000,
+    900,
+    24
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1-rho0.9-i024-base/EXPOSURE_BALANCED",
+   "runtime_s": 0.11328566700103693,
+   "spawn_key": [
+    1000,
+    900,
+    24
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1-rho0.9-i025-base/RANDOM",
+   "runtime_s": 0.1696977919928031,
+   "spawn_key": [
+    1000,
+    900,
+    25
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1-rho0.9-i025-base/POPULARITY",
+   "runtime_s": 0.35616695800126763,
+   "spawn_key": [
+    1000,
+    900,
+    25
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1-rho0.9-i025-base/EXPOSURE_BALANCED",
+   "runtime_s": 0.24028341699886369,
+   "spawn_key": [
+    1000,
+    900,
+    25
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1-rho0.9-i026-base/RANDOM",
+   "runtime_s": 0.21492204099922674,
+   "spawn_key": [
+    1000,
+    900,
+    26
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1-rho0.9-i026-base/POPULARITY",
+   "runtime_s": 0.256539582995174,
+   "spawn_key": [
+    1000,
+    900,
+    26
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1-rho0.9-i026-base/EXPOSURE_BALANCED",
+   "runtime_s": 0.09033595799701288,
+   "spawn_key": [
+    1000,
+    900,
+    26
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1-rho0.9-i027-base/RANDOM",
+   "runtime_s": 0.08693604200379923,
+   "spawn_key": [
+    1000,
+    900,
+    27
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1-rho0.9-i027-base/POPULARITY",
+   "runtime_s": 0.24232066600234248,
+   "spawn_key": [
+    1000,
+    900,
+    27
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1-rho0.9-i027-base/EXPOSURE_BALANCED",
+   "runtime_s": 0.17196650000551017,
+   "spawn_key": [
+    1000,
+    900,
+    27
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1-rho0.9-i028-base/RANDOM",
+   "runtime_s": 0.20407141699979547,
+   "spawn_key": [
+    1000,
+    900,
+    28
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1-rho0.9-i028-base/POPULARITY",
+   "runtime_s": 0.20573749999311985,
+   "spawn_key": [
+    1000,
+    900,
+    28
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1-rho0.9-i028-base/EXPOSURE_BALANCED",
+   "runtime_s": 0.2194155420002062,
+   "spawn_key": [
+    1000,
+    900,
+    28
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1-rho0.9-i029-base/RANDOM",
+   "runtime_s": 0.1412460830033524,
+   "spawn_key": [
+    1000,
+    900,
+    29
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1-rho0.9-i029-base/POPULARITY",
+   "runtime_s": 0.26078254200547235,
+   "spawn_key": [
+    1000,
+    900,
+    29
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1-rho0.9-i029-base/EXPOSURE_BALANCED",
+   "runtime_s": 0.15342791700095404,
+   "spawn_key": [
+    1000,
+    900,
+    29
+   ]
+  },
+  {
+   "peak_traced_bytes": 2367564,
+   "run_id": "EXP-001/r1.1-rho0-i000-base/RANDOM",
+   "runtime_s": 0.1373983750017942,
+   "spawn_key": [
+    1100,
+    0,
+    0
+   ]
+  },
+  {
+   "peak_traced_bytes": 2366884,
+   "run_id": "EXP-001/r1.1-rho0-i000-base/POPULARITY",
+   "runtime_s": 0.13103291700099362,
+   "spawn_key": [
+    1100,
+    0,
+    0
+   ]
+  },
+  {
+   "peak_traced_bytes": 2367532,
+   "run_id": "EXP-001/r1.1-rho0-i000-base/EXPOSURE_BALANCED",
+   "runtime_s": 0.09275387499656063,
+   "spawn_key": [
+    1100,
+    0,
+    0
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.1-rho0-i001-base/RANDOM",
+   "runtime_s": 0.06992920799530111,
+   "spawn_key": [
+    1100,
+    0,
+    1
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.1-rho0-i001-base/POPULARITY",
+   "runtime_s": 0.13135370799864177,
+   "spawn_key": [
+    1100,
+    0,
+    1
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.1-rho0-i001-base/EXPOSURE_BALANCED",
+   "runtime_s": 0.11429237500124145,
+   "spawn_key": [
+    1100,
+    0,
+    1
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.1-rho0-i002-base/RANDOM",
+   "runtime_s": 0.06780608400003985,
+   "spawn_key": [
+    1100,
+    0,
+    2
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.1-rho0-i002-base/POPULARITY",
+   "runtime_s": 0.17831499999738298,
+   "spawn_key": [
+    1100,
+    0,
+    2
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.1-rho0-i002-base/EXPOSURE_BALANCED",
+   "runtime_s": 0.13511345800361596,
+   "spawn_key": [
+    1100,
+    0,
+    2
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.1-rho0-i003-base/RANDOM",
+   "runtime_s": 0.08729491700069048,
+   "spawn_key": [
+    1100,
+    0,
+    3
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.1-rho0-i003-base/POPULARITY",
+   "runtime_s": 0.16322708299412625,
+   "spawn_key": [
+    1100,
+    0,
+    3
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.1-rho0-i003-base/EXPOSURE_BALANCED",
+   "runtime_s": 0.08649958400201285,
+   "spawn_key": [
+    1100,
+    0,
+    3
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.1-rho0-i004-base/RANDOM",
+   "runtime_s": 0.06945729099970777,
+   "spawn_key": [
+    1100,
+    0,
+    4
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.1-rho0-i004-base/POPULARITY",
+   "runtime_s": 0.13474662500084378,
+   "spawn_key": [
+    1100,
+    0,
+    4
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.1-rho0-i004-base/EXPOSURE_BALANCED",
+   "runtime_s": 0.07686904100410175,
+   "spawn_key": [
+    1100,
+    0,
+    4
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.1-rho0-i005-base/RANDOM",
+   "runtime_s": 0.07039341599738691,
+   "spawn_key": [
+    1100,
+    0,
+    5
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.1-rho0-i005-base/POPULARITY",
+   "runtime_s": 0.13178770800004713,
+   "spawn_key": [
+    1100,
+    0,
+    5
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.1-rho0-i005-base/EXPOSURE_BALANCED",
+   "runtime_s": 0.07503616699978011,
+   "spawn_key": [
+    1100,
+    0,
+    5
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.1-rho0-i006-base/RANDOM",
+   "runtime_s": 0.0713875419969554,
+   "spawn_key": [
+    1100,
+    0,
+    6
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.1-rho0-i006-base/POPULARITY",
+   "runtime_s": 0.1321902499985299,
+   "spawn_key": [
+    1100,
+    0,
+    6
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.1-rho0-i006-base/EXPOSURE_BALANCED",
+   "runtime_s": 0.07600662500044564,
+   "spawn_key": [
+    1100,
+    0,
+    6
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.1-rho0-i007-base/RANDOM",
+   "runtime_s": 0.07124308299535187,
+   "spawn_key": [
+    1100,
+    0,
+    7
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.1-rho0-i007-base/POPULARITY",
+   "runtime_s": 0.13087733399879653,
+   "spawn_key": [
+    1100,
+    0,
+    7
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.1-rho0-i007-base/EXPOSURE_BALANCED",
+   "runtime_s": 0.07845616599661298,
+   "spawn_key": [
+    1100,
+    0,
+    7
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.1-rho0-i008-base/RANDOM",
+   "runtime_s": 0.07200670900056139,
+   "spawn_key": [
+    1100,
+    0,
+    8
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.1-rho0-i008-base/POPULARITY",
+   "runtime_s": 0.14258208299725084,
+   "spawn_key": [
+    1100,
+    0,
+    8
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.1-rho0-i008-base/EXPOSURE_BALANCED",
+   "runtime_s": 0.09253191699826857,
+   "spawn_key": [
+    1100,
+    0,
+    8
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.1-rho0-i009-base/RANDOM",
+   "runtime_s": 0.0729728329970385,
+   "spawn_key": [
+    1100,
+    0,
+    9
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.1-rho0-i009-base/POPULARITY",
+   "runtime_s": 0.13204337500064867,
+   "spawn_key": [
+    1100,
+    0,
+    9
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.1-rho0-i009-base/EXPOSURE_BALANCED",
+   "runtime_s": 0.08039454100071453,
+   "spawn_key": [
+    1100,
+    0,
+    9
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.1-rho0-i010-base/RANDOM",
+   "runtime_s": 0.07035337499837624,
+   "spawn_key": [
+    1100,
+    0,
+    10
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.1-rho0-i010-base/POPULARITY",
+   "runtime_s": 0.14852991700172424,
+   "spawn_key": [
+    1100,
+    0,
+    10
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.1-rho0-i010-base/EXPOSURE_BALANCED",
+   "runtime_s": 0.07772829199529951,
+   "spawn_key": [
+    1100,
+    0,
+    10
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.1-rho0-i011-base/RANDOM",
+   "runtime_s": 0.07109183300053701,
+   "spawn_key": [
+    1100,
+    0,
+    11
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.1-rho0-i011-base/POPULARITY",
+   "runtime_s": 0.1324993340022047,
+   "spawn_key": [
+    1100,
+    0,
+    11
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.1-rho0-i011-base/EXPOSURE_BALANCED",
+   "runtime_s": 0.08026816599885933,
+   "spawn_key": [
+    1100,
+    0,
+    11
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.1-rho0-i012-base/RANDOM",
+   "runtime_s": 0.07024391699815169,
+   "spawn_key": [
+    1100,
+    0,
+    12
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.1-rho0-i012-base/POPULARITY",
+   "runtime_s": 0.13091854100639466,
+   "spawn_key": [
+    1100,
+    0,
+    12
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.1-rho0-i012-base/EXPOSURE_BALANCED",
+   "runtime_s": 0.09017012499680277,
+   "spawn_key": [
+    1100,
+    0,
+    12
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.1-rho0-i013-base/RANDOM",
+   "runtime_s": 0.09444933299528202,
+   "spawn_key": [
+    1100,
+    0,
+    13
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.1-rho0-i013-base/POPULARITY",
+   "runtime_s": 0.1763723750045756,
+   "spawn_key": [
+    1100,
+    0,
+    13
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.1-rho0-i013-base/EXPOSURE_BALANCED",
+   "runtime_s": 0.08894866600167006,
+   "spawn_key": [
+    1100,
+    0,
+    13
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.1-rho0-i014-base/RANDOM",
+   "runtime_s": 0.07390537500032224,
+   "spawn_key": [
+    1100,
+    0,
+    14
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.1-rho0-i014-base/POPULARITY",
+   "runtime_s": 0.1337498749999213,
+   "spawn_key": [
+    1100,
+    0,
+    14
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.1-rho0-i014-base/EXPOSURE_BALANCED",
+   "runtime_s": 0.0766015840054024,
+   "spawn_key": [
+    1100,
+    0,
+    14
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.1-rho0-i015-base/RANDOM",
+   "runtime_s": 0.07336058399960166,
+   "spawn_key": [
+    1100,
+    0,
+    15
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.1-rho0-i015-base/POPULARITY",
+   "runtime_s": 0.13834616700478364,
+   "spawn_key": [
+    1100,
+    0,
+    15
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.1-rho0-i015-base/EXPOSURE_BALANCED",
+   "runtime_s": 0.08891925000352785,
+   "spawn_key": [
+    1100,
+    0,
+    15
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.1-rho0-i016-base/RANDOM",
+   "runtime_s": 0.07669441600592108,
+   "spawn_key": [
+    1100,
+    0,
+    16
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.1-rho0-i016-base/POPULARITY",
+   "runtime_s": 0.1586777920019813,
+   "spawn_key": [
+    1100,
+    0,
+    16
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.1-rho0-i016-base/EXPOSURE_BALANCED",
+   "runtime_s": 0.08591837499989197,
+   "spawn_key": [
+    1100,
+    0,
+    16
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.1-rho0-i017-base/RANDOM",
+   "runtime_s": 0.07647575000009965,
+   "spawn_key": [
+    1100,
+    0,
+    17
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.1-rho0-i017-base/POPULARITY",
+   "runtime_s": 0.1882283750019269,
+   "spawn_key": [
+    1100,
+    0,
+    17
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.1-rho0-i017-base/EXPOSURE_BALANCED",
+   "runtime_s": 0.0751355410029646,
+   "spawn_key": [
+    1100,
+    0,
+    17
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.1-rho0-i018-base/RANDOM",
+   "runtime_s": 0.07013487500080373,
+   "spawn_key": [
+    1100,
+    0,
+    18
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.1-rho0-i018-base/POPULARITY",
+   "runtime_s": 0.1429306659993017,
+   "spawn_key": [
+    1100,
+    0,
+    18
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.1-rho0-i018-base/EXPOSURE_BALANCED",
+   "runtime_s": 0.07726800000091316,
+   "spawn_key": [
+    1100,
+    0,
+    18
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.1-rho0-i019-base/RANDOM",
+   "runtime_s": 0.10946008300379617,
+   "spawn_key": [
+    1100,
+    0,
+    19
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.1-rho0-i019-base/POPULARITY",
+   "runtime_s": 0.1835131249972619,
+   "spawn_key": [
+    1100,
+    0,
+    19
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.1-rho0-i019-base/EXPOSURE_BALANCED",
+   "runtime_s": 0.10840845799975796,
+   "spawn_key": [
+    1100,
+    0,
+    19
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.1-rho0-i020-base/RANDOM",
+   "runtime_s": 0.10622320800030138,
+   "spawn_key": [
+    1100,
+    0,
+    20
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.1-rho0-i020-base/POPULARITY",
+   "runtime_s": 0.14967025000078138,
+   "spawn_key": [
+    1100,
+    0,
+    20
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.1-rho0-i020-base/EXPOSURE_BALANCED",
+   "runtime_s": 0.07533900000271387,
+   "spawn_key": [
+    1100,
+    0,
+    20
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.1-rho0-i021-base/RANDOM",
+   "runtime_s": 0.071050832993933,
+   "spawn_key": [
+    1100,
+    0,
+    21
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.1-rho0-i021-base/POPULARITY",
+   "runtime_s": 0.13982095800020033,
+   "spawn_key": [
+    1100,
+    0,
+    21
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.1-rho0-i021-base/EXPOSURE_BALANCED",
+   "runtime_s": 0.1215825000035693,
+   "spawn_key": [
+    1100,
+    0,
+    21
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.1-rho0-i022-base/RANDOM",
+   "runtime_s": 0.150484999998298,
+   "spawn_key": [
+    1100,
+    0,
+    22
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.1-rho0-i022-base/POPULARITY",
+   "runtime_s": 0.24405424999713432,
+   "spawn_key": [
+    1100,
+    0,
+    22
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.1-rho0-i022-base/EXPOSURE_BALANCED",
+   "runtime_s": 0.10191691700310912,
+   "spawn_key": [
+    1100,
+    0,
+    22
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.1-rho0-i023-base/RANDOM",
+   "runtime_s": 0.10970550000638468,
+   "spawn_key": [
+    1100,
+    0,
+    23
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.1-rho0-i023-base/POPULARITY",
+   "runtime_s": 0.21601379200001247,
+   "spawn_key": [
+    1100,
+    0,
+    23
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.1-rho0-i023-base/EXPOSURE_BALANCED",
+   "runtime_s": 0.1340180830011377,
+   "spawn_key": [
+    1100,
+    0,
+    23
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.1-rho0-i024-base/RANDOM",
+   "runtime_s": 0.25193654200120363,
+   "spawn_key": [
+    1100,
+    0,
+    24
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.1-rho0-i024-base/POPULARITY",
+   "runtime_s": 0.27986529100599,
+   "spawn_key": [
+    1100,
+    0,
+    24
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.1-rho0-i024-base/EXPOSURE_BALANCED",
+   "runtime_s": 0.1070834999991348,
+   "spawn_key": [
+    1100,
+    0,
+    24
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.1-rho0-i025-base/RANDOM",
+   "runtime_s": 0.18816183399758302,
+   "spawn_key": [
+    1100,
+    0,
+    25
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.1-rho0-i025-base/POPULARITY",
+   "runtime_s": 0.27967937500216067,
+   "spawn_key": [
+    1100,
+    0,
+    25
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.1-rho0-i025-base/EXPOSURE_BALANCED",
+   "runtime_s": 0.12696162499923958,
+   "spawn_key": [
+    1100,
+    0,
+    25
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.1-rho0-i026-base/RANDOM",
+   "runtime_s": 0.13033100000029663,
+   "spawn_key": [
+    1100,
+    0,
+    26
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.1-rho0-i026-base/POPULARITY",
+   "runtime_s": 0.2825296669980162,
+   "spawn_key": [
+    1100,
+    0,
+    26
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.1-rho0-i026-base/EXPOSURE_BALANCED",
+   "runtime_s": 0.23237662499741418,
+   "spawn_key": [
+    1100,
+    0,
+    26
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.1-rho0-i027-base/RANDOM",
+   "runtime_s": 0.14419075000478188,
+   "spawn_key": [
+    1100,
+    0,
+    27
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.1-rho0-i027-base/POPULARITY",
+   "runtime_s": 0.493981542000256,
+   "spawn_key": [
+    1100,
+    0,
+    27
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.1-rho0-i027-base/EXPOSURE_BALANCED",
+   "runtime_s": 0.07816708400059724,
+   "spawn_key": [
+    1100,
+    0,
+    27
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.1-rho0-i028-base/RANDOM",
+   "runtime_s": 0.15257300000666874,
+   "spawn_key": [
+    1100,
+    0,
+    28
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.1-rho0-i028-base/POPULARITY",
+   "runtime_s": 0.3429335420005373,
+   "spawn_key": [
+    1100,
+    0,
+    28
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.1-rho0-i028-base/EXPOSURE_BALANCED",
+   "runtime_s": 0.1334348329983186,
+   "spawn_key": [
+    1100,
+    0,
+    28
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.1-rho0-i029-base/RANDOM",
+   "runtime_s": 0.08628791700175498,
+   "spawn_key": [
+    1100,
+    0,
+    29
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.1-rho0-i029-base/POPULARITY",
+   "runtime_s": 0.4116501249955036,
+   "spawn_key": [
+    1100,
+    0,
+    29
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.1-rho0-i029-base/EXPOSURE_BALANCED",
+   "runtime_s": 0.16312495800229954,
+   "spawn_key": [
+    1100,
+    0,
+    29
+   ]
+  },
+  {
+   "peak_traced_bytes": 2367324,
+   "run_id": "EXP-001/r1.1-rho0.5-i000-base/RANDOM",
+   "runtime_s": 0.12182575000042561,
+   "spawn_key": [
+    1100,
+    500,
+    0
+   ]
+  },
+  {
+   "peak_traced_bytes": 2366996,
+   "run_id": "EXP-001/r1.1-rho0.5-i000-base/POPULARITY",
+   "runtime_s": 0.3100876249955036,
+   "spawn_key": [
+    1100,
+    500,
+    0
+   ]
+  },
+  {
+   "peak_traced_bytes": 2367836,
+   "run_id": "EXP-001/r1.1-rho0.5-i000-base/EXPOSURE_BALANCED",
+   "runtime_s": 0.1923564160024398,
+   "spawn_key": [
+    1100,
+    500,
+    0
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.1-rho0.5-i001-base/RANDOM",
+   "runtime_s": 0.13213633299892535,
+   "spawn_key": [
+    1100,
+    500,
+    1
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.1-rho0.5-i001-base/POPULARITY",
+   "runtime_s": 0.2806867089966545,
+   "spawn_key": [
+    1100,
+    500,
+    1
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.1-rho0.5-i001-base/EXPOSURE_BALANCED",
+   "runtime_s": 0.25944650000019465,
+   "spawn_key": [
+    1100,
+    500,
+    1
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.1-rho0.5-i002-base/RANDOM",
+   "runtime_s": 0.15388450000318699,
+   "spawn_key": [
+    1100,
+    500,
+    2
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.1-rho0.5-i002-base/POPULARITY",
+   "runtime_s": 0.4530071670014877,
+   "spawn_key": [
+    1100,
+    500,
+    2
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.1-rho0.5-i002-base/EXPOSURE_BALANCED",
+   "runtime_s": 0.18511687499994878,
+   "spawn_key": [
+    1100,
+    500,
+    2
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.1-rho0.5-i003-base/RANDOM",
+   "runtime_s": 0.15873008299968205,
+   "spawn_key": [
+    1100,
+    500,
+    3
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.1-rho0.5-i003-base/POPULARITY",
+   "runtime_s": 0.41111479100072756,
+   "spawn_key": [
+    1100,
+    500,
+    3
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.1-rho0.5-i003-base/EXPOSURE_BALANCED",
+   "runtime_s": 0.23170495800150093,
+   "spawn_key": [
+    1100,
+    500,
+    3
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.1-rho0.5-i004-base/RANDOM",
+   "runtime_s": 0.17664266599604161,
+   "spawn_key": [
+    1100,
+    500,
+    4
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.1-rho0.5-i004-base/POPULARITY",
+   "runtime_s": 0.338529374996142,
+   "spawn_key": [
+    1100,
+    500,
+    4
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.1-rho0.5-i004-base/EXPOSURE_BALANCED",
+   "runtime_s": 0.18466320799780078,
+   "spawn_key": [
+    1100,
+    500,
+    4
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.1-rho0.5-i005-base/RANDOM",
+   "runtime_s": 0.16736204199696658,
+   "spawn_key": [
+    1100,
+    500,
+    5
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.1-rho0.5-i005-base/POPULARITY",
+   "runtime_s": 0.31149433399696136,
+   "spawn_key": [
+    1100,
+    500,
+    5
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.1-rho0.5-i005-base/EXPOSURE_BALANCED",
+   "runtime_s": 0.19966895800462225,
+   "spawn_key": [
+    1100,
+    500,
+    5
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.1-rho0.5-i006-base/RANDOM",
+   "runtime_s": 0.17643729100382188,
+   "spawn_key": [
+    1100,
+    500,
+    6
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.1-rho0.5-i006-base/POPULARITY",
+   "runtime_s": 0.274330624997674,
+   "spawn_key": [
+    1100,
+    500,
+    6
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.1-rho0.5-i006-base/EXPOSURE_BALANCED",
+   "runtime_s": 0.20581562499864958,
+   "spawn_key": [
+    1100,
+    500,
+    6
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.1-rho0.5-i007-base/RANDOM",
+   "runtime_s": 0.15770808399975067,
+   "spawn_key": [
+    1100,
+    500,
+    7
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.1-rho0.5-i007-base/POPULARITY",
+   "runtime_s": 0.2985175000067102,
+   "spawn_key": [
+    1100,
+    500,
+    7
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.1-rho0.5-i007-base/EXPOSURE_BALANCED",
+   "runtime_s": 0.19021329200040782,
+   "spawn_key": [
+    1100,
+    500,
+    7
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.1-rho0.5-i008-base/RANDOM",
+   "runtime_s": 0.20335245900059817,
+   "spawn_key": [
+    1100,
+    500,
+    8
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.1-rho0.5-i008-base/POPULARITY",
+   "runtime_s": 0.32049404099961976,
+   "spawn_key": [
+    1100,
+    500,
+    8
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.1-rho0.5-i008-base/EXPOSURE_BALANCED",
+   "runtime_s": 0.23073862500314135,
+   "spawn_key": [
+    1100,
+    500,
+    8
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.1-rho0.5-i009-base/RANDOM",
+   "runtime_s": 0.2519352919989615,
+   "spawn_key": [
+    1100,
+    500,
+    9
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.1-rho0.5-i009-base/POPULARITY",
+   "runtime_s": 0.2937400000009802,
+   "spawn_key": [
+    1100,
+    500,
+    9
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.1-rho0.5-i009-base/EXPOSURE_BALANCED",
+   "runtime_s": 0.11738087500270922,
+   "spawn_key": [
+    1100,
+    500,
+    9
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.1-rho0.5-i010-base/RANDOM",
+   "runtime_s": 0.13046808400395093,
+   "spawn_key": [
+    1100,
+    500,
+    10
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.1-rho0.5-i010-base/POPULARITY",
+   "runtime_s": 0.3074916250043316,
+   "spawn_key": [
+    1100,
+    500,
+    10
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.1-rho0.5-i010-base/EXPOSURE_BALANCED",
+   "runtime_s": 0.22365775000071153,
+   "spawn_key": [
+    1100,
+    500,
+    10
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.1-rho0.5-i011-base/RANDOM",
+   "runtime_s": 0.14817758300341666,
+   "spawn_key": [
+    1100,
+    500,
+    11
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.1-rho0.5-i011-base/POPULARITY",
+   "runtime_s": 0.3182321249987581,
+   "spawn_key": [
+    1100,
+    500,
+    11
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.1-rho0.5-i011-base/EXPOSURE_BALANCED",
+   "runtime_s": 0.2229874580007163,
+   "spawn_key": [
+    1100,
+    500,
+    11
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.1-rho0.5-i012-base/RANDOM",
+   "runtime_s": 0.25591433399677044,
+   "spawn_key": [
+    1100,
+    500,
+    12
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.1-rho0.5-i012-base/POPULARITY",
+   "runtime_s": 0.2681295419970411,
+   "spawn_key": [
+    1100,
+    500,
+    12
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.1-rho0.5-i012-base/EXPOSURE_BALANCED",
+   "runtime_s": 0.23345462499855785,
+   "spawn_key": [
+    1100,
+    500,
+    12
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.1-rho0.5-i013-base/RANDOM",
+   "runtime_s": 0.11763895800686441,
+   "spawn_key": [
+    1100,
+    500,
+    13
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.1-rho0.5-i013-base/POPULARITY",
+   "runtime_s": 0.35706233300152235,
+   "spawn_key": [
+    1100,
+    500,
+    13
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.1-rho0.5-i013-base/EXPOSURE_BALANCED",
+   "runtime_s": 0.2044756659961422,
+   "spawn_key": [
+    1100,
+    500,
+    13
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.1-rho0.5-i014-base/RANDOM",
+   "runtime_s": 0.13395862499601208,
+   "spawn_key": [
+    1100,
+    500,
+    14
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.1-rho0.5-i014-base/POPULARITY",
+   "runtime_s": 0.2796809999999823,
+   "spawn_key": [
+    1100,
+    500,
+    14
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.1-rho0.5-i014-base/EXPOSURE_BALANCED",
+   "runtime_s": 0.1544679169965093,
+   "spawn_key": [
+    1100,
+    500,
+    14
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.1-rho0.5-i015-base/RANDOM",
+   "runtime_s": 0.2589450419982313,
+   "spawn_key": [
+    1100,
+    500,
+    15
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.1-rho0.5-i015-base/POPULARITY",
+   "runtime_s": 0.22280575000331737,
+   "spawn_key": [
+    1100,
+    500,
+    15
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.1-rho0.5-i015-base/EXPOSURE_BALANCED",
+   "runtime_s": 0.2157716250003432,
+   "spawn_key": [
+    1100,
+    500,
+    15
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.1-rho0.5-i016-base/RANDOM",
+   "runtime_s": 0.08337525000388268,
+   "spawn_key": [
+    1100,
+    500,
+    16
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.1-rho0.5-i016-base/POPULARITY",
+   "runtime_s": 0.16014295899367426,
+   "spawn_key": [
+    1100,
+    500,
+    16
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.1-rho0.5-i016-base/EXPOSURE_BALANCED",
+   "runtime_s": 0.0911037080004462,
+   "spawn_key": [
+    1100,
+    500,
+    16
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.1-rho0.5-i017-base/RANDOM",
+   "runtime_s": 0.08618820799893001,
+   "spawn_key": [
+    1100,
+    500,
+    17
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.1-rho0.5-i017-base/POPULARITY",
+   "runtime_s": 0.3495897500033607,
+   "spawn_key": [
+    1100,
+    500,
+    17
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.1-rho0.5-i017-base/EXPOSURE_BALANCED",
+   "runtime_s": 0.17312041699915426,
+   "spawn_key": [
+    1100,
+    500,
+    17
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.1-rho0.5-i018-base/RANDOM",
+   "runtime_s": 0.2262059999993653,
+   "spawn_key": [
+    1100,
+    500,
+    18
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.1-rho0.5-i018-base/POPULARITY",
+   "runtime_s": 0.2750269579992164,
+   "spawn_key": [
+    1100,
+    500,
+    18
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.1-rho0.5-i018-base/EXPOSURE_BALANCED",
+   "runtime_s": 0.23964908400375862,
+   "spawn_key": [
+    1100,
+    500,
+    18
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.1-rho0.5-i019-base/RANDOM",
+   "runtime_s": 0.17263254200224765,
+   "spawn_key": [
+    1100,
+    500,
+    19
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.1-rho0.5-i019-base/POPULARITY",
+   "runtime_s": 0.49143795800046064,
+   "spawn_key": [
+    1100,
+    500,
+    19
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.1-rho0.5-i019-base/EXPOSURE_BALANCED",
+   "runtime_s": 0.28680016699945554,
+   "spawn_key": [
+    1100,
+    500,
+    19
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.1-rho0.5-i020-base/RANDOM",
+   "runtime_s": 0.14875329200003762,
+   "spawn_key": [
+    1100,
+    500,
+    20
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.1-rho0.5-i020-base/POPULARITY",
+   "runtime_s": 0.4152701659986633,
+   "spawn_key": [
+    1100,
+    500,
+    20
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.1-rho0.5-i020-base/EXPOSURE_BALANCED",
+   "runtime_s": 0.33226733400078956,
+   "spawn_key": [
+    1100,
+    500,
+    20
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.1-rho0.5-i021-base/RANDOM",
+   "runtime_s": 0.2543422919989098,
+   "spawn_key": [
+    1100,
+    500,
+    21
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.1-rho0.5-i021-base/POPULARITY",
+   "runtime_s": 0.49971124999865424,
+   "spawn_key": [
+    1100,
+    500,
+    21
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.1-rho0.5-i021-base/EXPOSURE_BALANCED",
+   "runtime_s": 0.18854016700061038,
+   "spawn_key": [
+    1100,
+    500,
+    21
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.1-rho0.5-i022-base/RANDOM",
+   "runtime_s": 0.2912629589991411,
+   "spawn_key": [
+    1100,
+    500,
+    22
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.1-rho0.5-i022-base/POPULARITY",
+   "runtime_s": 0.5424026670007152,
+   "spawn_key": [
+    1100,
+    500,
+    22
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.1-rho0.5-i022-base/EXPOSURE_BALANCED",
+   "runtime_s": 0.14234104200295405,
+   "spawn_key": [
+    1100,
+    500,
+    22
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.1-rho0.5-i023-base/RANDOM",
+   "runtime_s": 0.20197579199884785,
+   "spawn_key": [
+    1100,
+    500,
+    23
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.1-rho0.5-i023-base/POPULARITY",
+   "runtime_s": 0.35763083300116705,
+   "spawn_key": [
+    1100,
+    500,
+    23
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.1-rho0.5-i023-base/EXPOSURE_BALANCED",
+   "runtime_s": 0.22079391699662665,
+   "spawn_key": [
+    1100,
+    500,
+    23
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.1-rho0.5-i024-base/RANDOM",
+   "runtime_s": 0.10789795799792046,
+   "spawn_key": [
+    1100,
+    500,
+    24
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.1-rho0.5-i024-base/POPULARITY",
+   "runtime_s": 0.3584136249992298,
+   "spawn_key": [
+    1100,
+    500,
+    24
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.1-rho0.5-i024-base/EXPOSURE_BALANCED",
+   "runtime_s": 0.26958183299575467,
+   "spawn_key": [
+    1100,
+    500,
+    24
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.1-rho0.5-i025-base/RANDOM",
+   "runtime_s": 0.19816812499630032,
+   "spawn_key": [
+    1100,
+    500,
+    25
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.1-rho0.5-i025-base/POPULARITY",
+   "runtime_s": 0.3790606249967823,
+   "spawn_key": [
+    1100,
+    500,
+    25
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.1-rho0.5-i025-base/EXPOSURE_BALANCED",
+   "runtime_s": 0.21369508300267626,
+   "spawn_key": [
+    1100,
+    500,
+    25
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.1-rho0.5-i026-base/RANDOM",
+   "runtime_s": 0.21159308400092414,
+   "spawn_key": [
+    1100,
+    500,
+    26
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.1-rho0.5-i026-base/POPULARITY",
+   "runtime_s": 0.3085468339995714,
+   "spawn_key": [
+    1100,
+    500,
+    26
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.1-rho0.5-i026-base/EXPOSURE_BALANCED",
+   "runtime_s": 0.18158304200187558,
+   "spawn_key": [
+    1100,
+    500,
+    26
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.1-rho0.5-i027-base/RANDOM",
+   "runtime_s": 0.37323683299473487,
+   "spawn_key": [
+    1100,
+    500,
+    27
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.1-rho0.5-i027-base/POPULARITY",
+   "runtime_s": 0.359521083002619,
+   "spawn_key": [
+    1100,
+    500,
+    27
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.1-rho0.5-i027-base/EXPOSURE_BALANCED",
+   "runtime_s": 0.2674263750013779,
+   "spawn_key": [
+    1100,
+    500,
+    27
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.1-rho0.5-i028-base/RANDOM",
+   "runtime_s": 0.2794557499946677,
+   "spawn_key": [
+    1100,
+    500,
+    28
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.1-rho0.5-i028-base/POPULARITY",
+   "runtime_s": 0.43408104199625086,
+   "spawn_key": [
+    1100,
+    500,
+    28
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.1-rho0.5-i028-base/EXPOSURE_BALANCED",
+   "runtime_s": 0.22019516699947417,
+   "spawn_key": [
+    1100,
+    500,
+    28
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.1-rho0.5-i029-base/RANDOM",
+   "runtime_s": 0.28062141699774656,
+   "spawn_key": [
+    1100,
+    500,
+    29
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.1-rho0.5-i029-base/POPULARITY",
+   "runtime_s": 0.34173229199950583,
+   "spawn_key": [
+    1100,
+    500,
+    29
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.1-rho0.5-i029-base/EXPOSURE_BALANCED",
+   "runtime_s": 0.2749226249943604,
+   "spawn_key": [
+    1100,
+    500,
+    29
+   ]
+  },
+  {
+   "peak_traced_bytes": 2367124,
+   "run_id": "EXP-001/r1.1-rho0.9-i000-base/RANDOM",
+   "runtime_s": 0.27853666600276483,
+   "spawn_key": [
+    1100,
+    900,
+    0
+   ]
+  },
+  {
+   "peak_traced_bytes": 2367300,
+   "run_id": "EXP-001/r1.1-rho0.9-i000-base/POPULARITY",
+   "runtime_s": 0.6042869590019109,
+   "spawn_key": [
+    1100,
+    900,
+    0
+   ]
+  },
+  {
+   "peak_traced_bytes": 2367796,
+   "run_id": "EXP-001/r1.1-rho0.9-i000-base/EXPOSURE_BALANCED",
+   "runtime_s": 0.26452204099769006,
+   "spawn_key": [
+    1100,
+    900,
+    0
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.1-rho0.9-i001-base/RANDOM",
+   "runtime_s": 0.3166922090022126,
+   "spawn_key": [
+    1100,
+    900,
+    1
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.1-rho0.9-i001-base/POPULARITY",
+   "runtime_s": 0.388513875004719,
+   "spawn_key": [
+    1100,
+    900,
+    1
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.1-rho0.9-i001-base/EXPOSURE_BALANCED",
+   "runtime_s": 0.09822454099776223,
+   "spawn_key": [
+    1100,
+    900,
+    1
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.1-rho0.9-i002-base/RANDOM",
+   "runtime_s": 0.3517572080017999,
+   "spawn_key": [
+    1100,
+    900,
+    2
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.1-rho0.9-i002-base/POPULARITY",
+   "runtime_s": 0.39156999999977415,
+   "spawn_key": [
+    1100,
+    900,
+    2
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.1-rho0.9-i002-base/EXPOSURE_BALANCED",
+   "runtime_s": 0.23872320800001035,
+   "spawn_key": [
+    1100,
+    900,
+    2
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.1-rho0.9-i003-base/RANDOM",
+   "runtime_s": 0.2624251250017551,
+   "spawn_key": [
+    1100,
+    900,
+    3
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.1-rho0.9-i003-base/POPULARITY",
+   "runtime_s": 0.4340438329963945,
+   "spawn_key": [
+    1100,
+    900,
+    3
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.1-rho0.9-i003-base/EXPOSURE_BALANCED",
+   "runtime_s": 0.2816304589941865,
+   "spawn_key": [
+    1100,
+    900,
+    3
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.1-rho0.9-i004-base/RANDOM",
+   "runtime_s": 0.19433854099770542,
+   "spawn_key": [
+    1100,
+    900,
+    4
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.1-rho0.9-i004-base/POPULARITY",
+   "runtime_s": 0.5843924159999005,
+   "spawn_key": [
+    1100,
+    900,
+    4
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.1-rho0.9-i004-base/EXPOSURE_BALANCED",
+   "runtime_s": 0.35638195800129324,
+   "spawn_key": [
+    1100,
+    900,
+    4
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.1-rho0.9-i005-base/RANDOM",
+   "runtime_s": 0.2569716250000056,
+   "spawn_key": [
+    1100,
+    900,
+    5
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.1-rho0.9-i005-base/POPULARITY",
+   "runtime_s": 0.3751562089964864,
+   "spawn_key": [
+    1100,
+    900,
+    5
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.1-rho0.9-i005-base/EXPOSURE_BALANCED",
+   "runtime_s": 0.17270491700037383,
+   "spawn_key": [
+    1100,
+    900,
+    5
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.1-rho0.9-i006-base/RANDOM",
+   "runtime_s": 0.21573679200082552,
+   "spawn_key": [
+    1100,
+    900,
+    6
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.1-rho0.9-i006-base/POPULARITY",
+   "runtime_s": 0.5863213749980787,
+   "spawn_key": [
+    1100,
+    900,
+    6
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.1-rho0.9-i006-base/EXPOSURE_BALANCED",
+   "runtime_s": 0.18257433400140144,
+   "spawn_key": [
+    1100,
+    900,
+    6
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.1-rho0.9-i007-base/RANDOM",
+   "runtime_s": 0.33262641599867493,
+   "spawn_key": [
+    1100,
+    900,
+    7
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.1-rho0.9-i007-base/POPULARITY",
+   "runtime_s": 0.46655870800168486,
+   "spawn_key": [
+    1100,
+    900,
+    7
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.1-rho0.9-i007-base/EXPOSURE_BALANCED",
+   "runtime_s": 0.4936713749993942,
+   "spawn_key": [
+    1100,
+    900,
+    7
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.1-rho0.9-i008-base/RANDOM",
+   "runtime_s": 0.26954683299845783,
+   "spawn_key": [
+    1100,
+    900,
+    8
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.1-rho0.9-i008-base/POPULARITY",
+   "runtime_s": 0.27448145899688825,
+   "spawn_key": [
+    1100,
+    900,
+    8
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.1-rho0.9-i008-base/EXPOSURE_BALANCED",
+   "runtime_s": 0.4094177079969086,
+   "spawn_key": [
+    1100,
+    900,
+    8
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.1-rho0.9-i009-base/RANDOM",
+   "runtime_s": 0.3318014579999726,
+   "spawn_key": [
+    1100,
+    900,
+    9
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.1-rho0.9-i009-base/POPULARITY",
+   "runtime_s": 0.574923125001078,
+   "spawn_key": [
+    1100,
+    900,
+    9
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.1-rho0.9-i009-base/EXPOSURE_BALANCED",
+   "runtime_s": 0.2503904160039383,
+   "spawn_key": [
+    1100,
+    900,
+    9
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.1-rho0.9-i010-base/RANDOM",
+   "runtime_s": 0.35540608299925225,
+   "spawn_key": [
+    1100,
+    900,
+    10
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.1-rho0.9-i010-base/POPULARITY",
+   "runtime_s": 0.40060000000084983,
+   "spawn_key": [
+    1100,
+    900,
+    10
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.1-rho0.9-i010-base/EXPOSURE_BALANCED",
+   "runtime_s": 0.22267154099972686,
+   "spawn_key": [
+    1100,
+    900,
+    10
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.1-rho0.9-i011-base/RANDOM",
+   "runtime_s": 0.3279861249975511,
+   "spawn_key": [
+    1100,
+    900,
+    11
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.1-rho0.9-i011-base/POPULARITY",
+   "runtime_s": 0.5355740830054856,
+   "spawn_key": [
+    1100,
+    900,
+    11
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.1-rho0.9-i011-base/EXPOSURE_BALANCED",
+   "runtime_s": 0.24696158300503157,
+   "spawn_key": [
+    1100,
+    900,
+    11
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.1-rho0.9-i012-base/RANDOM",
+   "runtime_s": 0.24561220800387673,
+   "spawn_key": [
+    1100,
+    900,
+    12
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.1-rho0.9-i012-base/POPULARITY",
+   "runtime_s": 0.39819824999722186,
+   "spawn_key": [
+    1100,
+    900,
+    12
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.1-rho0.9-i012-base/EXPOSURE_BALANCED",
+   "runtime_s": 0.2799044999992475,
+   "spawn_key": [
+    1100,
+    900,
+    12
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.1-rho0.9-i013-base/RANDOM",
+   "runtime_s": 0.3440598749948549,
+   "spawn_key": [
+    1100,
+    900,
+    13
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.1-rho0.9-i013-base/POPULARITY",
+   "runtime_s": 0.38837641599820927,
+   "spawn_key": [
+    1100,
+    900,
+    13
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.1-rho0.9-i013-base/EXPOSURE_BALANCED",
+   "runtime_s": 0.1800492080001277,
+   "spawn_key": [
+    1100,
+    900,
+    13
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.1-rho0.9-i014-base/RANDOM",
+   "runtime_s": 0.2907513339960133,
+   "spawn_key": [
+    1100,
+    900,
+    14
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.1-rho0.9-i014-base/POPULARITY",
+   "runtime_s": 0.3995630839999649,
+   "spawn_key": [
+    1100,
+    900,
+    14
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.1-rho0.9-i014-base/EXPOSURE_BALANCED",
+   "runtime_s": 0.3565302499991958,
+   "spawn_key": [
+    1100,
+    900,
+    14
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.1-rho0.9-i015-base/RANDOM",
+   "runtime_s": 0.22712229199532885,
+   "spawn_key": [
+    1100,
+    900,
+    15
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.1-rho0.9-i015-base/POPULARITY",
+   "runtime_s": 0.4281515420007054,
+   "spawn_key": [
+    1100,
+    900,
+    15
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.1-rho0.9-i015-base/EXPOSURE_BALANCED",
+   "runtime_s": 0.2734417920000851,
+   "spawn_key": [
+    1100,
+    900,
+    15
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.1-rho0.9-i016-base/RANDOM",
+   "runtime_s": 0.35612808400037466,
+   "spawn_key": [
+    1100,
+    900,
+    16
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.1-rho0.9-i016-base/POPULARITY",
+   "runtime_s": 0.5289786659996025,
+   "spawn_key": [
+    1100,
+    900,
+    16
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.1-rho0.9-i016-base/EXPOSURE_BALANCED",
+   "runtime_s": 0.25990695799555397,
+   "spawn_key": [
+    1100,
+    900,
+    16
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.1-rho0.9-i017-base/RANDOM",
+   "runtime_s": 0.2904697909980314,
+   "spawn_key": [
+    1100,
+    900,
+    17
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.1-rho0.9-i017-base/POPULARITY",
+   "runtime_s": 0.45259258300211513,
+   "spawn_key": [
+    1100,
+    900,
+    17
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.1-rho0.9-i017-base/EXPOSURE_BALANCED",
+   "runtime_s": 0.3126172080010292,
+   "spawn_key": [
+    1100,
+    900,
+    17
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.1-rho0.9-i018-base/RANDOM",
+   "runtime_s": 0.17426049999630777,
+   "spawn_key": [
+    1100,
+    900,
+    18
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.1-rho0.9-i018-base/POPULARITY",
+   "runtime_s": 0.5302229589942726,
+   "spawn_key": [
+    1100,
+    900,
+    18
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.1-rho0.9-i018-base/EXPOSURE_BALANCED",
+   "runtime_s": 0.30173162500432227,
+   "spawn_key": [
+    1100,
+    900,
+    18
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.1-rho0.9-i019-base/RANDOM",
+   "runtime_s": 0.321923000003153,
+   "spawn_key": [
+    1100,
+    900,
+    19
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.1-rho0.9-i019-base/POPULARITY",
+   "runtime_s": 0.6816207079973537,
+   "spawn_key": [
+    1100,
+    900,
+    19
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.1-rho0.9-i019-base/EXPOSURE_BALANCED",
+   "runtime_s": 0.3796822500007693,
+   "spawn_key": [
+    1100,
+    900,
+    19
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.1-rho0.9-i020-base/RANDOM",
+   "runtime_s": 0.3825682919996325,
+   "spawn_key": [
+    1100,
+    900,
+    20
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.1-rho0.9-i020-base/POPULARITY",
+   "runtime_s": 0.39532941699872026,
+   "spawn_key": [
+    1100,
+    900,
+    20
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.1-rho0.9-i020-base/EXPOSURE_BALANCED",
+   "runtime_s": 0.3430397079937393,
+   "spawn_key": [
+    1100,
+    900,
+    20
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.1-rho0.9-i021-base/RANDOM",
+   "runtime_s": 0.2763035829993896,
+   "spawn_key": [
+    1100,
+    900,
+    21
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.1-rho0.9-i021-base/POPULARITY",
+   "runtime_s": 0.5077319170013652,
+   "spawn_key": [
+    1100,
+    900,
+    21
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.1-rho0.9-i021-base/EXPOSURE_BALANCED",
+   "runtime_s": 0.3487466660008067,
+   "spawn_key": [
+    1100,
+    900,
+    21
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.1-rho0.9-i022-base/RANDOM",
+   "runtime_s": 0.23032450000027893,
+   "spawn_key": [
+    1100,
+    900,
+    22
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.1-rho0.9-i022-base/POPULARITY",
+   "runtime_s": 0.4065524999969057,
+   "spawn_key": [
+    1100,
+    900,
+    22
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.1-rho0.9-i022-base/EXPOSURE_BALANCED",
+   "runtime_s": 0.1120811659930041,
+   "spawn_key": [
+    1100,
+    900,
+    22
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.1-rho0.9-i023-base/RANDOM",
+   "runtime_s": 0.24235349999798927,
+   "spawn_key": [
+    1100,
+    900,
+    23
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.1-rho0.9-i023-base/POPULARITY",
+   "runtime_s": 0.519656666998344,
+   "spawn_key": [
+    1100,
+    900,
+    23
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.1-rho0.9-i023-base/EXPOSURE_BALANCED",
+   "runtime_s": 0.342665374999342,
+   "spawn_key": [
+    1100,
+    900,
+    23
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.1-rho0.9-i024-base/RANDOM",
+   "runtime_s": 0.28804070800106274,
+   "spawn_key": [
+    1100,
+    900,
+    24
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.1-rho0.9-i024-base/POPULARITY",
+   "runtime_s": 0.4996977090049768,
+   "spawn_key": [
+    1100,
+    900,
+    24
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.1-rho0.9-i024-base/EXPOSURE_BALANCED",
+   "runtime_s": 0.35332433299481636,
+   "spawn_key": [
+    1100,
+    900,
+    24
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.1-rho0.9-i025-base/RANDOM",
+   "runtime_s": 0.2755790840019472,
+   "spawn_key": [
+    1100,
+    900,
+    25
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.1-rho0.9-i025-base/POPULARITY",
+   "runtime_s": 0.5026800420018844,
+   "spawn_key": [
+    1100,
+    900,
+    25
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.1-rho0.9-i025-base/EXPOSURE_BALANCED",
+   "runtime_s": 0.3332092089985963,
+   "spawn_key": [
+    1100,
+    900,
+    25
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.1-rho0.9-i026-base/RANDOM",
+   "runtime_s": 0.300100125001336,
+   "spawn_key": [
+    1100,
+    900,
+    26
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.1-rho0.9-i026-base/POPULARITY",
+   "runtime_s": 0.3736875829999917,
+   "spawn_key": [
+    1100,
+    900,
+    26
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.1-rho0.9-i026-base/EXPOSURE_BALANCED",
+   "runtime_s": 0.4863362079995568,
+   "spawn_key": [
+    1100,
+    900,
+    26
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.1-rho0.9-i027-base/RANDOM",
+   "runtime_s": 0.3251929999969434,
+   "spawn_key": [
+    1100,
+    900,
+    27
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.1-rho0.9-i027-base/POPULARITY",
+   "runtime_s": 0.4812816659978125,
+   "spawn_key": [
+    1100,
+    900,
+    27
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.1-rho0.9-i027-base/EXPOSURE_BALANCED",
+   "runtime_s": 0.3380946250035777,
+   "spawn_key": [
+    1100,
+    900,
+    27
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.1-rho0.9-i028-base/RANDOM",
+   "runtime_s": 0.24329025000042748,
+   "spawn_key": [
+    1100,
+    900,
+    28
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.1-rho0.9-i028-base/POPULARITY",
+   "runtime_s": 0.408685250004055,
+   "spawn_key": [
+    1100,
+    900,
+    28
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.1-rho0.9-i028-base/EXPOSURE_BALANCED",
+   "runtime_s": 0.4435300000041025,
+   "spawn_key": [
+    1100,
+    900,
+    28
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.1-rho0.9-i029-base/RANDOM",
+   "runtime_s": 0.17951366700435756,
+   "spawn_key": [
+    1100,
+    900,
+    29
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.1-rho0.9-i029-base/POPULARITY",
+   "runtime_s": 0.4956777909974335,
+   "spawn_key": [
+    1100,
+    900,
+    29
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.1-rho0.9-i029-base/EXPOSURE_BALANCED",
+   "runtime_s": 0.39905741699476494,
+   "spawn_key": [
+    1100,
+    900,
+    29
+   ]
+  },
+  {
+   "peak_traced_bytes": 3221116,
+   "run_id": "EXP-001/r1.5-rho0-i000-base/RANDOM",
+   "runtime_s": 0.31405875000200467,
+   "spawn_key": [
+    1500,
+    0,
+    0
+   ]
+  },
+  {
+   "peak_traced_bytes": 3220604,
+   "run_id": "EXP-001/r1.5-rho0-i000-base/POPULARITY",
+   "runtime_s": 0.7845935000004829,
+   "spawn_key": [
+    1500,
+    0,
+    0
+   ]
+  },
+  {
+   "peak_traced_bytes": 3221764,
+   "run_id": "EXP-001/r1.5-rho0-i000-base/EXPOSURE_BALANCED",
+   "runtime_s": 0.4028269589980482,
+   "spawn_key": [
+    1500,
+    0,
+    0
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.5-rho0-i001-base/RANDOM",
+   "runtime_s": 0.2703529999998864,
+   "spawn_key": [
+    1500,
+    0,
+    1
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.5-rho0-i001-base/POPULARITY",
+   "runtime_s": 0.6435924170000362,
+   "spawn_key": [
+    1500,
+    0,
+    1
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.5-rho0-i001-base/EXPOSURE_BALANCED",
+   "runtime_s": 0.3575231659997371,
+   "spawn_key": [
+    1500,
+    0,
+    1
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.5-rho0-i002-base/RANDOM",
+   "runtime_s": 0.2576459159972728,
+   "spawn_key": [
+    1500,
+    0,
+    2
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.5-rho0-i002-base/POPULARITY",
+   "runtime_s": 0.6351259590010159,
+   "spawn_key": [
+    1500,
+    0,
+    2
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.5-rho0-i002-base/EXPOSURE_BALANCED",
+   "runtime_s": 0.32598229199356865,
+   "spawn_key": [
+    1500,
+    0,
+    2
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.5-rho0-i003-base/RANDOM",
+   "runtime_s": 0.30024437500105705,
+   "spawn_key": [
+    1500,
+    0,
+    3
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.5-rho0-i003-base/POPULARITY",
+   "runtime_s": 0.48068933300237404,
+   "spawn_key": [
+    1500,
+    0,
+    3
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.5-rho0-i003-base/EXPOSURE_BALANCED",
+   "runtime_s": 0.28281683300156146,
+   "spawn_key": [
+    1500,
+    0,
+    3
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.5-rho0-i004-base/RANDOM",
+   "runtime_s": 0.19478574999811826,
+   "spawn_key": [
+    1500,
+    0,
+    4
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.5-rho0-i004-base/POPULARITY",
+   "runtime_s": 0.5947289579999051,
+   "spawn_key": [
+    1500,
+    0,
+    4
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.5-rho0-i004-base/EXPOSURE_BALANCED",
+   "runtime_s": 0.2764977499973611,
+   "spawn_key": [
+    1500,
+    0,
+    4
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.5-rho0-i005-base/RANDOM",
+   "runtime_s": 0.28975395900488365,
+   "spawn_key": [
+    1500,
+    0,
+    5
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.5-rho0-i005-base/POPULARITY",
+   "runtime_s": 0.5860841250032536,
+   "spawn_key": [
+    1500,
+    0,
+    5
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.5-rho0-i005-base/EXPOSURE_BALANCED",
+   "runtime_s": 0.33499662499525584,
+   "spawn_key": [
+    1500,
+    0,
+    5
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.5-rho0-i006-base/RANDOM",
+   "runtime_s": 0.31598604199825786,
+   "spawn_key": [
+    1500,
+    0,
+    6
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.5-rho0-i006-base/POPULARITY",
+   "runtime_s": 0.5978914580045966,
+   "spawn_key": [
+    1500,
+    0,
+    6
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.5-rho0-i006-base/EXPOSURE_BALANCED",
+   "runtime_s": 0.4425164999993285,
+   "spawn_key": [
+    1500,
+    0,
+    6
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.5-rho0-i007-base/RANDOM",
+   "runtime_s": 0.2456067079983768,
+   "spawn_key": [
+    1500,
+    0,
+    7
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.5-rho0-i007-base/POPULARITY",
+   "runtime_s": 0.5030202920024749,
+   "spawn_key": [
+    1500,
+    0,
+    7
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.5-rho0-i007-base/EXPOSURE_BALANCED",
+   "runtime_s": 0.3129592920013238,
+   "spawn_key": [
+    1500,
+    0,
+    7
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.5-rho0-i008-base/RANDOM",
+   "runtime_s": 0.27955679199658334,
+   "spawn_key": [
+    1500,
+    0,
+    8
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.5-rho0-i008-base/POPULARITY",
+   "runtime_s": 0.6184108330053277,
+   "spawn_key": [
+    1500,
+    0,
+    8
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.5-rho0-i008-base/EXPOSURE_BALANCED",
+   "runtime_s": 0.39163524999457877,
+   "spawn_key": [
+    1500,
+    0,
+    8
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.5-rho0-i009-base/RANDOM",
+   "runtime_s": 0.33382395900116535,
+   "spawn_key": [
+    1500,
+    0,
+    9
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.5-rho0-i009-base/POPULARITY",
+   "runtime_s": 0.682994457994937,
+   "spawn_key": [
+    1500,
+    0,
+    9
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.5-rho0-i009-base/EXPOSURE_BALANCED",
+   "runtime_s": 0.37869495800259756,
+   "spawn_key": [
+    1500,
+    0,
+    9
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.5-rho0-i010-base/RANDOM",
+   "runtime_s": 0.17652375000034226,
+   "spawn_key": [
+    1500,
+    0,
+    10
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.5-rho0-i010-base/POPULARITY",
+   "runtime_s": 0.648217250003654,
+   "spawn_key": [
+    1500,
+    0,
+    10
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.5-rho0-i010-base/EXPOSURE_BALANCED",
+   "runtime_s": 0.26045000000158325,
+   "spawn_key": [
+    1500,
+    0,
+    10
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.5-rho0-i011-base/RANDOM",
+   "runtime_s": 0.43523458400159143,
+   "spawn_key": [
+    1500,
+    0,
+    11
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.5-rho0-i011-base/POPULARITY",
+   "runtime_s": 0.6609509999980219,
+   "spawn_key": [
+    1500,
+    0,
+    11
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.5-rho0-i011-base/EXPOSURE_BALANCED",
+   "runtime_s": 0.34412900000461377,
+   "spawn_key": [
+    1500,
+    0,
+    11
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.5-rho0-i012-base/RANDOM",
+   "runtime_s": 0.30766025000048103,
+   "spawn_key": [
+    1500,
+    0,
+    12
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.5-rho0-i012-base/POPULARITY",
+   "runtime_s": 0.5441311670001596,
+   "spawn_key": [
+    1500,
+    0,
+    12
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.5-rho0-i012-base/EXPOSURE_BALANCED",
+   "runtime_s": 0.3581194170037634,
+   "spawn_key": [
+    1500,
+    0,
+    12
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.5-rho0-i013-base/RANDOM",
+   "runtime_s": 0.3290956249984447,
+   "spawn_key": [
+    1500,
+    0,
+    13
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.5-rho0-i013-base/POPULARITY",
+   "runtime_s": 0.4600123749987688,
+   "spawn_key": [
+    1500,
+    0,
+    13
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.5-rho0-i013-base/EXPOSURE_BALANCED",
+   "runtime_s": 0.40421183300350094,
+   "spawn_key": [
+    1500,
+    0,
+    13
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.5-rho0-i014-base/RANDOM",
+   "runtime_s": 0.34402058299747296,
+   "spawn_key": [
+    1500,
+    0,
+    14
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.5-rho0-i014-base/POPULARITY",
+   "runtime_s": 0.5556419580025249,
+   "spawn_key": [
+    1500,
+    0,
+    14
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.5-rho0-i014-base/EXPOSURE_BALANCED",
+   "runtime_s": 0.2942087499977788,
+   "spawn_key": [
+    1500,
+    0,
+    14
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.5-rho0-i015-base/RANDOM",
+   "runtime_s": 0.283166875000461,
+   "spawn_key": [
+    1500,
+    0,
+    15
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.5-rho0-i015-base/POPULARITY",
+   "runtime_s": 0.511726415999874,
+   "spawn_key": [
+    1500,
+    0,
+    15
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.5-rho0-i015-base/EXPOSURE_BALANCED",
+   "runtime_s": 0.348451167003077,
+   "spawn_key": [
+    1500,
+    0,
+    15
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.5-rho0-i016-base/RANDOM",
+   "runtime_s": 0.3378721659973962,
+   "spawn_key": [
+    1500,
+    0,
+    16
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.5-rho0-i016-base/POPULARITY",
+   "runtime_s": 0.5895906670048134,
+   "spawn_key": [
+    1500,
+    0,
+    16
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.5-rho0-i016-base/EXPOSURE_BALANCED",
+   "runtime_s": 0.3767521250047139,
+   "spawn_key": [
+    1500,
+    0,
+    16
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.5-rho0-i017-base/RANDOM",
+   "runtime_s": 0.28157320900209015,
+   "spawn_key": [
+    1500,
+    0,
+    17
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.5-rho0-i017-base/POPULARITY",
+   "runtime_s": 0.6108868750015972,
+   "spawn_key": [
+    1500,
+    0,
+    17
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.5-rho0-i017-base/EXPOSURE_BALANCED",
+   "runtime_s": 0.3029883749986766,
+   "spawn_key": [
+    1500,
+    0,
+    17
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.5-rho0-i018-base/RANDOM",
+   "runtime_s": 0.30690045800292864,
+   "spawn_key": [
+    1500,
+    0,
+    18
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.5-rho0-i018-base/POPULARITY",
+   "runtime_s": 0.7596957500063581,
+   "spawn_key": [
+    1500,
+    0,
+    18
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.5-rho0-i018-base/EXPOSURE_BALANCED",
+   "runtime_s": 0.4564040830009617,
+   "spawn_key": [
+    1500,
+    0,
+    18
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.5-rho0-i019-base/RANDOM",
+   "runtime_s": 0.10071400000015274,
+   "spawn_key": [
+    1500,
+    0,
+    19
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.5-rho0-i019-base/POPULARITY",
+   "runtime_s": 0.7732240830009687,
+   "spawn_key": [
+    1500,
+    0,
+    19
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.5-rho0-i019-base/EXPOSURE_BALANCED",
+   "runtime_s": 0.21324995799659519,
+   "spawn_key": [
+    1500,
+    0,
+    19
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.5-rho0-i020-base/RANDOM",
+   "runtime_s": 0.3241931669981568,
+   "spawn_key": [
+    1500,
+    0,
+    20
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.5-rho0-i020-base/POPULARITY",
+   "runtime_s": 0.5081490410011611,
+   "spawn_key": [
+    1500,
+    0,
+    20
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.5-rho0-i020-base/EXPOSURE_BALANCED",
+   "runtime_s": 0.25935520799976075,
+   "spawn_key": [
+    1500,
+    0,
+    20
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.5-rho0-i021-base/RANDOM",
+   "runtime_s": 0.3279053330043098,
+   "spawn_key": [
+    1500,
+    0,
+    21
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.5-rho0-i021-base/POPULARITY",
+   "runtime_s": 0.4453917499995441,
+   "spawn_key": [
+    1500,
+    0,
+    21
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.5-rho0-i021-base/EXPOSURE_BALANCED",
+   "runtime_s": 0.3246551249976619,
+   "spawn_key": [
+    1500,
+    0,
+    21
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.5-rho0-i022-base/RANDOM",
+   "runtime_s": 0.29741191700304626,
+   "spawn_key": [
+    1500,
+    0,
+    22
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.5-rho0-i022-base/POPULARITY",
+   "runtime_s": 0.5513119579991326,
+   "spawn_key": [
+    1500,
+    0,
+    22
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.5-rho0-i022-base/EXPOSURE_BALANCED",
+   "runtime_s": 0.27902000000176486,
+   "spawn_key": [
+    1500,
+    0,
+    22
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.5-rho0-i023-base/RANDOM",
+   "runtime_s": 0.19934120800462551,
+   "spawn_key": [
+    1500,
+    0,
+    23
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.5-rho0-i023-base/POPULARITY",
+   "runtime_s": 0.7081962080046651,
+   "spawn_key": [
+    1500,
+    0,
+    23
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.5-rho0-i023-base/EXPOSURE_BALANCED",
+   "runtime_s": 0.3503472079974017,
+   "spawn_key": [
+    1500,
+    0,
+    23
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.5-rho0-i024-base/RANDOM",
+   "runtime_s": 0.15689541699975962,
+   "spawn_key": [
+    1500,
+    0,
+    24
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.5-rho0-i024-base/POPULARITY",
+   "runtime_s": 0.5568252499942901,
+   "spawn_key": [
+    1500,
+    0,
+    24
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.5-rho0-i024-base/EXPOSURE_BALANCED",
+   "runtime_s": 0.37884295800176915,
+   "spawn_key": [
+    1500,
+    0,
+    24
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.5-rho0-i025-base/RANDOM",
+   "runtime_s": 0.22078862500347896,
+   "spawn_key": [
+    1500,
+    0,
+    25
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.5-rho0-i025-base/POPULARITY",
+   "runtime_s": 0.4010492500019609,
+   "spawn_key": [
+    1500,
+    0,
+    25
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.5-rho0-i025-base/EXPOSURE_BALANCED",
+   "runtime_s": 0.26492299999517854,
+   "spawn_key": [
+    1500,
+    0,
+    25
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.5-rho0-i026-base/RANDOM",
+   "runtime_s": 0.32485874999838416,
+   "spawn_key": [
+    1500,
+    0,
+    26
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.5-rho0-i026-base/POPULARITY",
+   "runtime_s": 0.5666390830010641,
+   "spawn_key": [
+    1500,
+    0,
+    26
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.5-rho0-i026-base/EXPOSURE_BALANCED",
+   "runtime_s": 0.2985712500012596,
+   "spawn_key": [
+    1500,
+    0,
+    26
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.5-rho0-i027-base/RANDOM",
+   "runtime_s": 0.36250079199817264,
+   "spawn_key": [
+    1500,
+    0,
+    27
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.5-rho0-i027-base/POPULARITY",
+   "runtime_s": 0.6776693330029957,
+   "spawn_key": [
+    1500,
+    0,
+    27
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.5-rho0-i027-base/EXPOSURE_BALANCED",
+   "runtime_s": 0.468244625000807,
+   "spawn_key": [
+    1500,
+    0,
+    27
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.5-rho0-i028-base/RANDOM",
+   "runtime_s": 0.25468158299918287,
+   "spawn_key": [
+    1500,
+    0,
+    28
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.5-rho0-i028-base/POPULARITY",
+   "runtime_s": 0.6790223749994766,
+   "spawn_key": [
+    1500,
+    0,
+    28
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.5-rho0-i028-base/EXPOSURE_BALANCED",
+   "runtime_s": 0.4215439580002567,
+   "spawn_key": [
+    1500,
+    0,
+    28
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.5-rho0-i029-base/RANDOM",
+   "runtime_s": 0.37093299999833107,
+   "spawn_key": [
+    1500,
+    0,
+    29
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.5-rho0-i029-base/POPULARITY",
+   "runtime_s": 0.6528253750002477,
+   "spawn_key": [
+    1500,
+    0,
+    29
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.5-rho0-i029-base/EXPOSURE_BALANCED",
+   "runtime_s": 0.3947280829961528,
+   "spawn_key": [
+    1500,
+    0,
+    29
+   ]
+  },
+  {
+   "peak_traced_bytes": 3221060,
+   "run_id": "EXP-001/r1.5-rho0.5-i000-base/RANDOM",
+   "runtime_s": 0.42145587500272086,
+   "spawn_key": [
+    1500,
+    500,
+    0
+   ]
+  },
+  {
+   "peak_traced_bytes": 3220748,
+   "run_id": "EXP-001/r1.5-rho0.5-i000-base/POPULARITY",
+   "runtime_s": 0.6599152920025517,
+   "spawn_key": [
+    1500,
+    500,
+    0
+   ]
+  },
+  {
+   "peak_traced_bytes": 3221901,
+   "run_id": "EXP-001/r1.5-rho0.5-i000-base/EXPOSURE_BALANCED",
+   "runtime_s": 0.4649934580011177,
+   "spawn_key": [
+    1500,
+    500,
+    0
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.5-rho0.5-i001-base/RANDOM",
+   "runtime_s": 0.21908608300145715,
+   "spawn_key": [
+    1500,
+    500,
+    1
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.5-rho0.5-i001-base/POPULARITY",
+   "runtime_s": 0.5542857499967795,
+   "spawn_key": [
+    1500,
+    500,
+    1
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.5-rho0.5-i001-base/EXPOSURE_BALANCED",
+   "runtime_s": 0.2539089170022635,
+   "spawn_key": [
+    1500,
+    500,
+    1
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.5-rho0.5-i002-base/RANDOM",
+   "runtime_s": 0.24801837500126567,
+   "spawn_key": [
+    1500,
+    500,
+    2
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.5-rho0.5-i002-base/POPULARITY",
+   "runtime_s": 0.5239635840043775,
+   "spawn_key": [
+    1500,
+    500,
+    2
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.5-rho0.5-i002-base/EXPOSURE_BALANCED",
+   "runtime_s": 0.3477740829985123,
+   "spawn_key": [
+    1500,
+    500,
+    2
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.5-rho0.5-i003-base/RANDOM",
+   "runtime_s": 0.2768587500031572,
+   "spawn_key": [
+    1500,
+    500,
+    3
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.5-rho0.5-i003-base/POPULARITY",
+   "runtime_s": 0.5458768339958624,
+   "spawn_key": [
+    1500,
+    500,
+    3
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.5-rho0.5-i003-base/EXPOSURE_BALANCED",
+   "runtime_s": 0.3357603340045898,
+   "spawn_key": [
+    1500,
+    500,
+    3
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.5-rho0.5-i004-base/RANDOM",
+   "runtime_s": 0.37333212500379886,
+   "spawn_key": [
+    1500,
+    500,
+    4
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.5-rho0.5-i004-base/POPULARITY",
+   "runtime_s": 0.5282807499970659,
+   "spawn_key": [
+    1500,
+    500,
+    4
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.5-rho0.5-i004-base/EXPOSURE_BALANCED",
+   "runtime_s": 0.40098566700180527,
+   "spawn_key": [
+    1500,
+    500,
+    4
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.5-rho0.5-i005-base/RANDOM",
+   "runtime_s": 0.3666819999998552,
+   "spawn_key": [
+    1500,
+    500,
+    5
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.5-rho0.5-i005-base/POPULARITY",
+   "runtime_s": 0.53363216699654,
+   "spawn_key": [
+    1500,
+    500,
+    5
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.5-rho0.5-i005-base/EXPOSURE_BALANCED",
+   "runtime_s": 0.26415320800151676,
+   "spawn_key": [
+    1500,
+    500,
+    5
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.5-rho0.5-i006-base/RANDOM",
+   "runtime_s": 0.3407754580039182,
+   "spawn_key": [
+    1500,
+    500,
+    6
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.5-rho0.5-i006-base/POPULARITY",
+   "runtime_s": 0.5117212920013117,
+   "spawn_key": [
+    1500,
+    500,
+    6
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.5-rho0.5-i006-base/EXPOSURE_BALANCED",
+   "runtime_s": 0.15280962500401074,
+   "spawn_key": [
+    1500,
+    500,
+    6
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.5-rho0.5-i007-base/RANDOM",
+   "runtime_s": 0.2907362080004532,
+   "spawn_key": [
+    1500,
+    500,
+    7
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.5-rho0.5-i007-base/POPULARITY",
+   "runtime_s": 0.5026410420032335,
+   "spawn_key": [
+    1500,
+    500,
+    7
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.5-rho0.5-i007-base/EXPOSURE_BALANCED",
+   "runtime_s": 0.263780624998617,
+   "spawn_key": [
+    1500,
+    500,
+    7
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.5-rho0.5-i008-base/RANDOM",
+   "runtime_s": 0.25654116600344423,
+   "spawn_key": [
+    1500,
+    500,
+    8
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.5-rho0.5-i008-base/POPULARITY",
+   "runtime_s": 0.4508888330019545,
+   "spawn_key": [
+    1500,
+    500,
+    8
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.5-rho0.5-i008-base/EXPOSURE_BALANCED",
+   "runtime_s": 0.3603067500007455,
+   "spawn_key": [
+    1500,
+    500,
+    8
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.5-rho0.5-i009-base/RANDOM",
+   "runtime_s": 0.2783928329954506,
+   "spawn_key": [
+    1500,
+    500,
+    9
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.5-rho0.5-i009-base/POPULARITY",
+   "runtime_s": 0.5657756669970695,
+   "spawn_key": [
+    1500,
+    500,
+    9
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.5-rho0.5-i009-base/EXPOSURE_BALANCED",
+   "runtime_s": 0.20466308400500566,
+   "spawn_key": [
+    1500,
+    500,
+    9
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.5-rho0.5-i010-base/RANDOM",
+   "runtime_s": 0.29328712500137044,
+   "spawn_key": [
+    1500,
+    500,
+    10
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.5-rho0.5-i010-base/POPULARITY",
+   "runtime_s": 0.48757895799644757,
+   "spawn_key": [
+    1500,
+    500,
+    10
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.5-rho0.5-i010-base/EXPOSURE_BALANCED",
+   "runtime_s": 0.28269149999687215,
+   "spawn_key": [
+    1500,
+    500,
+    10
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.5-rho0.5-i011-base/RANDOM",
+   "runtime_s": 0.3018418749998091,
+   "spawn_key": [
+    1500,
+    500,
+    11
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.5-rho0.5-i011-base/POPULARITY",
+   "runtime_s": 0.38040866699884646,
+   "spawn_key": [
+    1500,
+    500,
+    11
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.5-rho0.5-i011-base/EXPOSURE_BALANCED",
+   "runtime_s": 0.3182337500038557,
+   "spawn_key": [
+    1500,
+    500,
+    11
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.5-rho0.5-i012-base/RANDOM",
+   "runtime_s": 0.30796962499880465,
+   "spawn_key": [
+    1500,
+    500,
+    12
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.5-rho0.5-i012-base/POPULARITY",
+   "runtime_s": 0.3928186250050203,
+   "spawn_key": [
+    1500,
+    500,
+    12
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.5-rho0.5-i012-base/EXPOSURE_BALANCED",
+   "runtime_s": 0.29753262500162236,
+   "spawn_key": [
+    1500,
+    500,
+    12
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.5-rho0.5-i013-base/RANDOM",
+   "runtime_s": 0.27168662499752827,
+   "spawn_key": [
+    1500,
+    500,
+    13
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.5-rho0.5-i013-base/POPULARITY",
+   "runtime_s": 0.5166462080014753,
+   "spawn_key": [
+    1500,
+    500,
+    13
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.5-rho0.5-i013-base/EXPOSURE_BALANCED",
+   "runtime_s": 0.28617229199880967,
+   "spawn_key": [
+    1500,
+    500,
+    13
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.5-rho0.5-i014-base/RANDOM",
+   "runtime_s": 0.19703691700124182,
+   "spawn_key": [
+    1500,
+    500,
+    14
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.5-rho0.5-i014-base/POPULARITY",
+   "runtime_s": 0.48997991700161947,
+   "spawn_key": [
+    1500,
+    500,
+    14
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.5-rho0.5-i014-base/EXPOSURE_BALANCED",
+   "runtime_s": 0.2787754169985419,
+   "spawn_key": [
+    1500,
+    500,
+    14
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.5-rho0.5-i015-base/RANDOM",
+   "runtime_s": 0.22270683399983682,
+   "spawn_key": [
+    1500,
+    500,
+    15
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.5-rho0.5-i015-base/POPULARITY",
+   "runtime_s": 0.6242744589981157,
+   "spawn_key": [
+    1500,
+    500,
+    15
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.5-rho0.5-i015-base/EXPOSURE_BALANCED",
+   "runtime_s": 0.3053659580036765,
+   "spawn_key": [
+    1500,
+    500,
+    15
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.5-rho0.5-i016-base/RANDOM",
+   "runtime_s": 0.29060175000631716,
+   "spawn_key": [
+    1500,
+    500,
+    16
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.5-rho0.5-i016-base/POPULARITY",
+   "runtime_s": 0.6326357500001905,
+   "spawn_key": [
+    1500,
+    500,
+    16
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.5-rho0.5-i016-base/EXPOSURE_BALANCED",
+   "runtime_s": 0.32502787499834085,
+   "spawn_key": [
+    1500,
+    500,
+    16
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.5-rho0.5-i017-base/RANDOM",
+   "runtime_s": 0.31916912499582395,
+   "spawn_key": [
+    1500,
+    500,
+    17
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.5-rho0.5-i017-base/POPULARITY",
+   "runtime_s": 0.4541574169998057,
+   "spawn_key": [
+    1500,
+    500,
+    17
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.5-rho0.5-i017-base/EXPOSURE_BALANCED",
+   "runtime_s": 0.313640000000305,
+   "spawn_key": [
+    1500,
+    500,
+    17
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.5-rho0.5-i018-base/RANDOM",
+   "runtime_s": 0.3192931659941678,
+   "spawn_key": [
+    1500,
+    500,
+    18
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.5-rho0.5-i018-base/POPULARITY",
+   "runtime_s": 0.5348401250012103,
+   "spawn_key": [
+    1500,
+    500,
+    18
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.5-rho0.5-i018-base/EXPOSURE_BALANCED",
+   "runtime_s": 0.2954812919997494,
+   "spawn_key": [
+    1500,
+    500,
+    18
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.5-rho0.5-i019-base/RANDOM",
+   "runtime_s": 0.2879826249991311,
+   "spawn_key": [
+    1500,
+    500,
+    19
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.5-rho0.5-i019-base/POPULARITY",
+   "runtime_s": 0.4368905840019579,
+   "spawn_key": [
+    1500,
+    500,
+    19
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.5-rho0.5-i019-base/EXPOSURE_BALANCED",
+   "runtime_s": 0.25918349999847123,
+   "spawn_key": [
+    1500,
+    500,
+    19
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.5-rho0.5-i020-base/RANDOM",
+   "runtime_s": 0.22017533300095238,
+   "spawn_key": [
+    1500,
+    500,
+    20
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.5-rho0.5-i020-base/POPULARITY",
+   "runtime_s": 0.34359233400027733,
+   "spawn_key": [
+    1500,
+    500,
+    20
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.5-rho0.5-i020-base/EXPOSURE_BALANCED",
+   "runtime_s": 0.30323391599813476,
+   "spawn_key": [
+    1500,
+    500,
+    20
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.5-rho0.5-i021-base/RANDOM",
+   "runtime_s": 0.1812414579981123,
+   "spawn_key": [
+    1500,
+    500,
+    21
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.5-rho0.5-i021-base/POPULARITY",
+   "runtime_s": 0.47465408299467526,
+   "spawn_key": [
+    1500,
+    500,
+    21
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.5-rho0.5-i021-base/EXPOSURE_BALANCED",
+   "runtime_s": 0.2868425409978954,
+   "spawn_key": [
+    1500,
+    500,
+    21
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.5-rho0.5-i022-base/RANDOM",
+   "runtime_s": 0.24698970800091047,
+   "spawn_key": [
+    1500,
+    500,
+    22
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.5-rho0.5-i022-base/POPULARITY",
+   "runtime_s": 0.4197528750009951,
+   "spawn_key": [
+    1500,
+    500,
+    22
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.5-rho0.5-i022-base/EXPOSURE_BALANCED",
+   "runtime_s": 0.23697154199908255,
+   "spawn_key": [
+    1500,
+    500,
+    22
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.5-rho0.5-i023-base/RANDOM",
+   "runtime_s": 0.2363697079999838,
+   "spawn_key": [
+    1500,
+    500,
+    23
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.5-rho0.5-i023-base/POPULARITY",
+   "runtime_s": 0.4739895000020624,
+   "spawn_key": [
+    1500,
+    500,
+    23
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.5-rho0.5-i023-base/EXPOSURE_BALANCED",
+   "runtime_s": 0.25460454199492233,
+   "spawn_key": [
+    1500,
+    500,
+    23
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.5-rho0.5-i024-base/RANDOM",
+   "runtime_s": 0.2242172499973094,
+   "spawn_key": [
+    1500,
+    500,
+    24
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.5-rho0.5-i024-base/POPULARITY",
+   "runtime_s": 0.4387278750000405,
+   "spawn_key": [
+    1500,
+    500,
+    24
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.5-rho0.5-i024-base/EXPOSURE_BALANCED",
+   "runtime_s": 0.21915583300142316,
+   "spawn_key": [
+    1500,
+    500,
+    24
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.5-rho0.5-i025-base/RANDOM",
+   "runtime_s": 0.20362033300625626,
+   "spawn_key": [
+    1500,
+    500,
+    25
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.5-rho0.5-i025-base/POPULARITY",
+   "runtime_s": 0.41773345800174866,
+   "spawn_key": [
+    1500,
+    500,
+    25
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.5-rho0.5-i025-base/EXPOSURE_BALANCED",
+   "runtime_s": 0.22571558300114702,
+   "spawn_key": [
+    1500,
+    500,
+    25
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.5-rho0.5-i026-base/RANDOM",
+   "runtime_s": 0.2120663749956293,
+   "spawn_key": [
+    1500,
+    500,
+    26
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.5-rho0.5-i026-base/POPULARITY",
+   "runtime_s": 0.4500846669980092,
+   "spawn_key": [
+    1500,
+    500,
+    26
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.5-rho0.5-i026-base/EXPOSURE_BALANCED",
+   "runtime_s": 0.2578056659986032,
+   "spawn_key": [
+    1500,
+    500,
+    26
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.5-rho0.5-i027-base/RANDOM",
+   "runtime_s": 0.199072832998354,
+   "spawn_key": [
+    1500,
+    500,
+    27
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.5-rho0.5-i027-base/POPULARITY",
+   "runtime_s": 0.6547723749972647,
+   "spawn_key": [
+    1500,
+    500,
+    27
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.5-rho0.5-i027-base/EXPOSURE_BALANCED",
+   "runtime_s": 0.23804225000640145,
+   "spawn_key": [
+    1500,
+    500,
+    27
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.5-rho0.5-i028-base/RANDOM",
+   "runtime_s": 0.2617638329975307,
+   "spawn_key": [
+    1500,
+    500,
+    28
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.5-rho0.5-i028-base/POPULARITY",
+   "runtime_s": 0.46909566699468996,
+   "spawn_key": [
+    1500,
+    500,
+    28
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.5-rho0.5-i028-base/EXPOSURE_BALANCED",
+   "runtime_s": 0.13782629199704388,
+   "spawn_key": [
+    1500,
+    500,
+    28
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.5-rho0.5-i029-base/RANDOM",
+   "runtime_s": 0.3422653750021709,
+   "spawn_key": [
+    1500,
+    500,
+    29
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.5-rho0.5-i029-base/POPULARITY",
+   "runtime_s": 0.36287904199707555,
+   "spawn_key": [
+    1500,
+    500,
+    29
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.5-rho0.5-i029-base/EXPOSURE_BALANCED",
+   "runtime_s": 0.2722970830000122,
+   "spawn_key": [
+    1500,
+    500,
+    29
+   ]
+  },
+  {
+   "peak_traced_bytes": 3220093,
+   "run_id": "EXP-001/r1.5-rho0.9-i000-base/RANDOM",
+   "runtime_s": 0.34113445800176123,
+   "spawn_key": [
+    1500,
+    900,
+    0
+   ]
+  },
+  {
+   "peak_traced_bytes": 3221076,
+   "run_id": "EXP-001/r1.5-rho0.9-i000-base/POPULARITY",
+   "runtime_s": 0.3448514999981853,
+   "spawn_key": [
+    1500,
+    900,
+    0
+   ]
+  },
+  {
+   "peak_traced_bytes": 3220005,
+   "run_id": "EXP-001/r1.5-rho0.9-i000-base/EXPOSURE_BALANCED",
+   "runtime_s": 0.2982920830036164,
+   "spawn_key": [
+    1500,
+    900,
+    0
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.5-rho0.9-i001-base/RANDOM",
+   "runtime_s": 0.47523679200094193,
+   "spawn_key": [
+    1500,
+    900,
+    1
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.5-rho0.9-i001-base/POPULARITY",
+   "runtime_s": 0.3631702499988023,
+   "spawn_key": [
+    1500,
+    900,
+    1
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.5-rho0.9-i001-base/EXPOSURE_BALANCED",
+   "runtime_s": 0.34279083400178934,
+   "spawn_key": [
+    1500,
+    900,
+    1
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.5-rho0.9-i002-base/RANDOM",
+   "runtime_s": 0.34110962499835296,
+   "spawn_key": [
+    1500,
+    900,
+    2
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.5-rho0.9-i002-base/POPULARITY",
+   "runtime_s": 0.5164577500036103,
+   "spawn_key": [
+    1500,
+    900,
+    2
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.5-rho0.9-i002-base/EXPOSURE_BALANCED",
+   "runtime_s": 0.32712270799675025,
+   "spawn_key": [
+    1500,
+    900,
+    2
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.5-rho0.9-i003-base/RANDOM",
+   "runtime_s": 0.43471833300282015,
+   "spawn_key": [
+    1500,
+    900,
+    3
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.5-rho0.9-i003-base/POPULARITY",
+   "runtime_s": 0.6096299170021666,
+   "spawn_key": [
+    1500,
+    900,
+    3
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.5-rho0.9-i003-base/EXPOSURE_BALANCED",
+   "runtime_s": 0.3040135829942301,
+   "spawn_key": [
+    1500,
+    900,
+    3
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.5-rho0.9-i004-base/RANDOM",
+   "runtime_s": 0.27512558399757836,
+   "spawn_key": [
+    1500,
+    900,
+    4
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.5-rho0.9-i004-base/POPULARITY",
+   "runtime_s": 0.4723958329996094,
+   "spawn_key": [
+    1500,
+    900,
+    4
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.5-rho0.9-i004-base/EXPOSURE_BALANCED",
+   "runtime_s": 0.38446004199795425,
+   "spawn_key": [
+    1500,
+    900,
+    4
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.5-rho0.9-i005-base/RANDOM",
+   "runtime_s": 0.38087595899560256,
+   "spawn_key": [
+    1500,
+    900,
+    5
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.5-rho0.9-i005-base/POPULARITY",
+   "runtime_s": 0.4286728340011905,
+   "spawn_key": [
+    1500,
+    900,
+    5
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.5-rho0.9-i005-base/EXPOSURE_BALANCED",
+   "runtime_s": 0.4438209580039256,
+   "spawn_key": [
+    1500,
+    900,
+    5
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.5-rho0.9-i006-base/RANDOM",
+   "runtime_s": 0.25827879199641757,
+   "spawn_key": [
+    1500,
+    900,
+    6
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.5-rho0.9-i006-base/POPULARITY",
+   "runtime_s": 0.6017741250034305,
+   "spawn_key": [
+    1500,
+    900,
+    6
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.5-rho0.9-i006-base/EXPOSURE_BALANCED",
+   "runtime_s": 0.4176187090051826,
+   "spawn_key": [
+    1500,
+    900,
+    6
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.5-rho0.9-i007-base/RANDOM",
+   "runtime_s": 0.3157128750026459,
+   "spawn_key": [
+    1500,
+    900,
+    7
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.5-rho0.9-i007-base/POPULARITY",
+   "runtime_s": 0.5829052080007386,
+   "spawn_key": [
+    1500,
+    900,
+    7
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.5-rho0.9-i007-base/EXPOSURE_BALANCED",
+   "runtime_s": 0.2416165419999743,
+   "spawn_key": [
+    1500,
+    900,
+    7
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.5-rho0.9-i008-base/RANDOM",
+   "runtime_s": 0.3567477079996024,
+   "spawn_key": [
+    1500,
+    900,
+    8
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.5-rho0.9-i008-base/POPULARITY",
+   "runtime_s": 0.4823767079942627,
+   "spawn_key": [
+    1500,
+    900,
+    8
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.5-rho0.9-i008-base/EXPOSURE_BALANCED",
+   "runtime_s": 0.36507699999492615,
+   "spawn_key": [
+    1500,
+    900,
+    8
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.5-rho0.9-i009-base/RANDOM",
+   "runtime_s": 0.24414354199689114,
+   "spawn_key": [
+    1500,
+    900,
+    9
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.5-rho0.9-i009-base/POPULARITY",
+   "runtime_s": 0.6596539160018438,
+   "spawn_key": [
+    1500,
+    900,
+    9
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.5-rho0.9-i009-base/EXPOSURE_BALANCED",
+   "runtime_s": 0.3227548340000794,
+   "spawn_key": [
+    1500,
+    900,
+    9
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.5-rho0.9-i010-base/RANDOM",
+   "runtime_s": 0.4598384169948986,
+   "spawn_key": [
+    1500,
+    900,
+    10
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.5-rho0.9-i010-base/POPULARITY",
+   "runtime_s": 0.5862509580038022,
+   "spawn_key": [
+    1500,
+    900,
+    10
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.5-rho0.9-i010-base/EXPOSURE_BALANCED",
+   "runtime_s": 0.359503040999698,
+   "spawn_key": [
+    1500,
+    900,
+    10
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.5-rho0.9-i011-base/RANDOM",
+   "runtime_s": 0.3877788750032778,
+   "spawn_key": [
+    1500,
+    900,
+    11
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.5-rho0.9-i011-base/POPULARITY",
+   "runtime_s": 0.3963441250016331,
+   "spawn_key": [
+    1500,
+    900,
+    11
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.5-rho0.9-i011-base/EXPOSURE_BALANCED",
+   "runtime_s": 0.3897495830024127,
+   "spawn_key": [
+    1500,
+    900,
+    11
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.5-rho0.9-i012-base/RANDOM",
+   "runtime_s": 0.3187757500054431,
+   "spawn_key": [
+    1500,
+    900,
+    12
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.5-rho0.9-i012-base/POPULARITY",
+   "runtime_s": 0.4410957079962827,
+   "spawn_key": [
+    1500,
+    900,
+    12
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.5-rho0.9-i012-base/EXPOSURE_BALANCED",
+   "runtime_s": 0.33709025000280235,
+   "spawn_key": [
+    1500,
+    900,
+    12
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.5-rho0.9-i013-base/RANDOM",
+   "runtime_s": 0.2791537919983966,
+   "spawn_key": [
+    1500,
+    900,
+    13
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.5-rho0.9-i013-base/POPULARITY",
+   "runtime_s": 0.4974701669998467,
+   "spawn_key": [
+    1500,
+    900,
+    13
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.5-rho0.9-i013-base/EXPOSURE_BALANCED",
+   "runtime_s": 0.3083280829960131,
+   "spawn_key": [
+    1500,
+    900,
+    13
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.5-rho0.9-i014-base/RANDOM",
+   "runtime_s": 0.27551937499811174,
+   "spawn_key": [
+    1500,
+    900,
+    14
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.5-rho0.9-i014-base/POPULARITY",
+   "runtime_s": 0.43479145799938124,
+   "spawn_key": [
+    1500,
+    900,
+    14
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.5-rho0.9-i014-base/EXPOSURE_BALANCED",
+   "runtime_s": 0.28854866699839476,
+   "spawn_key": [
+    1500,
+    900,
+    14
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.5-rho0.9-i015-base/RANDOM",
+   "runtime_s": 0.36355908300174633,
+   "spawn_key": [
+    1500,
+    900,
+    15
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.5-rho0.9-i015-base/POPULARITY",
+   "runtime_s": 0.5063241250027204,
+   "spawn_key": [
+    1500,
+    900,
+    15
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.5-rho0.9-i015-base/EXPOSURE_BALANCED",
+   "runtime_s": 0.33375695800350513,
+   "spawn_key": [
+    1500,
+    900,
+    15
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.5-rho0.9-i016-base/RANDOM",
+   "runtime_s": 0.3740956250039744,
+   "spawn_key": [
+    1500,
+    900,
+    16
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.5-rho0.9-i016-base/POPULARITY",
+   "runtime_s": 0.4167554169980576,
+   "spawn_key": [
+    1500,
+    900,
+    16
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.5-rho0.9-i016-base/EXPOSURE_BALANCED",
+   "runtime_s": 0.32525958299811464,
+   "spawn_key": [
+    1500,
+    900,
+    16
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.5-rho0.9-i017-base/RANDOM",
+   "runtime_s": 0.3900520829993184,
+   "spawn_key": [
+    1500,
+    900,
+    17
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.5-rho0.9-i017-base/POPULARITY",
+   "runtime_s": 0.4766051249971497,
+   "spawn_key": [
+    1500,
+    900,
+    17
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.5-rho0.9-i017-base/EXPOSURE_BALANCED",
+   "runtime_s": 0.3326514579966897,
+   "spawn_key": [
+    1500,
+    900,
+    17
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.5-rho0.9-i018-base/RANDOM",
+   "runtime_s": 0.32074295799975516,
+   "spawn_key": [
+    1500,
+    900,
+    18
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.5-rho0.9-i018-base/POPULARITY",
+   "runtime_s": 0.4562055420028628,
+   "spawn_key": [
+    1500,
+    900,
+    18
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.5-rho0.9-i018-base/EXPOSURE_BALANCED",
+   "runtime_s": 0.3160605000011856,
+   "spawn_key": [
+    1500,
+    900,
+    18
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.5-rho0.9-i019-base/RANDOM",
+   "runtime_s": 0.39406679200328654,
+   "spawn_key": [
+    1500,
+    900,
+    19
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.5-rho0.9-i019-base/POPULARITY",
+   "runtime_s": 0.4998258749983506,
+   "spawn_key": [
+    1500,
+    900,
+    19
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.5-rho0.9-i019-base/EXPOSURE_BALANCED",
+   "runtime_s": 0.37466254200262483,
+   "spawn_key": [
+    1500,
+    900,
+    19
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.5-rho0.9-i020-base/RANDOM",
+   "runtime_s": 0.4732320830007666,
+   "spawn_key": [
+    1500,
+    900,
+    20
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.5-rho0.9-i020-base/POPULARITY",
+   "runtime_s": 0.5414426249990356,
+   "spawn_key": [
+    1500,
+    900,
+    20
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.5-rho0.9-i020-base/EXPOSURE_BALANCED",
+   "runtime_s": 0.4136690829982399,
+   "spawn_key": [
+    1500,
+    900,
+    20
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.5-rho0.9-i021-base/RANDOM",
+   "runtime_s": 0.29524895799841033,
+   "spawn_key": [
+    1500,
+    900,
+    21
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.5-rho0.9-i021-base/POPULARITY",
+   "runtime_s": 0.5023360830018646,
+   "spawn_key": [
+    1500,
+    900,
+    21
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.5-rho0.9-i021-base/EXPOSURE_BALANCED",
+   "runtime_s": 0.3141254580041277,
+   "spawn_key": [
+    1500,
+    900,
+    21
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.5-rho0.9-i022-base/RANDOM",
+   "runtime_s": 0.4015619580022758,
+   "spawn_key": [
+    1500,
+    900,
+    22
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.5-rho0.9-i022-base/POPULARITY",
+   "runtime_s": 0.4923537499998929,
+   "spawn_key": [
+    1500,
+    900,
+    22
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.5-rho0.9-i022-base/EXPOSURE_BALANCED",
+   "runtime_s": 0.33534337500168476,
+   "spawn_key": [
+    1500,
+    900,
+    22
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.5-rho0.9-i023-base/RANDOM",
+   "runtime_s": 0.280544249995728,
+   "spawn_key": [
+    1500,
+    900,
+    23
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.5-rho0.9-i023-base/POPULARITY",
+   "runtime_s": 0.5584142090010573,
+   "spawn_key": [
+    1500,
+    900,
+    23
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.5-rho0.9-i023-base/EXPOSURE_BALANCED",
+   "runtime_s": 0.32458479199704016,
+   "spawn_key": [
+    1500,
+    900,
+    23
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.5-rho0.9-i024-base/RANDOM",
+   "runtime_s": 0.28378979099943535,
+   "spawn_key": [
+    1500,
+    900,
+    24
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.5-rho0.9-i024-base/POPULARITY",
+   "runtime_s": 0.5639594579988625,
+   "spawn_key": [
+    1500,
+    900,
+    24
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.5-rho0.9-i024-base/EXPOSURE_BALANCED",
+   "runtime_s": 0.2461644159993739,
+   "spawn_key": [
+    1500,
+    900,
+    24
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.5-rho0.9-i025-base/RANDOM",
+   "runtime_s": 0.4093708340005833,
+   "spawn_key": [
+    1500,
+    900,
+    25
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.5-rho0.9-i025-base/POPULARITY",
+   "runtime_s": 0.5570254580015899,
+   "spawn_key": [
+    1500,
+    900,
+    25
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.5-rho0.9-i025-base/EXPOSURE_BALANCED",
+   "runtime_s": 0.28016550000029383,
+   "spawn_key": [
+    1500,
+    900,
+    25
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.5-rho0.9-i026-base/RANDOM",
+   "runtime_s": 0.40595041699998546,
+   "spawn_key": [
+    1500,
+    900,
+    26
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.5-rho0.9-i026-base/POPULARITY",
+   "runtime_s": 0.431559249998827,
+   "spawn_key": [
+    1500,
+    900,
+    26
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.5-rho0.9-i026-base/EXPOSURE_BALANCED",
+   "runtime_s": 0.3020795830016141,
+   "spawn_key": [
+    1500,
+    900,
+    26
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.5-rho0.9-i027-base/RANDOM",
+   "runtime_s": 0.30464620899874717,
+   "spawn_key": [
+    1500,
+    900,
+    27
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.5-rho0.9-i027-base/POPULARITY",
+   "runtime_s": 0.4798147500041523,
+   "spawn_key": [
+    1500,
+    900,
+    27
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.5-rho0.9-i027-base/EXPOSURE_BALANCED",
+   "runtime_s": 0.3441294160002144,
+   "spawn_key": [
+    1500,
+    900,
+    27
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.5-rho0.9-i028-base/RANDOM",
+   "runtime_s": 0.3909985830032383,
+   "spawn_key": [
+    1500,
+    900,
+    28
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.5-rho0.9-i028-base/POPULARITY",
+   "runtime_s": 0.4477539159997832,
+   "spawn_key": [
+    1500,
+    900,
+    28
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.5-rho0.9-i028-base/EXPOSURE_BALANCED",
+   "runtime_s": 0.3730630000063684,
+   "spawn_key": [
+    1500,
+    900,
+    28
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.5-rho0.9-i029-base/RANDOM",
+   "runtime_s": 0.3249569999970845,
+   "spawn_key": [
+    1500,
+    900,
+    29
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.5-rho0.9-i029-base/POPULARITY",
+   "runtime_s": 0.5526982090013917,
+   "spawn_key": [
+    1500,
+    900,
+    29
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "EXP-001/r1.5-rho0.9-i029-base/EXPOSURE_BALANCED",
+   "runtime_s": 0.36243737499899,
+   "spawn_key": [
+    1500,
+    900,
+    29
+   ]
+  }
+ ],
+ "start_utc": "2026-11-24T23:33:51Z",
+ "wall_clock_s": 255.24783312499494
+}

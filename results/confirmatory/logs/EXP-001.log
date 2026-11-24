@@ -1,0 +1,27 @@
+experiment=EXP-001
+revision=cfc90d0dfa9aa9058ee780a8d8fe3abdc77343d3
+dirty=1
+config_sha256=cb65e283c7d35d342e76abb9221e400a43b7603be2d1f4a510158f25531467e5
+data_manifest_sha256=506b2c412984c7a41c436b889c159c5a139744c4a1ccdf7396a7a88427f216cf
+command=nice -n 10 .venv/bin/python -m match_lab run --config experiments/configs/EXP-001.json
+start_utc=2026-11-24T23:33:51Z
+EXP-001: confirmatory run, 810 runs
+  50/810 runs
+  100/810 runs
+  150/810 runs
+  200/810 runs
+  250/810 runs
+  300/810 runs
+  350/810 runs
+  400/810 runs
+  450/810 runs
+  500/810 runs
+  550/810 runs
+  600/810 runs
+  650/810 runs
+  700/810 runs
+  750/810 runs
+  800/810 runs
+/Users/bechir/research/labs/match-fairness-exposure/results/confirmatory/EXP-001/results.json
+exit_status=0
+end_utc=2026-11-24T23:38:08Z

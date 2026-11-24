@@ -189,6 +189,13 @@ def test_run_passes_the_gate_with_frozen_configs_without_running(tmp_path):
         assert not isinstance(info.value, ProtocolNotFrozenError)
 
 
+def _confirmatory_snapshot():
+    """Paths and modification times under results/confirmatory (M3 results exist since 2026-11-24;
+    a refused run must not create or change anything there)."""
+    root = REPO / "results" / "confirmatory"
+    return sorted((str(p), p.stat().st_mtime_ns) for p in root.rglob("*")) if root.exists() else []
+
+
 @pytest.mark.parametrize("change", [
     {"settings": [{"setting_id": "base", "theta": 0.5, "T": 20}]},
     {"instances_per_cell": 50},
@@ -197,6 +204,7 @@ def test_run_passes_the_gate_with_frozen_configs_without_running(tmp_path):
     {"r_values": [1.0, 1.5]},
 ])
 def test_run_refuses_changed_confirmatory_configs(change, tmp_path):
+    before = _confirmatory_snapshot()
     raw = copy.deepcopy(_frozen_cfg("EXP-001").raw)
     raw.update(change)
     cfg = parse_config(raw)
@@ -204,7 +212,7 @@ def test_run_refuses_changed_confirmatory_configs(change, tmp_path):
         check_protocol_frozen("EXP-001", REPO, cfg)
     with pytest.raises(ProtocolNotFrozenError):
         run_experiment(cfg, REPO)
-    assert not (REPO / "results" / "confirmatory").exists()
+    assert _confirmatory_snapshot() == before
 
 
 def test_gate_refuses_drift_of_any_frozen_file(tmp_path):
@@ -266,9 +274,10 @@ def test_cli_run_refuses_a_changed_confirmatory_config(capsys, tmp_path):
     raw["settings"] = [{"setting_id": "base", "theta": 0.5, "T": 20}]
     path = tmp_path / "EXP-001-changed.json"
     path.write_text(json.dumps(raw))
+    before = _confirmatory_snapshot()
     assert cli.main(["run", "--config", str(path)]) == 3
     assert "REFUSED" in capsys.readouterr().err
-    assert not (REPO / "results" / "confirmatory").exists()
+    assert _confirmatory_snapshot() == before
 
 
 def test_cli_run_accepts_a_frozen_config_up_to_the_overwrite_guard(capsys, tmp_path, monkeypatch):

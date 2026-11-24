@@ -1,6 +1,84 @@
 {
   "schema_version": "0.1",
-  "updated": "2026-11-24",
-  "note": "Covered by NOTICE.md. Maps every quantitative figure, table and claim to experiment ID, run IDs, metric definition, result path, generator script, config/protocol hash and code revision. Empty at M0: no results exist.",
-  "entries": []
+  "updated": "2026-11-25",
+  "note": "Covered by NOTICE.md. Maps every quantitative figure, table and claim to experiment ID, run IDs, metric definition, result path, generator script, config/protocol hash and code revision.",
+  "entries": [
+    {
+      "id": "C-001",
+      "experiment_id": "EXP-001",
+      "run_ids": "EXP-001/*-base/{RANDOM,POPULARITY} (540 runs)",
+      "metric": "theta_P of W, POPULARITY - RANDOM",
+      "result_path": "results/confirmatory/EXP-001/report/tables/EXP-001_pooled_W.csv",
+      "generator": "python -m match_lab report",
+      "config_sha256": "5e747575d51c0b0253ffcc20ca22fdb1e0f3770c7421f1546f7ff8ebc93df422",
+      "protocol_sha256": "0d64280b9e2dcb0a3f17bf056eaf3cadf5f5a009efa88d6eed99ad05eafb3c2c",
+      "code_revision": "cfc90d0dfa9aa9058ee780a8d8fe3abdc77343d3"
+    },
+    {
+      "id": "C-002",
+      "experiment_id": "EXP-001",
+      "run_ids": "EXP-001/*-base/{RANDOM,EXPOSURE_BALANCED} (540 runs)",
+      "metric": "theta_P of W, EXPOSURE_BALANCED - RANDOM",
+      "result_path": "results/confirmatory/EXP-001/report/tables/EXP-001_pooled_W.csv",
+      "generator": "python -m match_lab report",
+      "config_sha256": "5e747575d51c0b0253ffcc20ca22fdb1e0f3770c7421f1546f7ff8ebc93df422",
+      "protocol_sha256": "0d64280b9e2dcb0a3f17bf056eaf3cadf5f5a009efa88d6eed99ad05eafb3c2c",
+      "code_revision": "cfc90d0dfa9aa9058ee780a8d8fe3abdc77343d3"
+    },
+    {
+      "id": "C-003",
+      "experiment_id": "EXP-002",
+      "run_ids": "EXP-002/*-base/DA_A and EXP-001/*-base/RANDOM (540 runs)",
+      "metric": "W(DA_A) - W(RANDOM), equal-weight over 9 cells",
+      "result_path": "results/confirmatory/EXP-002/analysis/tables/EXP-002_contrasts.csv",
+      "generator": "python -m match_lab analyze",
+      "config_sha256": "2bd7ee667eaadef716496cff55bf2a343743f0984e4c1f44552279dea1a540b7",
+      "protocol_sha256": "30692ad843399f50c1a1141f71b16e6fb704b2669d8ab5dd1e586de67485961c",
+      "code_revision": "cfc90d0dfa9aa9058ee780a8d8fe3abdc77343d3"
+    },
+    {
+      "id": "C-004",
+      "experiment_id": "EXP-002",
+      "run_ids": "EXP-002/*-base/{DA_A,DA_B,MAXW} (810 runs)",
+      "metric": "blocking_per_100 MAXW - DA_A; DA invariant",
+      "result_path": "results/confirmatory/EXP-002/analysis/tables/EXP-002_contrasts.csv",
+      "generator": "python -m match_lab analyze",
+      "config_sha256": "2bd7ee667eaadef716496cff55bf2a343743f0984e4c1f44552279dea1a540b7",
+      "protocol_sha256": "30692ad843399f50c1a1141f71b16e6fb704b2669d8ab5dd1e586de67485961c",
+      "code_revision": "cfc90d0dfa9aa9058ee780a8d8fe3abdc77343d3"
+    },
+    {
+      "id": "C-005",
+      "experiment_id": "EXP-003",
+      "run_ids": "EXP-003/*-S2-*/{RANDOM,POPULARITY} (480 runs)",
+      "metric": "theta_P of W on 4 corner cells, S2",
+      "result_path": "results/confirmatory/EXP-003/analysis/tables/EXP-003_sensitivity.csv",
+      "generator": "python -m match_lab analyze",
+      "config_sha256": "91669781cf730391a79dcc6a36e3317a5c7f83202c2a603c3e393d563bc37489",
+      "protocol_sha256": "7e37ac6ad46f9da93bd66763a7caf3f53e97a367b83d31e727e14f35ded628f6",
+      "code_revision": "cfc90d0dfa9aa9058ee780a8d8fe3abdc77343d3"
+    },
+    {
+      "id": "C-006",
+      "experiment_id": "EXP-003",
+      "run_ids": "EXP-003/*-S2-*/{RANDOM,EXPOSURE_BALANCED} (480 runs)",
+      "metric": "theta_P of W on 4 corner cells, S2",
+      "result_path": "results/confirmatory/EXP-003/analysis/tables/EXP-003_sensitivity.csv",
+      "generator": "python -m match_lab analyze",
+      "config_sha256": "91669781cf730391a79dcc6a36e3317a5c7f83202c2a603c3e393d563bc37489",
+      "protocol_sha256": "7e37ac6ad46f9da93bd66763a7caf3f53e97a367b83d31e727e14f35ded628f6",
+      "code_revision": "cfc90d0dfa9aa9058ee780a8d8fe3abdc77343d3"
+    },
+    {
+      "id": "C-007",
+      "experiment_id": "EXP-003",
+      "run_ids": "EXP-003/*-S1-*/{RANDOM,POPULARITY} (480 runs)",
+      "metric": "theta_P of W on 4 corner cells, S1",
+      "result_path": "results/confirmatory/EXP-003/analysis/tables/EXP-003_sensitivity.csv",
+      "generator": "python -m match_lab analyze",
+      "config_sha256": "91669781cf730391a79dcc6a36e3317a5c7f83202c2a603c3e393d563bc37489",
+      "protocol_sha256": "7e37ac6ad46f9da93bd66763a7caf3f53e97a367b83d31e727e14f35ded628f6",
+      "code_revision": "cfc90d0dfa9aa9058ee780a8d8fe3abdc77343d3"
+    }
+  ]
 }

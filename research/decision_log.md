@@ -84,3 +84,15 @@ Append-only. Each entry: id, date, decision, made by, rationale, alternatives, c
 - **Decision:** the outputs quarantined under D-014 (`results/quarantine/EXP-001-unscheduled-2026-11-24/`, 3 files, SHA-256 in J-0007) are deleted.
 - **Made by:** the owner, answer "Approve all" (2026-11-24), section 5 of `labs/_shared/owner-approvals-2026-11-24b.md`; the deletion itself was done by the coordinator, not by this session.
 - **Consequences:** recorded in journal J-0008 and in `research/freeze.json` (`c4_disclosure.quarantine_deleted`). No metric from the run was ever read. The M3 reproduction cross-check offered in D-014 option (1) is no longer available. The git-ignore rule for `results/quarantine/` is kept.
+
+## D-017: Frozen EXP-002 and EXP-003 analyses implemented before any confirmatory output (2026-11-25)
+- **Decision:** `src/match_lab/analysis.py` and the CLI command `analyze` implement the frozen EXP-002 contrasts (H_a, H_b, the DA invariant, descriptive tables) and the EXP-003 S1/S2 estimates with the frozen invalidation criterion. `report.py` computes sign-flip p-values only for EXP-001 (protocol section 8). Committed as cfc90d0 with tests (103 passed) before any confirmatory run; the confirmatory runs used that revision.
+- **Made by:** the M3 session under the M3 brief (analysis must be fixed before confirmatory output exists).
+- **Rationale:** the M2 report generator compares arms only within one result file, so it could not pair EXP-002 arms with the EXP-001 RANDOM arm or compare EXP-003 to EXP-001.
+- **Consequences:** no simulation, metric, statistics, protocol or config change; the frozen hashes still match. Disclosed in the reproduction records.
+
+## D-018: EXP-003 S3 not executed; specification gap reported to the owner (2026-11-25)
+- **Decision:** S3 (metric-definition reanalysis) is not run and no S3 code is written.
+- **Made by:** the M3 session, under the brief's rule that a missing analysis may be written only if the frozen protocol fixes every parameter.
+- **Rationale:** (1) S3 is specified as a reanalysis of EXP-001 raw outputs, but those store per-run metrics only, not matchings or utilities, so S3 needs a deterministic re-simulation of the EXP-001 runs; (2) the frozen text does not fix how utility is standardized under (a), the unmatched value under (a), or how "the acceptability threshold's satisfaction" is computed under (b) given the interpolated quantile.
+- **Consequences:** EXP-003 is partial (S1 and S2 complete). The POPULARITY verdict is already "not robust" from S2; the EXPOSURE_BALANCED verdict lacks S3. The owner decides whether to specify S3 (a dated post-freeze amendment, reported separately from the frozen analysis) or to record it as not done. Journal J-0013.

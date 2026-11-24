@@ -1,0 +1,36 @@
+{
+ "arms": [
+  "RANDOM",
+  "POPULARITY",
+  "EXPOSURE_BALANCED"
+ ],
+ "config_schema": "match-config/1.0.0",
+ "delta": 0.5,
+ "experiment_id": "EXP-001",
+ "instances_per_cell": 30,
+ "k": 5,
+ "label": "EXP-001 exposure policies in sequential discovery (FROZEN v1.0, owner-approved 2026-11-24; T = 40, shared per-round tie key)",
+ "mode": "confirmatory",
+ "n_a": 200,
+ "output_dir": "results/confirmatory/EXP-001",
+ "popularity_tie_scope": "global",
+ "r_values": [
+  1.0,
+  1.1,
+  1.5
+ ],
+ "rho_values": [
+  0.0,
+  0.5,
+  0.9
+ ],
+ "root_seed": 20261124,
+ "settings": [
+  {
+   "T": 40,
+   "setting_id": "base",
+   "theta": 0.5
+  }
+ ],
+ "trace_memory": true
+}

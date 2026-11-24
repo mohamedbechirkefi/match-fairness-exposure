@@ -1,0 +1,4 @@
+experiment_id,planned_runs,projected_seconds_single_process,runs_by_T_scaling,runs_unmeasured
+EXP-001,810,125.25119184515461,360,450
+EXP-002,810,1.527198593279536,0,810
+EXP-003,1440,312.2980532658403,0,0

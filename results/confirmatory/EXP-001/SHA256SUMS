@@ -1,0 +1,11 @@
+61bad1346a280ac268e25a2cddb08b9083ab0052cc2e50d1947a8c0683f75b11  ./metrics.csv
+0975ec64fc396b40b1140fa3ea5f58bbc0325f49f45fbdd3c4b2cabea30cb5f8  ./report/figures/FIG-EXP-001-base-paired.svg
+834898cb1bb51ad82b561536e7b1d8806c68c9e49c6c121db9ac83ed0df5ca4e  ./report/figures/FIG-EXP-001-base-welfare.svg
+cdcf4e8c331ce15b35423ba51ee3ffcc0dfcf202d068ffafa61b4cc66d0e2430  ./report/report.md
+b562861a38b98036a19ae6fa0d0dd621d5da1a09aca5d85f37f047e5ab66620d  ./report/report.pdf
+63f2b80395f69d26f44b08658a8eb35c6d95ad6c204a7fa5e6cb153cdbf0dbcc  ./report/tables/EXP-001_arm_summary.csv
+6f72d4b2c57b156a7c9a5ce55a81a8edcd6cf447dac10f13b69d41db0c3cdb07  ./report/tables/EXP-001_paired_differences_W.csv
+1dcf7bfe2f1604b782d4c7a60c450dc3b1152f5f64044f57f50cad2f2f51406f  ./report/tables/EXP-001_pooled_W.csv
+f302479317e733e6a17d57347e3d3758d0dd7ec33819d112ba56fd4fb08dab60  ./report/tables/runtime_projection.csv
+1b0008a9245e4bae639b316580e253d1027bcd6165a8a31fb3b9d92c17cabf3d  ./results.json
+7b34277bcf5cce37d1c30387b164385c1d34b02ac52b6ce5528a55348adf6845  ./run_manifest.json
