@@ -1,0 +1,36 @@
+{
+ "arms": [
+  "RANDOM",
+  "POPULARITY",
+  "EXPOSURE_BALANCED",
+  "DA_A",
+  "DA_B",
+  "MAXW"
+ ],
+ "config_schema": "match-config/1.0.0",
+ "delta": 0.5,
+ "experiment_id": "SMOKE-M3",
+ "instances_per_cell": 5,
+ "k": 5,
+ "label": "Exploratory smoke run before M3 confirmatory runs (same matrix and root seed 101 as SMOKE); not a finding",
+ "mode": "exploratory",
+ "n_a": 50,
+ "output_dir": "results/exploratory/m3_smoke",
+ "r_values": [
+  1.0,
+  1.5
+ ],
+ "rho_values": [
+  0.0,
+  0.9
+ ],
+ "root_seed": 101,
+ "settings": [
+  {
+   "T": 20,
+   "setting_id": "base",
+   "theta": 0.5
+  }
+ ],
+ "trace_memory": true
+}

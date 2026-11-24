@@ -5,6 +5,8 @@
 - ``run --config PATH``: run a config; refuses a confirmatory config unless its protocol, the
   main protocol and the config itself match the freeze record and the registry (G-FREEZE).
 - ``report --results PATH [PATH ...] --out DIR``: tables, figures and PDF from result files.
+- ``analyze --experiment EXP-00N --exp001 PATH --results PATH --out DIR``: the frozen EXP-002 or
+  EXP-003 cross-experiment analysis (tables, figure, JSON).
 - ``test``: run the pytest suite.
 """
 
@@ -46,6 +48,11 @@ def main(argv: list[str] | None = None) -> int:
     p_rep.add_argument("--plans", nargs="*", default=list(PLAN_CONFIGS),
                        help="configs whose runtime is projected from the measured runs")
     p_rep.add_argument("--no-pdf", action="store_true")
+    p_an = sub.add_parser("analyze", help="frozen cross-experiment analysis (EXP-002 or EXP-003)")
+    p_an.add_argument("--experiment", required=True, choices=["EXP-002", "EXP-003"])
+    p_an.add_argument("--exp001", required=True, help="EXP-001 results.json")
+    p_an.add_argument("--results", required=True, help="EXP-002 or EXP-003 results.json")
+    p_an.add_argument("--out", required=True)
     p_test = sub.add_parser("test", help="run the test suite")
     p_test.add_argument("pytest_args", nargs="*")
     args = ap.parse_args(argv)
@@ -68,6 +75,11 @@ def main(argv: list[str] | None = None) -> int:
             info = build_report([out / "results.json"], out / "report", plans=_plans(PLAN_CONFIGS),
                                 pdf=not args.no_pdf, repo_root=REPO_ROOT)
             print(info)
+            return 0
+        if args.cmd == "analyze":
+            from .analysis import write_analysis
+            from .runner import load_result
+            print(write_analysis(args.experiment, load_result(args.exp001), load_result(args.results), args.out))
             return 0
         if args.cmd == "report":
             info = build_report([Path(p) for p in args.results], Path(args.out), plans=_plans(args.plans),

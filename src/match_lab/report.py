@@ -347,7 +347,9 @@ def build_report(result_paths: list[str | Path], out_dir: str | Path, *, plans: 
         rel = src.relative_to(root) if root in src.parents else src
         summary = arm_summary(doc)
         diffs = paired_differences(doc)
-        pooled = pooled_contrasts(doc, diffs, confirmatory=doc["mode"] == "confirmatory")
+        # protocol section 8: tests only for the confirmatory EXP-001 family; other documents get none
+        tested = doc["mode"] == "confirmatory" and doc["experiment_id"] == "EXP-001"
+        pooled = pooled_contrasts(doc, diffs, confirmatory=tested)
         tag = doc["experiment_id"].replace("/", "_")
         _write_csv(out / "tables" / f"{tag}_arm_summary.csv", summary)
         _write_csv(out / "tables" / f"{tag}_paired_differences_W.csv", diffs)
@@ -375,7 +377,8 @@ def build_report(result_paths: list[str | Path], out_dir: str | Path, *, plans: 
         lines += ["### Equal-weight mean over cells (theta) of W differences versus RANDOM", "",
                   "Stratified bootstrap CIs. `N/cell pooled` is the instances per cell needed for 80% power on the "
                   "pooled contrast at effect 0.01, from this run's per-cell SDs (planning only)."
-                  + ("" if doc["mode"] == "confirmatory" else " No p-values are computed for exploratory runs."), "",
+                  + ("" if tested else (" No p-values: protocol section 8 limits tests to the EXP-001 family."
+                                     if doc["mode"] == "confirmatory" else " No p-values are computed for exploratory runs.")), "",
                   _md_table(pooled, [("setting", "setting"), ("arm", "arm"), ("n_cells", "cells"), ("theta", "theta"),
                                      ("ci95_lo", "95% lo"), ("ci95_hi", "95% hi"), ("ci90_lo", "90% lo"),
                                      ("ci90_hi", "90% hi"), ("n_per_cell_for_sesoi_80pct_pooled", "N/cell pooled"),
