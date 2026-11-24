@@ -14,9 +14,9 @@ and
 **Contributor:** The individual accepting this Agreement.
 
 The Agreement concerns contributions intentionally submitted
-for inclusion in MATCH (research repository), planned at:
+for inclusion in MATCH (research repository), at:
 
-https://github.com/mohamedbechirkefi/match-research
+https://github.com/mohamedbechirkefi/match-fairness-exposure
 
 ## 1. Ownership of contributions
 

@@ -36,7 +36,7 @@ At the start of each session, state the current milestone and the next bounded t
 - No confirmatory experiment before the owner freezes its protocol. Exploratory runs are allowed and must be labelled exploratory everywhere they appear.
 
 ### Scope
-- Work only inside `/Users/bechir/research/labs/match-research/`.
+- Work only inside `/Users/bechir/research/labs/match-fairness-exposure/`.
 - Read-only use of the shared tools: `/Users/bechir/research/labs/.tools/py/bin/` (uv, python with typst, pypdf, pillow), `/Users/bechir/research/labs/.tools/pandoc`, and Node at `/Users/bechir/research/helix/.tools/node/bin` (never modify that folder).
 - Do not touch any other folder under `/Users/bechir/research` (hive, helix, cogkt, trading, the other labs).
 - Never kill processes you did not start. Never delete anything you did not create in the current session.
