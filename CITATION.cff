@@ -1,0 +1,18 @@
+# SPDX-License-Identifier: LicenseRef-MATCH-NC-Research-1.0
+# Licence: MATCH Source-Available Non-Commercial Research License v1.0 (custom licence, see LICENSE).
+# It is not an SPDX-listed licence, so no `license` field is given.
+cff-version: 1.2.0
+message: "If you use this work, please cite it as below."
+type: software
+title: "MATCH: matching algorithms and fairness (research code and materials)"
+authors:
+  - family-names: "Kefi"
+    given-names: "Mohamed Bechir"
+version: "0.0.0"
+date-released: "2026-11-24"
+abstract: "Independent research project on how ranking and exposure policies alter match outcomes in synthetic two-sided markets. Status M0: no results."
+keywords:
+  - matching markets
+  - stable matching
+  - exposure fairness
+  - simulation

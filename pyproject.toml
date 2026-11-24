@@ -1,0 +1,33 @@
+# SPDX-License-Identifier: LicenseRef-MATCH-NC-Research-1.0
+[project]
+name = "match-lab"
+version = "0.0.0"
+description = "MATCH: synthetic two-sided matching markets, ranking and exposure policies, fairness and satisfaction (research code, M0 skeleton)."
+readme = "README.md"
+requires-python = ">=3.12,<3.13"
+license = { text = "LicenseRef-MATCH-NC-Research-1.0 (custom, see LICENSE)" }
+authors = [{ name = "Mohamed Bechir Kefi" }]
+dependencies = [
+    "numpy>=2.1,<2.4",
+    "scipy>=1.14,<1.17",
+]
+
+[dependency-groups]
+dev = [
+    "pytest>=8.3,<9",
+    "hypothesis>=6.112,<7",
+]
+
+[build-system]
+requires = ["hatchling>=1.25,<2"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/match_lab"]
+
+[tool.uv]
+# Only resolve package versions published at least two weeks before the M0 session (2026-11-24).
+exclude-newer = "2026-11-10T00:00:00Z"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

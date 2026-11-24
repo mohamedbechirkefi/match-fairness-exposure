@@ -1,0 +1,6 @@
+{
+  "schema_version": "0.1",
+  "updated": "2026-11-24",
+  "note": "Covered by NOTICE.md. Maps every quantitative figure, table and claim to experiment ID, run IDs, metric definition, result path, generator script, config/protocol hash and code revision. Empty at M0: no results exist.",
+  "entries": []
+}

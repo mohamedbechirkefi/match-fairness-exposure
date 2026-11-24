@@ -1,0 +1,46 @@
+<!-- SPDX-License-Identifier: LicenseRef-MATCH-NC-Research-1.0 -->
+# Roadmap
+
+Updated 2026-11-24 (session M0). Statuses: done, in progress, not started, blocked. Effort is a planning estimate in focused days. Section 11.6 additions are mandatory and listed per milestone.
+
+| Milestone | Depends on | Priority | Effort | Status | Blockers |
+|---|---|---|---|---|---|
+| M0 Bootstrap and feasibility | none | P0 | 0.5 | done (pending owner review of the gate) | none |
+| M1 Research and preregistration | M0 | P0 | 0.5 | in progress (drafts written) | G-FREEZE: owner must freeze protocols |
+| M2 Core implementation | M1 drafts (not the freeze) | P0 | 1 | not started | none |
+| M3 Experiments | M2; M1 freeze for confirmatory runs | P0 | 0.75 | not started | G-FREEZE |
+| M4 Interpretation | M3 | P0 | 0.75 | not started | M3 |
+| M5 Interactive experience | M3 results (M4 for final labels) | P1 | 1 | not started | M3 |
+| M6 Release candidate | M4, M5 | P0 | 0.5 | not started | owner review; G-PUBLIC for any publication |
+
+## M0 Bootstrap and feasibility
+- Deliverables: control files (CLAUDE.md, roadmap.md, progress.md, research/*), feasibility audit, source and licence audit, budget, scope and fallback; 11.6: registry, manuscript skeleton, experiment-specific protocols, zero-cost publication toolchain confirmed.
+- Acceptance: the owner can understand the question, cost (zero) and exclusions; every section 2 file exists; toolchain confirmed by an actual conversion; `uv.lock` produced; local commit.
+- Status: done in this session; the gate itself is the owner's judgement.
+
+## M1 Research and preregistration
+- Deliverables: deeper literature check (full texts where accessible), formal model, baselines, final protocol and EXP-001 to EXP-003 protocols, fixture manifest; 11.6: freeze confirmatory protocols before execution.
+- Acceptance: protocols complete per 11.2; owner freeze recorded with commit and SHA-256 per frozen file; exploratory results visibly separated.
+- Status: drafts v0.1 written in M0. Open: owner decisions (see progress.md), deeper reading of roth1982 and gale1962 full texts.
+
+## M2 Core implementation
+- Deliverables: market generator; RANDOM baseline first, then POPULARITY and EXPOSURE_BALANCED; DA_A, DA_B; MAXW; metrics; runner with CLI (smoke, full, report, test); 11.6: versioned JSON result schema, reproducibility manifests and report generators built alongside the algorithms.
+- Acceptance: unit tests for Gale and Shapley stability on hand-computed examples, no duplicate matches, capacity one, empty pools, invalid inputs, determinism, metric bounds; property tests (DA has zero blocking pairs); differential test of MAXW against brute force on tiny markets. Correctness before any UI.
+- Status: not started (package skeleton and one import test only).
+
+## M3 Experiments
+- Deliverables: exploratory smoke run; frozen EXP-001, EXP-002, EXP-003 runs with raw machine-readable results; plots with uncertainty; 11.6: individual reports generated as each experiment finishes; all failures and deviations recorded; provenance captured at run time.
+- Acceptance: complete planned matrix or documented failure; no silently dropped runs; exclusions listed.
+- Blocker: confirmatory runs need the owner's freeze.
+
+## M4 Interpretation
+- Deliverables: confounder inspection, sensitivity (EXP-003), expected versus observed, claims register, limitations; 11.6: experiment reports finished, evidence audit, manuscript synthesis including contradictory results.
+- Acceptance: every numerical claim maps to result id, config and figure; every external claim to a verified source; second review pass challenging the preferred hypothesis.
+
+## M5 Interactive experience
+- Deliverables: static page with population and matching graph, fairness and satisfaction trade-offs, seed and scenario controls; 11.6: demo, paper, reports and articles use identical verified results, labels and scope.
+- Acceptance: offline after load, responsive, keyboard usable, reduced motion, no fabricated data, no runtime service, fails closed on malformed results.
+
+## M6 Release candidate
+- Deliverables: clean-clone reproduction, locked install, tests, smoke reproduction, demo build, manifest and link checks, secret and licence scan; 11.6: compile and visually inspect manuscript and report PDFs, verify references and cross-links, complete the owner review checklist.
+- Acceptance: actual command outputs recorded; only verified facts reported; no push or publication without the owner's approval.
