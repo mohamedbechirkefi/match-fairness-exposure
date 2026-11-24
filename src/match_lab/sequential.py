@@ -15,9 +15,11 @@ Common random numbers: three independent streams (viewer order, RANDOM slate key
 popularity tie keys) are drawn in full every round whatever the policy, so all arms consume
 identical random numbers on the same instance.
 
-Implementation choice recorded as D-007: the popularity tie key is one uniform draw per
-candidate per round, shared by all viewers in that round (the protocol says "a seeded random
-key" without fixing its granularity).
+Implementation choice recorded as D-007: by default (``tie_scope="global"``) the popularity
+tie key is one uniform draw per candidate per round, shared by all viewers in that round. The
+protocol says "a seeded random key" without fixing its granularity; ``tie_scope="viewer"``
+draws one key per (viewer, candidate) per round instead. Both key sets are drawn every round
+whatever the scope, so the scope never shifts the other streams.
 """
 
 from __future__ import annotations
@@ -43,8 +45,11 @@ class SequentialSettings:
     T: int = 20  # rounds
     k: int = 5  # slate length (candidates)
     delta: float = 0.5  # exposure cap slack (EXPOSURE_BALANCED only)
+    tie_scope: str = "global"  # popularity tie key: "global" (per candidate) or "viewer"
 
     def __post_init__(self) -> None:
+        if self.tie_scope not in ("global", "viewer"):
+            raise InvalidInputError(f"tie_scope must be 'global' or 'viewer', got {self.tie_scope!r}")
         for name in ("T", "k"):
             v = getattr(self, name)
             if isinstance(v, bool) or not isinstance(v, (int, np.integer)):
@@ -130,6 +135,7 @@ def simulate_sequential(
         perm = order_rng.permutation(n[0] + n[1])
         rand_keys = (key_rng.random((n[0], n[1])), key_rng.random((n[1], n[0])))
         tie_keys = (tie_rng.random(n[0]), tie_rng.random(n[1]))  # per candidate on each side
+        tie_view = (tie_rng.random((n[0], n[1])), tie_rng.random((n[1], n[0])))  # per (viewer, candidate)
         unmatched = (match[0] < 0, match[1] < 0)
         score = tuple((likes_received[s] + 1) / (exposure[s] + 2) for s in (0, 1))
         cap = (
@@ -149,7 +155,8 @@ def simulate_sequential(
                 eligible = base[round_count[o][base] < cap[s]]
             else:
                 eligible = base
-            chosen = _select(policy, eligible, k, rand_keys[s][i], score[o], tie_keys[o])
+            tie = tie_keys[o] if settings.tie_scope == "global" else tie_view[s][i]
+            chosen = _select(policy, eligible, k, rand_keys[s][i], score[o], tie)
             out.n_slates += 1
             if len(chosen) < k:
                 out.short_slates += 1

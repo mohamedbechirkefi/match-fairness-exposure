@@ -1,0 +1,34 @@
+{
+ "arms": [
+  "RANDOM",
+  "POPULARITY",
+  "EXPOSURE_BALANCED"
+ ],
+ "config_schema": "match-config/1.0.0",
+ "delta": 0.5,
+ "experiment_id": "PROBE-TIE",
+ "instances_per_cell": 3,
+ "k": 5,
+ "label": "Exploratory probe of the popularity tie-key granularity (per-viewer keys, D-007 alternative), corner cells, 3 instances; not a finding",
+ "mode": "exploratory",
+ "n_a": 200,
+ "output_dir": "results/exploratory/probe_tie_scope",
+ "popularity_tie_scope": "viewer",
+ "r_values": [
+  1.0,
+  1.5
+ ],
+ "rho_values": [
+  0.0,
+  0.9
+ ],
+ "root_seed": 404,
+ "settings": [
+  {
+   "T": 20,
+   "setting_id": "base",
+   "theta": 0.5
+  }
+ ],
+ "trace_memory": true
+}

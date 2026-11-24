@@ -106,6 +106,7 @@ def test_schema_rejects_malformed(tmp_path):
     dict(r_values=[]), dict(rho_values=[0.5, 0.5]), dict(arms=["GREEDY"]), dict(settings=[]),
     dict(settings=[{"setting_id": "x", "theta": 0.5}]), dict(k=0), dict(delta=-1),
     dict(output_dir="results/confirmatory/x"), dict(trace_memory="yes"), dict(n_a=True),
+    dict(popularity_tie_scope="row"),
 ])
 def test_config_rejects_invalid(over):
     with pytest.raises(SchemaError):

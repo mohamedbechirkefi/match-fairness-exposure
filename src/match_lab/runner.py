@@ -124,7 +124,7 @@ def run_experiment(cfg: ExperimentConfig, repo_root: str | Path, *, overwrite: b
                     tg = time.perf_counter()
                     market = generate_market(params, market_ss)
                     gen_s = time.perf_counter() - tg
-                    seq_settings = SequentialSettings(T=st.T, k=cfg.k, delta=cfg.delta)
+                    seq_settings = SequentialSettings(T=st.T, k=cfg.k, delta=cfg.delta, tie_scope=cfg.tie_scope)
                     inst_key = f"r{r:g}-rho{rho:g}-i{inst:03d}-{st.setting_id}"
                     for arm in cfg.arms:
                         run_id = f"{cfg.experiment_id}/{inst_key}/{arm}"
@@ -156,7 +156,8 @@ def run_experiment(cfg: ExperimentConfig, repo_root: str | Path, *, overwrite: b
                             "run_id": run_id, "instance_key": inst_key, "arm": arm,
                             "cell": {"r": r, "rho": rho, "n_a": market.n_a, "n_b": market.n_b},
                             "setting": {"setting_id": st.setting_id, "theta": st.theta, "T": st.T,
-                                        "k": cfg.k, "delta": cfg.delta},
+                                        "k": cfg.k, "delta": cfg.delta,
+                                        "popularity_tie_scope": cfg.tie_scope},
                             "instance": inst, "seed": {"root_seed": cfg.root_seed, "spawn_key": key},
                             "valid": not failures, "failures": failures, "metrics": metrics,
                             "diagnostics": {"runtime_s": runtime, "market_generation_s": gen_s,

@@ -66,7 +66,7 @@ def test_exposure_cap_formula():
     assert exposure_cap(5, 0.0, 0, 10) == 0
 
 
-@pytest.mark.parametrize("kw", [dict(T=-1), dict(k=0), dict(T=1.5), dict(k=True), dict(delta=-0.1),
+@pytest.mark.parametrize("kw", [dict(tie_scope="row"), dict(T=-1), dict(k=0), dict(T=1.5), dict(k=True), dict(delta=-0.1),
                                 dict(delta=float("nan"))])
 def test_invalid_settings(kw):
     with pytest.raises(InvalidInputError):
@@ -147,3 +147,17 @@ def test_horizon_truncation_is_prefix_consistent():
         assert long.matches_by_round[:5] == short.matches_by_round
         matched_short = np.flatnonzero(short.match_a >= 0)
         assert np.array_equal(long.match_a[matched_short], short.match_a[matched_short])
+
+
+def test_tie_scope_viewer_spreads_round_one_popularity_exposure():
+    """Round one: all scores equal 0.5, so slates are decided by tie keys alone. A global key
+    gives every A viewer the same k candidates; per-viewer keys spread exposure."""
+    m = generate_market(MarketParams(30, 1.0, 0.5, 0.5), np.random.SeedSequence(4))
+    glob = simulate_sequential(m, "POPULARITY", SequentialSettings(T=1, k=5), seeds(4))
+    view = simulate_sequential(m, "POPULARITY", SequentialSettings(T=1, k=5, tie_scope="viewer"), seeds(4))
+    assert int((glob.exposure_b > 0).sum()) == 5
+    assert int((view.exposure_b > 0).sum()) > 5
+    # RANDOM ignores the tie scope entirely
+    a = simulate_sequential(m, "RANDOM", SequentialSettings(T=3), seeds(4))
+    b = simulate_sequential(m, "RANDOM", SequentialSettings(T=3, tie_scope="viewer"), seeds(4))
+    assert np.array_equal(a.match_a, b.match_a)

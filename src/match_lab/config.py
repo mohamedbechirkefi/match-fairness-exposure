@@ -50,6 +50,7 @@ class ExperimentConfig:
     delta: float
     output_dir: str
     trace_memory: bool
+    tie_scope: str = "global"
 
     @property
     def sha256(self) -> str:
@@ -115,13 +116,16 @@ def parse_config(raw: dict[str, Any]) -> ExperimentConfig:
     trace = raw.get("trace_memory", True)
     if not isinstance(trace, bool):
         raise SchemaError("trace_memory must be a boolean")
+    tie_scope = raw.get("popularity_tie_scope", "global")
+    if tie_scope not in ("global", "viewer"):
+        raise SchemaError("popularity_tie_scope must be 'global' or 'viewer'")
     return ExperimentConfig(
         raw=raw, experiment_id=raw["experiment_id"], mode=raw["mode"], label=raw["label"],
         root_seed=seed, n_a=raw["n_a"], r_values=tuple(float(v) for v in raw["r_values"]),
         rho_values=tuple(float(v) for v in raw["rho_values"]),
         instances_per_cell=raw["instances_per_cell"], arms=tuple(raw["arms"]),
         settings=tuple(settings), k=raw["k"], delta=float(raw["delta"]), output_dir=out,
-        trace_memory=trace,
+        trace_memory=trace, tie_scope=tie_scope,
     )
 
 
