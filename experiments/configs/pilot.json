@@ -1,0 +1,38 @@
+{
+ "arms": [
+  "RANDOM",
+  "POPULARITY",
+  "EXPOSURE_BALANCED",
+  "DA_A",
+  "DA_B",
+  "MAXW"
+ ],
+ "config_schema": "match-config/1.0.0",
+ "delta": 0.5,
+ "experiment_id": "PILOT",
+ "instances_per_cell": 5,
+ "k": 5,
+ "label": "Exploratory full-size timing and seed-spread pilot (n_A = 200, all 9 cells, 5 instances); not a finding",
+ "mode": "exploratory",
+ "n_a": 200,
+ "output_dir": "results/exploratory/pilot",
+ "r_values": [
+  1.0,
+  1.1,
+  1.5
+ ],
+ "rho_values": [
+  0.0,
+  0.5,
+  0.9
+ ],
+ "root_seed": 202,
+ "settings": [
+  {
+   "T": 20,
+   "setting_id": "base",
+   "theta": 0.5
+  }
+ ],
+ "trace_memory": true
+}

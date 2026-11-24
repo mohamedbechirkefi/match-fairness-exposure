@@ -1,0 +1,48 @@
+{
+ "arms": [
+  "RANDOM",
+  "POPULARITY",
+  "EXPOSURE_BALANCED"
+ ],
+ "config_schema": "match-config/1.0.0",
+ "delta": 0.5,
+ "experiment_id": "EXP-003",
+ "instances_per_cell": 30,
+ "k": 5,
+ "label": "EXP-003 sensitivity S1 and S2 (DRAFT config mirroring protocol v0.1; same root seed as EXP-001)",
+ "mode": "confirmatory",
+ "n_a": 200,
+ "output_dir": "results/confirmatory/EXP-003",
+ "r_values": [
+  1.0,
+  1.5
+ ],
+ "rho_values": [
+  0.0,
+  0.9
+ ],
+ "root_seed": null,
+ "settings": [
+  {
+   "T": 20,
+   "setting_id": "S1-theta0.3",
+   "theta": 0.3
+  },
+  {
+   "T": 20,
+   "setting_id": "S1-theta0.7",
+   "theta": 0.7
+  },
+  {
+   "T": 10,
+   "setting_id": "S2-T10",
+   "theta": 0.5
+  },
+  {
+   "T": 40,
+   "setting_id": "S2-T40",
+   "theta": 0.5
+  }
+ ],
+ "trace_memory": true
+}

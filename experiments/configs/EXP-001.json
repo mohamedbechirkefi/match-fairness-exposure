@@ -1,0 +1,35 @@
+{
+ "arms": [
+  "RANDOM",
+  "POPULARITY",
+  "EXPOSURE_BALANCED"
+ ],
+ "config_schema": "match-config/1.0.0",
+ "delta": 0.5,
+ "experiment_id": "EXP-001",
+ "instances_per_cell": 30,
+ "k": 5,
+ "label": "EXP-001 exposure policies in sequential discovery (DRAFT config mirroring protocol v0.1; root seed set at the owner's freeze)",
+ "mode": "confirmatory",
+ "n_a": 200,
+ "output_dir": "results/confirmatory/EXP-001",
+ "r_values": [
+  1.0,
+  1.1,
+  1.5
+ ],
+ "rho_values": [
+  0.0,
+  0.5,
+  0.9
+ ],
+ "root_seed": null,
+ "settings": [
+  {
+   "T": 20,
+   "setting_id": "base",
+   "theta": 0.5
+  }
+ ],
+ "trace_memory": true
+}

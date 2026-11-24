@@ -1,0 +1,48 @@
+{
+ "arms": [
+  "RANDOM",
+  "POPULARITY",
+  "EXPOSURE_BALANCED"
+ ],
+ "config_schema": "match-config/1.0.0",
+ "delta": 0.5,
+ "experiment_id": "PILOT-S",
+ "instances_per_cell": 3,
+ "k": 5,
+ "label": "Exploratory timing and degenerate-case probe of the EXP-003 S1/S2 settings (corner cells, 3 instances); not a finding",
+ "mode": "exploratory",
+ "n_a": 200,
+ "output_dir": "results/exploratory/pilot_sensitivity",
+ "r_values": [
+  1.0,
+  1.5
+ ],
+ "rho_values": [
+  0.0,
+  0.9
+ ],
+ "root_seed": 303,
+ "settings": [
+  {
+   "T": 20,
+   "setting_id": "S1-theta0.3",
+   "theta": 0.3
+  },
+  {
+   "T": 20,
+   "setting_id": "S1-theta0.7",
+   "theta": 0.7
+  },
+  {
+   "T": 10,
+   "setting_id": "S2-T10",
+   "theta": 0.5
+  },
+  {
+   "T": 40,
+   "setting_id": "S2-T40",
+   "theta": 0.5
+  }
+ ],
+ "trace_memory": true
+}

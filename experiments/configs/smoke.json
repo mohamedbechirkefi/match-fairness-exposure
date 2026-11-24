@@ -1,0 +1,36 @@
+{
+ "arms": [
+  "RANDOM",
+  "POPULARITY",
+  "EXPOSURE_BALANCED",
+  "DA_A",
+  "DA_B",
+  "MAXW"
+ ],
+ "config_schema": "match-config/1.0.0",
+ "delta": 0.5,
+ "experiment_id": "SMOKE",
+ "instances_per_cell": 5,
+ "k": 5,
+ "label": "Exploratory smoke matrix (protocol section 5); not a finding",
+ "mode": "exploratory",
+ "n_a": 50,
+ "output_dir": "results/exploratory/smoke",
+ "r_values": [
+  1.0,
+  1.5
+ ],
+ "rho_values": [
+  0.0,
+  0.9
+ ],
+ "root_seed": 101,
+ "settings": [
+  {
+   "T": 20,
+   "setting_id": "base",
+   "theta": 0.5
+  }
+ ],
+ "trace_memory": true
+}

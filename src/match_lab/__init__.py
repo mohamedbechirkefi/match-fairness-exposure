@@ -1,4 +1,8 @@
 # SPDX-License-Identifier: LicenseRef-MATCH-NC-Research-1.0
-"""MATCH research package. M0 skeleton: no algorithms implemented yet (planned for M2)."""
+"""MATCH research package: synthetic two-sided markets, sequential discovery policies,
+centralized matching, metrics, experiment runner, result schema and report generation.
 
-__version__ = "0.0.0"
+All agents are synthetic. See research/protocol.md for the model.
+"""
+
+__version__ = "0.2.0"
