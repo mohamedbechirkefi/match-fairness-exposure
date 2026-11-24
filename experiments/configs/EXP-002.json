@@ -9,10 +9,11 @@
  "experiment_id": "EXP-002",
  "instances_per_cell": 30,
  "k": 5,
- "label": "EXP-002 centralized matching (DRAFT config mirroring protocol v0.1; same root seed as EXP-001)",
+ "label": "EXP-002 centralized matching (FROZEN v1.0, owner-approved 2026-11-24; same root seed and instances as EXP-001)",
  "mode": "confirmatory",
  "n_a": 200,
  "output_dir": "results/confirmatory/EXP-002",
+ "popularity_tie_scope": "global",
  "r_values": [
   1.0,
   1.1,
@@ -23,10 +24,10 @@
   0.5,
   0.9
  ],
- "root_seed": null,
+ "root_seed": 20261124,
  "settings": [
   {
-   "T": 20,
+   "T": 40,
    "setting_id": "base",
    "theta": 0.5
   }
