@@ -128,8 +128,6 @@ def run_experiment(cfg: ExperimentConfig, repo_root: str | Path, *, overwrite: b
                     inst_key = f"r{r:g}-rho{rho:g}-i{inst:03d}-{st.setting_id}"
                     for arm in cfg.arms:
                         run_id = f"{cfg.experiment_id}/{inst_key}/{arm}"
-                        if cfg.trace_memory:
-                            tracemalloc.start()
                         ta = time.perf_counter()
                         try:
                             metrics, diag, failures = run_arm(market, arm, seq_settings, seq_seeds)
@@ -140,9 +138,18 @@ def run_experiment(cfg: ExperimentConfig, repo_root: str | Path, *, overwrite: b
                             failures = [f"exception: {type(exc).__name__}: {exc}"]
                         runtime = time.perf_counter() - ta
                         peak = None
-                        if cfg.trace_memory:
-                            peak = int(tracemalloc.get_traced_memory()[1])
-                            tracemalloc.stop()
+                        if cfg.trace_memory and inst == 0 and not failures:
+                            # tracemalloc slows numpy code several-fold, so timing is never traced.
+                            # The first instance of each (cell, setting, arm) is re-run under
+                            # tracemalloc for its peak; the re-run must reproduce the metrics.
+                            tracemalloc.start()
+                            try:
+                                metrics2, _, _ = run_arm(market, arm, seq_settings, seq_seeds)
+                                peak = int(tracemalloc.get_traced_memory()[1])
+                            finally:
+                                tracemalloc.stop()
+                            if metrics2 != metrics:
+                                failures.append("non-deterministic: traced re-run changed the metrics")
                         if failures:
                             exclusions.setdefault(inst_key, f"{arm}: {'; '.join(failures)}")
                         runs.append({
@@ -178,7 +185,8 @@ def run_experiment(cfg: ExperimentConfig, repo_root: str | Path, *, overwrite: b
         "start_utc": start, "end_utc": _utc(), "wall_clock_s": wall,
         # ru_maxrss is bytes on macOS and kilobytes on Linux
         "peak_rss_bytes": int(rss if sys.platform == "darwin" else rss * 1024),
-        "peak_memory_method": "per run: tracemalloc peak (Python and numpy allocations); process: ru_maxrss",
+        "peak_memory_method": ("per run: tracemalloc peak of a deterministic re-run, first instance of each "
+                               "(cell, setting, arm) only, null otherwise; process: ru_maxrss; runtime_s is never traced"),
         "n_runs": len(runs), "n_invalid": sum(not r["valid"] for r in runs),
         "runs": [{"run_id": r["run_id"], "spawn_key": r["seed"]["spawn_key"],
                   "runtime_s": r["diagnostics"]["runtime_s"],

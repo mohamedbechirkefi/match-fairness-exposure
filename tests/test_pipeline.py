@@ -40,6 +40,11 @@ def test_run_writes_valid_deterministic_outputs(tmp_path):
     man = json.loads((out / "run_manifest.json").read_text())
     validate_manifest(man)
     assert man["n_runs"] == cfg.n_runs and man["root_seed"] == 5
+    # peak memory is traced on a re-run of instance 0 only; timing is never traced
+    peaks = {r["instance"]: r["diagnostics"]["peak_traced_bytes"] for r in doc["runs"]}
+    assert all(r["diagnostics"]["peak_traced_bytes"] is not None for r in doc["runs"] if r["instance"] == 0)
+    assert all(r["diagnostics"]["peak_traced_bytes"] is None for r in doc["runs"] if r["instance"] > 0)
+    assert peaks
     with open(out / "metrics.csv") as fh:
         assert len(list(csv.DictReader(fh))) == cfg.n_runs
     # DA arms never have blocking pairs; arms share instances (same n_b in a cell)
