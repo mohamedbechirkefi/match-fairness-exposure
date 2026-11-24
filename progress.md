@@ -113,3 +113,15 @@ D-011 protocols frozen with amendments F1 to F6; D-012 confirmatory root seed 20
 
 ### Next action
 Coordinator: schedule M3 on a quiet machine: `uv run --frozen python -m match_lab run --config experiments/configs/EXP-00N.json` for N = 1, 2, 3, then the reports. Owner: decide the fate of `results/quarantine/` (D-014).
+
+## 2026-11-24: ratification session (owner's second-round approvals)
+
+**Milestone:** M1 gate passed, M3 pending. **Starting state:** commit 95ce91b, working tree clean. Authority: `labs/_shared/owner-approvals-2026-11-24b.md` (owner's answer "Approve all").
+
+### What was done
+- D-015: recorded the owner's ratification of EXP-003 S2 horizons T = 10 and 20 and of the confirmatory root seed 20261124; added to `research/freeze.json` (`amendments_ratified`). No frozen file changed, so no hash changed.
+- D-016 and journal J-0008: recorded the coordinator's deletion, on the owner's approval, of the quarantined unscheduled EXP-001 outputs (3 files, never read). `results/quarantine/` is empty; the `.gitignore` comment updated.
+- No code change: none of the pre-M3 code fixes in the brief concerns MATCH.
+
+### Next action
+Coordinator: schedule M3 on a quiet machine (`uv run --frozen python -m match_lab run --config experiments/configs/EXP-00N.json`, N = 1, 2, 3), then the reports.

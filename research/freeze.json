@@ -146,7 +146,8 @@
    "research/experiment_journal.jsonl (J-0002 to J-0006)",
    "results/exploratory/pilot/report/report.md"
   ],
-  "post_freeze_incident": "After the frozen files were committed (88f3438), an unscheduled execution of the frozen EXP-001 config happened by accident in the freeze session (journal J-0007, decision D-014). Its outcome was not read; its outputs are quarantined unread in results/quarantine/EXP-001-unscheduled-2026-11-24/ (git-ignored), with SHA-256 in J-0007."
+  "post_freeze_incident": "After the frozen files were committed (88f3438), an unscheduled execution of the frozen EXP-001 config happened by accident in the freeze session (journal J-0007, decision D-014). Its outcome was not read; its outputs are quarantined unread in results/quarantine/EXP-001-unscheduled-2026-11-24/ (git-ignored), with SHA-256 in J-0007.",
+  "quarantine_deleted": "The quarantined outputs of the unscheduled EXP-001 run (results/quarantine/EXP-001-unscheduled-2026-11-24/, 3 files) were deleted unread by the coordinator on the owner's approval of 2026-11-24 (labs/_shared/owner-approvals-2026-11-24b.md, section 5). Their SHA-256 remain in journal J-0007; deletion recorded in J-0008 and D-016. The M3 reproduction cross-check proposed in D-014 is therefore no longer possible."
  },
  "main_protocol": {
   "path": "research/protocol.md",
@@ -187,5 +188,17 @@
   "note": "The frozen files are byte-identical at frozen_content_revision and at the commit that adds this record (the commit after it). The hashes above are of the files at frozen_content_revision.",
   "pre_freeze_revision": "f4ddedb5829a454d594a2ba6d592c00a760d9822"
  },
- "guard": "src/match_lab/config.py check_protocol_frozen: a confirmatory run needs the registry protocol_hash, this record's protocol_sha256 and the file on disk to agree, the main protocol to match main_protocol.sha256, and the config's canonical SHA-256 to equal config_canonical_sha256."
+ "guard": "src/match_lab/config.py check_protocol_frozen: a confirmatory run needs the registry protocol_hash, this record's protocol_sha256 and the file on disk to agree, the main protocol to match main_protocol.sha256, and the config's canonical SHA-256 to equal config_canonical_sha256.",
+ "amendments_ratified": {
+  "date": "2026-11-24",
+  "by": "the owner",
+  "source": "labs/_shared/owner-approvals-2026-11-24b.md (section 3, MATCH), outside this repository",
+  "owner_answer_quoted": "\"Approve all\"",
+  "decision_log": "D-015",
+  "note": "Both choices were made by the freeze session and are already in the frozen text and configs; ratification changes no file covered by a hash, so no hash changes.",
+  "items": {
+   "R1": "EXP-003 S2 horizons T = 10 and 20 (consequence of F1, primary T = 40).",
+   "R2": "Confirmatory root seed 20261124 (D-012)."
+  }
+ }
 }

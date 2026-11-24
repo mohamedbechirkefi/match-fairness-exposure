@@ -74,3 +74,13 @@ Append-only. Each entry: id, date, decision, made by, rationale, alternatives, c
 - **Made by:** the freeze session, on discovering the incident.
 - **Rationale:** the run was not scheduled, ran on a busy machine from a dirty tree, and the brief forbade confirmatory runs in this session. Reading it would expose the primary contrast before the scheduled run.
 - **Consequences for the owner and the coordinator:** (1) the scheduled M3 run uses the same frozen config and seed and is deterministic in its metrics, so it is expected to reproduce the quarantined metrics exactly (runtimes will differ); this can be checked by comparing hashes of the metric columns after M3, without reading the quarantined values first. (2) Options: delete the quarantine after M3, or keep it as a reproducibility cross-check. (3) Cause: an export of an older commit was tested with the repository's editable install, which imported the working-tree code; such checks must use a separate environment. Disclosed under C4 as a fact (run exists, outcome unseen).
+
+## D-015: The owner ratifies the EXP-003 S2 horizons and the confirmatory root seed (2026-11-24)
+- **Decision:** two choices the freeze session made are now owner decisions: (R1) EXP-003 S2 horizons T = 10 and 20 (the consequence of F1, primary T = 40; D-011); (R2) confirmatory root seed 20261124 (D-012).
+- **Made by:** the owner, answer "Approve all" (2026-11-24) to the coordinator's list, section 3 of `labs/_shared/owner-approvals-2026-11-24b.md` (outside this repository).
+- **Consequences:** both choices are already in the frozen protocols and configs, so no frozen file changes and no hash changes. Added to `research/freeze.json` under `amendments_ratified`. D-012's provision that the owner may replace the seed before M3 is now moot.
+
+## D-016: Quarantined unscheduled EXP-001 outputs deleted unread (2026-11-24)
+- **Decision:** the outputs quarantined under D-014 (`results/quarantine/EXP-001-unscheduled-2026-11-24/`, 3 files, SHA-256 in J-0007) are deleted.
+- **Made by:** the owner, answer "Approve all" (2026-11-24), section 5 of `labs/_shared/owner-approvals-2026-11-24b.md`; the deletion itself was done by the coordinator, not by this session.
+- **Consequences:** recorded in journal J-0008 and in `research/freeze.json` (`c4_disclosure.quarantine_deleted`). No metric from the run was ever read. The M3 reproduction cross-check offered in D-014 option (1) is no longer available. The git-ignore rule for `results/quarantine/` is kept.

@@ -10,5 +10,5 @@ results/raw/
 *.parquet
 .hypothesis/
 results/exploratory/**/report/*.typ
-# unscheduled run made by accident in the freeze session (J-0007, D-014); kept, not committed, outcome not read
+# unscheduled run made by accident in the freeze session (J-0007, D-014); deleted unread on the owner's approval (J-0008, D-016)
 results/quarantine/
