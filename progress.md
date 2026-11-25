@@ -206,3 +206,17 @@ The owner approved the experiment reports (owner, 2026-11-25, "approve all recom
 ### Next action
 - **Owner:** approve or revise the proposed manuscript title, and review `research/publication/review_pass_2.md`.
 - **Then:** M5 (interactive page) and M6 (PDF builds, a recheck of the Su et al. wording, clean-clone reproduction). No push without the owner's approval.
+
+## 2026-11-25: post-M4 owner decisions (title, statements)
+
+**Starting state:** commit 410db30, working tree clean. Authority: owner, 2026-11-25, "Approve all" (post-M4) (`_shared/owner-approvals-2026-11-25c.md`, items 1 and 2; brief `_shared/POST-M4-brief.md`).
+
+- Item 1: the D-023 title is owner-approved. The manuscript status sentence now records the approval instead of "proposed"; `manuscript.tex` regenerated with `pandoc manuscript.md -s -t latex` (3-line diff, header comments kept) (D-024).
+- Item 2: funding, competing-interest and AI-assistance wording recorded as owner-approved; no wording changed (D-024).
+- No frozen protocol, config, seed or result changed. No computation.
+
+### Owner placeholders for M5
+1. Manuscript section 10: "public URL: to be added after the owner's approval". The URL exists only once the owner approves publication.
+
+### Next action
+M5 (interactive page) and M6 (PDF builds, a recheck of the Su et al. wording, clean-clone reproduction). No push.

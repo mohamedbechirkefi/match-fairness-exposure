@@ -3,7 +3,7 @@
 
 # Popularity ranking, exposure balancing and the length of search: a pre-registered simulation of sequential discovery in synthetic two-sided matching markets
 
-**Status.** Independent research manuscript, preprint draft, not peer-reviewed. Version 1.0, 2026-11-25. The title is proposed and awaits the owner's approval; the working title was *Can optimal matching leave more people unhappy?*
+**Status.** Independent research manuscript, preprint draft, not peer-reviewed. Version 1.0, 2026-11-25. The title was approved by the owner on 2026-11-25 (decision D-024); the working title was *Can optimal matching leave more people unhappy?*
 
 ## Author and affiliation metadata
 
