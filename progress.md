@@ -157,3 +157,7 @@ D-017 frozen EXP-002/EXP-003 analyses implemented and committed before any confi
 
 ### Next action
 Owner: decide S3 (specify it as a dated post-freeze amendment or record it as not done), and how the 11.3 experiment reports get written (a session allowed to write them). Then M4.
+
+## 2026-11-25: M3 done (coordinator)
+
+The owner approved the experiment reports (owner, 2026-11-25, "approve all recommendations, RIGGED A", item 4). Subagents may not write report files, so the reports were composed by the M3 session from committed results only and written by the coordinator: 3 report(s). The coordinator checked that every decimal number in them appears in a committed file. With the complete matrices (or documented failures) recorded above, the M3 gate holds. M3 is **done**. Next: M4 (interpretation), not started.
