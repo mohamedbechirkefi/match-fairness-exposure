@@ -1,0 +1,1050 @@
+{
+ "schema": "lab-demo-results",
+ "schema_version": "1.0.0",
+ "project": "MATCH",
+ "question": "How do ranking and exposure policies alter match outcomes under heterogeneous preferences?",
+ "status_label": "Independent research manuscript, preprint draft, not peer-reviewed. Synthetic simulation only: no real people, profiles or platforms. Protocols frozen 2026-11-24; confirmatory runs complete; EXP-003 S3 not run (documented failure).",
+ "code_revision": "cfc90d0dfa9aa9058ee780a8d8fe3abdc77343d3",
+ "sources": [
+  {
+   "path": "results/confirmatory/EXP-001/report/tables/EXP-001_pooled_W.csv",
+   "sha256": "1dcf7bfe2f1604b782d4c7a60c450dc3b1152f5f64044f57f50cad2f2f51406f"
+  },
+  {
+   "path": "results/confirmatory/EXP-001/report/tables/EXP-001_paired_differences_W.csv",
+   "sha256": "6f72d4b2c57b156a7c9a5ce55a81a8edcd6cf447dac10f13b69d41db0c3cdb07"
+  },
+  {
+   "path": "results/confirmatory/EXP-001/report/tables/EXP-001_arm_summary.csv",
+   "sha256": "63f2b80395f69d26f44b08658a8eb35c6d95ad6c204a7fa5e6cb153cdbf0dbcc"
+  },
+  {
+   "path": "results/confirmatory/EXP-002/analysis/tables/EXP-002_contrasts.csv",
+   "sha256": "67ff61c9d0babbff234afd2408d33d81280a79d4ada9227aed85f9aae0d3a65a"
+  },
+  {
+   "path": "results/confirmatory/EXP-003/analysis/tables/EXP-003_sensitivity.csv",
+   "sha256": "b9393ddfa0f5a32925260048bec7e4bdc603c67c680c71ba7e413ac3b645bba4"
+  },
+  {
+   "path": "results/exploratory/m4_horizon_probe/analysis/pooled.csv",
+   "sha256": "da4a1497456a3a50b08d2b9f3753ad780e80ebbbe86b16134e62844aaca6de6b"
+  },
+  {
+   "path": "results/exploratory/m4_confounders/decomposition.csv",
+   "sha256": "7066caa4294aa5e4c63a539583bee764bf5801fa2f0beaf0bc8b0e01704d77c9"
+  },
+  {
+   "path": "results/confirmatory/EXP-001/run_manifest.json",
+   "sha256": "7b34277bcf5cce37d1c30387b164385c1d34b02ac52b6ce5528a55348adf6845"
+  },
+  {
+   "path": "results/exploratory/m4_horizon_probe/run_manifest.json",
+   "sha256": "98a8005d836f6f5c01f840f177039ff29cfd0f1005286cbb14b5bf612c417451"
+  },
+  {
+   "path": "research/experiment_registry.csv",
+   "sha256": "e058040d75e2da870adc7310f74cfee09ed6bf436e9f69bc29d6c6e46af1f101"
+  },
+  {
+   "path": "research/claims_register.csv",
+   "sha256": "2522a11bb75b15f87d213601bdbfaf0c3ccbfc5471af585fd3d1547394f8676b"
+  },
+  {
+   "path": "research/publication/artifact_manifest.json",
+   "sha256": "4eb4e865681a65a46301280ad792003b01916c885f4d2835ea74b4d438ae277e"
+  },
+  {
+   "path": "research/paper/manuscript.md",
+   "sha256": "39605cfa06d2e49a558fa1b6d1cc65a5dc379577640f8196744ff13ffe412d39"
+  }
+ ],
+ "experiments": [
+  {
+   "id": "EXP-001",
+   "title": "Exposure policies in sequential discovery",
+   "role": "primary, confirmatory",
+   "status": "complete: 810 of 810 runs, 0 invalid",
+   "verdict": "POPULARITY: H1 supported (Holm p = 0.0002), but not robust to the horizon under the frozen EXP-003 criterion. EXPOSURE_BALANCED: H1 not supported; equivalent to 0 at margin 0.01.",
+   "estimates": [
+    {
+     "label": "theta, POPULARITY - RANDOM (9 cells, 270 paired instances)",
+     "estimate": 0.021912094869403036,
+     "ci_low": 0.020683884372382243,
+     "ci_high": 0.02311824192279544,
+     "ci_level": 0.95,
+     "unit": "welfare units",
+     "display": "+0.0219",
+     "interval_display": "+0.0207 to +0.0231"
+    },
+    {
+     "label": "theta, EXPOSURE_BALANCED - RANDOM (9 cells, 270 paired instances)",
+     "estimate": 0.00040372494886834636,
+     "ci_low": -0.0006867716024282047,
+     "ci_high": 0.0015153499644378348,
+     "ci_level": 0.95,
+     "unit": "welfare units",
+     "display": "+0.0004",
+     "interval_display": "-0.0007 to +0.0015"
+    },
+    {
+     "label": "theta, EXPOSURE_BALANCED - RANDOM, 90% CI for the equivalence test (margin 0.01)",
+     "estimate": 0.00040372494886834636,
+     "ci_low": -0.0004910903718714413,
+     "ci_high": 0.0013173355334986574,
+     "ci_level": 0.9,
+     "unit": "welfare units",
+     "display": "+0.0004",
+     "interval_display": "-0.0005 to +0.0013"
+    }
+   ],
+   "claim_ids": [
+    "C-001",
+    "C-002",
+    "C-008",
+    "C-009"
+   ],
+   "report_path": "research/experiments/EXP-001/report.md",
+   "notes": [
+    "Holm-adjusted p: POPULARITY 0.0002 (at the floor of the 10,000-draw test), EXPOSURE_BALANCED 0.5137.",
+    "T = 40 rounds, pickiness theta = 0.5, slate length k = 5, n_A = 200. Primary horizon chosen by the owner after pilot values were seen (decision C4)."
+   ],
+   "components": []
+  },
+  {
+   "id": "EXP-002",
+   "title": "Centralized two-sided matching versus sequential discovery",
+   "role": "secondary, no multiplicity protection",
+   "status": "complete: 810 of 810 runs, 0 invalid",
+   "verdict": "H_a supported (secondary). H_b supported (secondary). DA invariant held: no blocking pair in the 540 DA_A and DA_B runs.",
+   "estimates": [
+    {
+     "label": "H_a: W(DA_A) - W(RANDOM) (9 cells, 270 paired instances)",
+     "estimate": 0.09632390987774628,
+     "ci_low": 0.09537108966527953,
+     "ci_high": 0.09728203423293241,
+     "ci_level": 0.95,
+     "unit": "welfare units",
+     "display": "+0.0963",
+     "interval_display": "+0.0954 to +0.0973"
+    },
+    {
+     "label": "H_b: blocking pairs per 100 agents, MAXW - DA_A",
+     "estimate": 231.0600352733686,
+     "ci_low": 226.31878306878306,
+     "ci_high": 235.69718121693123,
+     "ci_level": 0.95,
+     "unit": "blocking pairs per 100 agents",
+     "display": "+231.06",
+     "interval_display": "+226.32 to +235.70"
+    }
+   ],
+   "claim_ids": [
+    "C-003",
+    "C-004",
+    "C-014"
+   ],
+   "report_path": "research/experiments/EXP-002/report.md",
+   "notes": [
+    "Centralized references use full preference information, so the H_a contrast mixes information and mechanism.",
+    "Blocking pairs per 100 agents is a pair count, so values above 100 are possible."
+   ],
+   "components": []
+  },
+  {
+   "id": "EXP-003",
+   "title": "Sensitivity of the exposure-policy effect",
+   "role": "sensitivity, registered",
+   "status": "partial: S1 and S2 complete (1,440 of 1,440 runs, 0 invalid); S3 not run, a documented failure",
+   "verdict": "POPULARITY meets the frozen invalidation criterion at both S2 horizons: the EXP-001 POPULARITY result is not robust to the horizon. EXPOSURE_BALANCED does not meet it. The welfare-definition check (S3) was not run, so the dependence of either verdict on the welfare definition is untested.",
+   "estimates": [
+    {
+     "label": "EXP-001 reference (T 40, theta 0.5): POPULARITY - RANDOM (4 corner cells, 120 paired instances)",
+     "estimate": 0.016896675616096098,
+     "ci_low": 0.015032632875918066,
+     "ci_high": 0.018761582991602382,
+     "ci_level": 0.95,
+     "unit": "welfare units",
+     "display": "+0.0169",
+     "interval_display": "+0.0150 to +0.0188"
+    },
+    {
+     "label": "EXP-001 reference (T 40, theta 0.5): EXPOSURE_BALANCED - RANDOM (4 corner cells, 120 paired instances)",
+     "estimate": 0.0026887598527755756,
+     "ci_low": 0.0011498585282880337,
+     "ci_high": 0.004293095084536388,
+     "ci_level": 0.95,
+     "unit": "welfare units",
+     "display": "+0.0027",
+     "interval_display": "+0.0011 to +0.0043"
+    },
+    {
+     "label": "S1, theta 0.3 (T 40): POPULARITY - RANDOM (4 corner cells, 120 paired instances)",
+     "estimate": 0.03401184854036068,
+     "ci_low": 0.03207987418278686,
+     "ci_high": 0.03590484072046409,
+     "ci_level": 0.95,
+     "unit": "welfare units",
+     "display": "+0.0340",
+     "interval_display": "+0.0321 to +0.0359"
+    },
+    {
+     "label": "S1, theta 0.3 (T 40): EXPOSURE_BALANCED - RANDOM (4 corner cells, 120 paired instances)",
+     "estimate": 0.005242836324879702,
+     "ci_low": 0.003438814853601914,
+     "ci_high": 0.007047096452860741,
+     "ci_level": 0.95,
+     "unit": "welfare units",
+     "display": "+0.0052",
+     "interval_display": "+0.0034 to +0.0070"
+    },
+    {
+     "label": "S1, theta 0.7 (T 40): POPULARITY - RANDOM (4 corner cells, 120 paired instances)",
+     "estimate": 0.003045352319008655,
+     "ci_low": 0.0009219746691932562,
+     "ci_high": 0.0051737446149364595,
+     "ci_level": 0.95,
+     "unit": "welfare units",
+     "display": "+0.0030",
+     "interval_display": "+0.0009 to +0.0052"
+    },
+    {
+     "label": "S1, theta 0.7 (T 40): EXPOSURE_BALANCED - RANDOM (4 corner cells, 120 paired instances)",
+     "estimate": 0.004139804022901576,
+     "ci_low": 0.002605688029402877,
+     "ci_high": 0.005683102875021696,
+     "ci_level": 0.95,
+     "unit": "welfare units",
+     "display": "+0.0041",
+     "interval_display": "+0.0026 to +0.0057"
+    },
+    {
+     "label": "S2, T 20: POPULARITY - RANDOM (4 corner cells, 120 paired instances)",
+     "estimate": -0.2823715052408083,
+     "ci_low": -0.284315857445323,
+     "ci_high": -0.28048583455880294,
+     "ci_level": 0.95,
+     "unit": "welfare units",
+     "display": "-0.2824",
+     "interval_display": "-0.2843 to -0.2805"
+    },
+    {
+     "label": "S2, T 20: EXPOSURE_BALANCED - RANDOM (4 corner cells, 120 paired instances)",
+     "estimate": 0.0049205291367652015,
+     "ci_low": 0.003296474815899453,
+     "ci_high": 0.006588456650588493,
+     "ci_level": 0.95,
+     "unit": "welfare units",
+     "display": "+0.0049",
+     "interval_display": "+0.0033 to +0.0066"
+    },
+    {
+     "label": "S2, T 10: POPULARITY - RANDOM (4 corner cells, 120 paired instances)",
+     "estimate": -0.40807477941547204,
+     "ci_low": -0.4098068134201526,
+     "ci_high": -0.4063580783656297,
+     "ci_level": 0.95,
+     "unit": "welfare units",
+     "display": "-0.4081",
+     "interval_display": "-0.4098 to -0.4064"
+    },
+    {
+     "label": "S2, T 10: EXPOSURE_BALANCED - RANDOM (4 corner cells, 120 paired instances)",
+     "estimate": 0.0008004006235189168,
+     "ci_low": -0.001194705067982054,
+     "ci_high": 0.0027642726505296834,
+     "ci_level": 0.95,
+     "unit": "welfare units",
+     "display": "+0.0008",
+     "interval_display": "-0.0012 to +0.0028"
+    }
+   ],
+   "claim_ids": [
+    "C-005",
+    "C-006",
+    "C-007"
+   ],
+   "report_path": "research/experiments/EXP-003/report.md",
+   "notes": [
+    "Invalidation rule (frozen): opposite sign of the EXP-001 estimate with a 95% CI excluding 0 under any S2 or S3 setting. S1 is reported but is not part of the rule."
+   ],
+   "components": [
+    {
+     "id": "S1",
+     "title": "Pickiness theta 0.3 and 0.7 at T = 40",
+     "status": "complete",
+     "verdict": "Both policies keep the EXP-001 sign; not part of the invalidation rule."
+    },
+    {
+     "id": "S2",
+     "title": "Horizon T = 10 and T = 20 at theta = 0.5",
+     "status": "complete",
+     "verdict": "POPULARITY reverses sign with CIs excluding 0 (not robust); EXPOSURE_BALANCED does not."
+    },
+    {
+     "id": "S3",
+     "title": "Reanalysis with a different welfare definition",
+     "status": "not run (documented failure, D-018, D-019)",
+     "verdict": "Not tested. The raw outputs store per-run metrics, not matchings or utilities, and the frozen text does not fix the alternative scale; no parameters were chosen after the data."
+    }
+   ]
+  },
+  {
+   "id": "M4-HORIZON",
+   "title": "Horizon-extension probe (E4)",
+   "role": "exploratory, not registered, designed after the S2 result",
+   "status": "exploratory: 810 runs on the new seed 505, 10 instances per cell, 0 invalid",
+   "verdict": "No frozen rule applies. Hypothesis-generating only; no frozen verdict changed.",
+   "estimates": [
+    {
+     "label": "POPULARITY - RANDOM at T = 40 (9 cells, 90 paired instances)",
+     "estimate": 0.021695864837790416,
+     "ci_low": 0.019592095809617526,
+     "ci_high": 0.02382674498898267,
+     "ci_level": 0.95,
+     "unit": "welfare units",
+     "display": "+0.0217",
+     "interval_display": "+0.0196 to +0.0238"
+    },
+    {
+     "label": "POPULARITY - RANDOM at T = 80 (identical at T = 160)",
+     "estimate": 0.037528267160397984,
+     "ci_low": 0.03559808890486011,
+     "ci_high": 0.03944871981588245,
+     "ci_level": 0.95,
+     "unit": "welfare units",
+     "display": "+0.0375",
+     "interval_display": "+0.0356 to +0.0394"
+    },
+    {
+     "label": "Delta U, POPULARITY - RANDOM at T = 80",
+     "estimate": -0.01988835978835979,
+     "ci_low": null,
+     "ci_high": null,
+     "ci_level": null,
+     "unit": "share of agents",
+     "display": "-0.0199",
+     "interval_display": null
+    },
+    {
+     "label": "EXPOSURE_BALANCED - RANDOM at every horizon",
+     "estimate": 0.002171106473571433,
+     "ci_low": 0.00023286702370435097,
+     "ci_high": 0.00410470600131482,
+     "ci_level": 0.95,
+     "unit": "welfare units",
+     "display": "+0.0022",
+     "interval_display": "+0.0002 to +0.0041"
+    }
+   ],
+   "claim_ids": [
+    "C-011"
+   ],
+   "report_path": "research/paper/manuscript.md (section 5.4); journal J-0015",
+   "notes": [
+    "The analysis computed no interval for Delta U.",
+    "Run at revision e1050b2 (exploratory)."
+   ],
+   "components": []
+  },
+  {
+   "id": "M4-CONFOUNDERS",
+   "title": "Confounder diagnostics on committed outputs (E1 to E3)",
+   "role": "exploratory, not registered, computed after the confirmatory analysis",
+   "status": "exploratory: derived from the committed EXP-001 and EXP-003 outputs",
+   "verdict": "No frozen rule applies. No frozen verdict changed. This is not EXP-003 S3, which stays not run.",
+   "estimates": [
+    {
+     "label": "E3: mean satisfaction of matched agents Q, POPULARITY - RANDOM (EXP-001)",
+     "estimate": 0.028230393760973457,
+     "ci_low": 0.027225562776957635,
+     "ci_high": 0.02922524536256141,
+     "ci_level": 0.95,
+     "unit": "satisfaction units",
+     "display": "+0.0282",
+     "interval_display": "+0.0272 to +0.0292"
+    },
+    {
+     "label": "E2: unmatched value v at which the S2 POPULARITY contrast changes sign, T = 10",
+     "estimate": 0.747036254669748,
+     "ci_low": null,
+     "ci_high": null,
+     "ci_level": null,
+     "unit": "unmatched value",
+     "display": "0.75",
+     "interval_display": null
+    },
+    {
+     "label": "E2: unmatched value v at which the S2 POPULARITY contrast changes sign, T = 20",
+     "estimate": 0.721777800641098,
+     "ci_low": null,
+     "ci_high": null,
+     "ci_level": null,
+     "unit": "unmatched value",
+     "display": "0.72",
+     "interval_display": null
+    }
+   ],
+   "claim_ids": [
+    "C-010",
+    "C-012",
+    "C-013"
+   ],
+   "report_path": "research/paper/manuscript.md (section 5.4); journal J-0014",
+   "notes": [
+    "E1: every POPULARITY instance was still forming matches in round 40, whereas RANDOM and EXPOSURE_BALANCED had almost always stopped; the T = 40 outcome is truncated for POPULARITY.",
+    "Break-even values are point values from the committed sweep; no interval exists for them."
+   ],
+   "components": []
+  }
+ ],
+ "assumptions": [
+  {
+   "name": "Population",
+   "value": "Two sides; 200 agents on the short side A; B has round(r x 200) agents, imbalance r in {1.0, 1.1, 1.5}",
+   "source": "manuscript section 3; research/protocol.md (frozen v1.0)"
+  },
+  {
+   "name": "Utilities",
+   "value": "u_ij = sqrt(rho) q_j + sqrt(1 - rho) e_ij with q and e standard normal; preference correlation rho in {0, 0.5, 0.9}",
+   "source": "manuscript section 3"
+  },
+  {
+   "name": "Satisfaction",
+   "value": "Rank percentile of the partner in the agent's own ordering of the whole other side, in [0, 1]; an unmatched agent has satisfaction 0",
+   "source": "manuscript section 3"
+  },
+  {
+   "name": "Acceptability",
+   "value": "An agent likes a candidate whose utility is at least the theta-quantile of its utilities; primary theta = 0.5",
+   "source": "manuscript section 3"
+  },
+  {
+   "name": "Sequential discovery",
+   "value": "Each round every unmatched agent sees up to k = 5 unseen unmatched candidates; mutual likes resolved greedily at the end of the round; primary horizon T = 40",
+   "source": "manuscript section 3"
+  },
+  {
+   "name": "Policies",
+   "value": "RANDOM (baseline); POPULARITY (smoothed like rate, one shared tie key per round); EXPOSURE_BALANCED (same score with a per-round exposure cap, delta = 0.5)",
+   "source": "manuscript section 3; amendment F2"
+  },
+  {
+   "name": "Centralized references",
+   "value": "DA_A and DA_B (deferred acceptance, A or B proposing) and MAXW (welfare-maximizing assignment), all with full preference information",
+   "source": "manuscript section 3"
+  },
+  {
+   "name": "Primary metric",
+   "value": "Mean agent welfare W, unitless in [0, 1]; estimand theta_P is the equal-weight mean over nine cells of the paired difference versus RANDOM",
+   "source": "manuscript section 3"
+  },
+  {
+   "name": "Sampling",
+   "value": "30 market instances per cell from the root seed 20261124, common random numbers across arms",
+   "source": "manuscript section 4.1"
+  }
+ ],
+ "limitations": [
+  "Synthetic model. Utilities are Gaussian common-plus-idiosyncratic draws; agents like a candidate exactly when utility exceeds a fixed quantile; there is no strategy, learning, fatigue, messaging or exit. A single market size (200 agents on the short side) was studied. Nothing here can be read as evidence about real people, real dating or job platforms, or any proprietary ranking system.",
+  "Horizon. The primary horizon T = 40 was chosen by the owner after exploratory values were seen (C4); it is the horizon at which POPULARITY had turned positive in the pilot, and it equals n_B / k in the balanced cells. Its stated purpose, letting all arms stop matching, was not achieved for POPULARITY when r > 1. The registered sensitivity analysis showed that the POPULARITY sign depends on T, and exploratory diagnostics indicate that T = 40 truncates POPULARITY but not RANDOM. The confirmatory p-value is valid for the registered fixed-horizon contrast; it is not evidence for a horizon-free or final-allocation effect. Horizons are meaningful only relative to n_B / k in this model.",
+  "Metric definition. The registered metric-definition check (S3) was not run. The exploratory unmatched-value sweep covers only one part of it.",
+  "Policy implementation. POPULARITY uses one shared random tie key per round. In the pre-freeze exploratory runs at T = 20, the POPULARITY contrast was -0.2917 with the shared key (nine cells, J-0003) and -0.0422 with per-viewer keys (corner cells, J-0005). The results describe this implementation, not popularity ranking in general.",
+  "EXPOSURE_BALANCED construct. The cap limits per-round exposure relative to the popularity order; it did not produce lower exposure inequality than random exposure in four of nine cells, and its timing resembled random exposure. Its equivalence result is a result about this cap rule, which behaved much like random exposure, not about exposure balancing as a goal.",
+  "Estimand. theta_P is an equal-weight average over nine chosen cells; the POPULARITY sign varies across cells at T = 40, so another cell mix would give a different value.",
+  "Statistics. The intervals quantify only sampling variation across synthetic instances within one model; they are narrow because of common random numbers and say nothing about model uncertainty. The p-value is floored by the number of draws. Per-cell CIs and EXP-002 and EXP-003 contrasts are not multiplicity-protected.",
+  "Information confound. The centralized arms use full preferences; the EXP-002 welfare contrast mixes information and mechanism.",
+  "Literature. The review was short and non-systematic; several sources were verified only at metadata or abstract level.",
+  "Runtime. Runs shared a machine with other work; runtimes are diagnostics only."
+ ],
+ "exp001_cells": [
+  {
+   "cell": "r = 1.0, rho = 0.0",
+   "r": 1.0,
+   "rho": 0.0,
+   "arm": "POPULARITY",
+   "estimate": 0.03650041876046902,
+   "ci_low": 0.03234332077051927,
+   "ci_high": 0.041025554857621487,
+   "ci_level": 0.95,
+   "n_pairs": 30,
+   "display": "+0.0365",
+   "interval_display": "+0.0323 to +0.0410"
+  },
+  {
+   "cell": "r = 1.0, rho = 0.0",
+   "r": 1.0,
+   "rho": 0.0,
+   "arm": "EXPOSURE_BALANCED",
+   "estimate": 0.004463567839195966,
+   "ci_low": 0.0006946503350083766,
+   "ci_high": 0.008277847571189267,
+   "ci_level": 0.95,
+   "n_pairs": 30,
+   "display": "+0.0045",
+   "interval_display": "+0.0007 to +0.0083"
+  },
+  {
+   "cell": "r = 1.0, rho = 0.5",
+   "r": 1.0,
+   "rho": 0.5,
+   "arm": "POPULARITY",
+   "estimate": 0.06524036850921275,
+   "ci_low": 0.060337499999999995,
+   "ci_high": 0.06993326005025129,
+   "ci_level": 0.95,
+   "n_pairs": 30,
+   "display": "+0.0652",
+   "interval_display": "+0.0603 to +0.0699"
+  },
+  {
+   "cell": "r = 1.0, rho = 0.5",
+   "r": 1.0,
+   "rho": 0.5,
+   "arm": "EXPOSURE_BALANCED",
+   "estimate": -0.005706448911222824,
+   "ci_low": -0.01009009631490788,
+   "ci_high": -0.0012876256281407416,
+   "ci_level": 0.95,
+   "n_pairs": 30,
+   "display": "-0.0057",
+   "interval_display": "-0.0101 to -0.0013"
+  },
+  {
+   "cell": "r = 1.0, rho = 0.9",
+   "r": 1.0,
+   "rho": 0.9,
+   "arm": "POPULARITY",
+   "estimate": 0.03792211055276382,
+   "ci_low": 0.03480316164154104,
+   "ci_high": 0.04095566373534339,
+   "ci_level": 0.95,
+   "n_pairs": 30,
+   "display": "+0.0379",
+   "interval_display": "+0.0348 to +0.0410"
+  },
+  {
+   "cell": "r = 1.0, rho = 0.9",
+   "r": 1.0,
+   "rho": 0.9,
+   "arm": "EXPOSURE_BALANCED",
+   "estimate": 0.0005850083752093726,
+   "ci_low": -0.0027441582914572936,
+   "ci_high": 0.003840902428810723,
+   "ci_level": 0.95,
+   "n_pairs": 30,
+   "display": "+0.0006",
+   "interval_display": "-0.0027 to +0.0038"
+  },
+  {
+   "cell": "r = 1.1, rho = 0.0",
+   "r": 1.1,
+   "rho": 0.0,
+   "arm": "POPULARITY",
+   "estimate": 0.02461779798463213,
+   "ci_low": 0.02192865524440345,
+   "ci_high": 0.027416313146875176,
+   "ci_level": 0.95,
+   "n_pairs": 30,
+   "display": "+0.0246",
+   "interval_display": "+0.0219 to +0.0274"
+  },
+  {
+   "cell": "r = 1.1, rho = 0.0",
+   "r": 1.1,
+   "rho": 0.0,
+   "arm": "EXPOSURE_BALANCED",
+   "estimate": 0.004585817760251532,
+   "ci_low": 0.0008467410892980132,
+   "ci_high": 0.008209917821331004,
+   "ci_level": 0.95,
+   "n_pairs": 30,
+   "display": "+0.0046",
+   "interval_display": "+0.0008 to +0.0082"
+  },
+  {
+   "cell": "r = 1.1, rho = 0.5",
+   "r": 1.1,
+   "rho": 0.5,
+   "arm": "POPULARITY",
+   "estimate": 0.03200191360513522,
+   "ci_low": 0.028548606125867435,
+   "ci_high": 0.03528610272497519,
+   "ci_level": 0.95,
+   "n_pairs": 30,
+   "display": "+0.0320",
+   "interval_display": "+0.0285 to +0.0353"
+  },
+  {
+   "cell": "r = 1.1, rho = 0.5",
+   "r": 1.1,
+   "rho": 0.5,
+   "arm": "EXPOSURE_BALANCED",
+   "estimate": -0.008193453314262836,
+   "ci_low": -0.011524289564077576,
+   "ci_high": -0.005067733344915471,
+   "ci_level": 0.95,
+   "n_pairs": 30,
+   "display": "-0.0082",
+   "interval_display": "-0.0115 to -0.0051"
+  },
+  {
+   "cell": "r = 1.1, rho = 0.9",
+   "r": 1.1,
+   "rho": 0.9,
+   "arm": "POPULARITY",
+   "estimate": 0.013832788280024455,
+   "ci_low": 0.010177428874458537,
+   "ci_high": 0.017423963060209356,
+   "ci_level": 0.95,
+   "n_pairs": 30,
+   "display": "+0.0138",
+   "interval_display": "+0.0102 to +0.0174"
+  },
+  {
+   "cell": "r = 1.1, rho = 0.9",
+   "r": 1.1,
+   "rho": 0.9,
+   "arm": "EXPOSURE_BALANCED",
+   "estimate": 0.001901822659721745,
+   "ci_low": -0.0011728607522646253,
+   "ci_high": 0.0047847027137572235,
+   "ci_level": 0.95,
+   "n_pairs": 30,
+   "display": "+0.0019",
+   "interval_display": "-0.0012 to +0.0048"
+  },
+  {
+   "cell": "r = 1.5, rho = 0.0",
+   "r": 1.5,
+   "rho": 0.0,
+   "arm": "POPULARITY",
+   "estimate": 0.01959032845386353,
+   "ci_low": 0.0171373416693277,
+   "ci_high": 0.022077557884181222,
+   "ci_level": 0.95,
+   "n_pairs": 30,
+   "display": "+0.0196",
+   "interval_display": "+0.0171 to +0.0221"
+  },
+  {
+   "cell": "r = 1.5, rho = 0.0",
+   "r": 1.5,
+   "rho": 0.0,
+   "arm": "EXPOSURE_BALANCED",
+   "estimate": 0.0026236645882702137,
+   "ci_low": -0.00015508742149993526,
+   "ci_high": 0.0057431787420939295,
+   "ci_level": 0.95,
+   "n_pairs": 30,
+   "display": "+0.0026",
+   "interval_display": "-0.0002 to +0.0057"
+  },
+  {
+   "cell": "r = 1.5, rho = 0.5",
+   "r": 1.5,
+   "rho": 0.5,
+   "arm": "POPULARITY",
+   "estimate": -0.006070717018761588,
+   "ci_low": -0.009089060379937609,
+   "ci_high": -0.003020181061382711,
+   "ci_level": 0.95,
+   "n_pairs": 30,
+   "display": "-0.0061",
+   "interval_display": "-0.0091 to -0.0030"
+  },
+  {
+   "cell": "r = 1.5, rho = 0.5",
+   "r": 1.5,
+   "rho": 0.5,
+   "arm": "EXPOSURE_BALANCED",
+   "estimate": 0.00029074693422519816,
+   "ci_low": -0.002048648033926599,
+   "ci_high": 0.0025949426060065863,
+   "ci_level": 0.95,
+   "n_pairs": 30,
+   "display": "+0.0003",
+   "interval_display": "-0.0020 to +0.0026"
+  },
+  {
+   "cell": "r = 1.5, rho = 0.9",
+   "r": 1.5,
+   "rho": 0.9,
+   "arm": "POPULARITY",
+   "estimate": -0.026426155302711994,
+   "ci_low": -0.03092793023086447,
+   "ci_high": -0.02187339383651815,
+   "ci_level": 0.95,
+   "n_pairs": 30,
+   "display": "-0.0264",
+   "interval_display": "-0.0309 to -0.0219"
+  },
+  {
+   "cell": "r = 1.5, rho = 0.9",
+   "r": 1.5,
+   "rho": 0.9,
+   "arm": "EXPOSURE_BALANCED",
+   "estimate": 0.0030827986084267494,
+   "ci_low": 0.0006456639104104623,
+   "ci_high": 0.005595366940611646,
+   "ci_level": 0.95,
+   "n_pairs": 30,
+   "display": "+0.0031",
+   "interval_display": "+0.0006 to +0.0056"
+  }
+ ],
+ "tradeoff": [
+  {
+   "cell": "r = 1.0, rho = 0.0",
+   "r": 1.0,
+   "rho": 0.0,
+   "arm": "RANDOM",
+   "n_instances": 30,
+   "W_mean": 0.7604744556113904,
+   "W_sd": 0.007917586598067253,
+   "gini_B_mean": 0.24200223096654064,
+   "gini_B_sd": 0.012843807439058599,
+   "W_display": "0.7605",
+   "gini_B_display": "0.2420"
+  },
+  {
+   "cell": "r = 1.0, rho = 0.0",
+   "r": 1.0,
+   "rho": 0.0,
+   "arm": "POPULARITY",
+   "n_instances": 30,
+   "W_mean": 0.7969748743718593,
+   "W_sd": 0.008945572577741985,
+   "gini_B_mean": 0.3166586620971221,
+   "gini_B_sd": 0.0010283889242974275,
+   "W_display": "0.7970",
+   "gini_B_display": "0.3167"
+  },
+  {
+   "cell": "r = 1.0, rho = 0.0",
+   "r": 1.0,
+   "rho": 0.0,
+   "arm": "EXPOSURE_BALANCED",
+   "n_instances": 30,
+   "W_mean": 0.7649380234505863,
+   "W_sd": 0.00625886436090921,
+   "gini_B_mean": 0.2869107724338094,
+   "gini_B_sd": 0.008560832570015274,
+   "W_display": "0.7649",
+   "gini_B_display": "0.2869"
+  },
+  {
+   "cell": "r = 1.0, rho = 0.5",
+   "r": 1.0,
+   "rho": 0.5,
+   "arm": "RANDOM",
+   "n_instances": 30,
+   "W_mean": 0.6446411222780569,
+   "W_sd": 0.010382890683352908,
+   "gini_B_mean": 0.3127286484669185,
+   "gini_B_sd": 0.010815277444067364,
+   "W_display": "0.6446",
+   "gini_B_display": "0.3127"
+  },
+  {
+   "cell": "r = 1.0, rho = 0.5",
+   "r": 1.0,
+   "rho": 0.5,
+   "arm": "POPULARITY",
+   "n_instances": 30,
+   "W_mean": 0.7098814907872696,
+   "W_sd": 0.010472973324836557,
+   "gini_B_mean": 0.27586012718974556,
+   "gini_B_sd": 0.005116266648839781,
+   "W_display": "0.7099",
+   "gini_B_display": "0.2759"
+  },
+  {
+   "cell": "r = 1.0, rho = 0.5",
+   "r": 1.0,
+   "rho": 0.5,
+   "arm": "EXPOSURE_BALANCED",
+   "n_instances": 30,
+   "W_mean": 0.6389346733668341,
+   "W_sd": 0.01229376797952707,
+   "gini_B_mean": 0.28227922700641456,
+   "gini_B_sd": 0.01256013709540798,
+   "W_display": "0.6389",
+   "gini_B_display": "0.2823"
+  },
+  {
+   "cell": "r = 1.0, rho = 0.9",
+   "r": 1.0,
+   "rho": 0.9,
+   "arm": "RANDOM",
+   "n_instances": 30,
+   "W_mean": 0.4710159128978225,
+   "W_sd": 0.00955407598538523,
+   "gini_B_mean": 0.37773728329747697,
+   "gini_B_sd": 0.0067155370801846815,
+   "W_display": "0.4710",
+   "gini_B_display": "0.3777"
+  },
+  {
+   "cell": "r = 1.0, rho = 0.9",
+   "r": 1.0,
+   "rho": 0.9,
+   "arm": "POPULARITY",
+   "n_instances": 30,
+   "W_mean": 0.5089380234505864,
+   "W_sd": 0.01127457831411023,
+   "gini_B_mean": 0.1728027502544526,
+   "gini_B_sd": 0.0068006341828788725,
+   "W_display": "0.5089",
+   "gini_B_display": "0.1728"
+  },
+  {
+   "cell": "r = 1.0, rho = 0.9",
+   "r": 1.0,
+   "rho": 0.9,
+   "arm": "EXPOSURE_BALANCED",
+   "n_instances": 30,
+   "W_mean": 0.4716009212730318,
+   "W_sd": 0.010358157397404756,
+   "gini_B_mean": 0.33708669719314077,
+   "gini_B_sd": 0.0097817051019384,
+   "W_display": "0.4716",
+   "gini_B_display": "0.3371"
+  },
+  {
+   "cell": "r = 1.1, rho = 0.0",
+   "r": 1.1,
+   "rho": 0.0,
+   "arm": "RANDOM",
+   "n_instances": 30,
+   "W_mean": 0.7330422861571757,
+   "W_sd": 0.006776157536875233,
+   "gini_B_mean": 0.22259847263299162,
+   "gini_B_sd": 0.00678499883210408,
+   "W_display": "0.7330",
+   "gini_B_display": "0.2226"
+  },
+  {
+   "cell": "r = 1.1, rho = 0.0",
+   "r": 1.1,
+   "rho": 0.0,
+   "arm": "POPULARITY",
+   "n_instances": 30,
+   "W_mean": 0.7576600841418079,
+   "W_sd": 0.005726509473613593,
+   "gini_B_mean": 0.37883964453619856,
+   "gini_B_sd": 0.0012123854305289069,
+   "W_display": "0.7577",
+   "gini_B_display": "0.3788"
+  },
+  {
+   "cell": "r = 1.1, rho = 0.0",
+   "r": 1.1,
+   "rho": 0.0,
+   "arm": "EXPOSURE_BALANCED",
+   "n_instances": 30,
+   "W_mean": 0.7376281039174273,
+   "W_sd": 0.007501422226449362,
+   "gini_B_mean": 0.2986155163831513,
+   "gini_B_sd": 0.011281678671086695,
+   "W_display": "0.7376",
+   "gini_B_display": "0.2986"
+  },
+  {
+   "cell": "r = 1.1, rho = 0.5",
+   "r": 1.1,
+   "rho": 0.5,
+   "arm": "RANDOM",
+   "n_instances": 30,
+   "W_mean": 0.6434495409569408,
+   "W_sd": 0.00945332300845803,
+   "gini_B_mean": 0.29537020812352416,
+   "gini_B_sd": 0.008417811428618258,
+   "W_display": "0.6434",
+   "gini_B_display": "0.2954"
+  },
+  {
+   "cell": "r = 1.1, rho = 0.5",
+   "r": 1.1,
+   "rho": 0.5,
+   "arm": "POPULARITY",
+   "n_instances": 30,
+   "W_mean": 0.675451454562076,
+   "W_sd": 0.009700316793777185,
+   "gini_B_mean": 0.3427409668350406,
+   "gini_B_sd": 0.005595482044750857,
+   "W_display": "0.6755",
+   "gini_B_display": "0.3427"
+  },
+  {
+   "cell": "r = 1.1, rho = 0.5",
+   "r": 1.1,
+   "rho": 0.5,
+   "arm": "EXPOSURE_BALANCED",
+   "n_instances": 30,
+   "W_mean": 0.6352560876426782,
+   "W_sd": 0.010129524633315467,
+   "gini_B_mean": 0.2707748337635814,
+   "gini_B_sd": 0.01183340723809936,
+   "W_display": "0.6353",
+   "gini_B_display": "0.2708"
+  },
+  {
+   "cell": "r = 1.1, rho = 0.9",
+   "r": 1.1,
+   "rho": 0.9,
+   "arm": "RANDOM",
+   "n_instances": 30,
+   "W_mean": 0.47184726269602717,
+   "W_sd": 0.00909747052562449,
+   "gini_B_mean": 0.3704549304875738,
+   "gini_B_sd": 0.006251325051403772,
+   "W_display": "0.4718",
+   "gini_B_display": "0.3705"
+  },
+  {
+   "cell": "r = 1.1, rho = 0.9",
+   "r": 1.1,
+   "rho": 0.9,
+   "arm": "POPULARITY",
+   "n_instances": 30,
+   "W_mean": 0.48568005097605155,
+   "W_sd": 0.01013493882120809,
+   "gini_B_mean": 0.24925993120784273,
+   "gini_B_sd": 0.007001647715538803,
+   "W_display": "0.4857",
+   "gini_B_display": "0.2493"
+  },
+  {
+   "cell": "r = 1.1, rho = 0.9",
+   "r": 1.1,
+   "rho": 0.9,
+   "arm": "EXPOSURE_BALANCED",
+   "n_instances": 30,
+   "W_mean": 0.4737490853557488,
+   "W_sd": 0.009559031402557913,
+   "gini_B_mean": 0.33282118458222026,
+   "gini_B_sd": 0.008657059229262786,
+   "W_display": "0.4737",
+   "gini_B_display": "0.3328"
+  },
+  {
+   "cell": "r = 1.5, rho = 0.0",
+   "r": 1.5,
+   "rho": 0.0,
+   "arm": "RANDOM",
+   "n_instances": 30,
+   "W_mean": 0.617326044940421,
+   "W_sd": 0.005955905633767353,
+   "gini_B_mean": 0.1900443577380629,
+   "gini_B_sd": 0.008897574058020444,
+   "W_display": "0.6173",
+   "gini_B_display": "0.1900"
+  },
+  {
+   "cell": "r = 1.5, rho = 0.0",
+   "r": 1.5,
+   "rho": 0.0,
+   "arm": "POPULARITY",
+   "n_instances": 30,
+   "W_mean": 0.6369163733942848,
+   "W_sd": 0.005139682236645999,
+   "gini_B_mean": 0.5442288942063893,
+   "gini_B_sd": 0.000886360013324681,
+   "W_display": "0.6369",
+   "gini_B_display": "0.5442"
+  },
+  {
+   "cell": "r = 1.5, rho = 0.0",
+   "r": 1.5,
+   "rho": 0.0,
+   "arm": "EXPOSURE_BALANCED",
+   "n_instances": 30,
+   "W_mean": 0.6199497095286914,
+   "W_sd": 0.006568765659461188,
+   "gini_B_mean": 0.32174084078769727,
+   "gini_B_sd": 0.011578560095950046,
+   "W_display": "0.6199",
+   "gini_B_display": "0.3217"
+  },
+  {
+   "cell": "r = 1.5, rho = 0.5",
+   "r": 1.5,
+   "rho": 0.5,
+   "arm": "RANDOM",
+   "n_instances": 30,
+   "W_mean": 0.5737561900920432,
+   "W_sd": 0.007657333605286671,
+   "gini_B_mean": 0.24053873431546818,
+   "gini_B_sd": 0.012851827802649615,
+   "W_display": "0.5738",
+   "gini_B_display": "0.2405"
+  },
+  {
+   "cell": "r = 1.5, rho = 0.5",
+   "r": 1.5,
+   "rho": 0.5,
+   "arm": "POPULARITY",
+   "n_instances": 30,
+   "W_mean": 0.5676854730732817,
+   "W_sd": 0.007388673470588111,
+   "gini_B_mean": 0.5167761912489375,
+   "gini_B_sd": 0.0038811526978859783,
+   "W_display": "0.5677",
+   "gini_B_display": "0.5168"
+  },
+  {
+   "cell": "r = 1.5, rho = 0.5",
+   "r": 1.5,
+   "rho": 0.5,
+   "arm": "EXPOSURE_BALANCED",
+   "n_instances": 30,
+   "W_mean": 0.5740469370262685,
+   "W_sd": 0.0070309047487557815,
+   "gini_B_mean": 0.2788446599320679,
+   "gini_B_sd": 0.015663214642560572,
+   "W_display": "0.5740",
+   "gini_B_display": "0.2788"
+  },
+  {
+   "cell": "r = 1.5, rho = 0.9",
+   "r": 1.5,
+   "rho": 0.9,
+   "arm": "RANDOM",
+   "n_instances": 30,
+   "W_mean": 0.43575227083018214,
+   "W_sd": 0.011731866741900245,
+   "gini_B_mean": 0.337030760411641,
+   "gini_B_sd": 0.003876419037810396,
+   "W_display": "0.4358",
+   "gini_B_display": "0.3370"
+  },
+  {
+   "cell": "r = 1.5, rho = 0.9",
+   "r": 1.5,
+   "rho": 0.9,
+   "arm": "POPULARITY",
+   "n_instances": 30,
+   "W_mean": 0.40932611552747017,
+   "W_sd": 0.01059926487309738,
+   "gini_B_mean": 0.44935103935099807,
+   "gini_B_sd": 0.005257428407353023,
+   "W_display": "0.4093",
+   "gini_B_display": "0.4494"
+  },
+  {
+   "cell": "r = 1.5, rho = 0.9",
+   "r": 1.5,
+   "rho": 0.9,
+   "arm": "EXPOSURE_BALANCED",
+   "n_instances": 30,
+   "W_mean": 0.4388350694386088,
+   "W_sd": 0.011890967843971046,
+   "gini_B_mean": 0.3132620857521359,
+   "gini_B_sd": 0.007269097151979485,
+   "W_display": "0.4388",
+   "gini_B_display": "0.3133"
+  }
+ ],
+ "tradeoff_note": "Descriptive arm means over 30 instances per cell from EXP-001_arm_summary.csv (no tests). Whiskers show one standard deviation across instances, a dispersion measure, not a confidence interval. W and the RANDOM and POPULARITY Gini values are rounded as in the EXP-001 report, section 8.3. The EXPOSURE_BALANCED Gini values are rounded the same way but are not printed in the report (documented exception; the manuscript prints only 0.3217 at r = 1.5, rho = 0)."
+}

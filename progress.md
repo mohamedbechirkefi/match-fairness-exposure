@@ -220,3 +220,56 @@ The owner approved the experiment reports (owner, 2026-11-25, "approve all recom
 
 ### Next action
 M5 (interactive page) and M6 (PDF builds, a recheck of the Su et al. wording, clean-clone reproduction). No push.
+
+## 2026-11-25: M5 session (interactive page)
+
+**Milestone:** M5. **Starting state:** commit ecd22d3, working tree clean. Authority: owner, 2026-11-25, "Next" (`_shared/owner-approvals-2026-11-25d.md`), stack TypeScript, React and Vite from the shared template (D-025).
+
+### Decisions
+- D-025: M5 started on the owner's instruction; template stack, no version changed, no dependency added.
+- D-026: demo data export from committed files and the M5 consistency test.
+- D-027: sandbox engine is a port of the Python engine logic, tested against a Python fixture; different random generator, smaller market.
+- D-028: text consistency, articles drafted, owner placeholders; author line not changed (raised for the owner).
+
+### What was done
+- `demo/`: template copied without `node_modules`; every REPLACE marker replaced with the repository's SPDX header and content (`grep -rn REPLACE demo/ --exclude-dir=node_modules` returns nothing).
+- The page: overview with the status label and each experiment's verdict; forest charts of the POPULARITY and EXPOSURE_BALANCED contrasts across EXP-001, EXP-003 S1 and S2, the M4 probe (exploratory) and the not-run S3 row drawn at the same size and weight; one panel per experiment and per M4 diagnostic, with S1, S2 and S3 status cards and an S3 "not run" table row; manuscript Table 3 per cell; the EXP-001 fairness and satisfaction trade-off (mean welfare W against the side-B exposure Gini, per cell, with one-SD whiskers); assumptions; method and limitations (manuscript section 7); sandbox population and matching graph (seed, imbalance, correlation, pickiness, rounds, reset, cancel; Web Worker) with a sandbox trade-off chart and metrics table. Labels: Measured, Exploratory not confirmatory, Not run, Model assumption, Sandbox output.
+- `scripts/export_demo_data.py`, `scripts/make_sandbox_fixture.py`, `tests/test_demo_export.py` (9 tests), `demo/src/engine.ts` and `demo/src/engine.test.ts` (12 tests), extended `demo/src/results.ts` validation and `results.test.ts` (14 tests).
+- Screenshots reviewed (desktop light, desktop dark, mobile, plus section captures of the mobile trade-off and sandbox). Fixed after review: keyboard checker collisions (ids on scroll regions and inputs), estimate tables stacked below 36rem, x-axis label shortened, edge tick alignment, node radius at 360 px.
+- `docs/demo.png` (156,950 bytes) added to the README with alt text; README, CITATION.cff, demo/README.md updated; `articles/medium.md` and `articles/linkedin.md` drafted.
+
+### Commands and actual outputs
+- `../.tools/py/bin/uv sync --frozen --all-groups --all-extras`: "Audited 10 packages".
+- `.venv/bin/python -m pytest -q` at session start: 103 passed.
+- `cd demo && npm ci --prefer-offline`: added 53 packages.
+- `.venv/bin/python scripts/make_sandbox_fixture.py`: wrote demo/src/fixtures/engine_fixture.json (52231 bytes).
+- `.venv/bin/python scripts/export_demo_data.py`: wrote demo/public/data/results.json; `--check`: "results.json up to date".
+- `npm test`: Test Files 2 passed (2), Tests 26 passed (26).
+- `npm run build`: built (index JS 251.40 kB, worker 6.26 kB, CSS about 8 kB).
+- `node tools/a11y_check.mjs dist --screenshots <scratchpad>/match/shots`:
+
+    PASS results render (no fail-closed panel): 5 experiment panels
+    PASS text contrast, light scheme (WCAG AA)
+    PASS text contrast, dark scheme (WCAG AA)
+    PASS keyboard reaches every focusable element: 24 reached of 24
+    PASS visible focus indicator
+    PASS no horizontal page scroll at 360 px: overflow 0px
+    PASS reduced motion: no running animations: 0 running
+    PASS no request leaves the local origin
+    PASS offline after first load: results stay, sandbox runs: Sandbox output (seed 1, r = 1.0, rho = 0.5, theta = 0.5, T = 4): mean welfare W 
+    A11Y-CHECK PASS
+- The same checker on a copy of `dist` with one malformed field (EXP-003 S3 status emptied): "FAIL results render (no fail-closed panel): 0 experiment panels", A11Y-CHECK FAIL (2), as intended.
+- `.venv/bin/python -m pytest -q` at session end: 112 passed.
+
+### Deviations and incidents
+- `articles/medium.md` and `articles/linkedin.md` did not exist before M5; they were drafted rather than aligned.
+- Author line: kept as recorded at the freeze (C3); its confirmation is the owner's (D-028).
+- The checker's full-page mobile screenshot repeats tiles beyond about 15,000 px (a capture artifact); the mobile sections were also captured separately for review.
+- No file write was refused. No frozen protocol, config, seed or result changed; no confirmatory run.
+
+### Owner placeholders remaining
+1. Repository URL and demo URL (manuscript section 10, README, demo/README.md, articles).
+2. Confirmation of the author line and affiliation (author_review checklist, M6).
+
+### Next action
+M6 (PDF builds, a recheck of the Su et al. wording, clean-clone reproduction including the demo build, owner review checklist). No push.

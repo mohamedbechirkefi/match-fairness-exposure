@@ -10,7 +10,7 @@ authors:
     given-names: "Mohamed Bechir"
 version: "0.0.0"
 date-released: "2026-11-24"
-abstract: "Independent research project on how ranking and exposure policies alter match outcomes in synthetic two-sided markets. Status: protocols frozen on 2026-11-24 (owner-approved); no confirmatory results yet. Sole author, no affiliation; an AI system was used as a research and development assistant and is not an author."
+abstract: "Independent research project on how ranking and exposure policies alter match outcomes in synthetic two-sided markets. Status: independent research manuscript, preprint draft, not peer-reviewed; protocols frozen on 2026-11-24 (owner-approved); confirmatory experiments EXP-001 to EXP-003 run (EXP-003 S3 not run, a documented failure); all results are synthetic simulations. Sole author, no affiliation; an AI system was used as a research and development assistant and is not an author."
 keywords:
   - matching markets
   - stable matching
