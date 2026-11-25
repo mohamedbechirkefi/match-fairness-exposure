@@ -1,0 +1,46 @@
+{
+ "arms": [
+  "RANDOM",
+  "POPULARITY",
+  "EXPOSURE_BALANCED"
+ ],
+ "config_schema": "match-config/1.0.0",
+ "delta": 0.5,
+ "experiment_id": "M4-HORIZON",
+ "instances_per_cell": 10,
+ "k": 5,
+ "label": "EXPLORATORY M4 horizon-extension probe (J-0015): does POPULARITY keep matching after T = 40, and what happens to the contrast at T = 80 and 160? New exploratory root seed 505; not a finding; changes no frozen verdict",
+ "mode": "exploratory",
+ "n_a": 200,
+ "output_dir": "results/exploratory/m4_horizon_probe",
+ "popularity_tie_scope": "global",
+ "r_values": [
+  1.0,
+  1.1,
+  1.5
+ ],
+ "rho_values": [
+  0.0,
+  0.5,
+  0.9
+ ],
+ "root_seed": 505,
+ "settings": [
+  {
+   "T": 40,
+   "setting_id": "H-T40",
+   "theta": 0.5
+  },
+  {
+   "T": 80,
+   "setting_id": "H-T80",
+   "theta": 0.5
+  },
+  {
+   "T": 160,
+   "setting_id": "H-T160",
+   "theta": 0.5
+  }
+ ],
+ "trace_memory": false
+}

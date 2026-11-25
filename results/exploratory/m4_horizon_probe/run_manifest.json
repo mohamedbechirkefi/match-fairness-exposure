@@ -1,0 +1,8128 @@
+{
+ "config_sha256": "fd266e995e7ddcc17778b48ac0f54d4afb94c0a0b2a8fa279d2675c217652886",
+ "cpu": "Apple M1 Pro",
+ "cpu_count": 10,
+ "end_utc": "2026-11-25T01:23:03Z",
+ "experiment_id": "M4-HORIZON",
+ "git_dirty": false,
+ "git_revision": "e1050b29aa3d325f0811d718e33286f4c8d7b887",
+ "label": "EXPLORATORY M4 horizon-extension probe (J-0015): does POPULARITY keep matching after T = 40, and what happens to the contrast at T = 80 and 160? New exploratory root seed 505; not a finding; changes no frozen verdict",
+ "manifest_schema": "match-manifest/1.0.0",
+ "match_lab_version": "0.2.0",
+ "mode": "exploratory",
+ "n_invalid": 0,
+ "n_runs": 810,
+ "packages": {
+  "numpy": "2.3.5",
+  "scipy": "1.16.3"
+ },
+ "peak_memory_method": "per run: tracemalloc peak of a deterministic re-run, first instance of each (cell, setting, arm) only, null otherwise; process: ru_maxrss; runtime_s is never traced",
+ "peak_rss_bytes": 116948992,
+ "platform": "macOS-15.3.1-arm64-arm-64bit",
+ "python": "3.12.1",
+ "root_seed": 505,
+ "runs": [
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1-rho0-i000-H-T40/RANDOM",
+   "runtime_s": 0.06308066700148629,
+   "spawn_key": [
+    1000,
+    0,
+    0
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1-rho0-i000-H-T40/POPULARITY",
+   "runtime_s": 0.11837945799925365,
+   "spawn_key": [
+    1000,
+    0,
+    0
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1-rho0-i000-H-T40/EXPOSURE_BALANCED",
+   "runtime_s": 0.06922483300149906,
+   "spawn_key": [
+    1000,
+    0,
+    0
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1-rho0-i000-H-T80/RANDOM",
+   "runtime_s": 0.10255024999787565,
+   "spawn_key": [
+    1000,
+    0,
+    0
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1-rho0-i000-H-T80/POPULARITY",
+   "runtime_s": 0.1584631250007078,
+   "spawn_key": [
+    1000,
+    0,
+    0
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1-rho0-i000-H-T80/EXPOSURE_BALANCED",
+   "runtime_s": 0.10446137499820907,
+   "spawn_key": [
+    1000,
+    0,
+    0
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1-rho0-i000-H-T160/RANDOM",
+   "runtime_s": 0.17767849999654572,
+   "spawn_key": [
+    1000,
+    0,
+    0
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1-rho0-i000-H-T160/POPULARITY",
+   "runtime_s": 0.23148533299536211,
+   "spawn_key": [
+    1000,
+    0,
+    0
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1-rho0-i000-H-T160/EXPOSURE_BALANCED",
+   "runtime_s": 0.18310037500486942,
+   "spawn_key": [
+    1000,
+    0,
+    0
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1-rho0-i001-H-T40/RANDOM",
+   "runtime_s": 0.061066999995091464,
+   "spawn_key": [
+    1000,
+    0,
+    1
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1-rho0-i001-H-T40/POPULARITY",
+   "runtime_s": 0.1198684589980985,
+   "spawn_key": [
+    1000,
+    0,
+    1
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1-rho0-i001-H-T40/EXPOSURE_BALANCED",
+   "runtime_s": 0.06753424999624258,
+   "spawn_key": [
+    1000,
+    0,
+    1
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1-rho0-i001-H-T80/RANDOM",
+   "runtime_s": 0.09847866700147279,
+   "spawn_key": [
+    1000,
+    0,
+    1
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1-rho0-i001-H-T80/POPULARITY",
+   "runtime_s": 0.15798466699925484,
+   "spawn_key": [
+    1000,
+    0,
+    1
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1-rho0-i001-H-T80/EXPOSURE_BALANCED",
+   "runtime_s": 0.10623595800279872,
+   "spawn_key": [
+    1000,
+    0,
+    1
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1-rho0-i001-H-T160/RANDOM",
+   "runtime_s": 0.1775563749979483,
+   "spawn_key": [
+    1000,
+    0,
+    1
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1-rho0-i001-H-T160/POPULARITY",
+   "runtime_s": 0.23430866700073238,
+   "spawn_key": [
+    1000,
+    0,
+    1
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1-rho0-i001-H-T160/EXPOSURE_BALANCED",
+   "runtime_s": 0.18453487499937182,
+   "spawn_key": [
+    1000,
+    0,
+    1
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1-rho0-i002-H-T40/RANDOM",
+   "runtime_s": 0.06417595800303388,
+   "spawn_key": [
+    1000,
+    0,
+    2
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1-rho0-i002-H-T40/POPULARITY",
+   "runtime_s": 0.1184386250024545,
+   "spawn_key": [
+    1000,
+    0,
+    2
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1-rho0-i002-H-T40/EXPOSURE_BALANCED",
+   "runtime_s": 0.06909366699983366,
+   "spawn_key": [
+    1000,
+    0,
+    2
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1-rho0-i002-H-T80/RANDOM",
+   "runtime_s": 0.09869583299587248,
+   "spawn_key": [
+    1000,
+    0,
+    2
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1-rho0-i002-H-T80/POPULARITY",
+   "runtime_s": 0.1599062919995049,
+   "spawn_key": [
+    1000,
+    0,
+    2
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1-rho0-i002-H-T80/EXPOSURE_BALANCED",
+   "runtime_s": 0.10788141599914525,
+   "spawn_key": [
+    1000,
+    0,
+    2
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1-rho0-i002-H-T160/RANDOM",
+   "runtime_s": 0.1791377499976079,
+   "spawn_key": [
+    1000,
+    0,
+    2
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1-rho0-i002-H-T160/POPULARITY",
+   "runtime_s": 0.23059383299550973,
+   "spawn_key": [
+    1000,
+    0,
+    2
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1-rho0-i002-H-T160/EXPOSURE_BALANCED",
+   "runtime_s": 0.18586154199874727,
+   "spawn_key": [
+    1000,
+    0,
+    2
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1-rho0-i003-H-T40/RANDOM",
+   "runtime_s": 0.0649713749953662,
+   "spawn_key": [
+    1000,
+    0,
+    3
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1-rho0-i003-H-T40/POPULARITY",
+   "runtime_s": 0.12042891600140138,
+   "spawn_key": [
+    1000,
+    0,
+    3
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1-rho0-i003-H-T40/EXPOSURE_BALANCED",
+   "runtime_s": 0.07181479199789464,
+   "spawn_key": [
+    1000,
+    0,
+    3
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1-rho0-i003-H-T80/RANDOM",
+   "runtime_s": 0.10408770800131606,
+   "spawn_key": [
+    1000,
+    0,
+    3
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1-rho0-i003-H-T80/POPULARITY",
+   "runtime_s": 0.1597029590047896,
+   "spawn_key": [
+    1000,
+    0,
+    3
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1-rho0-i003-H-T80/EXPOSURE_BALANCED",
+   "runtime_s": 0.11418850000336533,
+   "spawn_key": [
+    1000,
+    0,
+    3
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1-rho0-i003-H-T160/RANDOM",
+   "runtime_s": 0.183176332997391,
+   "spawn_key": [
+    1000,
+    0,
+    3
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1-rho0-i003-H-T160/POPULARITY",
+   "runtime_s": 0.2488103330033482,
+   "spawn_key": [
+    1000,
+    0,
+    3
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1-rho0-i003-H-T160/EXPOSURE_BALANCED",
+   "runtime_s": 0.19411904199660057,
+   "spawn_key": [
+    1000,
+    0,
+    3
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1-rho0-i004-H-T40/RANDOM",
+   "runtime_s": 0.06596983299823478,
+   "spawn_key": [
+    1000,
+    0,
+    4
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1-rho0-i004-H-T40/POPULARITY",
+   "runtime_s": 0.1389307089993963,
+   "spawn_key": [
+    1000,
+    0,
+    4
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1-rho0-i004-H-T40/EXPOSURE_BALANCED",
+   "runtime_s": 0.07461758299905341,
+   "spawn_key": [
+    1000,
+    0,
+    4
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1-rho0-i004-H-T80/RANDOM",
+   "runtime_s": 0.11216104200138943,
+   "spawn_key": [
+    1000,
+    0,
+    4
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1-rho0-i004-H-T80/POPULARITY",
+   "runtime_s": 0.17409366700303508,
+   "spawn_key": [
+    1000,
+    0,
+    4
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1-rho0-i004-H-T80/EXPOSURE_BALANCED",
+   "runtime_s": 0.10831624999991618,
+   "spawn_key": [
+    1000,
+    0,
+    4
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1-rho0-i004-H-T160/RANDOM",
+   "runtime_s": 0.18258604199945694,
+   "spawn_key": [
+    1000,
+    0,
+    4
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1-rho0-i004-H-T160/POPULARITY",
+   "runtime_s": 0.2378695000006701,
+   "spawn_key": [
+    1000,
+    0,
+    4
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1-rho0-i004-H-T160/EXPOSURE_BALANCED",
+   "runtime_s": 0.17992370900174137,
+   "spawn_key": [
+    1000,
+    0,
+    4
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1-rho0-i005-H-T40/RANDOM",
+   "runtime_s": 0.06383329100208357,
+   "spawn_key": [
+    1000,
+    0,
+    5
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1-rho0-i005-H-T40/POPULARITY",
+   "runtime_s": 0.11593799999536714,
+   "spawn_key": [
+    1000,
+    0,
+    5
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1-rho0-i005-H-T40/EXPOSURE_BALANCED",
+   "runtime_s": 0.06490466600371292,
+   "spawn_key": [
+    1000,
+    0,
+    5
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1-rho0-i005-H-T80/RANDOM",
+   "runtime_s": 0.10146850000455743,
+   "spawn_key": [
+    1000,
+    0,
+    5
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1-rho0-i005-H-T80/POPULARITY",
+   "runtime_s": 0.15630708300159313,
+   "spawn_key": [
+    1000,
+    0,
+    5
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1-rho0-i005-H-T80/EXPOSURE_BALANCED",
+   "runtime_s": 0.10634674999892013,
+   "spawn_key": [
+    1000,
+    0,
+    5
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1-rho0-i005-H-T160/RANDOM",
+   "runtime_s": 0.1817196249976405,
+   "spawn_key": [
+    1000,
+    0,
+    5
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1-rho0-i005-H-T160/POPULARITY",
+   "runtime_s": 0.2368919590007863,
+   "spawn_key": [
+    1000,
+    0,
+    5
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1-rho0-i005-H-T160/EXPOSURE_BALANCED",
+   "runtime_s": 0.18874912500177743,
+   "spawn_key": [
+    1000,
+    0,
+    5
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1-rho0-i006-H-T40/RANDOM",
+   "runtime_s": 0.0640824590009288,
+   "spawn_key": [
+    1000,
+    0,
+    6
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1-rho0-i006-H-T40/POPULARITY",
+   "runtime_s": 0.12213129199517425,
+   "spawn_key": [
+    1000,
+    0,
+    6
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1-rho0-i006-H-T40/EXPOSURE_BALANCED",
+   "runtime_s": 0.0692293750034878,
+   "spawn_key": [
+    1000,
+    0,
+    6
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1-rho0-i006-H-T80/RANDOM",
+   "runtime_s": 0.10003470800438663,
+   "spawn_key": [
+    1000,
+    0,
+    6
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1-rho0-i006-H-T80/POPULARITY",
+   "runtime_s": 0.15699537500040606,
+   "spawn_key": [
+    1000,
+    0,
+    6
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1-rho0-i006-H-T80/EXPOSURE_BALANCED",
+   "runtime_s": 0.10805866699956823,
+   "spawn_key": [
+    1000,
+    0,
+    6
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1-rho0-i006-H-T160/RANDOM",
+   "runtime_s": 0.17741312499856576,
+   "spawn_key": [
+    1000,
+    0,
+    6
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1-rho0-i006-H-T160/POPULARITY",
+   "runtime_s": 0.24899208300485043,
+   "spawn_key": [
+    1000,
+    0,
+    6
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1-rho0-i006-H-T160/EXPOSURE_BALANCED",
+   "runtime_s": 0.18747383399750106,
+   "spawn_key": [
+    1000,
+    0,
+    6
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1-rho0-i007-H-T40/RANDOM",
+   "runtime_s": 0.06641195799602428,
+   "spawn_key": [
+    1000,
+    0,
+    7
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1-rho0-i007-H-T40/POPULARITY",
+   "runtime_s": 0.12055458300164901,
+   "spawn_key": [
+    1000,
+    0,
+    7
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1-rho0-i007-H-T40/EXPOSURE_BALANCED",
+   "runtime_s": 0.06878520899772411,
+   "spawn_key": [
+    1000,
+    0,
+    7
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1-rho0-i007-H-T80/RANDOM",
+   "runtime_s": 0.1109890829975484,
+   "spawn_key": [
+    1000,
+    0,
+    7
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1-rho0-i007-H-T80/POPULARITY",
+   "runtime_s": 0.16330658300284995,
+   "spawn_key": [
+    1000,
+    0,
+    7
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1-rho0-i007-H-T80/EXPOSURE_BALANCED",
+   "runtime_s": 0.10846433300321223,
+   "spawn_key": [
+    1000,
+    0,
+    7
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1-rho0-i007-H-T160/RANDOM",
+   "runtime_s": 0.1798028749981313,
+   "spawn_key": [
+    1000,
+    0,
+    7
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1-rho0-i007-H-T160/POPULARITY",
+   "runtime_s": 0.23070149999693967,
+   "spawn_key": [
+    1000,
+    0,
+    7
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1-rho0-i007-H-T160/EXPOSURE_BALANCED",
+   "runtime_s": 0.18459937499574153,
+   "spawn_key": [
+    1000,
+    0,
+    7
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1-rho0-i008-H-T40/RANDOM",
+   "runtime_s": 0.06530924999970011,
+   "spawn_key": [
+    1000,
+    0,
+    8
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1-rho0-i008-H-T40/POPULARITY",
+   "runtime_s": 0.1259607079991838,
+   "spawn_key": [
+    1000,
+    0,
+    8
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1-rho0-i008-H-T40/EXPOSURE_BALANCED",
+   "runtime_s": 0.06917066700407304,
+   "spawn_key": [
+    1000,
+    0,
+    8
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1-rho0-i008-H-T80/RANDOM",
+   "runtime_s": 0.09934204199817032,
+   "spawn_key": [
+    1000,
+    0,
+    8
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1-rho0-i008-H-T80/POPULARITY",
+   "runtime_s": 0.15516650000063237,
+   "spawn_key": [
+    1000,
+    0,
+    8
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1-rho0-i008-H-T80/EXPOSURE_BALANCED",
+   "runtime_s": 0.1101087089991779,
+   "spawn_key": [
+    1000,
+    0,
+    8
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1-rho0-i008-H-T160/RANDOM",
+   "runtime_s": 0.20342662499751896,
+   "spawn_key": [
+    1000,
+    0,
+    8
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1-rho0-i008-H-T160/POPULARITY",
+   "runtime_s": 0.24971708299563034,
+   "spawn_key": [
+    1000,
+    0,
+    8
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1-rho0-i008-H-T160/EXPOSURE_BALANCED",
+   "runtime_s": 0.18771545799972955,
+   "spawn_key": [
+    1000,
+    0,
+    8
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1-rho0-i009-H-T40/RANDOM",
+   "runtime_s": 0.0662066250006319,
+   "spawn_key": [
+    1000,
+    0,
+    9
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1-rho0-i009-H-T40/POPULARITY",
+   "runtime_s": 0.12275716700241901,
+   "spawn_key": [
+    1000,
+    0,
+    9
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1-rho0-i009-H-T40/EXPOSURE_BALANCED",
+   "runtime_s": 0.06995437500154367,
+   "spawn_key": [
+    1000,
+    0,
+    9
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1-rho0-i009-H-T80/RANDOM",
+   "runtime_s": 0.10295624999707798,
+   "spawn_key": [
+    1000,
+    0,
+    9
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1-rho0-i009-H-T80/POPULARITY",
+   "runtime_s": 0.1574401250036317,
+   "spawn_key": [
+    1000,
+    0,
+    9
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1-rho0-i009-H-T80/EXPOSURE_BALANCED",
+   "runtime_s": 0.10942970799806062,
+   "spawn_key": [
+    1000,
+    0,
+    9
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1-rho0-i009-H-T160/RANDOM",
+   "runtime_s": 0.1758590000026743,
+   "spawn_key": [
+    1000,
+    0,
+    9
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1-rho0-i009-H-T160/POPULARITY",
+   "runtime_s": 0.22677583299810067,
+   "spawn_key": [
+    1000,
+    0,
+    9
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1-rho0-i009-H-T160/EXPOSURE_BALANCED",
+   "runtime_s": 0.1817670000018552,
+   "spawn_key": [
+    1000,
+    0,
+    9
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1-rho0.5-i000-H-T40/RANDOM",
+   "runtime_s": 0.07076941699779127,
+   "spawn_key": [
+    1000,
+    500,
+    0
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1-rho0.5-i000-H-T40/POPULARITY",
+   "runtime_s": 0.1259789579999051,
+   "spawn_key": [
+    1000,
+    500,
+    0
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1-rho0.5-i000-H-T40/EXPOSURE_BALANCED",
+   "runtime_s": 0.07532374999573221,
+   "spawn_key": [
+    1000,
+    500,
+    0
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1-rho0.5-i000-H-T80/RANDOM",
+   "runtime_s": 0.11061929200513987,
+   "spawn_key": [
+    1000,
+    500,
+    0
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1-rho0.5-i000-H-T80/POPULARITY",
+   "runtime_s": 0.16569399999571033,
+   "spawn_key": [
+    1000,
+    500,
+    0
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1-rho0.5-i000-H-T80/EXPOSURE_BALANCED",
+   "runtime_s": 0.12221483300527325,
+   "spawn_key": [
+    1000,
+    500,
+    0
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1-rho0.5-i000-H-T160/RANDOM",
+   "runtime_s": 0.19665254200663185,
+   "spawn_key": [
+    1000,
+    500,
+    0
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1-rho0.5-i000-H-T160/POPULARITY",
+   "runtime_s": 0.24550104099762393,
+   "spawn_key": [
+    1000,
+    500,
+    0
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1-rho0.5-i000-H-T160/EXPOSURE_BALANCED",
+   "runtime_s": 0.20799824999994598,
+   "spawn_key": [
+    1000,
+    500,
+    0
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1-rho0.5-i001-H-T40/RANDOM",
+   "runtime_s": 0.06807583300542319,
+   "spawn_key": [
+    1000,
+    500,
+    1
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1-rho0.5-i001-H-T40/POPULARITY",
+   "runtime_s": 0.1208179579989519,
+   "spawn_key": [
+    1000,
+    500,
+    1
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1-rho0.5-i001-H-T40/EXPOSURE_BALANCED",
+   "runtime_s": 0.0726971659969422,
+   "spawn_key": [
+    1000,
+    500,
+    1
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1-rho0.5-i001-H-T80/RANDOM",
+   "runtime_s": 0.10850508399744285,
+   "spawn_key": [
+    1000,
+    500,
+    1
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1-rho0.5-i001-H-T80/POPULARITY",
+   "runtime_s": 0.16133554100088077,
+   "spawn_key": [
+    1000,
+    500,
+    1
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1-rho0.5-i001-H-T80/EXPOSURE_BALANCED",
+   "runtime_s": 0.11275295800442109,
+   "spawn_key": [
+    1000,
+    500,
+    1
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1-rho0.5-i001-H-T160/RANDOM",
+   "runtime_s": 0.1885193329944741,
+   "spawn_key": [
+    1000,
+    500,
+    1
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1-rho0.5-i001-H-T160/POPULARITY",
+   "runtime_s": 0.24284404199715937,
+   "spawn_key": [
+    1000,
+    500,
+    1
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1-rho0.5-i001-H-T160/EXPOSURE_BALANCED",
+   "runtime_s": 0.1958764160008286,
+   "spawn_key": [
+    1000,
+    500,
+    1
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1-rho0.5-i002-H-T40/RANDOM",
+   "runtime_s": 0.06884345800062874,
+   "spawn_key": [
+    1000,
+    500,
+    2
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1-rho0.5-i002-H-T40/POPULARITY",
+   "runtime_s": 0.1250615419994574,
+   "spawn_key": [
+    1000,
+    500,
+    2
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1-rho0.5-i002-H-T40/EXPOSURE_BALANCED",
+   "runtime_s": 0.07208170800004154,
+   "spawn_key": [
+    1000,
+    500,
+    2
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1-rho0.5-i002-H-T80/RANDOM",
+   "runtime_s": 0.10917733300448162,
+   "spawn_key": [
+    1000,
+    500,
+    2
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1-rho0.5-i002-H-T80/POPULARITY",
+   "runtime_s": 0.16317466699547367,
+   "spawn_key": [
+    1000,
+    500,
+    2
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1-rho0.5-i002-H-T80/EXPOSURE_BALANCED",
+   "runtime_s": 0.11789154200232588,
+   "spawn_key": [
+    1000,
+    500,
+    2
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1-rho0.5-i002-H-T160/RANDOM",
+   "runtime_s": 0.19500770799641032,
+   "spawn_key": [
+    1000,
+    500,
+    2
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1-rho0.5-i002-H-T160/POPULARITY",
+   "runtime_s": 0.24571583299984923,
+   "spawn_key": [
+    1000,
+    500,
+    2
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1-rho0.5-i002-H-T160/EXPOSURE_BALANCED",
+   "runtime_s": 0.20156637499894714,
+   "spawn_key": [
+    1000,
+    500,
+    2
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1-rho0.5-i003-H-T40/RANDOM",
+   "runtime_s": 0.06870570799947018,
+   "spawn_key": [
+    1000,
+    500,
+    3
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1-rho0.5-i003-H-T40/POPULARITY",
+   "runtime_s": 0.12387775000388501,
+   "spawn_key": [
+    1000,
+    500,
+    3
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1-rho0.5-i003-H-T40/EXPOSURE_BALANCED",
+   "runtime_s": 0.07158279199938988,
+   "spawn_key": [
+    1000,
+    500,
+    3
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1-rho0.5-i003-H-T80/RANDOM",
+   "runtime_s": 0.1131699999968987,
+   "spawn_key": [
+    1000,
+    500,
+    3
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1-rho0.5-i003-H-T80/POPULARITY",
+   "runtime_s": 0.17336995899677277,
+   "spawn_key": [
+    1000,
+    500,
+    3
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1-rho0.5-i003-H-T80/EXPOSURE_BALANCED",
+   "runtime_s": 0.11482045899902005,
+   "spawn_key": [
+    1000,
+    500,
+    3
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1-rho0.5-i003-H-T160/RANDOM",
+   "runtime_s": 0.19294516600348288,
+   "spawn_key": [
+    1000,
+    500,
+    3
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1-rho0.5-i003-H-T160/POPULARITY",
+   "runtime_s": 0.24720783299562754,
+   "spawn_key": [
+    1000,
+    500,
+    3
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1-rho0.5-i003-H-T160/EXPOSURE_BALANCED",
+   "runtime_s": 0.20672033300070325,
+   "spawn_key": [
+    1000,
+    500,
+    3
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1-rho0.5-i004-H-T40/RANDOM",
+   "runtime_s": 0.07185345900506945,
+   "spawn_key": [
+    1000,
+    500,
+    4
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1-rho0.5-i004-H-T40/POPULARITY",
+   "runtime_s": 0.12646541600406636,
+   "spawn_key": [
+    1000,
+    500,
+    4
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1-rho0.5-i004-H-T40/EXPOSURE_BALANCED",
+   "runtime_s": 0.07746720800059848,
+   "spawn_key": [
+    1000,
+    500,
+    4
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1-rho0.5-i004-H-T80/RANDOM",
+   "runtime_s": 0.11184404200321296,
+   "spawn_key": [
+    1000,
+    500,
+    4
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1-rho0.5-i004-H-T80/POPULARITY",
+   "runtime_s": 0.16145029100152897,
+   "spawn_key": [
+    1000,
+    500,
+    4
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1-rho0.5-i004-H-T80/EXPOSURE_BALANCED",
+   "runtime_s": 0.11727433300256962,
+   "spawn_key": [
+    1000,
+    500,
+    4
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1-rho0.5-i004-H-T160/RANDOM",
+   "runtime_s": 0.19411658299941337,
+   "spawn_key": [
+    1000,
+    500,
+    4
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1-rho0.5-i004-H-T160/POPULARITY",
+   "runtime_s": 0.2412103750029928,
+   "spawn_key": [
+    1000,
+    500,
+    4
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1-rho0.5-i004-H-T160/EXPOSURE_BALANCED",
+   "runtime_s": 0.20631362499989336,
+   "spawn_key": [
+    1000,
+    500,
+    4
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1-rho0.5-i005-H-T40/RANDOM",
+   "runtime_s": 0.06908545800251886,
+   "spawn_key": [
+    1000,
+    500,
+    5
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1-rho0.5-i005-H-T40/POPULARITY",
+   "runtime_s": 0.1251909999991767,
+   "spawn_key": [
+    1000,
+    500,
+    5
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1-rho0.5-i005-H-T40/EXPOSURE_BALANCED",
+   "runtime_s": 0.07398966699838638,
+   "spawn_key": [
+    1000,
+    500,
+    5
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1-rho0.5-i005-H-T80/RANDOM",
+   "runtime_s": 0.11148820800008252,
+   "spawn_key": [
+    1000,
+    500,
+    5
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1-rho0.5-i005-H-T80/POPULARITY",
+   "runtime_s": 0.1647007079955074,
+   "spawn_key": [
+    1000,
+    500,
+    5
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1-rho0.5-i005-H-T80/EXPOSURE_BALANCED",
+   "runtime_s": 0.12864595800056122,
+   "spawn_key": [
+    1000,
+    500,
+    5
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1-rho0.5-i005-H-T160/RANDOM",
+   "runtime_s": 0.19469000000390224,
+   "spawn_key": [
+    1000,
+    500,
+    5
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1-rho0.5-i005-H-T160/POPULARITY",
+   "runtime_s": 0.24327674999949522,
+   "spawn_key": [
+    1000,
+    500,
+    5
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1-rho0.5-i005-H-T160/EXPOSURE_BALANCED",
+   "runtime_s": 0.19924379199801479,
+   "spawn_key": [
+    1000,
+    500,
+    5
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1-rho0.5-i006-H-T40/RANDOM",
+   "runtime_s": 0.06905837500380585,
+   "spawn_key": [
+    1000,
+    500,
+    6
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1-rho0.5-i006-H-T40/POPULARITY",
+   "runtime_s": 0.12486970799363917,
+   "spawn_key": [
+    1000,
+    500,
+    6
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1-rho0.5-i006-H-T40/EXPOSURE_BALANCED",
+   "runtime_s": 0.07525516599707771,
+   "spawn_key": [
+    1000,
+    500,
+    6
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1-rho0.5-i006-H-T80/RANDOM",
+   "runtime_s": 0.10982845800026553,
+   "spawn_key": [
+    1000,
+    500,
+    6
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1-rho0.5-i006-H-T80/POPULARITY",
+   "runtime_s": 0.17451520800386788,
+   "spawn_key": [
+    1000,
+    500,
+    6
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1-rho0.5-i006-H-T80/EXPOSURE_BALANCED",
+   "runtime_s": 0.11849883400282124,
+   "spawn_key": [
+    1000,
+    500,
+    6
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1-rho0.5-i006-H-T160/RANDOM",
+   "runtime_s": 0.18898499999340856,
+   "spawn_key": [
+    1000,
+    500,
+    6
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1-rho0.5-i006-H-T160/POPULARITY",
+   "runtime_s": 0.24011337499541696,
+   "spawn_key": [
+    1000,
+    500,
+    6
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1-rho0.5-i006-H-T160/EXPOSURE_BALANCED",
+   "runtime_s": 0.20443150000210153,
+   "spawn_key": [
+    1000,
+    500,
+    6
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1-rho0.5-i007-H-T40/RANDOM",
+   "runtime_s": 0.06933791700430447,
+   "spawn_key": [
+    1000,
+    500,
+    7
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1-rho0.5-i007-H-T40/POPULARITY",
+   "runtime_s": 0.12345712500246009,
+   "spawn_key": [
+    1000,
+    500,
+    7
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1-rho0.5-i007-H-T40/EXPOSURE_BALANCED",
+   "runtime_s": 0.07375670799956424,
+   "spawn_key": [
+    1000,
+    500,
+    7
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1-rho0.5-i007-H-T80/RANDOM",
+   "runtime_s": 0.11441570800525369,
+   "spawn_key": [
+    1000,
+    500,
+    7
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1-rho0.5-i007-H-T80/POPULARITY",
+   "runtime_s": 0.16794037500221748,
+   "spawn_key": [
+    1000,
+    500,
+    7
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1-rho0.5-i007-H-T80/EXPOSURE_BALANCED",
+   "runtime_s": 0.11577495800156612,
+   "spawn_key": [
+    1000,
+    500,
+    7
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1-rho0.5-i007-H-T160/RANDOM",
+   "runtime_s": 0.19406941600027494,
+   "spawn_key": [
+    1000,
+    500,
+    7
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1-rho0.5-i007-H-T160/POPULARITY",
+   "runtime_s": 0.2418555420008488,
+   "spawn_key": [
+    1000,
+    500,
+    7
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1-rho0.5-i007-H-T160/EXPOSURE_BALANCED",
+   "runtime_s": 0.2010657499995432,
+   "spawn_key": [
+    1000,
+    500,
+    7
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1-rho0.5-i008-H-T40/RANDOM",
+   "runtime_s": 0.0712071250018198,
+   "spawn_key": [
+    1000,
+    500,
+    8
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1-rho0.5-i008-H-T40/POPULARITY",
+   "runtime_s": 0.12281733300187625,
+   "spawn_key": [
+    1000,
+    500,
+    8
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1-rho0.5-i008-H-T40/EXPOSURE_BALANCED",
+   "runtime_s": 0.07296399999904679,
+   "spawn_key": [
+    1000,
+    500,
+    8
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1-rho0.5-i008-H-T80/RANDOM",
+   "runtime_s": 0.1107402080015163,
+   "spawn_key": [
+    1000,
+    500,
+    8
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1-rho0.5-i008-H-T80/POPULARITY",
+   "runtime_s": 0.16614491600194015,
+   "spawn_key": [
+    1000,
+    500,
+    8
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1-rho0.5-i008-H-T80/EXPOSURE_BALANCED",
+   "runtime_s": 0.11404716600372922,
+   "spawn_key": [
+    1000,
+    500,
+    8
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1-rho0.5-i008-H-T160/RANDOM",
+   "runtime_s": 0.19322670799738262,
+   "spawn_key": [
+    1000,
+    500,
+    8
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1-rho0.5-i008-H-T160/POPULARITY",
+   "runtime_s": 0.2422907079962897,
+   "spawn_key": [
+    1000,
+    500,
+    8
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1-rho0.5-i008-H-T160/EXPOSURE_BALANCED",
+   "runtime_s": 0.19570370799920056,
+   "spawn_key": [
+    1000,
+    500,
+    8
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1-rho0.5-i009-H-T40/RANDOM",
+   "runtime_s": 0.06763183300063247,
+   "spawn_key": [
+    1000,
+    500,
+    9
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1-rho0.5-i009-H-T40/POPULARITY",
+   "runtime_s": 0.1189778340049088,
+   "spawn_key": [
+    1000,
+    500,
+    9
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1-rho0.5-i009-H-T40/EXPOSURE_BALANCED",
+   "runtime_s": 0.07022966599470237,
+   "spawn_key": [
+    1000,
+    500,
+    9
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1-rho0.5-i009-H-T80/RANDOM",
+   "runtime_s": 0.10628212500159862,
+   "spawn_key": [
+    1000,
+    500,
+    9
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1-rho0.5-i009-H-T80/POPULARITY",
+   "runtime_s": 0.1565316249980242,
+   "spawn_key": [
+    1000,
+    500,
+    9
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1-rho0.5-i009-H-T80/EXPOSURE_BALANCED",
+   "runtime_s": 0.11566283299907809,
+   "spawn_key": [
+    1000,
+    500,
+    9
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1-rho0.5-i009-H-T160/RANDOM",
+   "runtime_s": 0.19033479200152215,
+   "spawn_key": [
+    1000,
+    500,
+    9
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1-rho0.5-i009-H-T160/POPULARITY",
+   "runtime_s": 0.2354013749936712,
+   "spawn_key": [
+    1000,
+    500,
+    9
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1-rho0.5-i009-H-T160/EXPOSURE_BALANCED",
+   "runtime_s": 0.19887991699943086,
+   "spawn_key": [
+    1000,
+    500,
+    9
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1-rho0.9-i000-H-T40/RANDOM",
+   "runtime_s": 0.0820594169999822,
+   "spawn_key": [
+    1000,
+    900,
+    0
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1-rho0.9-i000-H-T40/POPULARITY",
+   "runtime_s": 0.13472799999726703,
+   "spawn_key": [
+    1000,
+    900,
+    0
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1-rho0.9-i000-H-T40/EXPOSURE_BALANCED",
+   "runtime_s": 0.08721016700292239,
+   "spawn_key": [
+    1000,
+    900,
+    0
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1-rho0.9-i000-H-T80/RANDOM",
+   "runtime_s": 0.12705608399846824,
+   "spawn_key": [
+    1000,
+    900,
+    0
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1-rho0.9-i000-H-T80/POPULARITY",
+   "runtime_s": 0.18401695800275775,
+   "spawn_key": [
+    1000,
+    900,
+    0
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1-rho0.9-i000-H-T80/EXPOSURE_BALANCED",
+   "runtime_s": 0.14136645799590042,
+   "spawn_key": [
+    1000,
+    900,
+    0
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1-rho0.9-i000-H-T160/RANDOM",
+   "runtime_s": 0.22243524999794317,
+   "spawn_key": [
+    1000,
+    900,
+    0
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1-rho0.9-i000-H-T160/POPULARITY",
+   "runtime_s": 0.2666006660001585,
+   "spawn_key": [
+    1000,
+    900,
+    0
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1-rho0.9-i000-H-T160/EXPOSURE_BALANCED",
+   "runtime_s": 0.2395658329987782,
+   "spawn_key": [
+    1000,
+    900,
+    0
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1-rho0.9-i001-H-T40/RANDOM",
+   "runtime_s": 0.08154012500017416,
+   "spawn_key": [
+    1000,
+    900,
+    1
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1-rho0.9-i001-H-T40/POPULARITY",
+   "runtime_s": 0.14052541699493304,
+   "spawn_key": [
+    1000,
+    900,
+    1
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1-rho0.9-i001-H-T40/EXPOSURE_BALANCED",
+   "runtime_s": 0.09095870800229022,
+   "spawn_key": [
+    1000,
+    900,
+    1
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1-rho0.9-i001-H-T80/RANDOM",
+   "runtime_s": 0.1332833339984063,
+   "spawn_key": [
+    1000,
+    900,
+    1
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1-rho0.9-i001-H-T80/POPULARITY",
+   "runtime_s": 0.183231834002072,
+   "spawn_key": [
+    1000,
+    900,
+    1
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1-rho0.9-i001-H-T80/EXPOSURE_BALANCED",
+   "runtime_s": 0.13774012499925448,
+   "spawn_key": [
+    1000,
+    900,
+    1
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1-rho0.9-i001-H-T160/RANDOM",
+   "runtime_s": 0.21850062500016065,
+   "spawn_key": [
+    1000,
+    900,
+    1
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1-rho0.9-i001-H-T160/POPULARITY",
+   "runtime_s": 0.27060920799704036,
+   "spawn_key": [
+    1000,
+    900,
+    1
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1-rho0.9-i001-H-T160/EXPOSURE_BALANCED",
+   "runtime_s": 0.24142833299993072,
+   "spawn_key": [
+    1000,
+    900,
+    1
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1-rho0.9-i002-H-T40/RANDOM",
+   "runtime_s": 0.07923649999429472,
+   "spawn_key": [
+    1000,
+    900,
+    2
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1-rho0.9-i002-H-T40/POPULARITY",
+   "runtime_s": 0.1312609579981654,
+   "spawn_key": [
+    1000,
+    900,
+    2
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1-rho0.9-i002-H-T40/EXPOSURE_BALANCED",
+   "runtime_s": 0.08384141699934844,
+   "spawn_key": [
+    1000,
+    900,
+    2
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1-rho0.9-i002-H-T80/RANDOM",
+   "runtime_s": 0.12597512500360608,
+   "spawn_key": [
+    1000,
+    900,
+    2
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1-rho0.9-i002-H-T80/POPULARITY",
+   "runtime_s": 0.1957393329939805,
+   "spawn_key": [
+    1000,
+    900,
+    2
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1-rho0.9-i002-H-T80/EXPOSURE_BALANCED",
+   "runtime_s": 0.132055041998683,
+   "spawn_key": [
+    1000,
+    900,
+    2
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1-rho0.9-i002-H-T160/RANDOM",
+   "runtime_s": 0.21524474999750964,
+   "spawn_key": [
+    1000,
+    900,
+    2
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1-rho0.9-i002-H-T160/POPULARITY",
+   "runtime_s": 0.2698487079978804,
+   "spawn_key": [
+    1000,
+    900,
+    2
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1-rho0.9-i002-H-T160/EXPOSURE_BALANCED",
+   "runtime_s": 0.23089312500087544,
+   "spawn_key": [
+    1000,
+    900,
+    2
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1-rho0.9-i003-H-T40/RANDOM",
+   "runtime_s": 0.08452929199847858,
+   "spawn_key": [
+    1000,
+    900,
+    3
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1-rho0.9-i003-H-T40/POPULARITY",
+   "runtime_s": 0.1308746249997057,
+   "spawn_key": [
+    1000,
+    900,
+    3
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1-rho0.9-i003-H-T40/EXPOSURE_BALANCED",
+   "runtime_s": 0.08782025000255089,
+   "spawn_key": [
+    1000,
+    900,
+    3
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1-rho0.9-i003-H-T80/RANDOM",
+   "runtime_s": 0.12777645800088067,
+   "spawn_key": [
+    1000,
+    900,
+    3
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1-rho0.9-i003-H-T80/POPULARITY",
+   "runtime_s": 0.17779433300165692,
+   "spawn_key": [
+    1000,
+    900,
+    3
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1-rho0.9-i003-H-T80/EXPOSURE_BALANCED",
+   "runtime_s": 0.13960249999945518,
+   "spawn_key": [
+    1000,
+    900,
+    3
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1-rho0.9-i003-H-T160/RANDOM",
+   "runtime_s": 0.22148162499797763,
+   "spawn_key": [
+    1000,
+    900,
+    3
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1-rho0.9-i003-H-T160/POPULARITY",
+   "runtime_s": 0.26445637500000885,
+   "spawn_key": [
+    1000,
+    900,
+    3
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1-rho0.9-i003-H-T160/EXPOSURE_BALANCED",
+   "runtime_s": 0.236014249996515,
+   "spawn_key": [
+    1000,
+    900,
+    3
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1-rho0.9-i004-H-T40/RANDOM",
+   "runtime_s": 0.08209008399717277,
+   "spawn_key": [
+    1000,
+    900,
+    4
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1-rho0.9-i004-H-T40/POPULARITY",
+   "runtime_s": 0.13437016600073548,
+   "spawn_key": [
+    1000,
+    900,
+    4
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1-rho0.9-i004-H-T40/EXPOSURE_BALANCED",
+   "runtime_s": 0.0863222079933621,
+   "spawn_key": [
+    1000,
+    900,
+    4
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1-rho0.9-i004-H-T80/RANDOM",
+   "runtime_s": 0.1307458340015728,
+   "spawn_key": [
+    1000,
+    900,
+    4
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1-rho0.9-i004-H-T80/POPULARITY",
+   "runtime_s": 0.18130495800141944,
+   "spawn_key": [
+    1000,
+    900,
+    4
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1-rho0.9-i004-H-T80/EXPOSURE_BALANCED",
+   "runtime_s": 0.15717708299780497,
+   "spawn_key": [
+    1000,
+    900,
+    4
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1-rho0.9-i004-H-T160/RANDOM",
+   "runtime_s": 0.22432895800011465,
+   "spawn_key": [
+    1000,
+    900,
+    4
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1-rho0.9-i004-H-T160/POPULARITY",
+   "runtime_s": 0.27989858300134074,
+   "spawn_key": [
+    1000,
+    900,
+    4
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1-rho0.9-i004-H-T160/EXPOSURE_BALANCED",
+   "runtime_s": 0.241091541996866,
+   "spawn_key": [
+    1000,
+    900,
+    4
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1-rho0.9-i005-H-T40/RANDOM",
+   "runtime_s": 0.08014679100597277,
+   "spawn_key": [
+    1000,
+    900,
+    5
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1-rho0.9-i005-H-T40/POPULARITY",
+   "runtime_s": 0.13037762499880046,
+   "spawn_key": [
+    1000,
+    900,
+    5
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1-rho0.9-i005-H-T40/EXPOSURE_BALANCED",
+   "runtime_s": 0.08707820800191257,
+   "spawn_key": [
+    1000,
+    900,
+    5
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1-rho0.9-i005-H-T80/RANDOM",
+   "runtime_s": 0.12553587500588037,
+   "spawn_key": [
+    1000,
+    900,
+    5
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1-rho0.9-i005-H-T80/POPULARITY",
+   "runtime_s": 0.17556966700067278,
+   "spawn_key": [
+    1000,
+    900,
+    5
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1-rho0.9-i005-H-T80/EXPOSURE_BALANCED",
+   "runtime_s": 0.13863629099796526,
+   "spawn_key": [
+    1000,
+    900,
+    5
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1-rho0.9-i005-H-T160/RANDOM",
+   "runtime_s": 0.21716754200315336,
+   "spawn_key": [
+    1000,
+    900,
+    5
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1-rho0.9-i005-H-T160/POPULARITY",
+   "runtime_s": 0.26269704200240085,
+   "spawn_key": [
+    1000,
+    900,
+    5
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1-rho0.9-i005-H-T160/EXPOSURE_BALANCED",
+   "runtime_s": 0.23859558300318895,
+   "spawn_key": [
+    1000,
+    900,
+    5
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1-rho0.9-i006-H-T40/RANDOM",
+   "runtime_s": 0.083847333000449,
+   "spawn_key": [
+    1000,
+    900,
+    6
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1-rho0.9-i006-H-T40/POPULARITY",
+   "runtime_s": 0.13496766699972795,
+   "spawn_key": [
+    1000,
+    900,
+    6
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1-rho0.9-i006-H-T40/EXPOSURE_BALANCED",
+   "runtime_s": 0.08511291699687717,
+   "spawn_key": [
+    1000,
+    900,
+    6
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1-rho0.9-i006-H-T80/RANDOM",
+   "runtime_s": 0.12674041699938243,
+   "spawn_key": [
+    1000,
+    900,
+    6
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1-rho0.9-i006-H-T80/POPULARITY",
+   "runtime_s": 0.17769358299847227,
+   "spawn_key": [
+    1000,
+    900,
+    6
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1-rho0.9-i006-H-T80/EXPOSURE_BALANCED",
+   "runtime_s": 0.1340960419984185,
+   "spawn_key": [
+    1000,
+    900,
+    6
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1-rho0.9-i006-H-T160/RANDOM",
+   "runtime_s": 0.2234138330022688,
+   "spawn_key": [
+    1000,
+    900,
+    6
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1-rho0.9-i006-H-T160/POPULARITY",
+   "runtime_s": 0.2671194579961593,
+   "spawn_key": [
+    1000,
+    900,
+    6
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1-rho0.9-i006-H-T160/EXPOSURE_BALANCED",
+   "runtime_s": 0.23368395799479913,
+   "spawn_key": [
+    1000,
+    900,
+    6
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1-rho0.9-i007-H-T40/RANDOM",
+   "runtime_s": 0.08151795799494721,
+   "spawn_key": [
+    1000,
+    900,
+    7
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1-rho0.9-i007-H-T40/POPULARITY",
+   "runtime_s": 0.13376195800083224,
+   "spawn_key": [
+    1000,
+    900,
+    7
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1-rho0.9-i007-H-T40/EXPOSURE_BALANCED",
+   "runtime_s": 0.08407141600036994,
+   "spawn_key": [
+    1000,
+    900,
+    7
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1-rho0.9-i007-H-T80/RANDOM",
+   "runtime_s": 0.12580062499910127,
+   "spawn_key": [
+    1000,
+    900,
+    7
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1-rho0.9-i007-H-T80/POPULARITY",
+   "runtime_s": 0.1825112920050742,
+   "spawn_key": [
+    1000,
+    900,
+    7
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1-rho0.9-i007-H-T80/EXPOSURE_BALANCED",
+   "runtime_s": 0.1379528749966994,
+   "spawn_key": [
+    1000,
+    900,
+    7
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1-rho0.9-i007-H-T160/RANDOM",
+   "runtime_s": 0.2212757090019295,
+   "spawn_key": [
+    1000,
+    900,
+    7
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1-rho0.9-i007-H-T160/POPULARITY",
+   "runtime_s": 0.2622533750036382,
+   "spawn_key": [
+    1000,
+    900,
+    7
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1-rho0.9-i007-H-T160/EXPOSURE_BALANCED",
+   "runtime_s": 0.2301647909989697,
+   "spawn_key": [
+    1000,
+    900,
+    7
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1-rho0.9-i008-H-T40/RANDOM",
+   "runtime_s": 0.08364158400218002,
+   "spawn_key": [
+    1000,
+    900,
+    8
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1-rho0.9-i008-H-T40/POPULARITY",
+   "runtime_s": 0.13569154200376943,
+   "spawn_key": [
+    1000,
+    900,
+    8
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1-rho0.9-i008-H-T40/EXPOSURE_BALANCED",
+   "runtime_s": 0.09304658300243318,
+   "spawn_key": [
+    1000,
+    900,
+    8
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1-rho0.9-i008-H-T80/RANDOM",
+   "runtime_s": 0.13356799999746727,
+   "spawn_key": [
+    1000,
+    900,
+    8
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1-rho0.9-i008-H-T80/POPULARITY",
+   "runtime_s": 0.18761895899660885,
+   "spawn_key": [
+    1000,
+    900,
+    8
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1-rho0.9-i008-H-T80/EXPOSURE_BALANCED",
+   "runtime_s": 0.14320483300252818,
+   "spawn_key": [
+    1000,
+    900,
+    8
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1-rho0.9-i008-H-T160/RANDOM",
+   "runtime_s": 0.2255159169944818,
+   "spawn_key": [
+    1000,
+    900,
+    8
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1-rho0.9-i008-H-T160/POPULARITY",
+   "runtime_s": 0.27942587500001537,
+   "spawn_key": [
+    1000,
+    900,
+    8
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1-rho0.9-i008-H-T160/EXPOSURE_BALANCED",
+   "runtime_s": 0.2525037910018,
+   "spawn_key": [
+    1000,
+    900,
+    8
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1-rho0.9-i009-H-T40/RANDOM",
+   "runtime_s": 0.08597037499566795,
+   "spawn_key": [
+    1000,
+    900,
+    9
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1-rho0.9-i009-H-T40/POPULARITY",
+   "runtime_s": 0.13799070900131483,
+   "spawn_key": [
+    1000,
+    900,
+    9
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1-rho0.9-i009-H-T40/EXPOSURE_BALANCED",
+   "runtime_s": 0.09262337499967543,
+   "spawn_key": [
+    1000,
+    900,
+    9
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1-rho0.9-i009-H-T80/RANDOM",
+   "runtime_s": 0.13517179200425744,
+   "spawn_key": [
+    1000,
+    900,
+    9
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1-rho0.9-i009-H-T80/POPULARITY",
+   "runtime_s": 0.18296337500214577,
+   "spawn_key": [
+    1000,
+    900,
+    9
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1-rho0.9-i009-H-T80/EXPOSURE_BALANCED",
+   "runtime_s": 0.14494500000000698,
+   "spawn_key": [
+    1000,
+    900,
+    9
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1-rho0.9-i009-H-T160/RANDOM",
+   "runtime_s": 0.23056670799996937,
+   "spawn_key": [
+    1000,
+    900,
+    9
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1-rho0.9-i009-H-T160/POPULARITY",
+   "runtime_s": 0.27306050000333926,
+   "spawn_key": [
+    1000,
+    900,
+    9
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1-rho0.9-i009-H-T160/EXPOSURE_BALANCED",
+   "runtime_s": 0.2445309160029865,
+   "spawn_key": [
+    1000,
+    900,
+    9
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.1-rho0-i000-H-T40/RANDOM",
+   "runtime_s": 0.0680942090039025,
+   "spawn_key": [
+    1100,
+    0,
+    0
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.1-rho0-i000-H-T40/POPULARITY",
+   "runtime_s": 0.1282037089986261,
+   "spawn_key": [
+    1100,
+    0,
+    0
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.1-rho0-i000-H-T40/EXPOSURE_BALANCED",
+   "runtime_s": 0.07440704199689208,
+   "spawn_key": [
+    1100,
+    0,
+    0
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.1-rho0-i000-H-T80/RANDOM",
+   "runtime_s": 0.11204324999562232,
+   "spawn_key": [
+    1100,
+    0,
+    0
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.1-rho0-i000-H-T80/POPULARITY",
+   "runtime_s": 0.17048616700049024,
+   "spawn_key": [
+    1100,
+    0,
+    0
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.1-rho0-i000-H-T80/EXPOSURE_BALANCED",
+   "runtime_s": 0.11546720800106414,
+   "spawn_key": [
+    1100,
+    0,
+    0
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.1-rho0-i000-H-T160/RANDOM",
+   "runtime_s": 0.19812300000194227,
+   "spawn_key": [
+    1100,
+    0,
+    0
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.1-rho0-i000-H-T160/POPULARITY",
+   "runtime_s": 0.25779200000397395,
+   "spawn_key": [
+    1100,
+    0,
+    0
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.1-rho0-i000-H-T160/EXPOSURE_BALANCED",
+   "runtime_s": 0.20406620800349629,
+   "spawn_key": [
+    1100,
+    0,
+    0
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.1-rho0-i001-H-T40/RANDOM",
+   "runtime_s": 0.07015829200099688,
+   "spawn_key": [
+    1100,
+    0,
+    1
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.1-rho0-i001-H-T40/POPULARITY",
+   "runtime_s": 0.1326545409974642,
+   "spawn_key": [
+    1100,
+    0,
+    1
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.1-rho0-i001-H-T40/EXPOSURE_BALANCED",
+   "runtime_s": 0.07582220900076209,
+   "spawn_key": [
+    1100,
+    0,
+    1
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.1-rho0-i001-H-T80/RANDOM",
+   "runtime_s": 0.1110300830041524,
+   "spawn_key": [
+    1100,
+    0,
+    1
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.1-rho0-i001-H-T80/POPULARITY",
+   "runtime_s": 0.1737565410003299,
+   "spawn_key": [
+    1100,
+    0,
+    1
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.1-rho0-i001-H-T80/EXPOSURE_BALANCED",
+   "runtime_s": 0.11888891700073145,
+   "spawn_key": [
+    1100,
+    0,
+    1
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.1-rho0-i001-H-T160/RANDOM",
+   "runtime_s": 0.19514700000581797,
+   "spawn_key": [
+    1100,
+    0,
+    1
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.1-rho0-i001-H-T160/POPULARITY",
+   "runtime_s": 0.25187795799865853,
+   "spawn_key": [
+    1100,
+    0,
+    1
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.1-rho0-i001-H-T160/EXPOSURE_BALANCED",
+   "runtime_s": 0.19650716699834447,
+   "spawn_key": [
+    1100,
+    0,
+    1
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.1-rho0-i002-H-T40/RANDOM",
+   "runtime_s": 0.0697949579989654,
+   "spawn_key": [
+    1100,
+    0,
+    2
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.1-rho0-i002-H-T40/POPULARITY",
+   "runtime_s": 0.12616254200111143,
+   "spawn_key": [
+    1100,
+    0,
+    2
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.1-rho0-i002-H-T40/EXPOSURE_BALANCED",
+   "runtime_s": 0.07142691600165563,
+   "spawn_key": [
+    1100,
+    0,
+    2
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.1-rho0-i002-H-T80/RANDOM",
+   "runtime_s": 0.10819991699827369,
+   "spawn_key": [
+    1100,
+    0,
+    2
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.1-rho0-i002-H-T80/POPULARITY",
+   "runtime_s": 0.1676648339998792,
+   "spawn_key": [
+    1100,
+    0,
+    2
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.1-rho0-i002-H-T80/EXPOSURE_BALANCED",
+   "runtime_s": 0.11473462499998277,
+   "spawn_key": [
+    1100,
+    0,
+    2
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.1-rho0-i002-H-T160/RANDOM",
+   "runtime_s": 0.19320349999907194,
+   "spawn_key": [
+    1100,
+    0,
+    2
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.1-rho0-i002-H-T160/POPULARITY",
+   "runtime_s": 0.2541682080045575,
+   "spawn_key": [
+    1100,
+    0,
+    2
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.1-rho0-i002-H-T160/EXPOSURE_BALANCED",
+   "runtime_s": 0.19714583300083177,
+   "spawn_key": [
+    1100,
+    0,
+    2
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.1-rho0-i003-H-T40/RANDOM",
+   "runtime_s": 0.06750083399674622,
+   "spawn_key": [
+    1100,
+    0,
+    3
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.1-rho0-i003-H-T40/POPULARITY",
+   "runtime_s": 0.12817066700517898,
+   "spawn_key": [
+    1100,
+    0,
+    3
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.1-rho0-i003-H-T40/EXPOSURE_BALANCED",
+   "runtime_s": 0.07580983299703803,
+   "spawn_key": [
+    1100,
+    0,
+    3
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.1-rho0-i003-H-T80/RANDOM",
+   "runtime_s": 0.10901054100395413,
+   "spawn_key": [
+    1100,
+    0,
+    3
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.1-rho0-i003-H-T80/POPULARITY",
+   "runtime_s": 0.16610791700077243,
+   "spawn_key": [
+    1100,
+    0,
+    3
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.1-rho0-i003-H-T80/EXPOSURE_BALANCED",
+   "runtime_s": 0.11371874999895226,
+   "spawn_key": [
+    1100,
+    0,
+    3
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.1-rho0-i003-H-T160/RANDOM",
+   "runtime_s": 0.18751041699579218,
+   "spawn_key": [
+    1100,
+    0,
+    3
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.1-rho0-i003-H-T160/POPULARITY",
+   "runtime_s": 0.25346054200053914,
+   "spawn_key": [
+    1100,
+    0,
+    3
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.1-rho0-i003-H-T160/EXPOSURE_BALANCED",
+   "runtime_s": 0.19783687499875668,
+   "spawn_key": [
+    1100,
+    0,
+    3
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.1-rho0-i004-H-T40/RANDOM",
+   "runtime_s": 0.06733587499911664,
+   "spawn_key": [
+    1100,
+    0,
+    4
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.1-rho0-i004-H-T40/POPULARITY",
+   "runtime_s": 0.12602570799936075,
+   "spawn_key": [
+    1100,
+    0,
+    4
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.1-rho0-i004-H-T40/EXPOSURE_BALANCED",
+   "runtime_s": 0.07247854199522408,
+   "spawn_key": [
+    1100,
+    0,
+    4
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.1-rho0-i004-H-T80/RANDOM",
+   "runtime_s": 0.10646854199876543,
+   "spawn_key": [
+    1100,
+    0,
+    4
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.1-rho0-i004-H-T80/POPULARITY",
+   "runtime_s": 0.16532779200497316,
+   "spawn_key": [
+    1100,
+    0,
+    4
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.1-rho0-i004-H-T80/EXPOSURE_BALANCED",
+   "runtime_s": 0.11458762500114972,
+   "spawn_key": [
+    1100,
+    0,
+    4
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.1-rho0-i004-H-T160/RANDOM",
+   "runtime_s": 0.19873295899742516,
+   "spawn_key": [
+    1100,
+    0,
+    4
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.1-rho0-i004-H-T160/POPULARITY",
+   "runtime_s": 0.260135624994291,
+   "spawn_key": [
+    1100,
+    0,
+    4
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.1-rho0-i004-H-T160/EXPOSURE_BALANCED",
+   "runtime_s": 0.20248445800098125,
+   "spawn_key": [
+    1100,
+    0,
+    4
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.1-rho0-i005-H-T40/RANDOM",
+   "runtime_s": 0.07141908300400246,
+   "spawn_key": [
+    1100,
+    0,
+    5
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.1-rho0-i005-H-T40/POPULARITY",
+   "runtime_s": 0.1281024170020828,
+   "spawn_key": [
+    1100,
+    0,
+    5
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.1-rho0-i005-H-T40/EXPOSURE_BALANCED",
+   "runtime_s": 0.07166466700437013,
+   "spawn_key": [
+    1100,
+    0,
+    5
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.1-rho0-i005-H-T80/RANDOM",
+   "runtime_s": 0.1096958749985788,
+   "spawn_key": [
+    1100,
+    0,
+    5
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.1-rho0-i005-H-T80/POPULARITY",
+   "runtime_s": 0.16635537500405917,
+   "spawn_key": [
+    1100,
+    0,
+    5
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.1-rho0-i005-H-T80/EXPOSURE_BALANCED",
+   "runtime_s": 0.1136558750004042,
+   "spawn_key": [
+    1100,
+    0,
+    5
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.1-rho0-i005-H-T160/RANDOM",
+   "runtime_s": 0.18863299999793526,
+   "spawn_key": [
+    1100,
+    0,
+    5
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.1-rho0-i005-H-T160/POPULARITY",
+   "runtime_s": 0.24545683299947996,
+   "spawn_key": [
+    1100,
+    0,
+    5
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.1-rho0-i005-H-T160/EXPOSURE_BALANCED",
+   "runtime_s": 0.19534141600161092,
+   "spawn_key": [
+    1100,
+    0,
+    5
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.1-rho0-i006-H-T40/RANDOM",
+   "runtime_s": 0.06720679199497681,
+   "spawn_key": [
+    1100,
+    0,
+    6
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.1-rho0-i006-H-T40/POPULARITY",
+   "runtime_s": 0.12539245799416676,
+   "spawn_key": [
+    1100,
+    0,
+    6
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.1-rho0-i006-H-T40/EXPOSURE_BALANCED",
+   "runtime_s": 0.07227091700042365,
+   "spawn_key": [
+    1100,
+    0,
+    6
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.1-rho0-i006-H-T80/RANDOM",
+   "runtime_s": 0.10691216700070072,
+   "spawn_key": [
+    1100,
+    0,
+    6
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.1-rho0-i006-H-T80/POPULARITY",
+   "runtime_s": 0.16537516599782975,
+   "spawn_key": [
+    1100,
+    0,
+    6
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.1-rho0-i006-H-T80/EXPOSURE_BALANCED",
+   "runtime_s": 0.11208349999651546,
+   "spawn_key": [
+    1100,
+    0,
+    6
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.1-rho0-i006-H-T160/RANDOM",
+   "runtime_s": 0.1888770830046269,
+   "spawn_key": [
+    1100,
+    0,
+    6
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.1-rho0-i006-H-T160/POPULARITY",
+   "runtime_s": 0.24753975000203354,
+   "spawn_key": [
+    1100,
+    0,
+    6
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.1-rho0-i006-H-T160/EXPOSURE_BALANCED",
+   "runtime_s": 0.19672054200054845,
+   "spawn_key": [
+    1100,
+    0,
+    6
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.1-rho0-i007-H-T40/RANDOM",
+   "runtime_s": 0.06817383300221991,
+   "spawn_key": [
+    1100,
+    0,
+    7
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.1-rho0-i007-H-T40/POPULARITY",
+   "runtime_s": 0.12576691700087395,
+   "spawn_key": [
+    1100,
+    0,
+    7
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.1-rho0-i007-H-T40/EXPOSURE_BALANCED",
+   "runtime_s": 0.07106333300180268,
+   "spawn_key": [
+    1100,
+    0,
+    7
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.1-rho0-i007-H-T80/RANDOM",
+   "runtime_s": 0.10824766700534383,
+   "spawn_key": [
+    1100,
+    0,
+    7
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.1-rho0-i007-H-T80/POPULARITY",
+   "runtime_s": 0.1675290839993977,
+   "spawn_key": [
+    1100,
+    0,
+    7
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.1-rho0-i007-H-T80/EXPOSURE_BALANCED",
+   "runtime_s": 0.11290229099540738,
+   "spawn_key": [
+    1100,
+    0,
+    7
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.1-rho0-i007-H-T160/RANDOM",
+   "runtime_s": 0.18990712500090012,
+   "spawn_key": [
+    1100,
+    0,
+    7
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.1-rho0-i007-H-T160/POPULARITY",
+   "runtime_s": 0.25479524999536807,
+   "spawn_key": [
+    1100,
+    0,
+    7
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.1-rho0-i007-H-T160/EXPOSURE_BALANCED",
+   "runtime_s": 0.2085629159992095,
+   "spawn_key": [
+    1100,
+    0,
+    7
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.1-rho0-i008-H-T40/RANDOM",
+   "runtime_s": 0.06922912500158418,
+   "spawn_key": [
+    1100,
+    0,
+    8
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.1-rho0-i008-H-T40/POPULARITY",
+   "runtime_s": 0.13177116699807812,
+   "spawn_key": [
+    1100,
+    0,
+    8
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.1-rho0-i008-H-T40/EXPOSURE_BALANCED",
+   "runtime_s": 0.07557058399834204,
+   "spawn_key": [
+    1100,
+    0,
+    8
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.1-rho0-i008-H-T80/RANDOM",
+   "runtime_s": 0.11284404199977871,
+   "spawn_key": [
+    1100,
+    0,
+    8
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.1-rho0-i008-H-T80/POPULARITY",
+   "runtime_s": 0.16937470900302287,
+   "spawn_key": [
+    1100,
+    0,
+    8
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.1-rho0-i008-H-T80/EXPOSURE_BALANCED",
+   "runtime_s": 0.11952908300008858,
+   "spawn_key": [
+    1100,
+    0,
+    8
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.1-rho0-i008-H-T160/RANDOM",
+   "runtime_s": 0.19711900000402238,
+   "spawn_key": [
+    1100,
+    0,
+    8
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.1-rho0-i008-H-T160/POPULARITY",
+   "runtime_s": 0.2625091660011094,
+   "spawn_key": [
+    1100,
+    0,
+    8
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.1-rho0-i008-H-T160/EXPOSURE_BALANCED",
+   "runtime_s": 0.20462416599912103,
+   "spawn_key": [
+    1100,
+    0,
+    8
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.1-rho0-i009-H-T40/RANDOM",
+   "runtime_s": 0.06894741699943552,
+   "spawn_key": [
+    1100,
+    0,
+    9
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.1-rho0-i009-H-T40/POPULARITY",
+   "runtime_s": 0.130565999999817,
+   "spawn_key": [
+    1100,
+    0,
+    9
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.1-rho0-i009-H-T40/EXPOSURE_BALANCED",
+   "runtime_s": 0.0756736249968526,
+   "spawn_key": [
+    1100,
+    0,
+    9
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.1-rho0-i009-H-T80/RANDOM",
+   "runtime_s": 0.11200345899851527,
+   "spawn_key": [
+    1100,
+    0,
+    9
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.1-rho0-i009-H-T80/POPULARITY",
+   "runtime_s": 0.1726613340069889,
+   "spawn_key": [
+    1100,
+    0,
+    9
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.1-rho0-i009-H-T80/EXPOSURE_BALANCED",
+   "runtime_s": 0.11546912499761675,
+   "spawn_key": [
+    1100,
+    0,
+    9
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.1-rho0-i009-H-T160/RANDOM",
+   "runtime_s": 0.1901118750029127,
+   "spawn_key": [
+    1100,
+    0,
+    9
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.1-rho0-i009-H-T160/POPULARITY",
+   "runtime_s": 0.2500877499987837,
+   "spawn_key": [
+    1100,
+    0,
+    9
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.1-rho0-i009-H-T160/EXPOSURE_BALANCED",
+   "runtime_s": 0.2096487500020885,
+   "spawn_key": [
+    1100,
+    0,
+    9
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.1-rho0.5-i000-H-T40/RANDOM",
+   "runtime_s": 0.0750747499987483,
+   "spawn_key": [
+    1100,
+    500,
+    0
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.1-rho0.5-i000-H-T40/POPULARITY",
+   "runtime_s": 0.13678854099998716,
+   "spawn_key": [
+    1100,
+    500,
+    0
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.1-rho0.5-i000-H-T40/EXPOSURE_BALANCED",
+   "runtime_s": 0.08302491700305836,
+   "spawn_key": [
+    1100,
+    500,
+    0
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.1-rho0.5-i000-H-T80/RANDOM",
+   "runtime_s": 0.12135158400633372,
+   "spawn_key": [
+    1100,
+    500,
+    0
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.1-rho0.5-i000-H-T80/POPULARITY",
+   "runtime_s": 0.18471062499884283,
+   "spawn_key": [
+    1100,
+    500,
+    0
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.1-rho0.5-i000-H-T80/EXPOSURE_BALANCED",
+   "runtime_s": 0.13055349999922328,
+   "spawn_key": [
+    1100,
+    500,
+    0
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.1-rho0.5-i000-H-T160/RANDOM",
+   "runtime_s": 0.21463491699978476,
+   "spawn_key": [
+    1100,
+    500,
+    0
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.1-rho0.5-i000-H-T160/POPULARITY",
+   "runtime_s": 0.2791901250020601,
+   "spawn_key": [
+    1100,
+    500,
+    0
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.1-rho0.5-i000-H-T160/EXPOSURE_BALANCED",
+   "runtime_s": 0.22802404200047022,
+   "spawn_key": [
+    1100,
+    500,
+    0
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.1-rho0.5-i001-H-T40/RANDOM",
+   "runtime_s": 0.08122649999859277,
+   "spawn_key": [
+    1100,
+    500,
+    1
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.1-rho0.5-i001-H-T40/POPULARITY",
+   "runtime_s": 0.1436471250053728,
+   "spawn_key": [
+    1100,
+    500,
+    1
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.1-rho0.5-i001-H-T40/EXPOSURE_BALANCED",
+   "runtime_s": 0.08619308400375303,
+   "spawn_key": [
+    1100,
+    500,
+    1
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.1-rho0.5-i001-H-T80/RANDOM",
+   "runtime_s": 0.13147425000352086,
+   "spawn_key": [
+    1100,
+    500,
+    1
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.1-rho0.5-i001-H-T80/POPULARITY",
+   "runtime_s": 0.19443541699729394,
+   "spawn_key": [
+    1100,
+    500,
+    1
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.1-rho0.5-i001-H-T80/EXPOSURE_BALANCED",
+   "runtime_s": 0.1362241669994546,
+   "spawn_key": [
+    1100,
+    500,
+    1
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.1-rho0.5-i001-H-T160/RANDOM",
+   "runtime_s": 0.22725362500204938,
+   "spawn_key": [
+    1100,
+    500,
+    1
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.1-rho0.5-i001-H-T160/POPULARITY",
+   "runtime_s": 0.2731136250004056,
+   "spawn_key": [
+    1100,
+    500,
+    1
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.1-rho0.5-i001-H-T160/EXPOSURE_BALANCED",
+   "runtime_s": 0.234439542000473,
+   "spawn_key": [
+    1100,
+    500,
+    1
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.1-rho0.5-i002-H-T40/RANDOM",
+   "runtime_s": 0.08254995799507014,
+   "spawn_key": [
+    1100,
+    500,
+    2
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.1-rho0.5-i002-H-T40/POPULARITY",
+   "runtime_s": 0.14210774999810383,
+   "spawn_key": [
+    1100,
+    500,
+    2
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.1-rho0.5-i002-H-T40/EXPOSURE_BALANCED",
+   "runtime_s": 0.08581350000167731,
+   "spawn_key": [
+    1100,
+    500,
+    2
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.1-rho0.5-i002-H-T80/RANDOM",
+   "runtime_s": 0.13600712500192458,
+   "spawn_key": [
+    1100,
+    500,
+    2
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.1-rho0.5-i002-H-T80/POPULARITY",
+   "runtime_s": 0.19173308300378267,
+   "spawn_key": [
+    1100,
+    500,
+    2
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.1-rho0.5-i002-H-T80/EXPOSURE_BALANCED",
+   "runtime_s": 0.13358833299571415,
+   "spawn_key": [
+    1100,
+    500,
+    2
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.1-rho0.5-i002-H-T160/RANDOM",
+   "runtime_s": 0.22575304199563107,
+   "spawn_key": [
+    1100,
+    500,
+    2
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.1-rho0.5-i002-H-T160/POPULARITY",
+   "runtime_s": 0.27242691699939314,
+   "spawn_key": [
+    1100,
+    500,
+    2
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.1-rho0.5-i002-H-T160/EXPOSURE_BALANCED",
+   "runtime_s": 0.23811416699754773,
+   "spawn_key": [
+    1100,
+    500,
+    2
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.1-rho0.5-i003-H-T40/RANDOM",
+   "runtime_s": 0.07818579200102249,
+   "spawn_key": [
+    1100,
+    500,
+    3
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.1-rho0.5-i003-H-T40/POPULARITY",
+   "runtime_s": 0.14146870800323086,
+   "spawn_key": [
+    1100,
+    500,
+    3
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.1-rho0.5-i003-H-T40/EXPOSURE_BALANCED",
+   "runtime_s": 0.08136287500383332,
+   "spawn_key": [
+    1100,
+    500,
+    3
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.1-rho0.5-i003-H-T80/RANDOM",
+   "runtime_s": 0.12212495800486067,
+   "spawn_key": [
+    1100,
+    500,
+    3
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.1-rho0.5-i003-H-T80/POPULARITY",
+   "runtime_s": 0.18171241699747043,
+   "spawn_key": [
+    1100,
+    500,
+    3
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.1-rho0.5-i003-H-T80/EXPOSURE_BALANCED",
+   "runtime_s": 0.13135079100175062,
+   "spawn_key": [
+    1100,
+    500,
+    3
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.1-rho0.5-i003-H-T160/RANDOM",
+   "runtime_s": 0.21913770800165366,
+   "spawn_key": [
+    1100,
+    500,
+    3
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.1-rho0.5-i003-H-T160/POPULARITY",
+   "runtime_s": 0.2753554160008207,
+   "spawn_key": [
+    1100,
+    500,
+    3
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.1-rho0.5-i003-H-T160/EXPOSURE_BALANCED",
+   "runtime_s": 0.22926766599994153,
+   "spawn_key": [
+    1100,
+    500,
+    3
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.1-rho0.5-i004-H-T40/RANDOM",
+   "runtime_s": 0.08072387499851175,
+   "spawn_key": [
+    1100,
+    500,
+    4
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.1-rho0.5-i004-H-T40/POPULARITY",
+   "runtime_s": 0.14112479199684458,
+   "spawn_key": [
+    1100,
+    500,
+    4
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.1-rho0.5-i004-H-T40/EXPOSURE_BALANCED",
+   "runtime_s": 0.0852870829985477,
+   "spawn_key": [
+    1100,
+    500,
+    4
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.1-rho0.5-i004-H-T80/RANDOM",
+   "runtime_s": 0.12850308400084032,
+   "spawn_key": [
+    1100,
+    500,
+    4
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.1-rho0.5-i004-H-T80/POPULARITY",
+   "runtime_s": 0.1871428750018822,
+   "spawn_key": [
+    1100,
+    500,
+    4
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.1-rho0.5-i004-H-T80/EXPOSURE_BALANCED",
+   "runtime_s": 0.13473612500092713,
+   "spawn_key": [
+    1100,
+    500,
+    4
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.1-rho0.5-i004-H-T160/RANDOM",
+   "runtime_s": 0.23594741699344013,
+   "spawn_key": [
+    1100,
+    500,
+    4
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.1-rho0.5-i004-H-T160/POPULARITY",
+   "runtime_s": 0.27602679200208513,
+   "spawn_key": [
+    1100,
+    500,
+    4
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.1-rho0.5-i004-H-T160/EXPOSURE_BALANCED",
+   "runtime_s": 0.23721254099655198,
+   "spawn_key": [
+    1100,
+    500,
+    4
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.1-rho0.5-i005-H-T40/RANDOM",
+   "runtime_s": 0.07968979100405704,
+   "spawn_key": [
+    1100,
+    500,
+    5
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.1-rho0.5-i005-H-T40/POPULARITY",
+   "runtime_s": 0.1422837089994573,
+   "spawn_key": [
+    1100,
+    500,
+    5
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.1-rho0.5-i005-H-T40/EXPOSURE_BALANCED",
+   "runtime_s": 0.08188929199968698,
+   "spawn_key": [
+    1100,
+    500,
+    5
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.1-rho0.5-i005-H-T80/RANDOM",
+   "runtime_s": 0.12471795799501706,
+   "spawn_key": [
+    1100,
+    500,
+    5
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.1-rho0.5-i005-H-T80/POPULARITY",
+   "runtime_s": 0.18727470800513402,
+   "spawn_key": [
+    1100,
+    500,
+    5
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.1-rho0.5-i005-H-T80/EXPOSURE_BALANCED",
+   "runtime_s": 0.13294212500477443,
+   "spawn_key": [
+    1100,
+    500,
+    5
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.1-rho0.5-i005-H-T160/RANDOM",
+   "runtime_s": 0.22591100000136066,
+   "spawn_key": [
+    1100,
+    500,
+    5
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.1-rho0.5-i005-H-T160/POPULARITY",
+   "runtime_s": 0.27531604200339643,
+   "spawn_key": [
+    1100,
+    500,
+    5
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.1-rho0.5-i005-H-T160/EXPOSURE_BALANCED",
+   "runtime_s": 0.22804604200064205,
+   "spawn_key": [
+    1100,
+    500,
+    5
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.1-rho0.5-i006-H-T40/RANDOM",
+   "runtime_s": 0.07709337499545654,
+   "spawn_key": [
+    1100,
+    500,
+    6
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.1-rho0.5-i006-H-T40/POPULARITY",
+   "runtime_s": 0.14133975000004284,
+   "spawn_key": [
+    1100,
+    500,
+    6
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.1-rho0.5-i006-H-T40/EXPOSURE_BALANCED",
+   "runtime_s": 0.08373254100297345,
+   "spawn_key": [
+    1100,
+    500,
+    6
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.1-rho0.5-i006-H-T80/RANDOM",
+   "runtime_s": 0.12401474999933271,
+   "spawn_key": [
+    1100,
+    500,
+    6
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.1-rho0.5-i006-H-T80/POPULARITY",
+   "runtime_s": 0.18679837500530994,
+   "spawn_key": [
+    1100,
+    500,
+    6
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.1-rho0.5-i006-H-T80/EXPOSURE_BALANCED",
+   "runtime_s": 0.12952583300648257,
+   "spawn_key": [
+    1100,
+    500,
+    6
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.1-rho0.5-i006-H-T160/RANDOM",
+   "runtime_s": 0.20869374999892898,
+   "spawn_key": [
+    1100,
+    500,
+    6
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.1-rho0.5-i006-H-T160/POPULARITY",
+   "runtime_s": 0.26800358400214463,
+   "spawn_key": [
+    1100,
+    500,
+    6
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.1-rho0.5-i006-H-T160/EXPOSURE_BALANCED",
+   "runtime_s": 0.2213493329982157,
+   "spawn_key": [
+    1100,
+    500,
+    6
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.1-rho0.5-i007-H-T40/RANDOM",
+   "runtime_s": 0.08166920799703803,
+   "spawn_key": [
+    1100,
+    500,
+    7
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.1-rho0.5-i007-H-T40/POPULARITY",
+   "runtime_s": 0.14125741599855246,
+   "spawn_key": [
+    1100,
+    500,
+    7
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.1-rho0.5-i007-H-T40/EXPOSURE_BALANCED",
+   "runtime_s": 0.08312737500091316,
+   "spawn_key": [
+    1100,
+    500,
+    7
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.1-rho0.5-i007-H-T80/RANDOM",
+   "runtime_s": 0.12331404100405052,
+   "spawn_key": [
+    1100,
+    500,
+    7
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.1-rho0.5-i007-H-T80/POPULARITY",
+   "runtime_s": 0.17735054199874867,
+   "spawn_key": [
+    1100,
+    500,
+    7
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.1-rho0.5-i007-H-T80/EXPOSURE_BALANCED",
+   "runtime_s": 0.12834100000327453,
+   "spawn_key": [
+    1100,
+    500,
+    7
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.1-rho0.5-i007-H-T160/RANDOM",
+   "runtime_s": 0.20910870799707482,
+   "spawn_key": [
+    1100,
+    500,
+    7
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.1-rho0.5-i007-H-T160/POPULARITY",
+   "runtime_s": 0.26576816699525807,
+   "spawn_key": [
+    1100,
+    500,
+    7
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.1-rho0.5-i007-H-T160/EXPOSURE_BALANCED",
+   "runtime_s": 0.22034695799811743,
+   "spawn_key": [
+    1100,
+    500,
+    7
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.1-rho0.5-i008-H-T40/RANDOM",
+   "runtime_s": 0.07559183300327277,
+   "spawn_key": [
+    1100,
+    500,
+    8
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.1-rho0.5-i008-H-T40/POPULARITY",
+   "runtime_s": 0.13614183299796423,
+   "spawn_key": [
+    1100,
+    500,
+    8
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.1-rho0.5-i008-H-T40/EXPOSURE_BALANCED",
+   "runtime_s": 0.08263033300318057,
+   "spawn_key": [
+    1100,
+    500,
+    8
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.1-rho0.5-i008-H-T80/RANDOM",
+   "runtime_s": 0.11936483300087275,
+   "spawn_key": [
+    1100,
+    500,
+    8
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.1-rho0.5-i008-H-T80/POPULARITY",
+   "runtime_s": 0.1811370840005111,
+   "spawn_key": [
+    1100,
+    500,
+    8
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.1-rho0.5-i008-H-T80/EXPOSURE_BALANCED",
+   "runtime_s": 0.12565075000020443,
+   "spawn_key": [
+    1100,
+    500,
+    8
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.1-rho0.5-i008-H-T160/RANDOM",
+   "runtime_s": 0.20342462499684189,
+   "spawn_key": [
+    1100,
+    500,
+    8
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.1-rho0.5-i008-H-T160/POPULARITY",
+   "runtime_s": 0.26729704199533444,
+   "spawn_key": [
+    1100,
+    500,
+    8
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.1-rho0.5-i008-H-T160/EXPOSURE_BALANCED",
+   "runtime_s": 0.2181816250013071,
+   "spawn_key": [
+    1100,
+    500,
+    8
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.1-rho0.5-i009-H-T40/RANDOM",
+   "runtime_s": 0.07611445899965474,
+   "spawn_key": [
+    1100,
+    500,
+    9
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.1-rho0.5-i009-H-T40/POPULARITY",
+   "runtime_s": 0.1392602080013603,
+   "spawn_key": [
+    1100,
+    500,
+    9
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.1-rho0.5-i009-H-T40/EXPOSURE_BALANCED",
+   "runtime_s": 0.08330287499848055,
+   "spawn_key": [
+    1100,
+    500,
+    9
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.1-rho0.5-i009-H-T80/RANDOM",
+   "runtime_s": 0.11966366600245237,
+   "spawn_key": [
+    1100,
+    500,
+    9
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.1-rho0.5-i009-H-T80/POPULARITY",
+   "runtime_s": 0.18038774999877205,
+   "spawn_key": [
+    1100,
+    500,
+    9
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.1-rho0.5-i009-H-T80/EXPOSURE_BALANCED",
+   "runtime_s": 0.13095495799643686,
+   "spawn_key": [
+    1100,
+    500,
+    9
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.1-rho0.5-i009-H-T160/RANDOM",
+   "runtime_s": 0.20964970799832372,
+   "spawn_key": [
+    1100,
+    500,
+    9
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.1-rho0.5-i009-H-T160/POPULARITY",
+   "runtime_s": 0.26991891599755036,
+   "spawn_key": [
+    1100,
+    500,
+    9
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.1-rho0.5-i009-H-T160/EXPOSURE_BALANCED",
+   "runtime_s": 0.2274822920007864,
+   "spawn_key": [
+    1100,
+    500,
+    9
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.1-rho0.9-i000-H-T40/RANDOM",
+   "runtime_s": 0.09180324999761069,
+   "spawn_key": [
+    1100,
+    900,
+    0
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.1-rho0.9-i000-H-T40/POPULARITY",
+   "runtime_s": 0.1519035410019569,
+   "spawn_key": [
+    1100,
+    900,
+    0
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.1-rho0.9-i000-H-T40/EXPOSURE_BALANCED",
+   "runtime_s": 0.09422279099817388,
+   "spawn_key": [
+    1100,
+    900,
+    0
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.1-rho0.9-i000-H-T80/RANDOM",
+   "runtime_s": 0.14421241699892562,
+   "spawn_key": [
+    1100,
+    900,
+    0
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.1-rho0.9-i000-H-T80/POPULARITY",
+   "runtime_s": 0.20053770799859194,
+   "spawn_key": [
+    1100,
+    900,
+    0
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.1-rho0.9-i000-H-T80/EXPOSURE_BALANCED",
+   "runtime_s": 0.14855441699910443,
+   "spawn_key": [
+    1100,
+    900,
+    0
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.1-rho0.9-i000-H-T160/RANDOM",
+   "runtime_s": 0.24545508400478866,
+   "spawn_key": [
+    1100,
+    900,
+    0
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.1-rho0.9-i000-H-T160/POPULARITY",
+   "runtime_s": 0.3009156250045635,
+   "spawn_key": [
+    1100,
+    900,
+    0
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.1-rho0.9-i000-H-T160/EXPOSURE_BALANCED",
+   "runtime_s": 0.25710629200330004,
+   "spawn_key": [
+    1100,
+    900,
+    0
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.1-rho0.9-i001-H-T40/RANDOM",
+   "runtime_s": 0.09264200000325218,
+   "spawn_key": [
+    1100,
+    900,
+    1
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.1-rho0.9-i001-H-T40/POPULARITY",
+   "runtime_s": 0.14753050000581425,
+   "spawn_key": [
+    1100,
+    900,
+    1
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.1-rho0.9-i001-H-T40/EXPOSURE_BALANCED",
+   "runtime_s": 0.09819850000349106,
+   "spawn_key": [
+    1100,
+    900,
+    1
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.1-rho0.9-i001-H-T80/RANDOM",
+   "runtime_s": 0.14305758299451554,
+   "spawn_key": [
+    1100,
+    900,
+    1
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.1-rho0.9-i001-H-T80/POPULARITY",
+   "runtime_s": 0.20566366700222716,
+   "spawn_key": [
+    1100,
+    900,
+    1
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.1-rho0.9-i001-H-T80/EXPOSURE_BALANCED",
+   "runtime_s": 0.1539983340044273,
+   "spawn_key": [
+    1100,
+    900,
+    1
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.1-rho0.9-i001-H-T160/RANDOM",
+   "runtime_s": 0.24252191700361436,
+   "spawn_key": [
+    1100,
+    900,
+    1
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.1-rho0.9-i001-H-T160/POPULARITY",
+   "runtime_s": 0.29866220799885923,
+   "spawn_key": [
+    1100,
+    900,
+    1
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.1-rho0.9-i001-H-T160/EXPOSURE_BALANCED",
+   "runtime_s": 0.2624572499989881,
+   "spawn_key": [
+    1100,
+    900,
+    1
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.1-rho0.9-i002-H-T40/RANDOM",
+   "runtime_s": 0.09122183300496545,
+   "spawn_key": [
+    1100,
+    900,
+    2
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.1-rho0.9-i002-H-T40/POPULARITY",
+   "runtime_s": 0.15000604100350756,
+   "spawn_key": [
+    1100,
+    900,
+    2
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.1-rho0.9-i002-H-T40/EXPOSURE_BALANCED",
+   "runtime_s": 0.09916770800191443,
+   "spawn_key": [
+    1100,
+    900,
+    2
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.1-rho0.9-i002-H-T80/RANDOM",
+   "runtime_s": 0.14283104200148955,
+   "spawn_key": [
+    1100,
+    900,
+    2
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.1-rho0.9-i002-H-T80/POPULARITY",
+   "runtime_s": 0.20206874999712454,
+   "spawn_key": [
+    1100,
+    900,
+    2
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.1-rho0.9-i002-H-T80/EXPOSURE_BALANCED",
+   "runtime_s": 0.15767424999648938,
+   "spawn_key": [
+    1100,
+    900,
+    2
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.1-rho0.9-i002-H-T160/RANDOM",
+   "runtime_s": 0.24838799999997718,
+   "spawn_key": [
+    1100,
+    900,
+    2
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.1-rho0.9-i002-H-T160/POPULARITY",
+   "runtime_s": 0.3104231660036021,
+   "spawn_key": [
+    1100,
+    900,
+    2
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.1-rho0.9-i002-H-T160/EXPOSURE_BALANCED",
+   "runtime_s": 0.2703333749959711,
+   "spawn_key": [
+    1100,
+    900,
+    2
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.1-rho0.9-i003-H-T40/RANDOM",
+   "runtime_s": 0.09236654200503835,
+   "spawn_key": [
+    1100,
+    900,
+    3
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.1-rho0.9-i003-H-T40/POPULARITY",
+   "runtime_s": 0.1467242910002824,
+   "spawn_key": [
+    1100,
+    900,
+    3
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.1-rho0.9-i003-H-T40/EXPOSURE_BALANCED",
+   "runtime_s": 0.09661720800067997,
+   "spawn_key": [
+    1100,
+    900,
+    3
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.1-rho0.9-i003-H-T80/RANDOM",
+   "runtime_s": 0.1430202920018928,
+   "spawn_key": [
+    1100,
+    900,
+    3
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.1-rho0.9-i003-H-T80/POPULARITY",
+   "runtime_s": 0.19701570799952606,
+   "spawn_key": [
+    1100,
+    900,
+    3
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.1-rho0.9-i003-H-T80/EXPOSURE_BALANCED",
+   "runtime_s": 0.15257862499856856,
+   "spawn_key": [
+    1100,
+    900,
+    3
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.1-rho0.9-i003-H-T160/RANDOM",
+   "runtime_s": 0.2400388749956619,
+   "spawn_key": [
+    1100,
+    900,
+    3
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.1-rho0.9-i003-H-T160/POPULARITY",
+   "runtime_s": 0.2994174170016777,
+   "spawn_key": [
+    1100,
+    900,
+    3
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.1-rho0.9-i003-H-T160/EXPOSURE_BALANCED",
+   "runtime_s": 0.25348841700179037,
+   "spawn_key": [
+    1100,
+    900,
+    3
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.1-rho0.9-i004-H-T40/RANDOM",
+   "runtime_s": 0.09117645800142782,
+   "spawn_key": [
+    1100,
+    900,
+    4
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.1-rho0.9-i004-H-T40/POPULARITY",
+   "runtime_s": 0.1422379169962369,
+   "spawn_key": [
+    1100,
+    900,
+    4
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.1-rho0.9-i004-H-T40/EXPOSURE_BALANCED",
+   "runtime_s": 0.09479858400300145,
+   "spawn_key": [
+    1100,
+    900,
+    4
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.1-rho0.9-i004-H-T80/RANDOM",
+   "runtime_s": 0.13816091699845856,
+   "spawn_key": [
+    1100,
+    900,
+    4
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.1-rho0.9-i004-H-T80/POPULARITY",
+   "runtime_s": 0.1931164580018958,
+   "spawn_key": [
+    1100,
+    900,
+    4
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.1-rho0.9-i004-H-T80/EXPOSURE_BALANCED",
+   "runtime_s": 0.14802437499747612,
+   "spawn_key": [
+    1100,
+    900,
+    4
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.1-rho0.9-i004-H-T160/RANDOM",
+   "runtime_s": 0.2386624579958152,
+   "spawn_key": [
+    1100,
+    900,
+    4
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.1-rho0.9-i004-H-T160/POPULARITY",
+   "runtime_s": 0.2904743339968263,
+   "spawn_key": [
+    1100,
+    900,
+    4
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.1-rho0.9-i004-H-T160/EXPOSURE_BALANCED",
+   "runtime_s": 0.25682837500062305,
+   "spawn_key": [
+    1100,
+    900,
+    4
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.1-rho0.9-i005-H-T40/RANDOM",
+   "runtime_s": 0.09026733399514342,
+   "spawn_key": [
+    1100,
+    900,
+    5
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.1-rho0.9-i005-H-T40/POPULARITY",
+   "runtime_s": 0.14886920899880351,
+   "spawn_key": [
+    1100,
+    900,
+    5
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.1-rho0.9-i005-H-T40/EXPOSURE_BALANCED",
+   "runtime_s": 0.10033195799769601,
+   "spawn_key": [
+    1100,
+    900,
+    5
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.1-rho0.9-i005-H-T80/RANDOM",
+   "runtime_s": 0.13690725000196835,
+   "spawn_key": [
+    1100,
+    900,
+    5
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.1-rho0.9-i005-H-T80/POPULARITY",
+   "runtime_s": 0.19782333300099708,
+   "spawn_key": [
+    1100,
+    900,
+    5
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.1-rho0.9-i005-H-T80/EXPOSURE_BALANCED",
+   "runtime_s": 0.15110324999841396,
+   "spawn_key": [
+    1100,
+    900,
+    5
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.1-rho0.9-i005-H-T160/RANDOM",
+   "runtime_s": 0.23522070799663197,
+   "spawn_key": [
+    1100,
+    900,
+    5
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.1-rho0.9-i005-H-T160/POPULARITY",
+   "runtime_s": 0.29024879099597456,
+   "spawn_key": [
+    1100,
+    900,
+    5
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.1-rho0.9-i005-H-T160/EXPOSURE_BALANCED",
+   "runtime_s": 0.26607608400081517,
+   "spawn_key": [
+    1100,
+    900,
+    5
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.1-rho0.9-i006-H-T40/RANDOM",
+   "runtime_s": 0.09236375000182306,
+   "spawn_key": [
+    1100,
+    900,
+    6
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.1-rho0.9-i006-H-T40/POPULARITY",
+   "runtime_s": 0.1540216670036898,
+   "spawn_key": [
+    1100,
+    900,
+    6
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.1-rho0.9-i006-H-T40/EXPOSURE_BALANCED",
+   "runtime_s": 0.09350974999688333,
+   "spawn_key": [
+    1100,
+    900,
+    6
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.1-rho0.9-i006-H-T80/RANDOM",
+   "runtime_s": 0.13867437499720836,
+   "spawn_key": [
+    1100,
+    900,
+    6
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.1-rho0.9-i006-H-T80/POPULARITY",
+   "runtime_s": 0.206005041996832,
+   "spawn_key": [
+    1100,
+    900,
+    6
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.1-rho0.9-i006-H-T80/EXPOSURE_BALANCED",
+   "runtime_s": 0.15626200000406243,
+   "spawn_key": [
+    1100,
+    900,
+    6
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.1-rho0.9-i006-H-T160/RANDOM",
+   "runtime_s": 0.2342274590046145,
+   "spawn_key": [
+    1100,
+    900,
+    6
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.1-rho0.9-i006-H-T160/POPULARITY",
+   "runtime_s": 0.29849079200357664,
+   "spawn_key": [
+    1100,
+    900,
+    6
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.1-rho0.9-i006-H-T160/EXPOSURE_BALANCED",
+   "runtime_s": 0.2588804170009098,
+   "spawn_key": [
+    1100,
+    900,
+    6
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.1-rho0.9-i007-H-T40/RANDOM",
+   "runtime_s": 0.09170825000182958,
+   "spawn_key": [
+    1100,
+    900,
+    7
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.1-rho0.9-i007-H-T40/POPULARITY",
+   "runtime_s": 0.1454691670005559,
+   "spawn_key": [
+    1100,
+    900,
+    7
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.1-rho0.9-i007-H-T40/EXPOSURE_BALANCED",
+   "runtime_s": 0.10128004099533428,
+   "spawn_key": [
+    1100,
+    900,
+    7
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.1-rho0.9-i007-H-T80/RANDOM",
+   "runtime_s": 0.14651808400230948,
+   "spawn_key": [
+    1100,
+    900,
+    7
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.1-rho0.9-i007-H-T80/POPULARITY",
+   "runtime_s": 0.19575291700311936,
+   "spawn_key": [
+    1100,
+    900,
+    7
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.1-rho0.9-i007-H-T80/EXPOSURE_BALANCED",
+   "runtime_s": 0.15280416599853197,
+   "spawn_key": [
+    1100,
+    900,
+    7
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.1-rho0.9-i007-H-T160/RANDOM",
+   "runtime_s": 0.24482024999451824,
+   "spawn_key": [
+    1100,
+    900,
+    7
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.1-rho0.9-i007-H-T160/POPULARITY",
+   "runtime_s": 0.30466295900259865,
+   "spawn_key": [
+    1100,
+    900,
+    7
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.1-rho0.9-i007-H-T160/EXPOSURE_BALANCED",
+   "runtime_s": 0.2652315000013914,
+   "spawn_key": [
+    1100,
+    900,
+    7
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.1-rho0.9-i008-H-T40/RANDOM",
+   "runtime_s": 0.0961047079981654,
+   "spawn_key": [
+    1100,
+    900,
+    8
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.1-rho0.9-i008-H-T40/POPULARITY",
+   "runtime_s": 0.1527675420002197,
+   "spawn_key": [
+    1100,
+    900,
+    8
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.1-rho0.9-i008-H-T40/EXPOSURE_BALANCED",
+   "runtime_s": 0.09968170800129883,
+   "spawn_key": [
+    1100,
+    900,
+    8
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.1-rho0.9-i008-H-T80/RANDOM",
+   "runtime_s": 0.1443291670002509,
+   "spawn_key": [
+    1100,
+    900,
+    8
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.1-rho0.9-i008-H-T80/POPULARITY",
+   "runtime_s": 0.20181158299965318,
+   "spawn_key": [
+    1100,
+    900,
+    8
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.1-rho0.9-i008-H-T80/EXPOSURE_BALANCED",
+   "runtime_s": 0.15617595799994888,
+   "spawn_key": [
+    1100,
+    900,
+    8
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.1-rho0.9-i008-H-T160/RANDOM",
+   "runtime_s": 0.24927100000059,
+   "spawn_key": [
+    1100,
+    900,
+    8
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.1-rho0.9-i008-H-T160/POPULARITY",
+   "runtime_s": 0.30389545900106896,
+   "spawn_key": [
+    1100,
+    900,
+    8
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.1-rho0.9-i008-H-T160/EXPOSURE_BALANCED",
+   "runtime_s": 0.2672686660007457,
+   "spawn_key": [
+    1100,
+    900,
+    8
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.1-rho0.9-i009-H-T40/RANDOM",
+   "runtime_s": 0.09384049999789568,
+   "spawn_key": [
+    1100,
+    900,
+    9
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.1-rho0.9-i009-H-T40/POPULARITY",
+   "runtime_s": 0.1514134169992758,
+   "spawn_key": [
+    1100,
+    900,
+    9
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.1-rho0.9-i009-H-T40/EXPOSURE_BALANCED",
+   "runtime_s": 0.09728183400147827,
+   "spawn_key": [
+    1100,
+    900,
+    9
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.1-rho0.9-i009-H-T80/RANDOM",
+   "runtime_s": 0.14806925000448246,
+   "spawn_key": [
+    1100,
+    900,
+    9
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.1-rho0.9-i009-H-T80/POPULARITY",
+   "runtime_s": 0.20107904099859297,
+   "spawn_key": [
+    1100,
+    900,
+    9
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.1-rho0.9-i009-H-T80/EXPOSURE_BALANCED",
+   "runtime_s": 0.15695333400071831,
+   "spawn_key": [
+    1100,
+    900,
+    9
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.1-rho0.9-i009-H-T160/RANDOM",
+   "runtime_s": 0.2497441249943222,
+   "spawn_key": [
+    1100,
+    900,
+    9
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.1-rho0.9-i009-H-T160/POPULARITY",
+   "runtime_s": 0.29971637499693315,
+   "spawn_key": [
+    1100,
+    900,
+    9
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.1-rho0.9-i009-H-T160/EXPOSURE_BALANCED",
+   "runtime_s": 0.2817389580013696,
+   "spawn_key": [
+    1100,
+    900,
+    9
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.5-rho0-i000-H-T40/RANDOM",
+   "runtime_s": 0.09883075000107056,
+   "spawn_key": [
+    1500,
+    0,
+    0
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.5-rho0-i000-H-T40/POPULARITY",
+   "runtime_s": 0.1797553330034134,
+   "spawn_key": [
+    1500,
+    0,
+    0
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.5-rho0-i000-H-T40/EXPOSURE_BALANCED",
+   "runtime_s": 0.10895654199703131,
+   "spawn_key": [
+    1500,
+    0,
+    0
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.5-rho0-i000-H-T80/RANDOM",
+   "runtime_s": 0.15924154100503074,
+   "spawn_key": [
+    1500,
+    0,
+    0
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.5-rho0-i000-H-T80/POPULARITY",
+   "runtime_s": 0.23539062499912689,
+   "spawn_key": [
+    1500,
+    0,
+    0
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.5-rho0-i000-H-T80/EXPOSURE_BALANCED",
+   "runtime_s": 0.17346383400581544,
+   "spawn_key": [
+    1500,
+    0,
+    0
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.5-rho0-i000-H-T160/RANDOM",
+   "runtime_s": 0.28176691599946935,
+   "spawn_key": [
+    1500,
+    0,
+    0
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.5-rho0-i000-H-T160/POPULARITY",
+   "runtime_s": 0.36984358299378073,
+   "spawn_key": [
+    1500,
+    0,
+    0
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.5-rho0-i000-H-T160/EXPOSURE_BALANCED",
+   "runtime_s": 0.3065987910013064,
+   "spawn_key": [
+    1500,
+    0,
+    0
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.5-rho0-i001-H-T40/RANDOM",
+   "runtime_s": 0.0979020830054651,
+   "spawn_key": [
+    1500,
+    0,
+    1
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.5-rho0-i001-H-T40/POPULARITY",
+   "runtime_s": 0.18056125000293832,
+   "spawn_key": [
+    1500,
+    0,
+    1
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.5-rho0-i001-H-T40/EXPOSURE_BALANCED",
+   "runtime_s": 0.10825583399855532,
+   "spawn_key": [
+    1500,
+    0,
+    1
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.5-rho0-i001-H-T80/RANDOM",
+   "runtime_s": 0.15656412499811267,
+   "spawn_key": [
+    1500,
+    0,
+    1
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.5-rho0-i001-H-T80/POPULARITY",
+   "runtime_s": 0.2433087500030524,
+   "spawn_key": [
+    1500,
+    0,
+    1
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.5-rho0-i001-H-T80/EXPOSURE_BALANCED",
+   "runtime_s": 0.1804005829981179,
+   "spawn_key": [
+    1500,
+    0,
+    1
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.5-rho0-i001-H-T160/RANDOM",
+   "runtime_s": 0.2811757499948726,
+   "spawn_key": [
+    1500,
+    0,
+    1
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.5-rho0-i001-H-T160/POPULARITY",
+   "runtime_s": 0.3582413749973057,
+   "spawn_key": [
+    1500,
+    0,
+    1
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.5-rho0-i001-H-T160/EXPOSURE_BALANCED",
+   "runtime_s": 0.302482292005152,
+   "spawn_key": [
+    1500,
+    0,
+    1
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.5-rho0-i002-H-T40/RANDOM",
+   "runtime_s": 0.10055812499922467,
+   "spawn_key": [
+    1500,
+    0,
+    2
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.5-rho0-i002-H-T40/POPULARITY",
+   "runtime_s": 0.18746395899506751,
+   "spawn_key": [
+    1500,
+    0,
+    2
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.5-rho0-i002-H-T40/EXPOSURE_BALANCED",
+   "runtime_s": 0.11857625000266125,
+   "spawn_key": [
+    1500,
+    0,
+    2
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.5-rho0-i002-H-T80/RANDOM",
+   "runtime_s": 0.16021420800097985,
+   "spawn_key": [
+    1500,
+    0,
+    2
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.5-rho0-i002-H-T80/POPULARITY",
+   "runtime_s": 0.2376699170054053,
+   "spawn_key": [
+    1500,
+    0,
+    2
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.5-rho0-i002-H-T80/EXPOSURE_BALANCED",
+   "runtime_s": 0.1702110830010497,
+   "spawn_key": [
+    1500,
+    0,
+    2
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.5-rho0-i002-H-T160/RANDOM",
+   "runtime_s": 0.27247983399865916,
+   "spawn_key": [
+    1500,
+    0,
+    2
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.5-rho0-i002-H-T160/POPULARITY",
+   "runtime_s": 0.3534390839995467,
+   "spawn_key": [
+    1500,
+    0,
+    2
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.5-rho0-i002-H-T160/EXPOSURE_BALANCED",
+   "runtime_s": 0.29638337500364287,
+   "spawn_key": [
+    1500,
+    0,
+    2
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.5-rho0-i003-H-T40/RANDOM",
+   "runtime_s": 0.09259383299649926,
+   "spawn_key": [
+    1500,
+    0,
+    3
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.5-rho0-i003-H-T40/POPULARITY",
+   "runtime_s": 0.17509679200156825,
+   "spawn_key": [
+    1500,
+    0,
+    3
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.5-rho0-i003-H-T40/EXPOSURE_BALANCED",
+   "runtime_s": 0.10198941699491115,
+   "spawn_key": [
+    1500,
+    0,
+    3
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.5-rho0-i003-H-T80/RANDOM",
+   "runtime_s": 0.15132154100137996,
+   "spawn_key": [
+    1500,
+    0,
+    3
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.5-rho0-i003-H-T80/POPULARITY",
+   "runtime_s": 0.23992712500330526,
+   "spawn_key": [
+    1500,
+    0,
+    3
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.5-rho0-i003-H-T80/EXPOSURE_BALANCED",
+   "runtime_s": 0.1681479999970179,
+   "spawn_key": [
+    1500,
+    0,
+    3
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.5-rho0-i003-H-T160/RANDOM",
+   "runtime_s": 0.2682094589981716,
+   "spawn_key": [
+    1500,
+    0,
+    3
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.5-rho0-i003-H-T160/POPULARITY",
+   "runtime_s": 0.3560818339974503,
+   "spawn_key": [
+    1500,
+    0,
+    3
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.5-rho0-i003-H-T160/EXPOSURE_BALANCED",
+   "runtime_s": 0.2954124999960186,
+   "spawn_key": [
+    1500,
+    0,
+    3
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.5-rho0-i004-H-T40/RANDOM",
+   "runtime_s": 0.10155758400651393,
+   "spawn_key": [
+    1500,
+    0,
+    4
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.5-rho0-i004-H-T40/POPULARITY",
+   "runtime_s": 0.17410950000339653,
+   "spawn_key": [
+    1500,
+    0,
+    4
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.5-rho0-i004-H-T40/EXPOSURE_BALANCED",
+   "runtime_s": 0.10252829099772498,
+   "spawn_key": [
+    1500,
+    0,
+    4
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.5-rho0-i004-H-T80/RANDOM",
+   "runtime_s": 0.1524764999994659,
+   "spawn_key": [
+    1500,
+    0,
+    4
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.5-rho0-i004-H-T80/POPULARITY",
+   "runtime_s": 0.22968029199546436,
+   "spawn_key": [
+    1500,
+    0,
+    4
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.5-rho0-i004-H-T80/EXPOSURE_BALANCED",
+   "runtime_s": 0.16576216599787585,
+   "spawn_key": [
+    1500,
+    0,
+    4
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.5-rho0-i004-H-T160/RANDOM",
+   "runtime_s": 0.2765536669976427,
+   "spawn_key": [
+    1500,
+    0,
+    4
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.5-rho0-i004-H-T160/POPULARITY",
+   "runtime_s": 0.34979212500184076,
+   "spawn_key": [
+    1500,
+    0,
+    4
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.5-rho0-i004-H-T160/EXPOSURE_BALANCED",
+   "runtime_s": 0.2941467080017901,
+   "spawn_key": [
+    1500,
+    0,
+    4
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.5-rho0-i005-H-T40/RANDOM",
+   "runtime_s": 0.09837445899756858,
+   "spawn_key": [
+    1500,
+    0,
+    5
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.5-rho0-i005-H-T40/POPULARITY",
+   "runtime_s": 0.17519845900096698,
+   "spawn_key": [
+    1500,
+    0,
+    5
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.5-rho0-i005-H-T40/EXPOSURE_BALANCED",
+   "runtime_s": 0.10229208400414791,
+   "spawn_key": [
+    1500,
+    0,
+    5
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.5-rho0-i005-H-T80/RANDOM",
+   "runtime_s": 0.15945620900311042,
+   "spawn_key": [
+    1500,
+    0,
+    5
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.5-rho0-i005-H-T80/POPULARITY",
+   "runtime_s": 0.24323370800266275,
+   "spawn_key": [
+    1500,
+    0,
+    5
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.5-rho0-i005-H-T80/EXPOSURE_BALANCED",
+   "runtime_s": 0.17024341600335902,
+   "spawn_key": [
+    1500,
+    0,
+    5
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.5-rho0-i005-H-T160/RANDOM",
+   "runtime_s": 0.28497062499809545,
+   "spawn_key": [
+    1500,
+    0,
+    5
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.5-rho0-i005-H-T160/POPULARITY",
+   "runtime_s": 0.36300604199641384,
+   "spawn_key": [
+    1500,
+    0,
+    5
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.5-rho0-i005-H-T160/EXPOSURE_BALANCED",
+   "runtime_s": 0.3029717080062255,
+   "spawn_key": [
+    1500,
+    0,
+    5
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.5-rho0-i006-H-T40/RANDOM",
+   "runtime_s": 0.09930562500085216,
+   "spawn_key": [
+    1500,
+    0,
+    6
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.5-rho0-i006-H-T40/POPULARITY",
+   "runtime_s": 0.18149141700268956,
+   "spawn_key": [
+    1500,
+    0,
+    6
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.5-rho0-i006-H-T40/EXPOSURE_BALANCED",
+   "runtime_s": 0.10528399999748217,
+   "spawn_key": [
+    1500,
+    0,
+    6
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.5-rho0-i006-H-T80/RANDOM",
+   "runtime_s": 0.1604578330006916,
+   "spawn_key": [
+    1500,
+    0,
+    6
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.5-rho0-i006-H-T80/POPULARITY",
+   "runtime_s": 0.24383891699835658,
+   "spawn_key": [
+    1500,
+    0,
+    6
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.5-rho0-i006-H-T80/EXPOSURE_BALANCED",
+   "runtime_s": 0.17156183299812255,
+   "spawn_key": [
+    1500,
+    0,
+    6
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.5-rho0-i006-H-T160/RANDOM",
+   "runtime_s": 0.2855850840060157,
+   "spawn_key": [
+    1500,
+    0,
+    6
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.5-rho0-i006-H-T160/POPULARITY",
+   "runtime_s": 0.3717653749990859,
+   "spawn_key": [
+    1500,
+    0,
+    6
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.5-rho0-i006-H-T160/EXPOSURE_BALANCED",
+   "runtime_s": 0.30291741700057173,
+   "spawn_key": [
+    1500,
+    0,
+    6
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.5-rho0-i007-H-T40/RANDOM",
+   "runtime_s": 0.09713633300270885,
+   "spawn_key": [
+    1500,
+    0,
+    7
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.5-rho0-i007-H-T40/POPULARITY",
+   "runtime_s": 0.17861187499511288,
+   "spawn_key": [
+    1500,
+    0,
+    7
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.5-rho0-i007-H-T40/EXPOSURE_BALANCED",
+   "runtime_s": 0.10475641700031701,
+   "spawn_key": [
+    1500,
+    0,
+    7
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.5-rho0-i007-H-T80/RANDOM",
+   "runtime_s": 0.15988175000529736,
+   "spawn_key": [
+    1500,
+    0,
+    7
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.5-rho0-i007-H-T80/POPULARITY",
+   "runtime_s": 0.24354841600143118,
+   "spawn_key": [
+    1500,
+    0,
+    7
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.5-rho0-i007-H-T80/EXPOSURE_BALANCED",
+   "runtime_s": 0.16900287500175182,
+   "spawn_key": [
+    1500,
+    0,
+    7
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.5-rho0-i007-H-T160/RANDOM",
+   "runtime_s": 0.27752391700050794,
+   "spawn_key": [
+    1500,
+    0,
+    7
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.5-rho0-i007-H-T160/POPULARITY",
+   "runtime_s": 0.3542096669989405,
+   "spawn_key": [
+    1500,
+    0,
+    7
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.5-rho0-i007-H-T160/EXPOSURE_BALANCED",
+   "runtime_s": 0.2902337090054061,
+   "spawn_key": [
+    1500,
+    0,
+    7
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.5-rho0-i008-H-T40/RANDOM",
+   "runtime_s": 0.095572500002163,
+   "spawn_key": [
+    1500,
+    0,
+    8
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.5-rho0-i008-H-T40/POPULARITY",
+   "runtime_s": 0.1742919999960577,
+   "spawn_key": [
+    1500,
+    0,
+    8
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.5-rho0-i008-H-T40/EXPOSURE_BALANCED",
+   "runtime_s": 0.1071501670012367,
+   "spawn_key": [
+    1500,
+    0,
+    8
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.5-rho0-i008-H-T80/RANDOM",
+   "runtime_s": 0.15311391700379318,
+   "spawn_key": [
+    1500,
+    0,
+    8
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.5-rho0-i008-H-T80/POPULARITY",
+   "runtime_s": 0.2295373329980066,
+   "spawn_key": [
+    1500,
+    0,
+    8
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.5-rho0-i008-H-T80/EXPOSURE_BALANCED",
+   "runtime_s": 0.1696795839961851,
+   "spawn_key": [
+    1500,
+    0,
+    8
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.5-rho0-i008-H-T160/RANDOM",
+   "runtime_s": 0.2760532499960391,
+   "spawn_key": [
+    1500,
+    0,
+    8
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.5-rho0-i008-H-T160/POPULARITY",
+   "runtime_s": 0.3714271249991725,
+   "spawn_key": [
+    1500,
+    0,
+    8
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.5-rho0-i008-H-T160/EXPOSURE_BALANCED",
+   "runtime_s": 0.3047988329999498,
+   "spawn_key": [
+    1500,
+    0,
+    8
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.5-rho0-i009-H-T40/RANDOM",
+   "runtime_s": 0.09832454199931817,
+   "spawn_key": [
+    1500,
+    0,
+    9
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.5-rho0-i009-H-T40/POPULARITY",
+   "runtime_s": 0.18003779200080317,
+   "spawn_key": [
+    1500,
+    0,
+    9
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.5-rho0-i009-H-T40/EXPOSURE_BALANCED",
+   "runtime_s": 0.10672324999904959,
+   "spawn_key": [
+    1500,
+    0,
+    9
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.5-rho0-i009-H-T80/RANDOM",
+   "runtime_s": 0.1612366249974002,
+   "spawn_key": [
+    1500,
+    0,
+    9
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.5-rho0-i009-H-T80/POPULARITY",
+   "runtime_s": 0.24266191700007766,
+   "spawn_key": [
+    1500,
+    0,
+    9
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.5-rho0-i009-H-T80/EXPOSURE_BALANCED",
+   "runtime_s": 0.17145166599948425,
+   "spawn_key": [
+    1500,
+    0,
+    9
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.5-rho0-i009-H-T160/RANDOM",
+   "runtime_s": 0.2886980420007603,
+   "spawn_key": [
+    1500,
+    0,
+    9
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.5-rho0-i009-H-T160/POPULARITY",
+   "runtime_s": 0.3599467080057366,
+   "spawn_key": [
+    1500,
+    0,
+    9
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.5-rho0-i009-H-T160/EXPOSURE_BALANCED",
+   "runtime_s": 0.3001702920009848,
+   "spawn_key": [
+    1500,
+    0,
+    9
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.5-rho0.5-i000-H-T40/RANDOM",
+   "runtime_s": 0.10302483400300844,
+   "spawn_key": [
+    1500,
+    500,
+    0
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.5-rho0.5-i000-H-T40/POPULARITY",
+   "runtime_s": 0.18074283400346758,
+   "spawn_key": [
+    1500,
+    500,
+    0
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.5-rho0.5-i000-H-T40/EXPOSURE_BALANCED",
+   "runtime_s": 0.10638575000484707,
+   "spawn_key": [
+    1500,
+    500,
+    0
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.5-rho0.5-i000-H-T80/RANDOM",
+   "runtime_s": 0.16227604200685164,
+   "spawn_key": [
+    1500,
+    500,
+    0
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.5-rho0.5-i000-H-T80/POPULARITY",
+   "runtime_s": 0.23931712500052527,
+   "spawn_key": [
+    1500,
+    500,
+    0
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.5-rho0.5-i000-H-T80/EXPOSURE_BALANCED",
+   "runtime_s": 0.17581849999987753,
+   "spawn_key": [
+    1500,
+    500,
+    0
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.5-rho0.5-i000-H-T160/RANDOM",
+   "runtime_s": 0.2863083340052981,
+   "spawn_key": [
+    1500,
+    500,
+    0
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.5-rho0.5-i000-H-T160/POPULARITY",
+   "runtime_s": 0.3571318749964121,
+   "spawn_key": [
+    1500,
+    500,
+    0
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.5-rho0.5-i000-H-T160/EXPOSURE_BALANCED",
+   "runtime_s": 0.3026558749988908,
+   "spawn_key": [
+    1500,
+    500,
+    0
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.5-rho0.5-i001-H-T40/RANDOM",
+   "runtime_s": 0.10198974999366328,
+   "spawn_key": [
+    1500,
+    500,
+    1
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.5-rho0.5-i001-H-T40/POPULARITY",
+   "runtime_s": 0.17948566599807236,
+   "spawn_key": [
+    1500,
+    500,
+    1
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.5-rho0.5-i001-H-T40/EXPOSURE_BALANCED",
+   "runtime_s": 0.11103191599977436,
+   "spawn_key": [
+    1500,
+    500,
+    1
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.5-rho0.5-i001-H-T80/RANDOM",
+   "runtime_s": 0.16118408300098963,
+   "spawn_key": [
+    1500,
+    500,
+    1
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.5-rho0.5-i001-H-T80/POPULARITY",
+   "runtime_s": 0.24050741699466016,
+   "spawn_key": [
+    1500,
+    500,
+    1
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.5-rho0.5-i001-H-T80/EXPOSURE_BALANCED",
+   "runtime_s": 0.17227929199725622,
+   "spawn_key": [
+    1500,
+    500,
+    1
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.5-rho0.5-i001-H-T160/RANDOM",
+   "runtime_s": 0.2883371660063858,
+   "spawn_key": [
+    1500,
+    500,
+    1
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.5-rho0.5-i001-H-T160/POPULARITY",
+   "runtime_s": 0.3662936249966151,
+   "spawn_key": [
+    1500,
+    500,
+    1
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.5-rho0.5-i001-H-T160/EXPOSURE_BALANCED",
+   "runtime_s": 0.31333579199417727,
+   "spawn_key": [
+    1500,
+    500,
+    1
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.5-rho0.5-i002-H-T40/RANDOM",
+   "runtime_s": 0.10156945899507264,
+   "spawn_key": [
+    1500,
+    500,
+    2
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.5-rho0.5-i002-H-T40/POPULARITY",
+   "runtime_s": 0.183791540999664,
+   "spawn_key": [
+    1500,
+    500,
+    2
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.5-rho0.5-i002-H-T40/EXPOSURE_BALANCED",
+   "runtime_s": 0.10757087499951012,
+   "spawn_key": [
+    1500,
+    500,
+    2
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.5-rho0.5-i002-H-T80/RANDOM",
+   "runtime_s": 0.16303595800127368,
+   "spawn_key": [
+    1500,
+    500,
+    2
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.5-rho0.5-i002-H-T80/POPULARITY",
+   "runtime_s": 0.24750725000194507,
+   "spawn_key": [
+    1500,
+    500,
+    2
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.5-rho0.5-i002-H-T80/EXPOSURE_BALANCED",
+   "runtime_s": 0.17250358299497748,
+   "spawn_key": [
+    1500,
+    500,
+    2
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.5-rho0.5-i002-H-T160/RANDOM",
+   "runtime_s": 0.2867277919940534,
+   "spawn_key": [
+    1500,
+    500,
+    2
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.5-rho0.5-i002-H-T160/POPULARITY",
+   "runtime_s": 0.36756912500277394,
+   "spawn_key": [
+    1500,
+    500,
+    2
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.5-rho0.5-i002-H-T160/EXPOSURE_BALANCED",
+   "runtime_s": 0.31322491600440117,
+   "spawn_key": [
+    1500,
+    500,
+    2
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.5-rho0.5-i003-H-T40/RANDOM",
+   "runtime_s": 0.10245974999997998,
+   "spawn_key": [
+    1500,
+    500,
+    3
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.5-rho0.5-i003-H-T40/POPULARITY",
+   "runtime_s": 0.17699220899521606,
+   "spawn_key": [
+    1500,
+    500,
+    3
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.5-rho0.5-i003-H-T40/EXPOSURE_BALANCED",
+   "runtime_s": 0.10462495800311444,
+   "spawn_key": [
+    1500,
+    500,
+    3
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.5-rho0.5-i003-H-T80/RANDOM",
+   "runtime_s": 0.16094395799882477,
+   "spawn_key": [
+    1500,
+    500,
+    3
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.5-rho0.5-i003-H-T80/POPULARITY",
+   "runtime_s": 0.24215429199830396,
+   "spawn_key": [
+    1500,
+    500,
+    3
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.5-rho0.5-i003-H-T80/EXPOSURE_BALANCED",
+   "runtime_s": 0.17249099999753525,
+   "spawn_key": [
+    1500,
+    500,
+    3
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.5-rho0.5-i003-H-T160/RANDOM",
+   "runtime_s": 0.2830090420029592,
+   "spawn_key": [
+    1500,
+    500,
+    3
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.5-rho0.5-i003-H-T160/POPULARITY",
+   "runtime_s": 0.369356166003854,
+   "spawn_key": [
+    1500,
+    500,
+    3
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.5-rho0.5-i003-H-T160/EXPOSURE_BALANCED",
+   "runtime_s": 0.2994154170010006,
+   "spawn_key": [
+    1500,
+    500,
+    3
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.5-rho0.5-i004-H-T40/RANDOM",
+   "runtime_s": 0.1059400000012829,
+   "spawn_key": [
+    1500,
+    500,
+    4
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.5-rho0.5-i004-H-T40/POPULARITY",
+   "runtime_s": 0.18212675000540912,
+   "spawn_key": [
+    1500,
+    500,
+    4
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.5-rho0.5-i004-H-T40/EXPOSURE_BALANCED",
+   "runtime_s": 0.10994149999896763,
+   "spawn_key": [
+    1500,
+    500,
+    4
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.5-rho0.5-i004-H-T80/RANDOM",
+   "runtime_s": 0.16462204199342523,
+   "spawn_key": [
+    1500,
+    500,
+    4
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.5-rho0.5-i004-H-T80/POPULARITY",
+   "runtime_s": 0.2502163749959436,
+   "spawn_key": [
+    1500,
+    500,
+    4
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.5-rho0.5-i004-H-T80/EXPOSURE_BALANCED",
+   "runtime_s": 0.18338391599536408,
+   "spawn_key": [
+    1500,
+    500,
+    4
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.5-rho0.5-i004-H-T160/RANDOM",
+   "runtime_s": 0.30333920900011435,
+   "spawn_key": [
+    1500,
+    500,
+    4
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.5-rho0.5-i004-H-T160/POPULARITY",
+   "runtime_s": 0.3820712500018999,
+   "spawn_key": [
+    1500,
+    500,
+    4
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.5-rho0.5-i004-H-T160/EXPOSURE_BALANCED",
+   "runtime_s": 0.3041016249990207,
+   "spawn_key": [
+    1500,
+    500,
+    4
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.5-rho0.5-i005-H-T40/RANDOM",
+   "runtime_s": 0.10390804100461537,
+   "spawn_key": [
+    1500,
+    500,
+    5
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.5-rho0.5-i005-H-T40/POPULARITY",
+   "runtime_s": 0.18838845899881562,
+   "spawn_key": [
+    1500,
+    500,
+    5
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.5-rho0.5-i005-H-T40/EXPOSURE_BALANCED",
+   "runtime_s": 0.11819637499866076,
+   "spawn_key": [
+    1500,
+    500,
+    5
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.5-rho0.5-i005-H-T80/RANDOM",
+   "runtime_s": 0.17269074999785516,
+   "spawn_key": [
+    1500,
+    500,
+    5
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.5-rho0.5-i005-H-T80/POPULARITY",
+   "runtime_s": 0.2576134170012665,
+   "spawn_key": [
+    1500,
+    500,
+    5
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.5-rho0.5-i005-H-T80/EXPOSURE_BALANCED",
+   "runtime_s": 0.18495458400138887,
+   "spawn_key": [
+    1500,
+    500,
+    5
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.5-rho0.5-i005-H-T160/RANDOM",
+   "runtime_s": 0.30212616700009676,
+   "spawn_key": [
+    1500,
+    500,
+    5
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.5-rho0.5-i005-H-T160/POPULARITY",
+   "runtime_s": 0.40122391700424487,
+   "spawn_key": [
+    1500,
+    500,
+    5
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.5-rho0.5-i005-H-T160/EXPOSURE_BALANCED",
+   "runtime_s": 0.3281128750022617,
+   "spawn_key": [
+    1500,
+    500,
+    5
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.5-rho0.5-i006-H-T40/RANDOM",
+   "runtime_s": 0.10921316700114403,
+   "spawn_key": [
+    1500,
+    500,
+    6
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.5-rho0.5-i006-H-T40/POPULARITY",
+   "runtime_s": 0.1920315829993342,
+   "spawn_key": [
+    1500,
+    500,
+    6
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.5-rho0.5-i006-H-T40/EXPOSURE_BALANCED",
+   "runtime_s": 0.11713645899726544,
+   "spawn_key": [
+    1500,
+    500,
+    6
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.5-rho0.5-i006-H-T80/RANDOM",
+   "runtime_s": 0.17345591699995566,
+   "spawn_key": [
+    1500,
+    500,
+    6
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.5-rho0.5-i006-H-T80/POPULARITY",
+   "runtime_s": 0.25516366599913454,
+   "spawn_key": [
+    1500,
+    500,
+    6
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.5-rho0.5-i006-H-T80/EXPOSURE_BALANCED",
+   "runtime_s": 0.1857826670020586,
+   "spawn_key": [
+    1500,
+    500,
+    6
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.5-rho0.5-i006-H-T160/RANDOM",
+   "runtime_s": 0.3028460420027841,
+   "spawn_key": [
+    1500,
+    500,
+    6
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.5-rho0.5-i006-H-T160/POPULARITY",
+   "runtime_s": 0.3832041659989045,
+   "spawn_key": [
+    1500,
+    500,
+    6
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.5-rho0.5-i006-H-T160/EXPOSURE_BALANCED",
+   "runtime_s": 0.32450874999631196,
+   "spawn_key": [
+    1500,
+    500,
+    6
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.5-rho0.5-i007-H-T40/RANDOM",
+   "runtime_s": 0.10903166700154543,
+   "spawn_key": [
+    1500,
+    500,
+    7
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.5-rho0.5-i007-H-T40/POPULARITY",
+   "runtime_s": 0.18780404100107262,
+   "spawn_key": [
+    1500,
+    500,
+    7
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.5-rho0.5-i007-H-T40/EXPOSURE_BALANCED",
+   "runtime_s": 0.1127350419992581,
+   "spawn_key": [
+    1500,
+    500,
+    7
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.5-rho0.5-i007-H-T80/RANDOM",
+   "runtime_s": 0.16875774999789428,
+   "spawn_key": [
+    1500,
+    500,
+    7
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.5-rho0.5-i007-H-T80/POPULARITY",
+   "runtime_s": 0.2543381249997765,
+   "spawn_key": [
+    1500,
+    500,
+    7
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.5-rho0.5-i007-H-T80/EXPOSURE_BALANCED",
+   "runtime_s": 0.1838296670030104,
+   "spawn_key": [
+    1500,
+    500,
+    7
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.5-rho0.5-i007-H-T160/RANDOM",
+   "runtime_s": 0.30604241599939996,
+   "spawn_key": [
+    1500,
+    500,
+    7
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.5-rho0.5-i007-H-T160/POPULARITY",
+   "runtime_s": 0.387767125001119,
+   "spawn_key": [
+    1500,
+    500,
+    7
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.5-rho0.5-i007-H-T160/EXPOSURE_BALANCED",
+   "runtime_s": 0.3212255409962381,
+   "spawn_key": [
+    1500,
+    500,
+    7
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.5-rho0.5-i008-H-T40/RANDOM",
+   "runtime_s": 0.11412050000217278,
+   "spawn_key": [
+    1500,
+    500,
+    8
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.5-rho0.5-i008-H-T40/POPULARITY",
+   "runtime_s": 0.19300025000120513,
+   "spawn_key": [
+    1500,
+    500,
+    8
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.5-rho0.5-i008-H-T40/EXPOSURE_BALANCED",
+   "runtime_s": 0.11226170900044963,
+   "spawn_key": [
+    1500,
+    500,
+    8
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.5-rho0.5-i008-H-T80/RANDOM",
+   "runtime_s": 0.1797303749990533,
+   "spawn_key": [
+    1500,
+    500,
+    8
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.5-rho0.5-i008-H-T80/POPULARITY",
+   "runtime_s": 0.26131141699443106,
+   "spawn_key": [
+    1500,
+    500,
+    8
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.5-rho0.5-i008-H-T80/EXPOSURE_BALANCED",
+   "runtime_s": 0.1842499170015799,
+   "spawn_key": [
+    1500,
+    500,
+    8
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.5-rho0.5-i008-H-T160/RANDOM",
+   "runtime_s": 0.3080619169995771,
+   "spawn_key": [
+    1500,
+    500,
+    8
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.5-rho0.5-i008-H-T160/POPULARITY",
+   "runtime_s": 0.388813833000313,
+   "spawn_key": [
+    1500,
+    500,
+    8
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.5-rho0.5-i008-H-T160/EXPOSURE_BALANCED",
+   "runtime_s": 0.32120179099729285,
+   "spawn_key": [
+    1500,
+    500,
+    8
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.5-rho0.5-i009-H-T40/RANDOM",
+   "runtime_s": 0.11325349999970058,
+   "spawn_key": [
+    1500,
+    500,
+    9
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.5-rho0.5-i009-H-T40/POPULARITY",
+   "runtime_s": 0.19657987499522278,
+   "spawn_key": [
+    1500,
+    500,
+    9
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.5-rho0.5-i009-H-T40/EXPOSURE_BALANCED",
+   "runtime_s": 0.11557612499746028,
+   "spawn_key": [
+    1500,
+    500,
+    9
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.5-rho0.5-i009-H-T80/RANDOM",
+   "runtime_s": 0.17955454199545784,
+   "spawn_key": [
+    1500,
+    500,
+    9
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.5-rho0.5-i009-H-T80/POPULARITY",
+   "runtime_s": 0.2586986669994076,
+   "spawn_key": [
+    1500,
+    500,
+    9
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.5-rho0.5-i009-H-T80/EXPOSURE_BALANCED",
+   "runtime_s": 0.18374799999583047,
+   "spawn_key": [
+    1500,
+    500,
+    9
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.5-rho0.5-i009-H-T160/RANDOM",
+   "runtime_s": 0.31323970800440293,
+   "spawn_key": [
+    1500,
+    500,
+    9
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.5-rho0.5-i009-H-T160/POPULARITY",
+   "runtime_s": 0.3879589999996824,
+   "spawn_key": [
+    1500,
+    500,
+    9
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.5-rho0.5-i009-H-T160/EXPOSURE_BALANCED",
+   "runtime_s": 0.3034445000012056,
+   "spawn_key": [
+    1500,
+    500,
+    9
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.5-rho0.9-i000-H-T40/RANDOM",
+   "runtime_s": 0.1277481249999255,
+   "spawn_key": [
+    1500,
+    900,
+    0
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.5-rho0.9-i000-H-T40/POPULARITY",
+   "runtime_s": 0.19485550000536023,
+   "spawn_key": [
+    1500,
+    900,
+    0
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.5-rho0.9-i000-H-T40/EXPOSURE_BALANCED",
+   "runtime_s": 0.1345506670040777,
+   "spawn_key": [
+    1500,
+    900,
+    0
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.5-rho0.9-i000-H-T80/RANDOM",
+   "runtime_s": 0.19557137499941746,
+   "spawn_key": [
+    1500,
+    900,
+    0
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.5-rho0.9-i000-H-T80/POPULARITY",
+   "runtime_s": 0.26775491700391285,
+   "spawn_key": [
+    1500,
+    900,
+    0
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.5-rho0.9-i000-H-T80/EXPOSURE_BALANCED",
+   "runtime_s": 0.20819124999979977,
+   "spawn_key": [
+    1500,
+    900,
+    0
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.5-rho0.9-i000-H-T160/RANDOM",
+   "runtime_s": 0.3291274160001194,
+   "spawn_key": [
+    1500,
+    900,
+    0
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.5-rho0.9-i000-H-T160/POPULARITY",
+   "runtime_s": 0.40340691600431455,
+   "spawn_key": [
+    1500,
+    900,
+    0
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.5-rho0.9-i000-H-T160/EXPOSURE_BALANCED",
+   "runtime_s": 0.35317862500232877,
+   "spawn_key": [
+    1500,
+    900,
+    0
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.5-rho0.9-i001-H-T40/RANDOM",
+   "runtime_s": 0.12541470799624221,
+   "spawn_key": [
+    1500,
+    900,
+    1
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.5-rho0.9-i001-H-T40/POPULARITY",
+   "runtime_s": 0.19530679200397572,
+   "spawn_key": [
+    1500,
+    900,
+    1
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.5-rho0.9-i001-H-T40/EXPOSURE_BALANCED",
+   "runtime_s": 0.13472345800255425,
+   "spawn_key": [
+    1500,
+    900,
+    1
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.5-rho0.9-i001-H-T80/RANDOM",
+   "runtime_s": 0.18851837499823887,
+   "spawn_key": [
+    1500,
+    900,
+    1
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.5-rho0.9-i001-H-T80/POPULARITY",
+   "runtime_s": 0.2650377079989994,
+   "spawn_key": [
+    1500,
+    900,
+    1
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.5-rho0.9-i001-H-T80/EXPOSURE_BALANCED",
+   "runtime_s": 0.20140466700104298,
+   "spawn_key": [
+    1500,
+    900,
+    1
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.5-rho0.9-i001-H-T160/RANDOM",
+   "runtime_s": 0.3176264590001665,
+   "spawn_key": [
+    1500,
+    900,
+    1
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.5-rho0.9-i001-H-T160/POPULARITY",
+   "runtime_s": 0.393412959005218,
+   "spawn_key": [
+    1500,
+    900,
+    1
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.5-rho0.9-i001-H-T160/EXPOSURE_BALANCED",
+   "runtime_s": 0.3453275409992784,
+   "spawn_key": [
+    1500,
+    900,
+    1
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.5-rho0.9-i002-H-T40/RANDOM",
+   "runtime_s": 0.12435283300146693,
+   "spawn_key": [
+    1500,
+    900,
+    2
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.5-rho0.9-i002-H-T40/POPULARITY",
+   "runtime_s": 0.1942708330025198,
+   "spawn_key": [
+    1500,
+    900,
+    2
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.5-rho0.9-i002-H-T40/EXPOSURE_BALANCED",
+   "runtime_s": 0.12186741700134007,
+   "spawn_key": [
+    1500,
+    900,
+    2
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.5-rho0.9-i002-H-T80/RANDOM",
+   "runtime_s": 0.18600666699785506,
+   "spawn_key": [
+    1500,
+    900,
+    2
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.5-rho0.9-i002-H-T80/POPULARITY",
+   "runtime_s": 0.2664500000028056,
+   "spawn_key": [
+    1500,
+    900,
+    2
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.5-rho0.9-i002-H-T80/EXPOSURE_BALANCED",
+   "runtime_s": 0.19375470800150651,
+   "spawn_key": [
+    1500,
+    900,
+    2
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.5-rho0.9-i002-H-T160/RANDOM",
+   "runtime_s": 0.31721549999929266,
+   "spawn_key": [
+    1500,
+    900,
+    2
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.5-rho0.9-i002-H-T160/POPULARITY",
+   "runtime_s": 0.3939294579977286,
+   "spawn_key": [
+    1500,
+    900,
+    2
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.5-rho0.9-i002-H-T160/EXPOSURE_BALANCED",
+   "runtime_s": 0.3475050420020125,
+   "spawn_key": [
+    1500,
+    900,
+    2
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.5-rho0.9-i003-H-T40/RANDOM",
+   "runtime_s": 0.13195045899919933,
+   "spawn_key": [
+    1500,
+    900,
+    3
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.5-rho0.9-i003-H-T40/POPULARITY",
+   "runtime_s": 0.19608029200026067,
+   "spawn_key": [
+    1500,
+    900,
+    3
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.5-rho0.9-i003-H-T40/EXPOSURE_BALANCED",
+   "runtime_s": 0.13390729199454654,
+   "spawn_key": [
+    1500,
+    900,
+    3
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.5-rho0.9-i003-H-T80/RANDOM",
+   "runtime_s": 0.193429124999966,
+   "spawn_key": [
+    1500,
+    900,
+    3
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.5-rho0.9-i003-H-T80/POPULARITY",
+   "runtime_s": 0.27483275000122376,
+   "spawn_key": [
+    1500,
+    900,
+    3
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.5-rho0.9-i003-H-T80/EXPOSURE_BALANCED",
+   "runtime_s": 0.20992991700040875,
+   "spawn_key": [
+    1500,
+    900,
+    3
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.5-rho0.9-i003-H-T160/RANDOM",
+   "runtime_s": 0.33069399999658344,
+   "spawn_key": [
+    1500,
+    900,
+    3
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.5-rho0.9-i003-H-T160/POPULARITY",
+   "runtime_s": 0.4024373749998631,
+   "spawn_key": [
+    1500,
+    900,
+    3
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.5-rho0.9-i003-H-T160/EXPOSURE_BALANCED",
+   "runtime_s": 0.3574859579966869,
+   "spawn_key": [
+    1500,
+    900,
+    3
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.5-rho0.9-i004-H-T40/RANDOM",
+   "runtime_s": 0.12013695800123969,
+   "spawn_key": [
+    1500,
+    900,
+    4
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.5-rho0.9-i004-H-T40/POPULARITY",
+   "runtime_s": 0.19192675000522286,
+   "spawn_key": [
+    1500,
+    900,
+    4
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.5-rho0.9-i004-H-T40/EXPOSURE_BALANCED",
+   "runtime_s": 0.12768312499974854,
+   "spawn_key": [
+    1500,
+    900,
+    4
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.5-rho0.9-i004-H-T80/RANDOM",
+   "runtime_s": 0.18753149999974994,
+   "spawn_key": [
+    1500,
+    900,
+    4
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.5-rho0.9-i004-H-T80/POPULARITY",
+   "runtime_s": 0.26798191700072493,
+   "spawn_key": [
+    1500,
+    900,
+    4
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.5-rho0.9-i004-H-T80/EXPOSURE_BALANCED",
+   "runtime_s": 0.19700470800307812,
+   "spawn_key": [
+    1500,
+    900,
+    4
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.5-rho0.9-i004-H-T160/RANDOM",
+   "runtime_s": 0.32384312499925727,
+   "spawn_key": [
+    1500,
+    900,
+    4
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.5-rho0.9-i004-H-T160/POPULARITY",
+   "runtime_s": 0.3963140830019256,
+   "spawn_key": [
+    1500,
+    900,
+    4
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.5-rho0.9-i004-H-T160/EXPOSURE_BALANCED",
+   "runtime_s": 0.3444754579977598,
+   "spawn_key": [
+    1500,
+    900,
+    4
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.5-rho0.9-i005-H-T40/RANDOM",
+   "runtime_s": 0.1258010829988052,
+   "spawn_key": [
+    1500,
+    900,
+    5
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.5-rho0.9-i005-H-T40/POPULARITY",
+   "runtime_s": 0.1969114579987945,
+   "spawn_key": [
+    1500,
+    900,
+    5
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.5-rho0.9-i005-H-T40/EXPOSURE_BALANCED",
+   "runtime_s": 0.13331683300202712,
+   "spawn_key": [
+    1500,
+    900,
+    5
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.5-rho0.9-i005-H-T80/RANDOM",
+   "runtime_s": 0.1988030409993371,
+   "spawn_key": [
+    1500,
+    900,
+    5
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.5-rho0.9-i005-H-T80/POPULARITY",
+   "runtime_s": 0.2749673750004149,
+   "spawn_key": [
+    1500,
+    900,
+    5
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.5-rho0.9-i005-H-T80/EXPOSURE_BALANCED",
+   "runtime_s": 0.20801079199736705,
+   "spawn_key": [
+    1500,
+    900,
+    5
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.5-rho0.9-i005-H-T160/RANDOM",
+   "runtime_s": 0.3382127090007998,
+   "spawn_key": [
+    1500,
+    900,
+    5
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.5-rho0.9-i005-H-T160/POPULARITY",
+   "runtime_s": 0.41782074999355245,
+   "spawn_key": [
+    1500,
+    900,
+    5
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.5-rho0.9-i005-H-T160/EXPOSURE_BALANCED",
+   "runtime_s": 0.3570464589938638,
+   "spawn_key": [
+    1500,
+    900,
+    5
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.5-rho0.9-i006-H-T40/RANDOM",
+   "runtime_s": 0.12829779199819313,
+   "spawn_key": [
+    1500,
+    900,
+    6
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.5-rho0.9-i006-H-T40/POPULARITY",
+   "runtime_s": 0.19049137499678181,
+   "spawn_key": [
+    1500,
+    900,
+    6
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.5-rho0.9-i006-H-T40/EXPOSURE_BALANCED",
+   "runtime_s": 0.1281739169935463,
+   "spawn_key": [
+    1500,
+    900,
+    6
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.5-rho0.9-i006-H-T80/RANDOM",
+   "runtime_s": 0.18855833300040103,
+   "spawn_key": [
+    1500,
+    900,
+    6
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.5-rho0.9-i006-H-T80/POPULARITY",
+   "runtime_s": 0.26310904199635843,
+   "spawn_key": [
+    1500,
+    900,
+    6
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.5-rho0.9-i006-H-T80/EXPOSURE_BALANCED",
+   "runtime_s": 0.19761658299830742,
+   "spawn_key": [
+    1500,
+    900,
+    6
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.5-rho0.9-i006-H-T160/RANDOM",
+   "runtime_s": 0.31737387500470504,
+   "spawn_key": [
+    1500,
+    900,
+    6
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.5-rho0.9-i006-H-T160/POPULARITY",
+   "runtime_s": 0.39031420899846125,
+   "spawn_key": [
+    1500,
+    900,
+    6
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.5-rho0.9-i006-H-T160/EXPOSURE_BALANCED",
+   "runtime_s": 0.3438297499960754,
+   "spawn_key": [
+    1500,
+    900,
+    6
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.5-rho0.9-i007-H-T40/RANDOM",
+   "runtime_s": 0.12540762499702396,
+   "spawn_key": [
+    1500,
+    900,
+    7
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.5-rho0.9-i007-H-T40/POPULARITY",
+   "runtime_s": 0.1918664160039043,
+   "spawn_key": [
+    1500,
+    900,
+    7
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.5-rho0.9-i007-H-T40/EXPOSURE_BALANCED",
+   "runtime_s": 0.1304255840004771,
+   "spawn_key": [
+    1500,
+    900,
+    7
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.5-rho0.9-i007-H-T80/RANDOM",
+   "runtime_s": 0.1896380840044003,
+   "spawn_key": [
+    1500,
+    900,
+    7
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.5-rho0.9-i007-H-T80/POPULARITY",
+   "runtime_s": 0.2636800830005086,
+   "spawn_key": [
+    1500,
+    900,
+    7
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.5-rho0.9-i007-H-T80/EXPOSURE_BALANCED",
+   "runtime_s": 0.20451991600566544,
+   "spawn_key": [
+    1500,
+    900,
+    7
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.5-rho0.9-i007-H-T160/RANDOM",
+   "runtime_s": 0.33534741699986625,
+   "spawn_key": [
+    1500,
+    900,
+    7
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.5-rho0.9-i007-H-T160/POPULARITY",
+   "runtime_s": 0.40013366699713515,
+   "spawn_key": [
+    1500,
+    900,
+    7
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.5-rho0.9-i007-H-T160/EXPOSURE_BALANCED",
+   "runtime_s": 0.34884933400462614,
+   "spawn_key": [
+    1500,
+    900,
+    7
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.5-rho0.9-i008-H-T40/RANDOM",
+   "runtime_s": 0.12468754200381227,
+   "spawn_key": [
+    1500,
+    900,
+    8
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.5-rho0.9-i008-H-T40/POPULARITY",
+   "runtime_s": 0.19640654099930543,
+   "spawn_key": [
+    1500,
+    900,
+    8
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.5-rho0.9-i008-H-T40/EXPOSURE_BALANCED",
+   "runtime_s": 0.13484604200493777,
+   "spawn_key": [
+    1500,
+    900,
+    8
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.5-rho0.9-i008-H-T80/RANDOM",
+   "runtime_s": 0.19008841699542245,
+   "spawn_key": [
+    1500,
+    900,
+    8
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.5-rho0.9-i008-H-T80/POPULARITY",
+   "runtime_s": 0.26595300000190036,
+   "spawn_key": [
+    1500,
+    900,
+    8
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.5-rho0.9-i008-H-T80/EXPOSURE_BALANCED",
+   "runtime_s": 0.20371104100195225,
+   "spawn_key": [
+    1500,
+    900,
+    8
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.5-rho0.9-i008-H-T160/RANDOM",
+   "runtime_s": 0.3246506249997765,
+   "spawn_key": [
+    1500,
+    900,
+    8
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.5-rho0.9-i008-H-T160/POPULARITY",
+   "runtime_s": 0.4100043750004261,
+   "spawn_key": [
+    1500,
+    900,
+    8
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.5-rho0.9-i008-H-T160/EXPOSURE_BALANCED",
+   "runtime_s": 0.347158666998439,
+   "spawn_key": [
+    1500,
+    900,
+    8
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.5-rho0.9-i009-H-T40/RANDOM",
+   "runtime_s": 0.11903070799598936,
+   "spawn_key": [
+    1500,
+    900,
+    9
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.5-rho0.9-i009-H-T40/POPULARITY",
+   "runtime_s": 0.19565070899989223,
+   "spawn_key": [
+    1500,
+    900,
+    9
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.5-rho0.9-i009-H-T40/EXPOSURE_BALANCED",
+   "runtime_s": 0.13354374999471474,
+   "spawn_key": [
+    1500,
+    900,
+    9
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.5-rho0.9-i009-H-T80/RANDOM",
+   "runtime_s": 0.1891637919979985,
+   "spawn_key": [
+    1500,
+    900,
+    9
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.5-rho0.9-i009-H-T80/POPULARITY",
+   "runtime_s": 0.2691476670006523,
+   "spawn_key": [
+    1500,
+    900,
+    9
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.5-rho0.9-i009-H-T80/EXPOSURE_BALANCED",
+   "runtime_s": 0.21034674999827985,
+   "spawn_key": [
+    1500,
+    900,
+    9
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.5-rho0.9-i009-H-T160/RANDOM",
+   "runtime_s": 0.31640395800059196,
+   "spawn_key": [
+    1500,
+    900,
+    9
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.5-rho0.9-i009-H-T160/POPULARITY",
+   "runtime_s": 0.3998367079984746,
+   "spawn_key": [
+    1500,
+    900,
+    9
+   ]
+  },
+  {
+   "peak_traced_bytes": null,
+   "run_id": "M4-HORIZON/r1.5-rho0.9-i009-H-T160/EXPOSURE_BALANCED",
+   "runtime_s": 0.35409791600250173,
+   "spawn_key": [
+    1500,
+    900,
+    9
+   ]
+  }
+ ],
+ "start_utc": "2026-11-25T01:20:36Z",
+ "wall_clock_s": 146.59095366600377
+}
