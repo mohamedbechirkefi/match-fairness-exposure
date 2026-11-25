@@ -21,12 +21,14 @@ All agents are synthetic. Centralized arms are full-information references, not 
 **Question.** On the same synthetic markets as EXP-001, how do centralized matchings differ from sequential random discovery (RANDOM, T = 40) in welfare, unmatched fraction and the gap between sides? The centralized matchings are deferred acceptance with A or B proposing (DA_A, DA_B) and the utilitarian assignment (MAXW). The experiment also asks whether MAXW leaves more blocking pairs than a stable matching.
 
 **Method.** The 270 EXP-001 instances (same root seed 20261124) were each matched by DA_A, DA_B and MAXW and paired with the EXP-001 RANDOM arm. Two secondary contrasts were registered:
+
 - H_a: W(DA_A) - W(RANDOM);
 - H_b: blocking pairs per 100 agents, MAXW - DA_A.
 
 Each is the equal-weight mean over 9 cells, with a 95% stratified paired bootstrap CI (10,000 resamples). A CI containing 0 means "not supported". There is no multiplicity protection.
 
 **Outcome.**
+
 - H_a: DA_A gives higher welfare than random sequential discovery, +0.0963 (95% CI +0.0954 to +0.0973); supported.
 - H_b: MAXW has more blocking pairs per 100 agents than DA_A, +231.06 (95% CI +226.32 to +235.70); supported.
 - The invariant held: 0 instances with a DA blocking pair, for both DA_A and DA_B.
@@ -35,7 +37,7 @@ Each is the equal-weight mean over 9 cells, with a 95% stratified paired bootstr
 
 ## 3. Rationale and literature
 
-Deferred acceptance yields a stable matching that is proposer-optimal among stable matchings (Gale and Shapley 1962, DOI 10.1080/00029890.1962.11989827; Roth 1982, DOI 10.1287/moor.7.4.617). Both sources are verified at metadata level only; their full texts were not read, so the facts used here rest on the standard definitions and on this project's tests. Under random preferences, small imbalance strongly favours the short side in stable outcomes (Ashlagi, Kanoria and Leshno 2017, DOI 10.1086/689869, abstract verified). A utilitarian assignment maximizes total satisfaction but need not be stable. Search frictions are discussed as one reason observed matches can differ from stable-matching predictions (Hitsch, Hortacsu and Ariely 2010, DOI 10.1257/aer.100.1.130, abstract verified). The working title "Can optimal matching leave more people unhappy?" motivates H_b without presupposing its answer.
+Deferred acceptance yields a stable matching that is proposer-optimal among stable matchings (Gale and Shapley 1962, DOI 10.1080/00029890.1962.11989827; Roth 1982, DOI 10.1287/moor.7.4.617). Both sources are verified at metadata level only; their full texts were not read, so the facts used here rest on the standard definitions and on this project's tests. Under random preferences, small imbalance strongly favours the short side in stable outcomes (Ashlagi, Kanoria and Leshno 2017, DOI 10.1086/689869, full text opened on 2026-11-25, claim checked against the abstract, p. 69). A utilitarian assignment maximizes total satisfaction but need not be stable. Search frictions are named as a possible reason why stable-matching predictions underpredict some sorting patterns in offline marriages, while predicted and actual online-dating matches were similar (Hitsch, Hortacsu and Ariely 2010, DOI 10.1257/aer.100.1.130, full text opened on 2026-11-25, claim checked against the abstract, p. 130). The working title "Can optimal matching leave more people unhappy?" motivates H_b without presupposing its answer.
 
 ## 4. Hypotheses and operational definitions
 
@@ -121,6 +123,7 @@ Source: `results/confirmatory/EXP-002/analysis/tables/EXP-002_descriptive.csv` (
 U for DA_B equals U for DA_A in every cell (same CSV). This is what one expects if the set of matched agents is the same in all stable matchings, a standard result that was not verified against a source in this project.
 
 Observations, stated without tests:
+
 1. Proposer advantage appears only in the balanced, idiosyncratic cell (r = 1.0, rho = 0), where DA_A favours A (+0.034) and DA_B favours B (gap -0.039). With any imbalance, DA_A and DA_B are almost identical and favour the short side A strongly (gap up to +0.462). This is consistent with the abstract of Ashlagi et al. (2017).
 2. MAXW has the highest W in every cell. It leaves fewer agents unmatched than DA when rho > 0. Its side gap is smaller than DA's at r = 1.1 and r = 1.5 with rho = 0 and 0.5. It is unstable (8.1).
 3. RANDOM discovery has the lowest W in every cell and the smallest side gap in every imbalanced cell (r > 1).
@@ -154,6 +157,7 @@ Observations, stated without tests:
 ## 11. Conclusion and next experiment
 
 These results are secondary, at the frozen level of evidence:
+
 - Deferred acceptance gives higher mean welfare than random sequential discovery: +0.0963, 95% CI +0.0954 to +0.0973.
 - The utilitarian assignment leaves more blocking pairs than deferred acceptance: +231.06 per 100 agents, 95% CI +226.32 to +235.70.
 

@@ -39,11 +39,11 @@ No novelty relative to the literature is claimed; the literature search was shor
 
 The sources below were opened on 2026-11-24 at the level stated; nothing is cited for content beyond that level (`research/literature_review.md`).
 
-**Stable matching.** Deferred acceptance produces a stable matching (Gale and Shapley 1962), and proposer optimality among stable matchings is standard background (Roth 1982). For both, only bibliographic metadata were verified; the facts used here rest on the standard definitions and on this project's tests, which check stability against brute-force enumeration on small markets. Ashlagi, Kanoria and Leshno (2017; abstract verified) report that in random markets even a slight imbalance gives an essentially unique stable matching in which the short side does much better; this motivates varying the imbalance ratio.
+**Stable matching.** Deferred acceptance produces a stable matching (Gale and Shapley 1962), and proposer optimality among stable matchings is standard background (Roth 1982). For both, only bibliographic metadata were verified; the facts used here rest on the standard definitions and on this project's tests, which check stability against brute-force enumeration on small markets. Ashlagi, Kanoria and Leshno (2017; full text opened, claim checked against the abstract, p. 69) report that in random markets even a slight imbalance gives an essentially unique stable matching in which the short side does much better; this motivates varying the imbalance ratio.
 
-**Platform search.** Kanoria and Saban (2021; abstract verified) study how a platform can facilitate search by restricting search actions, in a model with costly search. Hitsch, Hortacsu and Ariely (2010; abstract verified) compare observed online-dating matches with predictions from a stable-matching model and discuss search frictions as one explanation for discrepancies. This project makes no empirical claim about any platform and uses these works only for framing.
+**Platform search.** Kanoria and Saban (2021; author's accepted version opened, claim checked against its abstract) study how a platform can facilitate search by restricting search actions, in a model with costly search. Hitsch, Hortacsu and Ariely (2010; full text opened, claim checked against the abstract, p. 130) estimate mate preferences from online-dating data, predict stable matches with the Gale-Shapley algorithm and find them similar to the matches achieved on the site; they name search frictions as a possible explanation for correlation patterns in offline marriages that their predictions underpredict. This project makes no empirical claim about any platform and uses these works only for framing.
 
-**Exposure and ranking in matching markets.** Singh and Joachims (2018; abstract verified) treat exposure as the quantity a ranking allocates and propose fairness constraints on it. Su, Bayoumi and Joachims (2021; abstract verified; preprint) argue that ranking by local relevance is suboptimal in matching markets with capacity constraints. Tomita and Yokoyama (2024; abstract verified; arXiv comments state acceptance at RecSys 2024) study envy-freeness of recommendation opportunities in reciprocal recommendation and a trade-off between expected matches and fairness.
+**Exposure and ranking in matching markets.** Singh and Joachims (2018; full text opened, claim checked against the abstract and section 1) treat exposure as the quantity a ranking allocates and propose fairness constraints on it. Su, Bayoumi and Joachims (2021; preprint; full text opened, claim checked against the abstract and section 4, Theorem 2) argue, in a model where candidates apply to employers who then evaluate them, that ranking by a local relevance score is suboptimal in matching markets with capacity constraints. Tomita and Yokoyama (2024; full text opened, claim checked against the abstract; the paper's ACM reference format names RecSys '24) study envy-freeness of recommendation opportunities in reciprocal recommendation and a trade-off between expected matches and fairness.
 
 **Relation to this work.** This study is neither a replication nor an extension of any of these models. It is a small, pre-registered simulation of three deliberately simple slate policies. The policies are stylized and are not reproductions of any deployed algorithm or of the methods in the cited papers.
 
@@ -234,7 +234,7 @@ Table 6. Competing explanations and the evidence that addresses them.
 - **Estimand.** theta_P is an equal-weight average over nine chosen cells; the POPULARITY sign varies across cells at T = 40, so another cell mix would give a different value.
 - **Statistics.** The intervals quantify only sampling variation across synthetic instances within one model; they are narrow because of common random numbers and say nothing about model uncertainty. The p-value is floored by the number of draws. Per-cell CIs and EXP-002 and EXP-003 contrasts are not multiplicity-protected.
 - **Information confound.** The centralized arms use full preferences; the EXP-002 welfare contrast mixes information and mechanism.
-- **Literature.** The review was short and non-systematic; several sources were verified only at metadata or abstract level.
+- **Literature.** The review was short and non-systematic. Two sources (Gale and Shapley 1962; Roth 1982) were verified only at metadata level; for the other six, each cited claim was checked against a named passage of the full text (M6), not against the whole paper.
 - **Runtime.** Runs shared a machine with other work; runtimes are diagnostics only.
 
 ## 8. Ethics and responsible research
@@ -255,16 +255,16 @@ No funding was received. The author declares no competing interests. An AI syste
 
 ## References
 
-- Ashlagi, I., Kanoria, Y. and Leshno, J. D. (2017). Unbalanced random matching markets: the stark effect of competition. *Journal of Political Economy* 125(1), 69-98. https://doi.org/10.1086/689869 (abstract verified).
+- Ashlagi, I., Kanoria, Y. and Leshno, J. D. (2017). Unbalanced random matching markets: the stark effect of competition. *Journal of Political Economy* 125(1), 69-98. https://doi.org/10.1086/689869 (full text opened from an author page, abstract checked, p. 69).
 - Gale, D. and Shapley, L. S. (1962). College admissions and the stability of marriage. *The American Mathematical Monthly* 69(1), 9-15. https://doi.org/10.1080/00029890.1962.11989827 (metadata verified).
-- Hitsch, G. J., Hortacsu, A. and Ariely, D. (2010). Matching and sorting in online dating. *American Economic Review* 100(1), 130-163. https://doi.org/10.1257/aer.100.1.130 (abstract verified).
-- Kanoria, Y. and Saban, D. (2021). Facilitating the search for partners on matching platforms. *Management Science* 67(10), 5990-6029. https://doi.org/10.1287/mnsc.2020.3794 (abstract verified).
+- Hitsch, G. J., Hortacsu, A. and Ariely, D. (2010). Matching and sorting in online dating. *American Economic Review* 100(1), 130-163. https://doi.org/10.1257/aer.100.1.130 (full text opened from the Duke repository, abstract checked, p. 130).
+- Kanoria, Y. and Saban, D. (2021). Facilitating the search for partners on matching platforms. *Management Science* 67(10), 5990-6029. https://doi.org/10.1287/mnsc.2020.3794 (author's accepted version opened, SSRN 3004814, abstract checked).
 - Roth, A. E. (1982). The economics of matching: stability and incentives. *Mathematics of Operations Research* 7(4), 617-628. https://doi.org/10.1287/moor.7.4.617 (metadata verified).
-- Singh, A. and Joachims, T. (2018). Fairness of exposure in rankings. *Proceedings of the 24th ACM SIGKDD International Conference on Knowledge Discovery and Data Mining*, 2219-2228. https://doi.org/10.1145/3219819.3220088 (abstract verified).
-- Su, Y., Bayoumi, M. and Joachims, T. (2021). Optimizing rankings for recommendation in matching markets. arXiv:2106.01941, preprint (abstract verified).
-- Tomita, Y. and Yokoyama, T. (2024). Fair reciprocal recommendation in matching markets. arXiv:2409.00720 (abstract verified; arXiv comments state acceptance at RecSys 2024).
+- Singh, A. and Joachims, T. (2018). Fairness of exposure in rankings. *Proceedings of the 24th ACM SIGKDD International Conference on Knowledge Discovery and Data Mining*, 2219-2228. https://doi.org/10.1145/3219819.3220088 (full text opened, arXiv:1802.07281, abstract and section 1 checked).
+- Su, Y., Bayoumi, M. and Joachims, T. (2021). Optimizing rankings for recommendation in matching markets. arXiv:2106.01941, preprint (full text opened, abstract and section 4 checked).
+- Tomita, Y. and Yokoyama, T. (2024). Fair reciprocal recommendation in matching markets. Proceedings of the 18th ACM Conference on Recommender Systems (RecSys '24), per the paper's ACM reference format. https://doi.org/10.1145/3640457.3688130; arXiv:2409.00720 (full text opened, abstract checked).
 
-Access date for all sources: 2026-11-24.
+Access date for all sources: 2026-11-24; full texts of six sources opened on 2026-11-25 (M6). Gale and Shapley (1962) and Roth (1982) remain verified at metadata level only.
 
 ## Supplementary appendix
 

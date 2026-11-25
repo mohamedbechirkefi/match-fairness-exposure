@@ -27,8 +27,11 @@ from .stats import (bootstrap_ci, holm, mean_sd_dz, n_for_power, sign_flip_pvalu
 
 SESOI = 0.01  # smallest effect size of interest for W (protocol section 3)
 REPORT_SEED = 20261124_7  # fixed seed for bootstrap and randomization draws in reports
-DEFAULT_PANDOC = "/Users/bechir/research/labs/.tools/pandoc"
-DEFAULT_TYPST_PYTHON = "/Users/bechir/research/labs/.tools/py/bin/python"
+# Shared tools folder next to the repository (labs/.tools); override with MATCH_PANDOC and
+# MATCH_TYPST_PYTHON. No absolute home-directory path is stored (M6 scan).
+_TOOLS = Path(__file__).resolve().parents[3] / ".tools"
+DEFAULT_PANDOC = str(_TOOLS / "pandoc")
+DEFAULT_TYPST_PYTHON = str(_TOOLS / "py" / "bin" / "python")
 ARM_COLORS = {"RANDOM": "#4a4a4a", "POPULARITY": "#b5462f", "EXPOSURE_BALANCED": "#2f6fb5",
               "DA_A": "#6a8f3a", "DA_B": "#8f7a3a", "MAXW": "#7a3a8f"}
 
@@ -415,19 +418,45 @@ def build_report(result_paths: list[str | Path], out_dir: str | Path, *, plans: 
     return info
 
 
-def build_pdf(md_path: Path) -> Path:
-    """Markdown -> pandoc -> Typst -> PDF (typst Python package in the shared tools interpreter)."""
+def build_pdf(md_path: Path, root: Path | None = None, title: str | None = None,
+              keep_typ: bool = False) -> Path:
+    """Markdown -> pandoc -> Typst -> PDF (typst Python package in the shared tools interpreter).
+
+    ``root`` is the Typst project root (default: the Markdown file's folder); it must contain every
+    figure the Markdown references. ``title`` sets the PDF document title metadata. With
+    ``keep_typ`` the intermediate ``.typ`` file is kept next to the PDF for page rendering.
+    """
     pandoc = os.environ.get("MATCH_PANDOC", DEFAULT_PANDOC)
     tpy = os.environ.get("MATCH_TYPST_PYTHON", DEFAULT_TYPST_PYTHON)
     if not (Path(pandoc).exists() and Path(tpy).exists()):
         raise RuntimeError("pandoc or the typst Python interpreter was not found; PDF not built")
     typ = md_path.with_suffix(".typ")
     pdf = md_path.with_suffix(".pdf")
+    # Rendering fixes found in the M6 inspection: unnumbered figures (captions carry their own
+    # FIG-id label), left-aligned 9 pt table cells that may break after "_" (long arm names
+    # overflowed their columns), natural column widths (--columns) and no line wrapping
+    # (--wrap=none: a wrapped line starting with "80." became a Typst list item); SHA-256 and
+    # git hashes may break every 8 characters (they overflowed table cells and lines).
+    header = ("#show figure: set block(breakable: true)\n#set figure(numbering: none)\n"
+              "#show table.cell: set align(left)\n#show table: set text(size: 9pt)\n"
+              "#show table: set par(justify: false)\n"
+              '#show table.cell: it => { show "_": "_" + sym.zws; it }\n'
+              '#show regex("[0-9a-f]{32,}"): it => it.text.clusters().chunks(8).map(c => c.join())'
+              '.join(sym.zws)')
     subprocess.run([pandoc, str(md_path), "-s", "-t", "typst", "-V", 'mainfont=Libertinus Serif',
-                    "-V", "header-includes=#show figure: set block(breakable: true)",
+                    "--wrap=none", "--columns=10000", "-V", f"header-includes={header}",
                     "-o", str(typ)], check=True, capture_output=True, text=True)
+    if title is not None:
+        # The pandoc template's conf() sets the document title to none; a set rule placed after
+        # the conf show rule takes precedence, without adding a second title block.
+        escaped = title.replace("\\", "\\\\").replace('"', '\\"')
+        src = typ.read_text(encoding="utf-8")
+        start = src.index("#show: doc => conf(")
+        end = src.index("\n)\n", start) + 3
+        typ.write_text(src[:end] + f'#set document(title: "{escaped}")\n' + src[end:], encoding="utf-8")
     code = ("import sys, typst; typst.compile(sys.argv[1], output=sys.argv[2], root=sys.argv[3])")
-    subprocess.run([tpy, "-I", "-c", code, str(typ), str(pdf), str(md_path.parent)], check=True,
+    subprocess.run([tpy, "-I", "-c", code, str(typ), str(pdf), str(root or md_path.parent)], check=True,
                    capture_output=True, text=True)
-    typ.unlink()
+    if not keep_typ:
+        typ.unlink()
     return pdf

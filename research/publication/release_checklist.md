@@ -1,14 +1,16 @@
 <!-- SPDX-License-Identifier: LicenseRef-MATCH-NC-Research-1.0 -->
 # Release checklist (M6)
 
-- [ ] All registered experiments (EXP-001 to EXP-003) have a truthful standalone report, including failed or null ones.
-- [ ] Integrated manuscript complete; PDF built locally (pandoc to Typst, typst package) and visually inspected; `manuscript.tex` regenerated.
-- [ ] References verified; cross-links, equations and figure readability checked.
-- [ ] README: question, status, experiment table, links to paper and reports, key verified results, limitations, one-command reproduction, citation.
-- [ ] Articles (`articles/medium.md`, `articles/linkedin.md`) use identical verified results and labels.
-- [ ] Demo: offline after load, keyboard usable, reduced motion, mobile layout, fails closed on malformed results.
-- [ ] Secret, e-mail and personal-identifier scan of committed files.
-- [ ] Licence headers present; third-party licences recorded.
-- [ ] Large generated files not committed; regeneration scripts present.
+Status (2026-11-25, M6 session): release candidate prepared, awaiting the owner's review and G-PUBLIC. Ticked items were verified in the M6 session; the evidence follows each item. Nothing was pushed, tagged, released or published.
+
+- [x] All registered experiments (EXP-001 to EXP-003) have a truthful standalone report, including failed or null ones. Evidence: `research/experiments/EXP-00N/report.md` and `report.pdf` (9, 8 and 8 pages), every page of each PDF inspected; EXP-003 reports S3 as not run (a documented failure, D-019); `research/experiment_registry.csv` lists no other experiment.
+- [x] Integrated manuscript complete; PDF built locally (pandoc to Typst, typst package) and visually inspected; `manuscript.tex` regenerated. Evidence: `python scripts/build_pdfs.py` wrote `research/paper/manuscript.pdf` (15 pages) and `supplementary.pdf` (8 pages); all pages rendered to PNG and inspected; seven rendering defects fixed in the builder and the source (`reproducibility_report.md`, section 3); `manuscript.tex` regenerated with pandoc 3.6.3.
+- [x] References verified; cross-links, equations and figure readability checked. Evidence: `python scripts/check_references.py` (36 citations, 8 bib entries, 0 unresolved, 0 uncited); six sources opened in full text with the cited claim checked against a named passage, two (Gale and Shapley 1962; Roth 1982) verified at metadata level only and qualified in the text (`evidence_audit.md`, section 6); `python scripts/check_links.py` (48 relative links, 0 broken); equations are plain-text formulas and render as written; figure pages inspected at 150 ppi (one truncated label in FIG-EXP-003-theta-forest recorded, not changed).
+- [x] README: question, status, experiment table, links to paper and reports, key verified results, limitations, one-command reproduction, citation. Evidence: `README.md` sections "Question", "Status" (updated to M6), "Experiments" (table with results), report and manuscript paths, "Limitations", "Quick start", "Citation"; its decimal numbers are checked against the manuscript by `tests/test_demo_export.py`.
+- [x] Articles (`articles/medium.md`, `articles/linkedin.md`) use identical verified results and labels. Evidence: `tests/test_demo_export.py::test_public_texts_only_use_numbers_printed_in_the_manuscript` passes (116 passed in the full suite).
+- [x] Demo: offline after load, keyboard usable, reduced motion, mobile layout, fails closed on malformed results. Evidence: `node tools/a11y_check.mjs dist` printed `A11Y-CHECK PASS` in the clean clone and in the working repository (offline after first load, 24 of 24 focusable elements reached, 0 running animations under reduced motion, 0 px overflow at 360 px); `npm test` 26 passed, including 12 rejection cases of the fail-closed loader in `demo/src/results.test.ts`.
+- [x] Secret, e-mail and personal-identifier scan of committed files. Evidence: 276 files scanned; 0 e-mail addresses, 0 private keys, 0 tokens, 0 secret assignments, 0 `.env` files; absolute home-directory paths 23 before, 17 after (kept records, listed for the owner) (`reproducibility_report.md`, section 5).
+- [x] Licence headers present; third-party licences recorded. Evidence: every text file added since M0 has the SPDX header except the owner's initial-commit files; `demo/.npmrc` received it in M6; generated SVGs are covered by `NOTICE.md`; `research/publication/dependency_licences.md` lists 9 Python and 84 npm packages, with one flag (bundled GCC runtime and libquadmath in the numpy and scipy wheels).
+- [x] Large generated files not committed; regeneration scripts present. Evidence: `results/raw/` and `*.parquet` are git-ignored; the largest tracked file is `results/confirmatory/EXP-003/results.json` (2,283,116 bytes); every PDF is under 5 MB (largest 272,309 bytes); regeneration commands are in each `reproduction.md`, `scripts/build_pdfs.py` and `scripts/export_demo_data.py`.
 - [ ] Owner review completed (`author_review.md`).
 - [ ] No push or publication without the owner's explicit approval (G-PUBLIC).

@@ -28,7 +28,7 @@ All agents are synthetic. Nothing in this report describes real people, real pla
 
 ## 3. Rationale and literature
 
-Popularity ranking concentrates exposure on candidates many viewers like; under correlated preferences those candidates are also in demand and can match only once. Exposure balancing spreads attention. Exposure as the quantity a ranking allocates is analysed by Singh and Joachims (2018; DOI 10.1145/3219819.3220088; abstract verified). Su, Bayoumi and Joachims (2021; arXiv:2106.01941; preprint; abstract verified) argue that ranking by one-sided relevance is suboptimal in matching markets with capacity limits. Ashlagi, Kanoria and Leshno (2017; DOI 10.1086/689869; abstract verified) show that small imbalance strongly favours the short side under random preferences, which motivates varying r. The gap addressed is narrow: a paired, pre-registered comparison of three simple, interpretable slate policies on the same synthetic markets across imbalance and correlation. No novelty is claimed. Sources and verification levels: `research/literature_review.md`.
+Popularity ranking concentrates exposure on candidates many viewers like; under correlated preferences those candidates are also in demand and can match only once. Exposure balancing spreads attention. Exposure as the quantity a ranking allocates is analysed by Singh and Joachims (2018; DOI 10.1145/3219819.3220088; full text opened on 2026-11-25, claim checked against the abstract and section 1). Su, Bayoumi and Joachims (2021; arXiv:2106.01941; preprint; full text opened on 2026-11-25, claim checked against the abstract and section 4) argue that ranking by one-sided relevance is suboptimal in matching markets with capacity limits. Ashlagi, Kanoria and Leshno (2017; DOI 10.1086/689869; full text opened on 2026-11-25, claim checked against the abstract, p. 69) show that small imbalance strongly favours the short side under random preferences, which motivates varying r. The gap addressed is narrow: a paired, pre-registered comparison of three simple, interpretable slate policies on the same synthetic markets across imbalance and correlation. No novelty is claimed. Sources and verification levels: `research/literature_review.md`.
 
 ## 4. Hypotheses and operational definitions
 
@@ -112,6 +112,7 @@ Source: `results/confirmatory/EXP-001/report/tables/EXP-001_arm_summary.csv` (me
 | 1.5, 0.9 | 0.4358 | 0.4093 | 0.4388 | 0.3925 | 0.4427 | 0.3921 | 0.6346 | 0.6660 | 0.3370 | 0.4494 |
 
 Patterns read from the table, without tests:
+
 - POPULARITY has higher mutual satisfaction M than RANDOM in every cell.
 - POPULARITY leaves more agents unmatched than RANDOM in the cells where its welfare effect is negative (r = 1.5, rho = 0.5 and 0.9), and fewer in all r = 1.0 cells.
 - POPULARITY's exposure Gini on side B is higher than RANDOM's in six cells and lower in three (r = 1.0 with rho = 0.5 and 0.9; r = 1.1 with rho = 0.9).
@@ -161,6 +162,7 @@ Patterns read from the table, without tests:
 ## 11. Conclusion and next experiment
 
 At the frozen level of evidence, in these synthetic markets:
+
 - POPULARITY slates changed mean agent welfare relative to random slates after 40 rounds (theta = +0.0219, 95% CI +0.0207 to +0.0231, Holm p = 0.0002). The effect is not robust: it reverses at shorter horizons and in the most imbalanced, correlated cells.
 - EXPOSURE_BALANCED slates did not change welfare beyond plus or minus 0.01.
 

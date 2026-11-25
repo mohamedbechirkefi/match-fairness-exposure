@@ -48,7 +48,7 @@
   },
   {
    "path": "research/claims_register.csv",
-   "sha256": "2522a11bb75b15f87d213601bdbfaf0c3ccbfc5471af585fd3d1547394f8676b"
+   "sha256": "3fe11fff9274b88032c8f933bc31c3de168b4b5bc885c508459d9f7ec666482f"
   },
   {
    "path": "research/publication/artifact_manifest.json",
@@ -56,7 +56,7 @@
   },
   {
    "path": "research/paper/manuscript.md",
-   "sha256": "39605cfa06d2e49a558fa1b6d1cc65a5dc379577640f8196744ff13ffe412d39"
+   "sha256": "83eccc214589d11067f35441c037bca053f8e4357d9c384c3e869146d9433d76"
   }
  ],
  "experiments": [
@@ -454,7 +454,7 @@
   "Estimand. theta_P is an equal-weight average over nine chosen cells; the POPULARITY sign varies across cells at T = 40, so another cell mix would give a different value.",
   "Statistics. The intervals quantify only sampling variation across synthetic instances within one model; they are narrow because of common random numbers and say nothing about model uncertainty. The p-value is floored by the number of draws. Per-cell CIs and EXP-002 and EXP-003 contrasts are not multiplicity-protected.",
   "Information confound. The centralized arms use full preferences; the EXP-002 welfare contrast mixes information and mechanism.",
-  "Literature. The review was short and non-systematic; several sources were verified only at metadata or abstract level.",
+  "Literature. The review was short and non-systematic. Two sources (Gale and Shapley 1962; Roth 1982) were verified only at metadata level; for the other six, each cited claim was checked against a named passage of the full text (M6), not against the whole paper.",
   "Runtime. Runs shared a machine with other work; runtimes are diagnostics only."
  ],
  "exp001_cells": [

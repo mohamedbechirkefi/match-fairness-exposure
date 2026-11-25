@@ -21,7 +21,7 @@ A static, offline research page for the manuscript *Popularity ranking, exposure
 
 ## Commands
 
-Node from `/Users/bechir/research/helix/.tools/node/bin`.
+Node 22 (the exact version is recorded in `research/feasibility.md`; in the development workspace, the shared read-only Node installation).
 
     cd demo && npm ci && npm run build && npm run preview
     npm test                                   # vitest: loader and engine port

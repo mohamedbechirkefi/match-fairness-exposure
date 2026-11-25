@@ -94,3 +94,25 @@ Open items do not block the M4 gate but stay disclosed:
 - S3 was not run;
 - the Su et al. wording is to be rechecked in M6;
 - no PDF of the manuscript was built in M4. PDF builds and visual inspection belong to M6.
+
+## 6. M6 addendum (2026-11-25): references and external claims
+
+Verification level of each `references.bib` entry after M6 (details in `research/literature_review.md`, section "M6 full-text check"):
+
+| Key | Level | Claim |
+|---|---|---|
+| ashlagi2017 | full text opened; claim checked (abstract, p. 69) | X-003 |
+| kanoria2021 | full text opened (author's accepted version); claim checked (abstract) | X-004 |
+| hitsch2010 | full text opened; claim checked (abstract, p. 130); wording corrected | X-005 |
+| singh2018 | full text opened; claim checked (abstract, section 1) | X-006 |
+| su2021 | full text opened; claim checked (abstract, section 4); preprint | X-007 |
+| tomita2024 | full text opened; claim checked (abstract); venue and DOI added | X-008 |
+| gale1962 | unverified beyond metadata | X-001 |
+| roth1982 | unverified beyond metadata | X-002 |
+
+Counts: six full texts opened with the cited claim checked against a named passage, zero at abstract level only, two unverified beyond metadata. The two metadata-only claims are already qualified in the manuscript ("only bibliographic metadata were verified; the facts used here rest on the standard definitions and on this project's tests").
+
+- **Su et al. wording (open item from section 3).** Resolved: the paper uses both "local score (e.g., one-sided or reciprocal relevance)" (abstract) and "one-sided relevances" (section 4), so neither wording needs a change.
+- **F-11 (new).** The Hitsch et al. paraphrase said the paper discusses search frictions as an explanation for discrepancies between online-dating matches and stable-matching predictions. The full text says the predicted and actual online matches are similar and that search frictions may explain underpredicted sorting patterns in offline marriages. Fixed in the manuscript (section 2), the EXP-002 report (section 3) and claim X-005 (D-030). The fix changes no result.
+- **F-12 (new).** `references.bib` gave the second author of tomita2024 as "Tomohiki"; the paper prints "Tomohiko". Fixed, with the venue and DOI the paper prints.
+- **Citation keys.** `scripts/check_references.py` (tested in `tests/test_references_links.py`) maps every author-year citation in the manuscript, the supplementary file and the reports to a `references.bib` key and checks that every key is cited. Result in `research/publication/reproducibility_report.md`.

@@ -11,7 +11,7 @@ Updated 2026-11-25 (M5 session). Statuses: done, in progress, not started, block
 | M3 Experiments | M2; M1 freeze for confirmatory runs | P0 | 0.75 | done (EXP-001, EXP-002, EXP-003 S1/S2; S3 not run, documented failure D-019; reports written, D-020) | none |
 | M4 Interpretation | M3 | P0 | 0.75 | done 2026-11-25 (gate held: evidence audit 0 FAIL, claims register C-001 to C-014 and X-001 to X-008, review pass 2, manuscript v1.0) | none (title approved by the owner 2026-11-25, D-024) |
 | M5 Interactive experience | M3 results (M4 for final labels) | P1 | 1 | done 2026-11-25 (gate held: offline after load, 360 px, keyboard, reduced motion, fail-closed, no runtime service; checker PASS; D-025 to D-028) | none |
-| M6 Release candidate | M4, M5 | P0 | 0.5 | not started | owner review; G-PUBLIC for any publication |
+| M6 Release candidate | M4, M5 | P0 | 0.5 | release candidate prepared, awaiting owner review and G-PUBLIC | owner review; G-PUBLIC for any publication |
 
 ## M0 Bootstrap and feasibility
 - Deliverables: control files (CLAUDE.md, roadmap.md, progress.md, research/*), feasibility audit, source and licence audit, budget, scope and fallback; 11.6: registry, manuscript skeleton, experiment-specific protocols, zero-cost publication toolchain confirmed.
@@ -48,3 +48,4 @@ Updated 2026-11-25 (M5 session). Statuses: done, in progress, not started, block
 ## M6 Release candidate
 - Deliverables: clean-clone reproduction, locked install, tests, smoke reproduction, demo build, manifest and link checks, secret and licence scan; 11.6: compile and visually inspect manuscript and report PDFs, verify references and cross-links, complete the owner review checklist.
 - Acceptance: actual command outputs recorded; only verified facts reported; no push or publication without the owner's approval.
+- Status (2026-11-25): release candidate prepared, awaiting owner review and G-PUBLIC. Clean clone at 2a3f55c: 112 tests passed, smoke metrics identical, 15 report tables and the frozen analyses byte-identical, demo 26 tests and A11Y-CHECK PASS, export deterministic. Five PDFs built and inspected (D-029); references checked, six sources in full text, one paraphrase corrected (D-030); links, manifests and scans clean (`research/publication/reproducibility_report.md`); `CITATION.cff` release candidate 0.1.0-rc1 (D-031). Not done until the owner signs off `research/publication/author_review.md`; the author line stays open.

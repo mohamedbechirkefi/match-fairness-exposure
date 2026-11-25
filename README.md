@@ -3,7 +3,7 @@
 
 **Question.** How do ranking and exposure policies alter match outcomes under heterogeneous preferences?
 
-**Status: M5 (interactive page), 2026-11-25.** The protocols were frozen by the owner on 2026-11-24 and the confirmatory experiments EXP-001 to EXP-003 were run (EXP-003 S3 not run, a documented failure). Experiment reports, the evidence audit, the integrated manuscript (`research/paper/manuscript.md`, independent research manuscript, preprint draft, not peer-reviewed) and an offline interactive page (`demo/`) exist. The owner approved the manuscript title and the funding, competing-interest and AI-use statements on 2026-11-25; the owner's full-text review of the manuscript is pending (M6). All results are synthetic simulations. Repository and demo URL: to be added after the owner's approval.
+**Status: M6 release candidate prepared, awaiting the owner's review, 2026-11-25.** Nothing is released or published. The protocols were frozen by the owner on 2026-11-24 and the confirmatory experiments EXP-001 to EXP-003 were run (EXP-003 S3 not run, a documented failure). Experiment reports, the evidence audit, the integrated manuscript (`research/paper/manuscript.md`, independent research manuscript, preprint draft, not peer-reviewed) and an offline interactive page (`demo/`) exist. PDFs of the manuscript (`research/paper/manuscript.pdf`), the supplementary file and each experiment report are built locally with `python scripts/build_pdfs.py`. The owner approved the manuscript title and the funding, competing-interest and AI-use statements on 2026-11-25; the owner's full-text review of the manuscript and the review checklist (`research/publication/author_review.md`) are pending. All results are synthetic simulations. Repository and demo URL: to be added after the owner's approval.
 
 ![The MATCH interactive page: overview with the status label, and forest charts of the POPULARITY and EXPOSURE_BALANCED contrasts across the registered settings, with the not-run S3 row shown at the same size as the measured rows.](docs/demo.png)
 
@@ -41,10 +41,12 @@ See `research/protocol.md` and `research/experiment_registry.csv` (EXP-001 to EX
 ## Quick start (development)
 
 ```
-/Users/bechir/research/labs/.tools/py/bin/uv sync --frozen
-/Users/bechir/research/labs/.tools/py/bin/uv run --frozen pytest -q
-/Users/bechir/research/labs/.tools/py/bin/uv run --frozen python -m match_lab smoke   # exploratory
+uv sync --frozen
+uv run --frozen pytest -q
+uv run --frozen python -m match_lab smoke   # exploratory
 ```
+
+`uv` is any uv installation; in the development workspace it is the shared copy in `.tools/py/bin/` next to this repository. PDFs are built with `python scripts/build_pdfs.py` (pandoc and the `typst` Python package; set `MATCH_PANDOC` and `MATCH_TYPST_PYTHON` if they are not in the workspace's `.tools/`).
 
 ## Interactive page (quick start)
 

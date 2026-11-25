@@ -273,3 +273,45 @@ M5 (interactive page) and M6 (PDF builds, a recheck of the Su et al. wording, cl
 
 ### Next action
 M6 (PDF builds, a recheck of the Su et al. wording, clean-clone reproduction including the demo build, owner review checklist). No push.
+
+## 2026-11-25: M6 session (release candidate)
+
+**Milestone:** M6. **Starting state:** commit 2a3f55c, working tree clean. Authority: owner, 2026-11-25, "Next" (second) (`_shared/owner-approvals-2026-11-25e.md`), M6 brief. M6 prepares a release candidate; it releases nothing.
+
+### Decisions
+- D-029: M6 started; PDFs built, inspected and committed; PDF builder fixed.
+- D-030: six sources opened in full text; the Hitsch et al. paraphrase corrected; tomita2024 bib entry corrected.
+- D-031: `CITATION.cff` release candidate 0.1.0-rc1, `date-released` removed, title aligned with the manuscript.
+
+### Commands and actual outputs
+- Clean clone (`git clone -q` of 2a3f55c into the scratchpad): `uv sync --frozen --all-groups --all-extras` succeeded; `pytest -q` 112 passed in 56.72 s.
+- Smoke: `match_lab smoke --overwrite --no-pdf`, 120 runs in 2.5 s; every metric column identical to the committed `metrics.csv` except `runtime_s`.
+- `match_lab report` (EXP-001, EXP-002 with EXP-001, EXP-003) and `match_lab analyze` (EXP-002, EXP-003) into the scratchpad: 15 report tables, 0 differ; both analysis folders identical (`diff -rq`).
+- Demo in the clone: `npm ci --prefer-offline` added 53 packages; `npm test` 26 passed (2 files); `npm run build` built; `node tools/a11y_check.mjs dist` 9 PASS lines and `A11Y-CHECK PASS`.
+- Export determinism in the clone: `export_demo_data.py`, `--check` ("results.json up to date"), `make_sandbox_fixture.py`; `git status --short` empty.
+- `python scripts/build_pdfs.py`: manuscript 15 pages, supplementary 8, EXP-001 9, EXP-002 8, EXP-003 8 pages; each between about 155 KB and 272 KB. Every page rendered to PNG and inspected. pypdf: titles set, no e-mail address, no local path.
+- `pandoc manuscript.md -s -t latex`: `manuscript.tex` regenerated (two header lines kept).
+- `python scripts/check_references.py`: PASS, 36 author-year citations, 8 bib entries, 0 unresolved, 0 uncited.
+- `python scripts/check_links.py`: PASS, 48 relative links in 47 Markdown files, 0 broken.
+- `shasum -a 256 -c SHA256SUMS`: 11, 21 and 21 OK for EXP-001 to EXP-003; `data/manifest.json` SHA-256 506b2c41... unchanged since the runs; 32 artifact-manifest paths resolve; canonical config hashes match.
+- `python research/publication/evidence_audit.py`: 36 PASS, 0 FAIL.
+- Scan of 276 files: 0 e-mail addresses, 0 private keys, 0 tokens, 0 secret assignments, 0 `.env` files; 23 home-directory path lines in 9 files, 6 removed, 17 kept in records (listed for the owner).
+- Final `.venv/bin/python -m pytest -q`: 116 passed. Demo in the working repository: 53 packages added, 26 tests passed, build succeeded, `A11Y-CHECK PASS`.
+
+### Findings and fixes
+- PDF rendering: a wrapped line turned "80." into a list item; overflowing table labels and hashes; doubled figure labels; empty PDF title; raw "- " lists in the three reports; the manuscript's figures outside its folder. All fixed in the builder or the Markdown source (D-029). One truncated label in FIG-EXP-003-theta-forest is recorded, not changed (committed generated figure).
+- References: Hitsch et al. paraphrase imprecise, corrected (D-030); tomita2024 given name wrong in the bib, corrected; the Su et al. wording item from M4 is closed (both wordings appear in the paper).
+- Dependency licences (`research/publication/dependency_licences.md`): one flag, the GCC runtime and libquadmath bundled in the numpy and scipy wheels.
+- SPDX: `demo/.npmrc` received the header; the owner's initial-commit files and the generated SVG figures carry none (covered by `NOTICE.md`).
+
+### Deviations and incidents
+- The clean clone was made before any M6 change; no step failed there, so no fix needed a fresh-clone re-check. The M6 changes were checked in the working repository.
+- A strictly offline npm install was not proven (`--prefer-offline` with the network available); the release-checklist item stays qualified in the reproducibility report.
+- No file write was refused. No frozen protocol, config, seed or result changed; no confirmatory run; nothing pushed.
+- `author_review.md`: no box was ticked by an agent; nothing unticked.
+
+### Owner items
+Listed in `research/publication/author_review.md`, section "Prepared for the owner (M6, 2026-11-25)": the author line and affiliation (C3 against D-023/D-028), the repository and demo URLs, the funding and competing-interest facts at publication, any push or publication and `date-released`, the `CITATION.cff` version and title, the corrected Hitsch wording, the remaining home-directory paths, the bundled wheel licences, the publication target, and the owner's full-text review.
+
+### Next action
+Owner: review `research/publication/author_review.md` and the PDFs. M6 is "release candidate prepared"; it is not done until the owner signs off. No push without G-PUBLIC.

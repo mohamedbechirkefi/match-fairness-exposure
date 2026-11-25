@@ -21,12 +21,14 @@ All agents are synthetic. All numbers are copied (rounded) from the committed fi
 **Question.** Does the sign of theta_P from EXP-001 survive changes in pickiness (theta), horizon (T) and the welfare definition?
 
 **Method.** The EXP-001 instances of the 4 corner cells were used (r in {1.0, 1.5}, rho in {0.0, 0.9}; 30 each; same seeds). The three sequential arms were re-run under four settings:
+
 - S1: theta = 0.3 and 0.7 at T = 40;
 - S2: T = 10 and T = 20 at theta = 0.5.
 
 For each setting, theta_P(s) is the equal-weight mean over the 4 cells, with a 95% stratified bootstrap CI. The frozen invalidation criterion is: the opposite sign to the EXP-001 estimate, with a 95% CI excluding 0, for any setting in S2 or S3.
 
 **Outcome.**
+
 - POPULARITY meets the criterion at both S2 horizons: -0.4081 at T = 10 and -0.2824 at T = 20, both CIs far from 0, against +0.0219 in EXP-001. The EXP-001 POPULARITY result is therefore reported as **not robust**.
 - EXPOSURE_BALANCED does not meet the criterion.
 - Under S1, both policies keep the EXP-001 sign.
@@ -95,6 +97,7 @@ Source: `results/confirmatory/EXP-003/analysis/tables/EXP-003_sensitivity.csv` (
 | S2 T 20 | EXPOSURE_BALANCED | +0.0049 | +0.0033 to +0.0066 | no | no |
 
 The analysis output (`EXP-003_analysis.json`, `verdict_by_arm`) gives these verdicts:
+
 - POPULARITY: "not robust (S2 invalidation criterion met)";
 - EXPOSURE_BALANCED: "S2 criterion not met; S3 not executed".
 
@@ -167,6 +170,7 @@ Welfare strip plots per setting are in `figures/FIG-EXP-003-*-welfare.svg`.
 ## 11. Conclusion and next experiment
 
 At the frozen level of evidence:
+
 - The EXP-001 POPULARITY effect is not robust to the horizon. It reverses at T = 10 (-0.4081, 95% CI -0.4098 to -0.4064) and T = 20 (-0.2824, 95% CI -0.2843 to -0.2805).
 - The EXPOSURE_BALANCED result is not invalidated by S1 or S2.
 - S3 was not run (documented failure, owner decision D-019).
