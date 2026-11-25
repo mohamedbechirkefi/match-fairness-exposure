@@ -8,8 +8,8 @@ Updated 2026-11-25 (M3 session). Statuses: done, in progress, not started, block
 | M0 Bootstrap and feasibility | none | P0 | 0.5 | done (pending owner review of the gate) | none |
 | M1 Research and preregistration | M0 | P0 | 0.5 | done (G-FREEZE passed: owner-approved freeze 2026-11-24) | none |
 | M2 Core implementation | M1 drafts (not the freeze) | P0 | 1 | done (acceptance checks below met; exploratory pilot only) | none |
-| M3 Experiments | M2; M1 freeze for confirmatory runs | P0 | 0.75 | in progress (all frozen runs done: EXP-001, EXP-002, EXP-003 S1/S2; S3 not executed, D-018; 11.3 reports not written) | owner decision on S3; 11.3 reports |
-| M4 Interpretation | M3 | P0 | 0.75 | not started | M3 |
+| M3 Experiments | M2; M1 freeze for confirmatory runs | P0 | 0.75 | done (EXP-001, EXP-002, EXP-003 S1/S2; S3 not run, documented failure D-019; reports written, D-020) | none |
+| M4 Interpretation | M3 | P0 | 0.75 | done 2026-11-25 (gate held: evidence audit 0 FAIL, claims register C-001 to C-014 and X-001 to X-008, review pass 2, manuscript v1.0) | owner review of the proposed title |
 | M5 Interactive experience | M3 results (M4 for final labels) | P1 | 1 | not started | M3 |
 | M6 Release candidate | M4, M5 | P0 | 0.5 | not started | owner review; G-PUBLIC for any publication |
 
@@ -38,6 +38,7 @@ Updated 2026-11-25 (M3 session). Statuses: done, in progress, not started, block
 ## M4 Interpretation
 - Deliverables: confounder inspection, sensitivity (EXP-003), expected versus observed, claims register, limitations; 11.6: experiment reports finished, evidence audit, manuscript synthesis including contradictory results.
 - Acceptance: every numerical claim maps to result id, config and figure; every external claim to a verified source; second review pass challenging the preferred hypothesis.
+- Status (2026-11-25): done. Confounder inspection and expected versus observed in `research/paper/supplementary.md` (S2, S4.5); exploratory diagnostics J-0014, J-0015 (D-021); evidence audit `research/publication/evidence_audit.md` (J-0016); `research/publication/review_pass_2.md`; manuscript v1.0 (D-023). Open and disclosed: S3 not run; Su et al. wording to recheck in M6; no PDF built (M6).
 
 ## M5 Interactive experience
 - Deliverables: static page with population and matching graph, fairness and satisfaction trade-offs, seed and scenario controls; 11.6: demo, paper, reports and articles use identical verified results, labels and scope.

@@ -7,7 +7,7 @@
 |---|---|
 | Experiment | EXP-002, secondary (not in the confirmatory family) |
 | Date of run | 2026-11-24 (UTC 23:33:51 to 23:34:06); report written 2026-11-25 |
-| Report version | 1.0 (M3 close) |
+| Report version | 1.1 (M4: exploratory addendum in section 9; no frozen result changed) |
 | Status | Complete: full frozen matrix, 810 of 810 runs, 0 invalid, 0 excluded; the comparator is the EXP-001 RANDOM arm on the same instances (270 runs, 0 invalid) |
 | Author | Mohamed Bechir Kefi (no affiliation). AI assistance: Claude (Anthropic) ran the frozen commands and drafted this report as a research and development assistant; it is not an author. |
 | Protocol | `research/experiments/EXP-002/protocol.md` v1.0, SHA-256 `30692ad843399f50c1a1141f71b16e6fb704b2669d8ab5dd1e586de67485961c`; main protocol SHA-256 `81f24e9e4bc15434837208705f61619d6415bd1643985142248c926482e160c5` |
@@ -141,6 +141,7 @@ Observations, stated without tests:
   - The DA advantage combines full information and a stable mechanism; this design cannot separate them.
   - MAXW's extra welfare comes with instability that is largest under consensus tastes.
   - In that sense a welfare-optimal matching leaves more pairs who would rather deviate. Whether agents are "unhappier" depends on the measure: MAXW has the higher mean W.
+- **M4 addendum (EXPLORATORY, 2026-11-25; J-0014; D-021).** Valuing unmatched agents at any constant v in [0, 1] moves H_a only from +0.0963 to +0.0969 (`results/exploratory/m4_confounders/unmatched_value_sweep.csv`). The mean satisfaction of matched agents is +0.1167 higher under DA_A than under RANDOM (`decomposition.csv`). These diagnostics do not separate information from mechanism and change no verdict.
 - **Alternatives.** Truncation of DA lists at the acceptability threshold limits matches. The rank-percentile scale with unmatched = 0 favours arms that match more agents; this check (S3) was not run. Blocking pairs are counted per pair, so denser acceptability among high-correlation pairs can inflate counts.
 
 ## 10. Threats to validity

@@ -106,3 +106,28 @@ Append-only. Each entry: id, date, decision, made by, rationale, alternatives, c
 - **Decision:** the owner approves writing the missing 11.3/11.6 experiment reports from committed results, tables and figures only, with no recomputation; the `reproduction.md` files written through the shell in M3 are kept.
 - **Made by:** the owner, 2026-11-25, "approve all recommendations, RIGGED A" (section 4 of `labs/_shared/owner-approvals-2026-11-25.md`).
 - **Consequences:** in the M3-close session the file tool still refused to write `research/experiments/EXP-001/report.md` ("subagents should return findings as text"). No shell or other workaround was used. On the coordinator's instruction (report-return note), the session composed the EXP-001, EXP-002 and EXP-003 reports from committed results only and handed their text to the coordinator, who writes and commits the files.
+
+## D-021: M4 exploratory diagnostics are allowed only on committed outputs plus one cheap probe, and change no verdict (2026-11-25)
+- **Decision:** M4 runs four exploratory diagnostics:
+  - E1 horizon saturation, E2 the unmatched-value sweep and E3 the decomposition W = (1 - U) Q, all reanalyses of committed outputs (J-0014);
+  - E4, one horizon-extension probe: a new exploratory seed 505, 810 runs, T in {40, 80, 160}, about 2.5 minutes on one process (J-0015).
+
+  All are labelled exploratory, are kept in `results/exploratory/m4_*` and never change or replace a frozen verdict.
+- **Made by:** the M4 session, under the M4 brief (owner, 2026-11-25, "Approve all recommendations, push then next": new computation only when cheap and clearly exploratory, at most 2 workers; one worker was used).
+- **Rationale:** the frozen protocols name the horizon and the treatment of unmatched agents as the main competing explanations. The committed outputs already hold per-round match counts and U, so E1 to E3 cost nothing. E4 is the only direct check of whether T = 40 is final for every arm.
+- **Not done:** E2 is not EXP-003 S3. It sweeps a constant unmatched value over the whole range [0, 1] instead of choosing parameters, and it leaves the satisfaction scale unchanged. S3 stays not run, and no S3 parameter is chosen after the data (D-019). E4 does not reuse the confirmatory seed, so that no exploratory output shares instances with a confirmatory table.
+- **Consequences:** the manuscript, the supplementary file and the reports of EXP-001 to EXP-003 report these diagnostics beside the frozen verdicts, each with its label (claims C-010 to C-013).
+
+## D-022: Claims register restructured; external claims registered (2026-11-25)
+- **Decision:** `research/claims_register.csv` now has the columns claim_id, text, type, result_id, evidence_path, config_sha256, figure_or_table, manuscript_section, scope, status and limitations. The rows are 14 result claims (C-001 to C-014) and 8 external claims (X-001 to X-008, each with its verification level). The artifact manifest is extended to 29 entries.
+- **Made by:** the M4 session (M4 brief, task 3; master prompt 11.5).
+- **Consequences:** a claim without a row is not made. The old columns are kept in substance; the old evidence_path_or_source column is split into result_id and evidence_path.
+
+## D-023: Manuscript v1.0 after the second review pass; proposed title (2026-11-25)
+- **Decision:** the manuscript is synthesised as v0.9, challenged in `research/publication/review_pass_2.md` (R1 to R11) and revised to v1.0. The changes:
+  - removed: a conclusion contradicted by the project's own probe (R1);
+  - qualified: the sweep mechanism (R2), the composition of the matched set (R3), the horizon choice and the scope of the p-value (R4), horizons relative to n_B / k (R6) and the EXPOSURE_BALANCED construct (R7).
+
+  The descriptive title "Popularity ranking, exposure balancing and the length of search: a pre-registered simulation of sequential discovery in synthetic two-sided matching markets" is proposed in place of the working title.
+- **Made by:** the M4 session. The title and the author metadata remain the owner's to approve.
+- **Consequences:** no frozen verdict changed. C-001 stays "supported, not robust", C-002 "equivalent at margin 0.01", C-003 and C-004 "supported (secondary)", and S3 "not run".

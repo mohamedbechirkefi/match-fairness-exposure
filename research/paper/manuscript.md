@@ -1,7 +1,9 @@
 <!-- SPDX-License-Identifier: LicenseRef-MATCH-NC-Research-1.0 -->
-<!-- Skeleton of headings (M0); author metadata set at the protocol freeze (2026-11-24, common decision C3). Status: independent research manuscript draft, not peer-reviewed. Protocols frozen; no confirmatory results exist yet. Working title from the master prompt, to be revised after results. -->
+<!-- Canonical manuscript source. Status: independent research manuscript / preprint draft, not peer-reviewed. Synthesised in session M4 (2026-11-25) from committed results only; every number maps to research/publication/artifact_manifest.json and research/claims_register.csv. Version 1.0: revised after the second review pass (research/publication/review_pass_2.md). -->
 
-# Can optimal matching leave more people unhappy? (working title)
+# Popularity ranking, exposure balancing and the length of search: a pre-registered simulation of sequential discovery in synthetic two-sided matching markets
+
+**Status.** Independent research manuscript, preprint draft, not peer-reviewed. Version 1.0, 2026-11-25. The title is proposed and awaits the owner's approval; the working title was *Can optimal matching leave more people unhappy?*
 
 ## Author and affiliation metadata
 
@@ -11,30 +13,259 @@ AI assistance: an AI system (Claude, Anthropic) was used as a research and devel
 
 ## Abstract
 
+Partner-search platforms decide which candidates each participant sees. We ask how such exposure policies change match outcomes when preferences are reciprocal and heterogeneous, using fully synthetic two-sided markets. Agents on two sides (200 on the short side, imbalance ratio 1.0 to 1.5) hold Gaussian common-plus-idiosyncratic utilities with preference correlation 0, 0.5 or 0.9. In sequential discovery, every unmatched agent sees a slate of five candidates per round, chosen at random (baseline), by observed like rate (popularity) or by like rate under a per-round exposure cap (exposure-balanced). The estimand, frozen before the confirmatory runs, is the equal-weight mean over nine design cells of the paired difference in mean agent welfare after 40 rounds, on 270 market instances. Popularity ranking raised welfare by 0.0219 (95% CI 0.0207 to 0.0231; Holm-adjusted p = 0.0002), but the pre-registered sensitivity analysis found the sign reversed at 10 and 20 rounds (-0.4081 and -0.2824), so the result is reported as not robust to the horizon. Exposure-balanced ranking was equivalent to random exposure within a margin of 0.01 (estimate 0.0004, 90% CI -0.0005 to 0.0013). Centralized deferred acceptance exceeded random discovery by 0.0963, and the welfare-maximizing assignment left 231 more blocking pairs per 100 agents than deferred acceptance. Exploratory diagnostics added after the confirmatory analysis show that popularity ranking was still forming matches at round 40, when random exposure had almost always stopped, so the primary estimate is a fixed-horizon quantity. All findings concern a stylized simulation, not real people or platforms; a registered metric-definition check was not run.
+
 ## Keywords
+
+two-sided matching; exposure; ranking policies; sequential search; deferred acceptance; pre-registered simulation
 
 ## 1. Introduction
 
+Many platforms that help people find partners, collaborators or counterparts do not assign matches. They decide who sees whom, and participants then choose among the candidates they are shown. Because attention is scarce and every participant can match only once, the exposure policy can matter: it may change who is matched, how good those matches are for each side, and how unequally attention is spread. Exposure as a resource that rankings allocate has been studied as a fairness problem in ranking (Singh and Joachims 2018), and ranking by relevance alone has been argued to be suboptimal in matching markets with capacity limits (Su, Bayoumi and Joachims 2021, preprint). Classical matching theory, in contrast, studies centralized mechanisms such as deferred acceptance (Gale and Shapley 1962).
+
+This project asks: *how do ranking and exposure policies alter match outcomes under heterogeneous preferences?* It answers only inside an explicit synthetic model. Every participant is simulated; nothing here describes real people, protected attributes or the internals of any platform.
+
+The confirmatory question (EXP-001) is whether two simple slate policies, popularity ranking and exposure-balanced ranking, change mean agent welfare relative to random exposure. A secondary experiment (EXP-002) places centralized references, deferred acceptance and a utilitarian assignment, on the same markets. A sensitivity experiment (EXP-003) was registered to test whether the main result survives changes in pickiness, horizon and welfare definition. The hypotheses were nondirectional because the sources reviewed did not fix a sign for this model.
+
+The contributions are modest and stated precisely:
+
+1. A small, open and fully reproducible simulation that runs three slate policies and three centralized mechanisms on the same synthetic market instances with common random numbers, varying side imbalance and preference correlation jointly.
+2. A confirmatory test frozen before execution, with a pre-registered invalidation rule, and its result reported under that rule: a positive welfare effect of popularity ranking at the primary horizon that is not robust to shorter horizons, and an equivalence-to-zero result for exposure-balanced ranking at a margin of 0.01.
+3. A complete account of what was not done or did not hold, including a registered sensitivity analysis that was not run, and exploratory diagnostics that qualify the confirmatory reading.
+
+No novelty relative to the literature is claimed; the literature search was short and not systematic (Section 2).
+
 ## 2. Related work
+
+The sources below were opened on 2026-11-24 at the level stated; nothing is cited for content beyond that level (`research/literature_review.md`).
+
+**Stable matching.** Deferred acceptance produces a stable matching (Gale and Shapley 1962), and proposer optimality among stable matchings is standard background (Roth 1982). For both, only bibliographic metadata were verified; the facts used here rest on the standard definitions and on this project's tests, which check stability against brute-force enumeration on small markets. Ashlagi, Kanoria and Leshno (2017; abstract verified) report that in random markets even a slight imbalance gives an essentially unique stable matching in which the short side does much better; this motivates varying the imbalance ratio.
+
+**Platform search.** Kanoria and Saban (2021; abstract verified) study how a platform can facilitate search by restricting search actions, in a model with costly search. Hitsch, Hortacsu and Ariely (2010; abstract verified) compare observed online-dating matches with predictions from a stable-matching model and discuss search frictions as one explanation for discrepancies. This project makes no empirical claim about any platform and uses these works only for framing.
+
+**Exposure and ranking in matching markets.** Singh and Joachims (2018; abstract verified) treat exposure as the quantity a ranking allocates and propose fairness constraints on it. Su, Bayoumi and Joachims (2021; abstract verified; preprint) argue that ranking by local relevance is suboptimal in matching markets with capacity constraints. Tomita and Yokoyama (2024; abstract verified; arXiv comments state acceptance at RecSys 2024) study envy-freeness of recommendation opportunities in reciprocal recommendation and a trade-off between expected matches and fairness.
+
+**Relation to this work.** This study is neither a replication nor an extension of any of these models. It is a small, pre-registered simulation of three deliberately simple slate policies. The policies are stylized and are not reproductions of any deployed algorithm or of the methods in the cited papers.
 
 ## 3. Background and formal model
 
+**Population.** Two sides A and B, with |A| = n_A = 200 and |B| = n_B = round(r n_A), imbalance ratio r in {1.0, 1.1, 1.5}; B is the long side. Each agent x has a latent quality q_x drawn from N(0, 1). The utility of agent i for agent j on the other side is
+
+u_ij = sqrt(rho) q_j + sqrt(1 - rho) e_ij,  with e_ij drawn from N(0, 1),
+
+so for two viewers the correlation of their utilities over candidates is rho in {0, 0.5, 0.9}. Rho = 0 gives idiosyncratic tastes; rho near 1 gives near-consensus tastes. Both sides draw utilities independently with the same rho.
+
+**Satisfaction and acceptability.** The satisfaction of i with j is the rank percentile s_ij = 1 - (rank_i(j) - 1)/(m_i - 1), where rank_i(j) is j's rank in i's strict ordering of the whole other side, of size m_i. Agent i finds j acceptable when u_ij is at least the theta-quantile of i's utilities; the primary pickiness is theta = 0.5. Capacity is one on both sides and unmatched agents have satisfaction 0.
+
+**Sequential discovery.** In each round t = 1, ..., T (primary T = 40), every unmatched agent on both sides is shown a slate of up to k = 5 unmatched candidates it has not seen before; viewers are processed in a seeded random order. Viewer i likes j if j is acceptable to i. A pair becomes a mutual like once both have liked each other, in any rounds. At the end of each round, new mutual likes are resolved greedily in decreasing order of s_ij + s_ji, and matched agents leave. Exposure e_j counts the slates in which j appeared. The three policies are:
+
+- RANDOM (baseline): a uniform draw from the eligible candidates.
+- POPULARITY: candidates sorted by the smoothed like rate p_j = (L_j + 1)/(e_j + 2), where L_j counts likes received; ties are broken by one uniform random key per candidate per round, shared by all viewers in that round (amendment F2 of the frozen protocol).
+- EXPOSURE_BALANCED: the same score, but in each round no candidate may appear in more than c = ceil((1 + delta) k V / C) slates, with V the number of viewers, C the number of eligible candidates and delta = 0.5. If fewer than k candidates remain under the cap, the slate is shorter.
+
+**Centralized references.** DA_A and DA_B are deferred acceptance with side A or side B proposing, over lists truncated to acceptable partners. MAXW maximizes the sum over matched pairs of s_ij + s_ji among mutually acceptable pairs (rectangular linear assignment). These use full preference information and are references, not deployable discovery policies.
+
+**Metrics.** The primary metric is mean agent welfare W = (1/(n_A + n_B)) times the sum over all agents of their satisfaction, with unmatched agents at 0; it is unitless in [0, 1]. Secondary metrics are the unmatched fraction U (the share of all agents left unmatched), mutual satisfaction M (the mean over matched pairs of min(s_ij, s_ji)), the Gini coefficient of exposure per side, blocking pairs per 100 agents (a pair count that is not bounded by 100), and W by side and by quality quartile. Because U is the unmatched share of all agents, W can be written as W = (1 - U) Q, where Q is the mean satisfaction of matched agents; this identity is used in the exploratory analysis of Section 5.4.
+
+**Estimand.** For a policy P and market instance m, D_P(m) = W_P(m) - W_RANDOM(m) on the same instance. The estimand is theta_P, the equal-weight mean over the nine (r, rho) cells of E[D_P | cell].
+
+**Complexity.** A sequential run costs O(T (n_A + n_B) k) slate operations plus scoring; MAXW solves one rectangular assignment of at most 200 by 300. The measured run bodies were short (Section 4.5).
+
 ## 4. Methods
+
+### 4.1 Design and registration
+
+The protocol (`research/protocol.md` and one protocol per experiment) was drafted before any run, amended on the basis of an exploratory full-size pilot, and frozen by the owner on 2026-11-24 with SHA-256 hashes of every protocol and confirmatory configuration recorded in `research/freeze.json`. The pre-freeze pilot values of the primary contrast were seen before the freeze and are disclosed in the freeze record (decision C4): for POPULARITY, -0.2917 at T = 20 over nine cells and 0.0178 at T = 40 on the corner cells; for EXPOSURE_BALANCED, 0.0034 and 0.005. The owner chose the primary horizon T = 40 and the shared tie key with these values available, so the primary horizon is the one at which POPULARITY had turned positive in the pilot. The recorded purpose of the longer horizon (amendment F1) was to let all arms stop matching; Section 5.4 shows that this was not achieved for POPULARITY. A runtime guard refuses any confirmatory configuration whose hash does not match the freeze record.
+
+**Experimental unit and pairing.** The unit is one market instance (one draw of qualities and utilities). Agents inside an instance are never treated as independent. Thirty instances per cell were drawn from the root seed 20261124 through numpy `SeedSequence` spawning; every arm runs on the same instance with common random numbers, and the viewer-order and tie-break streams are shared across arms that consume them identically.
+
+**Experiments.** Table 1 lists the matrix.
+
+Table 1. Experimental matrix (frozen v1.0).
+
+| Experiment | Role | Cells | Instances per cell | Arms | Runs |
+|---|---|---|---|---|---|
+| EXP-001 | primary, confirmatory | 9 (r by rho) | 30 | RANDOM, POPULARITY, EXPOSURE_BALANCED | 810 |
+| EXP-002 | secondary | 9, same instances | 30 | DA_A, DA_B, MAXW (RANDOM from EXP-001) | 810 |
+| EXP-003 | sensitivity | 4 corner cells by 4 settings | 30, EXP-001 instances | the three sequential arms | 1,440 |
+
+The EXP-003 settings are S1, pickiness theta in {0.3, 0.7} at T = 40, and S2, horizon T in {10, 20} at theta = 0.5. A third setting, S3, a reanalysis with a different welfare definition, was registered but not run (Section 4.6).
+
+### 4.2 Hypotheses and decision rules
+
+- **EXP-001 (confirmatory).** For P in {POPULARITY, EXPOSURE_BALANCED}, H0_P: theta_P = 0 against H1_P: theta_P != 0, Holm correction over the two contrasts, familywise alpha 0.05. A Holm-adjusted p of at least 0.05 means H1_P is not supported. Equivalence is claimed only if the 90% CI of theta_P lies inside (-0.01, 0.01), the smallest effect size of interest.
+- **EXP-002 (secondary, no multiplicity protection).** H_a: the equal-weight mean of W(DA_A) - W(RANDOM) differs from 0. H_b: the equal-weight mean of blocking pairs per 100 agents, MAXW minus DA_A, differs from 0. A 95% CI containing 0 means not supported. Zero blocking pairs for DA is an invariant whose failure would indicate a bug.
+- **EXP-003 (sensitivity).** Invalidation criterion, fixed in advance: if theta_P under any S2 or S3 setting has the opposite sign of the EXP-001 estimate with a 95% CI excluding 0, the EXP-001 result for P is reported as not robust. S1 is reported but is not part of the criterion.
+
+### 4.3 Statistical analysis
+
+Per-cell paired mean differences carry 95% percentile bootstrap CIs over instances (10,000 resamples). The pooled theta_P carries 95% and 90% stratified bootstrap CIs (instances resampled within each cell). EXP-001 p-values come from a stratified paired sign-flip randomization test with 10,000 draws, so the smallest attainable p-value is 1/10,001; tests are limited to the EXP-001 family (protocol section 8). Effect sizes are mean differences in welfare units and the standardized paired effect dz. The analysis code for EXP-002 and EXP-003 was committed before any confirmatory output existed (decision D-017).
+
+### 4.4 Exploratory analyses added in M4
+
+After the confirmatory results were known, three exploratory analyses were run to inspect competing explanations. They are labelled exploratory wherever they appear, test no hypothesis and change no frozen verdict (decision D-021).
+
+- **E1, horizon saturation** (journal J-0014): from the stored per-round match counts of the committed runs, the share of instances with at least one new match in the last 10 rounds of the horizon.
+- **E2, unmatched-value sweep** (J-0014): because W counts an unmatched agent as 0 and U is the unmatched share of all agents, the welfare with a constant unmatched value v is exactly W + vU. The contrast is reported over the whole range v in {0, 0.25, 0.5, 0.75, 1} together with the break-even value at which its sign would change. This is not the registered S3, which is recorded as not run and whose parameters are not chosen after the data (D-019); it uses one constant value for every agent and does not change the satisfaction scale.
+- **E3, decomposition** (J-0014): paired differences in the matched share 1 - U and in Q = W/(1 - U), the mean satisfaction of matched agents.
+- **E4, horizon-extension probe** (J-0015): a new exploratory run on a fresh root seed (505), all nine cells, 10 instances per cell, the three sequential arms, at T = 40, 80 and 160 (810 runs).
+
+### 4.5 Implementation, verification and resources
+
+The simulator is the Python package `match_lab` 0.2.0 (Python 3.12.1, numpy 2.3.5, scipy 1.16.3, dependencies locked). The test suite (103 tests before the confirmatory runs) covers deferred acceptance on hand-computed examples, zero blocking pairs for DA against brute-force enumeration, MAXW against brute force, metric values on hand-computed markets, no duplicate matches, capacity one, empty pools, determinism for a fixed seed and the freeze guard. Before the confirmatory runs, an independent naive recomputation of W, U, M and blocking pairs agreed exactly with the stored metrics on eight runs (J-0009). Every confirmatory run passed the validity checks at export and import. The runs used an Apple M1 Pro under `nice` on a shared machine: EXP-001 took 255.2 s of wall clock, EXP-002 13.6 s and EXP-003 392.3 s, against a frozen budget of 30 minutes per experiment. Runtimes are diagnostics only; no result depends on them.
+
+### 4.6 Deviations and owner decisions
+
+- **EXP-003 S3 not run.** S3 was specified as a reanalysis of EXP-001 raw outputs, but those outputs store per-run metrics, not matchings or utilities, and the frozen text does not fix how utility is standardized or how the threshold's satisfaction is defined. The owner recorded S3 as not run, a documented failure, with no parameters chosen after the data (D-018, D-019).
+- **Provenance revision.** The confirmatory runs used revision cfc90d0, not the frozen-content revision 88f3438; the difference is records, the EXP-002 and EXP-003 analysis module, the CLI, tests and the restriction of p-values to EXP-001. No simulation, metric or statistics code changed, and every frozen hash still matches (D-017).
+- **Analysis command.** The protocol's reproduction command produces a generic per-file report that cannot pair EXP-002 arms with the EXP-001 RANDOM arm; the frozen contrasts are computed by a separate `analyze` command written before any confirmatory output.
+- **Unscheduled run.** During the freeze session an old test executed the EXP-001 configuration once by accident. Its outputs were quarantined unread and later deleted on the owner's approval (J-0007, J-0008, D-014, D-016).
+- **Reports.** The experiment reports were composed from committed results only and written to disk by the coordinating session, on the owner's approval (D-020).
 
 ## 5. Results
 
+All results are from synthetic simulations. Unless marked exploratory, they come from the frozen analyses of the committed outputs in `results/confirmatory/`. No run was invalid, excluded, dropped or retried: 810 of 810 runs for EXP-001, 810 of 810 for EXP-002 and 1,440 of 1,440 for EXP-003.
+
+### 5.1 EXP-001: slate policies in sequential discovery (confirmatory)
+
+Table 2. Primary contrasts, equal-weight over nine cells, 270 paired instances (`results/confirmatory/EXP-001/report/tables/EXP-001_pooled_W.csv`).
+
+| Contrast | theta_P | 95% CI | 90% CI | Holm p | Decision under the frozen rule |
+|---|---|---|---|---|---|
+| POPULARITY - RANDOM | +0.0219 | +0.0207 to +0.0231 | +0.0209 to +0.0229 | 0.0002 | H1 supported |
+| EXPOSURE_BALANCED - RANDOM | +0.0004 | -0.0007 to +0.0015 | -0.0005 to +0.0013 | 0.5137 | H1 not supported; equivalent to 0 at margin 0.01 |
+
+The POPULARITY p-value is at the floor of the 10,000-draw test (unadjusted 0.0001), so the true p-value may be smaller.
+
+The pooled POPULARITY effect hides heterogeneity across cells (Table 3, Figure 1). It is positive in seven cells, largest in the balanced market with moderate correlation (+0.0652 at r = 1.0, rho = 0.5), and negative in the two cells with the strongest imbalance and positive correlation (-0.0061 at r = 1.5, rho = 0.5; -0.0264 at r = 1.5, rho = 0.9). EXPOSURE_BALANCED has small per-cell effects of both signs, from -0.0082 to +0.0046.
+
+Table 3. Per-cell paired differences in W versus RANDOM, 30 instances per cell, 95% bootstrap CIs, unadjusted and secondary (`EXP-001_paired_differences_W.csv`).
+
+| r, rho | POPULARITY | 95% CI | EXPOSURE_BALANCED | 95% CI |
+|---|---|---|---|---|
+| 1.0, 0.0 | +0.0365 | +0.0323 to +0.0410 | +0.0045 | +0.0007 to +0.0083 |
+| 1.0, 0.5 | +0.0652 | +0.0603 to +0.0699 | -0.0057 | -0.0101 to -0.0013 |
+| 1.0, 0.9 | +0.0379 | +0.0348 to +0.0410 | +0.0006 | -0.0027 to +0.0038 |
+| 1.1, 0.0 | +0.0246 | +0.0219 to +0.0274 | +0.0046 | +0.0008 to +0.0082 |
+| 1.1, 0.5 | +0.0320 | +0.0285 to +0.0353 | -0.0082 | -0.0115 to -0.0051 |
+| 1.1, 0.9 | +0.0138 | +0.0102 to +0.0174 | +0.0019 | -0.0012 to +0.0048 |
+| 1.5, 0.0 | +0.0196 | +0.0171 to +0.0221 | +0.0026 | -0.0002 to +0.0057 |
+| 1.5, 0.5 | -0.0061 | -0.0091 to -0.0030 | +0.0003 | -0.0020 to +0.0026 |
+| 1.5, 0.9 | -0.0264 | -0.0309 to -0.0219 | +0.0031 | +0.0006 to +0.0056 |
+
+![Figure 1 (FIG-EXP-001-base-paired). Paired differences in mean agent welfare W versus RANDOM per cell, EXP-001 (synthetic, T = 40, theta = 0.5). Small dots: the 30 per-instance differences per cell; large dot: mean; bar: 95% percentile bootstrap CI over instances (10,000 resamples). Dashed line at 0.](../experiments/EXP-001/figures/FIG-EXP-001-base-paired.svg){width=80%}
+
+Secondary metrics (descriptive, no tests; `EXP-001_arm_summary.csv`) show that POPULARITY had higher mutual satisfaction M than RANDOM in all nine cells and fewer blocking pairs per 100 agents in all nine cells. It left fewer agents unmatched than RANDOM in all three balanced cells and more in the two cells where its welfare effect was negative. Its exposure Gini on side B was higher than RANDOM's in six cells. EXPOSURE_BALANCED did not consistently equalize exposure: its side-B exposure Gini was higher than RANDOM's in four of nine cells (for example 0.3217 against 0.1900 at r = 1.5, rho = 0) and lower than POPULARITY's in six. The exposure cap shortened at most 1.05% of its slates in any cell. On timing, EXPOSURE_BALANCED resembled RANDOM rather than POPULARITY: its share of short slates (fewer than five unseen candidates left) was 0.0649 to 0.4910 per cell, against 0.0822 to 0.5325 for RANDOM and 0 for POPULARITY, and like RANDOM it stopped forming matches early (Section 5.4).
+
+### 5.2 EXP-002: centralized references (secondary)
+
+Table 4. Registered secondary contrasts, equal-weight over nine cells, 270 paired instances (`results/confirmatory/EXP-002/analysis/tables/EXP-002_contrasts.csv`).
+
+| Contrast | Estimate | 95% CI | Decision |
+|---|---|---|---|
+| H_a: W(DA_A) - W(RANDOM) | +0.0963 | +0.0954 to +0.0973 | supported (secondary) |
+| H_b: blocking pairs per 100 agents, MAXW - DA_A | +231.06 | +226.32 to +235.70 | supported (secondary) |
+
+The invariant held: none of the 540 DA_A and DA_B runs had a blocking pair. The DA advantage over random discovery was largest in the balanced idiosyncratic cell (+0.1714) and smallest under strong correlation (+0.0449 to +0.0481 at rho = 0.9). The blocking-pair excess of MAXW grew with correlation within each imbalance level, from +14.87 per 100 agents at r = 1.0, rho = 0 to +603.61 at r = 1.0, rho = 0.9 (Figure 2).
+
+Descriptively (`EXP-002_descriptive.csv`), MAXW had the highest mean welfare in every cell, deferred acceptance came next and random discovery had the lowest. Proposer advantage appeared only in the balanced idiosyncratic cell, where the welfare gap between sides was +0.034 under DA_A and -0.039 under DA_B. With any imbalance, DA_A and DA_B were nearly identical and favoured the short side strongly (gap up to +0.462 at r = 1.5, rho = 0), which is consistent with the abstract of Ashlagi et al. (2017). The unmatched fraction was identical under DA_A and DA_B on every instance. Random discovery had the smallest side gap in every imbalanced cell.
+
+![Figure 2 (FIG-EXP-002-Hb-forest). Blocking pairs per 100 agents, MAXW minus DA_A, per cell and pooled (synthetic). Dot: mean paired difference over 30 instances per cell (270 pooled); bar: 95% bootstrap CI, stratified for the pooled row. A pair count, so values above 100 are possible.](../experiments/EXP-002/figures/FIG-EXP-002-Hb-forest.svg){width=80%}
+
+### 5.3 EXP-003: sensitivity (registered)
+
+Table 5. theta_P on the four corner cells (120 paired instances per row), 95% stratified bootstrap CIs (`results/confirmatory/EXP-003/analysis/tables/EXP-003_sensitivity.csv`).
+
+| Setting | POPULARITY | 95% CI | EXPOSURE_BALANCED | 95% CI |
+|---|---|---|---|---|
+| EXP-001 reference (T 40, theta 0.5) | +0.0169 | +0.0150 to +0.0188 | +0.0027 | +0.0011 to +0.0043 |
+| S1, theta 0.3 (T 40) | +0.0340 | +0.0321 to +0.0359 | +0.0052 | +0.0034 to +0.0070 |
+| S1, theta 0.7 (T 40) | +0.0030 | +0.0009 to +0.0052 | +0.0041 | +0.0026 to +0.0057 |
+| S2, T 20 | -0.2824 | -0.2843 to -0.2805 | +0.0049 | +0.0033 to +0.0066 |
+| S2, T 10 | -0.4081 | -0.4098 to -0.4064 | +0.0008 | -0.0012 to +0.0028 |
+| S3, metric definition | not run | | not run | |
+
+POPULARITY meets the frozen invalidation criterion at both S2 horizons, so the EXP-001 POPULARITY result is reported as **not robust to the horizon**. At T = 10, POPULARITY left 0.7615 to 0.8779 of agents unmatched in the corner cells, against 0.0152 to 0.4773 under RANDOM (`EXP-003_arm_summary.csv`). EXPOSURE_BALANCED does not meet the criterion, and no S1 or S2 estimate for it exceeds +0.0060, so its equivalence statement is not contradicted. Under S1 both policies keep the EXP-001 sign, although POPULARITY's effect at theta = 0.7 is small. Because S3 was not run, the dependence of either verdict on the welfare definition was not tested as registered.
+
+![Figure 3 (FIG-EXP-003-theta-forest). theta_P (W of the policy minus W of RANDOM, equal-weight mean over the four corner cells) for the EXP-001 reference and each S1 and S2 setting (synthetic). Dot: estimate; bar: 95% stratified bootstrap CI over 120 instances. Dashed line at 0.](../experiments/EXP-003/figures/FIG-EXP-003-theta-forest.svg){width=80%}
+
+### 5.4 Exploratory diagnostics (M4; not confirmatory)
+
+**E1, horizon saturation.** In the committed EXP-001 runs, every POPULARITY instance formed between 2 and 7 matches in round 40, the last round, and on average 25.2% to 26.8% of its matches per cell formed in the last 10 rounds (`results/exploratory/m4_confounders/horizon_saturation.csv`). RANDOM and EXPOSURE_BALANCED had stopped forming matches before round 31 in every instance except in the r = 1.5 cells with rho > 0 (RANDOM: 57% of instances at rho = 0.9; EXPOSURE_BALANCED: 3% and 7%). The primary T = 40 outcome is therefore close to final for the comparator but truncated for POPULARITY.
+
+**E4, horizon-extension probe.** On a fresh exploratory seed with 10 instances per cell (`results/exploratory/m4_horizon_probe/analysis/pooled.csv`), the POPULARITY contrast was +0.0217 (95% CI +0.0196 to +0.0238) at T = 40, close to the confirmatory value, and +0.0375 (+0.0356 to +0.0394) at T = 80. It was identical at T = 160 because no arm formed a match after round 60. At T = 40 POPULARITY left slightly more agents unmatched than RANDOM (equal-weight Delta U +0.0026); at T = 80 it left fewer (-0.0199). At T = 80 the POPULARITY effect was positive in all nine cells, including the two cells that were negative at T = 40 (+0.0328 at r = 1.5, rho = 0.5 and +0.0195 at r = 1.5, rho = 0.9). The last POPULARITY match came at round 40 in every balanced instance, by round 44 at r = 1.1 and by round 60 at r = 1.5, which equals the number of rounds needed to show all 200, 220 or 300 long-side candidates five at a time. This bound is mechanical: since no candidate is shown twice to the same viewer, under any policy a viewer has seen the whole other side after at most that many rounds. The EXPOSURE_BALANCED contrast, +0.0022 (+0.0002 to +0.0041), did not change with the horizon.
+
+**E2, unmatched-value sweep.** Valuing an unmatched agent at any constant v between 0 and 1 moves the EXP-001 POPULARITY contrast from +0.0219 to +0.0239 and the EXPOSURE_BALANCED contrast from +0.0004 to +0.0043, whose 90% CI stays within (-0.01, 0.01) for every v in the grid (`unmatched_value_sweep.csv`). The S2 reversals are more sensitive: the POPULARITY contrast at T = 10 would change sign at v = 0.75 and at T = 20 at v = 0.72; at v = 0.5 it remains negative (-0.1349 and -0.0868).
+
+**E3, decomposition.** In EXP-001, POPULARITY matched a slightly smaller share of agents than RANDOM (-0.0020 on the equal-weight scale) but its matched agents had a higher mean satisfaction (+0.0282, 95% CI +0.0272 to +0.0292). At T = 10 the gain in the mean satisfaction of matched agents was the same (+0.0282) while the matched share fell by 0.5463 (`decomposition.csv`). Q is an average over whichever agents are matched, so these differences mix partner quality with the composition of the matched set.
+
 ## 6. Discussion
+
+**What the confirmatory result says.** Within this model, at 40 rounds and the primary pickiness, popularity-ranked slates gave a higher equal-weight mean welfare than random slates, and exposure-balanced slates gave a welfare equivalent to random slates within 0.01. The registered sensitivity analysis then showed that the popularity effect depends on the horizon: at 10 and 20 rounds popularity ranking is far worse than random exposure, because most agents are still unmatched.
+
+**Mechanism suggested by the evidence.** The decomposition (E3) and the secondary metrics agree on one reading. Popularity ranking slows the formation of matches, and the agents it does match are, on average, more satisfied. The mean satisfaction of matched agents is higher under POPULARITY in every setting examined, and mutual satisfaction is higher in every cell. These are averages over the matched agents, so part of the difference may come from which agents are matched rather than from better partners for the same agents; the design cannot separate the two. What changes across horizons and cells is how many agents are matched by the end. POPULARITY keeps forming matches until viewers have seen the entire other side, whereas RANDOM stops far earlier. One explanation is that, with the shared per-round tie key and identical initial scores, viewers see nearly the same slates, as observed in the pre-freeze pilot (J-0003), so mutual likes form late. This is a hypothesis resting on that exploratory observation; it was not tested. If the eventual allocation is what matters, the horizon-extension probe suggests that POPULARITY matches both more agents and more satisfied agents than RANDOM once both have stopped, but that probe is exploratory (10 instances per cell, a new seed, designed after the S2 result) and serves only to motivate a pre-registered horizon-free experiment.
+
+**Competing explanations.** Table 6 lists the competing explanations named in the frozen protocols and what the evidence says about each.
+
+Table 6. Competing explanations and the evidence that addresses them.
+
+| Conclusion | Competing explanation (protocol) | Addressed by | Status |
+|---|---|---|---|
+| EXP-001 POPULARITY effect | speed of matching under a fixed horizon | S2 (registered); E1, E4 (exploratory) | confirmed as a major factor: the sign depends on T; exploratory runs indicate T = 40 is itself truncated for POPULARITY |
+| EXP-001 POPULARITY effect | rank-percentile scale and unmatched = 0 | S3 (not run); E2 (exploratory, unmatched value only) | open for the scale; the T = 40 sign does not depend on a constant unmatched value |
+| EXP-001 POPULARITY effect | pickiness theta | S1 (registered) | sign kept at theta 0.3 and 0.7 |
+| EXP-001 EXPOSURE_BALANCED null | shorter slates under the cap | cap diagnostics | ruled out as a driver: at most 1.05% of slates shortened |
+| EXP-001 EXPOSURE_BALANCED null | rank-percentile scale and unmatched = 0 | S3 (not run); E2 | open for the scale; equivalence holds for every constant unmatched value in [0, 1] |
+| EXP-002 H_a | full information rather than mechanism | none (design) | open; the design cannot separate them |
+| EXP-002 H_a | truncation at the acceptability threshold | none | open |
+| EXP-002 H_a and H_b | rank-percentile scale | S3 not applied | open; H_a is insensitive to a constant unmatched value (E2) |
+
+**Implications.** Within the model, the comparison between ranking policies cannot be separated from the question of how long participants search, measured relative to the rounds needed to see the other side (n_B / k, here 40 to 60 rounds); the study used one market size and one slate length, so these horizons do not transfer to other sizes or to real search durations. In this model, a policy that sorts candidates by one shared score slowed the formation of matches, while the agents it matched were on average more satisfied. Exposure-balanced ranking, by contrast, behaved much like random exposure on timing and exposure inequality, which may explain why its welfare did not differ from random exposure. Whether this trade-off is favourable depends on how long agents search, on how being unmatched is valued, and on market imbalance. The magnitudes matter as much as the signs: the confirmatory POPULARITY gain (0.0219) is about a quarter of the gap between deferred acceptance and random discovery (0.0963). The centralized references show the size of the gap left by sequential discovery: deferred acceptance exceeded random discovery by about 0.10 in welfare, and the welfare-maximizing assignment reached higher welfare still, at the price of many blocking pairs. In that limited sense, the working question "can optimal matching leave more people unhappy?" has a two-sided answer here: the welfare-optimal assignment leaves many pairs who would rather deviate, yet its mean welfare is the highest of all arms.
+
+**Relation to prior work.** The finding that a relevance-sorted policy can be much worse than random exposure at horizons well below n_B / k is not in conflict with the argument of Su et al. (2021) that relevance ranking is suboptimal under capacity constraints, but the settings, objectives and policies differ and no direct comparison is possible. The strong short-side advantage under deferred acceptance with imbalance is consistent with the abstract of Ashlagi et al. (2017), which concerns stable matchings in random markets.
 
 ## 7. Limitations and threats to validity
 
+- **Synthetic model.** Utilities are Gaussian common-plus-idiosyncratic draws; agents like a candidate exactly when utility exceeds a fixed quantile; there is no strategy, learning, fatigue, messaging or exit. A single market size (200 agents on the short side) was studied. Nothing here can be read as evidence about real people, real dating or job platforms, or any proprietary ranking system.
+- **Horizon.** The primary horizon T = 40 was chosen by the owner after exploratory values were seen (C4); it is the horizon at which POPULARITY had turned positive in the pilot, and it equals n_B / k in the balanced cells. Its stated purpose, letting all arms stop matching, was not achieved for POPULARITY when r > 1. The registered sensitivity analysis showed that the POPULARITY sign depends on T, and exploratory diagnostics indicate that T = 40 truncates POPULARITY but not RANDOM. The confirmatory p-value is valid for the registered fixed-horizon contrast; it is not evidence for a horizon-free or final-allocation effect. Horizons are meaningful only relative to n_B / k in this model.
+- **Metric definition.** The registered metric-definition check (S3) was not run. The exploratory unmatched-value sweep covers only one part of it.
+- **Policy implementation.** POPULARITY uses one shared random tie key per round. In the pre-freeze exploratory runs at T = 20, the POPULARITY contrast was -0.2917 with the shared key (nine cells, J-0003) and -0.0422 with per-viewer keys (corner cells, J-0005). The results describe this implementation, not popularity ranking in general.
+- **EXPOSURE_BALANCED construct.** The cap limits per-round exposure relative to the popularity order; it did not produce lower exposure inequality than random exposure in four of nine cells, and its timing resembled random exposure. Its equivalence result is a result about this cap rule, which behaved much like random exposure, not about exposure balancing as a goal.
+- **Estimand.** theta_P is an equal-weight average over nine chosen cells; the POPULARITY sign varies across cells at T = 40, so another cell mix would give a different value.
+- **Statistics.** The intervals quantify only sampling variation across synthetic instances within one model; they are narrow because of common random numbers and say nothing about model uncertainty. The p-value is floored by the number of draws. Per-cell CIs and EXP-002 and EXP-003 contrasts are not multiplicity-protected.
+- **Information confound.** The centralized arms use full preferences; the EXP-002 welfare contrast mixes information and mechanism.
+- **Literature.** The review was short and non-systematic; several sources were verified only at metadata or abstract level.
+- **Runtime.** Runs shared a machine with other work; runtimes are diagnostics only.
+
 ## 8. Ethics and responsible research
+
+All data are generated by code from recorded seeds; no dataset of real people was used, downloaded or redistributed, and public speed-dating and ratings datasets were examined only to record why they are excluded (`research/literature_review.md`). Subgroups are sides and synthetic quality quartiles, never protected attributes. No ethics approval was sought because no human participant was involved; none is claimed. The results must not be used to describe or rank real people, to infer protected attributes, or to make claims about how any real platform ranks users.
 
 ## 9. Conclusion and future work
 
+In synthetic two-sided markets with reciprocal preferences, popularity-ranked slates raised mean welfare relative to random slates after 40 rounds, but the sign of this effect reverses at shorter horizons, so under the frozen rule it is not robust. Exposure-balanced slates were equivalent to random slates within 0.01. Deferred acceptance clearly exceeded random discovery, and the welfare-maximizing assignment left many more blocking pairs than deferred acceptance. Exploratory diagnostics suggest that popularity ranking matches agents more slowly, that the agents it matches are on average more satisfied, and that the primary horizon truncated it; whether its eventual allocation is better is a hypothesis for a pre-registered horizon-free experiment, not a finding. Feasible next steps are a pre-registered horizon-free outcome (welfare once no new match can form), a fully specified metric-definition sensitivity with matchings retained in the raw outputs, a per-viewer tie-key arm, and a sequential arm with full information to separate information from mechanism.
+
 ## 10. Data, code availability and artifact reproducibility
+
+All code, configurations, raw results, analysis tables and figures are in the project repository (public URL: to be added after the owner's approval). The environment is installed with `uv sync --frozen`. The confirmatory runs are reproduced with `python -m match_lab run --config experiments/configs/EXP-00N.json` (N = 1, 2, 3) in a clean clone, the frozen tables with `python -m match_lab report ...` and `python -m match_lab analyze ...`, and the exploratory diagnostics with the scripts in `experiments/exploratory/`. Exact commands, hashes and checksums are in each experiment's `reproduction.md`, and the mapping from every number to its source is in `research/publication/artifact_manifest.json`. Metrics are deterministic given configuration and seed; the analysis draws use fixed seeds.
 
 ## 11. Funding, competing interests and AI assistance disclosures
 
+No funding was received. The author declares no competing interests. An AI system (Claude, Anthropic) acted as a research and development assistant: it wrote code and tests, ran the frozen commands, computed the exploratory diagnostics and drafted the reports and this manuscript from committed results. The author set the research question, approved the protocol freeze and every deviation, and is responsible for the content. AI review of the manuscript is internal quality control, not peer review.
+
 ## References
 
+- Ashlagi, I., Kanoria, Y. and Leshno, J. D. (2017). Unbalanced random matching markets: the stark effect of competition. *Journal of Political Economy* 125(1), 69-98. https://doi.org/10.1086/689869 (abstract verified).
+- Gale, D. and Shapley, L. S. (1962). College admissions and the stability of marriage. *The American Mathematical Monthly* 69(1), 9-15. https://doi.org/10.1080/00029890.1962.11989827 (metadata verified).
+- Hitsch, G. J., Hortacsu, A. and Ariely, D. (2010). Matching and sorting in online dating. *American Economic Review* 100(1), 130-163. https://doi.org/10.1257/aer.100.1.130 (abstract verified).
+- Kanoria, Y. and Saban, D. (2021). Facilitating the search for partners on matching platforms. *Management Science* 67(10), 5990-6029. https://doi.org/10.1287/mnsc.2020.3794 (abstract verified).
+- Roth, A. E. (1982). The economics of matching: stability and incentives. *Mathematics of Operations Research* 7(4), 617-628. https://doi.org/10.1287/moor.7.4.617 (metadata verified).
+- Singh, A. and Joachims, T. (2018). Fairness of exposure in rankings. *Proceedings of the 24th ACM SIGKDD International Conference on Knowledge Discovery and Data Mining*, 2219-2228. https://doi.org/10.1145/3219819.3220088 (abstract verified).
+- Su, Y., Bayoumi, M. and Joachims, T. (2021). Optimizing rankings for recommendation in matching markets. arXiv:2106.01941, preprint (abstract verified).
+- Tomita, Y. and Yokoyama, T. (2024). Fair reciprocal recommendation in matching markets. arXiv:2409.00720 (abstract verified; arXiv comments state acceptance at RecSys 2024).
+
+Access date for all sources: 2026-11-24.
+
 ## Supplementary appendix
+
+See `research/paper/supplementary.md`: complete experimental matrix, expected versus observed outcomes, extended tables, configurations, robustness results, report links and deviations.

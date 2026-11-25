@@ -7,7 +7,7 @@
 |---|---|
 | Experiment | EXP-003, sensitivity (can invalidate the EXP-001 interpretation; no confirmatory hypothesis) |
 | Date of run | 2026-11-24 (UTC 23:38:15 to 23:44:49); report written 2026-11-25 |
-| Report version | 1.0 (M3 close) |
+| Report version | 1.1 (M4: exploratory addendum in section 9; no frozen result changed) |
 | Status | Partial. S1 and S2 complete: 1,440 of 1,440 runs, 0 invalid, 0 excluded. S3 not run: a documented failure under the M3 gate (owner decision D-019) |
 | Author | Mohamed Bechir Kefi (no affiliation). AI assistance: Claude (Anthropic) ran the frozen commands and drafted this report as a research and development assistant; it is not an author. |
 | Protocol | `research/experiments/EXP-003/protocol.md` v1.0, SHA-256 `7e37ac6ad46f9da93bd66763a7caf3f53e97a367b83d31e727e14f35ded628f6`; main protocol SHA-256 `81f24e9e4bc15434837208705f61619d6415bd1643985142248c926482e160c5` |
@@ -151,6 +151,10 @@ Welfare strip plots per setting are in `figures/FIG-EXP-003-*-welfare.svg`.
 - **Expected versus observed.** The protocol anticipated that the policy effect might be "about the speed of matching within a fixed horizon, not about final outcomes" (protocol section 7). The pre-freeze pilot had shown POPULARITY negative at T = 10 and T = 20 on corner cells (C4 disclosure: -0.4068 at T = 10; -0.2917 at T = 20 over 9 cells). The confirmatory S2 values agree in sign and size. The anticipated speed effect is confirmed.
 - **POPULARITY.** The welfare gain at T = 40 coexists with a large welfare loss at T = 10 and 20. That loss comes with most agents left unmatched (8.2). The T = 40 result therefore answers "which policy has more welfare after 40 rounds", not "which policy produces better final allocations". Under the frozen rule, the EXP-001 POPULARITY claim is restated as not robust to the horizon. The S1 results show that, at T = 40, the sign does not depend on pickiness within theta 0.3 to 0.7, although the effect at theta = 0.7 is small (+0.0030).
 - **EXPOSURE_BALANCED.** Its EXP-001 estimate is near zero (+0.0004), so a sign-based criterion is weak for it. It stays non-negative in every setting; its CI excludes 0 in some settings (for example +0.0049 at T = 20) but not at T = 10. Its EXP-001 equivalence statement (margin 0.01) is not contradicted by any S1 or S2 estimate, all of which lie below +0.0060.
+- **M4 addendum (EXPLORATORY, 2026-11-25; J-0014, J-0015; D-021).** These diagnostics were computed after the results were known and change no verdict.
+  - The S2 POPULARITY reversals would change sign only if an unmatched agent were valued at a constant of at least 0.75 (T = 10) or 0.72 (T = 20) on the satisfaction scale; at 0.5 they stay negative (-0.1349 and -0.0868) (`results/exploratory/m4_confounders/unmatched_value_sweep.csv`). This covers only a constant unmatched value, not S3.
+  - The mean satisfaction of matched agents under POPULARITY is higher than under RANDOM at T = 10 (+0.0282), as at T = 40, so the reversal comes from the matched share (-0.5463 at T = 10) (`decomposition.csv`).
+  - At the primary T = 40 itself, POPULARITY was still forming matches in every instance (J-0014), and in an exploratory probe its contrast was larger at T = 80 (+0.0375) than at T = 40 (J-0015). The horizon dependence therefore runs in both directions around T = 40.
 - **Not resolved.** Whether either conclusion depends on the welfare definition (S3) cannot be answered from this experiment.
 
 ## 10. Threats to validity

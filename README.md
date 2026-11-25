@@ -3,7 +3,7 @@
 
 **Question.** How do ranking and exposure policies alter match outcomes under heterogeneous preferences?
 
-**Status: M2 (core implementation), 2026-11-24.** The engine, metrics, runner and report generator are implemented and tested. Only exploratory pilot runs exist (`results/exploratory/`); they test no hypothesis and are not findings. The protocol is a draft awaiting the owner's freeze; confirmatory runs are refused until then.
+**Status: M4 (interpretation), 2026-11-25.** The protocols were frozen by the owner on 2026-11-24 and the confirmatory experiments EXP-001 to EXP-003 were run (EXP-003 S3 not run, a documented failure). Experiment reports, the evidence audit and the integrated manuscript draft (`research/paper/manuscript.md`, independent preprint draft, not peer-reviewed) exist. All results are synthetic simulations. This README is completed in M6.
 
 ## Why it matters
 
@@ -17,14 +17,14 @@ Platforms that help people find partners or counterparts decide who sees whom. T
 - Metrics: mean agent welfare (primary), unmatched fraction, mutual satisfaction, exposure inequality, blocking pairs, subgroup outcomes.
 - A static interactive page and a formal manuscript with one report per experiment.
 
-See `research/protocol.md` and `research/experiment_registry.csv` (EXP-001 to EXP-003, planned).
+See `research/protocol.md` and `research/experiment_registry.csv` (EXP-001 to EXP-003).
 
 ## What is implemented
 
 - Package `match_lab` (see `src/README.md`): market generator, the three slate policies, deferred acceptance, utilitarian assignment, all protocol metrics, uncertainty machinery, versioned result and manifest schemas, run manifests, report generator (Markdown, CSV, SVG, PDF through pandoc and Typst).
 - CLI: `python -m match_lab {smoke,run,report,test}`.
 - Test suite (`tests/README.md`), including Gale and Shapley stability on hand-computed examples and brute-force differential tests.
-- Not implemented yet: the interactive page (M5), the manuscript content (M4).
+- Not implemented yet: the interactive page (M5).
 
 ## Quick start (development)
 

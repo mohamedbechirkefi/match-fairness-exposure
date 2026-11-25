@@ -7,7 +7,7 @@
 |---|---|
 | Experiment | EXP-001, primary (confirmatory) |
 | Date of run | 2026-11-24 (UTC 23:33:51 to 23:38:08); report written 2026-11-25 |
-| Report version | 1.0 (M3 close) |
+| Report version | 1.1 (M4: exploratory addendum in section 9; no frozen result changed) |
 | Status | Complete: full frozen matrix, 810 of 810 runs, 0 invalid, 0 excluded. Robustness: not robust to the horizon (EXP-003 S2) |
 | Author | Mohamed Bechir Kefi (no affiliation). AI assistance: Claude (Anthropic) ran the frozen commands and drafted this report as a research and development assistant; it is not an author. |
 | Protocol | `research/experiments/EXP-001/protocol.md` v1.0, SHA-256 `0d64280b9e2dcb0a3f17bf056eaf3cadf5f5a009efa88d6eed99ad05eafb3c2c`; main protocol `research/protocol.md` SHA-256 `81f24e9e4bc15434837208705f61619d6415bd1643985142248c926482e160c5` (freeze record `research/freeze.json`) |
@@ -143,6 +143,11 @@ Patterns read from the table, without tests:
   - (c) Pickiness: S1 keeps the sign.
   - (d) Short slates do not explain the EXPOSURE_BALANCED null (at most 1.0% shortened).
 - **Literature.** A reading of Su et al. (2021) that relevance ranking is suboptimal in capacity-constrained markets is not contradicted: at short horizons POPULARITY is far worse than RANDOM here, and the settings, objectives and policies differ. The negative cells at strong imbalance are consistent in spirit with the role of imbalance in Ashlagi et al. (2017), which concerns stable matchings, not this search process.
+- **M4 addendum (EXPLORATORY, 2026-11-25; journal J-0014, J-0015; decision D-021).** These diagnostics were computed after the results were known and change no verdict above.
+  - Every POPULARITY instance was still forming matches in round 40 (2 to 7 matches), whereas RANDOM and EXPOSURE_BALANCED had stopped before round 31 except in the r = 1.5 cells with rho > 0 (`results/exploratory/m4_confounders/horizon_saturation.csv`). The T = 40 contrast is therefore a fixed-horizon quantity that truncates POPULARITY.
+  - A horizon-extension probe on a new exploratory seed (505, 10 instances per cell) gave +0.0217 at T = 40 and +0.0375 (95% CI +0.0356 to +0.0394) at T = 80, positive in all nine cells, including the two cells negative at T = 40 (`results/exploratory/m4_horizon_probe/analysis/`). It is hypothesis-generating only.
+  - Valuing unmatched agents at any constant v in [0, 1] keeps both EXP-001 signs, and the EXPOSURE_BALANCED 90% CI stays inside the margin (`unmatched_value_sweep.csv`). This is not S3, which stays not run.
+  - EXPOSURE_BALANCED had a higher side-B exposure Gini than RANDOM in four of nine cells and a RANDOM-like timing profile, so its null concerns this cap rule rather than exposure balancing in general (manuscript section 7; `research/publication/review_pass_2.md`, R7).
 - **Null result.** The EXPOSURE_BALANCED non-rejection is not by itself read as equivalence. Equivalence at the margin 0.01 is stated only because the 90% CI lies inside the pre-registered margin. Its per-cell effects have both signs (from -0.0082 to +0.0046).
 
 ## 10. Threats to validity

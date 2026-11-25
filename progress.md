@@ -161,3 +161,48 @@ Owner: decide S3 (specify it as a dated post-freeze amendment or record it as no
 ## 2026-11-25: M3 done (coordinator)
 
 The owner approved the experiment reports (owner, 2026-11-25, "approve all recommendations, RIGGED A", item 4). Subagents may not write report files, so the reports were composed by the M3 session from committed results only and written by the coordinator: 3 report(s). The coordinator checked that every decimal number in them appears in a committed file. With the complete matrices (or documented failures) recorded above, the M3 gate holds. M3 is **done**. Next: M4 (interpretation), not started.
+
+## 2026-11-25: M4 session (interpretation, evidence audit, manuscript)
+
+**Milestone:** M4. **Starting state:** commit e1050b2, working tree clean, every frozen hash matching. Authority: the owner's "Approve all recommendations, push then next" (2026-11-25) and the M4 brief. The owner's 2026-11-25b follow-ups name no MATCH item.
+
+### Decisions
+- D-021: M4 exploratory diagnostics run only on committed outputs, plus one cheap probe; no verdict changes.
+- D-022: claims register restructured and external claims registered.
+- D-023: manuscript v1.0 after the second review pass; a descriptive title is proposed, pending the owner.
+
+### What was done
+- **Confounder inspection.** Every competing explanation named in the frozen protocols was checked against the evidence (supplementary S4.5, manuscript Table 6). Exploratory diagnostics (D-021):
+  - J-0014: E1 horizon saturation, E2 the unmatched-value sweep and E3 the decomposition W = (1 - U) Q, from the committed outputs;
+  - J-0015: E4, a horizon-extension probe on the new exploratory seed 505 (810 runs, T in {40, 80, 160}).
+
+  Scripts are in `experiments/exploratory/` and outputs in `results/exploratory/m4_*` (commit cff9d7c).
+- **Expected versus observed.** Supplementary Table S2 covers every registered prediction.
+- **Claims register.** 14 result claims (C-001 to C-014) and 8 external claims (X-001 to X-008), with result id, config hash, figure or table, section and limits. The artifact manifest has 29 entries.
+- **Evidence audit.** Script `research/publication/evidence_audit.py`; findings in `research/publication/evidence_audit.md`, F-01 to F-10. Stale records were fixed: registry statuses, README status, the `experiments/` and `results/` READMEs, the M0 claims audit and `manuscript.tex`. No number mismatch was found.
+- **Manuscript.** `research/paper/manuscript.md` v0.9, then `research/publication/review_pass_2.md` (R1 to R11), then v1.0. `supplementary.md` written; `manuscript.tex` regenerated with pandoc 3.6.3.
+- **Reports.** The three reports now carry a labelled M4 exploratory addendum in section 9 (report version 1.1).
+- **Limitations.** Items 4 and 5 updated; items 17 to 21 added.
+
+### Commands and actual outputs
+- `.venv/bin/python -m pytest -q` at session start: 103 passed.
+- `nice -n 10 .venv/bin/python experiments/exploratory/m4_confounders.py --out results/exploratory/m4_confounders`: 70 sweep rows, 14 decompositions, 75 saturation rows; 1.7 s.
+- `nice -n 10 .venv/bin/python -m match_lab run --config experiments/configs/m4_horizon_probe.json`: 810 runs, 0 invalid, exit 0, 146.6 s (manifest), 2026-11-25T01:20:36Z to 01:23:03Z. Then `.venv/bin/python experiments/exploratory/m4_horizon_probe_analysis.py`.
+- `match_lab report` and `analyze` re-run into the scratchpad: 8 tables byte-identical to the committed ones. The 14 figure copies are identical to the generated figures.
+- `.venv/bin/python research/publication/evidence_audit.py`: 36 PASS, 0 FAIL.
+- `.venv/bin/python -m pytest -q` at session end: 103 passed.
+
+### Findings (synthetic; exploratory unless stated)
+- **Truncation at T = 40.** Every confirmatory POPULARITY instance was still forming matches in round 40; RANDOM and EXPOSURE_BALANCED had almost always stopped. The frozen T = 40 contrast is a fixed-horizon quantity.
+- **Horizon-extension probe.** POPULARITY minus RANDOM was +0.0217 at T = 40 and +0.0375 [+0.0356, +0.0394] at T = 80 (identical at T = 160), positive in all nine cells. Delta U was -0.0199 at T = 80. EXPOSURE_BALANCED was unchanged at +0.0022 across horizons.
+- **Unmatched-value sweep.** Both EXP-001 signs and the EXPOSURE_BALANCED equivalence hold for any constant unmatched value v in [0, 1]. The S2 reversal would vanish above v = 0.72 to 0.75. This is not S3, which stays not run.
+- **EXPOSURE_BALANCED.** Its exposure Gini was higher than RANDOM's in 4 of 9 cells (descriptive, confirmatory data), and its timing resembled RANDOM.
+- **Verdicts.** No frozen verdict changed.
+
+### Deviations and incidents
+- The probe ran before its config and scripts were committed: revision e1050b2, with `git_dirty` recorded as false because untracked files are ignored. Disclosed (F-08); the files were committed unchanged.
+- No file write was refused in this session.
+
+### Next action
+- **Owner:** approve or revise the proposed manuscript title, and review `research/publication/review_pass_2.md`.
+- **Then:** M5 (interactive page) and M6 (PDF builds, a recheck of the Su et al. wording, clean-clone reproduction). No push without the owner's approval.
