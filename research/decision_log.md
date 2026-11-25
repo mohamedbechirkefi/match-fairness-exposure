@@ -96,3 +96,13 @@ Append-only. Each entry: id, date, decision, made by, rationale, alternatives, c
 - **Made by:** the M3 session, under the brief's rule that a missing analysis may be written only if the frozen protocol fixes every parameter.
 - **Rationale:** (1) S3 is specified as a reanalysis of EXP-001 raw outputs, but those store per-run metrics only, not matchings or utilities, so S3 needs a deterministic re-simulation of the EXP-001 runs; (2) the frozen text does not fix how utility is standardized under (a), the unmatched value under (a), or how "the acceptability threshold's satisfaction" is computed under (b) given the interpolated quantile.
 - **Consequences:** EXP-003 is partial (S1 and S2 complete). The POPULARITY verdict is already "not robust" from S2; the EXPOSURE_BALANCED verdict lacks S3. The owner decides whether to specify S3 (a dated post-freeze amendment, reported separately from the frozen analysis) or to record it as not done. Journal J-0013.
+
+## D-019: EXP-003 S3 recorded as not run, a documented failure under the M3 gate (2026-11-25)
+- **Decision:** EXP-003 S3 is recorded as not run, a documented failure under the M3 gate. Its parameters are not chosen after the data.
+- **Made by:** the owner, 2026-11-25, "approve all recommendations, RIGGED A" (section 9, MATCH, of `labs/_shared/owner-approvals-2026-11-25.md`, outside this repository).
+- **Consequences:** EXP-003 stays partial (S1 and S2 complete, S3 not run); no S3 code is written and no S3 amendment follows. The metric-definition threat (limitation 4) stays open in every report and in the manuscript. Recorded in `research/freeze.json` (`post_freeze_deviations`).
+
+## D-020: Missing experiment reports approved; shell-written reproduction records kept (2026-11-25)
+- **Decision:** the owner approves writing the missing 11.3/11.6 experiment reports from committed results, tables and figures only, with no recomputation; the `reproduction.md` files written through the shell in M3 are kept.
+- **Made by:** the owner, 2026-11-25, "approve all recommendations, RIGGED A" (section 4 of `labs/_shared/owner-approvals-2026-11-25.md`).
+- **Consequences:** in the M3-close session the file tool still refused to write `research/experiments/EXP-001/report.md` ("subagents should return findings as text"). No shell or other workaround was used. On the coordinator's instruction (report-return note), the session composed the EXP-001, EXP-002 and EXP-003 reports from committed results only and handed their text to the coordinator, who writes and commits the files.

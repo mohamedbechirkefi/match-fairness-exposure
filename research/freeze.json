@@ -4,6 +4,16 @@
  "spdx": "LicenseRef-MATCH-NC-Research-1.0",
  "frozen_on": "2026-11-24",
  "gate": "G-FREEZE",
+ "post_freeze_deviations": [
+  {
+   "id": "EXP-003 S3 not run",
+   "date": "2026-11-25",
+   "decision_log": "D-018, D-019",
+   "journal": "J-0013",
+   "owner_decision_quoted": "approve all recommendations, RIGGED A (owner, 2026-11-25; labs/_shared/owner-approvals-2026-11-25.md, section 9)",
+   "effect": "EXP-003 S3 is recorded as not run, a documented failure under the M3 gate; its parameters are not chosen after the data. No frozen file changed, so no hash changed."
+  }
+ ],
  "approval": {
   "by": "the owner",
   "date": "2026-11-24",
