@@ -9,7 +9,7 @@
 | Date of run | 2026-11-24 (UTC 23:33:51 to 23:38:08); report written 2026-11-25 |
 | Report version | 1.1 (M4: exploratory addendum in section 9; no frozen result changed) |
 | Status | Complete: full frozen matrix, 810 of 810 runs, 0 invalid, 0 excluded. Robustness: not robust to the horizon (EXP-003 S2) |
-| Author | Mohamed Bechir Kefi (no affiliation). AI assistance: Claude (Anthropic) ran the frozen commands and drafted this report as a research and development assistant; it is not an author. |
+| Author | Mohamed Bechir Kefi, independent researcher. AI assistance: Claude (Anthropic) ran the frozen commands and drafted this report as a research and development assistant; it is not an author. |
 | Protocol | `research/experiments/EXP-001/protocol.md` v1.0, SHA-256 `0d64280b9e2dcb0a3f17bf056eaf3cadf5f5a009efa88d6eed99ad05eafb3c2c`; main protocol `research/protocol.md` SHA-256 `81f24e9e4bc15434837208705f61619d6415bd1643985142248c926482e160c5` (freeze record `research/freeze.json`) |
 | Config | `experiments/configs/EXP-001.json`, file SHA-256 `cb65e283c7d35d342e76abb9221e400a43b7603be2d1f4a510158f25531467e5`, canonical SHA-256 `5e747575d51c0b0253ffcc20ca22fdb1e0f3770c7421f1546f7ff8ebc93df422` |
 | Provenance revision | `cfc90d0dfa9aa9058ee780a8d8fe3abdc77343d3` (clean tree) |

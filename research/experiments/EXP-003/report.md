@@ -9,7 +9,7 @@
 | Date of run | 2026-11-24 (UTC 23:38:15 to 23:44:49); report written 2026-11-25 |
 | Report version | 1.1 (M4: exploratory addendum in section 9; no frozen result changed) |
 | Status | Partial. S1 and S2 complete: 1,440 of 1,440 runs, 0 invalid, 0 excluded. S3 not run: a documented failure under the M3 gate (owner decision D-019) |
-| Author | Mohamed Bechir Kefi (no affiliation). AI assistance: Claude (Anthropic) ran the frozen commands and drafted this report as a research and development assistant; it is not an author. |
+| Author | Mohamed Bechir Kefi, independent researcher. AI assistance: Claude (Anthropic) ran the frozen commands and drafted this report as a research and development assistant; it is not an author. |
 | Protocol | `research/experiments/EXP-003/protocol.md` v1.0, SHA-256 `7e37ac6ad46f9da93bd66763a7caf3f53e97a367b83d31e727e14f35ded628f6`; main protocol SHA-256 `81f24e9e4bc15434837208705f61619d6415bd1643985142248c926482e160c5` |
 | Config | `experiments/configs/EXP-003.json`, file SHA-256 `c22013c6a6799ef317890eab5784cdc4f2a5acad2cc8eafd35d5038a0ead9a1b`, canonical SHA-256 `91669781cf730391a79dcc6a36e3317a5c7f83202c2a603c3e393d563bc37489` |
 | Provenance revision | `cfc90d0dfa9aa9058ee780a8d8fe3abdc77343d3` (clean tree) |

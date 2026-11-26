@@ -16,37 +16,40 @@ No box above was ticked by an agent as of M6 (2026-11-25); nothing had to be unt
 
 ## Prepared for the owner (M6, 2026-11-25)
 
-The M6 session prepared a release candidate; nothing was pushed, tagged, released or published. For each box above, what to read:
+The M6 session prepared a release candidate. At M6 nothing had been pushed; since 2026-11-25 the repository is public at https://github.com/mohamedbechirkefi/match-fairness-exposure (M6 commit included). Nothing is tagged, released or published as a release. For each box above, what to read:
 
-1. **Authorship and affiliation metadata.** Read `research/paper/manuscript.md` section "Author and affiliation metadata" (line 10), the "Author" row of each `research/experiments/EXP-00N/report.md` (line 12), `CITATION.cff` (`authors`, line 11) and `pyproject.toml` (`authors`, line 9). The line reads "Mohamed Bechir Kefi. Independent researcher; no institutional affiliation", as recorded at the freeze (decision C3 in `research/freeze.json`); D-023 and D-028 leave its confirmation to the owner, and M6 did not change it.
+1. **Authorship and affiliation metadata.** Read `research/paper/manuscript.md` section "Author and affiliation metadata" (line 10), the "Author" row of each `research/experiments/EXP-00N/report.md` (line 12), `CITATION.cff` (`authors`, line 11) and `pyproject.toml` (`authors`, line 9). The manuscript line reads "Mohamed Bechir Kefi. Independent researcher; no institutional affiliation", the form the owner chose on 2026-11-26 (B3); the reports read "Mohamed Bechir Kefi, independent researcher" and `CITATION.cff` carries `affiliation: "Independent researcher"`.
 2. **Protocols frozen by the owner.** Read `research/freeze.json` and `research/decision_log.md` (the freeze entries and D-017 to D-019).
 3. **AI assistance disclosure.** Read manuscript section 11 and the author metadata paragraph, and the "Author" rows of the three reports.
 4. **Licence statement.** Read `README.md` section "Licence", `LICENSE`, `NOTICE.md` and `research/publication/dependency_licences.md` (flag 1).
 5. **Claims audit and reproducibility report.** Read `research/publication/claims_audit.md`, `research/publication/evidence_audit.md` (section 6, the M6 addendum) and `research/publication/reproducibility_report.md`.
 6. **Manuscript status.** Read the "Status" line at the top of `research/paper/manuscript.md`, and the PDF `research/paper/manuscript.pdf`.
 7. **Publication target, eligibility and fees.** No target has been chosen; nothing has been checked.
-8. **Approval to push or publish.** No approval is recorded; G-PUBLIC applies.
+8. **Approval to push or publish.** The owner approved the push of 2026-11-25 and, on 2026-11-26, the Cloudflare Workers hosting of the demo (B2, G-PUBLIC granted for that deploy). No approval of a release, tag, DOI, preprint or article posting is recorded.
 
-Open decisions for this repository, each the owner's:
+## Owner answers recorded (2026-11-26)
 
-- Whether the author line "Mohamed Bechir Kefi. Independent researcher; no institutional affiliation" is confirmed as it stands (open between the freeze decision C3 and D-023/D-028; listed as open in `owner-approvals-2026-11-25e.md`).
-- Whether the affiliation statement ("no institutional affiliation") is correct.
-- Which public repository URL and which demo URL will replace the placeholders, once publication is approved.
-- Whether the approved funding ("No funding was received") and competing-interest ("The author declares no competing interests") statements still hold at publication (approved as wording in D-024; the facts stay owner-only).
-- Whether and when to push, tag or publish anything (G-PUBLIC), and whether to re-add `date-released` to `CITATION.cff` at that time (removed in M6 under the coordinator default of `owner-approvals-2026-11-25e.md`).
-- Whether the `CITATION.cff` choices made in M6 are accepted: version "0.1.0-rc1" and the manuscript title as the citation title (D-031).
-- Whether the M6 correction of the Hitsch, Hortacsu and Ariely (2010) paraphrase in manuscript section 2 and the EXP-002 report is accepted (D-030).
-- Whether the 17 absolute home-directory paths that remain in `CLAUDE.md`, `research/feasibility.md`, `research/experiment_journal.jsonl` and the three confirmatory run logs may stay in a public repository (`research/publication/reproducibility_report.md`, section 5).
-- Whether the bundled GCC runtime (GPL-3.0-or-later with the GCC runtime exception) and libquadmath (LGPL-2.1-or-later) in the numpy and scipy wheels need any statement (`research/publication/dependency_licences.md`, flag 1).
-- Which publication target, if any, is chosen, after eligibility and fees are checked (paid venues are out of scope).
-- The owner's full-text review of the manuscript, which has not happened yet.
+Source: owner, 2026-11-26, decision sheet (`labs/_shared/owner-decision-sheet-2026-11-26.md`, answers in `labs/_shared/owner-approvals-2026-11-26.md`). Applied in decision D-032. No box above was ticked.
+
+- **A1.** The out-of-date "nothing pushed" sentences were corrected in this file, `release_checklist.md`, `reproducibility_report.md` and `README.md`. Append-only records (`progress.md`, `research/decision_log.md`, `research/experiment_journal.jsonl`) were not edited.
+- **B1.** Repository URL https://github.com/mohamedbechirkefi/match-fairness-exposure filled in the manuscript (section 10), README, `demo/README.md`, the demo footer, both articles, and `CITATION.cff` (`repository-code`).
+- **B2.** Demo URL https://match-fairness-exposure.kefimohamedbechir.workers.dev filled in the manuscript (section 10), README, `demo/README.md` and both articles; `demo/wrangler.jsonc` added (assets only, directory `./dist`); the deploy is the coordinator's.
+- **B3.** Author line: "Mohamed Bechir Kefi. Independent researcher; no institutional affiliation" in the manuscript (unchanged, the form the owner chose); "Mohamed Bechir Kefi, independent researcher" in the three reports, README, `demo/README.md`, the demo footer and `articles/medium.md`; `CITATION.cff` `affiliation: "Independent researcher"`. `pyproject.toml` lists the name only (the field has no affiliation). Frozen protocols not edited.
+- **B4.** Funding "No funding was received." and "The author declares no competing interests." were already in manuscript section 11; no "to be confirmed" mark existed.
+- **B6, B7.** Title already approved (D-024) and already the `CITATION.cff` title; the old-title comment in `CITATION.cff` removed.
+- **B8.** `0.1.0-rc1` and no `date-released` kept; the release step is recorded in `release_checklist.md`.
+- **B9.** Home paths scrubbed from `CLAUDE.md` and `research/feasibility.md`; the remaining 8 lines in 4 files are listed in `reproducibility_report.md`, section 6.
+- **B10, B11, B13.** PDFs kept; the truncated FIG-EXP-003-theta-forest labels and the external build tools are stated in the "Release notes (draft)" of `release_checklist.md`.
+- **B14.** The source labels (Gale and Shapley 1962 and Roth 1982, metadata level only) are accepted as stated in the manuscript.
+- **R-MATCH-1.** The M6 correction of the Hitsch, Hortacsu and Ariely (2010) paraphrase (D-030) is accepted.
+
+Still open, each the owner's:
+
+- **B15.** Read and approve `articles/medium.md` and `articles/linkedin.md` and their titles before any posting.
+- **B16.** The owner's full-text review of the manuscript, the supplementary file and the three reports, then the sign-off of the checklist above.
+- **B18.** Release: GitHub release with the PDFs attached, tag, and optionally a zero-cost DOI or preprint; publication target, eligibility and fees (box 7) not checked.
+- **Freezes.** None pending in this repository (EXP-001 to EXP-003 frozen 2026-11-24); any new experiment needs its own freeze.
 
 Remaining owner placeholders (file and line):
 
-- `research/paper/manuscript.md`, line 250: "public URL: to be added after the owner's approval" (also `research/paper/manuscript.tex`, the generated copy).
-- `README.md`, line 6: "Repository and demo URL: to be added after the owner's approval."
-- `demo/README.md`, line 30: "Repository and demo URL: to be added after the owner's approval."
-- `demo/src/App.tsx`, lines 58 and 59: author and affiliation "owner confirmation pending in the M6 review checklist"; "Repository and demo URL: to be added after the owner's approval." (also visible in `docs/demo.png`).
-- `articles/medium.md`, lines 46 and 47: repository URL and demo URL placeholders.
-- `articles/linkedin.md`, line 12: repository URL and demo URL placeholders.
-- The author line itself (item 1 above) awaits the owner's confirmation in the manuscript (line 10), the three reports (line 12), `CITATION.cff` (line 11) and `pyproject.toml` (line 9).
+- None in the text files. `docs/demo.png` (README screenshot, made at M5) shows only the overview and results section; it carries no footer text, so it needs no change.

@@ -1,7 +1,7 @@
 <!-- SPDX-License-Identifier: LicenseRef-MATCH-NC-Research-1.0 -->
 # Release checklist (M6)
 
-Status (2026-11-25, M6 session): release candidate prepared, awaiting the owner's review and G-PUBLIC. Ticked items were verified in the M6 session; the evidence follows each item. Nothing was pushed, tagged, released or published.
+Status (2026-11-25, M6 session): release candidate prepared, awaiting the owner's review and G-PUBLIC. Ticked items were verified in the M6 session; the evidence follows each item. Update of 2026-11-26: the repository was pushed and has been public at https://github.com/mohamedbechirkefi/match-fairness-exposure since 2026-11-25 (the M6 commit included); the demo is to be hosted at https://match-fairness-exposure.kefimohamedbechir.workers.dev (owner, 2026-11-26, decision sheet, B2). No tag, release, DOI or preprint exists.
 
 - [x] All registered experiments (EXP-001 to EXP-003) have a truthful standalone report, including failed or null ones. Evidence: `research/experiments/EXP-00N/report.md` and `report.pdf` (9, 8 and 8 pages), every page of each PDF inspected; EXP-003 reports S3 as not run (a documented failure, D-019); `research/experiment_registry.csv` lists no other experiment.
 - [x] Integrated manuscript complete; PDF built locally (pandoc to Typst, typst package) and visually inspected; `manuscript.tex` regenerated. Evidence: `python scripts/build_pdfs.py` wrote `research/paper/manuscript.pdf` (15 pages) and `supplementary.pdf` (8 pages); all pages rendered to PNG and inspected; seven rendering defects fixed in the builder and the source (`reproducibility_report.md`, section 3); `manuscript.tex` regenerated with pandoc 3.6.3.
@@ -14,3 +14,12 @@ Status (2026-11-25, M6 session): release candidate prepared, awaiting the owner'
 - [x] Large generated files not committed; regeneration scripts present. Evidence: `results/raw/` and `*.parquet` are git-ignored; the largest tracked file is `results/confirmatory/EXP-003/results.json` (2,283,116 bytes); every PDF is under 5 MB (largest 272,309 bytes); regeneration commands are in each `reproduction.md`, `scripts/build_pdfs.py` and `scripts/export_demo_data.py`.
 - [ ] Owner review completed (`author_review.md`).
 - [ ] No push or publication without the owner's explicit approval (G-PUBLIC).
+
+## Version and date at the release (owner, 2026-11-26, decision sheet, B8)
+
+Until the release, `CITATION.cff` keeps `version: "0.1.0-rc1"` and no `date-released`. At the release, the version becomes "0.1.0" and `date-released` is set to the release day. `pyproject.toml` stays at version "0.0.0" (changing it would change `uv.lock` and the recorded environments).
+
+## Release notes (draft)
+
+- Figures: FIG-EXP-003-theta-forest is kept as committed with its first two row labels truncated by the figure generator ("EXP EXP-001 base (T 40, theta 0."), because regenerating it would change checksummed result files; the full labels are in the report tables.
+- Build and check tools: the PDFs and checks use external tools that are not redistributed by this repository: pandoc (GPL-2.0-or-later), Google Chrome (accessibility check only), the fonts embedded in the PDFs (Libertinus Serif, OFL-1.1; DejaVu Sans Mono), the GCC runtime and libquadmath bundled in the numpy and scipy wheels, and lightningcss (MPL-2.0) in the demo build, as listed in `dependency_licences.md` where they are dependencies.

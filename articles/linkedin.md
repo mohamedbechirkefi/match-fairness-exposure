@@ -9,6 +9,6 @@ One defensible finding: after 40 rounds, popularity ranking raised mean welfare 
 
 Caveat: this is a stylized simulation with one market size; a registered check of the welfare definition was not run, and the manuscript is a preprint draft, not peer-reviewed.
 
-Manuscript, reports, code and an offline interactive page: repository URL to be added after the owner's approval; demo URL to be added after the owner's approval.
+Manuscript, reports, code and an offline interactive page: https://github.com/mohamedbechirkefi/match-fairness-exposure (interactive page: https://match-fairness-exposure.kefimohamedbechir.workers.dev).
 
 #simulation #matchingmarkets #reproducibility

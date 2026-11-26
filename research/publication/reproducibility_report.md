@@ -1,7 +1,7 @@
 <!-- SPDX-License-Identifier: LicenseRef-MATCH-NC-Research-1.0 -->
 # Reproducibility report (M6, 2026-11-25)
 
-Status at M0: nothing to reproduce yet. Completed in session M6 (release candidate) with the actual command outputs below. Nothing was pushed or published.
+Status at M0: nothing to reproduce yet. Completed in session M6 (release candidate) with the actual command outputs below. At M6 nothing had been pushed; the repository was pushed and has been public since 2026-11-25 (update of 2026-11-26).
 
 ## Checklist
 
@@ -127,3 +127,14 @@ The remaining 17 are kept on purpose: `CLAUDE.md` (4, the session rules that nam
 Dependency licences: `research/publication/dependency_licences.md`. One flag: the numpy and scipy wheels bundle the GCC runtime library (GPL-3.0-or-later WITH GCC-exception-3.1) and libquadmath (LGPL-2.1-or-later); the repository does not redistribute them.
 
 SPDX headers: every text file added since M0 carries the header except the owner's initial-commit files (`master_prompt.md`, `NOTICE.md`, `CLA.md`, `LICENSE_HISTORY.md`, `LICENSE`, `.gitignore`), which are not edited, and `demo/.npmrc`, which received the header in M6. The 47 generated SVG figures carry no header; `NOTICE.md` covers generated figures and images.
+
+## 6. Home-directory paths after the B9 scrub (2026-11-26)
+
+On the owner's answer (owner, 2026-11-26, decision sheet, B9) the absolute home-directory paths were removed from the editable files in a new commit, without rewriting history: `CLAUDE.md` (4 lines, now paths relative to the repository such as `../.tools/` and "the research root" in words) and `research/feasibility.md` (5 lines, now relative paths; the relative paths were checked to resolve with `ls`). The README, docs, scripts, source code and demo files had none left after M6.
+
+What remains (a grep of the tracked files for the home-directory prefix, node_modules excluded), 8 lines in 4 files, all kept on purpose:
+
+- `research/experiment_journal.jsonl` (5 lines): append-only journal; dated entries are never edited.
+- `results/confirmatory/logs/EXP-001.log`, `EXP-002.log`, `EXP-003.log` (1 line each): raw run logs of the frozen confirmatory runs, kept unchanged as raw results.
+
+`progress.md`, `research/decision_log.md`, the frozen protocols, the licence files and `master_prompt.md` contain no such path. Earlier versions of the scrubbed files remain in the public history; no history rewrite was made.

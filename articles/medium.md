@@ -3,6 +3,8 @@
 
 # Showing people the popular profiles first: a simulation where the answer depends on how long everyone searches
 
+*By Mohamed Bechir Kefi, independent researcher.*
+
 *Draft. A summary of an independent research manuscript (preprint draft, not peer-reviewed). Everything below comes from a simulation of synthetic participants; nothing describes real people, real dating apps or any real platform.*
 
 ## The question
@@ -43,7 +45,7 @@ This is a stylized model: Gaussian preferences, a fixed acceptability threshold,
 
 An offline interactive page shows the published estimates with their intervals, the fairness and satisfaction trade-off per market type, and a small sandbox where you can generate a 20-agent market and watch the matching graph under each policy. The sandbox runs a port of the research engine in your browser and is labelled as sandbox output.
 
-- Manuscript, experiment reports and code: repository URL to be added after the owner's approval.
-- Interactive page: demo URL to be added after the owner's approval.
+- Manuscript, experiment reports and code: https://github.com/mohamedbechirkefi/match-fairness-exposure
+- Interactive page: https://match-fairness-exposure.kefimohamedbechir.workers.dev
 
 *An AI system (Claude, Anthropic) assisted with code, analysis and drafting under the author's direction; it is not an author.*

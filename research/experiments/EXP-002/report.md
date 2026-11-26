@@ -9,7 +9,7 @@
 | Date of run | 2026-11-24 (UTC 23:33:51 to 23:34:06); report written 2026-11-25 |
 | Report version | 1.1 (M4: exploratory addendum in section 9; no frozen result changed) |
 | Status | Complete: full frozen matrix, 810 of 810 runs, 0 invalid, 0 excluded; the comparator is the EXP-001 RANDOM arm on the same instances (270 runs, 0 invalid) |
-| Author | Mohamed Bechir Kefi (no affiliation). AI assistance: Claude (Anthropic) ran the frozen commands and drafted this report as a research and development assistant; it is not an author. |
+| Author | Mohamed Bechir Kefi, independent researcher. AI assistance: Claude (Anthropic) ran the frozen commands and drafted this report as a research and development assistant; it is not an author. |
 | Protocol | `research/experiments/EXP-002/protocol.md` v1.0, SHA-256 `30692ad843399f50c1a1141f71b16e6fb704b2669d8ab5dd1e586de67485961c`; main protocol SHA-256 `81f24e9e4bc15434837208705f61619d6415bd1643985142248c926482e160c5` |
 | Config | `experiments/configs/EXP-002.json`, file SHA-256 `105c89cc03e8d613cdc593e79775116f0bb38bfa0d55802768c6ac2823c77ac3`, canonical SHA-256 `2bd7ee667eaadef716496cff55bf2a343743f0984e4c1f44552279dea1a540b7` |
 | Provenance revision | `cfc90d0dfa9aa9058ee780a8d8fe3abdc77343d3` (clean tree) |

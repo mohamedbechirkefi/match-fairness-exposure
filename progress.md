@@ -315,3 +315,33 @@ Listed in `research/publication/author_review.md`, section "Prepared for the own
 
 ### Next action
 Owner: review `research/publication/author_review.md` and the PDFs. M6 is "release candidate prepared"; it is not done until the owner signs off. No push without G-PUBLIC.
+
+## 2026-11-26: owner answers applied (decision sheet)
+
+**Starting state:** commit c21e397, working tree clean (`git status --short` empty). Authority: owner, 2026-11-26, decision sheet (`labs/_shared/owner-decision-sheet-2026-11-26.md`, `labs/_shared/owner-approvals-2026-11-26.md`), coordinator brief `OWNER-ANSWERS-brief.md`. Wording and configuration only.
+
+### Decisions
+- D-032: owner answers A1, B1 to B4, B6 to B11, B13, B14 and R-MATCH-1 applied (details in the decision log).
+
+### Changes
+- Repository URL https://github.com/mohamedbechirkefi/match-fairness-exposure and demo URL https://match-fairness-exposure.kefimohamedbechir.workers.dev: manuscript section 10 (and regenerated `manuscript.tex`), README, `demo/README.md` (new "Hosting" section: Cloudflare Workers static assets, free plan, deployed by the coordinator), demo footer (`demo/src/App.tsx`, repository link), both articles, `CITATION.cff` (`repository-code`).
+- `demo/wrangler.jsonc` added: name match-fairness-exposure, compatibility date 2026-11-01, assets directory `./dist` (the folder `vite build` writes).
+- Author line: reports' "Author" rows, README, demo README and footer, `articles/medium.md` byline read "Mohamed Bechir Kefi, independent researcher"; the manuscript keeps "Mohamed Bechir Kefi. Independent researcher; no institutional affiliation"; `CITATION.cff` gains `affiliation: "Independent researcher"`, its abstract says "independent researcher", and the old M6 title comment is replaced by a B8 comment.
+- Out-of-date "nothing pushed" sentences corrected in README, `author_review.md`, `release_checklist.md`, `reproducibility_report.md`.
+- Home paths: `CLAUDE.md` (4 lines) and `research/feasibility.md` (5 lines) now use paths relative to the repository; `ls ../.tools/py/bin/uv ../.tools/pandoc ../../helix/.tools/node/bin/node` and `df -h ..` resolve from the repository root. Remaining: 8 lines in 4 files (`research/experiment_journal.jsonl` 5, the three confirmatory run logs 1 each), listed in `reproducibility_report.md` section 6.
+- `release_checklist.md`: B8 release-step section and "Release notes (draft)" (truncated FIG-EXP-003-theta-forest labels; external build tools not redistributed).
+- `author_review.md`: section "Owner answers recorded (2026-11-26)", open items B15, B16, B18; placeholder list updated (none left in text files). No box ticked.
+
+### Commands and actual outputs
+- `.venv/bin/python scripts/build_pdfs.py --typ-dir <scratch>/typ`: manuscript.pdf 246076 bytes (15 pages), supplementary.pdf 155539, EXP-001 272087 (9), EXP-002 218853 (8), EXP-003 216868 (8). `supplementary.pdf` restored with `git checkout` (source unchanged). Page counts unchanged.
+- pypdf text search: author line or statements on manuscript pages 1, 14, 15 and report page 1 each. Rendered to PNG at 80 ppi from the build's Typst files and inspected: manuscript pages 1 (author block), 14 (section 10 with both URLs), 15 (section 11 statements); page 1 of each report (Author row). No overflow or defect seen.
+- `pandoc manuscript.md -s -t latex`: `manuscript.tex` regenerated, two header lines kept; the diff is section 10 only.
+- First `pytest -q`: 1 failed, 115 passed (`test_committed_results_json_matches_a_fresh_export`: the manuscript input hash changed). `python scripts/export_demo_data.py`: "wrote demo/public/data/results.json (34316 bytes)", one line changed (an input SHA-256). Then `pytest -q`: 116 passed in 2.47 s.
+- `scripts/check_links.py`: PASS, 48 relative links in 48 Markdown files, 0 broken. `scripts/check_references.py`: PASS, 36 citations, 8 bib entries, 0 unresolved, 0 uncited. `evidence_audit.py`: 0 FAIL.
+- Demo: `npm ci --prefer-offline` added 53 packages; `npm test` Test Files 2 passed, Tests 26 passed; `npm run build` built (index JS 252.15 kB); `node tools/a11y_check.mjs dist`: 9 PASS lines (keyboard 25 of 25, one more element: the footer repository link), `A11Y-CHECK PASS`. The built page loads only `./assets/` files; the only absolute URLs in the bundle are XML namespaces, React's error-page text and the footer link.
+
+### Deviations and incidents
+- None. No result, analysis, figure, config, seed, frozen protocol, protocol hash or checksummed output changed. Nothing pushed or deployed.
+
+### Next action
+Owner: B15 (articles), B16 (full-text review and sign-off), B18 (release). Coordinator: push and the Cloudflare deploy of `demo/dist`.

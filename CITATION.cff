@@ -1,8 +1,7 @@
 # SPDX-License-Identifier: LicenseRef-MATCH-NC-Research-1.0
 # Licence: MATCH Source-Available Non-Commercial Research License v1.0 (custom licence, see LICENSE).
 # It is not an SPDX-listed licence, so no `license` field is given.
-# M6 (2026-11-25): release candidate 0.1.0-rc1; date-released removed until a release exists
-# (owner-approvals-2026-11-25e, coordinator default); title aligned with the manuscript.
+# Release candidate 0.1.0-rc1; date-released is added at the release (owner, 2026-11-26, decision sheet, B8).
 cff-version: 1.2.0
 message: "If you use this work, please cite it as below."
 type: software
@@ -10,8 +9,10 @@ title: "Popularity ranking, exposure balancing and the length of search: a pre-r
 authors:
   - family-names: "Kefi"
     given-names: "Mohamed Bechir"
+    affiliation: "Independent researcher"
+repository-code: "https://github.com/mohamedbechirkefi/match-fairness-exposure"
 version: "0.1.0-rc1"
-abstract: "Independent research project on how ranking and exposure policies alter match outcomes in synthetic two-sided markets. Status: independent research manuscript, preprint draft, not peer-reviewed; protocols frozen on 2026-11-24 (owner-approved); confirmatory experiments EXP-001 to EXP-003 run (EXP-003 S3 not run, a documented failure); all results are synthetic simulations. Sole author, no affiliation; an AI system was used as a research and development assistant and is not an author."
+abstract: "Independent research project on how ranking and exposure policies alter match outcomes in synthetic two-sided markets. Status: independent research manuscript, preprint draft, not peer-reviewed; protocols frozen on 2026-11-24 (owner-approved); confirmatory experiments EXP-001 to EXP-003 run (EXP-003 S3 not run, a documented failure); all results are synthetic simulations. Sole author, independent researcher; an AI system was used as a research and development assistant and is not an author."
 keywords:
   - matching markets
   - stable matching

@@ -55,8 +55,8 @@ export function App() {
             real platform.
           </p>
           <p>
-            Author and affiliation: as recorded in the manuscript; owner confirmation pending in the M6 review
-            checklist. Repository and demo URL: to be added after the owner's approval.
+            Author: Mohamed Bechir Kefi, independent researcher. Repository:{" "}
+            <a href="https://github.com/mohamedbechirkefi/match-fairness-exposure">github.com/mohamedbechirkefi/match-fairness-exposure</a>.
           </p>
         </div>
       </footer>

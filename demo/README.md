@@ -27,4 +27,8 @@ Node 22 (the exact version is recorded in `research/feasibility.md`; in the deve
     npm test                                   # vitest: loader and engine port
     node tools/a11y_check.mjs dist --screenshots <dir>   # offline and accessibility check
 
-Repository and demo URL: to be added after the owner's approval.
+## Hosting
+
+The built page (`demo/dist/`) is hosted at https://match-fairness-exposure.kefimohamedbechir.workers.dev as Cloudflare Workers static assets on the free plan, configured by `demo/wrangler.jsonc` (assets only, no Worker script). It is deployed by the coordinator, not by any script of this repository. Repository: https://github.com/mohamedbechirkefi/match-fairness-exposure.
+
+Author: Mohamed Bechir Kefi, independent researcher.

@@ -36,9 +36,9 @@ At the start of each session, state the current milestone and the next bounded t
 - No confirmatory experiment before the owner freezes its protocol. Exploratory runs are allowed and must be labelled exploratory everywhere they appear.
 
 ### Scope
-- Work only inside `/Users/bechir/research/labs/match-fairness-exposure/`.
-- Read-only use of the shared tools: `/Users/bechir/research/labs/.tools/py/bin/` (uv, python with typst, pypdf, pillow), `/Users/bechir/research/labs/.tools/pandoc`, and Node at `/Users/bechir/research/helix/.tools/node/bin` (never modify that folder).
-- Do not touch any other folder under `/Users/bechir/research` (hive, helix, cogkt, trading, the other labs).
+- Work only inside this repository (`match-fairness-exposure/`, in the `labs/` folder of the research root). Paths below are relative to the repository root.
+- Read-only use of the shared tools: `../.tools/py/bin/` (uv, python with typst, pypdf, pillow), `../.tools/pandoc`, and Node at `../../helix/.tools/node/bin` (never modify that folder).
+- Do not touch any other folder under the research root (hive, helix, cogkt, trading, the other labs).
 - Never kill processes you did not start. Never delete anything you did not create in the current session.
 
 ### Truthfulness
@@ -57,7 +57,7 @@ At the start of each session, state the current milestone and the next bounded t
 
 ## 4. Toolchain (zero cost, decision D-002)
 
-- Python 3.12.1 (`/usr/local/bin/python3`), dependencies locked in `uv.lock` via `/Users/bechir/research/labs/.tools/py/bin/uv lock` (`exclude-newer` set two weeks before the lock date).
+- Python 3.12.1 (`/usr/local/bin/python3`), dependencies locked in `uv.lock` via `../.tools/py/bin/uv lock` (`exclude-newer` set two weeks before the lock date).
 - No TeX distribution. PDFs: Markdown, then `pandoc -t typst`, then the `typst` Python package. `manuscript.tex` is generated from Markdown with pandoc and is not compiled locally.
 
 ## 5. Session end
