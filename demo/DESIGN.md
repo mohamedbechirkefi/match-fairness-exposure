@@ -25,9 +25,11 @@ Arm colours in charts keep shape coding (circle, triangle, square, diamond) so c
 ## Type
 
 - **Young Serif** (display, 400): a soft, heavy old-style serif that reads like the index printed in the corner of a playing card. Headings, the wordmark, the hero question. Never below 20 px.
-- **Libre Franklin** (variable, 400 to 650): a Franklin Gothic revival, the face of tickets and printed forms. Body, controls, tables, chart labels, with tabular figures (`tnum`) for every number.
+- **Outfit** (variable, 400 to 650): a geometric sans with round bowls and flat terminals, like the pips and indices of a modern card deck; its circles echo the side-A pip and it sits quietly beside the soft heavy serif. Body, controls, tables, chart labels, with tabular figures (`tnum`) for every number.
 
-Scale (1.25 ratio from 17 px body): 13.6 / 17 / 21 / 26.5 / 33 / 52 (hero, fluid). Body line length capped at 68 characters; serif headings at 22 characters per line or fewer in the hero.
+Outfit replaced Libre Franklin on 2026-11-26 (owner request: no two lab demos share a typeface). Its x-height is lower (0.46 em against about 0.53), so the body went from 17 to 18 px with line-height 1.58, chips, ticks and the quality axis from 0.78 to 0.8 rem up to 0.82 to 0.84 rem, chart axis text to 12.5 and 13.5 px, and tables to 15.5 px; headings and the wordmark are unchanged.
+
+Scale (about 1.25 ratio from an 18 px body): 13.4 / 18 / 21 / 26.5 / 33 / 46 (hero, fluid). Body line length capped at 68 characters; serif headings at 22 characters per line or fewer in the hero.
 
 ## Layout
 
@@ -78,6 +80,6 @@ The card table: the spotlight that pools on the same five cards under popularity
 - The old page had an uppercase tracked kicker above the title. Removed; the study and status move into the byline under the answer.
 - Numbering the sections 01 to 06 was considered and dropped: they are not a sequence.
 - Card-shaped panels everywhere would be the SaaS-card kit. Only the hero uses cards; evidence panels use a status spine and a flat surface, and radii differ by role (cards 10 px, panels 6 px, chips 999 px).
-- No mono data labels: numbers use Libre Franklin with tabular figures.
+- No mono data labels: numbers use Outfit with tabular figures.
 - No fade-up on every section: the only scroll-triggered motion is the chart reveal.
 - Distinct from the other labs: no departure board (FARE), no ballots (PARADOX), no network map (VIRAL), no petri dish (EVOLVE); the deck-and-spotlight metaphor belongs to MATCH alone.

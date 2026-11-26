@@ -1,14 +1,14 @@
 /* SPDX-License-Identifier: LicenseRef-MATCH-NC-Research-1.0 */
 /* MATCH: a card table under a reading lamp. Two decks in two inks (cobalt for
    side A, mulberry for side B) on a cool card stock, a gold spotlight for
-   attention. Young Serif for display, Libre Franklin for text and figures.
+   attention. Young Serif for display, Outfit for text and figures.
    Light scheme only (see DESIGN.md). Fonts are bundled; nothing is fetched. */
 @font-face {
-  font-family: "Libre Franklin Variable";
+  font-family: "Outfit Variable";
   font-style: normal;
   font-display: swap;
   font-weight: 100 900;
-  src: url("../node_modules/@fontsource-variable/libre-franklin/files/libre-franklin-latin-wght-normal.woff2") format("woff2-variations");
+  src: url("../node_modules/@fontsource-variable/outfit/files/outfit-latin-wght-normal.woff2") format("woff2-variations");
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
@@ -22,7 +22,7 @@
   --measured-bg: #e1efe9; --measured-fg: #1d5244; --assume-bg: #e4e9f6; --assume-fg: #2b3f63;
   --sandbox-bg: #f6e3ec; --sandbox-fg: #6e1f4b; --error-bg: #fdecec; --error-fg: #8a1111;
   --display: "Young Serif", "Iowan Old Style", Georgia, serif;
-  --text: "Libre Franklin Variable", "Franklin Gothic Book", "Helvetica Neue", sans-serif;
+  --text: "Outfit Variable", "Avenir Next", "Helvetica Neue", sans-serif;
   --ease-out: cubic-bezier(0.23, 1, 0.32, 1);
   --ease-in-out: cubic-bezier(0.77, 0, 0.175, 1);
   color-scheme: light;
@@ -33,7 +33,7 @@ html { -webkit-text-size-adjust: 100%; scroll-padding-top: 72px; }
 @media (prefers-reduced-motion: no-preference) { html { scroll-behavior: smooth; } }
 body {
   margin: 0; background: var(--stock); color: var(--ink);
-  font: 400 17px/1.6 var(--text); font-feature-settings: "tnum" 1, "lnum" 1;
+  font: 400 18px/1.58 var(--text); font-feature-settings: "tnum" 1, "lnum" 1;
   text-rendering: optimizeLegibility;
 }
 .wrap { max-width: 72rem; margin: 0 auto; padding: 0 16px; }
@@ -89,7 +89,7 @@ nav a { display: inline-flex; align-items: center; min-height: 44px; padding: 0 
               border: 1px solid var(--felt-line); }
 .row-label { font-size: 0.85rem; font-weight: 600; color: var(--muted); }
 .row-label-a { color: var(--cobalt); } .row-label-b { color: var(--mulberry); }
-.quality-axis { font-size: 0.8rem; color: var(--muted); padding-top: 0.15rem; }
+.quality-axis { font-size: 0.84rem; color: var(--muted); padding-top: 0.15rem; }
 .deck-row { position: relative; display: grid; grid-template-columns: repeat(9, minmax(0, 1fr)); gap: clamp(4px, 1.1vw, 10px); }
 .slot { position: relative; animation: 560ms var(--ease-out) backwards; }
 .slot-a { animation-name: deal-a; } .slot-b { animation-name: deal-b; }
@@ -149,7 +149,7 @@ main > .wrap > section, main section[id]:not(.hero) { padding: clamp(2.5rem, 6vw
 .label-row { margin: 0 0 0.4rem; }
 
 /* status chips */
-.badge, .tag { display: inline-block; border-radius: 999px; padding: 0.05rem 0.55rem; font-size: 0.8rem; font-weight: 600; line-height: 1.5; }
+.badge, .tag { display: inline-block; border-radius: 999px; padding: 0.05rem 0.55rem; font-size: 0.84rem; font-weight: 600; line-height: 1.5; }
 .badge-status { background: var(--ink); color: var(--stock); }
 .badge-measured { background: var(--measured-bg); color: var(--measured-fg); }
 .badge-exploratory, .tag-exploratory { background: var(--expl-bg); color: var(--expl-fg); }
@@ -174,7 +174,7 @@ main > .wrap > section, main section[id]:not(.hero) { padding: clamp(2.5rem, 6vw
 
 /* tables */
 .table-scroll { overflow-x: auto; max-width: 100%; }
-table { border-collapse: collapse; width: 100%; font-variant-numeric: tabular-nums; font-size: 0.95rem; }
+table { border-collapse: collapse; width: 100%; font-variant-numeric: tabular-nums; font-size: 0.97rem; }
 caption { text-align: left; padding: 0.3rem 0; }
 th, td { text-align: left; padding: 0.45rem 0.65rem; border-bottom: 1px solid var(--line); vertical-align: top; }
 thead th { font-weight: 600; border-bottom: 1.5px solid var(--ink); }
@@ -204,7 +204,7 @@ dl.assumptions dt { font-weight: 600; } dl.assumptions dd { margin: 0; }
 .forest-notrun { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; font-size: 0.85rem; font-weight: 600; }
 .forest-axis { border-bottom: none; min-height: 1.6rem; }
 .forest-plot.axis { height: 1.4rem; border-top: 1px solid var(--muted); }
-.forest-tick { position: absolute; top: 0.1rem; transform: translateX(-50%); font-size: 0.78rem; color: var(--muted); white-space: nowrap; }
+.forest-tick { position: absolute; top: 0.1rem; transform: translateX(-50%); font-size: 0.82rem; color: var(--muted); white-space: nowrap; }
 .forest-tick.end { transform: translateX(-100%); }
 .forest-tick.start { transform: none; }
 /* reveal once in view: bars draw from their centre, dots settle */
@@ -233,8 +233,8 @@ dl.assumptions dt { font-weight: 600; } dl.assumptions dd { margin: 0; }
 .chart svg { display: block; overflow: visible; }
 .chart text { font-family: var(--text); }
 .grid { stroke: var(--line); stroke-width: 1; }
-.axis-text { fill: var(--muted); font-size: 12px; }
-.axis-label { fill: var(--muted); font-size: 13px; }
+.axis-text { fill: var(--muted); font-size: 12.5px; }
+.axis-label { fill: var(--muted); font-size: 13.5px; }
 .mk { stroke: var(--surface); stroke-width: 1.5; }
 .mk-RANDOM { fill: var(--arm-random); } .mk-POPULARITY { fill: var(--arm-pop); }
 .mk-EXPOSURE_BALANCED { fill: var(--arm-exb); } .mk-DA_A { fill: var(--arm-da); }

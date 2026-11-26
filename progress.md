@@ -372,3 +372,32 @@ Brief: `labs/_shared/DEMO-BRAND-brief.md` (each demo its own brand, motion and p
 
 ### Next action
 Coordinator: push and redeploy `demo/dist`.
+
+## 2026-11-26: unique typeface pair across the labs (owner request)
+
+Authority: owner request of 2026-11-26 ("do not match fonts, I want each website to be unique and branded"), coordinator's FONT-UNIQUE brief (MATCH row: Young Serif kept, text face changes to Outfit). Bounded task: `demo/` only. No number, data, fixture, test expectation or accessible name changed. Nothing pushed or deployed.
+
+### Starting state
+
+`git status`: clean at `141b5b7`. The text face, Libre Franklin, was shared with another lab demo.
+
+### Decisions
+
+- Text face: `@fontsource-variable/outfit` 5.3.0 (wght 100 to 900, the page uses 400 to 650), OFL 1.1, installed with `npm_config_before=2026-11-12`; `@fontsource-variable/libre-franklin` uninstalled. Outfit has `tnum`, so numbers stay in the text face with tabular figures.
+- Scale re-tuned for Outfit's lower x-height (0.46 em): body 17 to 18 px (line-height 1.58), chips, ticks and the quality axis 0.78 to 0.8 rem up to 0.82 to 0.84 rem, chart axis text 12.5 and 13.5 px, tables 0.97 rem. Headings unchanged.
+- Logo: unchanged (the wordmark is drawn from Young Serif, which stays). `og.png` re-rendered with Outfit for its body lines; favicon unchanged.
+
+### Commands and actual outputs
+
+```
+$ (demo) npm test                          -> Tests 26 passed (26)
+$ (demo) npm run build                     -> dist 527,527 bytes; fonts 27.0 kB (Young Serif) + 32.3 kB (Outfit)
+$ (demo) node tools/a11y_check.mjs dist    -> A11Y-CHECK PASS
+$ .venv/bin/python -m pytest -q tests/test_demo_export.py -> 9 passed
+```
+
+Screenshots: CDP real-time capture, desktop 1440 and phone 390, served on port 5248 (stopped afterwards). Hero, forest plots, evidence tables, trade-off chart and sandbox checked: no wrapping, overflow or clipped label introduced.
+
+### Risks and next action
+
+None new. Deploy is the coordinator's step.
