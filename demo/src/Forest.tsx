@@ -2,6 +2,8 @@
 // Hand-written forest chart in HTML and CSS (no chart library). Every row has the
 // same height and the same text weight whether it is measured, exploratory or not
 // run, so a registered analysis that was not run is as visible as a positive one.
+// Dots and interval bars draw from their place once when the chart scrolls into view.
+import { useRevealOnce } from "./reveal";
 
 export type RowKind = "measured" | "exploratory" | "not_run";
 
@@ -40,14 +42,15 @@ export function Forest({ title, rows, unit, caption }: { title: string; rows: Fo
   lo = Math.min(lo, ticks[0]);
   hi = Math.max(hi, ticks[ticks.length - 1]);
   const pct = (x: number) => `${((x - lo) / (hi - lo)) * 100}%`;
+  const [ref, reveal] = useRevealOnce<HTMLElement>();
   return (
-    <figure className="forest">
+    <figure ref={ref} className={`forest${reveal}`}>
       <figcaption>
         <strong>{title}</strong> <span className="meta">{caption}</span>
       </figcaption>
       <div className="forest-rows" role="list">
-        {rows.map((r) => (
-          <div key={r.key} className={`forest-row kind-${r.kind}`} role="listitem">
+        {rows.map((r, i) => (
+          <div key={r.key} style={{ ["--row" as string]: i }} className={`forest-row kind-${r.kind}`} role="listitem">
             <div className="forest-label">
               {r.label}
               {r.kind === "exploratory" && <span className="tag tag-exploratory">exploratory</span>}

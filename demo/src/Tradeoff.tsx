@@ -92,13 +92,18 @@ export function TradeoffChart({ points, title, desc, xLabel, yLabel }: { points:
         ))}
         <text className="axis-label" x={(m.l + width - m.r) / 2} y={height - 8} textAnchor="middle">{xLabel}</text>
         <text className="axis-label" transform={`translate(14 ${(m.t + height - m.b) / 2}) rotate(-90)`} textAnchor="middle">{yLabel}</text>
-        {points.map((p) => (
-          <g key={p.key}>
-            {p.xErr != null && <line className={`err err-${p.arm}`} x1={sx(p.x - p.xErr)} x2={sx(p.x + p.xErr)} y1={sy(p.y)} y2={sy(p.y)} />}
-            {p.yErr != null && <line className={`err err-${p.arm}`} x1={sx(p.x)} x2={sx(p.x)} y1={sy(p.y - p.yErr)} y2={sy(p.y + p.yErr)} />}
-            <Marker arm={p.arm} cx={sx(p.x)} cy={sy(p.y)} />
-          </g>
-        ))}
+        {points.map((p) => {
+          // Each point is drawn at the origin of its own group and moved with a
+          // transform, so a change of design cell glides instead of jumping.
+          const cx = sx(p.x), cy = sy(p.y);
+          return (
+            <g key={p.key} className="pt" style={{ transform: `translate(${cx}px, ${cy}px)` }}>
+              {p.xErr != null && <line className={`err err-${p.arm}`} x1={sx(p.x - p.xErr) - cx} x2={sx(p.x + p.xErr) - cx} y1={0} y2={0} />}
+              {p.yErr != null && <line className={`err err-${p.arm}`} x1={0} x2={0} y1={sy(p.y - p.yErr) - cy} y2={sy(p.y + p.yErr) - cy} />}
+              <Marker arm={p.arm} cx={0} cy={0} />
+            </g>
+          );
+        })}
       </svg>
     </div>
   );

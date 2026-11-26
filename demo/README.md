@@ -27,6 +27,19 @@ Node 22 (the exact version is recorded in `research/feasibility.md`; in the deve
     npm test                                   # vitest: loader and engine port
     node tools/a11y_check.mjs dist --screenshots <dir>   # offline and accessibility check
 
+## Design and brand
+
+The page has its own identity (owner request of 2026-11-26), planned in `DESIGN.md`: a card table with two decks (side A cobalt, side B mulberry) and a gold spotlight, Young Serif for display and Libre Franklin for text. The hero is a labelled illustration of the slate mechanism, not study data. Brand files are in `public/brand/`: `mark.svg`, `mark-mono.svg`, `mark-dark.svg`, `lockup.svg`, `lockup-mono.svg`, `lockup-dark.svg`, `favicon.svg`, `favicon-32.png` and the Open Graph image `og.png` (1200 by 630). The wordmark is Young Serif converted to outlines.
+
+## Third-party notes
+
+| Component | Version | Licence | Use |
+| --- | --- | --- | --- |
+| Young Serif (`@fontsource/young-serif`) | 5.3.0 | SIL Open Font License 1.1 | Display face, wordmark outlines; latin 400 only |
+| Libre Franklin (`@fontsource-variable/libre-franklin`) | 5.3.0 | SIL Open Font License 1.1 | Text face; latin variable weight file only |
+
+Both are installed from npm with exact versions (resolved with `npm_config_before=2026-11-12`), bundled into `dist/` and served from the page's own origin.
+
 ## Hosting
 
 The built page (`demo/dist/`) is hosted at https://match-fairness-exposure.kefimohamedbechir.workers.dev as Cloudflare Workers static assets on the free plan, configured by `demo/wrangler.jsonc` (assets only, no Worker script). It is deployed by the coordinator, not by any script of this repository. Repository: https://github.com/mohamedbechirkefi/match-fairness-exposure.

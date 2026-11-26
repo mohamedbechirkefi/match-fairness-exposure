@@ -61,7 +61,8 @@ export function Sandbox() {
   return (
     <section id="sandbox" aria-labelledby="h-sandbox" className="sandbox">
       <p className="label-row"><span className="badge badge-sandbox">Sandbox output</span></p>
-      <h2 id="h-sandbox">Sandbox: population and matching graph</h2>
+      <h2 id="h-sandbox">Sandbox: deal your own market</h2>
+      <p className="lede">A population and matching graph for a small synthetic market, computed in your browser.</p>
       <p className="note">
         Sandbox output is produced in your browser from your settings. It is not a research result and is not
         comparable to the published numbers above. The engine logic (market, slate policies, deferred acceptance,
@@ -120,7 +121,9 @@ export function Sandbox() {
           <button type="button" onClick={cancel} disabled={!running}>Cancel</button>
         </div>
       </form>
-      <p aria-live="polite" className="sandbox-out">{out}</p>
+      <p aria-live="polite" className="sandbox-out">
+        <span key={out} className="out-text">{out}</span>
+      </p>
 
       {done && shown && (
         <>

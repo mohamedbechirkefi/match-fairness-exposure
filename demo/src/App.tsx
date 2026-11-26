@@ -1,5 +1,7 @@
 // SPDX-License-Identifier: LicenseRef-MATCH-NC-Research-1.0
 import { useEffect, useState } from "react";
+import { Mark, Wordmark } from "./Brand";
+import { CardTable } from "./CardTable";
 import { Forest, type ForestRow } from "./Forest";
 import { fmtEstimate, fmtInterval, loadResults, ResultsError, type Experiment, type Results } from "./results";
 import { Sandbox } from "./Sandbox";
@@ -21,43 +23,89 @@ export function App() {
   return (
     <>
       <a className="skip" href="#main">Skip to content</a>
-      <header className="site">
-        <div className="wrap">
-          <p className="kicker">MATCH, a pre-registered simulation study of synthetic two-sided markets</p>
-          <h1>How do ranking and exposure policies alter match outcomes under heterogeneous preferences?</h1>
+      <header className="topbar">
+        <div className="wrap topbar-inner">
+          <a className="brand" href="#top" aria-label="Match, back to the top">
+            <Mark size={30} />
+            <Wordmark height={21} />
+          </a>
           <nav aria-label="Sections">
-            <a href="#overview">Overview</a>
-            <a href="#results">Results</a>
+            <a href="#key">Result</a>
+            <a href="#results">Evidence</a>
             <a href="#tradeoff">Trade-off</a>
-            <a href="#assumptions">Assumptions</a>
-            <a href="#method">Method and limitations</a>
             <a href="#sandbox">Sandbox</a>
+            <a href="#method">Method</a>
           </nav>
         </div>
       </header>
-      <main id="main" className="wrap">
-        {state.kind === "loading" && <p role="status">Loading the published results.</p>}
-        {state.kind === "error" && (
-          <div role="alert" className="panel error">
-            <h2>Results unavailable</h2>
-            <p>The published results file failed validation, so no numbers are shown.</p>
-            <p><code>{state.message}</code></p>
+      <main id="main">
+        <section id="top" className="hero" aria-labelledby="h-hero">
+          <div className="wrap hero-grid">
+            <div className="hero-copy">
+              <h1 id="h-hero">How do ranking and exposure policies alter match outcomes under heterogeneous preferences?</h1>
+              <p className="answer">
+                Ranking by popularity raised mean welfare at the pre-registered horizon of 40 rounds, but the sign
+                reversed at 10 and 20 rounds, so the result is not robust to the horizon. Popularity ranking under an
+                exposure cap was equivalent to random exposure within a margin of 0.01.
+              </p>
+              <p className="byline">A pre-registered simulation of synthetic two-sided markets by Mohamed Bechir Kefi, independent researcher. Preprint draft, not peer-reviewed; every participant is simulated.</p>
+              <div className="hero-links">
+                <a className="btn btn-primary" href="#key">See the result</a>
+                <a className="btn" href="#sandbox">Open the sandbox</a>
+              </div>
+            </div>
+            <CardTable />
           </div>
-        )}
-        {state.kind === "ready" && <Published r={state.results} />}
-        <Sandbox />
+        </section>
+        <div className="wrap">
+          {state.kind === "loading" && <p role="status">Loading the published results.</p>}
+          {state.kind === "error" && (
+            <div role="alert" className="panel error">
+              <h2>Results unavailable</h2>
+              <p>The published results file failed validation, so no numbers are shown.</p>
+              <p><code>{state.message}</code></p>
+            </div>
+          )}
+          {state.kind === "ready" && <Published r={state.results} />}
+          <Sandbox />
+          <section id="reproduce" aria-labelledby="h-reproduce">
+            <h2 id="h-reproduce">Reproduce</h2>
+            <p>
+              Everything on this page is rebuilt from the repository. The study runs in Python with locked
+              dependencies; the page reads one exported file and checks it before showing any number.
+            </p>
+            <pre className="cmd"><code>{`uv sync --frozen
+uv run --frozen pytest -q
+uv run --frozen python -m match_lab smoke   # exploratory
+python scripts/export_demo_data.py
+cd demo && npm ci && npm test && npm run build`}</code></pre>
+          </section>
+        </div>
       </main>
       <footer className="site">
-        <div className="wrap">
-          <p>
-            Runs offline after the first load. No data about visitors is collected, stored or sent anywhere. Every
-            participant on this page is simulated; nothing here describes real people, protected attributes or any
-            real platform.
-          </p>
-          <p>
-            Author: Mohamed Bechir Kefi, independent researcher. Repository:{" "}
-            <a href="https://github.com/mohamedbechirkefi/match-fairness-exposure">github.com/mohamedbechirkefi/match-fairness-exposure</a>.
-          </p>
+        <div className="wrap footer-grid">
+          <div>
+            <img className="footer-lockup" src="brand/lockup.svg" alt="Match" width="150" height="87" />
+            <p>Author: Mohamed Bechir Kefi, independent researcher.</p>
+          </div>
+          <ul className="footer-links">
+            <li><a href="https://github.com/mohamedbechirkefi/match-fairness-exposure">Repository on GitHub</a></li>
+            <li><a href="https://github.com/mohamedbechirkefi/match-fairness-exposure/blob/main/research/paper/manuscript.md">Manuscript (preprint draft)</a></li>
+            <li><a href="https://labs.kefimohamedbechir.workers.dev">All lab studies</a></li>
+          </ul>
+          <div className="footer-notes">
+            <p>
+              Runs offline after the first load. No data about visitors is collected, stored or sent anywhere. Every
+              participant on this page is simulated; nothing here describes real people, protected attributes or any
+              real platform.
+            </p>
+            <p>
+              Licence: MATCH Source-Available Non-Commercial Research License v1.0, not an OSI-approved open-source
+              licence. AI assistance: an AI system (Claude, Anthropic) was used as a research and development
+              assistant for code, analysis and drafting under the author's direction; it is not an author.
+            </p>
+            <p>Typefaces: Young Serif and Libre Franklin, both under the SIL Open Font License 1.1, bundled with this page.</p>
+          </div>
         </div>
       </footer>
     </>
@@ -99,33 +147,12 @@ function Published({ r }: { r: Results }) {
   const exp3 = r.experiments.find((e) => e.id === "EXP-003");
   return (
     <>
-      <section id="overview" aria-labelledby="h-overview">
-        <h2 id="h-overview">Overview</h2>
-        <p className="status-label"><span className="badge badge-status">Status</span> {r.status_label}</p>
-        <p>
-          Synthetic participants on two sides hold reciprocal, partly shared preferences. In sequential discovery
-          every unmatched participant sees a short slate of candidates each round, chosen at random (the baseline), by
-          popularity, or by popularity under an exposure cap. The study compares mean welfare after a fixed number of
-          rounds, and places centralized matching mechanisms on the same markets as references.
+      <section id="key" aria-labelledby="h-key">
+        <h2 id="h-key">The horizon decides the sign</h2>
+        <p className="lede">
+          Each row is one registered setting: a paired difference in mean agent welfare W against random exposure, on
+          the same market instances. Popularity ranking sits right of zero at 40 rounds and far left of it at 10 and 20.
         </p>
-        <ul className="verdicts">
-          {r.experiments.map((e) => (
-            <li key={e.id}>
-              <strong>{e.id}</strong> <span className={`badge ${kindOf(e).cls}`}>{kindOf(e).text}</span> {e.verdict}
-            </li>
-          ))}
-        </ul>
-        <p className="legend-key">
-          Labels used on this page: <span className="badge badge-measured">Measured</span> results from the committed
-          runs; <span className="badge badge-exploratory">Exploratory, not confirmatory</span> diagnostics added after
-          the confirmatory analysis; <span className="badge badge-notrun">Not run</span> registered analyses that were
-          not executed; <span className="badge badge-assumption">Model assumption</span> inputs of the simulation;{" "}
-          <span className="badge badge-sandbox">Sandbox output</span> numbers your browser computes.
-        </p>
-      </section>
-
-      <section id="results" aria-labelledby="h-results">
-        <h2 id="h-results">Published results</h2>
         <p className="note">
           These numbers come from the committed results of the runs at revision <code>{r.code_revision.slice(0, 7)}</code>,
           printed exactly as in the manuscript. Contrasts are paired differences in mean agent welfare W against RANDOM
@@ -145,6 +172,33 @@ function Published({ r }: { r: Results }) {
             caption="Same layout on a much smaller scale: every estimate shown is smaller than the equivalence margin of 0.01, but equivalence was tested only for EXP-001."
             rows={thetaRows(r, "EXPOSURE_BALANCED")}
           />
+        </div>
+      </section>
+
+      <section id="results" aria-labelledby="h-results">
+        <h2 id="h-results">Published results</h2>
+        <div id="overview" className="overview">
+          <p className="status-label"><span className="badge badge-status">Status</span> {r.status_label}</p>
+          <p>
+            Synthetic participants on two sides hold reciprocal, partly shared preferences. In sequential discovery
+            every unmatched participant sees a short slate of candidates each round, chosen at random (the baseline), by
+            popularity, or by popularity under an exposure cap. The study compares mean welfare after a fixed number of
+            rounds, and places centralized matching mechanisms on the same markets as references.
+          </p>
+          <ul className="verdicts">
+            {r.experiments.map((e) => (
+              <li key={e.id}>
+                <strong>{e.id}</strong> <span className={`badge ${kindOf(e).cls}`}>{kindOf(e).text}</span> {e.verdict}
+              </li>
+            ))}
+          </ul>
+          <p className="legend-key">
+            Labels used on this page: <span className="badge badge-measured">Measured</span> results from the committed
+            runs; <span className="badge badge-exploratory">Exploratory, not confirmatory</span> diagnostics added after
+            the confirmatory analysis; <span className="badge badge-notrun">Not run</span> registered analyses that were
+            not executed; <span className="badge badge-assumption">Model assumption</span> inputs of the simulation;{" "}
+            <span className="badge badge-sandbox">Sandbox output</span> numbers your browser computes.
+          </p>
         </div>
 
         {r.experiments.map((e) => (

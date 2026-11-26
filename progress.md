@@ -345,3 +345,30 @@ Owner: review `research/publication/author_review.md` and the PDFs. M6 is "relea
 
 ### Next action
 Owner: B15 (articles), B16 (full-text review and sign-off), B18 (release). Coordinator: push and the Cloudflare deploy of `demo/dist`.
+
+## 2026-11-26: demo brand identity, motion and UI redesign (owner request)
+
+Brief: `labs/_shared/DEMO-BRAND-brief.md` (each demo its own brand, motion and premium UI; the shared "Labs Instrument" look rejected).
+
+### Decisions
+- Direction: a card table under a reading lamp. Two decks (side A cobalt `#2F47B8`, side B mulberry `#9C2F6E`) on a cool card stock `#F4F2F8`, ink plum `#231B33`, a gold spotlight `#E0A21B` for attention, felt teal `#11756A` for balanced exposure. Light scheme only. Plan, wireframe, motion plan and the review against the generated-page tells in `demo/DESIGN.md`.
+- Type: Young Serif 400 (display, wordmark outlines) and Libre Franklin variable (text, tabular figures), both OFL 1.1, from Fontsource 5.3.0, resolved with `npm_config_before=2026-11-12`, saved exact; recorded in `demo/README.md` third-party notes.
+- Hero: a labelled illustration ("Illustration, not study data.") of the slate mechanism: two decks dealt into facing rows, one viewer, its slate of five, the spotlight pooling under *Popularity* and spreading under *Balanced exposure* (segmented control with a sliding indicator). It shows no number.
+- Information architecture: question and one-sentence answer; "The horizon decides the sign" (the two registered-settings forests, moved up as the key picture); published results with verdicts, labels, experiment panels and Table 3 forests; trade-off; assumptions; method and limitations; sandbox; reproduce; footer with repository, manuscript, labs index, licence, AI-use and font lines.
+- Motion: deal sequence (CSS keyframes, 45 ms stagger), forest bars and dots revealed once in view (IntersectionObserver), trade-off markers glide between design cells (transform transition), sandbox result line fades in, button press scale. Transform and opacity only; reduced-motion variants are opacity only; hover only under `(hover: hover) and (pointer: fine)`.
+- Brand files in `demo/public/brand/`: mark, lockup (colour, one colour, on dark), favicon SVG and 32 px PNG, Open Graph image 1200 by 630 rendered from HTML with Chrome headless. `svg_audit.py`: marks 100/100, lockups 98/100 (info notes only: anchor count of the outlined wordmark, coordinate precision).
+
+### Commands and actual outputs
+- Baseline before changes: `npm test` 26 passed; `npm run build` index JS 252.15 kB; `dist/` 301787 bytes.
+- `npm install --save-exact @fontsource/young-serif @fontsource-variable/libre-franklin` (with `npm_config_before=2026-11-12`): added 2 packages, both 5.3.0.
+- `npm test`: Test Files 2 passed, Tests 26 passed (no test changed).
+- `npm run build`: index JS 263.73 kB (gzip 82.73 kB), CSS 17.30 kB, fonts 26.99 + 29.29 kB woff2 (plus a 22.24 kB woff fallback for Young Serif); `dist/` 534733 bytes including the 139 kB Open Graph image.
+- `node tools/a11y_check.mjs dist`: first run 2 FAIL (contrast of the pressed segment, whose ink fill was a sibling element); fixed by giving the pressed segment its own ink background after the indicator arrives; then 9 PASS, keyboard 31 of 31, `A11Y-CHECK PASS`.
+- `uv run --frozen pytest -q tests/test_demo_export.py`: 9 passed (the exported data and every displayed number unchanged).
+- Screenshots (Chrome headless, served on 127.0.0.1:5235, desktop 1440 full page, phone 390 in an iframe, `--virtual-time-budget=4000`), two critique passes: removed the study line above the title, rebalanced the hero columns and title measure, strengthened the spotlight, made forest titles block-level, kept the zero line off the value text on phones, set the reproduce commands in a monospace face, compacted the phone navigation.
+
+### Deviations and incidents
+- None. No number, result, exported data, fixture, test or test expectation changed. Nothing pushed or deployed.
+
+### Next action
+Coordinator: push and redeploy `demo/dist`.
